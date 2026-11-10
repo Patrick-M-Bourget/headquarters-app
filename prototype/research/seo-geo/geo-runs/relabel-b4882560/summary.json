@@ -1,0 +1,140 @@
+{
+  "run_id": "relabel-b4882560",
+  "locale": "es-ES",
+  "query_set_version": 1,
+  "market_signals": {
+    "claude_country": "ES",
+    "gemini": "question language only"
+  },
+  "engines": [
+    "claude",
+    "gemini"
+  ],
+  "answers": 50,
+  "failed": 0,
+  "cachedrop": {
+    "mentioned": 0,
+    "recommended": 0,
+    "top_pick": 0,
+    "cited": 0,
+    "of": 50
+  },
+  "by_engine": {
+    "claude": {
+      "n": 25,
+      "mentioned": 0,
+      "recommended": 0,
+      "cited": 0
+    },
+    "gemini": {
+      "n": 25,
+      "mentioned": 0,
+      "recommended": 0,
+      "cited": 0
+    }
+  },
+  "by_audience": {
+    "general": {
+      "n": 14,
+      "mentioned": 0,
+      "recommended": 0,
+      "cited": 0
+    },
+    "producers": {
+      "n": 12,
+      "mentioned": 0,
+      "recommended": 0,
+      "cited": 0
+    },
+    "developers": {
+      "n": 12,
+      "mentioned": 0,
+      "recommended": 0,
+      "cited": 0
+    },
+    "video_editors": {
+      "n": 12,
+      "mentioned": 0,
+      "recommended": 0,
+      "cited": 0
+    }
+  },
+  "competitors_top_pick": {
+    "daisydisk": 5,
+    "cleanmymac": 4,
+    "appcleaner": 3,
+    "audio-plugin-uninstaller": 3,
+    "npkill": 2,
+    "grandperspective": 2,
+    "mole": 1,
+    "fcp-library-cleaner": 1,
+    "final-cut-library-manager": 1,
+    "opendisk": 1,
+    "cleardisk": 1,
+    "devclean": 1,
+    "kondo": 1,
+    "app-cleaner-uninstaller": 1,
+    "pearcleaner": 1
+  },
+  "competitors_recommended": {
+    "daisydisk": 14,
+    "appcleaner": 13,
+    "grandperspective": 11,
+    "omnidisksweeper": 9,
+    "cleanmymac": 8,
+    "onyx": 8,
+    "pearcleaner": 7,
+    "npkill": 5,
+    "mole": 3,
+    "audio-plugin-uninstaller": 3,
+    "devcleaner": 3,
+    "ncdu": 3,
+    "puremac": 2,
+    "buhocleaner": 2,
+    "ccleaner": 2,
+    "final-cut-library-manager": 2,
+    "sensei": 2,
+    "unplugin": 2,
+    "gdu": 2,
+    "app-cleaner-uninstaller": 2,
+    "disk-drill": 1,
+    "orbstack": 1,
+    "fcp-library-cleaner": 1,
+    "render-cleaner": 1,
+    "arctic": 1,
+    "fcp-cleaner": 1,
+    "uninstallpkg": 1,
+    "plugoff": 1,
+    "plugin-station": 1,
+    "disk-space-analyzer-nektony": 1,
+    "opendisk": 1,
+    "dissectmac": 1,
+    "atlas-storage-analyzer": 1,
+    "cleardisk": 1,
+    "devclean": 1,
+    "codecleaner": 1,
+    "cachecleaner": 1,
+    "dua-cli": 1,
+    "kondo": 1,
+    "dust": 1,
+    "diskbuddy": 1,
+    "diskcleaner": 1,
+    "symboliclinker": 1,
+    "crumb": 1,
+    "hazel": 1
+  },
+  "unverified_judgements": [
+    "q13/gemini: quote not in answer: OmniDiskSweeper"
+  ],
+  "cost_usd": 0.3456,
+  "searches": 0,
+  "seconds": 42,
+  "errors": [],
+  "delta": {
+    "previous_run": "local-393cdf60-b6c1-4217-836b-8c11c89a5e0d",
+    "mentioned": 0,
+    "recommended": 0,
+    "cited": 0
+  },
+  "finished_at": "2026-11-10T13:32:00.115Z"
+}

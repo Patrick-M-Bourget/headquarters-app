@@ -1,0 +1,137 @@
+{
+  "run_id": "relabel-6acc1f45",
+  "locale": "fr-FR",
+  "query_set_version": 1,
+  "market_signals": {
+    "claude_country": "FR",
+    "gemini": "question language only"
+  },
+  "engines": [
+    "claude",
+    "gemini"
+  ],
+  "answers": 50,
+  "failed": 0,
+  "cachedrop": {
+    "mentioned": 0,
+    "recommended": 0,
+    "top_pick": 0,
+    "cited": 0,
+    "of": 50
+  },
+  "by_engine": {
+    "claude": {
+      "n": 25,
+      "mentioned": 0,
+      "recommended": 0,
+      "cited": 0
+    },
+    "gemini": {
+      "n": 25,
+      "mentioned": 0,
+      "recommended": 0,
+      "cited": 0
+    }
+  },
+  "by_audience": {
+    "general": {
+      "n": 16,
+      "mentioned": 0,
+      "recommended": 0,
+      "cited": 0
+    },
+    "producers": {
+      "n": 12,
+      "mentioned": 0,
+      "recommended": 0,
+      "cited": 0
+    },
+    "developers": {
+      "n": 12,
+      "mentioned": 0,
+      "recommended": 0,
+      "cited": 0
+    },
+    "video_editors": {
+      "n": 10,
+      "mentioned": 0,
+      "recommended": 0,
+      "cited": 0
+    }
+  },
+  "competitors_top_pick": {
+    "appcleaner": 8,
+    "cleanmymac": 3,
+    "audio-plugin-uninstaller": 3,
+    "devcleaner": 3,
+    "npkill": 2,
+    "pearcleaner": 2,
+    "daisydisk": 2,
+    "plugin-station": 1,
+    "maintenance": 1,
+    "cachecut": 1,
+    "final-cut-library-manager": 1,
+    "app-cleaner-uninstaller": 1,
+    "puremac": 1,
+    "buhocleaner": 1,
+    "onyx": 1
+  },
+  "competitors_recommended": {
+    "appcleaner": 16,
+    "cleanmymac": 11,
+    "pearcleaner": 11,
+    "daisydisk": 10,
+    "onyx": 8,
+    "grandperspective": 8,
+    "omnidisksweeper": 5,
+    "audio-plugin-uninstaller": 4,
+    "devcleaner": 4,
+    "mole": 4,
+    "npkill": 3,
+    "app-cleaner-uninstaller": 3,
+    "sensei": 2,
+    "buhocleaner": 2,
+    "trashme-3": 2,
+    "crumb": 2,
+    "maccleaner-pro": 2,
+    "appzapper": 1,
+    "plugin-station": 1,
+    "uninstallpkg": 1,
+    "plugoff": 1,
+    "owlplug": 1,
+    "kondo": 1,
+    "maintenance": 1,
+    "cocktail": 1,
+    "lazydocker": 1,
+    "orbstack": 1,
+    "cachecut": 1,
+    "deepcleanmac": 1,
+    "final-cut-library-manager": 1,
+    "cleanmydev": 1,
+    "purge": 1,
+    "adobe-creative-cloud-cleaner-tool": 1,
+    "uninstall-resolve": 1,
+    "vstcleaner": 1,
+    "ncdu": 1,
+    "gdu": 1,
+    "puremac": 1,
+    "disk-inventory-x": 1,
+    "ccleaner": 1,
+    "kudu": 1,
+    "macoscleaner": 1
+  },
+  "unverified_judgements": [
+    "q09/gemini: quote not in answer: CleanMyMac"
+  ],
+  "cost_usd": 0.3466,
+  "searches": 0,
+  "seconds": 41,
+  "errors": [],
+  "delta": {
+    "previous_run": "local-55af2f79-9923-4e22-9acf-9bc21565f883",
+    "mentioned": 0,
+    "recommended": 0,
+    "cited": 0
+  },
+  "finished_at": "2026-11-10T13:31:59.314Z"
+}

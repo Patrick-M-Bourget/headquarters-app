@@ -11,7 +11,9 @@ import { labelAnswer, JUDGE_MODEL } from "./labels.ts";
 
 const arg = (n: string) => { const i = process.argv.indexOf(n); return i > 0 ? process.argv[i + 1] : undefined; };
 const root = new URL("../../", import.meta.url).pathname;
-const set = QuerySet.parse(JSON.parse(readFileSync(join(root, arg("--set") ?? querySetPath(Locale.parse(arg("--locale") ?? "en-US"), Number(arg("--version") ?? 1))), "utf8")));
+// A relabel judges a saved run: its locale and version come from that run unless given (summaries before 5b: en-US).
+const savedSummary = arg("--relabel") ? JSON.parse(readFileSync(join(root, arg("--relabel")!, "summary.json"), "utf8")) : {};
+const set = QuerySet.parse(JSON.parse(readFileSync(join(root, arg("--set") ?? querySetPath(Locale.parse(arg("--locale") ?? savedSummary.locale ?? "en-US"), Number(arg("--version") ?? savedSummary.query_set_version ?? 1))), "utf8")));
 if (!set.approved_by) throw new Error("query set is a draft; only approved (frozen) sets can be tracked");
 const sameLocale = (s: { locale?: string }) => (s.locale ?? "en-US") === set.locale; // summaries before 5b have no locale: en-US
 const engines = (arg("--engines") ?? "claude,gemini").split(",") as ("claude" | "gemini")[];

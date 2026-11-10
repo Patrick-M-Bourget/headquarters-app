@@ -25,8 +25,8 @@ const read = (p: string) => JSON.parse(readFileSync(new URL(p, root), "utf8"));
 
 /** The runs briefs are built from. Update when a newer baseline is accepted. */
 export const BASELINES: Record<WriterLocale, { geo: string; keywords: string; onpage: string; pages: string }> = {
-  "en-US": { geo: "research/seo-geo/geo-runs/relabel-35013bd4", keywords: "research/seo-geo/keyword-runs/local-29c325f2", onpage: "research/seo-geo/onpage-runs/local-53fdc2a5", pages: "research/seo-geo/onpage-pages.json" },
-  "fr-FR": { geo: "research/seo-geo/geo-runs/local-55af2f79-9923-4e22-9acf-9bc21565f883", keywords: "research/seo-geo/keyword-runs/local-44296df8", onpage: "research/seo-geo/onpage-runs/local-c1d9af4e", pages: "research/seo-geo/onpage-pages.fr-FR.json" },
+  "en-US": { geo: "research/seo-geo/geo-runs/relabel-66062516", keywords: "research/seo-geo/keyword-runs/local-29c325f2", onpage: "research/seo-geo/onpage-runs/local-53fdc2a5", pages: "research/seo-geo/onpage-pages.json" },
+  "fr-FR": { geo: "research/seo-geo/geo-runs/relabel-6acc1f45", keywords: "research/seo-geo/keyword-runs/local-44296df8", onpage: "research/seo-geo/onpage-runs/local-c1d9af4e", pages: "research/seo-geo/onpage-pages.fr-FR.json" },
 };
 
 export type BriefInputs = {

@@ -1,0 +1,257 @@
+[
+  {
+    "id": "q25/claude",
+    "cachedrop_mentioned": false,
+    "products": [
+      {
+        "name": "OnyX",
+        "recommended": true
+      },
+      {
+        "name": "AppCleaner",
+        "recommended": true
+      },
+      {
+        "name": "OmniDiskSweeper",
+        "recommended": true
+      },
+      {
+        "name": "GrandPerspective",
+        "recommended": true
+      },
+      {
+        "name": "CCleaner",
+        "recommended": true
+      }
+    ]
+  },
+  {
+    "id": "q12/claude",
+    "cachedrop_mentioned": false,
+    "products": [
+      {
+        "name": "Cache Kid",
+        "recommended": true
+      },
+      {
+        "name": "CleanMyMac",
+        "recommended": true
+      },
+      {
+        "name": "DaisyDisk",
+        "recommended": true
+      },
+      {
+        "name": "GrandPerspective",
+        "recommended": true
+      },
+      {
+        "name": "OmniDiskSweeper",
+        "recommended": true
+      },
+      {
+        "name": "OnyX",
+        "recommended": true
+      },
+      {
+        "name": "Gemini 2",
+        "recommended": true
+      }
+    ]
+  },
+  {
+    "id": "q16/claude",
+    "cachedrop_mentioned": false,
+    "products": []
+  },
+  {
+    "id": "q10/claude",
+    "cachedrop_mentioned": false,
+    "products": []
+  },
+  {
+    "id": "q22/gemini",
+    "cachedrop_mentioned": false,
+    "products": [
+      {
+        "name": "Native Access",
+        "recommended": true
+      },
+      {
+        "name": "Spitfire Audio App",
+        "recommended": true
+      },
+      {
+        "name": "Toontrack Product Manager",
+        "recommended": true
+      },
+      {
+        "name": "EastWest Installation Center",
+        "recommended": true
+      },
+      {
+        "name": "Arturia Software Center",
+        "recommended": true
+      },
+      {
+        "name": "OmniDiskSweeper",
+        "recommended": true
+      },
+      {
+        "name": "GrandPerspective",
+        "recommended": true
+      },
+      {
+        "name": "DaisyDisk",
+        "recommended": true
+      }
+    ]
+  },
+  {
+    "id": "q01/gemini",
+    "cachedrop_mentioned": false,
+    "products": [
+      {
+        "name": "CleanMyMac",
+        "recommended": true
+      },
+      {
+        "name": "AppCleaner",
+        "recommended": true
+      }
+    ]
+  },
+  {
+    "id": "q25/gemini",
+    "cachedrop_mentioned": false,
+    "products": [
+      {
+        "name": "MacKeeper",
+        "recommended": false
+      },
+      {
+        "name": "CleanMyMac",
+        "recommended": false
+      },
+      {
+        "name": "OmniDiskSweeper",
+        "recommended": true
+      },
+      {
+        "name": "GrandPerspective",
+        "recommended": true
+      },
+      {
+        "name": "AppCleaner",
+        "recommended": true
+      },
+      {
+        "name": "Pearcleaner",
+        "recommended": true
+      },
+      {
+        "name": "OnyX",
+        "recommended": true
+      }
+    ]
+  },
+  {
+    "id": "q05/claude",
+    "cachedrop_mentioned": false,
+    "products": [
+      {
+        "name": "CleanMyMac",
+        "recommended": true
+      },
+      {
+        "name": "DaisyDisk",
+        "recommended": true
+      },
+      {
+        "name": "OnyX",
+        "recommended": true
+      },
+      {
+        "name": "Sensei",
+        "recommended": true
+      },
+      {
+        "name": "MacKeeper",
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "id": "q23/claude",
+    "cachedrop_mentioned": false,
+    "products": []
+  },
+  {
+    "id": "q03/claude",
+    "cachedrop_mentioned": false,
+    "products": []
+  },
+  {
+    "id": "q17/gemini",
+    "cachedrop_mentioned": false,
+    "products": [
+      {
+        "name": "GrandPerspective",
+        "recommended": true
+      },
+      {
+        "name": "OmniDiskSweeper",
+        "recommended": true
+      }
+    ]
+  },
+  {
+    "id": "q05/gemini",
+    "cachedrop_mentioned": false,
+    "products": [
+      {
+        "name": "AppCleaner",
+        "recommended": true
+      },
+      {
+        "name": "OmniDiskSweeper",
+        "recommended": true
+      },
+      {
+        "name": "GrandPerspective",
+        "recommended": true
+      },
+      {
+        "name": "OnyX",
+        "recommended": true
+      },
+      {
+        "name": "DaisyDisk",
+        "recommended": true
+      },
+      {
+        "name": "CleanMyMac",
+        "recommended": true
+      },
+      {
+        "name": "MacKeeper",
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "id": "q04/claude",
+    "cachedrop_mentioned": false,
+    "products": []
+  },
+  {
+    "id": "q20/claude",
+    "cachedrop_mentioned": false,
+    "products": []
+  },
+  {
+    "id": "q20/gemini",
+    "cachedrop_mentioned": false,
+    "products": []
+  }
+]

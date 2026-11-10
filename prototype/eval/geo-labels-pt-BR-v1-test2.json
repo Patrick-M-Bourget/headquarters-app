@@ -1,0 +1,332 @@
+[
+ {
+  "id": "q15/claude",
+  "cachedrop_mentioned": false,
+  "products": [
+   {
+    "name": "DevCleaner",
+    "recommended": true
+   },
+   {
+    "name": "CleanMyMac",
+    "recommended": true
+   },
+   {
+    "name": "DevCleaner for Xcode",
+    "recommended": true
+   },
+   {
+    "name": "xcode-clr",
+    "recommended": true
+   }
+  ]
+ },
+ {
+  "id": "q22/claude",
+  "cachedrop_mentioned": false,
+  "products": [
+   {
+    "name": "Audio Plugin Uninstaller",
+    "recommended": true
+   },
+   {
+    "name": "Plugoff",
+    "recommended": true
+   },
+   {
+    "name": "Plugin Station",
+    "recommended": true
+   },
+   {
+    "name": "VST Manager",
+    "recommended": true
+   }
+  ]
+ },
+ {
+  "id": "q19/gemini",
+  "cachedrop_mentioned": false,
+  "products": [
+   {
+    "name": "DaisyDisk",
+    "recommended": false
+   },
+   {
+    "name": "npkill",
+    "recommended": true
+   },
+   {
+    "name": "DevCleaner for Xcode",
+    "recommended": true
+   },
+   {
+    "name": "cargo-sweep",
+    "recommended": true
+   },
+   {
+    "name": "ncdu",
+    "recommended": true
+   },
+   {
+    "name": "gdu",
+    "recommended": true
+   },
+   {
+    "name": "dust",
+    "recommended": true
+   },
+   {
+    "name": "OmniDiskSweeper",
+    "recommended": true
+   },
+   {
+    "name": "GrandPerspective",
+    "recommended": true
+   }
+  ]
+ },
+ {
+  "id": "q14/gemini",
+  "cachedrop_mentioned": false,
+  "products": []
+ },
+ {
+  "id": "q02/claude",
+  "cachedrop_mentioned": false,
+  "products": [
+   {
+    "name": "CleanMyMac",
+    "recommended": false
+   },
+   {
+    "name": "GrandPerspective",
+    "recommended": true
+   },
+   {
+    "name": "DaisyDisk",
+    "recommended": true
+   },
+   {
+    "name": "AppCleaner",
+    "recommended": true
+   },
+   {
+    "name": "Pearcleaner",
+    "recommended": true
+   },
+   {
+    "name": "OnyX",
+    "recommended": true
+   },
+   {
+    "name": "Mole",
+    "recommended": true
+   },
+   {
+    "name": "Mole app",
+    "recommended": true
+   },
+   {
+    "name": "Sensei",
+    "recommended": true
+   },
+   {
+    "name": "Shiny",
+    "recommended": true
+   }
+  ]
+ },
+ {
+  "id": "q06/gemini",
+  "cachedrop_mentioned": false,
+  "products": [
+   {
+    "name": "DaisyDisk",
+    "recommended": true
+   },
+   {
+    "name": "GrandPerspective",
+    "recommended": true
+   },
+   {
+    "name": "OmniDiskSweeper",
+    "recommended": true
+   },
+   {
+    "name": "AppCleaner",
+    "recommended": true
+   },
+   {
+    "name": "Gemini 2",
+    "recommended": true
+   },
+   {
+    "name": "dupeGuru",
+    "recommended": true
+   },
+   {
+    "name": "CleanMyMac",
+    "recommended": true
+   }
+  ]
+ },
+ {
+  "id": "q16/gemini",
+  "cachedrop_mentioned": false,
+  "products": []
+ },
+ {
+  "id": "q19/claude",
+  "cachedrop_mentioned": false,
+  "products": [
+   {
+    "name": "DaisyDisk",
+    "recommended": false
+   },
+   {
+    "name": "GrandPerspective",
+    "recommended": true
+   },
+   {
+    "name": "Disk Space Analyzer",
+    "recommended": true
+   },
+   {
+    "name": "OmniDiskSweeper",
+    "recommended": true
+   },
+   {
+    "name": "OpenDisk",
+    "recommended": true
+   },
+   {
+    "name": "PocoDisk",
+    "recommended": true
+   },
+   {
+    "name": "ClearDisk",
+    "recommended": true
+   },
+   {
+    "name": "CodeCleaner",
+    "recommended": true
+   },
+   {
+    "name": "DevClean",
+    "recommended": true
+   },
+   {
+    "name": "Shedi",
+    "recommended": true
+   },
+   {
+    "name": "CacheCleaner",
+    "recommended": true
+   },
+   {
+    "name": "DevSweeper",
+    "recommended": true
+   },
+   {
+    "name": "clean-my-mac",
+    "recommended": true
+   },
+   {
+    "name": "ncdu",
+    "recommended": true
+   },
+   {
+    "name": "dua-cli",
+    "recommended": true
+   },
+   {
+    "name": "npkill",
+    "recommended": true
+   }
+  ]
+ },
+ {
+  "id": "q10/gemini",
+  "cachedrop_mentioned": false,
+  "products": [
+   {
+    "name": "Find Any File",
+    "recommended": true
+   },
+   {
+    "name": "EasyFind",
+    "recommended": true
+   }
+  ]
+ },
+ {
+  "id": "q09/gemini",
+  "cachedrop_mentioned": false,
+  "products": [
+   {
+    "name": "AppCleaner",
+    "recommended": true
+   },
+   {
+    "name": "OmniDiskSweeper",
+    "recommended": true
+   },
+   {
+    "name": "GrandPerspective",
+    "recommended": true
+   }
+  ]
+ },
+ {
+  "id": "q21/claude",
+  "cachedrop_mentioned": false,
+  "products": [
+   {
+    "name": "AppCleaner",
+    "recommended": true
+   },
+   {
+    "name": "AppZapper",
+    "recommended": true
+   },
+   {
+    "name": "CleanMyMac",
+    "recommended": true
+   }
+  ]
+ },
+ {
+  "id": "q09/claude",
+  "cachedrop_mentioned": false,
+  "products": [
+   {
+    "name": "DaisyDisk",
+    "recommended": true
+   },
+   {
+    "name": "OmniDiskSweeper",
+    "recommended": true
+   }
+  ]
+ },
+ {
+  "id": "q08/gemini",
+  "cachedrop_mentioned": false,
+  "products": []
+ },
+ {
+  "id": "q07/gemini",
+  "cachedrop_mentioned": false,
+  "products": [
+   {
+    "name": "npkill",
+    "recommended": true
+   }
+  ]
+ },
+ {
+  "id": "q18/claude",
+  "cachedrop_mentioned": false,
+  "products": []
+ }
+]

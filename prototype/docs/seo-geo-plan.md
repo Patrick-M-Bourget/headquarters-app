@@ -46,7 +46,7 @@ Step 4 eval result (2026-11-09): the on-page answer check agrees with blind labe
 5b. Multi-language (Q19–Q24), before any scheduling:
    1. Contracts: `locale` on QuerySet (en-US for v1) and on run summaries; locale → engine/search parameters in one place. L2: owner approves the contract diff. DONE 2026-11-09 (`packages/data-contracts/markets.ts`; Gemini parameters still unverified).
    2. Generator `--locale`: native fr-FR set first, owner review; then de-DE, es-ES, pt-BR, ja-JP. fr-FR v1 FROZEN 2026-11-09 (3 owner swaps).
-   3. GEO tracker per locale with market signals; blind eval per language (fr-FR first). fr-FR DONE: baseline 0/50, judge eval 93.3%. Gemini takes no market parameter (retrievalConfig ignored).
+   3. GEO tracker per locale with market signals; blind eval per language. ALL SIX DONE 2026-11-10 (rubric r2, every language >= 90%). fr-FR DONE: baseline 0/50, judge eval 93.3%. Gemini takes no market parameter (retrievalConfig ignored).
    4. On-page: fr-FR mapping, hreflang and lang checks, French answer-check eval. DONE 2026-11-09: run local-c1d9af4e (4 no / 3 partial / 1 yes; fr-CA lang on all 8), eval answered-vs-no 100%, exact 93.8% (16 openings). Mapping awaits owner confirmation.
    5. Keyword tracker per locale (Serper gl/hl).
    6. Baselines for all six locales; record cost per locale.

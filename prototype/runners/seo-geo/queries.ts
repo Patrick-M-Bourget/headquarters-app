@@ -4,7 +4,14 @@ import { Audience, Intent, Query } from "../../packages/data-contracts/seo-geo.t
 export type Candidate = { text: string; audience: string; intent: string; keywords: string[] };
 export type Rejection = { text: string; reason: string };
 
-const tokens = (s: string) => new Set(s.toLowerCase().replace(/[^a-z0-9 ]/g, " ").split(/\s+/).filter(w => w.length > 2));
+// Words in any script; scripts written without spaces (Japanese, Chinese) are compared by character pairs.
+const NO_SPACES = /[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}]+/gu;
+const tokens = (s: string) => {
+  const t = s.normalize("NFKC").toLowerCase();
+  const out = new Set(t.replace(NO_SPACES, " ").replace(/[^\p{L}\p{N} ]/gu, " ").split(/\s+/).filter(w => w.length > 2));
+  for (const run of t.match(NO_SPACES) ?? []) for (let i = 0; i < run.length - 1; i++) out.add(run.slice(i, i + 2));
+  return out;
+};
 export function similarity(a: string, b: string): number {
   const A = tokens(a), B = tokens(b);
   const inter = [...A].filter(x => B.has(x)).length;
@@ -12,7 +19,7 @@ export function similarity(a: string, b: string): number {
 }
 
 // Buyers who don't know CacheDrop can't ask about it; a query naming it would bias visibility upward.
-const OWN_BRAND = /cache\s*drop/i;
+const OWN_BRAND = /cache\s*drop|キャッシュ\s*ドロップ/i;
 // Competitor names are only natural in comparison/alternative questions.
 const COMPETITORS = /(cleanmymac|daisydisk|maccleaner|grandperspective|omnidisksweeper|appcleaner|pearcleaner|mole\b|hyperspace|sensei|onyx|buhocleaner)/i;
 
@@ -21,7 +28,7 @@ export function checkCandidate(c: Candidate): string | null {
   if (COMPETITORS.test(c.text) && !["comparison", "alternative"].includes(c.intent)) return "names a competitor outside a comparison/alternative question";
   if (!Audience.safeParse(c.audience).success) return `unknown audience ${c.audience}`;
   if (!Intent.safeParse(c.intent).success) return `unknown intent ${c.intent}`;
-  if (c.text.length < 12 || c.text.length > 200) return "length out of range";
+  if (c.text.length < 8 || c.text.length > 200) return "length out of range";
   if (c.keywords.length < 1 || c.keywords.length > 2) return "needs 1-2 keywords";
   return null;
 }

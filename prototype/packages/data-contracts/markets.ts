@@ -3,6 +3,7 @@
 import type { Locale } from "./seo-geo.ts";
 
 export type Market = {
+  name: string;           // for prompts and reports, e.g. "French, France"
   language: string;       // BCP 47 language the query set is written in
   country: string;        // ISO 3166-1 alpha-2, Claude web search user_location.country
   serper: { gl: string; hl: string };
@@ -10,12 +11,12 @@ export type Market = {
 };
 
 export const MARKETS: Record<Locale, Market> = {
-  "en-US": { language: "en", country: "US", serper: { gl: "us", hl: "en" }, tavilyCountry: "united states" },
-  "fr-FR": { language: "fr", country: "FR", serper: { gl: "fr", hl: "fr" }, tavilyCountry: "france" },
-  "de-DE": { language: "de", country: "DE", serper: { gl: "de", hl: "de" }, tavilyCountry: "germany" },
-  "es-ES": { language: "es", country: "ES", serper: { gl: "es", hl: "es" }, tavilyCountry: "spain" },
-  "pt-BR": { language: "pt", country: "BR", serper: { gl: "br", hl: "pt-BR" }, tavilyCountry: "brazil" },
-  "ja-JP": { language: "ja", country: "JP", serper: { gl: "jp", hl: "ja" }, tavilyCountry: "japan" },
+  "en-US": { name: "English, United States", language: "en", country: "US", serper: { gl: "us", hl: "en" }, tavilyCountry: "united states" },
+  "fr-FR": { name: "French, France", language: "fr", country: "FR", serper: { gl: "fr", hl: "fr" }, tavilyCountry: "france" },
+  "de-DE": { name: "German, Germany", language: "de", country: "DE", serper: { gl: "de", hl: "de" }, tavilyCountry: "germany" },
+  "es-ES": { name: "Spanish, Spain", language: "es", country: "ES", serper: { gl: "es", hl: "es" }, tavilyCountry: "spain" },
+  "pt-BR": { name: "Portuguese, Brazil", language: "pt", country: "BR", serper: { gl: "br", hl: "pt-BR" }, tavilyCountry: "brazil" },
+  "ja-JP": { name: "Japanese, Japan", language: "ja", country: "JP", serper: { gl: "jp", hl: "ja" }, tavilyCountry: "japan" },
 };
 // Gemini: not set yet. Whether google_search grounding takes a region/language is unverified; checked in 5b step 3.
 

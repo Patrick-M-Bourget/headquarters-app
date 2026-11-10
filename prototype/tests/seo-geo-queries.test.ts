@@ -39,3 +39,12 @@ test("round-robin keeps audiences balanced regardless of candidate order", () =>
   assert.equal(queries.length, 25);
   assert.deepEqual(perAudience, { general: 7, producers: 6, developers: 6, video_editors: 6 });
 });
+
+test("near-duplicate and brand checks work in French and Japanese", () => {
+  assert.ok(similarity("comment libérer de l'espace sur mon Mac", "comment libérer de l'espace sur mon Mac en 2026") >= 0.7);
+  assert.ok(similarity("comment désinstaller un plug-in audio sur Mac", "comment vider le cache de Final Cut Pro") < 0.7);
+  assert.ok(similarity("Macのストレージを空ける方法", "Macのストレージを空ける方法は？") >= 0.7, "Japanese compared by character pairs");
+  assert.ok(similarity("Macのストレージを空ける方法", "Xcodeのキャッシュを削除したい") < 0.7);
+  assert.match(checkCandidate(c("キャッシュドロップは安全ですか"))!, /CacheDrop/);
+  assert.equal(checkCandidate(c("Macの容量不足を解消", "general", "how_to", ["容量不足 mac"])), null, "short Japanese question passes");
+});

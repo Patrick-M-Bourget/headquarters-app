@@ -32,6 +32,12 @@ export async function findIssue(): Promise<{ id: string; identifier?: string } |
   return open ? { id, identifier: open.identifier } : null;
 }
 
+/** Title and description of an issue (a process agent's only way to receive parameters from the board). */
+export async function getIssueText(issueId: string): Promise<string> {
+  const i = await call("GET", `/issues/${issueId}`);
+  return `${i?.title ?? ""}\n${i?.description ?? ""}`;
+}
+
 export async function reportToIssue(issueId: string, body: string, status: "done" | "blocked") {
   await call("PATCH", `/issues/${issueId}`, { status, comment: body });
 }

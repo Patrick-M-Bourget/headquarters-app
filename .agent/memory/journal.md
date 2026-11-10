@@ -57,3 +57,18 @@
   - Local-Qwen implication: judging stance is the step that needs model strength. Run eval/geo-agreement.ts on Qwen before switching it.
   - Expected weekly GEO cost: about $0.56 engines + $0.34 judge = about $0.90.
 - END OF SESSION 1 (2026-11-09): hand-off written to .agent/memory/handoff.md. Unfinished: SEO/GEO steps 4–6. Nothing pushed. Paperclip may still be running locally.
+
+## 2026-11-09 (session 2)
+- SEO/GEO step 4, on-page auditor (`runners/seo-geo/onpage.ts`, `onpage-checks.ts`, `answer-check.ts`): PageAudit/SiteAudit/PageComparison contracts; 8 English sitemap pages (the plan said 6 guides; there are 5) mapped to v1 queries in `research/seo-geo/onpage-pages.json`; Tavily top 3 competitors per page (own site, video and social excluded; failed loads skipped); code checks + Sonnet answer check with the quote verified against the first 150 words of main text.
+  - Bugs found on the first real run and fixed: fetchPage crashes on plain text (llms.txt read as missing); body-text fallback fed nav and scripts to the judge and inflated word counts (new `mainText`: chrome stripped, <main>/<article> preferred, block and inline elements spaced); facebook.com as a competitor; CMS boilerplate JSON-LD types reported as gaps.
+- On-page answer-check eval (`eval/onpage-agreement.ts`, blind subagent labels `eval/onpage/labels-v1-{dev,test}.json`, openings in git-ignored `openings.local.json`, fixed hash split 20 dev / 12 test):
+  - First: dev 80% exact. One rubric pass on dev (short preamble doesn't lower "yes"; one fitting product = partial): dev 85%, test 75% exact; answered-vs-no 90% / 91.7%.
+  - Judge is stricter than the reviewer on "yes" (3 of 4 yes labels → partial, two of them our own guides the reviewer itself flagged as borderline).
+  - Owner chose option C: "no" = confirmed gap; "partial" = "needs check" with quote + one-line reason, approved in Paperclip review. Adding the reason output raised agreement: dev 90% / test 83.3% exact, answered-vs-no 95% / 100%.
+  - Gap diffs now key on the stable part of a gap (no model text, numbers masked); two consecutive runs gave identical verdicts.
+- On-page baseline `local-53fdc2a5` ($0.11, 90 s): all 8 own pages "partial" (0 confirmed answer gaps); llms.txt present; all AI crawlers allowed; meta descriptions too long on 6 pages; pricing 141 words vs competitor median 2,108; dev-caches page lacks SoftwareApplication/Offer JSON-LD.
+- Step 5, keyword tracker (`runners/seo-geo/keywords.ts`, `keyword-checks.ts`): SerpResult/KeywordResult contracts; 48 unique keywords from v1; Serper top 10 (1 credit each); own position from the SERP; brand matching on own sites (nektony.com credited to App Cleaner & Uninstaller); run diff (unit-tested only so far).
+  - Baseline `local-29c325f2` ($0, 48 credits): cachedrop.io in the top 10 for 0/48. CleanMyMac's own sites rank for 13 keywords, Nektony 7, Audio Plugin Uninstaller 5, AppCleaner 4. Reddit is in the top 10 for 47/48, YouTube 39, Apple Discussions and Facebook 20 each.
+- Owner decision: multi-language before scheduling (seo-geo-plan Q19–Q24): en-US + fr-CA weekly; de-DE, es-ES, pt-BR, ja-JP monthly (GEO + keywords only); native query sets per locale; blind eval per language.
+- Spend this session about $0.60 (all Anthropic API: on-page runs and evals). Total about $7 of $100. Serper 50/2,500 credits used. Tavily about 26 searches.
+- Unfinished: step 5b (multi-language), step 6 (synthesis + routine). Nothing pushed; origin/main shows [gone].

@@ -1,4 +1,4 @@
-# Project context
+- Status (2026-11-09, end of session 2): phases 1–4 DONE, ADR 0001 ACCEPTED. SEO/GEO steps 1–5 DONE: GEO tracker (eval 97.4%), on-page auditor (answer check eval: answered-vs-no 95%/100%; "partial" = needs owner check), keyword tracker (Serper). Baselines: GEO 0/50 mentioned; on-page 8/8 partial; keywords 0/48 in top 10. Next: step 5b multi-language (seo-geo-plan Q19–Q24), then step 6 synthesis + routine.
 
 - Status (2026-11-09): phases 1–4 DONE, ADR 0001 ACCEPTED. SEO/GEO: steps 1–3 DONE (contracts, query set v1 frozen, GEO tracker built, eval gate passed 97.4%). Next: step 4 on-page auditor (Tavily key in .env), step 5 keyword tracker (Serper key in .env; DataForSEO deferred), step 6 synthesis + weekly Paperclip routine. Baseline: CacheDrop 0/50 mentioned, cachedrop.io cited once (Gemini q22).
 - Goal: validate the stack, not produce research. Paperclip and Mastra are both on trial with kill criteria (see `prototype/docs/plan.md`).
@@ -6,7 +6,7 @@
   - Agents: Researcher `5e8d2d29-…` (agent-workspace/, lockdown via `--setting-sources project --settings …`), Engineer `6ecd0b11-…` (prototype/, engineer.settings.json). Both on the legacy runner, Sonnet 5.5.
   - Issues: HEA-1..4 lockdown tests; HEA-5 research (run 1 + run 2 approved); HEA-6 contract change (approved, commit 4c451f2).
 - Scores: run 1 96.2% / 70.3% coverage; run 2 93.3% / 81.1% (both mismatches are key/contract issues, no agent factual errors). Answer key: eval/answer-key.json.
-- Spend: about $6.40 of API credits (plus $25 Gemini prepaid cash, separate). Owner rule (2026-11-09): per-phase caps are soft; the hard limit is $100 total for the prototype.
+- Spend: about $7 of API credits (2026-11-09 end of session 2) (plus $25 Gemini prepaid cash, separate). Owner rule (2026-11-09): per-phase caps are soft; the hard limit is $100 total for the prototype.
 - Follow-ups:
   - Answer key: accept open_source_and_app_store for GrandPerspective; CleanMyMac one-time differs by channel ($119.95 direct vs $89.99 App Store).
   - Contract: enforce per-field allowed values.

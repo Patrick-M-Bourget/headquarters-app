@@ -4,7 +4,7 @@
 - Plan grilled (Q1–Q27): `prototype/docs/seo-growth-plan.md`. Still the prototype until the M6; $100 soft target (flag at $80, pause model steps at $100). de-DE is the multi-market proof; OpenCode test gated on P1–P4 (Q16).
 - P0 DONE: `scripts/setup-search-access.sh` (owner ran it), `scripts/check-search-access.ts` green. Key file at ~/.config/headquarters/ (outside repo).
 - P1 BUILT: Search Console Reader 047474f4 (process agent, budget policy unpriced allow), in weekly stage 1. Probation HEA-28 done. Query text NEVER committed: `research/search-console/private/` is git-ignored.
-- Open: owner reconcile gate (compare totals with the Search Console UI). Finding to raise as a proposal: 5/24 sitemap pages not indexed (/pricing/, /uninstall-apps-mac/, /clear-system-data-mac/, /fr/clear-system-data-mac/, /fr/clear-mac-developer-caches/).
+- Reconcile gate PASSED (111 impressions / 1 click = UI). 5 unindexed pages → cachedrop-website #138 (owner requests indexing; ledger keys index:<url>).
 - Next: P1-de (German glossary + Claims Reviewer rules, Content Writer de-DE + site-drafts, mockup build script).
 - Don't regenerate a week's report by hand while it is in owner review (it overwrites report.json's issue link).
 

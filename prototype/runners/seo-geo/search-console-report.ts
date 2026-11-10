@@ -9,13 +9,15 @@ const d = (a: number, b: number | null | undefined) => (b === null || b === unde
 const pct = (x: number) => `${(100 * x).toFixed(1)}%`;
 
 export function renderSearchConsole(s: SearchConsoleSummary): string {
+  const st = s.site_totals, sp = s.previous_site_totals;
   const L = [`**Google Search Console** ${s.window.start} → ${s.window.end} vs the 28 days before (data ends 3 days back).`, "",
-    "| Market | Clicks | Impressions | CTR | Avg position | Queries | Top 10 | 11–20 | 21–50 | 51+ | Striking (8–30) |", "|---|---|---|---|---|---|---|---|---|---|---|"];
+    `Whole site (matches the Search Console UI): ${st.clicks}${d(st.clicks, sp.clicks)} clicks, ${st.impressions}${d(st.impressions, sp.impressions)} impressions, CTR ${pct(st.ctr)}, average position ${st.position ?? "–"}${sp.position ? ` (was ${sp.position})` : ""}.`, "",
+    "| Market (summed over pages) | Clicks | Impressions | CTR | Avg position | Queries | Top 10 | 11–20 | 21–50 | 51+ | Striking (8–30) |", "|---|---|---|---|---|---|---|---|---|---|---|"];
   for (const l of s.locales) {
     const t = l.totals, p = l.previous_totals, b = l.query_bands, pb = l.previous_query_bands;
     L.push(`| ${l.locale} | ${t.clicks}${d(t.clicks, p?.clicks)} | ${t.impressions}${d(t.impressions, p?.impressions)} | ${pct(t.ctr)} | ${t.position ?? "–"}${p?.position ? ` (was ${p.position})` : ""} | ${l.queries} | ${b.top10}${d(b.top10, pb?.top10)} | ${b.p11_20}${d(b.p11_20, pb?.p11_20)} | ${b.p21_50}${d(b.p21_50, pb?.p21_50)} | ${b.p51_plus}${d(b.p51_plus, pb?.p51_plus)} | ${l.striking_queries} |`);
   }
-  L.push("", "Totals come from the page view (they include anonymized queries); query counts and bands only cover queries the API names.");
+  L.push("", "Market rows add up each page's numbers, so a search that showed two of our pages counts twice; the whole-site line is the real total. Query counts and bands only cover queries the API names.");
   for (const l of s.locales) if (l.pages_no_clicks.length) L.push(`- ${l.locale} pages with impressions and no clicks: ${l.pages_no_clicks.join(", ")}`);
   if (s.indexing) for (const i of s.indexing)
     L.push(`- ${i.locale} indexing: ${i.indexed}/${i.submitted} sitemap pages indexed${i.not_indexed.length ? `; not indexed: ${i.not_indexed.map(n => `${n.path} (${n.coverage ?? "unknown"})`).join(", ")}` : ""}.`);

@@ -121,6 +121,36 @@
    "ref": "owner review 2026-11-10",
    "note": "Ableton cache: the producer page already covers it",
    "date": "2026-11-10"
+  },
+  {
+   "key": "index:https://cachedrop.io/uninstall-apps-mac/",
+   "status": "ticketed",
+   "ref": "cachedrop-website #138",
+   "date": "2026-11-10"
+  },
+  {
+   "key": "index:https://cachedrop.io/clear-system-data-mac/",
+   "status": "ticketed",
+   "ref": "cachedrop-website #138",
+   "date": "2026-11-10"
+  },
+  {
+   "key": "index:https://cachedrop.io/fr/clear-system-data-mac/",
+   "status": "ticketed",
+   "ref": "cachedrop-website #138",
+   "date": "2026-11-10"
+  },
+  {
+   "key": "index:https://cachedrop.io/pricing/",
+   "status": "ticketed",
+   "ref": "cachedrop-website #138",
+   "date": "2026-11-10"
+  },
+  {
+   "key": "index:https://cachedrop.io/fr/clear-mac-developer-caches/",
+   "status": "ticketed",
+   "ref": "cachedrop-website #138",
+   "date": "2026-11-10"
   }
  ]
 }

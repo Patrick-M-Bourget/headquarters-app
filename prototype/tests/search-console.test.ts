@@ -71,11 +71,13 @@ test("sitemap and indexing", () => {
 
 test("the summary contract rejects extra fields (e.g. query lists) and the report renders", () => {
   const base = { run_id: "r", site: "sc-domain:cachedrop.io", window: { start: "2026-10-11", end: "2026-11-07" }, previous_window: { start: "2026-09-13", end: "2026-10-10" },
+    site_totals: totals(pageRows.slice(0, 1)), previous_site_totals: totals([]),
     locales: summarize(["en-US"], pageRows, queryRows, pageRows, []), indexing: null,
     bing: { clicks: 0, impressions: 0, queries: 0, pages_with_inbound_links: 0, inbound_links: 0 }, inspection_errors: 0, cost_usd: 0, seconds: 1, finished_at: "2026-11-10T00:00:00Z" };
   const s = SearchConsoleSummary.parse(base);
   assert.equal(SearchConsoleSummary.safeParse({ ...base, striking: [{ query: "x" }] }).success, false);
   const md = renderSearchConsole(s);
   assert.match(md, /\| en-US \| 1 \(±0\) \| 53 \(±0\) \|/);
+  assert.match(md, /Whole site \(matches the Search Console UI\): 1 \(\+1\) clicks, 50 \(\+50\) impressions/);
   assert.ok(!md.includes("secret query"));
 });

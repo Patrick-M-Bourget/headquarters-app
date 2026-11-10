@@ -11,7 +11,7 @@ import { Locale } from "../../packages/data-contracts/seo-geo.ts";
 import { SearchConsoleSummary } from "../../packages/data-contracts/search.ts";
 import { bing, gsc, gscSiteUrl, gscToken } from "../../packages/search-access/index.ts";
 import { issueParams, paperclipEnabled, reportCost, reportToIssue } from "../../packages/paperclip-client/index.ts";
-import { indexing, localeOfPage, privateDetail, sitemapUrls, summarize, windows, type Inspection, type Row } from "./search-console-checks.ts";
+import { indexing, localeOfPage, privateDetail, sitemapUrls, summarize, totals, windows, type Inspection, type Row } from "./search-console-checks.ts";
 import { renderSearchConsole, renderSearchConsolePrivate } from "./search-console-report.ts";
 
 const root = new URL("../../", import.meta.url).pathname;
@@ -63,6 +63,8 @@ try {
   if (!sitemap.length) throw new Error("sitemap.xml has no <loc> entries");
   const locales = Locale.options.filter(l => sitemap.some(u => localeOfPage(u) === l)); // the site's locales follow its sitemap (de-DE appears when it ships)
 
+  const siteTotals = async (win: { start: string; end: string }) => totals(await allRows(token, { startDate: win.start, endDate: win.end }));
+  const [site_totals, previous_site_totals] = await Promise.all([siteTotals(w.current), siteTotals(w.previous)]);
   const [pageRows, queryRows, prevPageRows, prevQueryRows] = await Promise.all([
     allRows(token, { startDate: w.current.start, endDate: w.current.end, dimensions: ["page"] }),
     allRows(token, { startDate: w.current.start, endDate: w.current.end, dimensions: ["query", "page", "country"] }),
@@ -73,7 +75,7 @@ try {
   if (!process.argv.includes("--no-inspect")) for (const u of sitemap) inspections.push(await inspect(token, u)); // sequential: quota is per minute
 
   const summary = SearchConsoleSummary.parse({
-    run_id: runId, site: SITE, window: w.current, previous_window: w.previous, locales: summarize(locales, pageRows, queryRows, prevPageRows, prevQueryRows),
+    run_id: runId, site: SITE, window: w.current, previous_window: w.previous, site_totals, previous_site_totals, locales: summarize(locales, pageRows, queryRows, prevPageRows, prevQueryRows),
     indexing: inspections.length ? indexing(locales, inspections) : null, bing: await bingFacts(w.current.start, w.current.end),
     inspection_errors: inspections.filter(i => i.error).length, cost_usd: 0, seconds: Math.round((Date.now() - t0) / 1000), finished_at: new Date().toISOString(),
   });

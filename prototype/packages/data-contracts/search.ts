@@ -10,6 +10,7 @@ const Bands = z.object({ top10: z.number().int(), p11_20: z.number().int(), p21_
 const Path = z.string().startsWith("/");
 
 export const SearchConsoleLocale = z.object({
+  // totals are summed over pages: a search that showed two of our pages counts twice (site_totals is the real total)
   locale: Locale, totals: Totals, previous_totals: Totals.nullable(), queries: z.number().int().nonnegative(), query_bands: Bands,
   previous_query_bands: Bands.nullable(), striking_queries: z.number().int().nonnegative(), pages_with_impressions: z.number().int().nonnegative(),
   pages_no_clicks: z.array(Path),
@@ -17,6 +18,7 @@ export const SearchConsoleLocale = z.object({
 
 export const SearchConsoleSummary = z.object({
   run_id: z.string(), site: z.string(), window: Window, previous_window: Window,
+  site_totals: Totals, previous_site_totals: Totals, // whole property, no dimension: matches the Search Console UI
   locales: z.array(SearchConsoleLocale),
   indexing: z.array(z.object({ locale: Locale, submitted: z.number().int(), indexed: z.number().int(),
     not_indexed: z.array(z.object({ path: Path, coverage: z.string().nullable() }).strict()) }).strict()).nullable(),

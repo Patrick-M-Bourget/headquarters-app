@@ -1,0 +1,44 @@
+{
+  "run_id": "local-80964d52",
+  "locale": "de-DE",
+  "query_set_version": 1,
+  "gl": "de",
+  "hl": "de",
+  "keywords": 30,
+  "failed": 0,
+  "own": {
+    "ranked": 0,
+    "top3": 0,
+    "positions": {}
+  },
+  "brands_in_top10": {
+    "cleanmymac": 15,
+    "mole": 6,
+    "ccleaner": 5,
+    "app-cleaner-uninstaller": 3,
+    "buhocleaner": 3,
+    "daisydisk": 1
+  },
+  "domains_in_top10": {
+    "reddit.com": 27,
+    "youtube.com": 27,
+    "macpaw.com": 14,
+    "support.apple.com": 10,
+    "macwelt.de": 9,
+    "macuser.de": 9,
+    "cleanmymac.com": 7,
+    "apps.apple.com": 7,
+    "mole.fit": 6,
+    "ccleaner.com": 5,
+    "chip.de": 4,
+    "avast.com": 4,
+    "communities.apple.com": 4,
+    "setapp.com": 3,
+    "nektony.com": 3
+  },
+  "serper_credits": 30,
+  "cost_usd": 0,
+  "seconds": 35,
+  "delta": null,
+  "finished_at": "2026-11-10T13:09:50.321Z"
+}

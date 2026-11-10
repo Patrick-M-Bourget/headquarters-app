@@ -1,0 +1,130 @@
+{
+  "run_id": "local-39d6c728-69a7-4f1c-a99e-02fd4d422120",
+  "locale": "de-DE",
+  "query_set_version": 1,
+  "market_signals": {
+    "claude_country": "DE",
+    "gemini": "question language only"
+  },
+  "engines": [
+    "claude",
+    "gemini"
+  ],
+  "answers": 50,
+  "failed": 0,
+  "cachedrop": {
+    "mentioned": 0,
+    "recommended": 0,
+    "top_pick": 0,
+    "cited": 1,
+    "of": 50
+  },
+  "by_engine": {
+    "claude": {
+      "n": 25,
+      "mentioned": 0,
+      "recommended": 0,
+      "cited": 0
+    },
+    "gemini": {
+      "n": 25,
+      "mentioned": 0,
+      "recommended": 0,
+      "cited": 1
+    }
+  },
+  "by_audience": {
+    "general": {
+      "n": 14,
+      "mentioned": 0,
+      "recommended": 0,
+      "cited": 0
+    },
+    "producers": {
+      "n": 12,
+      "mentioned": 0,
+      "recommended": 0,
+      "cited": 1
+    },
+    "developers": {
+      "n": 12,
+      "mentioned": 0,
+      "recommended": 0,
+      "cited": 0
+    },
+    "video_editors": {
+      "n": 12,
+      "mentioned": 0,
+      "recommended": 0,
+      "cited": 0
+    }
+  },
+  "competitors_top_pick": {
+    "appcleaner": 4,
+    "cleanmymac": 3,
+    "daisydisk": 3,
+    "devcleaner": 3,
+    "grandperspective": 2,
+    "omnidisksweeper": 2,
+    "pearcleaner": 1,
+    "audio-plugin-uninstaller": 1,
+    "npkill": 1,
+    "cache-kid": 1,
+    "plugin-station": 1,
+    "cleardisk": 1,
+    "native-access": 1,
+    "onyx": 1
+  },
+  "competitors_recommended": {
+    "grandperspective": 14,
+    "appcleaner": 13,
+    "daisydisk": 13,
+    "omnidisksweeper": 12,
+    "cleanmymac": 9,
+    "onyx": 7,
+    "devcleaner": 5,
+    "pearcleaner": 4,
+    "native-access": 4,
+    "npkill": 3,
+    "mole": 2,
+    "audio-plugin-uninstaller": 2,
+    "waves-central": 2,
+    "splice": 2,
+    "arturia-software-center": 2,
+    "plugin-station": 2,
+    "plugoff": 2,
+    "owlplug": 2,
+    "ncdu": 2,
+    "diskcleaner": 1,
+    "sensei": 1,
+    "izotope-product-portal": 1,
+    "easyfind": 1,
+    "find-any-file": 1,
+    "cache-kid": 1,
+    "gemini-2": 1,
+    "final-cut-library-manager": 1,
+    "vst-manager": 1,
+    "pluginize": 1,
+    "unplugged": 1,
+    "devcleanup": 1,
+    "spacewise": 1,
+    "cleardisk": 1,
+    "appdelete": 1,
+    "steinberg-library-manager": 1,
+    "spitfire-audio-app": 1,
+    "toontrack-product-manager": 1,
+    "eastwest-installation-center": 1,
+    "disk-inventory-x": 1,
+    "space-radar": 1,
+    "squirreldisk": 1
+  },
+  "unverified_judgements": [
+    "q14/gemini: quote not in answer: Audio Plugin Uninstaller"
+  ],
+  "cost_usd": 0.8343,
+  "searches": 34,
+  "seconds": 286,
+  "errors": [],
+  "delta": null,
+  "finished_at": "2026-11-10T13:13:56.820Z"
+}

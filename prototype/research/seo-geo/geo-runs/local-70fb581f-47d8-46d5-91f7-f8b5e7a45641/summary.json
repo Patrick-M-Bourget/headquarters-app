@@ -1,0 +1,151 @@
+{
+  "run_id": "local-70fb581f-47d8-46d5-91f7-f8b5e7a45641",
+  "locale": "pt-BR",
+  "query_set_version": 1,
+  "market_signals": {
+    "claude_country": "BR",
+    "gemini": "question language only"
+  },
+  "engines": [
+    "claude",
+    "gemini"
+  ],
+  "answers": 50,
+  "failed": 0,
+  "cachedrop": {
+    "mentioned": 0,
+    "recommended": 0,
+    "top_pick": 0,
+    "cited": 0,
+    "of": 50
+  },
+  "by_engine": {
+    "claude": {
+      "n": 25,
+      "mentioned": 0,
+      "recommended": 0,
+      "cited": 0
+    },
+    "gemini": {
+      "n": 25,
+      "mentioned": 0,
+      "recommended": 0,
+      "cited": 0
+    }
+  },
+  "by_audience": {
+    "general": {
+      "n": 14,
+      "mentioned": 0,
+      "recommended": 0,
+      "cited": 0
+    },
+    "producers": {
+      "n": 12,
+      "mentioned": 0,
+      "recommended": 0,
+      "cited": 0
+    },
+    "developers": {
+      "n": 12,
+      "mentioned": 0,
+      "recommended": 0,
+      "cited": 0
+    },
+    "video_editors": {
+      "n": 12,
+      "mentioned": 0,
+      "recommended": 0,
+      "cited": 0
+    }
+  },
+  "competitors_top_pick": {
+    "devcleaner": 7,
+    "cleanmymac": 5,
+    "daisydisk": 5,
+    "appcleaner": 5,
+    "npkill": 3,
+    "cachecut": 2,
+    "audio-plugin-uninstaller": 2,
+    "pearcleaner": 2,
+    "find-any-file-faf": 1,
+    "grandperspective": 1,
+    "mole": 1
+  },
+  "competitors_recommended": {
+    "cleanmymac": 15,
+    "daisydisk": 14,
+    "appcleaner": 13,
+    "grandperspective": 11,
+    "omnidisksweeper": 11,
+    "pearcleaner": 8,
+    "devcleaner": 7,
+    "onyx": 6,
+    "npkill": 6,
+    "app-cleaner-uninstaller": 3,
+    "ncdu": 3,
+    "mole": 2,
+    "sensei": 2,
+    "native-access": 2,
+    "waves-central": 2,
+    "izotope-product-portal": 2,
+    "cachecut": 2,
+    "gdu": 2,
+    "appzapper": 2,
+    "audio-plugin-uninstaller": 2,
+    "puremac": 2,
+    "shiny": 1,
+    "xprotect": 1,
+    "malwarebytes": 1,
+    "devcleanr": 1,
+    "xsoap": 1,
+    "devpowercleanup": 1,
+    "raycast": 1,
+    "klarity-disk": 1,
+    "gemini-2": 1,
+    "dupeguru": 1,
+    "arturia-software-center": 1,
+    "spitfire-audio-app": 1,
+    "find-any-file-faf": 1,
+    "easyfind": 1,
+    "cache-kid": 1,
+    "diskcleankit-creative-apps-cleaner": 1,
+    "deepcleanmac": 1,
+    "buhocleaner": 1,
+    "final-cut-library-manager": 1,
+    "xcode-clr": 1,
+    "disk-space-analyzer-nektony": 1,
+    "opendisk": 1,
+    "pocodisk": 1,
+    "baobab-disk-usage-analyzer": 1,
+    "cleardisk": 1,
+    "codecleaner": 1,
+    "devclean": 1,
+    "shedi": 1,
+    "cachecleaner": 1,
+    "devsweeper": 1,
+    "clean-my-mac": 1,
+    "dua-cli": 1,
+    "cargo-sweep": 1,
+    "dust": 1,
+    "plugoff": 1,
+    "plugin-station": 1,
+    "vst-manager": 1,
+    "softube-central": 1,
+    "ua-connect": 1,
+    "pluginfo": 1,
+    "devcleanup": 1,
+    "cleanmydev": 1,
+    "macoscleaner": 1,
+    "trashme-3": 1,
+    "uninstall-davinci-resolve": 1,
+    "adobe-creative-cloud-cleaner-tool": 1
+  },
+  "unverified_judgements": [],
+  "cost_usd": 0.8496,
+  "searches": 30,
+  "seconds": 298,
+  "errors": [],
+  "delta": null,
+  "finished_at": "2026-11-10T13:23:45.438Z"
+}

@@ -1,0 +1,46 @@
+{
+  "run_id": "local-719a91fa",
+  "locale": "es-ES",
+  "query_set_version": 1,
+  "gl": "es",
+  "hl": "es",
+  "keywords": 28,
+  "failed": 0,
+  "own": {
+    "ranked": 0,
+    "top3": 0,
+    "positions": {}
+  },
+  "brands_in_top10": {
+    "cleanmymac": 9,
+    "mole": 6,
+    "app-cleaner-uninstaller": 2,
+    "buhocleaner": 2,
+    "ccleaner": 1,
+    "audio-plugin-uninstaller": 1,
+    "daisydisk": 1,
+    "appcleaner": 1
+  },
+  "domains_in_top10": {
+    "youtube.com": 27,
+    "reddit.com": 26,
+    "support.apple.com": 11,
+    "macpaw.com": 9,
+    "mole.fit": 6,
+    "hispasonic.com": 6,
+    "cleanmymac.com": 5,
+    "facebook.com": 5,
+    "apps.apple.com": 4,
+    "mackeeper.com": 4,
+    "helpx.adobe.com": 4,
+    "avast.com": 3,
+    "medium.com": 3,
+    "tiktok.com": 3,
+    "bitdefender.es": 3
+  },
+  "serper_credits": 28,
+  "cost_usd": 0,
+  "seconds": 27,
+  "delta": null,
+  "finished_at": "2026-11-10T13:10:17.892Z"
+}

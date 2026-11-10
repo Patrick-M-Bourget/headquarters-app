@@ -1,0 +1,42 @@
+{
+  "run_id": "local-a9dbb22b",
+  "locale": "ja-JP",
+  "query_set_version": 1,
+  "gl": "jp",
+  "hl": "ja",
+  "keywords": 49,
+  "failed": 0,
+  "own": {
+    "ranked": 0,
+    "top3": 0,
+    "positions": {}
+  },
+  "brands_in_top10": {
+    "cleanmymac": 14,
+    "mole": 9,
+    "ccleaner": 2,
+    "buhocleaner": 1
+  },
+  "domains_in_top10": {
+    "note.com": 35,
+    "reddit.com": 33,
+    "youtube.com": 33,
+    "detail.chiebukuro.yahoo.co.jp": 23,
+    "zenn.dev": 14,
+    "qiita.com": 14,
+    "macpaw.com": 13,
+    "sensei.biz": 9,
+    "mole.fit": 9,
+    "discussionsjapan.apple.com": 9,
+    "apps.apple.com": 8,
+    "support.apple.com": 6,
+    "techcommunity.microsoft.com": 6,
+    "kitamura.jp": 6,
+    "community.adobe.com": 5
+  },
+  "serper_credits": 49,
+  "cost_usd": 0,
+  "seconds": 46,
+  "delta": null,
+  "finished_at": "2026-11-10T13:12:02.404Z"
+}

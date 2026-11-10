@@ -1,0 +1,124 @@
+{
+  "run_id": "local-5673424f-0d1a-4547-9bd6-f1a6e59ce43a",
+  "locale": "ja-JP",
+  "query_set_version": 1,
+  "market_signals": {
+    "claude_country": "JP",
+    "gemini": "question language only"
+  },
+  "engines": [
+    "claude",
+    "gemini"
+  ],
+  "answers": 50,
+  "failed": 0,
+  "cachedrop": {
+    "mentioned": 1,
+    "recommended": 0,
+    "top_pick": 0,
+    "cited": 0,
+    "of": 50
+  },
+  "by_engine": {
+    "claude": {
+      "n": 25,
+      "mentioned": 1,
+      "recommended": 0,
+      "cited": 0
+    },
+    "gemini": {
+      "n": 25,
+      "mentioned": 0,
+      "recommended": 0,
+      "cited": 0
+    }
+  },
+  "by_audience": {
+    "general": {
+      "n": 14,
+      "mentioned": 0,
+      "recommended": 0,
+      "cited": 0
+    },
+    "producers": {
+      "n": 12,
+      "mentioned": 1,
+      "recommended": 0,
+      "cited": 0
+    },
+    "developers": {
+      "n": 12,
+      "mentioned": 0,
+      "recommended": 0,
+      "cited": 0
+    },
+    "video_editors": {
+      "n": 12,
+      "mentioned": 0,
+      "recommended": 0,
+      "cited": 0
+    }
+  },
+  "competitors_top_pick": {
+    "appcleaner": 7,
+    "daisydisk": 5,
+    "cleanmymac": 3,
+    "npkill": 2,
+    "grandperspective": 1,
+    "omnidisksweeper": 1,
+    "mole": 1,
+    "mac-cleanup-sh-mac-cleanup": 1,
+    "fcp-cleaner": 1,
+    "arctic": 1
+  },
+  "competitors_recommended": {
+    "appcleaner": 16,
+    "cleanmymac": 14,
+    "daisydisk": 12,
+    "omnidisksweeper": 10,
+    "onyx": 8,
+    "grandperspective": 8,
+    "native-access": 5,
+    "npkill": 5,
+    "buhocleaner": 4,
+    "waves-central": 3,
+    "pearcleaner": 3,
+    "devcleaner": 3,
+    "mole": 2,
+    "puremac": 2,
+    "arturia-software-center": 2,
+    "sensei": 1,
+    "splice": 1,
+    "appdelete": 1,
+    "pacifist": 1,
+    "product-portal": 1,
+    "kondo": 1,
+    "docker-desktop-reclaim-space": 1,
+    "justincormack-nsenter1": 1,
+    "ccleaner": 1,
+    "cleanmydev": 1,
+    "devcleanup": 1,
+    "cachecleaner": 1,
+    "mac-cleanup-sh-mac-cleanup": 1,
+    "cargo-cache": 1,
+    "spitfire-audio": 1,
+    "toontrack-product-manager": 1,
+    "xo": 1,
+    "adsr-sample-manager": 1,
+    "algonaut-atlas": 1,
+    "cosmos": 1,
+    "fcp-cleaner": 1,
+    "cachecut": 1,
+    "deepcleanmac": 1,
+    "arctic": 1,
+    "fcp-library-cleaner": 1,
+    "squirreldisk": 1
+  },
+  "unverified_judgements": [],
+  "cost_usd": 0.7969,
+  "searches": 31,
+  "seconds": 273,
+  "errors": [],
+  "delta": null,
+  "finished_at": "2026-11-10T13:28:19.288Z"
+}

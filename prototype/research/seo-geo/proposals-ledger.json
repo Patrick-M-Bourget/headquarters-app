@@ -1,0 +1,126 @@
+{
+ "note": "Proposal keys the owner already decided. weekly-report.ts never proposes these again. Claude adds an entry when filing or dropping a proposal.",
+ "entries": [
+  {
+   "key": "opening:https://cachedrop.io/",
+   "status": "decision",
+   "ref": "website Decision 51",
+   "note": "homepage hero wording is fixed by the decision; needs an amendment",
+   "date": "2026-11-10"
+  },
+  {
+   "key": "opening:https://cachedrop.io/pricing/",
+   "status": "ticketed",
+   "ref": "cachedrop-website #131",
+   "date": "2026-11-10"
+  },
+  {
+   "key": "opening:https://cachedrop.io/clear-mac-developer-caches/",
+   "status": "ticketed",
+   "ref": "cachedrop-website #131",
+   "date": "2026-11-10"
+  },
+  {
+   "key": "opening:https://cachedrop.io/clear-adobe-media-cache-mac/",
+   "status": "ticketed",
+   "ref": "cachedrop-website #131",
+   "date": "2026-11-10"
+  },
+  {
+   "key": "opening:https://cachedrop.io/uninstall-audio-plugins-mac/",
+   "status": "ticketed",
+   "ref": "cachedrop-website #131",
+   "date": "2026-11-10"
+  },
+  {
+   "key": "opening:https://cachedrop.io/clear-system-data-mac/",
+   "status": "ticketed",
+   "ref": "cachedrop-website #131",
+   "date": "2026-11-10"
+  },
+  {
+   "key": "opening:https://cachedrop.io/uninstall-apps-mac/",
+   "status": "ticketed",
+   "ref": "cachedrop-website #131",
+   "date": "2026-11-10"
+  },
+  {
+   "key": "opening:https://cachedrop.io/cleanmymac-alternative/",
+   "status": "decision",
+   "ref": "website Decision 54",
+   "note": "compare page hero set by the decision",
+   "date": "2026-11-10"
+  },
+  {
+   "key": "opening:https://cachedrop.io/fr/",
+   "status": "decision",
+   "ref": "website Decision 51",
+   "note": "homepage hero wording is fixed by the decision; needs an amendment",
+   "date": "2026-11-10"
+  },
+  {
+   "key": "opening:https://cachedrop.io/fr/pricing/",
+   "status": "ticketed",
+   "ref": "cachedrop-website #131",
+   "date": "2026-11-10"
+  },
+  {
+   "key": "opening:https://cachedrop.io/fr/clear-mac-developer-caches/",
+   "status": "ticketed",
+   "ref": "cachedrop-website #131",
+   "date": "2026-11-10"
+  },
+  {
+   "key": "opening:https://cachedrop.io/fr/clear-adobe-media-cache-mac/",
+   "status": "ticketed",
+   "ref": "cachedrop-website #131",
+   "date": "2026-11-10"
+  },
+  {
+   "key": "opening:https://cachedrop.io/fr/uninstall-audio-plugins-mac/",
+   "status": "ticketed",
+   "ref": "cachedrop-website #131",
+   "date": "2026-11-10"
+  },
+  {
+   "key": "opening:https://cachedrop.io/fr/clear-system-data-mac/",
+   "status": "ticketed",
+   "ref": "cachedrop-website #131",
+   "date": "2026-11-10"
+  },
+  {
+   "key": "opening:https://cachedrop.io/fr/uninstall-apps-mac/",
+   "status": "ticketed",
+   "ref": "cachedrop-website #131",
+   "date": "2026-11-10"
+  },
+  {
+   "key": "opening:https://cachedrop.io/fr/cleanmymac-alternative/",
+   "status": "decision",
+   "ref": "website Decision 54",
+   "note": "compare page hero set by the decision",
+   "date": "2026-11-10"
+  },
+  {
+   "key": "page:en-US:q05",
+   "status": "ticketed",
+   "ref": "cachedrop-website #133",
+   "note": "/free-up-space-mac/ EN+FR",
+   "date": "2026-11-10"
+  },
+  {
+   "key": "page:en-US:q10",
+   "status": "dropped",
+   "ref": "owner review 2026-11-10",
+   "note": "Ableton cache: the producer page already covers it",
+   "date": "2026-11-10"
+  },
+  {
+   "key": "page:fr-FR:q14",
+   "status": "dropped",
+   "ref": "owner review 2026-11-10",
+   "note": "Ableton cache: the producer page already covers it",
+   "date": "2026-11-10"
+  }
+ ]
+}

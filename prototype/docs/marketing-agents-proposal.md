@@ -1,8 +1,24 @@
-# Proposal: CacheDrop marketing and funnel agents (DRAFT, needs owner decisions)
+# Proposal: CacheDrop marketing and funnel agents (wave 1 BUILT 2026-11-10)
 
 Owner request (2026-11-09, late): build a full suite of marketing and funnel optimization agents ("SEO content creator", etc.) for cachedrop.io **before** testing scheduling (step 6).
 
-Status: nothing is built. Creating agents with write access, data access and spend is an architecture decision (L3) plus data access (L2). The questions at the bottom need answers first.
+Status: the owner approved wave 1 with Claude's recommendations (2026-11-09): drafts only → owner approval in Paperclip → Claude files cachedrop-website tickets; funnel keys later; spend from the API budget.
+
+## Wave 1 as built (2026-11-10)
+
+All four are Mastra/code pipelines in `runners/marketing/`, registered in Paperclip as `process` agents (key read from `prototype/.env` at run time, monthly caps, `unpricedUsagePolicy: allow`). Contracts: `packages/data-contracts/marketing.ts`.
+
+| Agent | Runner | Gate | Paperclip probation |
+|---|---|---|---|
+| Claims & brand reviewer | `claims-review.ts` + `claims-rules.ts`; facts in `research/marketing/product-facts.json` | Eval `eval/claims-agreement.ts`: 48 planted-violation cases written by an independent agent; dev and test 100% recall, 100% clean pass | HEA-12 done, cost recorded |
+| SEO content creator | `content-writer.ts` (briefs in code from GEO/keyword/on-page runs, Sonnet draft, claims review + one retry, exact fixes applied in code) | Every draft passes the reviewer; paths and menus listed in `verify` for checking before filing | HEA-13 done (en-US q05) |
+| On-page optimizer | `onpage-fixes.ts` (code fixes: lang, JSON-LD; Sonnet: title, meta, answer-first opening from the live page text) | Length limits in code; every text through the reviewer; decision-bound fields marked | run from the CLI on both baselines |
+| Funnel analyst | `funnel.ts` (aggregate CSV, see `docs/funnel-export.md`; numbers in code; Sonnet summary + one experiment, numbers checked against the table) | Loader refuses personal columns; data git-ignored | HEA-14 done (synthetic numbers) |
+
+Changes from the proposal:
+- **Unshipped features don't block.** Website Decision 51 says copy leads the product, so a claim ahead of the shipped app is an `ahead_of_app` note for the owner (a mac-cleaner ticket), not a block.
+- **The content creator is a pipeline, not a Claude Code agent.** It needs no web or shell access, and a new locked-down `claude_local` workspace would be a new permission surface (L3). Revisit if a writer needs live research.
+- French: the website glossary targets Quebec while the market is now France; Quebec-only terms are `note`s on fr-FR pages until the owner settles it (with #130).
 
 ## What the agents work from
 

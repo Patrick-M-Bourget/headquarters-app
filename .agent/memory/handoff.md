@@ -1,4 +1,12 @@
-# Hand-off: 2026-11-09, end of session 3 (session 2 notes below still apply)
+# Hand-off: 2026-11-10, end of session 4 (session 3 and 2 notes below still apply)
+
+## Session 4 update: read first
+- **Marketing wave 1 BUILT** (`prototype/docs/marketing-agents-proposal.md` "Wave 1 as built"): claims reviewer, content writer, on-page optimizer, funnel analyst in `prototype/runners/marketing/`, all pipelines, all in Paperclip as process agents (Claims Reviewer 5cf09692, Content Writer 4c9f196d, On-page Optimizer 34086c94, Funnel Analyst 7b25ede5). Probation HEA-12/13/14 done. New agents start paused: POST /api/agents/:id/resume.
+- Claims eval: `node --env-file=.env eval/claims-agreement.ts dev|test` (re-run both after ANY change to the reviewer's instructions or `research/marketing/product-facts.json`).
+- Owner review waiting: on-page fixes `research/marketing/onpage-fixes/<run>/fixes.md` (en-US 16, fr-FR 20 proposed); drafts `research/marketing/drafts/` (en-US q05, q10; fr-FR q14). Each draft's `verify` list must be checked against the apps before a ticket is filed. Approved items → Claude files cachedrop-website tickets.
+- Owner decisions: France vs Quebec wording in the French glossary (reviewer notes Quebec terms on fr-FR); funnel CSV export (docs/funnel-export.md) or read-only keys; decision-bound fields (pricing meta D47, compare title D54).
+- Next: owner review of wave 1 output → tickets; then de-DE/es-ES/pt-BR/ja-JP (fix ASCII slug for ja-JP first); then step 6 scheduling (add the marketing agents to the routine).
+
 
 ## Session 3 update: read first
 - 5b steps 1–3 DONE for **fr-FR** (France replaced fr-CA, owner decision). fr-FR v1 frozen; GEO baseline 0/50; French judge eval 93.3% passed; keywords 0/41. See journal session 3.

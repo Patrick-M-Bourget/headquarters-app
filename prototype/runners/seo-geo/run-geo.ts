@@ -1,17 +1,19 @@
 // GEO tracker: asks each engine every question in the frozen query set and labels CacheDrop's visibility.
-// Usage: node runners/seo-geo/run-geo.ts [--set research/seo-geo/query-sets/v1.json] [--engines claude,gemini] [--only q01,q02]
+// Usage: node runners/seo-geo/run-geo.ts [--locale en-US] [--version 1] [--set <path>] [--engines claude,gemini] [--only q01,q02]
 import { mkdirSync, readFileSync, readdirSync, writeFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
 import { randomUUID } from "node:crypto";
-import { EngineAnswer, Mention, QuerySet } from "../../packages/data-contracts/seo-geo.ts";
+import { EngineAnswer, Locale, Mention, QuerySet } from "../../packages/data-contracts/seo-geo.ts";
+import { querySetPath } from "../../packages/data-contracts/markets.ts";
 import { findIssue, paperclipEnabled, reportCost, reportToIssue } from "../../packages/paperclip-client/index.ts";
 import { askClaude, askGemini, type EngineResult } from "./engines.ts";
 import { labelAnswer, JUDGE_MODEL } from "./labels.ts";
 
 const arg = (n: string) => { const i = process.argv.indexOf(n); return i > 0 ? process.argv[i + 1] : undefined; };
 const root = new URL("../../", import.meta.url).pathname;
-const set = QuerySet.parse(JSON.parse(readFileSync(join(root, arg("--set") ?? "research/seo-geo/query-sets/v1.json"), "utf8")));
+const set = QuerySet.parse(JSON.parse(readFileSync(join(root, arg("--set") ?? querySetPath(Locale.parse(arg("--locale") ?? "en-US"), Number(arg("--version") ?? 1))), "utf8")));
 if (!set.approved_by) throw new Error("query set is a draft; only approved (frozen) sets can be tracked");
+const sameLocale = (s: { locale?: string }) => (s.locale ?? "en-US") === set.locale; // summaries before 5b have no locale: en-US
 const engines = (arg("--engines") ?? "claude,gemini").split(",") as ("claude" | "gemini")[];
 const only = arg("--only")?.split(",");
 const queries = set.queries.filter(q => !only || only.includes(q.id));
@@ -39,7 +41,7 @@ try {
     const prior = saved.find(a => a.query_id === q.id && a.engine === engine);
     const r: EngineResult = prior ? { answer_text: prior.answer_text, cited_urls: prior.cited_urls, model: prior.model, cost_usd: 0, input_tokens: 0, output_tokens: 0, searches: 0, error: prior.error }
       : engine === "claude" ? await askClaude(q.text) : await askGemini(q.text);
-    const answer = EngineAnswer.parse({ query_id: q.id, query_set_version: set.version, engine, model: r.model, asked_at: prior?.asked_at ?? new Date().toISOString(), answer_text: r.answer_text, cited_urls: r.cited_urls, error: r.error });
+    const answer = EngineAnswer.parse({ locale: set.locale, query_id: q.id, query_set_version: set.version, engine, model: r.model, asked_at: prior?.asked_at ?? new Date().toISOString(), answer_text: r.answer_text, cited_urls: r.cited_urls, error: r.error });
     const j = r.error ? { labelled: [], usage: { input_tokens: 0, output_tokens: 0 }, unverified: [] as string[] } : await labelAnswer(r.answer_text, r.cited_urls);
     const rows = j.labelled.some(l => l.brand === "cachedrop") ? j.labelled
       // CacheDrop always gets a row, so "not mentioned" is recorded explicitly.
@@ -70,7 +72,7 @@ try {
   for (const m of mentions) if (m.brand !== "cachedrop" && m.recommended) competitorCounts[m.brand] = (competitorCounts[m.brand] ?? 0) + 1;
   const okAnswers = answers.length - errors.length;
   const summary = {
-    run_id: runId, query_set_version: set.version, engines, answers: answers.length, failed: errors.length,
+    run_id: runId, locale: set.locale, query_set_version: set.version, engines, answers: answers.length, failed: errors.length,
     cachedrop: { mentioned: own.filter(m => m.mentioned).length, recommended: own.filter(m => m.recommended).length, top_pick: own.filter(m => m.stance === "top_pick").length, cited: own.filter(m => m.cited_own_site).length, of: okAnswers },
     by_engine: by("engine"), by_audience: by("audience"),
     competitors_top_pick: Object.fromEntries(Object.entries(topPicks).sort((a, b) => b[1] - a[1])),
@@ -81,7 +83,7 @@ try {
   // Diff against the previous run on the same query set version.
   const runsDir = join(root, "research/seo-geo/geo-runs");
   const prev = existsSync(runsDir) ? readdirSync(runsDir).filter(d => d !== runId && !d.startsWith("relabel-") && existsSync(join(runsDir, d, "summary.json")))
-    .map(d => JSON.parse(readFileSync(join(runsDir, d, "summary.json"), "utf8"))).filter(s => s.query_set_version === set.version && s.answers === summary.answers && s.failed < s.answers / 5)
+    .map(d => JSON.parse(readFileSync(join(runsDir, d, "summary.json"), "utf8"))).filter(s => sameLocale(s) && s.query_set_version === set.version && s.answers === summary.answers && s.failed < s.answers / 5)
     .sort((a, b) => (a.finished_at < b.finished_at ? 1 : -1))[0] : undefined;
   const delta = prev ? { previous_run: prev.run_id, mentioned: summary.cachedrop.mentioned - prev.cachedrop.mentioned, recommended: summary.cachedrop.recommended - prev.cachedrop.recommended, cited: summary.cachedrop.cited - prev.cachedrop.cited } : null;
 
@@ -91,7 +93,7 @@ try {
   writeFileSync(join(outDir, "summary.json"), JSON.stringify({ ...summary, delta, finished_at: new Date().toISOString() }, null, 2) + "\n");
   const pct = (a: number, b: number) => (b ? `${Math.round((100 * a) / b)}%` : "n/a");
   const text = [
-    `GEO run ${runId} (query set v${set.version}, ${engines.join(" + ")}): CacheDrop recommended in ${summary.cachedrop.recommended}/${okAnswers} answers (${pct(summary.cachedrop.recommended, okAnswers)}), mentioned in ${summary.cachedrop.mentioned}, cachedrop.io cited in ${summary.cachedrop.cited}.`,
+    `GEO run ${runId} (${set.locale} query set v${set.version}, ${engines.join(" + ")}): CacheDrop recommended in ${summary.cachedrop.recommended}/${okAnswers} answers (${pct(summary.cachedrop.recommended, okAnswers)}), mentioned in ${summary.cachedrop.mentioned}, cachedrop.io cited in ${summary.cachedrop.cited}.`,
     delta ? `Since ${delta.previous_run}: recommended ${delta.recommended >= 0 ? "+" : ""}${delta.recommended}, mentioned ${delta.mentioned >= 0 ? "+" : ""}${delta.mentioned}, cited ${delta.cited >= 0 ? "+" : ""}${delta.cited}.` : "No previous run on this query set.",
     `Top picks: ${Object.entries(summary.competitors_top_pick).slice(0, 5).map(([b, n]) => `${b} ${n}`).join(", ") || "none"}. Most-suggested competitors: ${Object.entries(summary.competitors_recommended).slice(0, 5).map(([b, n]) => `${b} ${n}`).join(", ") || "none"}.`,
     `${summary.searches} searches, $${summary.cost_usd}, ${summary.seconds}s. ${errors.length} failed answers. Output: prototype/research/seo-geo/geo-runs/${runId}/`,

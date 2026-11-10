@@ -27,11 +27,11 @@ This is the second workload on the HeadQuarters stack, and Paperclip's probation
 
 | # | Decision |
 |---|---|
-| Q19 | Locales: **en-US** and **fr-CA** (the site's two languages; its French pages are `lang="fr-CA"`), plus **de-DE, es-ES, pt-BR, ja-JP** for GEO and keywords only (no site pages: demand and competitor discovery). One market per language. |
+| Q19 | Locales: **en-US** and **fr-FR** (the site's two languages; owner 2026-11-09: France, not Quebec, is the French target market because it is larger. The site still tags `/fr/` as `fr-CA`: cachedrop-website #130), plus **de-DE, es-ES, pt-BR, ja-JP** for GEO and keywords only (no site pages: demand and competitor discovery). One market per language. |
 | Q20 | Query sets are **generated natively** per locale (not translated from English), so they are not comparable question-for-question across languages. Each is frozen and versioned on its own, approved by the owner in Paperclip review. The existing English v1 becomes the en-US set. |
-| Q21 | **Blind eval per language** before its results count, same gates as English: GEO judge ≥ 90% (about 15 answers), and for fr-CA the on-page answer check ≥ 90% answered-vs-no (about 16 openings). About $0.30 each. |
-| Q22 | Cadence: **en-US and fr-CA weekly; de-DE, es-ES, pt-BR, ja-JP monthly**. About $2.70/week average GEO cost and about 120 Serper credits/week (free tier lasts about 20 weeks; the paid tier is cash and needs the owner). |
-| Q23 | On-page covers fr-CA: the `/fr/` pages mapped to fr-CA questions, French competitors searched in Canada. New code checks on every page: `hreflang` pairs (each page lists itself and its translation, plus x-default) and `<html lang>`. |
+| Q21 | **Blind eval per language** before its results count, same gates as English: GEO judge ≥ 90% (about 15 answers), and for fr-FR the on-page answer check ≥ 90% answered-vs-no (about 16 openings). About $0.30 each. |
+| Q22 | Cadence: **en-US and fr-FR weekly; de-DE, es-ES, pt-BR, ja-JP monthly**. About $2.70/week average GEO cost and about 120 Serper credits/week (free tier lasts about 20 weeks; the paid tier is cash and needs the owner). |
+| Q23 | On-page covers fr-FR: the `/fr/` pages mapped to fr-FR questions, French competitors searched in France. New code checks on every page: `hreflang` pairs (each page lists itself and its translation, plus x-default) and `<html lang>`. |
 | Q24 | Market signals are passed to every search: Claude web search `user_location` country, Gemini language/region, Tavily country, Serper `gl`/`hl`. |
 
 Step 4 eval result (2026-11-09): the on-page answer check agrees with blind labels 95% (dev) / 100% (test) on answered-vs-no, but only 90% / 83% on exact yes/partial/no (the judge is stricter on "yes"). So "no" is a confirmed gap and "partial" is a "needs check" finding with the judge's quote and reason (eval/onpage-agreement.ts).
@@ -44,10 +44,10 @@ Step 4 eval result (2026-11-09): the on-page answer check agrees with blind labe
 4. On-page auditor (code checks first, then the model check).
 5. Keyword tracker (after the API pick).
 5b. Multi-language (Q19–Q24), before any scheduling:
-   1. Contracts: `locale` on QuerySet (en-US for v1) and on run summaries; locale → engine/search parameters in one place. L2: owner approves the contract diff.
-   2. Generator `--locale`: native fr-CA set first, owner review; then de-DE, es-ES, pt-BR, ja-JP.
-   3. GEO tracker per locale with market signals; blind eval per language (fr-CA first).
-   4. On-page: fr-CA mapping, hreflang and lang checks, French answer-check eval.
+   1. Contracts: `locale` on QuerySet (en-US for v1) and on run summaries; locale → engine/search parameters in one place. L2: owner approves the contract diff. DONE 2026-11-09 (`packages/data-contracts/markets.ts`; Gemini parameters still unverified).
+   2. Generator `--locale`: native fr-FR set first, owner review; then de-DE, es-ES, pt-BR, ja-JP.
+   3. GEO tracker per locale with market signals; blind eval per language (fr-FR first).
+   4. On-page: fr-FR mapping, hreflang and lang checks, French answer-check eval.
    5. Keyword tracker per locale (Serper gl/hl).
    6. Baselines for all six locales; record cost per locale.
 6. Synthesis (per locale and combined), then the Paperclip routine with parent/subtask wiring and the weekly/monthly split. First manual run, measured cost, then the schedule.

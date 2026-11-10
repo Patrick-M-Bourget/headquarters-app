@@ -1,6 +1,8 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { Mention, Query, QuerySet } from "../packages/data-contracts/seo-geo.ts";
+import { readFileSync } from "node:fs";
+import { EngineAnswer, Locale, Mention, Query, QuerySet } from "../packages/data-contracts/seo-geo.ts";
+import { MARKETS, querySetPath } from "../packages/data-contracts/markets.ts";
 
 const q = (id: string, text: string) => ({ id, text, audience: "general", intent: "recommendation", keywords: ["mac cleaner"] });
 const set = (queries: unknown[], extra = {}) => ({ version: 1, created_at: "2026-11-09T00:00:00Z", generator_model: "x", approved_by: null, approved_at: null, queries, ...extra });
@@ -53,4 +55,35 @@ test("keyword result: own position must match a cachedrop row; failures carry no
   assert.ok(KeywordResult.safeParse({ ...base, results: [row(1, null)], own_position: null }).success);
   assert.ok(!KeywordResult.safeParse({ ...base, results: [row(1, null)], own_position: null, error: "HTTP 429" }).success);
   assert.ok(KeywordResult.safeParse({ ...base, results: [], own_position: null, error: "HTTP 429" }).success);
+});
+
+test("query set locale: defaults to en-US (v1 predates it), rejects unknown locales", () => {
+  assert.equal(QuerySet.parse(set(many(15))).locale, "en-US");
+  assert.equal(QuerySet.parse(set(many(15), { locale: "fr-FR" })).locale, "fr-FR");
+  assert.ok(!QuerySet.safeParse(set(many(15), { locale: "fr-CA" })).success);
+  const v1 = QuerySet.parse(JSON.parse(readFileSync(new URL("../research/seo-geo/query-sets/v1.json", import.meta.url), "utf8")));
+  assert.equal(v1.locale, "en-US");
+  assert.equal(v1.approved_by, "owner");
+});
+
+test("duplicate check works for non-Latin and accented text", () => {
+  const ja = Array.from({ length: 15 }, (_, i) => q(`q${String(i + 1).padStart(2, "0")}`, `Macのストレージを空ける方法 その${"一二三四五六七八九十壱弐参肆伍"[i]}`));
+  assert.ok(QuerySet.safeParse(set(ja, { locale: "ja-JP" })).success, "distinct Japanese questions are not duplicates");
+  const jaDup = ja.map(x => ({ ...x })); jaDup[1].text = "Ｍａｃのストレージを空ける方法 その一"; // full-width copy of q01
+  assert.ok(!QuerySet.safeParse(set(jaDup, { locale: "ja-JP" })).success);
+  const fr = many(15); fr[0].text = "Comment désinstaller un plug-in audio ?"; fr[1].text = "Comment désactiver un plug-in audio ?";
+  assert.ok(QuerySet.safeParse(set(fr, { locale: "fr-FR" })).success, "accented words stay distinct");
+  assert.ok(Query.safeParse(q("q01", "Macの容量不足を解消")).success, "short Japanese question (10 chars) is valid");
+});
+
+test("markets: every locale has search parameters; query set paths", () => {
+  for (const l of Locale.options) assert.ok(MARKETS[l].country.length === 2 && MARKETS[l].serper.gl && MARKETS[l].tavilyCountry, l);
+  assert.equal(querySetPath("en-US", 1), "research/seo-geo/query-sets/v1.json");
+  assert.equal(querySetPath("fr-FR", 1, true), "research/seo-geo/query-sets/fr-FR/v1.draft.json");
+  assert.equal(querySetPath("en-US", 2), "research/seo-geo/query-sets/en-US/v2.json");
+});
+
+test("engine answer locale defaults to en-US for runs before 5b", () => {
+  const a = { query_id: "q01", query_set_version: 1, engine: "claude", model: "m", asked_at: "2026-11-09T00:00:00Z", answer_text: "x", cited_urls: [], error: null };
+  assert.equal(EngineAnswer.parse(a).locale, "en-US");
 });

@@ -4,18 +4,26 @@ import { z } from "zod";
 export const Audience = z.enum(["producers", "developers", "video_editors", "general"]);
 export const Intent = z.enum(["recommendation", "how_to", "comparison", "alternative"]);
 export const Engine = z.enum(["claude", "gemini", "chatgpt"]);
+/** One market per language (plan Q19). Search parameters per locale live in markets.ts. */
+export const Locale = z.enum(["en-US", "fr-FR", "de-DE", "es-ES", "pt-BR", "ja-JP"]);
+export type Locale = z.infer<typeof Locale>;
+
+/** Text compared for duplicates: lower-cased, full-width folded (NFKC), letters and digits in any script kept. */
+export const normalizeText = (s: string) => s.normalize("NFKC").toLowerCase().replace(/[^\p{L}\p{N} ]/gu, "").replace(/\s+/g, " ").trim();
 
 export const Query = z.object({
   id: z.string().regex(/^q\d{2,3}$/),        // q01, q02, ...
-  text: z.string().min(12).max(200),         // what a buyer would type or ask
+  text: z.string().min(8).max(200),          // what a buyer would type or ask (short in Japanese)
   audience: Audience,
   intent: Intent,
   keywords: z.array(z.string().min(2).max(60)).min(1).max(2), // short search keywords for the keyword tracker
 });
 export type Query = z.infer<typeof Query>;
 
-/** A versioned query set. Frozen once approved: weekly results are only comparable within one version. */
+/** A versioned query set. Frozen once approved: weekly results are only comparable within one locale and version.
+ *  Sets are generated natively per locale (plan Q20), so versions count per locale. v1 (2026-11-09) predates the field: en-US. */
 export const QuerySet = z.object({
+  locale: Locale.default("en-US"),
   version: z.number().int().positive(),
   created_at: z.iso.datetime(),
   generator_model: z.string(),
@@ -26,7 +34,7 @@ export const QuerySet = z.object({
   const ids = new Set<string>(), texts = new Set<string>();
   for (const q of s.queries) {
     if (ids.has(q.id)) ctx.addIssue({ code: "custom", message: `duplicate id ${q.id}` });
-    const t = q.text.toLowerCase().replace(/[^a-z0-9 ]/g, "").replace(/\s+/g, " ").trim();
+    const t = normalizeText(q.text);
     if (texts.has(t)) ctx.addIssue({ code: "custom", message: `duplicate text ${q.id}` });
     ids.add(q.id); texts.add(t);
   }
@@ -36,6 +44,7 @@ export type QuerySet = z.infer<typeof QuerySet>;
 
 /** One engine's answer to one query, stored verbatim so labels can be re-checked. */
 export const EngineAnswer = z.object({
+  locale: Locale.default("en-US"),           // with query_set_version, names the frozen set (runs before 5b: en-US)
   query_id: z.string(),
   query_set_version: z.number().int().positive(),
   engine: Engine,

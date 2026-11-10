@@ -1,20 +1,23 @@
 // Keyword tracker (plan Q7/Q14): Google top 10 for every keyword in the frozen query set, via Serper.
 // Own positions come from the SERP (cachedrop.io in the top 10). Search Console positions are added after
 // cachedrop-website #96. Search volume (DataForSEO) is deferred by the owner.
-// Usage: node --env-file=.env runners/seo-geo/keywords.ts [--only "uninstall vst mac,mac cleaner"] [--gl us] [--hl en]
+// Usage: node --env-file=.env runners/seo-geo/keywords.ts [--locale en-US] [--version 1] [--set <path>] [--only "uninstall vst mac,mac cleaner"]
+// Google country/language come from the locale (packages/data-contracts/markets.ts).
 // Cost: 1 Serper credit per keyword (48 for query set v1; 2,500 free credits).
 import { mkdirSync, readFileSync, writeFileSync, readdirSync, existsSync } from "node:fs";
 import { join } from "node:path";
 import { randomUUID } from "node:crypto";
-import { KeywordResult, QuerySet } from "../../packages/data-contracts/seo-geo.ts";
+import { KeywordResult, Locale, QuerySet } from "../../packages/data-contracts/seo-geo.ts";
+import { MARKETS, querySetPath } from "../../packages/data-contracts/markets.ts";
 import { findIssue, paperclipEnabled, reportCost, reportToIssue } from "../../packages/paperclip-client/index.ts";
 import { diffRuns, keywordsFrom, parseSerp, summarize } from "./keyword-checks.ts";
 
 const arg = (n: string) => { const i = process.argv.indexOf(n); return i > 0 ? process.argv[i + 1] : undefined; };
 const root = new URL("../../", import.meta.url).pathname;
-const set = QuerySet.parse(JSON.parse(readFileSync(join(root, arg("--set") ?? "research/seo-geo/query-sets/v1.json"), "utf8")));
+const set = QuerySet.parse(JSON.parse(readFileSync(join(root, arg("--set") ?? querySetPath(Locale.parse(arg("--locale") ?? "en-US"), Number(arg("--version") ?? 1))), "utf8")));
 if (!set.approved_by) throw new Error("query set is a draft; only approved (frozen) sets can be tracked");
-const gl = arg("--gl") ?? "us", hl = arg("--hl") ?? "en";
+const { gl, hl } = MARKETS[set.locale].serper;
+const sameLocale = (s: { locale?: string }) => (s.locale ?? "en-US") === set.locale; // summaries before 5b have no locale: en-US
 const only = arg("--only")?.split(",").map(s => s.trim().toLowerCase());
 const keywords = keywordsFrom(set).filter(k => !only || only.includes(k.keyword));
 
@@ -45,13 +48,13 @@ try {
     try { results.push(parseSerp(await serper(kw.keyword), kw, gl, hl)); }
     catch (e) { results.push(KeywordResult.parse({ ...kw, checked_at: new Date().toISOString(), engine: "google", gl, hl, results: [], own_position: null, related_searches: [], error: (e as Error).message.slice(0, 300) })); }
   }
-  const summary = { run_id: runId, query_set_version: set.version, gl, hl, ...summarize(results), serper_credits: credits, cost_usd: 0, seconds: Math.round((Date.now() - t0) / 1000) };
+  const summary = { run_id: runId, locale: set.locale, query_set_version: set.version, gl, hl, ...summarize(results), serper_credits: credits, cost_usd: 0, seconds: Math.round((Date.now() - t0) / 1000) };
 
   // Diff against the previous full run on the same query set, country and language.
   const runsDir = join(root, "research/seo-geo/keyword-runs");
   const prevDir = existsSync(runsDir) ? readdirSync(runsDir).filter(d => d !== runId && existsSync(join(runsDir, d, "summary.json")))
     .map(d => ({ d, s: JSON.parse(readFileSync(join(runsDir, d, "summary.json"), "utf8")) }))
-    .filter(x => x.s.query_set_version === set.version && x.s.gl === gl && x.s.hl === hl && x.s.keywords === keywordsFrom(set).length && x.s.failed < x.s.keywords / 5)
+    .filter(x => sameLocale(x.s) && x.s.query_set_version === set.version && x.s.gl === gl && x.s.hl === hl && x.s.keywords === keywordsFrom(set).length && x.s.failed < x.s.keywords / 5)
     .sort((a, b) => (a.s.finished_at < b.s.finished_at ? 1 : -1))[0]?.d : undefined;
   const delta = prevDir && keywords.length === keywordsFrom(set).length
     ? { previous_run: prevDir, changes: diffRuns(JSON.parse(readFileSync(join(runsDir, prevDir, "results.json"), "utf8")), results) } : null;
@@ -61,7 +64,7 @@ try {
   writeFileSync(join(outDir, "summary.json"), JSON.stringify({ ...summary, delta, finished_at: new Date().toISOString() }, null, 2) + "\n");
   const top = (o: Record<string, number>, n: number) => Object.entries(o).slice(0, n).map(([k, v]) => `${k} ${v}`).join(", ") || "none";
   const headline = [
-    `Keyword run ${runId} (query set v${set.version}, Google ${gl}/${hl}): cachedrop.io in the top 10 for ${summary.own.ranked}/${summary.keywords - summary.failed} keywords (top 3: ${summary.own.top3}).`,
+    `Keyword run ${runId} (${set.locale} query set v${set.version}, Google ${gl}/${hl}): cachedrop.io in the top 10 for ${summary.own.ranked}/${summary.keywords - summary.failed} keywords (top 3: ${summary.own.top3}).`,
     `Tracked products ranking (keywords): ${top(Object.fromEntries(Object.entries(summary.brands_in_top10).filter(([b]) => b !== "cachedrop")), 6)}.`,
     `Most frequent domains: ${top(summary.domains_in_top10, 8)}.`,
     delta ? `Since ${delta.previous_run}: ${delta.changes.length} changes.` : "No previous full run.",

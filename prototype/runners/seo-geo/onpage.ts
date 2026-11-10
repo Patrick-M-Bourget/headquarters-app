@@ -6,7 +6,8 @@
 import { mkdirSync, readFileSync, writeFileSync, readdirSync, existsSync } from "node:fs";
 import { join } from "node:path";
 import { randomUUID } from "node:crypto";
-import { AnswerCheck, PageAudit, PageComparison, QuerySet, SiteAudit } from "../../packages/data-contracts/seo-geo.ts";
+import { AnswerCheck, Locale, PageAudit, PageComparison, QuerySet, SiteAudit } from "../../packages/data-contracts/seo-geo.ts";
+import { querySetPath } from "../../packages/data-contracts/markets.ts";
 import { findIssue, paperclipEnabled, reportCost, reportToIssue } from "../../packages/paperclip-client/index.ts";
 import { fetchPage, type Page } from "../mastra/fetch.ts";
 import { ANSWER_MODEL, judgeOpening } from "./answer-check.ts";
@@ -14,8 +15,9 @@ import { findGaps, gapKey, mainText, opening, pageChecks, robotsReport } from ".
 
 const arg = (n: string) => { const i = process.argv.indexOf(n); return i > 0 ? process.argv[i + 1] : undefined; };
 const root = new URL("../../", import.meta.url).pathname;
-const mapping = JSON.parse(readFileSync(join(root, "research/seo-geo/onpage-pages.json"), "utf8")) as { query_set_version: number; pages: { url: string; query_id: string }[] };
-const set = QuerySet.parse(JSON.parse(readFileSync(join(root, `research/seo-geo/query-sets/v${mapping.query_set_version}.json`), "utf8")));
+const mapping = JSON.parse(readFileSync(join(root, "research/seo-geo/onpage-pages.json"), "utf8")) as { locale?: string; query_set_version: number; pages: { url: string; query_id: string }[] };
+const set = QuerySet.parse(JSON.parse(readFileSync(join(root, querySetPath(Locale.parse(mapping.locale ?? "en-US"), mapping.query_set_version)), "utf8")));
+const sameLocale = (s: { locale?: string }) => (s.locale ?? "en-US") === set.locale; // summaries before 5b have no locale: en-US
 const only = arg("--only")?.split(",");
 const pages = mapping.pages.filter(p => !only || only.some(o => p.url.includes(o)));
 const nCompetitors = Number(arg("--competitors") ?? 3);
@@ -96,7 +98,7 @@ try {
   const compVerdicts = comparisons.flatMap(c => c.competitors.map(x => x.answer?.verdict ?? "skipped"));
   const tally = (xs: string[]) => xs.reduce<Record<string, number>>((m, v) => ((m[v] = (m[v] ?? 0) + 1), m), {});
   const summary = {
-    run_id: runId, query_set_version: set.version, pages: comparisons.length, competitors: compVerdicts.length, model: useModel ? ANSWER_MODEL : null,
+    run_id: runId, locale: set.locale, query_set_version: set.version, pages: comparisons.length, competitors: compVerdicts.length, model: useModel ? ANSWER_MODEL : null,
     own_answers_near_top: tally(verdicts), competitor_answers_near_top: tally(compVerdicts),
     gaps: comparisons.reduce((s, c) => s + c.gaps.length, 0) + siteGaps.length, site_gaps: siteGaps,
     skipped_competitors: skipped, searches, cost_usd: Number(cost.toFixed(4)), seconds: Math.round((Date.now() - t0) / 1000),
@@ -104,7 +106,7 @@ try {
   // Diff against the previous full run: which gaps are new, which were fixed.
   const runsDir = join(root, "research/seo-geo/onpage-runs");
   const prevDir = existsSync(runsDir) ? readdirSync(runsDir).filter(d => d !== runId && existsSync(join(runsDir, d, "summary.json")))
-    .map(d => ({ d, s: JSON.parse(readFileSync(join(runsDir, d, "summary.json"), "utf8")) })).filter(x => x.s.pages === mapping.pages.length)
+    .map(d => ({ d, s: JSON.parse(readFileSync(join(runsDir, d, "summary.json"), "utf8")) })).filter(x => sameLocale(x.s) && x.s.pages === mapping.pages.length)
     .sort((a, b) => (a.s.finished_at < b.s.finished_at ? 1 : -1))[0]?.d : undefined;
   let delta: { previous_run: string; new_gaps: string[]; fixed_gaps: string[] } | null = null;
   if (prevDir && pages.length === mapping.pages.length) {

@@ -1,0 +1,470 @@
+[
+  {
+    "id": "c01",
+    "locale": "fr-FR",
+    "page_kind": "guide",
+    "text": "# Vider le cache de média Adobe sur Mac\n\nPremiere Pro et After Effects gardent un cache de média qui peut dépasser 50 GB. Si vous avez déplacé son emplacement, l’ancien dossier reste souvent en place, avec des fichiers Peak de quelques centaines de MB.\n\nCacheDrop trouve le cache aux deux endroits et le vide. Premiere Pro reconstruit ce dont il a besoin à la prochaine ouverture d’un projet.\n\n[Télécharger pour Mac](button)",
+    "expected": [
+      "fr_units"
+    ],
+    "note": "GB/MB instead of Go/Mo (nbsp present)"
+  },
+  {
+    "id": "c02",
+    "locale": "en-US",
+    "page_kind": "ad",
+    "text": "# Drop the dead weight!\n\nPlug-ins you no longer want, Adobe media cache and old Xcode build files, cleared in one go after you review every item.\n\n$29.99 once, now $19.99 for a limited time.\n\n[Download for Mac](button)\n\nTry it before you buy · No card needed · macOS 14 or later",
+    "expected": [
+      "drop_pun",
+      "exclamation"
+    ],
+    "note": "pun on 'drop' and an exclamation mark in the headline"
+  },
+  {
+    "id": "c03",
+    "locale": "en-US",
+    "page_kind": "pricing",
+    "text": "# One price, three Macs\n\nLaunch offer: $29.99 once, now $19.99 for a limited time. A license covers up to 3 Macs, with every update through version 1 and 30-day refunds, no questions asked.\n\nScanning is always free, and you can clean up to 2 GB before you decide. CacheDrop runs on macOS 14 or later, on Apple Silicon and Intel.\n\n[Buy · $29.99 once](button)",
+    "expected": [
+      "launch_wording"
+    ],
+    "note": "'Launch offer' label on an otherwise correct offer"
+  },
+  {
+    "id": "c04",
+    "locale": "en-US",
+    "page_kind": "email",
+    "text": "# Your CacheDrop trial\n\nYou’ve freed 1.6 GB with CacheDrop so far. Cleanup and uninstalls are free until they have freed 2 GB; after that, a license keeps them going.\n\nOur launch discount ends soon! CacheDrop is $29.99 once, now $19.99 for a limited time, for up to 3 Macs.\n\n[Buy · $29.99 once](button)",
+    "expected": [
+      "launch_wording",
+      "exclamation"
+    ],
+    "note": "'launch discount' plus an exclamation mark"
+  },
+  {
+    "id": "c05",
+    "locale": "fr-FR",
+    "page_kind": "pricing",
+    "text": "# Payez une seule fois. Utilisez-le sur 3 Mac.\n\n29,99 € une seule fois, maintenant 19,99 € pour un temps limité. Le même montant dans chaque devise.\n\n- Une licence couvre jusqu’à 3 Mac\n- Toutes les mises à jour de la version 1, prêtes pour chaque nouvelle version de macOS dès sa sortie\n- Remboursement sous 30 jours, sans avoir à vous justifier\n- macOS 14 Sonoma ou version ultérieure\n\nL’analyse est toujours gratuite. Le nettoyage et les désinstallations sont gratuits jusqu’à ce qu’ils aient libéré 2 Go. Aucun abonnement. Rien à annuler.\n\n[Acheter · 29,99 €](button)",
+    "expected": [],
+    "note": "clean FR: 'gratuite' in body text only, allowed 2 Go trial wording, correct offer, nbsp before € and Go"
+  },
+  {
+    "id": "c06",
+    "locale": "fr-FR",
+    "page_kind": "guide",
+    "text": "# Désinstaller une application sur Mac\n\nGlisser une application dans la Corbeille laisse ses fichiers de support et ses caches dans le dossier Bibliothèque. CacheDrop les retrouve et les supprime avec l’application.\n\nDésinstaller vos applications et vos plug-ins ne vous coûtera jamais un centime ; seul le nettoyage des caches au-delà de 2 Go demande une licence.\n\n[Télécharger pour Mac](button)",
+    "expected": [
+      "free_uninstall"
+    ],
+    "note": "subtle: 'never cost a cent' paraphrase of free uninstalls"
+  },
+  {
+    "id": "c07",
+    "locale": "fr-FR",
+    "page_kind": "guide",
+    "text": "# Désinstaller des plug-ins audio sur Mac\n\nUn plug-in s’installe en plusieurs morceaux : composants AU, VST3 et AAX, fichiers de support, reçus de l’installateur et banques de sons. Glisser un seul composant dans la Corbeille laisse le reste en place.\n\nLa section Audio software de CacheDrop liste vos logiciels de MAO, vos plug-ins par éditeur, vos sons et vos pilotes. Pour les contenus Native Instruments et Waves, Native Access et Waves Central restent les outils prévus pour gérer licences et bibliothèques. Vous gardez la main : rien n’est supprimé avant la « vérification » de chaque élément.",
+    "expected": [],
+    "note": "clean FR: vendor managers named, guillemets with nbsp inside, nbsp before every colon"
+  },
+  {
+    "id": "c08",
+    "locale": "en-US",
+    "page_kind": "ad",
+    "text": "# Clear what you don’t need\n\nCacheDrop’s price just dropped: $19.99 for a limited time. Clear Xcode build files, Adobe media cache and plug-ins you no longer want, after a review sheet lists every item.\n\n[Download for Mac](button)\n\nTry it before you buy · No card needed · macOS 14 or later",
+    "expected": [
+      "offer_without_regular",
+      "drop_pun"
+    ],
+    "note": "19.99 without 29.99; 'price just dropped' plays on the name"
+  },
+  {
+    "id": "c09",
+    "locale": "en-US",
+    "page_kind": "home",
+    "text": "## Built for studios\n\nProducers who moved their sessions over tell us it’s the first cleaner they trust near a sample library, and most of them end up putting it on every Mac in the studio.\n\nCacheDrop lists your plug-ins by maker, with their sounds and samples, and removes a plug-in with all its parts. The review sheet lists every item first.\n\n[Download for Mac](button)",
+    "expected": [
+      "invented_proof"
+    ],
+    "note": "subtle: paraphrased testimonials and adoption claims with no source"
+  },
+  {
+    "id": "c10",
+    "locale": "en-US",
+    "page_kind": "email",
+    "text": "# Set it and forget it\n\nOnce you’ve chosen your categories, CacheDrop clears them on its own every Sunday night, so you never have to open it again. You’ll find each cleanup in History the next morning.\n\nDeveloper caches, render files and package caches are covered. Your files go to the Trash; caches that tools rebuild are deleted.\n\n[Open CacheDrop](button)",
+    "expected": [
+      "ahead_of_app"
+    ],
+    "note": "subtle: scheduled automatic cleaning without review (only an opt-in reminder ships)"
+  },
+  {
+    "id": "c11",
+    "locale": "fr-FR",
+    "page_kind": "home",
+    "text": "## Ce que CacheDrop trouve\n\nSur le Mac d’un producteur, CacheDrop a trouvé 18 Go de plug-ins et de banques de sons, et 500 Mo de restes d’applications supprimées. Le nettoyage intelligent coche les catégories sûres, et la feuille de vérification liste chaque élément avant toute suppression.\n\n[Télécharger pour Mac](button)\n\nEssayez-le avant d’acheter · Aucune carte requise · macOS 14 ou version ultérieure",
+    "expected": [
+      "fr_units"
+    ],
+    "note": "ordinary space instead of nbsp between number and Go/Mo"
+  },
+  {
+    "id": "c12",
+    "locale": "fr-FR",
+    "page_kind": "guide",
+    "text": "# Qu’est-ce que les Données système sur Mac\n\nDans Réglages Système › Général › Stockage, la barre grise «Données système» regroupe caches, journaux et instantanés locaux Time Machine. Le Finder n’en montre presque rien.\n\nCacheDrop explique ce qu’elle contient et vide ce qui peut l’être sans risque : caches d’applications et anciens journaux. Le reste, il l’explique et n’y touche pas.\n\n[Télécharger pour Mac](button)",
+    "expected": [
+      "fr_typography"
+    ],
+    "note": "guillemets without inner nbsp; ordinary space before the colon"
+  },
+  {
+    "id": "c13",
+    "locale": "en-US",
+    "page_kind": "guide",
+    "text": "# Remove leftovers from deleted apps\n\nWhen you delete an app, its caches and preferences stay in ~/Library. If OnyX is already on your Mac you may have cleared some of them by hand; CacheDrop finds the rest and groups them by the app they came from.\n\nFiles from deleted apps appear under Worth a look and are never pre-ticked, so you decide what goes.\n\n[Download for Mac](button)",
+    "expected": [
+      "competitor_named"
+    ],
+    "note": "subtle: competitor named in passing on a guide page"
+  },
+  {
+    "id": "c14",
+    "locale": "en-US",
+    "page_kind": "guide",
+    "text": "# What is System Data on Mac?\n\nIn System Settings › General › Storage, System Data is the grey bar macOS doesn’t break down. It holds caches, logs, local Time Machine snapshots, swap files and more.\n\nFinder won’t show most of it, and some of it belongs to macOS. CacheDrop explains what is inside System Data and clears the parts that are safe to clear, such as app caches and old logs. The rest it explains and leaves alone.\n\nCacheDrop runs on macOS 14 Sonoma or later, on Apple Silicon and Intel.",
+    "expected": [],
+    "note": "clean: Apple's own tools named, System Data claim limited to caches/logs (shipped), macOS 14"
+  },
+  {
+    "id": "c15",
+    "locale": "en-US",
+    "page_kind": "home",
+    "text": "# Get your Mac’s space back.\n\nCacheDrop shows what fills your Mac, by category, and clears the parts that are safe to clear: developer caches, Adobe media cache, plug-ins you no longer want, and files left behind by apps you deleted.\n\n[Download for Mac](button) [Buy · $29.99 once](button)\n\nTry it before you buy · No card needed · macOS 14 or later\n\nFree up space without guessing. Smart clean opens on one screen with the safe categories ticked, and the review sheet lists every item before anything is removed.",
+    "expected": [],
+    "note": "clean: hero per Decision 51; 'Free up space' is a verb, $29.99 alone is fine, trial line under the button"
+  },
+  {
+    "id": "c16",
+    "locale": "en-US",
+    "page_kind": "email",
+    "text": "# Getting started with CacheDrop\n\nStart with Applications: pick an app or plug-in you’re done with and CacheDrop removes it with its leftovers. Uninstalls never count against your trial, so clear out as many as you like before you buy.\n\nThen try Smart clean. Nothing CacheDrop cleans is gone for good, so there’s no need to second-guess the ticked categories.\n\n[Open CacheDrop](button)",
+    "expected": [
+      "free_uninstall",
+      "trash_claim"
+    ],
+    "note": "subtle: uninstalls 'never count against your trial' (implies free); 'nothing is gone for good' implies everything is restorable"
+  },
+  {
+    "id": "c17",
+    "locale": "en-US",
+    "page_kind": "pricing",
+    "text": "# Pay once\n\nCacheDrop is $24.99 once. A license covers up to 5 Macs, with every update through version 1 and 30-day refunds, no questions asked.\n\nTry it before you buy: scanning is always free, and you can clean up to 2 GB with no card needed. Requires macOS 14 or later.\n\n[Buy · $24.99 once](button)",
+    "expected": [
+      "wrong_price",
+      "fact_sheet"
+    ],
+    "note": "$24.99 price and 5 Macs instead of 3"
+  },
+  {
+    "id": "c18",
+    "locale": "fr-FR",
+    "page_kind": "compare",
+    "text": "# Une alternative à CleanMyMac que vous payez une seule fois.\n\nCleanMyMac est vendu sous forme d’abonnement annuel. DaisyDisk cartographie le disque mais ne désinstalle pas les applications. AppCleaner est un désinstalleur gratuit, très bien si c’est tout ce qu’il vous faut. CacheDrop réunit un nettoyeur, un désinstalleur d’applications et un gestionnaire de plug-ins pour 29,99 € une seule fois, sur 3 Mac au plus.\n\n## Volontairement absent\n\nAccélérateurs de RAM, antivirus, « réparation des autorisations » et moniteurs système.\n\nLes noms de produits sont des marques de leurs propriétaires.",
+    "expected": [],
+    "note": "clean FR: competitors on compare page, never-claim categories listed as absent, 'gratuit' describes a competitor"
+  },
+  {
+    "id": "c19",
+    "locale": "fr-FR",
+    "page_kind": "pricing",
+    "text": "# Payez une seule fois. Utilisez-le sur 3 Mac.\n\nPrix de lancement : 29,99 € une seule fois, maintenant 19,99 € pour un temps limité. Toutes les mises à jour de la version 1 et un remboursement sous 30 jours, sans avoir à vous justifier.\n\nL’analyse est toujours gratuite. Fonctionne sur macOS 14 ou version ultérieure, Apple Silicon et Intel.\n\n[Acheter · 29,99 €](button)",
+    "expected": [
+      "launch_wording"
+    ],
+    "note": "'Prix de lancement' on correct offer"
+  },
+  {
+    "id": "c20",
+    "locale": "en-US",
+    "page_kind": "guide",
+    "text": "# Clear the Adobe media cache on Mac\n\nPremiere Pro and After Effects keep a media cache that can grow past 50 GB. If you moved its location in Preferences, the old folder often stays behind, along with Peak Files.\n\nCacheDrop’s Photo and video category finds the cache in both places and clears it. Premiere Pro rebuilds what it needs the next time you open a project.\n\n[Try it free](button)",
+    "expected": [
+      "free_in_headline"
+    ],
+    "note": "'free' in a button label"
+  },
+  {
+    "id": "c21",
+    "locale": "en-US",
+    "page_kind": "guide",
+    "text": "# How to uninstall apps on Mac completely\n\nDragging an app to the Trash leaves its support files, caches and preferences behind in ~/Library. CacheDrop finds those leftovers and removes them with the app.\n\nUninstalling apps and plug-ins is free in CacheDrop; the license is only for cleanup. The review sheet lists every file before anything is removed.\n\n[Download for Mac](button)",
+    "expected": [
+      "free_uninstall"
+    ],
+    "note": "keyword: says uninstalling is free"
+  },
+  {
+    "id": "c22",
+    "locale": "fr-FR",
+    "page_kind": "guide",
+    "text": "# Nettoyer les caches de développement\n\nDerivedData, node_modules, caches de paquets et images Docker orphelines s’accumulent projet après projet. CacheDrop repère ces fichiers inutiles et vous montre la place qu’ils prennent.\n\nTout ce que CacheDrop supprime part dans la Corbeille : un build cassé se répare en remettant les fichiers en place.\n\nPour un aperçu depuis le Terminal : `cachedrop clean --dry-run`.",
+    "expected": [
+      "banned_word",
+      "trash_claim"
+    ],
+    "note": "'fichiers inutiles'; everything removed goes to the Corbeille"
+  },
+  {
+    "id": "c23",
+    "locale": "en-US",
+    "page_kind": "compare",
+    "text": "# How CacheDrop compares\n\nCleanMyMac, MacKeeper, BuhoCleaner and DaisyDisk each take a different approach. DaisyDisk is the clearest disk map. MacKeeper bundles bloat that CacheDrop leaves out on purpose.\n\nCacheDrop is a cleaner, an app uninstaller and a plug-in manager for $29.99 once, now $19.99 for a limited time, on up to 3 Macs.\n\nProduct names are trademarks of their owners. CacheDrop isn’t affiliated with any of them.",
+    "expected": [
+      "bloat_with_competitor"
+    ],
+    "note": "'bloat' shares a sentence with MacKeeper on the compare page (naming itself allowed here)"
+  },
+  {
+    "id": "c24",
+    "locale": "fr-FR",
+    "page_kind": "guide",
+    "text": "# Faire de la place pour vos sessions\n\nVos plug-ins, vos banques de sons et vos fichiers de rendu prennent vite des dizaines de gigaoctets. CacheDrop les regroupe par éditeur et vous montre la taille de chacun.\n\nBranchez votre iPhone : CacheDrop libère aussi de l’espace dessus, dans la même analyse. Avant de supprimer tes plug-ins, la feuille de vérification liste chaque élément.\n\n[Télécharger pour Mac](button)",
+    "expected": [
+      "fr_tutoiement",
+      "ahead_of_app"
+    ],
+    "note": "single slipped 'tes' in vous copy; iPhone cleanup is not shipped"
+  },
+  {
+    "id": "c25",
+    "locale": "en-US",
+    "page_kind": "ad",
+    "text": "# Your Mac, with room to work\n\nCacheDrop finds developer caches, render files and leftovers from deleted apps, and lists every item before it removes anything.\n\nOne-time price: $19.99 for up to 3 Macs. No subscription, nothing to cancel, and every update through version 1.\n\n[Download for Mac](button)",
+    "expected": [
+      "offer_without_regular",
+      "offer_not_limited"
+    ],
+    "note": "19.99 stated alone and as if it were the standing price"
+  },
+  {
+    "id": "c26",
+    "locale": "en-US",
+    "page_kind": "pricing",
+    "text": "# Pay once. Use it on 3 Macs.\n\n$29.99 once, now $19.99 for a limited time. The same number in USD, CAD, EUR, GBP and AUD.\n\n- A license covers up to 3 Macs\n- Every update through version 1, ready for each new macOS when it ships\n- 30-day refunds, no questions asked\n- macOS 14 Sonoma or later, Apple Silicon and Intel\n\nScanning is always free. Cleanup and uninstalls are free until they have freed 2 GB, so you can see what CacheDrop does on your own Mac before you pay. No subscription. Nothing to cancel.\n\n[Buy · $29.99 once](button)",
+    "expected": [],
+    "note": "clean: correct offer wording, full fact sheet, allowed 'free' phrasing for scanning and the 2 GB trial"
+  },
+  {
+    "id": "c27",
+    "locale": "en-US",
+    "page_kind": "home",
+    "text": "## Quietly looking after your Mac\n\nCacheDrop keeps watch in the background, notices when something starts eating memory or doesn’t belong on your Mac, and lets you deal with it in one click.\n\nWhen you want space back, Smart clean ticks the safe categories and the review sheet lists every item first.\n\n[Download for Mac](button)",
+    "expected": [
+      "contradicts_product"
+    ],
+    "note": "subtle: implies background system monitoring, memory management and malware detection"
+  },
+  {
+    "id": "c28",
+    "locale": "en-US",
+    "page_kind": "pricing",
+    "text": "# Pay once. Use it on 3 Macs.\n\n$29.99 once, now $19.99. One license covers up to 3 Macs. Every update through version 1, 30-day refunds, no questions asked, and macOS 14 or later.\n\nScanning is always free. Cleanup and uninstalls are free until they have freed 2 GB.\n\n[Buy · $29.99 once](button)",
+    "expected": [
+      "offer_not_limited"
+    ],
+    "note": "offer shown with the regular price but never called limited-time"
+  },
+  {
+    "id": "c29",
+    "locale": "en-US",
+    "page_kind": "email",
+    "text": "# Why we built CacheDrop\n\nCleanMyMac has turned into bloat, with a subscription on top. We wanted a Mac app that clears caches, uninstalls apps completely and manages plug-ins, for one price.\n\nCacheDrop is $29.99 once, now $19.99 for a limited time. A license covers up to 3 Macs, with 30-day refunds.\n\n[Download for Mac](button)",
+    "expected": [
+      "competitor_named",
+      "bloat_with_competitor"
+    ],
+    "note": "competitor named in an email, in the same sentence as 'bloat'"
+  },
+  {
+    "id": "c30",
+    "locale": "en-US",
+    "page_kind": "home",
+    "text": "## Safe by design\n\nYour files go to the Trash, so changing your mind is one drag away. Caches and build files that tools rebuild, like DerivedData or a package cache, are deleted, because the tools that made them make them again.\n\nNothing is pre-ticked that you would miss. The Worth a look section, apps you haven’t opened in 6 months and files from deleted apps, is never ticked for you. History shows what each cleanup freed, and results show the space you measurably got back.",
+    "expected": [],
+    "note": "clean: trash claim stated correctly for personal files only; real shipped features (Worth a look, History)"
+  },
+  {
+    "id": "c31",
+    "locale": "fr-FR",
+    "page_kind": "email",
+    "text": "# Les nouvelles de CacheDrop\n\nVous recevez cette infolettre parce que vous l’avez demandée. Les studios qui ont adopté CacheDrop ne reviennent plus en arrière, et la plupart l’installent sur chacun de leurs Mac.\n\nLa version 1.0.4 apporte le nettoyage intelligent : un seul écran, les catégories sûres cochées, un seul bouton Clean up.\n\n[Télécharger pour Mac](button)",
+    "expected": [
+      "fr_regional",
+      "invented_proof"
+    ],
+    "note": "Quebec 'infolettre'; subtle invented adoption claim"
+  },
+  {
+    "id": "c32",
+    "locale": "en-US",
+    "page_kind": "email",
+    "text": "# What’s new in CacheDrop 1.0.4\n\nThanks for sticking with CacheDrop since the beta. This release brings Smart clean: one screen, the safe categories ticked, one Clean up button.\n\nIn Audio software, CacheDrop now points out unused plug-ins, so you can see which ones to remove first. The review sheet still lists every item before anything is removed.\n\n[Open CacheDrop](button)",
+    "expected": [
+      "banned_word"
+    ],
+    "note": "'beta' and calling plug-ins 'unused' (could also be read as contradicts_product per never_claim)"
+  },
+  {
+    "id": "c33",
+    "locale": "en-US",
+    "page_kind": "home",
+    "text": "# The #1 rated Mac cleaner\n\nSwitch from CleanMyMac in minutes. CacheDrop clears developer caches, media cache and leftovers from deleted apps, and lists every item before it removes anything.\n\n$29.99 once, now $19.99 for a limited time. Up to 3 Macs.\n\n[Download for Mac](button)",
+    "expected": [
+      "competitor_named",
+      "invented_proof"
+    ],
+    "note": "keyword '#1 rated' and a competitor on the home page"
+  },
+  {
+    "id": "c34",
+    "locale": "en-US",
+    "page_kind": "email",
+    "text": "# Free up space before your next project\n\nYou turned on CacheDrop’s weekly reminder. This week, about 6 GB is ready to clean: mostly package caches and old Final Cut Pro render files.\n\nOpen CacheDrop and Smart clean shows the safe categories ticked. Nothing is removed until you press Clean up, and the review sheet lists every item first.\n\nThe reminder is off by default and only arrives when at least 1 GB is ready. You can turn it off in Settings at any time.\n\n[Open CacheDrop](button)",
+    "expected": [],
+    "note": "clean: 'Free up' verb in a heading; shipped opt-in weekly reminder described accurately (not automatic cleaning)"
+  },
+  {
+    "id": "c35",
+    "locale": "en-US",
+    "page_kind": "compare",
+    "text": "# A CleanMyMac alternative you pay for once.\n\nCleanMyMac is sold as a yearly subscription, with a one-time option. DaisyDisk is a one-time purchase that maps your disk but doesn’t uninstall apps. AppCleaner and Pearcleaner are free uninstallers, and they are a good fit if that’s all you need. CacheDrop is a cleaner, a complete app uninstaller and a plug-in manager for $29.99 once, on up to 3 Macs.\n\n## Left out on purpose\n\nRAM boosters, antivirus, “repair permissions” and system monitors. macOS handles these itself.\n\nProduct names are trademarks of their owners. CacheDrop isn’t affiliated with any of them.",
+    "expected": [],
+    "note": "clean: competitors named on the compare page; 'Left out on purpose' lists never-claim categories as absent; 'free uninstallers' describes competitors, not CacheDrop"
+  },
+  {
+    "id": "c36",
+    "locale": "fr-FR",
+    "page_kind": "email",
+    "text": "# Libérez de l’espace avant votre prochain projet\n\nVous avez activé le rappel hebdomadaire de CacheDrop. Cette semaine, environ 4 Go peuvent être nettoyés, surtout des caches de paquets et 700 Mo de fichiers de rendu Final Cut Pro.\n\nOuvrez CacheDrop : le nettoyage intelligent coche les catégories sûres, et rien n’est supprimé avant que vous cliquiez sur Clean up. Depuis le Terminal, `cachedrop clean --dry-run` montre ce qui serait retiré.\n\nLe rappel est désactivé par défaut et n’arrive que si au moins 1 Go est prêt.",
+    "expected": [],
+    "note": "clean FR: Go/Mo with nbsp, command in backticks, accurate opt-in reminder, France wording (no courriel)"
+  },
+  {
+    "id": "c37",
+    "locale": "en-US",
+    "page_kind": "guide",
+    "text": "# Delete node_modules folders across your Mac\n\nOld projects keep their own node_modules, often hundreds of megabytes each. CacheDrop finds them all, along with package caches and Docker data, and shows how much each one takes.\n\nEverything CacheDrop removes goes to the Trash, so you can put any of it back if a build breaks.\n\nPreview from Terminal with `cachedrop clean --dry-run`.",
+    "expected": [
+      "trash_claim"
+    ],
+    "note": "keyword: everything removed goes to the Trash"
+  },
+  {
+    "id": "c38",
+    "locale": "fr-FR",
+    "page_kind": "email",
+    "text": "# Votre téléchargement CacheDrop\n\nMerci d’avoir confirmé votre adresse courriel. Le lien ci-dessous fonctionne pendant 7 jours, sur n’importe quel Mac.\n\nL’analyse est toujours gratuite, et le nettoyage et les désinstallations le sont jusqu’à ce qu’ils aient libéré 2 Go.\n\n[Essai gratuit](button)",
+    "expected": [
+      "fr_regional",
+      "free_in_headline"
+    ],
+    "note": "Quebec 'courriel' on fr-FR; 'gratuit' in a button"
+  },
+  {
+    "id": "c39",
+    "locale": "fr-FR",
+    "page_kind": "home",
+    "text": "# Récupère l’espace de ton Mac.\n\nCacheDrop te montre ce qui remplit ton Mac, par catégorie, et vide ce qui peut l’être sans risque : caches de développement, cache de média Adobe et restes d’applications supprimées.\n\n[Télécharger pour Mac](button)\n\nEssaie-le avant d’acheter · Aucune carte requise · macOS 14 ou version ultérieure\n\nTes fichiers personnels partent dans la Corbeille, et tu vois chaque élément avant toute suppression.",
+    "expected": [
+      "fr_tutoiement"
+    ],
+    "note": "tutoiement throughout"
+  },
+  {
+    "id": "c40",
+    "locale": "en-US",
+    "page_kind": "home",
+    "text": "# Free junk cleaner for your Mac\n\nCacheDrop scans your Mac and shows what fills it, by category. Smart clean ticks the safe categories, and the review sheet lists every item before anything is removed.\n\nDeveloper caches, Adobe media cache, Final Cut Pro render files and leftovers from deleted apps, on one screen.\n\n[Download for Mac](button)\n\nTry it before you buy · No card needed · macOS 14 or later",
+    "expected": [
+      "free_in_headline",
+      "banned_word"
+    ],
+    "note": "'Free' adjective and 'junk' in the H1"
+  },
+  {
+    "id": "c41",
+    "locale": "en-US",
+    "page_kind": "ad",
+    "text": "# Free up space on your Mac\n\nPlug-ins by maker, sample libraries, Adobe media cache, Xcode build files and leftovers from apps you deleted, all on one screen. CacheDrop lists every item before anything is removed.\n\n$29.99 once, now $19.99 for a limited time. Up to 3 Macs, 30-day refunds.\n\n[Download for Mac](button)\n\nTry it before you buy · No card needed · macOS 14 or later",
+    "expected": [],
+    "note": "clean: ad with correct offer wording beside the regular price, 'Free up' verb heading"
+  },
+  {
+    "id": "c42",
+    "locale": "en-US",
+    "page_kind": "ad",
+    "text": "# A faster Mac in one click\n\nCacheDrop clears caches and frees RAM so your Mac runs up to 2x faster. Now also available for Windows PCs.\n\n$29.99 once, now $19.99 for a limited time, on up to 3 Macs.\n\n[Download for Mac](button)",
+    "expected": [
+      "contradicts_product",
+      "ahead_of_app"
+    ],
+    "note": "keyword: RAM freeing, '2x faster', Windows version"
+  },
+  {
+    "id": "c43",
+    "locale": "en-US",
+    "page_kind": "guide",
+    "text": "# Clear Xcode DerivedData and node_modules safely\n\nBuild folders grow quietly. A single project’s `DerivedData` can pass 10 GB, and every old repo keeps its own `node_modules`.\n\nYou can clear them by hand with `rm -rf ~/Library/Developer/Xcode/DerivedData`, or preview what CacheDrop would remove from Terminal:\n\n`cachedrop clean --dry-run`\n\nCaches and build files that tools rebuild are deleted; Xcode and npm recreate them the next time you build. Your own files go to the Trash, so changing your mind is one drag away. The review sheet lists every item before anything is removed.",
+    "expected": [],
+    "note": "clean: commands in backticks, correct Trash mechanism (Decision 23), shipped CLI with --dry-run"
+  },
+  {
+    "id": "c44",
+    "locale": "en-US",
+    "page_kind": "guide",
+    "text": "# Uninstall audio plug-ins on Mac\n\nPlug-ins spread across several folders: the AU, VST3 and AAX components, support files, installer receipts and sample content. Dragging one component to the Trash leaves the rest behind.\n\nCacheDrop’s Audio software section lists your DAWs, plug-ins by maker, sounds and samples, and drivers. Pick a plug-in and CacheDrop removes all of its parts together.\n\nFor Native Instruments, Waves and Splice content, Native Access, Waves Central and the Splice app remain the places to manage licenses and libraries. Scanning and the plug-in list are always free; cleanup and uninstalls are free until they have freed 2 GB.",
+    "expected": [],
+    "note": "clean: vendor managers named (allowed), exact allowed trial wording for uninstalls, no 'unused'"
+  },
+  {
+    "id": "c45",
+    "locale": "fr-FR",
+    "page_kind": "pricing",
+    "text": "# Payez une seule fois.\n\n29,99 € une seule fois, maintenant 19,99 € pour un temps limité. Une licence couvre jusqu'à 3 Mac, avec toutes les mises à jour de la version 1 et un remboursement sous 30 jours.\n\nL'analyse est toujours gratuite, et vous pouvez nettoyer jusqu'à 2 Go avant d'acheter. CacheDrop fonctionne sur macOS 13 Ventura ou version ultérieure.\n\n[Acheter · 29,99 €](button)",
+    "expected": [
+      "fr_typography",
+      "fact_sheet"
+    ],
+    "note": "straight apostrophes; macOS 13 instead of 14"
+  },
+  {
+    "id": "c46",
+    "locale": "en-US",
+    "page_kind": "home",
+    "text": "## Everything a cleaner should do\n\nCacheDrop clears rebuildable caches and build files, uninstalls apps completely and manages your audio plug-ins by maker.\n\nPay $29.99 once, now $19.99 for a limited time, for up to 3 Macs. You get lifetime updates and 30-day refunds.\n\n[Buy · $29.99 once](button)",
+    "expected": [
+      "banned_word",
+      "fact_sheet"
+    ],
+    "note": "'rebuildable' and 'lifetime updates' (promise is through version 1)"
+  },
+  {
+    "id": "c47",
+    "locale": "fr-FR",
+    "page_kind": "home",
+    "text": "# Récupérez l’espace de votre Mac.\n\nCacheDrop vous montre ce qui remplit votre Mac, par catégorie, et vide ce qui peut l’être sans risque : caches de développement, cache de média Adobe, plug-ins dont vous ne voulez plus et restes d’applications supprimées.\n\n[Télécharger pour Mac](button)\n\nEssayez-le avant d’acheter · Aucune carte requise · macOS 14 ou version ultérieure\n\nLibérez de l’espace sans deviner. Avant toute suppression, la feuille de vérification liste chaque élément, et vos fichiers personnels partent dans la Corbeille.",
+    "expected": [],
+    "note": "clean FR: nbsp before colon, ’ apostrophes, « libérez » verb, correct Corbeille claim"
+  },
+  {
+    "id": "c48",
+    "locale": "en-US",
+    "page_kind": "email",
+    "text": "# Pricing in your currency\n\nCacheDrop costs $29.99 in the US and €34.99 in Europe, now $19.99 and €24.99 for a limited time. Either way it’s a one-time payment that covers up to 3 Macs, with 30-day refunds.\n\nYour trial is still running: scanning is always free, and cleanup and uninstalls are free until they have freed 2 GB.\n\n[Buy · $29.99 once](button)",
+    "expected": [
+      "wrong_price"
+    ],
+    "note": "subtle: euro prices differ from the same-number rule (34.99/24.99)"
+  }
+]

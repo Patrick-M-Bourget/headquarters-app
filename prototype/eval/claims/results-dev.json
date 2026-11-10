@@ -1,0 +1,22 @@
+{
+  "split": "dev",
+  "model": "anthropic/claude-sonnet-5-5",
+  "facts": "2026-11-10 / 1.0.4",
+  "cases": 23,
+  "recall": "26/26 (100%)",
+  "clean_pass": "6/6 (100%)",
+  "extra_blocks_on_violating_cases": 1,
+  "model_quotes_dropped": 0,
+  "cost_usd": 0.1097,
+  "gate": "pass",
+  "disagreements": [
+    {
+      "id": "c32",
+      "note": "'beta' and calling plug-ins 'unused' (could also be read as contradicts_product per never_claim)",
+      "missed": [],
+      "extra": [
+        "contradicts_product (model): CacheDrop now points out unused plug-ins, so you can see which ones to remove first"
+      ]
+    }
+  ]
+}

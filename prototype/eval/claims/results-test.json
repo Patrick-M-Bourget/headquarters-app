@@ -1,0 +1,13 @@
+{
+  "split": "test",
+  "model": "anthropic/claude-sonnet-5-5",
+  "facts": "2026-11-10 / 1.0.4",
+  "cases": 25,
+  "recall": "24/24 (100%)",
+  "clean_pass": "8/8 (100%)",
+  "extra_blocks_on_violating_cases": 0,
+  "model_quotes_dropped": 0,
+  "cost_usd": 0.134,
+  "gate": "pass",
+  "disagreements": []
+}

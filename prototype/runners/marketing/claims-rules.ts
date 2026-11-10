@@ -61,7 +61,7 @@ export function codeChecks(d: Draft, facts: ProductFacts): F[] {
   const FREE = /\bfree\b(?!\s+(up|your|some|space|disk|\d))|\bfor free\b|\bgratuit\w*/i;
   for (const s of sents) {
     if (/2\s?[  ]?(GB|Go)|until|jusqu/i.test(s)) continue;
-    if (/uninstall|désinstall/i.test(s) && FREE.test(s))
+    if (/uninstall|désinstall/i.test(s) && FREE.test(s) && !comps.some(c => c.pattern.test(s)))
       add("free_uninstall", "block", s, "Never say uninstalling is free: uninstalls count toward the 2 GB trial (Decision 48).");
   }
   // D51: never "free" in a headline or button.
@@ -115,7 +115,7 @@ export function codeChecks(d: Draft, facts: ProductFacts): F[] {
 
   if (fr) {
     { const m = body.match(/(?<!\p{L})(?:tu|toi|ton|tes)\s+\p{L}+/iu) ; if (m) add("fr_tutoiement", "block", m[0], "Le site vouvoie le lecteur (« vous »)."); }
-    for (const m of body.matchAll(/(?<![\d.,])(\d+(?:[.,]\d+)?)[ \u202f]?(GB|MB|TB|Go|Mo|To)\b/g)) {
+    for (const m of body.matchAll(/(?<![\d.,])(\d+(?:[.,]\d+)?)[ \u00a0\u202f]?(GB|MB|TB|Go|Mo|To)\b/g)) {
       const unit = ({ GB: "Go", MB: "Mo", TB: "To" } as Record<string, string>)[m[2]] ?? m[2];
       if (m[0] !== `${m[1]}${NBSP}${unit}`) add("fr_units", "fix", m[0], "Unités en Go/Mo/To, avec une espace insécable après le nombre.", `${m[1]}${NBSP}${unit}`);
     }

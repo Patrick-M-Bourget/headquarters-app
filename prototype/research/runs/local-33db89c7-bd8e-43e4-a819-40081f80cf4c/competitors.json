@@ -1,0 +1,52 @@
+[
+  {
+    "id": "cleanmymac",
+    "name": "CleanMyMac",
+    "website": "https://macpaw.com/cleanmymac"
+  },
+  {
+    "id": "daisydisk",
+    "name": "DaisyDisk",
+    "website": "https://daisydiskapp.com/"
+  },
+  {
+    "id": "maccleaner-pro",
+    "name": "MacCleaner Pro",
+    "website": "https://nektony.com/mac-cleaner-pro"
+  },
+  {
+    "id": "grandperspective",
+    "name": "GrandPerspective",
+    "website": "https://grandperspectiv.sourceforge.net/"
+  },
+  {
+    "id": "omnidisksweeper",
+    "name": "OmniDiskSweeper",
+    "website": "https://www.omnigroup.com/more"
+  },
+  {
+    "id": "appcleaner",
+    "name": "AppCleaner",
+    "website": "https://freemacsoft.net/appcleaner/"
+  },
+  {
+    "id": "pearcleaner",
+    "name": "Pearcleaner",
+    "website": "https://github.com/alienator88/Pearcleaner"
+  },
+  {
+    "id": "mole",
+    "name": "Mole",
+    "website": "https://mole.fit/"
+  },
+  {
+    "id": "hyperspace",
+    "name": "Hyperspace",
+    "website": "https://hypercritical.co/hyperspace/"
+  },
+  {
+    "id": "sensei",
+    "name": "Sensei",
+    "website": "https://cindori.com/sensei"
+  }
+]

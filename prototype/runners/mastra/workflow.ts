@@ -5,8 +5,13 @@ import { z } from "zod";
 import { FIELDS } from "../../packages/data-contracts/index.ts";
 import { candidatePages, evidenceOnPage, fetchPage, type Page } from "./fetch.ts";
 
-export const MODEL = "anthropic/claude-sonnet-5-5";
-const PRICE = { in: 2 / 1e6, out: 10 / 1e6 }; // Sonnet 5.5 USD per token
+export const MODEL = process.env.MASTRA_MODEL ?? "anthropic/claude-sonnet-5-5";
+// USD per token. Haiku 5.5 price is for prompts up to 100K tokens (ours are ~15K).
+const PRICES: Record<string, { in: number; out: number }> = {
+  "anthropic/claude-sonnet-5-5": { in: 2 / 1e6, out: 10 / 1e6 },
+  "anthropic/claude-haiku-5-5": { in: 0.1 / 1e6, out: 0.5 / 1e6 },
+};
+const PRICE = PRICES[MODEL] ?? { in: 0, out: 0 };
 const MAX_PAGE_CHARS = 15000;
 
 const CompetitorIn = z.object({ id: z.string(), name: z.string(), website: z.string() });

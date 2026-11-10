@@ -1,0 +1,14 @@
+[
+  {"competitor_id": "vaultsweep", "field": "pricing_model", "value": "one_time", "status": "verified", "source_id": "vaultsweep-home", "evidence": "VaultSweep Pro: $24.99 one-time purchase. No subscription.", "channel": null},
+  {"competitor_id": "vaultsweep", "field": "price_one_time_usd", "value": 24.99, "status": "verified", "source_id": "vaultsweep-home", "evidence": "VaultSweep Pro: $24.99 one-time purchase.", "channel": "direct"},
+  {"competitor_id": "vaultsweep", "field": "price_annual_usd", "value": null, "status": "unknown", "source_id": null, "evidence": null, "channel": null},
+  {"competitor_id": "vaultsweep", "field": "free_trial", "value": "yes: 7-day free trial", "status": "verified", "source_id": "vaultsweep-home", "evidence": "Free 7-day trial.", "channel": null},
+  {"competitor_id": "vaultsweep", "field": "distribution", "value": "direct", "status": "verified", "source_id": "vaultsweep-home", "evidence": "Available direct from our website only.", "channel": null},
+  {"competitor_id": "vaultsweep", "field": "feature_cleanup", "value": "yes", "status": "verified", "source_id": "vaultsweep-home", "evidence": "Smart cache cleanup for Xcode, Logic Pro and Final Cut", "channel": null},
+  {"competitor_id": "vaultsweep", "field": "feature_uninstall", "value": "yes", "status": "verified", "source_id": "vaultsweep-home", "evidence": "Complete app uninstaller with leftover detection", "channel": null},
+  {"competitor_id": "vaultsweep", "field": "feature_disk_map", "value": null, "status": "unknown", "source_id": null, "evidence": null, "channel": null},
+  {"competitor_id": "vaultsweep", "field": "feature_duplicates", "value": "no", "status": "verified", "source_id": "vaultsweep-home", "evidence": "VaultSweep does not include a duplicate finder.", "channel": null},
+  {"competitor_id": "vaultsweep", "field": "feature_developer_cleanup", "value": "yes", "status": "verified", "source_id": "vaultsweep-home", "evidence": "Smart cache cleanup for Xcode, Logic Pro and Final Cut", "channel": null},
+  {"competitor_id": "vaultsweep", "field": "feature_plugin_management", "value": null, "status": "unknown", "source_id": null, "evidence": null, "channel": null},
+  {"competitor_id": "vaultsweep", "field": "positioning_headline", "value": "Reclaim gigabytes of space. Cleanup and app removal for creative pros.", "status": "verified", "source_id": "vaultsweep-home", "evidence": "Reclaim gigabytes of space. Cleanup and app removal for creative pros.", "channel": null}
+]

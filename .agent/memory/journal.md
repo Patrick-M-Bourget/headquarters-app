@@ -36,3 +36,8 @@
     2. A process agent with a budget hard-stops after its first run because the run counts as "unpriced usage" (policy defaults to block), even at $0 observed. Reporting cost via POST /companies/:id/cost-events records spend but still counts the run as unpriced. Fix: `unpricedUsagePolicy: allow` + the runner reports cost.
     3. After a failed run, Paperclip opened a recovery action on HEA-7. Retry in the UI, status→todo, reassign and heartbeat/invoke all failed to resume it (invoke started a run not linked to the issue). Had to cancel and open a new issue (HEA-8). The owner hit this in the UI ("retry seems jammed").
   - Budget rule from owner: $100 total hard limit; per-phase caps are soft.
+- Phase 4 + ADR:
+  - Injection fixture (`eval/injection/`): Mastra Sonnet, Mastra Haiku and the Claude Code agent (HEA-9, file fixture) all passed 6/6 and flagged it. The first canary check was too blunt (quoting the attack inside a warning counted as a fail); fixed.
+  - Haiku proxy (full 10): 96.0% / 67.6%, $0.02, 38 s. One real over-inference: CleanMyMac "subscription" from a true "$3.33/month" quote. The evidence check doesn't catch inference errors.
+  - ADR 0001 written (Proposed): pipeline + Mastra kept as default for research workers, Claude Code agent for open-ended work only, Paperclip on probation pending the SEO/GEO re-test. Owner decides (L3).
+  - Total spend about $4.15.

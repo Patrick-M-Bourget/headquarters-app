@@ -1,0 +1,31 @@
+[
+  {
+    "title": "Hold a one-time price near VaultSweep's $24.99 with a clear value gap",
+    "rationale": "VaultSweep sells one-time at $24.99 with no subscription and a 7-day trial. A one-time CacheDrop price well above this needs a visible reason; at or below it, the one-time pitch is table stakes rather than a differentiator.",
+    "observation_refs": [
+      {"competitor_id": "vaultsweep", "field": "price_one_time_usd"},
+      {"competitor_id": "vaultsweep", "field": "pricing_model"},
+      {"competitor_id": "vaultsweep", "field": "free_trial"}
+    ],
+    "status": "hypothesis"
+  },
+  {
+    "title": "Offer a trial at least as generous as 7 days",
+    "rationale": "VaultSweep offers a free 7-day trial on a direct-only sale. Matching or exceeding it avoids a conversion disadvantage for buyers comparing the two.",
+    "observation_refs": [
+      {"competitor_id": "vaultsweep", "field": "free_trial"},
+      {"competitor_id": "vaultsweep", "field": "distribution"}
+    ],
+    "status": "hypothesis"
+  },
+  {
+    "title": "Differentiate beyond developer/creative-pro cache cleanup",
+    "rationale": "VaultSweep targets creative pros with Xcode/Logic Pro/Final Cut cache cleanup plus an uninstaller, and states it has no duplicate finder. CacheDrop could differentiate by serving a broader audience or by covering features VaultSweep lacks or does not state (duplicates, disk map).",
+    "observation_refs": [
+      {"competitor_id": "vaultsweep", "field": "positioning_headline"},
+      {"competitor_id": "vaultsweep", "field": "feature_developer_cleanup"},
+      {"competitor_id": "vaultsweep", "field": "feature_duplicates"}
+    ],
+    "status": "hypothesis"
+  }
+]

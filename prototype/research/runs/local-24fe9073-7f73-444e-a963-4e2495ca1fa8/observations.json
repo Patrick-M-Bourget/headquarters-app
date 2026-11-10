@@ -1,0 +1,100 @@
+[
+  {
+    "competitor_id": "vaultsweep",
+    "field": "pricing_model",
+    "value": "one_time",
+    "status": "verified",
+    "source_id": "vaultsweep-1",
+    "evidence": "$24.99 one-time purchase. No subscription."
+  },
+  {
+    "competitor_id": "vaultsweep",
+    "field": "price_one_time_usd",
+    "value": 24.99,
+    "status": "verified",
+    "source_id": "vaultsweep-1",
+    "evidence": "VaultSweep Pro: $24.99 one-time purchase.",
+    "channel": "direct"
+  },
+  {
+    "competitor_id": "vaultsweep",
+    "field": "price_annual_usd",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null,
+    "channel": null
+  },
+  {
+    "competitor_id": "vaultsweep",
+    "field": "free_trial",
+    "value": "yes: 7-day free trial",
+    "status": "verified",
+    "source_id": "vaultsweep-1",
+    "evidence": "Free 7-day trial."
+  },
+  {
+    "competitor_id": "vaultsweep",
+    "field": "distribution",
+    "value": "direct",
+    "status": "verified",
+    "source_id": "vaultsweep-1",
+    "evidence": "Available direct from our website only."
+  },
+  {
+    "competitor_id": "vaultsweep",
+    "field": "feature_cleanup",
+    "value": "yes",
+    "status": "verified",
+    "source_id": "vaultsweep-1",
+    "evidence": "Smart cache cleanup for Xcode, Logic Pro and Final Cut"
+  },
+  {
+    "competitor_id": "vaultsweep",
+    "field": "feature_uninstall",
+    "value": "yes",
+    "status": "verified",
+    "source_id": "vaultsweep-1",
+    "evidence": "Complete app uninstaller with leftover detection"
+  },
+  {
+    "competitor_id": "vaultsweep",
+    "field": "feature_disk_map",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "vaultsweep",
+    "field": "feature_duplicates",
+    "value": "no",
+    "status": "verified",
+    "source_id": "vaultsweep-1",
+    "evidence": "VaultSweep does not include a duplicate finder."
+  },
+  {
+    "competitor_id": "vaultsweep",
+    "field": "feature_developer_cleanup",
+    "value": "yes",
+    "status": "verified",
+    "source_id": "vaultsweep-1",
+    "evidence": "Smart cache cleanup for Xcode"
+  },
+  {
+    "competitor_id": "vaultsweep",
+    "field": "feature_plugin_management",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "vaultsweep",
+    "field": "positioning_headline",
+    "value": "Reclaim gigabytes of space.",
+    "status": "verified",
+    "source_id": "vaultsweep-1",
+    "evidence": "Reclaim gigabytes of space."
+  }
+]

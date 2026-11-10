@@ -1,0 +1,54 @@
+[
+  {
+    "title": "Lead with duplicate detection as a differentiator against VaultSweep",
+    "rationale": "VaultSweep's verified feature_duplicates value is 'no', so duplicate-file detection is a concrete point where CacheDrop can stand out in comparisons. Build it into the headline feature set and marketing copy. Base this on the verified 'no' only; do not infer anything about other competitors.",
+    "observation_refs": [
+      {
+        "competitor_id": "vaultsweep",
+        "field": "feature_duplicates"
+      }
+    ],
+    "status": "hypothesis"
+  },
+  {
+    "title": "Compete on transparent one-time pricing in the same model",
+    "rationale": "VaultSweep is also one-time priced at $24.99 sold direct. Since CacheDrop shares the one-time model, the comparison will turn on value and clarity, not on the model itself. Make the one-time price and what it includes easy to see at the point of purchase.",
+    "observation_refs": [
+      {
+        "competitor_id": "vaultsweep",
+        "field": "pricing_model"
+      },
+      {
+        "competitor_id": "vaultsweep",
+        "field": "price_one_time_usd"
+      }
+    ],
+    "status": "hypothesis"
+  },
+  {
+    "title": "Evaluate a free trial to match the category norm set by VaultSweep",
+    "rationale": "VaultSweep offers a 7-day free trial. For a one-time purchase, a trial lets users check that cleanup and uninstall work on their own machines (large sample libraries, plug-in folders, render caches) before paying. Consider offering one to remove this as a reason to choose VaultSweep.",
+    "observation_refs": [
+      {
+        "competitor_id": "vaultsweep",
+        "field": "free_trial"
+      }
+    ],
+    "status": "hypothesis"
+  },
+  {
+    "title": "Position on producer, developer and editor workflows rather than generic space recovery",
+    "rationale": "VaultSweep's headline 'Reclaim gigabytes of space.' is a generic storage message. CacheDrop's audience is music producers, developers and video editors. Write headlines around their specific pain points. VaultSweep also lists developer cleanup as a feature, so the niche claim has to rest on depth of workflow fit, not on developer cleanup alone.",
+    "observation_refs": [
+      {
+        "competitor_id": "vaultsweep",
+        "field": "positioning_headline"
+      },
+      {
+        "competitor_id": "vaultsweep",
+        "field": "feature_developer_cleanup"
+      }
+    ],
+    "status": "hypothesis"
+  }
+]

@@ -1,0 +1,97 @@
+[
+  {
+    "title": "Lead with a one-time purchase against subscription-based leaders",
+    "rationale": "CleanMyMac is the only verified competitor listing a subscription pricing model, while several rivals sell one-time licenses (DaisyDisk at $9.99, Mole at $19, Sensei at $59 one-time or $29 annual as an option). CacheDrop's one-time model can be positioned as the alternative to recurring fees, without claiming anything about competitors' total cost of ownership beyond the verified pricing model.",
+    "observation_refs": [
+      {
+        "competitor_id": "cleanmymac",
+        "field": "pricing_model"
+      },
+      {
+        "competitor_id": "daisydisk",
+        "field": "pricing_model"
+      },
+      {
+        "competitor_id": "daisydisk",
+        "field": "price_one_time_usd"
+      },
+      {
+        "competitor_id": "mole",
+        "field": "price_one_time_usd"
+      }
+    ],
+    "status": "hypothesis"
+  },
+  {
+    "title": "Target producers and developers with plug-in management and developer cleanup",
+    "rationale": "Among verified observations, plug-in management is listed only for MacCleaner Pro, and developer-specific cleanup is not verified for any competitor. CacheDrop's stated focus on music producers, developers and video editors can be differentiated by building plug-in management and developer cleanup as core features, citing the single verified competitor that offers plug-in management as the benchmark. Absence of other competitors' plug-in management is not treated as proof of a gap.",
+    "observation_refs": [
+      {
+        "competitor_id": "maccleaner-pro",
+        "field": "feature_plugin_management"
+      }
+    ],
+    "status": "hypothesis"
+  },
+  {
+    "title": "Price a one-time license against MacCleaner Pro's bundle",
+    "rationale": "MacCleaner Pro offers a bundle of six tools at $85.95 one-time or $39.95 annual, with a 2-day free trial that includes full Pro access and no credit card required. CacheDrop can compete on a lower-priced, focused one-time offer and consider a trial structure that matches or exceeds the verified trial terms, while avoiding unverified claims about the competitor's feature depth.",
+    "observation_refs": [
+      {
+        "competitor_id": "maccleaner-pro",
+        "field": "price_one_time_usd"
+      },
+      {
+        "competitor_id": "maccleaner-pro",
+        "field": "price_annual_usd"
+      },
+      {
+        "competitor_id": "maccleaner-pro",
+        "field": "free_trial"
+      }
+    ],
+    "status": "hypothesis"
+  },
+  {
+    "title": "Bundle disk-usage mapping and duplicate finding into a single cleanup workflow",
+    "rationale": "Disk map and duplicate detection are verified for MacCleaner Pro and Mole (disk map) and GrandPerspective (disk map), while DaisyDisk is verified as lacking duplicate detection. Hyperspace is verified for duplicates but notably positions around reclaiming space without removing files. CacheDrop can combine disk mapping with duplicate handling in one flow, using the verified competitors that offer each feature as reference points.",
+    "observation_refs": [
+      {
+        "competitor_id": "daisydisk",
+        "field": "feature_duplicates"
+      },
+      {
+        "competitor_id": "hyperspace",
+        "field": "feature_duplicates"
+      },
+      {
+        "competitor_id": "grandperspective",
+        "field": "feature_disk_map"
+      },
+      {
+        "competitor_id": "mole",
+        "field": "feature_disk_map"
+      }
+    ],
+    "status": "hypothesis"
+  },
+  {
+    "title": "Differentiate positioning from generic 'clean and fast' headlines",
+    "rationale": "Several verified headlines use generic performance language, such as CleanMyMac's 'Smart & effortless Mac care', Mole's 'Keep your Mac clean and light', and MacCleaner Pro's 'Keep your Mac always fast, clean and organized'. CacheDrop can instead anchor its message on the specific needs of producers, developers and video editors, which is consistent with its stated audience.",
+    "observation_refs": [
+      {
+        "competitor_id": "cleanmymac",
+        "field": "positioning_headline"
+      },
+      {
+        "competitor_id": "mole",
+        "field": "positioning_headline"
+      },
+      {
+        "competitor_id": "maccleaner-pro",
+        "field": "positioning_headline"
+      }
+    ],
+    "status": "hypothesis"
+  }
+]

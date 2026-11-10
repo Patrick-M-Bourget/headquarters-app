@@ -1,0 +1,73 @@
+[
+  {
+    "title": "Lead with duplicate detection for creative libraries",
+    "rationale": "VaultSweep's duplicates feature is verified as 'no', so it is a confirmed point of difference. CacheDrop could test duplicate handling aimed at the large, repetitive files music producers and video editors accumulate, such as sample packs, exports and project copies. This assumes CacheDrop can deliver it credibly.",
+    "observation_refs": [
+      {
+        "competitor_id": "vaultsweep",
+        "field": "feature_duplicates"
+      }
+    ],
+    "status": "hypothesis"
+  },
+  {
+    "title": "Don't rely on 'one-time purchase' alone as the differentiator",
+    "rationale": "VaultSweep is also one-time priced, at $24.99 direct. The pricing model therefore doesn't set CacheDrop apart. Pricing messaging should say what the buyer gets for the money, such as workflow-specific tools for producers, developers and editors, and should be positioned against the $24.99 reference point.",
+    "observation_refs": [
+      {
+        "competitor_id": "vaultsweep",
+        "field": "pricing_model"
+      },
+      {
+        "competitor_id": "vaultsweep",
+        "field": "price_one_time_usd"
+      }
+    ],
+    "status": "hypothesis"
+  },
+  {
+    "title": "Match or exceed the 7-day trial with a project-cycle-based trial",
+    "rationale": "VaultSweep offers a 7-day free trial, so a trial is the baseline expectation. CacheDrop should at least match it. It could also test a longer or usage-based trial, such as one that lasts through a full project or session, to suit creative professionals who don't clean up on a weekly rhythm.",
+    "observation_refs": [
+      {
+        "competitor_id": "vaultsweep",
+        "field": "free_trial"
+      }
+    ],
+    "status": "hypothesis"
+  },
+  {
+    "title": "Replace generic space-recovery messaging with audience-specific positioning",
+    "rationale": "VaultSweep's headline, 'Reclaim gigabytes of space.', is a broad storage benefit that names no audience. CacheDrop can stand out with a headline that names music producers, developers and video editors and the problems specific to their work, including plug-in management.",
+    "observation_refs": [
+      {
+        "competitor_id": "vaultsweep",
+        "field": "positioning_headline"
+      }
+    ],
+    "status": "hypothesis"
+  },
+  {
+    "title": "Treat core cleanup, uninstall and developer cleanup as table stakes",
+    "rationale": "VaultSweep verifiably offers cleanup, uninstall and developer cleanup, all sold direct. CacheDrop shouldn't present these basics as unique. Use them as proof of parity and put the headline emphasis on audience-specific capabilities such as plug-in management and duplicates.",
+    "observation_refs": [
+      {
+        "competitor_id": "vaultsweep",
+        "field": "feature_cleanup"
+      },
+      {
+        "competitor_id": "vaultsweep",
+        "field": "feature_uninstall"
+      },
+      {
+        "competitor_id": "vaultsweep",
+        "field": "feature_developer_cleanup"
+      },
+      {
+        "competitor_id": "vaultsweep",
+        "field": "distribution"
+      }
+    ],
+    "status": "hypothesis"
+  }
+]

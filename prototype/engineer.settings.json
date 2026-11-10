@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "defaultMode": "acceptEdits",
+    "allow": [
+      "Bash(npm test)",
+      "Bash(npm run export-schema)",
+      "Bash(node agent-workspace/tools/pc.ts:*)",
+      "Bash(node agent-workspace/tools/validate.ts:*)",
+      "Bash(node eval/score.ts:*)"
+    ],
+    "deny": [
+      "Bash(curl:*)",
+      "Bash(git:*)",
+      "Bash(npm install:*)",
+      "Read(//Users/bender/Workspace/headquarters-app/prototype/.env)",
+      "Edit(//Users/bender/Workspace/headquarters-app/prototype/.env)",
+      "Edit(//Users/bender/Workspace/headquarters-app/prototype/node_modules/**)",
+      "Edit(//Users/bender/Workspace/headquarters-app/prototype/agent-workspace/runs/**)",
+      "Edit(//Users/bender/Workspace/headquarters-app/prototype/eval/answer-key*)",
+      "Read(~/.paperclip/**)",
+      "Read(~/.ssh/**)"
+    ]
+  }
+}

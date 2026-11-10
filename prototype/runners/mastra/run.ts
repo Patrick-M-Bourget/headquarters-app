@@ -6,7 +6,7 @@ import { join } from "node:path";
 import { randomUUID } from "node:crypto";
 import { RunOutput, FIELDS } from "../../packages/data-contracts/index.ts";
 import { competitorResearch, costUsd, MODEL } from "./workflow.ts";
-import { findIssue, paperclipEnabled, reportCost, reportToIssue } from "./paperclip.ts";
+import { findIssue, paperclipEnabled, reportCost, reportToIssue } from "../../packages/paperclip-client/index.ts";
 
 const arg = (name: string) => { const i = process.argv.indexOf(name); return i > 0 ? process.argv[i + 1] : undefined; };
 const root = new URL("../../", import.meta.url).pathname;

@@ -1,3 +1,4 @@
+// Shared Paperclip API client for process-adapter runners (Mastra research, SEO/GEO).
 // Minimal Paperclip API client for the `process` adapter: the adapter passes no issue id,
 // so the runner looks up the issue linked to its heartbeat run and reports back itself.
 const base = () => (process.env.PAPERCLIP_API_URL ?? "").replace(/\/$/, "").replace(/\/api$/, "") + "/api";

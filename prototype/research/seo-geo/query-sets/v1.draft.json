@@ -1,0 +1,259 @@
+{
+  "version": 1,
+  "created_at": "2026-11-10T03:07:21.167Z",
+  "generator_model": "claude-haiku-5-5",
+  "approved_by": null,
+  "approved_at": null,
+  "queries": [
+    {
+      "id": "q01",
+      "text": "best mac cleaner that doesn't need a subscription",
+      "audience": "general",
+      "intent": "recommendation",
+      "keywords": [
+        "mac cleaner",
+        "no subscription"
+      ]
+    },
+    {
+      "id": "q02",
+      "text": "best tool to uninstall vst plugins on mac completely",
+      "audience": "producers",
+      "intent": "recommendation",
+      "keywords": [
+        "uninstall vst mac",
+        "plugin uninstaller mac"
+      ]
+    },
+    {
+      "id": "q03",
+      "text": "best mac cleaner for xcode deriveddata",
+      "audience": "developers",
+      "intent": "recommendation",
+      "keywords": [
+        "xcode deriveddata cleaner",
+        "mac developer cleaner"
+      ]
+    },
+    {
+      "id": "q04",
+      "text": "how to clear premiere pro media cache on mac",
+      "audience": "video_editors",
+      "intent": "how_to",
+      "keywords": [
+        "premiere media cache mac",
+        "clear adobe cache"
+      ]
+    },
+    {
+      "id": "q05",
+      "text": "how do I free up space on my mac when storage is full",
+      "audience": "general",
+      "intent": "how_to",
+      "keywords": [
+        "mac storage full",
+        "free up space"
+      ]
+    },
+    {
+      "id": "q06",
+      "text": "how do I remove old audio plug-ins from my mac",
+      "audience": "producers",
+      "intent": "how_to",
+      "keywords": [
+        "remove audio plugins mac",
+        "delete AU plugins"
+      ]
+    },
+    {
+      "id": "q07",
+      "text": "how do I delete node_modules folders on mac to free space",
+      "audience": "developers",
+      "intent": "how_to",
+      "keywords": [
+        "delete node_modules mac",
+        "node_modules cleanup"
+      ]
+    },
+    {
+      "id": "q08",
+      "text": "best tool to clear final cut pro render files on mac",
+      "audience": "video_editors",
+      "intent": "recommendation",
+      "keywords": [
+        "final cut render files",
+        "final cut cache mac"
+      ]
+    },
+    {
+      "id": "q09",
+      "text": "what is system data on mac and how do I delete it",
+      "audience": "general",
+      "intent": "how_to",
+      "keywords": [
+        "system data mac",
+        "delete system data"
+      ]
+    },
+    {
+      "id": "q10",
+      "text": "how to clear ableton live cache on mac",
+      "audience": "producers",
+      "intent": "how_to",
+      "keywords": [
+        "ableton cache mac",
+        "clear ableton cache"
+      ]
+    },
+    {
+      "id": "q11",
+      "text": "how to clear docker cache on mac to free disk space",
+      "audience": "developers",
+      "intent": "how_to",
+      "keywords": [
+        "docker cache mac",
+        "docker disk space mac"
+      ]
+    },
+    {
+      "id": "q12",
+      "text": "how do I delete adobe media cache files on mac to free space",
+      "audience": "video_editors",
+      "intent": "how_to",
+      "keywords": [
+        "adobe media cache mac",
+        "free space premiere"
+      ]
+    },
+    {
+      "id": "q13",
+      "text": "how to completely uninstall an app on mac without leftover files",
+      "audience": "general",
+      "intent": "how_to",
+      "keywords": [
+        "uninstall mac app",
+        "app leftovers mac"
+      ]
+    },
+    {
+      "id": "q14",
+      "text": "alternative to CleanMyMac for music producers",
+      "audience": "producers",
+      "intent": "alternative",
+      "keywords": [
+        "CleanMyMac alternative",
+        "music producer mac cleaner"
+      ]
+    },
+    {
+      "id": "q15",
+      "text": "clean xcode derived data on mac how to",
+      "audience": "developers",
+      "intent": "how_to",
+      "keywords": [
+        "xcode derived data",
+        "clear xcode cache"
+      ]
+    },
+    {
+      "id": "q16",
+      "text": "premiere pro cache files taking up space on mac how to clean",
+      "audience": "video_editors",
+      "intent": "how_to",
+      "keywords": [
+        "premiere cache space",
+        "clean premiere mac"
+      ]
+    },
+    {
+      "id": "q17",
+      "text": "AppCleaner vs CleanMyMac which is better for uninstalling mac apps",
+      "audience": "general",
+      "intent": "comparison",
+      "keywords": [
+        "AppCleaner vs CleanMyMac",
+        "mac uninstaller"
+      ]
+    },
+    {
+      "id": "q18",
+      "text": "CleanMyMac vs AppCleaner for removing audio plugins",
+      "audience": "producers",
+      "intent": "comparison",
+      "keywords": [
+        "CleanMyMac vs AppCleaner",
+        "remove plugins mac"
+      ]
+    },
+    {
+      "id": "q19",
+      "text": "alternative to DaisyDisk for developers checking mac disk usage",
+      "audience": "developers",
+      "intent": "alternative",
+      "keywords": [
+        "DaisyDisk alternative",
+        "mac disk usage"
+      ]
+    },
+    {
+      "id": "q20",
+      "text": "alternative to CleanMyMac for video editors on mac",
+      "audience": "video_editors",
+      "intent": "alternative",
+      "keywords": [
+        "CleanMyMac alternative",
+        "video editor mac cleaner"
+      ]
+    },
+    {
+      "id": "q21",
+      "text": "CleanMyMac subscription vs one time purchase cleaner for mac",
+      "audience": "general",
+      "intent": "comparison",
+      "keywords": [
+        "CleanMyMac subscription",
+        "one time purchase mac cleaner"
+      ]
+    },
+    {
+      "id": "q22",
+      "text": "best plugin manager for mac to remove unused AU and VST3 plugins",
+      "audience": "producers",
+      "intent": "recommendation",
+      "keywords": [
+        "plugin manager mac",
+        "VST3 remove mac"
+      ]
+    },
+    {
+      "id": "q23",
+      "text": "DaisyDisk vs CleanMyMac for clearing developer caches",
+      "audience": "developers",
+      "intent": "comparison",
+      "keywords": [
+        "DaisyDisk vs CleanMyMac",
+        "developer caches mac"
+      ]
+    },
+    {
+      "id": "q24",
+      "text": "CleanMyMac vs DaisyDisk for freeing space from video projects",
+      "audience": "video_editors",
+      "intent": "comparison",
+      "keywords": [
+        "CleanMyMac vs DaisyDisk",
+        "video project storage mac"
+      ]
+    },
+    {
+      "id": "q25",
+      "text": "best app uninstaller for mac",
+      "audience": "general",
+      "intent": "recommendation",
+      "keywords": [
+        "app uninstaller mac",
+        "uninstall apps mac"
+      ]
+    }
+  ]
+}

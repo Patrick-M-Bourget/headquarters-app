@@ -43,3 +43,7 @@
   - Total spend about $4.15.
 - Owner approved HEA-8 and accepted ADR 0001 as written (2026-11-09).
 - Paperclip finding: HEA-8 approval needed two PATCHes. The owner's UI "mark done" plus my first approval only re-synced a drifted review hold (issue-execution-policy holdDrifted path) without recording a decision; the second PATCH approved it. Approvals can silently not take: check executionState.lastDecisionOutcome after approving.
+- SEO/GEO step 1–2: contracts (`seo-geo.ts`) + query generator (Haiku, $0.002 per run) + round-robin audience selection. The Paperclip client moved to packages/paperclip-client.
+  - HEA-10: draft 1 was sent back (only 4 general questions; off-topic comparisons). Paperclip finding: "request changes" (status todo + comment) on a process agent's review left the issue assigned to the board user with the execution state cleared; nothing woke. Fixed by PATCH assigneeAgentId=<agent> + assigneeUserId=null (a plain reassign fails with "Issue can only have one assignee").
+  - Draft 2 was approved by the owner with 2 swaps (q15, q16, both from the not-selected list) and frozen as research/seo-geo/query-sets/v1.json. This approval took on the first try.
+  - Gemini key (AI Studio, free tier) is in .env; gemini-2.5-flash is available. DataForSEO is deferred. Tavily and Serper keys are still needed (on-page and keyword steps).

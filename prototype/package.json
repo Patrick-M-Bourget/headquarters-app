@@ -6,6 +6,7 @@
     "node": ">=24.11"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^1.7.0",
     "@mastra/core": "^1.82.0",
     "@mozilla/readability": "^0.6.0",
     "linkedom": "^0.18.15",

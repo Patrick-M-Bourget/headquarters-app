@@ -1,0 +1,2542 @@
+[
+  {
+    "query_id": "q01",
+    "engine": "claude",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q01",
+    "engine": "claude",
+    "brand": "appcleaner",
+    "mentioned": true,
+    "recommended": true,
+    "position": 1,
+    "cited_own_site": false,
+    "evidence": "For most people, a free combo of **AppCleaner** and **OnyX** covers the basics without any subscription."
+  },
+  {
+    "query_id": "q01",
+    "engine": "claude",
+    "brand": "onyx",
+    "mentioned": true,
+    "recommended": true,
+    "position": 2,
+    "cited_own_site": false,
+    "evidence": "For most people, a free combo of **AppCleaner** and **OnyX** covers the basics without any subscription."
+  },
+  {
+    "query_id": "q01",
+    "engine": "claude",
+    "brand": "pearcleaner",
+    "mentioned": true,
+    "recommended": true,
+    "position": 3,
+    "cited_own_site": false,
+    "evidence": "It is one of the best free choices."
+  },
+  {
+    "query_id": "q01",
+    "engine": "claude",
+    "brand": "daisydisk",
+    "mentioned": true,
+    "recommended": true,
+    "position": 4,
+    "cited_own_site": false,
+    "evidence": "**DaisyDisk ($9.99 one-time, for seeing what's using space):** It renders your disk as an interactive sunburst treemap."
+  },
+  {
+    "query_id": "q01",
+    "engine": "claude",
+    "brand": "crumb",
+    "mentioned": true,
+    "recommended": true,
+    "position": 5,
+    "cited_own_site": false,
+    "evidence": "**Crumb ($9 one-time, all-in-one):** It covers one-click cache and log cleaning, a disk space visualizer, a full app uninstaller that finds leftover files, and a duplicate finder."
+  },
+  {
+    "query_id": "q01",
+    "engine": "claude",
+    "brand": "macdiskcleaner",
+    "mentioned": true,
+    "recommended": true,
+    "position": 6,
+    "cited_own_site": false,
+    "evidence": "**MacDiskCleaner (free up to a limit):** It scans your whole Mac for junk, duplicates, large and old files for free"
+  },
+  {
+    "query_id": "q01",
+    "engine": "claude",
+    "brand": "cleanmymac",
+    "mentioned": true,
+    "recommended": false,
+    "position": 7,
+    "cited_own_site": false,
+    "evidence": "CleanMyMac, the best-known paid option, is out. It is subscription-only at approximately $34–40 per year with no lifetime license option."
+  },
+  {
+    "query_id": "q01",
+    "engine": "gemini",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q01",
+    "engine": "gemini",
+    "brand": "cleanmymac",
+    "mentioned": true,
+    "recommended": false,
+    "position": 1,
+    "cited_own_site": false,
+    "evidence": "If you want to avoid subscriptions (like the costly annual fees of CleanMyMac)"
+  },
+  {
+    "query_id": "q01",
+    "engine": "gemini",
+    "brand": "onyx",
+    "mentioned": true,
+    "recommended": true,
+    "position": 2,
+    "cited_own_site": false,
+    "evidence": "**[OnyX](https://www.titanium-software.fr/en/onyx.html) (Best for Deep System Maintenance & Caches)**"
+  },
+  {
+    "query_id": "q01",
+    "engine": "gemini",
+    "brand": "appcleaner",
+    "mentioned": true,
+    "recommended": true,
+    "position": 3,
+    "cited_own_site": false,
+    "evidence": "**[AppCleaner](https://freemacsoft.net/appcleaner/) (Best for Uninstalling Apps & Residual Files)**"
+  },
+  {
+    "query_id": "q01",
+    "engine": "gemini",
+    "brand": "pearcleaner",
+    "mentioned": true,
+    "recommended": true,
+    "position": 4,
+    "cited_own_site": false,
+    "evidence": "**Pearcleaner** is an open-source, modern alternative with a native macOS UI inspired by AppCleaner."
+  },
+  {
+    "query_id": "q01",
+    "engine": "gemini",
+    "brand": "omnidisksweeper",
+    "mentioned": true,
+    "recommended": true,
+    "position": 5,
+    "cited_own_site": false,
+    "evidence": "A fast, simple list-based tool that scans your entire drive and sorts every folder and file by size from largest to smallest"
+  },
+  {
+    "query_id": "q01",
+    "engine": "gemini",
+    "brand": "daisydisk",
+    "mentioned": true,
+    "recommended": true,
+    "position": 6,
+    "cited_own_site": false,
+    "evidence": "**[DaisyDisk](https://daisydiskapp.com/) (Best for Freeing Up Hard Drive Space)**"
+  },
+  {
+    "query_id": "q01",
+    "engine": "gemini",
+    "brand": "buhocleaner",
+    "mentioned": true,
+    "recommended": true,
+    "position": 7,
+    "cited_own_site": false,
+    "evidence": "BuhoCleaner is the best commercial drop-in replacement."
+  },
+  {
+    "query_id": "q02",
+    "engine": "claude",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q02",
+    "engine": "claude",
+    "brand": "audio-plugin-uninstaller-by-wide-blue-sound",
+    "mentioned": true,
+    "recommended": true,
+    "position": 1,
+    "cited_own_site": false,
+    "evidence": "The best all-round choice is **Audio Plugin Uninstaller by Wide Blue Sound**. It is a dedicated Mac tool, and it's the one most often recommended for this job."
+  },
+  {
+    "query_id": "q02",
+    "engine": "claude",
+    "brand": "plugin-station",
+    "mentioned": true,
+    "recommended": true,
+    "position": 2,
+    "cited_own_site": false,
+    "evidence": "**Plugin Station:** It's the most feature-complete option, with an uninstall assistant, but it costs $4.99/month or $165 one-time (1 Mac). It's overkill if you only need uninstalling."
+  },
+  {
+    "query_id": "q02",
+    "engine": "claude",
+    "brand": "vst-manager",
+    "mentioned": true,
+    "recommended": true,
+    "position": 3,
+    "cited_own_site": false,
+    "evidence": "**VST Manager:** It is cheaper, at $4.99 one-time. It gives you a unified view of every VST, VST3, and AU plugin installed, and lets you delete their files."
+  },
+  {
+    "query_id": "q02",
+    "engine": "claude",
+    "brand": "bypass",
+    "mentioned": true,
+    "recommended": false,
+    "position": 4,
+    "cited_own_site": false,
+    "evidence": "**Bypass:** A lightweight option that deletes the plugin file from its corresponding folder. It doesn't appear to check receipts, so leftover support files may remain."
+  },
+  {
+    "query_id": "q02",
+    "engine": "claude",
+    "brand": "uninstallpkg",
+    "mentioned": true,
+    "recommended": false,
+    "position": 5,
+    "cited_own_site": false,
+    "evidence": "One user said it does the same work than Audio plugin uninstaller but it's free. It works on installer packages in general, so it's less focused on plugins."
+  },
+  {
+    "query_id": "q02",
+    "engine": "gemini",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q02",
+    "engine": "gemini",
+    "brand": "audio-plugin-uninstaller",
+    "mentioned": true,
+    "recommended": true,
+    "position": 1,
+    "cited_own_site": false,
+    "evidence": "The single best dedicated tool for this job on macOS is **Audio Plugin Uninstaller by Wide Blue Sound**."
+  },
+  {
+    "query_id": "q02",
+    "engine": "gemini",
+    "brand": "appcleaner",
+    "mentioned": true,
+    "recommended": true,
+    "position": 2,
+    "cited_own_site": false,
+    "evidence": "### 2. The Best Free General Tool: **AppCleaner** (FreeMacSoft) or **Pearcleaner**"
+  },
+  {
+    "query_id": "q02",
+    "engine": "gemini",
+    "brand": "pearcleaner",
+    "mentioned": true,
+    "recommended": true,
+    "position": 3,
+    "cited_own_site": false,
+    "evidence": "it is free and reliable for single-file plugins."
+  },
+  {
+    "query_id": "q02",
+    "engine": "gemini",
+    "brand": "native-access",
+    "mentioned": true,
+    "recommended": true,
+    "position": 4,
+    "cited_own_site": false,
+    "evidence": "* **Native Access** (Native Instruments)"
+  },
+  {
+    "query_id": "q02",
+    "engine": "gemini",
+    "brand": "waves-central",
+    "mentioned": true,
+    "recommended": true,
+    "position": 5,
+    "cited_own_site": false,
+    "evidence": "* **Waves Central** (Waves)"
+  },
+  {
+    "query_id": "q02",
+    "engine": "gemini",
+    "brand": "arturia-software-center",
+    "mentioned": true,
+    "recommended": true,
+    "position": 6,
+    "cited_own_site": false,
+    "evidence": "* **Arturia Software Center** (Arturia)"
+  },
+  {
+    "query_id": "q02",
+    "engine": "gemini",
+    "brand": "izotope-product-portal",
+    "mentioned": true,
+    "recommended": true,
+    "position": 7,
+    "cited_own_site": false,
+    "evidence": "* **iZotope Product Portal**"
+  },
+  {
+    "query_id": "q02",
+    "engine": "gemini",
+    "brand": "spitfire-audio-app",
+    "mentioned": true,
+    "recommended": true,
+    "position": 8,
+    "cited_own_site": false,
+    "evidence": "* **Spitfire Audio App**"
+  },
+  {
+    "query_id": "q03",
+    "engine": "claude",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q03",
+    "engine": "claude",
+    "brand": "cleanmymac",
+    "mentioned": true,
+    "recommended": false,
+    "position": 1,
+    "cited_own_site": false,
+    "evidence": "For DerivedData specifically, a dev-focused cleaner is a better fit than a general one like CleanMyMac."
+  },
+  {
+    "query_id": "q03",
+    "engine": "claude",
+    "brand": "devcleaner",
+    "mentioned": true,
+    "recommended": true,
+    "position": 2,
+    "cited_own_site": false,
+    "evidence": "This is the pick if you only care about Xcode and want to avoid paying."
+  },
+  {
+    "query_id": "q03",
+    "engine": "claude",
+    "brand": "devcleanup",
+    "mentioned": true,
+    "recommended": true,
+    "position": 3,
+    "cited_own_site": false,
+    "evidence": "Choose it if you want one tool for more than Xcode."
+  },
+  {
+    "query_id": "q03",
+    "engine": "claude",
+    "brand": "puremac",
+    "mentioned": true,
+    "recommended": true,
+    "position": 4,
+    "cited_own_site": false,
+    "evidence": "PureMac (free, open source, MIT): It has an Xcode cleanup module covering DerivedData, Archives, simulator caches, plus scheduled auto-cleaning."
+  },
+  {
+    "query_id": "q03",
+    "engine": "claude",
+    "brand": "cleanmydev",
+    "mentioned": true,
+    "recommended": true,
+    "position": 5,
+    "cited_own_site": false,
+    "evidence": "CleanMyDev moves items to the Trash by default rather than using rm -rf"
+  },
+  {
+    "query_id": "q03",
+    "engine": "gemini",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q03",
+    "engine": "gemini",
+    "brand": "devcleaner",
+    "mentioned": true,
+    "recommended": true,
+    "position": 1,
+    "cited_own_site": false,
+    "evidence": "### 1. The Best Dedicated App: **DevCleaner for Xcode** (Free / Open Source)"
+  },
+  {
+    "query_id": "q03",
+    "engine": "gemini",
+    "brand": "raycast",
+    "mentioned": true,
+    "recommended": true,
+    "position": 2,
+    "cited_own_site": false,
+    "evidence": "**Raycast (Xcode Extension):** If you use the Raycast launcher, search for the community-made **Xcode** extension."
+  },
+  {
+    "query_id": "q03",
+    "engine": "gemini",
+    "brand": "eraser-for-xcode",
+    "mentioned": true,
+    "recommended": true,
+    "position": 3,
+    "cited_own_site": false,
+    "evidence": "**Eraser for Xcode:** A lightweight menu bar utility available on the Mac App Store that allows one-click DerivedData purges and scheduled cache cleanups."
+  },
+  {
+    "query_id": "q03",
+    "engine": "gemini",
+    "brand": "cleanmymac",
+    "mentioned": true,
+    "recommended": false,
+    "position": 4,
+    "cited_own_site": false,
+    "evidence": "Avoid paid, general-purpose cleaners (like CleanMyMac) solely for Xcode files"
+  },
+  {
+    "query_id": "q04",
+    "engine": "claude",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q04",
+    "engine": "gemini",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q05",
+    "engine": "claude",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q05",
+    "engine": "claude",
+    "brand": "cleanmymac",
+    "mentioned": true,
+    "recommended": true,
+    "position": 1,
+    "cited_own_site": false,
+    "evidence": "Third-party cleaners such as CleanMyMac or DaisyDisk can visualize disk usage."
+  },
+  {
+    "query_id": "q05",
+    "engine": "claude",
+    "brand": "daisydisk",
+    "mentioned": true,
+    "recommended": true,
+    "position": 2,
+    "cited_own_site": false,
+    "evidence": "Third-party cleaners such as CleanMyMac or DaisyDisk can visualize disk usage."
+  },
+  {
+    "query_id": "q05",
+    "engine": "gemini",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q05",
+    "engine": "gemini",
+    "brand": "omnidisksweeper",
+    "mentioned": true,
+    "recommended": true,
+    "position": 1,
+    "cited_own_site": false,
+    "evidence": "**[OmniDiskSweeper](https://www.omnigroup.com/more)** (Free, lightweight; sorts every folder by size)."
+  },
+  {
+    "query_id": "q05",
+    "engine": "gemini",
+    "brand": "grandperspective",
+    "mentioned": true,
+    "recommended": true,
+    "position": 2,
+    "cited_own_site": false,
+    "evidence": "**[GrandPerspective](https://grandperspectiv.sourceforge.net/)** (Free, open-source; displays a visual map of large files)."
+  },
+  {
+    "query_id": "q06",
+    "engine": "claude",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q06",
+    "engine": "gemini",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q06",
+    "engine": "gemini",
+    "brand": "waves-central",
+    "mentioned": true,
+    "recommended": true,
+    "position": 1,
+    "cited_own_site": false,
+    "evidence": "**Waves:** Open **Waves Central** > *Uninstall*."
+  },
+  {
+    "query_id": "q06",
+    "engine": "gemini",
+    "brand": "native-access",
+    "mentioned": true,
+    "recommended": true,
+    "position": 2,
+    "cited_own_site": false,
+    "evidence": "**Native Instruments:** Open **Native Access** (or check their uninstaller apps)."
+  },
+  {
+    "query_id": "q06",
+    "engine": "gemini",
+    "brand": "arturia-software-center",
+    "mentioned": true,
+    "recommended": true,
+    "position": 3,
+    "cited_own_site": false,
+    "evidence": "**Arturia:** Open **Arturia Software Center**."
+  },
+  {
+    "query_id": "q06",
+    "engine": "gemini",
+    "brand": "uad-uninstaller",
+    "mentioned": true,
+    "recommended": true,
+    "position": 4,
+    "cited_own_site": false,
+    "evidence": "**Universal Audio:** Check the UAD uninstaller in `/Applications/Universal Audio/`."
+  },
+  {
+    "query_id": "q06",
+    "engine": "gemini",
+    "brand": "izotope-product-portal",
+    "mentioned": true,
+    "recommended": true,
+    "position": 5,
+    "cited_own_site": false,
+    "evidence": "**iZotope:** Open **iZotope Product Portal**."
+  },
+  {
+    "query_id": "q07",
+    "engine": "claude",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q07",
+    "engine": "claude",
+    "brand": "npkill",
+    "mentioned": true,
+    "recommended": true,
+    "position": 1,
+    "cited_own_site": false,
+    "evidence": "**Alternative: npkill**\n```bash\nnpx npkill\n```\nThis opens an interactive list where you can browse and delete `node_modules` folders with the arrow keys and Enter."
+  },
+  {
+    "query_id": "q07",
+    "engine": "gemini",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q07",
+    "engine": "gemini",
+    "brand": "npkill",
+    "mentioned": true,
+    "recommended": true,
+    "position": 1,
+    "cited_own_site": false,
+    "evidence": "### Method 1: The Best & Easiest Way (`npkill`) — *Recommended*"
+  },
+  {
+    "query_id": "q08",
+    "engine": "claude",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q08",
+    "engine": "claude",
+    "brand": "final-cut-pro",
+    "mentioned": true,
+    "recommended": false,
+    "position": 1,
+    "cited_own_site": false,
+    "evidence": "Final Cut Pro's built-in command first"
+  },
+  {
+    "query_id": "q08",
+    "engine": "claude",
+    "brand": "render-cleaner",
+    "mentioned": true,
+    "recommended": true,
+    "position": 2,
+    "cited_own_site": false,
+    "evidence": "If you want a dedicated cleaner that also covers caches, Render Cleaner is the main third-party option I found."
+  },
+  {
+    "query_id": "q08",
+    "engine": "claude",
+    "brand": "final-cut-library-manager",
+    "mentioned": true,
+    "recommended": true,
+    "position": 3,
+    "cited_own_site": false,
+    "evidence": "A forum answer recommends this utility for safely deleting render, analysis, and optical flow files across multiple libraries."
+  },
+  {
+    "query_id": "q08",
+    "engine": "claude",
+    "brand": "fcp-tagger",
+    "mentioned": true,
+    "recommended": false,
+    "position": 4,
+    "cited_own_site": false,
+    "evidence": "This doesn't delete render files. It tags the media files your timeline uses so you can find unused media in Finder."
+  },
+  {
+    "query_id": "q08",
+    "engine": "gemini",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q08",
+    "engine": "gemini",
+    "brand": "arctic",
+    "mentioned": true,
+    "recommended": true,
+    "position": 1,
+    "cited_own_site": false,
+    "evidence": "### 1. The Best Dedicated Tool: **Arctic** (Formerly *Final Cut Library Manager*)"
+  },
+  {
+    "query_id": "q08",
+    "engine": "gemini",
+    "brand": "fcp-diet-2",
+    "mentioned": true,
+    "recommended": true,
+    "position": 2,
+    "cited_own_site": false,
+    "evidence": "**FCP Diet 2 (Ulti.Media):** A popular Mac utility specifically created to clean, trim, and archive Final Cut libraries by deleting cache and unused media."
+  },
+  {
+    "query_id": "q08",
+    "engine": "gemini",
+    "brand": "daisydisk",
+    "mentioned": true,
+    "recommended": true,
+    "position": 3,
+    "cited_own_site": false,
+    "evidence": "**DaisyDisk:** While not FCP-specific, this visual disk space analyzer is great if you store your FCP cache in an **external folder**"
+  },
+  {
+    "query_id": "q09",
+    "engine": "claude",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q09",
+    "engine": "gemini",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q09",
+    "engine": "gemini",
+    "brand": "grandperspective",
+    "mentioned": true,
+    "recommended": true,
+    "position": 1,
+    "cited_own_site": false,
+    "evidence": "the easiest way to locate it is with a free disk analyzer: * **GrandPerspective** (Free, open-source)"
+  },
+  {
+    "query_id": "q09",
+    "engine": "gemini",
+    "brand": "omnidisksweeper",
+    "mentioned": true,
+    "recommended": true,
+    "position": 2,
+    "cited_own_site": false,
+    "evidence": "* **OmniDiskSweeper** (Free)"
+  },
+  {
+    "query_id": "q09",
+    "engine": "gemini",
+    "brand": "daisydisk",
+    "mentioned": true,
+    "recommended": true,
+    "position": 3,
+    "cited_own_site": false,
+    "evidence": "* **DaisyDisk** (Free trial available)"
+  },
+  {
+    "query_id": "q10",
+    "engine": "claude",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q10",
+    "engine": "gemini",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q11",
+    "engine": "claude",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q11",
+    "engine": "gemini",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q12",
+    "engine": "claude",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q12",
+    "engine": "gemini",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q13",
+    "engine": "claude",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q13",
+    "engine": "claude",
+    "brand": "appcleaner",
+    "mentioned": true,
+    "recommended": true,
+    "position": 1,
+    "cited_own_site": false,
+    "evidence": "AppCleaner (free, from freemacsoft.net) and similar tools search for leftover files automatically. Review the list before deleting anything."
+  },
+  {
+    "query_id": "q13",
+    "engine": "gemini",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q13",
+    "engine": "gemini",
+    "brand": "appcleaner",
+    "mentioned": true,
+    "recommended": true,
+    "position": 1,
+    "cited_own_site": false,
+    "evidence": "The safest, fastest, and most popular method is using a lightweight, free utility like **AppCleaner** (or **Pearcleaner**, an open-source alternative)."
+  },
+  {
+    "query_id": "q13",
+    "engine": "gemini",
+    "brand": "pearcleaner",
+    "mentioned": true,
+    "recommended": true,
+    "position": 2,
+    "cited_own_site": false,
+    "evidence": "using a lightweight, free utility like **AppCleaner** (or **Pearcleaner**, an open-source alternative)."
+  },
+  {
+    "query_id": "q14",
+    "engine": "claude",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q14",
+    "engine": "claude",
+    "brand": "daisydisk",
+    "mentioned": true,
+    "recommended": true,
+    "position": 1,
+    "cited_own_site": false,
+    "evidence": "Its visual disk map helps you find what is using space, such as large sample libraries."
+  },
+  {
+    "query_id": "q14",
+    "engine": "claude",
+    "brand": "appcleaner",
+    "mentioned": true,
+    "recommended": true,
+    "position": 2,
+    "cited_own_site": false,
+    "evidence": "AppCleaner is free donationware; you drag an app onto it, it finds related files, and you approve the removal."
+  },
+  {
+    "query_id": "q14",
+    "engine": "claude",
+    "brand": "pearcleaner",
+    "mentioned": true,
+    "recommended": true,
+    "position": 3,
+    "cited_own_site": false,
+    "evidence": "Pearcleaner is a free, source-available cleaner with a modern interface, focused on uninstalling and finding leftovers."
+  },
+  {
+    "query_id": "q14",
+    "engine": "claude",
+    "brand": "diskcleaner",
+    "mentioned": true,
+    "recommended": true,
+    "position": 4,
+    "cited_own_site": false,
+    "evidence": "It shows every file before anything moves, and everything goes to Trash, with no permanent deletions."
+  },
+  {
+    "query_id": "q14",
+    "engine": "claude",
+    "brand": "onyx",
+    "mentioned": true,
+    "recommended": true,
+    "position": 5,
+    "cited_own_site": false,
+    "evidence": "It offers intimate control over system maintenance. It suits advanced users, but it has no hand-holding"
+  },
+  {
+    "query_id": "q14",
+    "engine": "claude",
+    "brand": "mole",
+    "mentioned": true,
+    "recommended": true,
+    "position": 6,
+    "cited_own_site": false,
+    "evidence": "It is a command-line tool that cleans caches and app leftovers, and previews everything with mo clean --dry-run."
+  },
+  {
+    "query_id": "q14",
+    "engine": "claude",
+    "brand": "grandperspective",
+    "mentioned": true,
+    "recommended": true,
+    "position": 7,
+    "cited_own_site": false,
+    "evidence": "Use DaisyDisk or GrandPerspective (free) to find large sample libraries and old bounces."
+  },
+  {
+    "query_id": "q14",
+    "engine": "claude",
+    "brand": "ccleaner",
+    "mentioned": true,
+    "recommended": true,
+    "position": 8,
+    "cited_own_site": false,
+    "evidence": "CCleaner for Mac is the closest like-for-like swap for CleanMyMac, though it has limited Mac-specific depth and lighter app management."
+  },
+  {
+    "query_id": "q14",
+    "engine": "claude",
+    "brand": "cleanmymac",
+    "mentioned": true,
+    "recommended": false,
+    "position": 9,
+    "cited_own_site": false,
+    "evidence": "CCleaner for Mac is the closest like-for-like swap for CleanMyMac"
+  },
+  {
+    "query_id": "q14",
+    "engine": "claude",
+    "brand": "macbooster",
+    "mentioned": true,
+    "recommended": true,
+    "position": 10,
+    "cited_own_site": false,
+    "evidence": "MacBooster or BuhoCleaner are full paid suites."
+  },
+  {
+    "query_id": "q14",
+    "engine": "claude",
+    "brand": "buhocleaner",
+    "mentioned": true,
+    "recommended": true,
+    "position": 11,
+    "cited_own_site": false,
+    "evidence": "MacBooster or BuhoCleaner are full paid suites."
+  },
+  {
+    "query_id": "q14",
+    "engine": "gemini",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q14",
+    "engine": "gemini",
+    "brand": "cleanmymac",
+    "mentioned": true,
+    "recommended": false,
+    "position": 1,
+    "cited_own_site": false,
+    "evidence": "Most seasoned audio engineers and music producers avoid **CleanMyMac**."
+  },
+  {
+    "query_id": "q14",
+    "engine": "gemini",
+    "brand": "wide-blue-sound-audio-plugin-uninstaller",
+    "mentioned": true,
+    "recommended": true,
+    "position": 2,
+    "cited_own_site": false,
+    "evidence": "### 1. The Gold Standard for Audio Plugins: Wide Blue Sound Audio Plugin Uninstaller\n* **Best for:** Safely removing plugins (AU, VST, VST3, AAX, CLAP)."
+  },
+  {
+    "query_id": "q14",
+    "engine": "gemini",
+    "brand": "daisydisk",
+    "mentioned": true,
+    "recommended": true,
+    "position": 3,
+    "cited_own_site": false,
+    "evidence": "### 2. Hunting Down Giant Samples & Bloat: DaisyDisk or GrandPerspective"
+  },
+  {
+    "query_id": "q14",
+    "engine": "gemini",
+    "brand": "grandperspective",
+    "mentioned": true,
+    "recommended": true,
+    "position": 4,
+    "cited_own_site": false,
+    "evidence": "### 2. Hunting Down Giant Samples & Bloat: DaisyDisk or GrandPerspective"
+  },
+  {
+    "query_id": "q14",
+    "engine": "gemini",
+    "brand": "omnidisksweeper",
+    "mentioned": true,
+    "recommended": true,
+    "position": 5,
+    "cited_own_site": false,
+    "evidence": "GrandPerspective or OmniDiskSweeper (Free / Open Source)."
+  },
+  {
+    "query_id": "q14",
+    "engine": "gemini",
+    "brand": "appcleaner",
+    "mentioned": true,
+    "recommended": true,
+    "position": 6,
+    "cited_own_site": false,
+    "evidence": "### 3. For Standalone DAW & Software Uninstalling: AppCleaner or Pearcleaner"
+  },
+  {
+    "query_id": "q14",
+    "engine": "gemini",
+    "brand": "pearcleaner",
+    "mentioned": true,
+    "recommended": true,
+    "position": 7,
+    "cited_own_site": false,
+    "evidence": "**Pearcleaner** (modern open-source alternative) allow you to drag and drop any app onto the window"
+  },
+  {
+    "query_id": "q14",
+    "engine": "gemini",
+    "brand": "onyx",
+    "mentioned": true,
+    "recommended": true,
+    "position": 8,
+    "cited_own_site": false,
+    "evidence": "### 4. For System Maintenance & Deep Cache Cleaning: OnyX"
+  },
+  {
+    "query_id": "q15",
+    "engine": "claude",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q15",
+    "engine": "claude",
+    "brand": "npkill",
+    "mentioned": true,
+    "recommended": true,
+    "position": 1,
+    "cited_own_site": false,
+    "evidence": "**For node_modules: npkill**"
+  },
+  {
+    "query_id": "q15",
+    "engine": "claude",
+    "brand": "mole",
+    "mentioned": true,
+    "recommended": true,
+    "position": 2,
+    "cited_own_site": false,
+    "evidence": "**Mole** is the best free option. It's a free, open-source (GPL-3.0) command-line cleaner for macOS 12 and later"
+  },
+  {
+    "query_id": "q15",
+    "engine": "claude",
+    "brand": "devcleanup",
+    "mentioned": true,
+    "recommended": true,
+    "position": 3,
+    "cited_own_site": false,
+    "evidence": "**DevCleanup** is the most developer-focused paid option."
+  },
+  {
+    "query_id": "q15",
+    "engine": "claude",
+    "brand": "cleanmydev",
+    "mentioned": true,
+    "recommended": false,
+    "position": 4,
+    "cited_own_site": false,
+    "evidence": "**CleanMyDev** is a GUI option that handles Docker.raw, Colima, OrbStack containers and moves items to Trash by default, not rm -rf."
+  },
+  {
+    "query_id": "q15",
+    "engine": "claude",
+    "brand": "codecleaner",
+    "mentioned": true,
+    "recommended": false,
+    "position": 5,
+    "cited_own_site": false,
+    "evidence": "**CodeCleaner** says it uses Docker cleanup through official Docker CLI, which is the safer approach for Docker."
+  },
+  {
+    "query_id": "q15",
+    "engine": "gemini",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q15",
+    "engine": "gemini",
+    "brand": "cleanmymac",
+    "mentioned": true,
+    "recommended": false,
+    "position": 1,
+    "cited_own_site": false,
+    "evidence": "Generic Mac cleaners like CleanMyMac often fail to touch developer directories or categorize them vaguely as mysterious \"System Data\"."
+  },
+  {
+    "query_id": "q15",
+    "engine": "gemini",
+    "brand": "npkill",
+    "mentioned": true,
+    "recommended": true,
+    "position": 2,
+    "cited_own_site": false,
+    "evidence": "**[npkill](https://npkill.js.org/)**: The undisputed standard for cleaning JavaScript dependencies."
+  },
+  {
+    "query_id": "q15",
+    "engine": "gemini",
+    "brand": "kondo",
+    "mentioned": true,
+    "recommended": true,
+    "position": 3,
+    "cited_own_site": false,
+    "evidence": "**[kondo](https://github.com/tbillington/kondo)**: A blazing-fast Rust CLI alternative."
+  },
+  {
+    "query_id": "q15",
+    "engine": "gemini",
+    "brand": "devcleaner",
+    "mentioned": true,
+    "recommended": true,
+    "position": 4,
+    "cited_own_site": false,
+    "evidence": "**[Mac Dev Cleaner](https://github.com/thanhdevapp/mac-dev-cleaner-cli)** (Free & Open Source)"
+  },
+  {
+    "query_id": "q15",
+    "engine": "gemini",
+    "brand": "puremac",
+    "mentioned": true,
+    "recommended": true,
+    "position": 5,
+    "cited_own_site": false,
+    "evidence": "**[PureMac](https://github.com/momenbasel/PureMac)** (Free & Open Source)"
+  },
+  {
+    "query_id": "q15",
+    "engine": "gemini",
+    "brand": "devclean",
+    "mentioned": true,
+    "recommended": true,
+    "position": 6,
+    "cited_own_site": false,
+    "evidence": "**[DevClean](https://devclean.app/) / [Shedi](https://shedi.app/)** (Indie Native Apps)"
+  },
+  {
+    "query_id": "q15",
+    "engine": "gemini",
+    "brand": "shedi",
+    "mentioned": true,
+    "recommended": true,
+    "position": 7,
+    "cited_own_site": false,
+    "evidence": "**[DevClean](https://devclean.app/) / [Shedi](https://shedi.app/)** (Indie Native Apps)"
+  },
+  {
+    "query_id": "q15",
+    "engine": "gemini",
+    "brand": "orbstack",
+    "mentioned": true,
+    "recommended": true,
+    "position": 8,
+    "cited_own_site": false,
+    "evidence": "consider replacing Docker Desktop with **[OrbStack](https://orbstack.dev/)**."
+  },
+  {
+    "query_id": "q16",
+    "engine": "claude",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q16",
+    "engine": "claude",
+    "brand": "cachecut",
+    "mentioned": true,
+    "recommended": true,
+    "position": 1,
+    "cited_own_site": false,
+    "evidence": "For a focused cache cleaner, **CacheCut** is the closest fit."
+  },
+  {
+    "query_id": "q16",
+    "engine": "claude",
+    "brand": "buhocleaner",
+    "mentioned": true,
+    "recommended": true,
+    "position": 2,
+    "cited_own_site": true,
+    "evidence": "For a general-purpose cleaner, **BuhoCleaner** and **CleanMyMac** are the usual picks."
+  },
+  {
+    "query_id": "q16",
+    "engine": "claude",
+    "brand": "cleanmymac",
+    "mentioned": true,
+    "recommended": true,
+    "position": 3,
+    "cited_own_site": false,
+    "evidence": "For a general-purpose cleaner, **BuhoCleaner** and **CleanMyMac** are the usual picks."
+  },
+  {
+    "query_id": "q16",
+    "engine": "claude",
+    "brand": "cache-kid",
+    "mentioned": true,
+    "recommended": true,
+    "position": 4,
+    "cited_own_site": false,
+    "evidence": "**Cache Kid**: Aimed at creatives. Its own roundup suggests it's a better fit when Premiere, After Effects, Resolve, or shared Adobe cache is the main storage issue."
+  },
+  {
+    "query_id": "q16",
+    "engine": "claude",
+    "brand": "deepcleanmac",
+    "mentioned": true,
+    "recommended": false,
+    "position": 5,
+    "cited_own_site": false,
+    "evidence": "**DeepCleanMac**: Markets one-click cleanup for Final Cut, Premiere, and Resolve caches."
+  },
+  {
+    "query_id": "q16",
+    "engine": "claude",
+    "brand": "daisydisk",
+    "mentioned": true,
+    "recommended": true,
+    "position": 6,
+    "cited_own_site": false,
+    "evidence": "**DaisyDisk or GrandPerspective**: Not cache cleaners, but useful for finding large folders."
+  },
+  {
+    "query_id": "q16",
+    "engine": "claude",
+    "brand": "grandperspective",
+    "mentioned": true,
+    "recommended": true,
+    "position": 7,
+    "cited_own_site": false,
+    "evidence": "**DaisyDisk or GrandPerspective**: Not cache cleaners, but useful for finding large folders."
+  },
+  {
+    "query_id": "q16",
+    "engine": "claude",
+    "brand": "sensei",
+    "mentioned": true,
+    "recommended": false,
+    "position": 8,
+    "cited_own_site": false,
+    "evidence": "CleanMyMac or Sensei handle broader maintenance."
+  },
+  {
+    "query_id": "q16",
+    "engine": "gemini",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q16",
+    "engine": "gemini",
+    "brand": "cleanmymac",
+    "mentioned": true,
+    "recommended": false,
+    "position": 1,
+    "cited_own_site": false,
+    "evidence": "generic \"all-in-one\" Mac cleaners (such as CleanMyMac or CCleaner) are generally not recommended"
+  },
+  {
+    "query_id": "q16",
+    "engine": "gemini",
+    "brand": "ccleaner",
+    "mentioned": true,
+    "recommended": false,
+    "position": 2,
+    "cited_own_site": false,
+    "evidence": "generic \"all-in-one\" Mac cleaners (such as CleanMyMac or CCleaner) are generally not recommended"
+  },
+  {
+    "query_id": "q16",
+    "engine": "gemini",
+    "brand": "arctic-formerly-final-cut-library-manager",
+    "mentioned": true,
+    "recommended": true,
+    "position": 3,
+    "cited_own_site": false,
+    "evidence": "### 1. Best for Final Cut Pro: **Arctic (formerly Final Cut Library Manager)**\n* **Type:** Dedicated FCP utility (by Hedge / Arctic Whiteness)\n* **Why it’s the best:** Arctic is the gold standard for Final Cut Pro editors."
+  },
+  {
+    "query_id": "q16",
+    "engine": "gemini",
+    "brand": "fcp-library-cleaner",
+    "mentioned": true,
+    "recommended": true,
+    "position": 4,
+    "cited_own_site": false,
+    "evidence": "**Free Alternative:** **FCP Library Cleaner** (by EditingTools.io). Available on the Mac App Store, this is a free, lightweight utility that lets you safely strip render files and optical flow data from multiple FCP libraries."
+  },
+  {
+    "query_id": "q16",
+    "engine": "gemini",
+    "brand": "pro-maintenance-tools-housekeeper",
+    "mentioned": true,
+    "recommended": true,
+    "position": 5,
+    "cited_own_site": false,
+    "evidence": "### 2. Best for Premiere Pro: **Pro Maintenance Tools (Housekeeper)**\n* **Type:** Professional post-production suite (by Digital Rebellion)"
+  },
+  {
+    "query_id": "q16",
+    "engine": "gemini",
+    "brand": "daisydisk",
+    "mentioned": true,
+    "recommended": true,
+    "position": 6,
+    "cited_own_site": false,
+    "evidence": "### 3. Best Visual Disk Utility for Both: **DaisyDisk**\n* **Type:** Interactive Disk Space Analyzer ($9.99, free trial available)"
+  },
+  {
+    "query_id": "q17",
+    "engine": "claude",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q17",
+    "engine": "claude",
+    "brand": "appcleaner",
+    "mentioned": true,
+    "recommended": true,
+    "position": 1,
+    "cited_own_site": false,
+    "evidence": "If you only need to uninstall apps, AppCleaner is the better choice because it's free and does that one job well."
+  },
+  {
+    "query_id": "q17",
+    "engine": "claude",
+    "brand": "cleanmymac",
+    "mentioned": true,
+    "recommended": true,
+    "position": 2,
+    "cited_own_site": false,
+    "evidence": "If you want uninstalling bundled with cleaning, malware protection, and maintenance, CleanMyMac is worth paying for."
+  },
+  {
+    "query_id": "q17",
+    "engine": "claude",
+    "brand": "pearcleaner",
+    "mentioned": true,
+    "recommended": true,
+    "position": 3,
+    "cited_own_site": false,
+    "evidence": "Pearcleaner is free and handles batch uninstalls."
+  },
+  {
+    "query_id": "q17",
+    "engine": "gemini",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q17",
+    "engine": "gemini",
+    "brand": "appcleaner",
+    "mentioned": true,
+    "recommended": true,
+    "position": 1,
+    "cited_own_site": false,
+    "evidence": "AppCleaner is generally the better choice for most users"
+  },
+  {
+    "query_id": "q17",
+    "engine": "gemini",
+    "brand": "cleanmymac",
+    "mentioned": true,
+    "recommended": false,
+    "position": 2,
+    "cited_own_site": false,
+    "evidence": "AppCleaner is generally the better choice for most users, primarily because it does the job just as thoroughly as CleanMyMac without the high cost, heavy system footprint, or unnecessary bloat."
+  },
+  {
+    "query_id": "q18",
+    "engine": "claude",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q18",
+    "engine": "claude",
+    "brand": "appcleaner",
+    "mentioned": true,
+    "recommended": true,
+    "position": 1,
+    "cited_own_site": false,
+    "evidence": "Use AppCleaner (free) to find related files, then check the plugin and Application Support folders by hand."
+  },
+  {
+    "query_id": "q18",
+    "engine": "claude",
+    "brand": "cleanmymac",
+    "mentioned": true,
+    "recommended": false,
+    "position": 2,
+    "cited_own_site": false,
+    "evidence": "Only pay for CleanMyMac if you want its other maintenance tools."
+  },
+  {
+    "query_id": "q18",
+    "engine": "claude",
+    "brand": "audio-plugin-uninstaller",
+    "mentioned": true,
+    "recommended": false,
+    "position": 3,
+    "cited_own_site": false,
+    "evidence": "Audio Plugin Uninstaller (Wide Blue Sound) is the audio-specific tool users most often mention. One user said it was unable to delete everything sometimes."
+  },
+  {
+    "query_id": "q18",
+    "engine": "gemini",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q18",
+    "engine": "gemini",
+    "brand": "appcleaner",
+    "mentioned": true,
+    "recommended": true,
+    "position": 1,
+    "cited_own_site": false,
+    "evidence": "**AppCleaner is generally the better and safer choice between the two**"
+  },
+  {
+    "query_id": "q18",
+    "engine": "gemini",
+    "brand": "cleanmymac",
+    "mentioned": true,
+    "recommended": false,
+    "position": 2,
+    "cited_own_site": false,
+    "evidence": "**Risk of collateral damage:** CleanMyMac’s automated \"cleanup\" algorithms have historically caused issues with music production software"
+  },
+  {
+    "query_id": "q18",
+    "engine": "gemini",
+    "brand": "waves-central",
+    "mentioned": true,
+    "recommended": false,
+    "position": 3,
+    "cited_own_site": false,
+    "evidence": "always use that tool's built-in uninstall function. This keeps your licensing and update registries clean."
+  },
+  {
+    "query_id": "q18",
+    "engine": "gemini",
+    "brand": "native-access",
+    "mentioned": true,
+    "recommended": false,
+    "position": 4,
+    "cited_own_site": false,
+    "evidence": "**Waves Central, Native Access, Arturia Software Center, Plugin Alliance**"
+  },
+  {
+    "query_id": "q18",
+    "engine": "gemini",
+    "brand": "arturia-software-center",
+    "mentioned": true,
+    "recommended": false,
+    "position": 5,
+    "cited_own_site": false,
+    "evidence": "**Waves Central, Native Access, Arturia Software Center, Plugin Alliance**"
+  },
+  {
+    "query_id": "q18",
+    "engine": "gemini",
+    "brand": "plugin-boutique-manager",
+    "mentioned": true,
+    "recommended": false,
+    "position": 6,
+    "cited_own_site": false,
+    "evidence": "**Waves Central, Native Access, Arturia Software Center, Plugin Alliance**"
+  },
+  {
+    "query_id": "q18",
+    "engine": "gemini",
+    "brand": "audio-plugin-uninstaller",
+    "mentioned": true,
+    "recommended": true,
+    "position": 7,
+    "cited_own_site": false,
+    "evidence": "Instead of CleanMyMac or AppCleaner, look at **Audio Plugin Uninstaller by Wide Blue Sound**. It is designed specifically for macOS audio plugins"
+  },
+  {
+    "query_id": "q19",
+    "engine": "claude",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q19",
+    "engine": "claude",
+    "brand": "daisydisk",
+    "mentioned": true,
+    "recommended": false,
+    "position": 1,
+    "cited_own_site": false,
+    "evidence": "Free, open source, visual (closest to DaisyDisk)"
+  },
+  {
+    "query_id": "q19",
+    "engine": "claude",
+    "brand": "opendisk",
+    "mentioned": true,
+    "recommended": true,
+    "position": 2,
+    "cited_own_site": false,
+    "evidence": "A sunburst-chart analyzer, like DaisyDisk's layout."
+  },
+  {
+    "query_id": "q19",
+    "engine": "claude",
+    "brand": "grandperspective",
+    "mentioned": true,
+    "recommended": true,
+    "position": 3,
+    "cited_own_site": false,
+    "evidence": "A treemap tool that has been around for a long time."
+  },
+  {
+    "query_id": "q19",
+    "engine": "claude",
+    "brand": "disk-space-analyzer-nektony",
+    "mentioned": true,
+    "recommended": true,
+    "position": 4,
+    "cited_own_site": false,
+    "evidence": "Works a lot like DaisyDisk, giving you a colorful, graphic representation of your Mac's storage."
+  },
+  {
+    "query_id": "q19",
+    "engine": "claude",
+    "brand": "disktree",
+    "mentioned": true,
+    "recommended": true,
+    "position": 5,
+    "cited_own_site": false,
+    "evidence": "Has developer-specific scan rules and reports on Xcode archives, device support files, Gradle caches, and node_modules."
+  },
+  {
+    "query_id": "q19",
+    "engine": "claude",
+    "brand": "ncdu",
+    "mentioned": true,
+    "recommended": true,
+    "position": 6,
+    "cited_own_site": false,
+    "evidence": "An MIT-licensed disk usage analyzer with a text-mode interface"
+  },
+  {
+    "query_id": "q19",
+    "engine": "claude",
+    "brand": "dua-cli",
+    "mentioned": true,
+    "recommended": true,
+    "position": 7,
+    "cited_own_site": false,
+    "evidence": "A command-line tool for checking how much space a given directory uses."
+  },
+  {
+    "query_id": "q19",
+    "engine": "claude",
+    "brand": "mac-limpo",
+    "mentioned": true,
+    "recommended": true,
+    "position": 8,
+    "cited_own_site": false,
+    "evidence": "A free, GPL-licensed menu bar app aimed at developers."
+  },
+  {
+    "query_id": "q19",
+    "engine": "claude",
+    "brand": "cleardisk",
+    "mentioned": true,
+    "recommended": true,
+    "position": 9,
+    "cited_own_site": false,
+    "evidence": "A free menu bar app that scans developer cache paths and labels each one as safe or caution before cleaning."
+  },
+  {
+    "query_id": "q19",
+    "engine": "claude",
+    "brand": "diskinsight",
+    "mentioned": true,
+    "recommended": true,
+    "position": 10,
+    "cited_own_site": false,
+    "evidence": "$9.99 one-time (regular price $19.99). It offers nine visualizations and a developer cache cleaner"
+  },
+  {
+    "query_id": "q19",
+    "engine": "claude",
+    "brand": "anillo",
+    "mentioned": true,
+    "recommended": true,
+    "position": 11,
+    "cited_own_site": false,
+    "evidence": "Its Dev Cleanup tab finds old Xcode installs, simulator runtimes, and build folders"
+  },
+  {
+    "query_id": "q19",
+    "engine": "claude",
+    "brand": "cleanmymac",
+    "mentioned": true,
+    "recommended": true,
+    "position": 12,
+    "cited_own_site": false,
+    "evidence": "The most complete paid option."
+  },
+  {
+    "query_id": "q19",
+    "engine": "gemini",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q19",
+    "engine": "gemini",
+    "brand": "daisydisk",
+    "mentioned": true,
+    "recommended": false,
+    "position": 1,
+    "cited_own_site": false,
+    "evidence": "here are the best alternatives to DaisyDisk tailored for developers"
+  },
+  {
+    "query_id": "q19",
+    "engine": "gemini",
+    "brand": "gdu",
+    "mentioned": true,
+    "recommended": true,
+    "position": 2,
+    "cited_own_site": false,
+    "evidence": "If you want **the best CLI drop-in replacement**: run `brew install gdu`."
+  },
+  {
+    "query_id": "q19",
+    "engine": "gemini",
+    "brand": "dust",
+    "mentioned": true,
+    "recommended": true,
+    "position": 3,
+    "cited_own_site": false,
+    "evidence": "**`dust` (`du-dust`)**\n    *   **Why it’s great:** Written in Rust, `dust` provides an intuitive tree-graph visualization directly in your terminal"
+  },
+  {
+    "query_id": "q19",
+    "engine": "gemini",
+    "brand": "ncdu",
+    "mentioned": true,
+    "recommended": true,
+    "position": 4,
+    "cited_own_site": false,
+    "evidence": "**`ncdu` (NCurses Disk Usage)**\n    *   **Why it’s great:** The timeless standard."
+  },
+  {
+    "query_id": "q19",
+    "engine": "gemini",
+    "brand": "npkill",
+    "mentioned": true,
+    "recommended": true,
+    "position": 5,
+    "cited_own_site": false,
+    "evidence": "**`npkill` (For JavaScript / TypeScript / Web devs)**"
+  },
+  {
+    "query_id": "q19",
+    "engine": "gemini",
+    "brand": "devcleaner",
+    "mentioned": true,
+    "recommended": true,
+    "position": 6,
+    "cited_own_site": false,
+    "evidence": "**DevCleaner for Xcode (For iOS / macOS devs)**\n    *   **What it does:** Reclaims tens or hundreds of gigabytes hidden inside Xcode caches"
+  },
+  {
+    "query_id": "q19",
+    "engine": "gemini",
+    "brand": "grandperspective",
+    "mentioned": true,
+    "recommended": true,
+    "position": 7,
+    "cited_own_site": false,
+    "evidence": "**GrandPerspective (Open-Source)**\n    *   **The Mac equivalent of WinDirStat.**"
+  },
+  {
+    "query_id": "q19",
+    "engine": "gemini",
+    "brand": "omnidisksweeper",
+    "mentioned": true,
+    "recommended": true,
+    "position": 8,
+    "cited_own_site": false,
+    "evidence": "**OmniDiskSweeper (Free by The Omni Group)**\n    *   A no-nonsense, macOS-native list-view analyzer."
+  },
+  {
+    "query_id": "q20",
+    "engine": "claude",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q20",
+    "engine": "claude",
+    "brand": "cleanmymac",
+    "mentioned": true,
+    "recommended": false,
+    "position": 1,
+    "cited_own_site": false,
+    "evidence": "CleanMyMac is built for broad maintenance, and one roundup notes that it isn't built around editor cache, so you may still need something else for render and media files."
+  },
+  {
+    "query_id": "q20",
+    "engine": "claude",
+    "brand": "cachecut",
+    "mentioned": true,
+    "recommended": true,
+    "position": 2,
+    "cited_own_site": false,
+    "evidence": "This is the closest match to your need, though the page is vendor marketing."
+  },
+  {
+    "query_id": "q20",
+    "engine": "claude",
+    "brand": "diskcleankit-creative-apps-cleaner",
+    "mentioned": true,
+    "recommended": true,
+    "position": 3,
+    "cited_own_site": false,
+    "evidence": "DiskCleanKit Creative Apps Cleaner: It targets Photoshop scratch disks, Premiere media cache, After Effects disk cache, and Final Cut render files."
+  },
+  {
+    "query_id": "q20",
+    "engine": "claude",
+    "brand": "daisydisk",
+    "mentioned": true,
+    "recommended": true,
+    "position": 4,
+    "cited_own_site": false,
+    "evidence": "DaisyDisk (paid, one-time): Its visual disk map helps you see where space goes. It identifies large usage but doesn't clean it, so you still need a cleaner or manual deletion."
+  },
+  {
+    "query_id": "q20",
+    "engine": "claude",
+    "brand": "grandperspective",
+    "mentioned": true,
+    "recommended": true,
+    "position": 5,
+    "cited_own_site": false,
+    "evidence": "GrandPerspective (free, open source): A free treemap of disk usage, good for discovery. It doesn't automate cleanup."
+  },
+  {
+    "query_id": "q20",
+    "engine": "claude",
+    "brand": "mole",
+    "mentioned": true,
+    "recommended": true,
+    "position": 6,
+    "cited_own_site": false,
+    "evidence": "Mole (free, open source): A command-line tool that cleans caches and app leftovers, with a preview option (`mo clean --dry-run`). ... It is the strongest free CleanMyMac alternative right now."
+  },
+  {
+    "query_id": "q20",
+    "engine": "claude",
+    "brand": "appcleaner",
+    "mentioned": true,
+    "recommended": true,
+    "position": 7,
+    "cited_own_site": false,
+    "evidence": "AppCleaner (free): Good for removing apps and their leftover files, but it doesn't clean caches."
+  },
+  {
+    "query_id": "q20",
+    "engine": "claude",
+    "brand": "onyx",
+    "mentioned": true,
+    "recommended": false,
+    "position": 8,
+    "cited_own_site": false,
+    "evidence": "OnyX (free): Offers maintenance tools for advanced users, but it's easy to change the wrong setting."
+  },
+  {
+    "query_id": "q20",
+    "engine": "gemini",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q20",
+    "engine": "gemini",
+    "brand": "cleanmymac",
+    "mentioned": true,
+    "recommended": false,
+    "position": 1,
+    "cited_own_site": false,
+    "evidence": "Generic cleaner apps like CleanMyMac can be counterproductive for video editors"
+  },
+  {
+    "query_id": "q20",
+    "engine": "gemini",
+    "brand": "daisydisk",
+    "mentioned": true,
+    "recommended": true,
+    "position": 2,
+    "cited_own_site": false,
+    "evidence": "**DaisyDisk** (~$9.99 one-time) ... It is lightning-fast, visually intuitive (sunburst visualizer)"
+  },
+  {
+    "query_id": "q20",
+    "engine": "gemini",
+    "brand": "omnidisksweeper",
+    "mentioned": true,
+    "recommended": true,
+    "position": 3,
+    "cited_own_site": false,
+    "evidence": "**OmniDiskSweeper** (Free) ... A simple, no-frills tool from The Omni Group that scans drives and lists folders sorted strictly by file size"
+  },
+  {
+    "query_id": "q20",
+    "engine": "gemini",
+    "brand": "final-cut-library-manager",
+    "mentioned": true,
+    "recommended": true,
+    "position": 4,
+    "cited_own_site": false,
+    "evidence": "**Final Cut Library Manager** (by Arctic Whiteness – ~$35 one-time) ... Essential for Final Cut Pro users"
+  },
+  {
+    "query_id": "q20",
+    "engine": "gemini",
+    "brand": "onyx",
+    "mentioned": true,
+    "recommended": true,
+    "position": 5,
+    "cited_own_site": false,
+    "evidence": "**OnyX** (Completely Free) ... OnyX has been the premier Mac power-user tool for over two decades"
+  },
+  {
+    "query_id": "q20",
+    "engine": "gemini",
+    "brand": "appcleaner",
+    "mentioned": true,
+    "recommended": true,
+    "position": 6,
+    "cited_own_site": false,
+    "evidence": "**AppCleaner** or **Pearcleaner** (Free / Open-Source) ... Keep **AppCleaner** and **OnyX** on hand for zero-cost, zero-bloat system maintenance."
+  },
+  {
+    "query_id": "q20",
+    "engine": "gemini",
+    "brand": "pearcleaner",
+    "mentioned": true,
+    "recommended": true,
+    "position": 7,
+    "cited_own_site": false,
+    "evidence": "**AppCleaner** or **Pearcleaner** (Free / Open-Source) ... Perfect for completely wiping broken NLE plugins, OFX effects, or outdated audio VSTs"
+  },
+  {
+    "query_id": "q21",
+    "engine": "claude",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q21",
+    "engine": "claude",
+    "brand": "cleanmymac",
+    "mentioned": true,
+    "recommended": true,
+    "position": 1,
+    "cited_own_site": false,
+    "evidence": "Subscription: $39.95 for an annual subscription or $119.95 for a perpetual license"
+  },
+  {
+    "query_id": "q21",
+    "engine": "gemini",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q21",
+    "engine": "gemini",
+    "brand": "cleanmymac",
+    "mentioned": true,
+    "recommended": true,
+    "position": 1,
+    "cited_own_site": true,
+    "evidence": "Get the CleanMyMac Subscription if: You want an all-in-one, beautifully designed dashboard without needing to juggle multiple utilities."
+  },
+  {
+    "query_id": "q21",
+    "engine": "gemini",
+    "brand": "setapp",
+    "mentioned": true,
+    "recommended": false,
+    "position": 2,
+    "cited_own_site": false,
+    "evidence": "You already subscribe to (or are considering) **Setapp**, which includes CleanMyMac alongside hundreds of other Mac apps under one monthly price."
+  },
+  {
+    "query_id": "q21",
+    "engine": "gemini",
+    "brand": "daisydisk",
+    "mentioned": true,
+    "recommended": true,
+    "position": 3,
+    "cited_own_site": false,
+    "evidence": "Combining **DaisyDisk** ($10) with **AppCleaner** (Free) gives you 90% of the practical utility of CleanMyMac with zero ongoing costs."
+  },
+  {
+    "query_id": "q21",
+    "engine": "gemini",
+    "brand": "grandperspective",
+    "mentioned": true,
+    "recommended": false,
+    "position": 4,
+    "cited_own_site": false,
+    "evidence": "**DaisyDisk** or **GrandPerspective** | DaisyDisk (~$9.99 one-time) / GrandPerspective (Free)"
+  },
+  {
+    "query_id": "q21",
+    "engine": "gemini",
+    "brand": "appcleaner",
+    "mentioned": true,
+    "recommended": true,
+    "position": 5,
+    "cited_own_site": false,
+    "evidence": "A free tool like **AppCleaner** removes leftover library and cache files when deleting apps just as thoroughly as CleanMyMac, with no overhead."
+  },
+  {
+    "query_id": "q21",
+    "engine": "gemini",
+    "brand": "pearcleaner",
+    "mentioned": true,
+    "recommended": false,
+    "position": 6,
+    "cited_own_site": false,
+    "evidence": "**AppCleaner** (by FreeMacSoft) or **Pearcleaner** | **100% Free**"
+  },
+  {
+    "query_id": "q21",
+    "engine": "gemini",
+    "brand": "onyx",
+    "mentioned": true,
+    "recommended": true,
+    "position": 7,
+    "cited_own_site": false,
+    "evidence": "Tools like **DaisyDisk** and **OnyX** only run when you explicitly open them."
+  },
+  {
+    "query_id": "q21",
+    "engine": "gemini",
+    "brand": "buhocleaner",
+    "mentioned": true,
+    "recommended": false,
+    "position": 8,
+    "cited_own_site": false,
+    "evidence": "**BuhoCleaner** or **Sensei** | BuhoCleaner (~$20–$30 one-time lifetime)"
+  },
+  {
+    "query_id": "q21",
+    "engine": "gemini",
+    "brand": "sensei",
+    "mentioned": true,
+    "recommended": false,
+    "position": 9,
+    "cited_own_site": false,
+    "evidence": "**BuhoCleaner** or **Sensei** | BuhoCleaner (~$20–$30 one-time lifetime)"
+  },
+  {
+    "query_id": "q22",
+    "engine": "claude",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q22",
+    "engine": "claude",
+    "brand": "audio-plugin-uninstaller",
+    "mentioned": true,
+    "recommended": true,
+    "position": 1,
+    "cited_own_site": false,
+    "evidence": "For permanently removing plugins, I'd start with **Audio Plugin Uninstaller** (free)."
+  },
+  {
+    "query_id": "q22",
+    "engine": "claude",
+    "brand": "plugoff",
+    "mentioned": true,
+    "recommended": true,
+    "position": 2,
+    "cited_own_site": false,
+    "evidence": "If you'd rather reversibly hide plugins than delete them, **Plugoff** (free) is a good option."
+  },
+  {
+    "query_id": "q22",
+    "engine": "claude",
+    "brand": "pluginize",
+    "mentioned": true,
+    "recommended": true,
+    "position": 3,
+    "cited_own_site": false,
+    "evidence": "**Enable/disable without removing (paid):** Pluginize! never deletes a plugin"
+  },
+  {
+    "query_id": "q22",
+    "engine": "claude",
+    "brand": "unplugged",
+    "mentioned": true,
+    "recommended": true,
+    "position": 4,
+    "cited_own_site": false,
+    "evidence": "Unplugged is another paid option, with a 14-day free trial and support for macOS Tahoe 26.0+."
+  },
+  {
+    "query_id": "q22",
+    "engine": "claude",
+    "brand": "vst-manager",
+    "mentioned": true,
+    "recommended": true,
+    "position": 5,
+    "cited_own_site": false,
+    "evidence": "VST Manager is $4.99 one-time and identifies duplicate and outdated plugin versions."
+  },
+  {
+    "query_id": "q22",
+    "engine": "claude",
+    "brand": "plugin-station",
+    "mentioned": true,
+    "recommended": true,
+    "position": 6,
+    "cited_own_site": false,
+    "evidence": "Plugin Station is more complete but costs $165 one-time (1 Mac) or a subscription."
+  },
+  {
+    "query_id": "q22",
+    "engine": "gemini",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": true,
+    "evidence": null
+  },
+  {
+    "query_id": "q22",
+    "engine": "gemini",
+    "brand": "audio-plugin-uninstaller",
+    "mentioned": true,
+    "recommended": true,
+    "position": 1,
+    "cited_own_site": false,
+    "evidence": "### 1. Best for Permanent Removal: **Audio Plugin Uninstaller** (by Wide Blue Sound)"
+  },
+  {
+    "query_id": "q22",
+    "engine": "gemini",
+    "brand": "plugoff",
+    "mentioned": true,
+    "recommended": true,
+    "position": 2,
+    "cited_own_site": false,
+    "evidence": "### 2. Best for Safe Archiving / Hiding: **Plugoff** (by Midifex)"
+  },
+  {
+    "query_id": "q22",
+    "engine": "gemini",
+    "brand": "plugindex",
+    "mentioned": true,
+    "recommended": true,
+    "position": 3,
+    "cited_own_site": false,
+    "evidence": "### 3. Best for Identifying Redundancies: **Plugindex**"
+  },
+  {
+    "query_id": "q22",
+    "engine": "gemini",
+    "brand": "owlplug",
+    "mentioned": true,
+    "recommended": true,
+    "position": 4,
+    "cited_own_site": false,
+    "evidence": "### 4. Best Free & Open-Source: **OwlPlug**"
+  },
+  {
+    "query_id": "q23",
+    "engine": "claude",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q23",
+    "engine": "claude",
+    "brand": "daisydisk",
+    "mentioned": true,
+    "recommended": true,
+    "position": 1,
+    "cited_own_site": false,
+    "evidence": "Use DaisyDisk (or the free OmniDiskSweeper or GrandPerspective) to see what's large."
+  },
+  {
+    "query_id": "q23",
+    "engine": "claude",
+    "brand": "cleanmymac",
+    "mentioned": true,
+    "recommended": true,
+    "position": 2,
+    "cited_own_site": false,
+    "evidence": "Choose CleanMyMac only if you also want malware scanning, uninstallers, and general junk cleaning in one app."
+  },
+  {
+    "query_id": "q23",
+    "engine": "claude",
+    "brand": "devcleaner",
+    "mentioned": true,
+    "recommended": true,
+    "position": 3,
+    "cited_own_site": false,
+    "evidence": "DevCleaner, Mole, and npkill are the tools one developer-focused guide suggests"
+  },
+  {
+    "query_id": "q23",
+    "engine": "claude",
+    "brand": "mole",
+    "mentioned": true,
+    "recommended": true,
+    "position": 4,
+    "cited_own_site": false,
+    "evidence": "DevCleaner, Mole, and npkill are the tools one developer-focused guide suggests"
+  },
+  {
+    "query_id": "q23",
+    "engine": "claude",
+    "brand": "npkill",
+    "mentioned": true,
+    "recommended": true,
+    "position": 5,
+    "cited_own_site": false,
+    "evidence": "DevCleaner, Mole, and npkill are the tools one developer-focused guide suggests"
+  },
+  {
+    "query_id": "q23",
+    "engine": "claude",
+    "brand": "devcleanup",
+    "mentioned": true,
+    "recommended": true,
+    "position": 6,
+    "cited_own_site": false,
+    "evidence": "along with DevCleanup for git and real-space checks"
+  },
+  {
+    "query_id": "q23",
+    "engine": "claude",
+    "brand": "omnidisksweeper",
+    "mentioned": true,
+    "recommended": true,
+    "position": 7,
+    "cited_own_site": false,
+    "evidence": "Use DaisyDisk (or the free OmniDiskSweeper or GrandPerspective) to see what's large."
+  },
+  {
+    "query_id": "q23",
+    "engine": "claude",
+    "brand": "grandperspective",
+    "mentioned": true,
+    "recommended": true,
+    "position": 8,
+    "cited_own_site": false,
+    "evidence": "Use DaisyDisk (or the free OmniDiskSweeper or GrandPerspective) to see what's large."
+  },
+  {
+    "query_id": "q23",
+    "engine": "gemini",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q23",
+    "engine": "gemini",
+    "brand": "daisydisk",
+    "mentioned": true,
+    "recommended": true,
+    "position": 1,
+    "cited_own_site": false,
+    "evidence": "Choose DaisyDisk if: You work with multiple stacks (Docker, Node, Go, Rust, Python, etc.) where cache locations vary widely."
+  },
+  {
+    "query_id": "q23",
+    "engine": "gemini",
+    "brand": "cleanmymac",
+    "mentioned": true,
+    "recommended": true,
+    "position": 2,
+    "cited_own_site": false,
+    "evidence": "Choose CleanMyMac if: Your primary development is iOS / macOS (Xcode)."
+  },
+  {
+    "query_id": "q23",
+    "engine": "gemini",
+    "brand": "devcleaner",
+    "mentioned": true,
+    "recommended": true,
+    "position": 3,
+    "cited_own_site": false,
+    "evidence": "For Xcode: Use DevCleaner for Xcode (Free / Open Source on the Mac App Store). It does everything CleanMyMac does for Xcode"
+  },
+  {
+    "query_id": "q23",
+    "engine": "gemini",
+    "brand": "npkill",
+    "mentioned": true,
+    "recommended": true,
+    "position": 4,
+    "cited_own_site": false,
+    "evidence": "For node_modules: Run npx npkill in your project directory. It lists every node_modules folder across your projects sorted by size"
+  },
+  {
+    "query_id": "q24",
+    "engine": "claude",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q24",
+    "engine": "claude",
+    "brand": "daisydisk",
+    "mentioned": true,
+    "recommended": true,
+    "position": 1,
+    "cited_own_site": false,
+    "evidence": "For video projects, DaisyDisk is usually the better tool for finding and removing the big files"
+  },
+  {
+    "query_id": "q24",
+    "engine": "claude",
+    "brand": "cleanmymac",
+    "mentioned": true,
+    "recommended": true,
+    "position": 2,
+    "cited_own_site": false,
+    "evidence": "CleanMyMac is better if you also want junk, cache, and maintenance cleanup"
+  },
+  {
+    "query_id": "q24",
+    "engine": "claude",
+    "brand": "omnidisksweeper",
+    "mentioned": true,
+    "recommended": false,
+    "position": 3,
+    "cited_own_site": false,
+    "evidence": "A disk space analyzer, like DaisyDisk or OmniDiskSweeper, shows you where your storage went so you can decide what to delete."
+  },
+  {
+    "query_id": "q24",
+    "engine": "gemini",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q24",
+    "engine": "gemini",
+    "brand": "daisydisk",
+    "mentioned": true,
+    "recommended": true,
+    "position": 1,
+    "cited_own_site": false,
+    "evidence": "**DaisyDisk is the clear winner**"
+  },
+  {
+    "query_id": "q24",
+    "engine": "gemini",
+    "brand": "cleanmymac",
+    "mentioned": true,
+    "recommended": false,
+    "position": 2,
+    "cited_own_site": false,
+    "evidence": "CleanMyMac: General Maintenance, Not Video Bloat"
+  },
+  {
+    "query_id": "q25",
+    "engine": "claude",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q25",
+    "engine": "claude",
+    "brand": "appcleaner",
+    "mentioned": true,
+    "recommended": true,
+    "position": 1,
+    "cited_own_site": false,
+    "evidence": "AppCleaner (FreeMacSoft) is the most common pick."
+  },
+  {
+    "query_id": "q25",
+    "engine": "claude",
+    "brand": "mac-zapper",
+    "mentioned": true,
+    "recommended": true,
+    "position": 2,
+    "cited_own_site": false,
+    "evidence": "The safest ones, including Mac Zapper and AppCleaner, move files to Trash rather than deleting them immediately"
+  },
+  {
+    "query_id": "q25",
+    "engine": "claude",
+    "brand": "pearcleaner",
+    "mentioned": true,
+    "recommended": true,
+    "position": 3,
+    "cited_own_site": false,
+    "evidence": "One review calls it the strongest free option for advanced users."
+  },
+  {
+    "query_id": "q25",
+    "engine": "claude",
+    "brand": "app-cleaner-uninstaller",
+    "mentioned": true,
+    "recommended": true,
+    "position": 4,
+    "cited_own_site": true,
+    "evidence": "One roundup calls it the best overall choice if you want both complete app removal and app management tools."
+  },
+  {
+    "query_id": "q25",
+    "engine": "claude",
+    "brand": "cleanmymac",
+    "mentioned": true,
+    "recommended": true,
+    "position": 5,
+    "cited_own_site": false,
+    "evidence": "CleanMyMac is the pick if you want one app for your Mac's whole maintenance routine, not just uninstalls."
+  },
+  {
+    "query_id": "q25",
+    "engine": "claude",
+    "brand": "mackeeper",
+    "mentioned": true,
+    "recommended": false,
+    "position": 6,
+    "cited_own_site": false,
+    "evidence": "many of these reviews come from companies that sell competing products, including MacPaw (CleanMyMac), Setapp, and MacKeeper."
+  },
+  {
+    "query_id": "q25",
+    "engine": "gemini",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q25",
+    "engine": "gemini",
+    "brand": "appcleaner",
+    "mentioned": true,
+    "recommended": true,
+    "position": 1,
+    "cited_own_site": false,
+    "evidence": "### 1. **AppCleaner** (Best Overall / Community Favorite)"
+  },
+  {
+    "query_id": "q25",
+    "engine": "gemini",
+    "brand": "pearcleaner",
+    "mentioned": true,
+    "recommended": true,
+    "position": 2,
+    "cited_own_site": false,
+    "evidence": "### 2. **Pearcleaner** (Best Modern & Open-Source)"
+  },
+  {
+    "query_id": "q25",
+    "engine": "gemini",
+    "brand": "trashme-3",
+    "mentioned": true,
+    "recommended": true,
+    "position": 3,
+    "cited_own_site": false,
+    "evidence": "TrashMe 3 is one of the best dedicated options."
+  },
+  {
+    "query_id": "q25",
+    "engine": "gemini",
+    "brand": "cleanmymac",
+    "mentioned": true,
+    "recommended": true,
+    "position": 4,
+    "cited_own_site": false,
+    "evidence": "### 4. **CleanMyMac** (Best All-in-One Utility)"
+  },
+  {
+    "query_id": "q25",
+    "engine": "gemini",
+    "brand": "uninstallpkg",
+    "mentioned": true,
+    "recommended": true,
+    "position": 5,
+    "cited_own_site": false,
+    "evidence": "### 5. **UninstallPKG** (Best for `.pkg` Installer Receipts)"
+  }
+]

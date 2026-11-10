@@ -1,0 +1,92 @@
+[
+  {
+    "query_id": "q01",
+    "engine": "claude",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q01",
+    "engine": "claude",
+    "brand": "onyx",
+    "mentioned": true,
+    "recommended": true,
+    "position": 1,
+    "cited_own_site": false,
+    "evidence": "Start with OnyX plus AppCleaner, both free and subscription-free."
+  },
+  {
+    "query_id": "q01",
+    "engine": "claude",
+    "brand": "appcleaner",
+    "mentioned": true,
+    "recommended": true,
+    "position": 2,
+    "cited_own_site": false,
+    "evidence": "Best for removing apps fully: AppCleaner or Pearcleaner"
+  },
+  {
+    "query_id": "q01",
+    "engine": "claude",
+    "brand": "pearcleaner",
+    "mentioned": true,
+    "recommended": true,
+    "position": 3,
+    "cited_own_site": false,
+    "evidence": "Pearcleaner for removing junk files."
+  },
+  {
+    "query_id": "q01",
+    "engine": "claude",
+    "brand": "daisydisk",
+    "mentioned": true,
+    "recommended": true,
+    "position": 4,
+    "cited_own_site": false,
+    "evidence": "Best paid one-time option: DaisyDisk"
+  },
+  {
+    "query_id": "q01",
+    "engine": "claude",
+    "brand": "cleanmymac",
+    "mentioned": true,
+    "recommended": false,
+    "position": 5,
+    "cited_own_site": false,
+    "evidence": "**Avoid:** CleanMyMac is the popular all-in-one, but it is subscription-only at approximately $34–40 per year with no lifetime license option."
+  },
+  {
+    "query_id": "q01",
+    "engine": "gemini",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q02",
+    "engine": "claude",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q02",
+    "engine": "gemini",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  }
+]

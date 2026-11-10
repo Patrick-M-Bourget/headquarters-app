@@ -1,0 +1,65 @@
+{
+  "run_id": "local-989f75a5-1f84-46ac-9137-0a4278e9f64f",
+  "query_set_version": 1,
+  "engines": [
+    "claude",
+    "gemini"
+  ],
+  "answers": 4,
+  "failed": 0,
+  "cachedrop": {
+    "mentioned": 0,
+    "recommended": 0,
+    "cited": 0,
+    "of": 4
+  },
+  "by_engine": {
+    "claude": {
+      "n": 2,
+      "mentioned": 0,
+      "recommended": 0,
+      "cited": 0
+    },
+    "gemini": {
+      "n": 2,
+      "mentioned": 0,
+      "recommended": 0,
+      "cited": 0
+    }
+  },
+  "by_audience": {
+    "general": {
+      "n": 2,
+      "mentioned": 0,
+      "recommended": 0,
+      "cited": 0
+    },
+    "producers": {
+      "n": 2,
+      "mentioned": 0,
+      "recommended": 0,
+      "cited": 0
+    }
+  },
+  "competitors_recommended": {
+    "appcleaner": 3,
+    "onyx": 2,
+    "daisydisk": 2,
+    "audio-plugin-uninstaller": 2,
+    "pearcleaner": 1,
+    "grandperspective": 1,
+    "macdiskcleaner": 1,
+    "crumb": 1,
+    "buhocleaner": 1,
+    "plugin-station": 1,
+    "uninstallpkg": 1,
+    "plugoff": 1
+  },
+  "unverified_judgements": [],
+  "cost_usd": 0.0524,
+  "searches": 5,
+  "seconds": 31,
+  "errors": [],
+  "delta": null,
+  "finished_at": "2026-11-10T03:23:00.151Z"
+}

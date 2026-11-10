@@ -1,0 +1,62 @@
+{
+  "run_id": "local-ad60b1bb-ebff-4026-8ec1-df130851489d",
+  "query_set_version": 1,
+  "engines": [
+    "claude",
+    "gemini"
+  ],
+  "answers": 4,
+  "failed": 2,
+  "cachedrop": {
+    "mentioned": 0,
+    "recommended": 0,
+    "cited": 0,
+    "of": 2
+  },
+  "by_engine": {
+    "claude": {
+      "n": 2,
+      "mentioned": 0,
+      "recommended": 0,
+      "cited": 0
+    },
+    "gemini": {
+      "n": 2,
+      "mentioned": 0,
+      "recommended": 0,
+      "cited": 0
+    }
+  },
+  "by_audience": {
+    "general": {
+      "n": 2,
+      "mentioned": 0,
+      "recommended": 0,
+      "cited": 0
+    },
+    "producers": {
+      "n": 2,
+      "mentioned": 0,
+      "recommended": 0,
+      "cited": 0
+    }
+  },
+  "competitors_recommended": {
+    "onyx": 1,
+    "appcleaner": 1,
+    "pearcleaner": 1,
+    "daisydisk": 1
+  },
+  "unverified_judgements": [
+    "q01/claude/cleanmymac"
+  ],
+  "cost_usd": 0.0357,
+  "searches": 3,
+  "seconds": 12,
+  "errors": [
+    "q01/gemini: HTTP 404: {\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recom",
+    "q02/gemini: HTTP 404: {\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recom"
+  ],
+  "delta": null,
+  "finished_at": "2026-11-10T03:15:11.243Z"
+}

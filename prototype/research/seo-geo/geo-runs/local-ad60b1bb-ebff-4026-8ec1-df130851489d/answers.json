@@ -1,0 +1,56 @@
+[
+  {
+    "query_id": "q01",
+    "query_set_version": 1,
+    "engine": "claude",
+    "model": "claude-haiku-5-5",
+    "asked_at": "2026-11-10T03:15:07.776Z",
+    "answer_text": "There's no single winner, but a few non-subscription options stand out. The sources are mostly review blogs, and some are run by vendors of the apps they rank, so treat their rankings with some caution.\n\n**Best free all-rounder: MacDiskCleaner or OnyX**\n- MacDiskCleaner scans your whole Mac (or just the folders you choose) and shows every result for free, including junk, duplicates, and large or old files. The free version asks for Pro ($12.99 once, no subscription) after 2 GB of cleanup.\n- OnyX is the other main free option. It is free with no in-app purchases and no subscription, and it covers maintenance scripts, cache cleaning, rebuilding Spotlight indexes, and system parameter tweaks. The interface is plain. Check the version before downloading, since one listing notes that it is strictly locked to macOS 26 Tahoe; wrong version won't run.\n\n**Best for removing apps fully: AppCleaner or Pearcleaner**\n- Both are free. The best free Mac cleaners are AppCleaner for uninstalling apps, OnyX for deep maintenance, and Pearcleaner for removing junk files.\n\n**Best paid one-time option: DaisyDisk**\n- DaisyDisk is $9.99 one-time, a lifetime license with no subscription, and it covers up to 5 personal Macs per license. It's mainly a visual disk map, so it helps you find what's taking space but doesn't automatically clean junk.\n\n**Paid one-time, all-in-one: Crumb**\n- Crumb is a native macOS menu-bar app with a single one-time $9 purchase (no subscription). It's from a vendor blog, so verify it yourself.\n\n**Avoid:** CleanMyMac is the popular all-in-one, but it is subscription-only at approximately $34–40 per year with no lifetime license option.\n\n**My pick:** Start with OnyX plus AppCleaner, both free and subscription-free. If you want a simple cleaner with a friendly interface, try MacDiskCleaner's free tier first. Add DaisyDisk for $9.99 if you want to see where your disk space goes.",
+    "cited_urls": [
+      "https://www.macdiskcleaner.com/blog/best-free-mac-cleaner-apps-2026",
+      "https://cleanwithcrumb.com/blog/best-mac-cleaner-not-subscription-2026/",
+      "https://mac-dvd.com/blog/best-mac-cleaner/",
+      "https://www.mactools.pro/blog/free-mac-cleaner-and-optimization-tools",
+      "https://thehightechsociety.com/best-mac-cleaner-software/",
+      "https://cleanwithcrumb.com/blog/best-mac-cleaner-one-time-purchase/"
+    ],
+    "error": null
+  },
+  {
+    "query_id": "q01",
+    "query_set_version": 1,
+    "engine": "gemini",
+    "model": "gemini-2.5-flash",
+    "asked_at": "2026-11-10T03:14:59.538Z",
+    "answer_text": "",
+    "cited_urls": [],
+    "error": "HTTP 404: {\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recom"
+  },
+  {
+    "query_id": "q02",
+    "query_set_version": 1,
+    "engine": "claude",
+    "model": "claude-haiku-5-5",
+    "asked_at": "2026-11-10T03:15:07.351Z",
+    "answer_text": "**Best pick: Audio Plugin Uninstaller by Wide Blue Sound.** It's the tool most often recommended for this specific job. It costs $9, is available for Mac, and its Uninstaller mode reads the original installation receipts and reverses the process, while making sure not to uninstall files used by other plugins. For plugins without a standard receipt, you can still remove it using All Plugins mode. It also handles VST, VST3, AU, AAX, and CLAP, and it can reveal a plugin in Finder if you want to quarantine it first.\n\n**Alternatives:**\n- **UninstallPKG** (free): One user on a music forum said it does the same work than Audio plugin uninstaller but it's free. Treat that as an anecdote, and check that it's still maintained before relying on it.\n- **VST Manager** ($4.99 one-time): It scans your system, gives you a unified view of every VST, VST3, and AU plugin installed, and lets you delete their files.\n- **Plugin Station**: A paid option ($165 one-time for one Mac, or a monthly subscription). It adds an uninstall assistant for cleanly removing plugins along with price comparison and update notifications.\n- **Developer's own uninstaller**: If the plugin came with one, use it. One guide notes that the developer's uninstaller also removes presets, samples and license files stored outside this folder.\n\n**Caveat:** No tool is perfect. One forum user said Wide Blue Sound's app was unable to delete everything sometimes. After uninstalling, check for leftovers.\n\n**Manual cleanup locations:** If you want to check or clean up by hand, look in:\n- /Library/Application Support/Avid/Audio/Plug-Ins, /Library/Application Support/Digidesign/Plug-Ins, /Library/Audio/Plug-Ins/Components, /Library/Audio/Plug-Ins/VST3, and /Library/Audio/Plug-Ins/VST\n- The user-level folder ~/Library/Audio/Plug-Ins/VST, which is rare: manual installs, per-user options\n- Preferences and presets, such as /Library/Presets/, /Library/Preferences/, /Library/Audio/Presets/, and /Library/Application Support folders named after the developer\n\nBefore deleting anything manually, make sure no project still depends on that plugin. A session pointing at a VST 2 plug-in won't always pick up the VST3 version automatically.",
+    "cited_urls": [
+      "https://www.widebluesound.com/audio-plugin-uninstaller/",
+      "https://audiosex.pro/threads/uninstalling-plugins-on-mac-to-free-up-space.80651/",
+      "https://rebelsproductions.com/blog/best-vst-plugin-manager-mac-apps-2026",
+      "https://fresh.ist/library/audio-plug-ins-vst/",
+      "https://support.plugin-alliance.com/hc/en-us/articles/52323550437652-How-do-I-uninstall-my-PA-plugins",
+      "https://audiosex.pro/threads/how-to-uninstall-plugins-on-mac-os.74924/"
+    ],
+    "error": null
+  },
+  {
+    "query_id": "q02",
+    "query_set_version": 1,
+    "engine": "gemini",
+    "model": "gemini-2.5-flash",
+    "asked_at": "2026-11-10T03:14:59.739Z",
+    "answer_text": "",
+    "cited_urls": [],
+    "error": "HTTP 404: {\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recom"
+  }
+]

@@ -1,0 +1,282 @@
+[
+  {
+    "query_id": "q01",
+    "engine": "claude",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q01",
+    "engine": "claude",
+    "brand": "onyx",
+    "mentioned": true,
+    "recommended": true,
+    "position": 1,
+    "cited_own_site": false,
+    "evidence": "For most people, a free combo works best: **OnyX** for maintenance and **AppCleaner** or **Pearcleaner** for removing apps."
+  },
+  {
+    "query_id": "q01",
+    "engine": "claude",
+    "brand": "appcleaner",
+    "mentioned": true,
+    "recommended": true,
+    "position": 2,
+    "cited_own_site": false,
+    "evidence": "For most people, a free combo works best: **OnyX** for maintenance and **AppCleaner** or **Pearcleaner** for removing apps."
+  },
+  {
+    "query_id": "q01",
+    "engine": "claude",
+    "brand": "pearcleaner",
+    "mentioned": true,
+    "recommended": true,
+    "position": 3,
+    "cited_own_site": false,
+    "evidence": "Pearcleaner also finds and removes app leftovers, which makes uninstalling cleaner than dragging an app to the Trash."
+  },
+  {
+    "query_id": "q01",
+    "engine": "claude",
+    "brand": "daisydisk",
+    "mentioned": true,
+    "recommended": true,
+    "position": 4,
+    "cited_own_site": false,
+    "evidence": "If you want a one-time paid option, **DaisyDisk** is the usual pick for seeing where your space went."
+  },
+  {
+    "query_id": "q01",
+    "engine": "claude",
+    "brand": "grandperspective",
+    "mentioned": true,
+    "recommended": true,
+    "position": 5,
+    "cited_own_site": false,
+    "evidence": "**GrandPerspective (free):** A good choice for finding huge files, as it offers a visual treemap, though its interface is functional but dated."
+  },
+  {
+    "query_id": "q01",
+    "engine": "claude",
+    "brand": "macdiskcleaner",
+    "mentioned": true,
+    "recommended": true,
+    "position": 6,
+    "cited_own_site": false,
+    "evidence": "**MacDiskCleaner (free with a one-time upgrade):** It scans your whole Mac and shows every result for free, including junk, duplicates, and large or old files."
+  },
+  {
+    "query_id": "q01",
+    "engine": "claude",
+    "brand": "crumb",
+    "mentioned": true,
+    "recommended": true,
+    "position": 7,
+    "cited_own_site": false,
+    "evidence": "**Crumb (one-time $9):** This is an all-in-one menu-bar app."
+  },
+  {
+    "query_id": "q01",
+    "engine": "claude",
+    "brand": "cleanmymac",
+    "mentioned": true,
+    "recommended": false,
+    "position": 8,
+    "cited_own_site": false,
+    "evidence": "Things to avoid: CleanMyMac X has moved to a subscription model"
+  },
+  {
+    "query_id": "q01",
+    "engine": "claude",
+    "brand": "aiseesoft-mac-cleaner",
+    "mentioned": true,
+    "recommended": false,
+    "position": 9,
+    "cited_own_site": false,
+    "evidence": "Aiseesoft Mac Cleaner is subscription only, and each purchase attaches a trial that auto-renews unless you cancel it."
+  },
+  {
+    "query_id": "q01",
+    "engine": "gemini",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q01",
+    "engine": "gemini",
+    "brand": "appcleaner",
+    "mentioned": true,
+    "recommended": true,
+    "position": 1,
+    "cited_own_site": false,
+    "evidence": "**AppCleaner (by FreeMacSoft)** — *Best for removing apps & leftover junk*"
+  },
+  {
+    "query_id": "q01",
+    "engine": "gemini",
+    "brand": "pearcleaner",
+    "mentioned": true,
+    "recommended": false,
+    "position": 2,
+    "cited_own_site": false,
+    "evidence": "*Alternative:* **Pearcleaner** (Open-source, modern UI, available on GitHub)."
+  },
+  {
+    "query_id": "q01",
+    "engine": "gemini",
+    "brand": "onyx",
+    "mentioned": true,
+    "recommended": true,
+    "position": 3,
+    "cited_own_site": false,
+    "evidence": "**OnyX (by Titanium Software)** — *Best for deep system maintenance*"
+  },
+  {
+    "query_id": "q01",
+    "engine": "gemini",
+    "brand": "daisydisk",
+    "mentioned": true,
+    "recommended": true,
+    "position": 4,
+    "cited_own_site": false,
+    "evidence": "### 2. Best for Reclaiming Disk Space: **DaisyDisk**"
+  },
+  {
+    "query_id": "q01",
+    "engine": "gemini",
+    "brand": "omnidisksweeper",
+    "mentioned": true,
+    "recommended": false,
+    "position": 5,
+    "cited_own_site": false,
+    "evidence": "*(Free alternative:* **OmniDiskSweeper** or **GrandPerspective**, though their interfaces are much more spartan.)*"
+  },
+  {
+    "query_id": "q01",
+    "engine": "gemini",
+    "brand": "grandperspective",
+    "mentioned": true,
+    "recommended": false,
+    "position": 6,
+    "cited_own_site": false,
+    "evidence": "*(Free alternative:* **OmniDiskSweeper** or **GrandPerspective**, though their interfaces are much more spartan.)*"
+  },
+  {
+    "query_id": "q01",
+    "engine": "gemini",
+    "brand": "buhocleaner",
+    "mentioned": true,
+    "recommended": true,
+    "position": 7,
+    "cited_own_site": false,
+    "evidence": "### 3. Best \"All-in-One\" Dashboard: **BuhoCleaner**"
+  },
+  {
+    "query_id": "q01",
+    "engine": "gemini",
+    "brand": "cleanmymac",
+    "mentioned": true,
+    "recommended": false,
+    "position": 8,
+    "cited_own_site": false,
+    "evidence": "While **CleanMyMac** is the most recognizable cleaner, it heavily pushes an annual subscription."
+  },
+  {
+    "query_id": "q02",
+    "engine": "claude",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q02",
+    "engine": "claude",
+    "brand": "audio-plugin-uninstaller",
+    "mentioned": true,
+    "recommended": true,
+    "position": 1,
+    "cited_own_site": false,
+    "evidence": "The best all-around choice is **Audio Plugin Uninstaller** by Wide Blue Sound."
+  },
+  {
+    "query_id": "q02",
+    "engine": "claude",
+    "brand": "plugin-station",
+    "mentioned": true,
+    "recommended": true,
+    "position": 2,
+    "cited_own_site": false,
+    "evidence": "**Plugin Station** (paid, about $165 one-time) has an uninstall assistant for clean plugin removal, plus update notifications. It's a broader plugin manager, so it's worth it mainly if you buy plugins often."
+  },
+  {
+    "query_id": "q02",
+    "engine": "claude",
+    "brand": "uninstallpkg",
+    "mentioned": true,
+    "recommended": true,
+    "position": 3,
+    "cited_own_site": false,
+    "evidence": "**UninstallPKG** is free. One user on a forum said it does the same work as Audio Plugin Uninstaller but it's free. It's most useful for plugins installed from packages."
+  },
+  {
+    "query_id": "q02",
+    "engine": "claude",
+    "brand": "bypass",
+    "mentioned": true,
+    "recommended": false,
+    "position": 4,
+    "cited_own_site": false,
+    "evidence": "**Bypass** scans for VST, AU, AAX and CLAP plugins and deletes the plugin file from its corresponding folder. It's simpler, but it may not clean up support files the way a receipt-based tool does."
+  },
+  {
+    "query_id": "q02",
+    "engine": "gemini",
+    "brand": "cachedrop",
+    "mentioned": false,
+    "recommended": false,
+    "position": null,
+    "cited_own_site": false,
+    "evidence": null
+  },
+  {
+    "query_id": "q02",
+    "engine": "gemini",
+    "brand": "audio-plugin-uninstaller",
+    "mentioned": true,
+    "recommended": true,
+    "position": 1,
+    "cited_own_site": false,
+    "evidence": "The best and most effective tool specifically designed for this purpose is **Audio Plugin Uninstaller by Wide Blue Sound**."
+  },
+  {
+    "query_id": "q02",
+    "engine": "gemini",
+    "brand": "plugoff",
+    "mentioned": true,
+    "recommended": true,
+    "position": 2,
+    "cited_own_site": false,
+    "evidence": "Best for Disabling & Offloading: **Plugoff (by Midifex)**"
+  },
+  {
+    "query_id": "q02",
+    "engine": "gemini",
+    "brand": "appcleaner",
+    "mentioned": true,
+    "recommended": true,
+    "position": 3,
+    "cited_own_site": false,
+    "evidence": "Best for Companion Apps: **AppCleaner (by FreeMacSoft)**"
+  }
+]

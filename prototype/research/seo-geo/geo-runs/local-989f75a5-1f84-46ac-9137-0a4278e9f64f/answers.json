@@ -1,0 +1,65 @@
+[
+  {
+    "query_id": "q01",
+    "query_set_version": 1,
+    "engine": "claude",
+    "model": "claude-haiku-5-5",
+    "asked_at": "2026-11-10T03:22:37.097Z",
+    "answer_text": "For most people, a free combo works best: **OnyX** for maintenance and **AppCleaner** or **Pearcleaner** for removing apps. If you want a one-time paid option, **DaisyDisk** is the usual pick for seeing where your space went.\n\n- **OnyX (free):** It is free with no in-app purchases and no subscription. It handles maintenance scripts, cache cleaning, rebuilding Spotlight indexes, and system parameter tweaks. It is for more advanced users. One caveat: it is strictly locked to macOS 26 Tahoe, so the wrong version won't run.\n- **AppCleaner and Pearcleaner (free):** These focus on uninstalling apps. AppCleaner and Pearcleaner are free app uninstallers. Pearcleaner also finds and removes app leftovers, which makes uninstalling cleaner than dragging an app to the Trash.\n- **GrandPerspective (free):** A good choice for finding huge files, as it offers a visual treemap, though its interface is functional but dated.\n- **DaisyDisk (one-time, about $10):** It renders your disk as an interactive sunburst treemap. Note that it is not an automated junk cleaner.\n- **MacDiskCleaner (free with a one-time upgrade):** It scans your whole Mac and shows every result for free, including junk, duplicates, and large or old files. Cleanup is capped, since after 2 GB of cleanup, the app asks for Pro ($12.99 once, no subscription).\n- **Crumb (one-time $9):** This is an all-in-one menu-bar app. It covers cache and log cleaning, a disk visualizer, an app uninstaller that finds leftover files, and a duplicate finder.\n\nThings to avoid: CleanMyMac X has moved to a subscription model, and Aiseesoft Mac Cleaner is subscription only, and each purchase attaches a trial that auto-renews unless you cancel it.\n\nNote that several of these rankings come from blogs that sell their own cleaners (Crumb and MacDiskCleaner, for example), so check them against independent reviews. Also, a cleaner can only do so much. Freeing space usually comes down to deleting large files you no longer need, which the free disk visualizers help with.",
+    "cited_urls": [
+      "https://cleanwithcrumb.com/blog/best-mac-cleaner-not-subscription-2026/",
+      "https://mac-dvd.com/blog/best-mac-cleaner/",
+      "https://www.macdiskcleaner.com/blog/best-free-mac-cleaner-apps-2026",
+      "https://thesweetbits.com/free-mac-cleaning-software/",
+      "https://cleanwithcrumb.com/blog/best-mac-cleaner-one-time-purchase/",
+      "https://thehightechsociety.com/best-mac-cleaner-software/"
+    ],
+    "error": null
+  },
+  {
+    "query_id": "q01",
+    "query_set_version": 1,
+    "engine": "gemini",
+    "model": "gemini-3.8-flash",
+    "asked_at": "2026-11-10T03:22:47.310Z",
+    "answer_text": "Most subscription-based “Mac cleaners” charge $30–$50 per year for tasks that macOS largely handles on its own or that dedicated, standalone utilities do better.\n\nThe best alternatives that require **no subscription** fall into two main categories: completely free/open-source utilities and budget-friendly one-time purchases.\n\n---\n\n### 1. The Best Free Combination (What Most Users Actually Need)\n\nInstead of a bloated all-in-one app, combining these two free, lightweight tools handles 95% of cleanup needs safely:\n\n*   **AppCleaner (by FreeMacSoft)** — *Best for removing apps & leftover junk*\n    *   **Price:** 100% Free\n    *   **Why it’s great:** When you drag an app to the Trash, macOS often leaves behind gigabytes of cache, logs, and support files in `~/Library`. AppCleaner automatically finds every associated hidden file and deletes it along with the app.\n    *   *Alternative:* **Pearcleaner** (Open-source, modern UI, available on GitHub).\n*   **OnyX (by Titanium Software)** — *Best for deep system maintenance*\n    *   **Price:** 100% Free (Donationware)\n    *   **Why it’s great:** Trusted by Mac sysadmins for over 20 years. It runs core UNIX maintenance scripts, rebuilds system databases (Spotlight, LaunchServices), clears stuck system/user caches, and repairs file permissions. It is updated individually for every major macOS release.\n\n---\n\n### 2. Best for Reclaiming Disk Space: **DaisyDisk**\n\n*   **Price:** ~$9.99 (One-time purchase via Mac App Store or website; free trial available)\n*   **What it does:** Scans your drive and visualizes your storage as an interactive, circular sunburst map. \n*   **Why it’s worth it:** Most \"junk\" taking up space isn’t system cache—it’s forgotten 40GB video renders, Xcode archives, old iPhone backups, or duplicate download folders. DaisyDisk lets you see exactly what is hogging space and drag it into a collector tray to delete in bulk. It is fast, lightweight, and requires no background processes.\n*   *(Free alternative:* **OmniDiskSweeper** or **GrandPerspective**, though their interfaces are much more spartan.)*\n\n---\n\n### 3. Best \"All-in-One\" Dashboard: **BuhoCleaner**\n\n*   **Price:** ~$20–$30 (Lifetime license, one-time purchase)\n*   **What it does:** An all-in-one suite designed specifically as a budget-friendly, non-subscription alternative to CleanMyMac.\n*   **Key features:** Quick junk/cache scan, app uninstaller, duplicate file finder, startup item manager, and disk space visualizer.\n*   **Best for:** Users who want a single, polished, one-click button interface and don't want to manage multiple free utilities.\n\n---\n\n### What About CleanMyMac?\nWhile **CleanMyMac** is the most recognizable cleaner, it heavily pushes an annual subscription. They *do* sell a **\"One-Time Purchase\" (Perpetual)** license, but it typically costs around **$90–$120** and generally only applies to that major version. For that price, it is hard to justify when a combination of DaisyDisk and AppCleaner achieves the same results for $10 or less.\n\n---\n\n### Recommended Setup:\n1. Use **macOS Built-in Storage** (`System Settings` > `General` > `Storage`) to clear system recommendations and iOS backups.\n2. Install **AppCleaner** (Free) whenever you delete software.\n3. Buy **DaisyDisk** ($9.99 once) if you need to hunt down large, hidden files.\n4. Run **OnyX** (Free) once every few months if your Mac feels sluggish or caches seem stuck.",
+    "cited_urls": [],
+    "error": null
+  },
+  {
+    "query_id": "q02",
+    "query_set_version": 1,
+    "engine": "claude",
+    "model": "claude-haiku-5-5",
+    "asked_at": "2026-11-10T03:22:37.032Z",
+    "answer_text": "The best all-around choice is **Audio Plugin Uninstaller** by Wide Blue Sound. It's a Mac-only app built for this job. It reads the original installation receipts and reverses the process, while avoiding files that other plugins still use. It also lets you remove entire plugin formats you don't use, such as AU or AAX, which can free 20 GB or more. Its listed price is $9. Forum users have also said it was once free, so check the current price before buying.\n\nIts limitation is that plugins without a normal installation receipt won't appear in its uninstaller mode, though you can still remove them using All Plugins mode.\n\nOther options:\n- **Plugin Station** (paid, about $165 one-time) has an uninstall assistant for clean plugin removal, plus update notifications. It's a broader plugin manager, so it's worth it mainly if you buy plugins often.\n- **UninstallPKG** is free. One user on a forum said it does the same work as Audio Plugin Uninstaller but it's free. It's most useful for plugins installed from packages.\n- **Bypass** scans for VST, AU, AAX and CLAP plugins and deletes the plugin file from its corresponding folder. It's simpler, but it may not clean up support files the way a receipt-based tool does.\n\nFor a complete removal, I'd run the developer's own uninstaller first if it has one. Then use a tool or check these locations manually:\n- /Library/Audio/Plug-Ins/Components (AU), /Library/Audio/Plug-Ins/VST and /Library/Audio/Plug-Ins/VST3. Apple's support page confirms AU plug-ins appear as individual components in the Library folders.\n- ~/Library/Audio/Plug-Ins/ for per-user installs.\n- /Library/Application Support/Avid/Audio/Plug-Ins and /Library/Application Support/Digidesign/Plug-Ins for AAX plugins and their data. Some vendors also store DLL files, presets, and configuration files outside the main plugin folders.\n\nAlso, before deleting anything, make sure no project still uses the plugin, since removing an older VST 2 file can break sessions that depend on it.",
+    "cited_urls": [
+      "https://www.widebluesound.com/audio-plugin-uninstaller/",
+      "https://www.kvraudio.com/product/audio-plugin-uninstaller-by-wide-blue-sound",
+      "https://process.audio/support/how-do-i-completely-uninstall-my-plug-ins",
+      "https://rebelsproductions.com/blog/best-vst-plugin-manager-mac-apps-2026",
+      "https://audiosex.pro/threads/uninstalling-plugins-on-mac-to-free-up-space.80651/",
+      "https://helpmedevvon.com/products/bypass",
+      "https://support.apple.com/HT201532",
+      "https://unison.audio/how-to-uninstall-vst-plugins/"
+    ],
+    "error": null
+  },
+  {
+    "query_id": "q02",
+    "query_set_version": 1,
+    "engine": "gemini",
+    "model": "gemini-3.8-flash",
+    "asked_at": "2026-11-10T03:22:58.919Z",
+    "answer_text": "The best and most effective tool specifically designed for this purpose is **Audio Plugin Uninstaller by Wide Blue Sound**. \n\nUnlike general Mac cleaners that only look inside your `/Applications` folder, it is purpose-built to navigate the complex ways audio plugins scatter files across macOS.\n\n---\n\n### 1. The Best Purpose-Built Tool: **Audio Plugin Uninstaller (Wide Blue Sound)**\n* **Why it’s the best:** Most standard uninstallers don’t know how to track audio plugins because plugins are split into formats (`.vst`, `.vst3`, `.component`, `.aax`) and deposit presets, cache, license files, and samples deep into your system libraries.\n* **Key Features:**\n  * **Receipt-based Uninstallation:** Reads the original `.pkg` installation receipts from macOS and reverses the install cleanly without touching shared dependencies.\n  * **All-Format Support:** Easily filters and removes **VST, VST3, AU, AAX, and CLAP** files.\n  * **Two Modes:** \n    * *Uninstaller Mode:* Deletes every trace (presets, preferences, background daemons) associated with the package.\n    * *All Plugins Mode:* Let you target specific formats (e.g., delete all unused VST2/AAX files to save tens of gigabytes) or right-click to reveal them directly in Finder.\n\n---\n\n### 2. Best for Disabling & Offloading: **Plugoff (by Midifex)**\n* If you want to temporarily remove plugins without permanently destroying your presets/licenses, **Plugoff** scans your VST/AU plugins and allows you to \"offload\" them to a vault folder. \n* It takes them out of your DAW’s scan path (saving boot time and DAW crashes) with the option to restore them in one click or permanently delete them.\n\n---\n\n### 3. Best for Companion Apps: **AppCleaner (by FreeMacSoft)**\n* Plugins often come with standalone desktop applications, background update helpers, or authorization utilities (e.g., standalone synth engines, license helpers).\n* While it isn't an audio plugin manager, dragging the companion `.app` into **AppCleaner** will capture stray `~/Library/Preferences`, caches, and Application Support files that standard trash-emptying misses.\n\n---\n\n### 4. Important Caveat: Ecosystem Installers\nFor large suites like **Native Instruments (Native Access), Waves (Waves Central), Arturia (Arturia Software Center), or iZotope**, always attempt to uninstall from their official desktop managers first. These platforms synchronize cloud licenses; manually scrubbing files can sometimes confuse the manager into believing the plugin is still installed.\n\n---\n\n### Manual Fallback Locations\nIf you want to manually verify that every trace of a VST has been scrubbed, press **Cmd + Shift + G** in Finder and inspect these standard paths:\n\n* **VST Plugins:** `/Library/Audio/Plug-Ins/VST/` and `~/Library/Audio/Plug-Ins/VST/`\n* **VST3 Plugins:** `/Library/Audio/Plug-Ins/VST3/` and `~/Library/Audio/Plug-Ins/VST3/`\n* **Audio Units (AU):** `/Library/Audio/Plug-Ins/Components/`\n* **App Data & Presets:** `/Library/Application Support/[Developer Name]/` and `~/Library/Application Support/[Developer Name]/`\n* **Preferences / Settings:** `~/Library/Preferences/` *(look for `.plist` files named after the developer or plugin)*",
+    "cited_urls": [
+      "https://widebluesound.com",
+      "https://youtube.com",
+      "https://vi-control.net",
+      "https://notion.site",
+      "https://bedroomproducersblog.com",
+      "https://crufti.app"
+    ],
+    "error": null
+  }
+]

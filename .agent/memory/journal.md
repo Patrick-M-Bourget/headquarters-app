@@ -25,3 +25,5 @@
   - Both mismatches are key/contract problems, not agent errors. CleanMyMac one-time $89.99 is the Mac App Store price, confirmed live 2026-11-09; the key's $119.95 is MacPaw's direct store (403 to the agent). GrandPerspective is the open_source enum gap.
   - Contract TODO: add a price channel (direct vs app store) and a distribution value covering "open source + App Store".
   - The agent disclosed the channel in its evidence, separated a search snippet from fetched data, and reframed the dev-cleanup recommendation as "test, not a proven gap".
+- Phase 2b: Engineer agent (claude_local, cwd prototype/, engineer.settings.json) did HEA-6 (price channel + open_source_and_app_store) in about 1 min for $0.13. Clean diff, tests 7/7, both runs still VALID (checked by me). It honestly flagged a step it couldn't run (validate.ts path) and that the distribution value isn't enforced (value is a free string). In review with the owner; uncommitted until approved.
+- My own slip: backticks in a bash double-quoted string dropped "channel" from the HEA-6 description. Patched before the agent finished and noted in a comment. Use heredoc files for issue text.

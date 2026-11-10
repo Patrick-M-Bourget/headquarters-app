@@ -6,3 +6,5 @@ prototype/research/runs/*/snapshots/
 *.sqlite
 *.sqlite-journal
 .DS_Store
+# Eval inputs holding third-party page text (public repo)
+prototype/eval/**/*.local.json

@@ -1,0 +1,142 @@
+[
+  {
+    "id": "22cf0d5b",
+    "url": "https://cachedrop.io/pricing/",
+    "query_id": "q21",
+    "verdict": "partial",
+    "reason": "States one cleaner's one-time price model, but makes no comparison against CleanMyMac's subscription."
+  },
+  {
+    "id": "27defd02",
+    "url": "https://www.macworld.com/article/673271/best-mac-cleaner-tested-compared.html",
+    "query_id": "q01",
+    "verdict": "no",
+    "reason": "Disclosure and intro; the only pick shown is a subscription product, so it misses the no-subscription ask."
+  },
+  {
+    "id": "407979a6",
+    "url": "https://www.macworld.com/article/676493/how-to-delete-system-data-mac.html",
+    "query_id": "q09",
+    "verdict": "no",
+    "reason": "Long intro about low storage warnings; does not yet say what System Data is or how to clear it."
+  },
+  {
+    "id": "4204cdab",
+    "url": "https://macpaw.com/how-to/clear-adobe-cache",
+    "query_id": "q12",
+    "verdict": "no",
+    "reason": "Opens with a product ad and a promise to show how; only begins defining the cache, no deletion steps."
+  },
+  {
+    "id": "4f347eb2",
+    "url": "https://cleanmymac.com/blog/cleanmymac-alternatives",
+    "query_id": "q14",
+    "verdict": "no",
+    "reason": "Intro then a description of CleanMyMac's own features; no alternatives named yet."
+  },
+  {
+    "id": "5190c68d",
+    "url": "https://diskcleaner.app/blog/best-mac-cleaner-for-developers-2026/",
+    "query_id": "q15",
+    "verdict": "no",
+    "reason": "Describes developer storage clutter and promises a comparison; no cleaner is recommended in the opening."
+  },
+  {
+    "id": "52367f16",
+    "url": "https://cachedrop.io/",
+    "query_id": "q01",
+    "verdict": "partial",
+    "reason": "Vendor homepage offering its own one-time-price cleaner; not a comparison of the best options."
+  },
+  {
+    "id": "5b806edf",
+    "url": "https://softorino.com/blog/cleanmymac-alternatives",
+    "query_id": "q14",
+    "verdict": "partial",
+    "reason": "Gives direct CleanMyMac alternatives in a TL;DR, but none chosen for music production needs."
+  },
+  {
+    "id": "5c154894",
+    "url": "https://www.widebluesound.com/audio-plugin-uninstaller/",
+    "query_id": "q06",
+    "verdict": "partial",
+    "reason": "Product page for a paid plug-in uninstaller; offers a tool but no explanation of how to remove plug-ins."
+  },
+  {
+    "id": "8c5c12f1",
+    "url": "https://cachedrop.io/clear-mac-developer-caches/",
+    "query_id": "q15",
+    "verdict": "partial",
+    "reason": "Single vendor's tool said to clear node_modules and Docker caches; not a comparison of the best options."
+  },
+  {
+    "id": "a711cac2",
+    "url": "https://cachedrop.io/uninstall-audio-plugins-mac/",
+    "query_id": "q06",
+    "verdict": "yes",
+    "reason": "After a short pitch it explains plug-ins span several formats and starts the manual removal steps."
+  },
+  {
+    "id": "afdc83bf",
+    "url": "https://process.audio/support/how-do-i-completely-uninstall-my-plug-ins",
+    "query_id": "q06",
+    "verdict": "yes",
+    "reason": "Lists the standard Mac plug-in folders per format to delete from, after a Windows section; vendor-specific."
+  },
+  {
+    "id": "c4ceee6b",
+    "url": "https://community.adobe.com/questions-712/adobe-cache-takes-up-too-much-space-in-my-macbook-s-system-data-1177582",
+    "query_id": "q12",
+    "verdict": "partial",
+    "reason": "Forum question with a short reply saying the Adobe cache folder can be deleted; Photoshop-focused, thin."
+  },
+  {
+    "id": "c6826699",
+    "url": "https://cachedrop.io/cleanmymac-alternative/",
+    "query_id": "q14",
+    "verdict": "partial",
+    "reason": "Vendor pitches itself as a one-time CleanMyMac alternative with price table; music angle only implied."
+  },
+  {
+    "id": "c74d9c7c",
+    "url": "https://www.macworld.com/article/352922/cleanmymac-x-review-macos.html",
+    "query_id": "q21",
+    "verdict": "partial",
+    "reason": "Review notes both subscription and one-time are offered plus a first-year price, but no real comparison."
+  },
+  {
+    "id": "d3762424",
+    "url": "https://forum.juce.com/t/reliably-removing-audio-unit-plugins/59856",
+    "query_id": "q06",
+    "verdict": "no",
+    "reason": "Developer forum question about ghost Audio Unit builds; no answer given in the opening."
+  },
+  {
+    "id": "e56d5b6d",
+    "url": "https://apps.apple.com/in/app/node-module-cleaner-tool/id6746368684?mt=12",
+    "query_id": "q15",
+    "verdict": "partial",
+    "reason": "App listing for a node_modules cleaner; Docker not covered and no comparison with other tools."
+  },
+  {
+    "id": "e797522d",
+    "url": "https://techcommunity.microsoft.com/discussions/windowsinsiderprogram/how-do-i-completely-uninstall-applications-on-a-mac/4509108",
+    "query_id": "q13",
+    "verdict": "no",
+    "reason": "Forum question restating the problem; the reply has barely started when the opening ends."
+  },
+  {
+    "id": "f2dc1e12",
+    "url": "https://www.businessinsider.com/reference/how-to-free-up-space-on-mac",
+    "query_id": "q12",
+    "verdict": "no",
+    "reason": "Generic free-up-space article intro; nothing about Adobe media cache."
+  },
+  {
+    "id": "f981333a",
+    "url": "https://techcommunity.microsoft.com/discussions/windowsinsiderprogram/how-to-free-or-clear-system-data-on-mac-as-it-takes-too-much-space/4517395",
+    "query_id": "q09",
+    "verdict": "no",
+    "reason": "Forum question only; no explanation or steps provided."
+  }
+]

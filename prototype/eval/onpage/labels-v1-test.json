@@ -1,0 +1,86 @@
+[
+  {
+    "id": "00014ded",
+    "url": "https://cleanmymac.com/blog/cleanmymac-review",
+    "query_id": "q21",
+    "verdict": "no",
+    "reason": "General review intro; promises pricing coverage later but gives no subscription vs one-time comparison."
+  },
+  {
+    "id": "03ce5e35",
+    "url": "https://github.com/thanhdevapp/mac-dev-cleaner-cli",
+    "query_id": "q15",
+    "verdict": "partial",
+    "reason": "Repo file listing first; then a single dev cleaner covering node_modules, Docker not shown, no comparison."
+  },
+  {
+    "id": "052a51ff",
+    "url": "https://thesweetbits.com/best-mac-cleaner-software/",
+    "query_id": "q01",
+    "verdict": "partial",
+    "reason": "Lists top cleaners up front but ignores the no-subscription constraint; several picks are subscriptions."
+  },
+  {
+    "id": "095ba2d2",
+    "url": "https://www.theodorehq.com/shiny/blog/cleanmymac-alternatives",
+    "query_id": "q14",
+    "verdict": "partial",
+    "reason": "Names concrete CleanMyMac alternatives with one-time prices, but nothing specific to music producers."
+  },
+  {
+    "id": "0b45df8e",
+    "url": "https://support.apple.com/en-us/102610",
+    "query_id": "q13",
+    "verdict": "partial",
+    "reason": "Gives basic uninstall steps but does not cover removing leftover support files, which the searcher asked about."
+  },
+  {
+    "id": "12a6bfef",
+    "url": "https://www.mac-forums.com/threads/system-data-taking-up-a-large-amount-of-storage.379624/",
+    "query_id": "q09",
+    "verdict": "no",
+    "reason": "Forum post restating the problem; no explanation of System Data or how to clear it."
+  },
+  {
+    "id": "1576c97c",
+    "url": "https://cachedrop.io/uninstall-apps-mac/",
+    "query_id": "q13",
+    "verdict": "partial",
+    "reason": "Explains why dragging to Trash leaves files behind, but locations and removal steps are not reached yet."
+  },
+  {
+    "id": "16291591",
+    "url": "https://www.diskcleaner.pro/blog/best-one-time-purchase-mac-cleaner/",
+    "query_id": "q01",
+    "verdict": "no",
+    "reason": "Preamble about subscription fatigue and criteria; no cleaner is named or ranked in the opening."
+  },
+  {
+    "id": "1a3cffff",
+    "url": "https://cachedrop.io/clear-adobe-media-cache-mac/",
+    "query_id": "q12",
+    "verdict": "yes",
+    "reason": "After a short product pitch it gives the default media cache folder location for Premiere on Mac."
+  },
+  {
+    "id": "1a58887f",
+    "url": "https://nektony.com/how-to/uninstall-apps-on-mac",
+    "query_id": "q13",
+    "verdict": "partial",
+    "reason": "Explains leftovers and names a one-click uninstaller app; manual steps for full removal not yet given."
+  },
+  {
+    "id": "1f4d4f06",
+    "url": "https://macpaw.com/support/cleanmymac/knowledgebase/purchase-options",
+    "query_id": "q21",
+    "verdict": "yes",
+    "reason": "Directly explains CleanMyMac's one-time purchase versus subscription options and what each gives you."
+  },
+  {
+    "id": "207cdd45",
+    "url": "https://cachedrop.io/clear-system-data-mac/",
+    "query_id": "q09",
+    "verdict": "partial",
+    "reason": "Defines System Data and where to see it, but the deletion part of the question is not reached."
+  }
+]

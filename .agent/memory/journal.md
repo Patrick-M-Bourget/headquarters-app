@@ -41,3 +41,4 @@
   - Haiku proxy (full 10): 96.0% / 67.6%, $0.02, 38 s. One real over-inference: CleanMyMac "subscription" from a true "$3.33/month" quote. The evidence check doesn't catch inference errors.
   - ADR 0001 written (Proposed): pipeline + Mastra kept as default for research workers, Claude Code agent for open-ended work only, Paperclip on probation pending the SEO/GEO re-test. Owner decides (L3).
   - Total spend about $4.15.
+- Owner approved HEA-8 and accepted ADR 0001 as written (2026-11-09).

@@ -1,6 +1,6 @@
 # ADR 0001: HeadQuarters stack validation (Paperclip, Mastra, Claude Code)
 
-- **Status:** Proposed (owner decides; architecture-level, L3)
+- **Status:** Accepted by the owner, 2026-11-09
 - **Date:** 2026-11-09
 - **Evidence:** `prototype/research/runs/`, `prototype/agent-workspace/runs/`, `.agent/memory/journal.md`, Paperclip issues HEA-1 to HEA-9
 
@@ -55,7 +55,7 @@ All runs used the same 10-competitor seed list and were scored against `eval/ans
 - (−) 2.7 GB of `node_modules` (embedded Postgres) and about 560 MB RAM on a 16 GB machine; 373 database migrations on first start.
 - (−) Paperclip had to be operated mostly through its API. Its UI was touched only for the jammed retry.
 
-## Decision (proposed)
+## Decision
 
 1. **Keep the pipeline approach as the default for HQ research workers, and keep Mastra for now.** It met the bar: better cost (4×), speed (≥5×) and reproducibility (verified quotes). It's the realistic route to local Qwen. Revisit Mastra vs plain SDK once a local provider is wired in; if Mastra adds nothing there, drop it, since the pipeline design is the asset, not the framework.
 2. **Use a Claude Code-style agent only where open-ended exploration earns its cost** (e.g. hard-to-find facts, coding tickets), behind the lockdown recipe, and expect it to stay on cloud Claude.

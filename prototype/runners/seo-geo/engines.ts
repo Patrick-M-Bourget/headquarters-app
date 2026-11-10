@@ -21,13 +21,15 @@ const searchTool = CLAUDE_MODEL.includes("haiku")
   ? { type: "web_search_20250305" as const, name: "web_search" as const, max_uses: 3 }
   : { type: "web_search_20260209" as const, name: "web_search" as const, max_uses: 3 };
 
-export async function askClaude(question: string): Promise<EngineResult> {
+/** `country` (ISO alpha-2, from markets.ts) localizes web search results to the buyer's market (plan Q24). */
+export async function askClaude(question: string, country?: string): Promise<EngineResult> {
+  const tool = country ? { ...searchTool, user_location: { type: "approximate" as const, country } } : searchTool;
   const messages: Anthropic.MessageParam[] = [{ role: "user", content: question }];
   let text = "", inTok = 0, outTok = 0, searches = 0;
   const urls = new Set<string>();
   try {
     for (let turn = 0; turn < 4; turn++) {
-      const r = await anthropic.messages.create({ model: CLAUDE_MODEL, max_tokens: 4000, tools: [searchTool], messages });
+      const r = await anthropic.messages.create({ model: CLAUDE_MODEL, max_tokens: 4000, tools: [tool], messages });
       inTok += r.usage.input_tokens; outTok += r.usage.output_tokens;
       searches += r.usage.server_tool_use?.web_search_requests ?? 0;
       for (const b of r.content) {
@@ -49,6 +51,8 @@ export async function askClaude(question: string): Promise<EngineResult> {
 
 // Gemini with Google Search grounding (paid tier; grounding free up to 5,000 prompts/month). Plain REST, no SDK.
 // Free-tier grounding only exists on 2.5 Flash, which is closed to new users (2026-11-09).
+// No market parameter: toolConfig.retrievalConfig (latLng, languageCode) is accepted but search ignored it
+// (2026-11-09 test: Paris location still gave US-dollar CleanMyMac prices). The question's language is the only signal.
 export const GEMINI_MODEL = process.env.GEO_GEMINI_MODEL ?? "gemini-3.8-flash";
 const GEMINI_PRICE: Record<string, [number, number]> = { "gemini-3.8-flash": [0.75e-6, 3.75e-6] }; // until 2026-12-31, then doubles
 export async function askGemini(question: string): Promise<EngineResult> {

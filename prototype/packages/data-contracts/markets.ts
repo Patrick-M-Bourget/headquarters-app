@@ -18,7 +18,7 @@ export const MARKETS: Record<Locale, Market> = {
   "pt-BR": { name: "Portuguese, Brazil", language: "pt", country: "BR", serper: { gl: "br", hl: "pt-BR" }, tavilyCountry: "brazil" },
   "ja-JP": { name: "Japanese, Japan", language: "ja", country: "JP", serper: { gl: "jp", hl: "ja" }, tavilyCountry: "japan" },
 };
-// Gemini: not set yet. Whether google_search grounding takes a region/language is unverified; checked in 5b step 3.
+// Gemini: none. retrievalConfig latLng/languageCode is accepted but ignored by Search grounding (tested 2026-11-09); the question's language is its only market signal.
 
 /** Where a locale's frozen query set lives. en-US v1 predates locales and stays at its original path. */
 export const querySetPath = (locale: Locale, version: number, draft = false) =>

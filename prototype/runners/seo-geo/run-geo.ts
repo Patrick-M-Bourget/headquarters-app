@@ -4,7 +4,7 @@ import { mkdirSync, readFileSync, readdirSync, writeFileSync, existsSync } from 
 import { join } from "node:path";
 import { randomUUID } from "node:crypto";
 import { EngineAnswer, Locale, Mention, QuerySet } from "../../packages/data-contracts/seo-geo.ts";
-import { querySetPath } from "../../packages/data-contracts/markets.ts";
+import { MARKETS, querySetPath } from "../../packages/data-contracts/markets.ts";
 import { findIssue, paperclipEnabled, reportCost, reportToIssue } from "../../packages/paperclip-client/index.ts";
 import { askClaude, askGemini, type EngineResult } from "./engines.ts";
 import { labelAnswer, JUDGE_MODEL } from "./labels.ts";
@@ -40,7 +40,7 @@ try {
   const results = await pool(jobs, 3, async ({ q, engine }) => {
     const prior = saved.find(a => a.query_id === q.id && a.engine === engine);
     const r: EngineResult = prior ? { answer_text: prior.answer_text, cited_urls: prior.cited_urls, model: prior.model, cost_usd: 0, input_tokens: 0, output_tokens: 0, searches: 0, error: prior.error }
-      : engine === "claude" ? await askClaude(q.text) : await askGemini(q.text);
+      : engine === "claude" ? await askClaude(q.text, MARKETS[set.locale].country) : await askGemini(q.text);
     const answer = EngineAnswer.parse({ locale: set.locale, query_id: q.id, query_set_version: set.version, engine, model: r.model, asked_at: prior?.asked_at ?? new Date().toISOString(), answer_text: r.answer_text, cited_urls: r.cited_urls, error: r.error });
     const j = r.error ? { labelled: [], usage: { input_tokens: 0, output_tokens: 0 }, unverified: [] as string[] } : await labelAnswer(r.answer_text, r.cited_urls);
     const rows = j.labelled.some(l => l.brand === "cachedrop") ? j.labelled
@@ -72,7 +72,7 @@ try {
   for (const m of mentions) if (m.brand !== "cachedrop" && m.recommended) competitorCounts[m.brand] = (competitorCounts[m.brand] ?? 0) + 1;
   const okAnswers = answers.length - errors.length;
   const summary = {
-    run_id: runId, locale: set.locale, query_set_version: set.version, engines, answers: answers.length, failed: errors.length,
+    run_id: runId, locale: set.locale, query_set_version: set.version, market_signals: { claude_country: MARKETS[set.locale].country, gemini: "question language only" }, engines, answers: answers.length, failed: errors.length,
     cachedrop: { mentioned: own.filter(m => m.mentioned).length, recommended: own.filter(m => m.recommended).length, top_pick: own.filter(m => m.stance === "top_pick").length, cited: own.filter(m => m.cited_own_site).length, of: okAnswers },
     by_engine: by("engine"), by_audience: by("audience"),
     competitors_top_pick: Object.fromEntries(Object.entries(topPicks).sort((a, b) => b[1] - a[1])),

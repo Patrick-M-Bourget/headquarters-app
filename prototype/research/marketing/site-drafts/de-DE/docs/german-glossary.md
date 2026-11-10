@@ -79,7 +79,7 @@ The target is German as written in Germany (de-DE), not Austria or Switzerland.
 | Safe by design | Von Grund auf sicher | Section eyebrow. *Owner: check.* |
 | Download for Mac (button; Decision 51) | Für Mac herunterladen | Every button to `/download/`: nav, footer, guides, pricing. |
 | Try CacheDrop (inline link) | CacheDrop ausprobieren | |
-| Try it before you buy · No card needed · macOS 14 or later | Vor dem Kauf testen · Keine Karte nötig · macOS 14 oder neuer | The line under the primary button. |
+| Try it before you buy · No card needed · macOS 14 or later | Vor dem Kauf testen · Keine Karte nötig · macOS 14 oder neuer · App auf Englisch | The line under the primary button; its last part is plan Q18's mention on every page that shows it. |
 | The app is in English (Q18) | Die App selbst ist derzeit nur auf Englisch verfügbar. | On every German page, once. |
 | free to try | kostenlos testen | In body text only, never in a headline or button (Decision 51). |
 | Scanning is always free; clean up to 2 GB before you buy | Der Scan ist immer kostenlos. Aufräumen und Deinstallieren sind kostenlos, bis 2 GB freigegeben sind. | The only „kostenlos“ near uninstalling (Decision 48). |

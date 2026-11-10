@@ -1,0 +1,1180 @@
+{
+  "site": {
+    "origin": "https://cachedrop.io",
+    "llms_txt": true,
+    "robots_allows": {
+      "GPTBot": true,
+      "ClaudeBot": true,
+      "PerplexityBot": true,
+      "Google-Extended": true
+    }
+  },
+  "pages": [
+    {
+      "page": {
+        "url": "https://cachedrop.io/",
+        "query_id": "q01",
+        "query_text": "best mac cleaner that doesn't need a subscription",
+        "audited_at": "2026-11-10T03:54:54.640Z",
+        "http_status": 200,
+        "error": null,
+        "checks": {
+          "title": "Mac Cleaner – Get Your Mac’s Space Back, Pay Once | CacheDrop",
+          "meta_description": "CacheDrop finds the caches, leftovers and old files filling your Mac, and clears them safely. Made for music producers, developers and video editors.",
+          "h1": [
+            "Get your Mac’s space back."
+          ],
+          "canonical": "https://cachedrop.io/",
+          "canonical_is_self": true,
+          "json_ld_types": [
+            "Answer",
+            "FAQPage",
+            "Offer",
+            "Organization",
+            "Question",
+            "SoftwareApplication",
+            "UnitPriceSpecification"
+          ],
+          "internal_links": 15,
+          "word_count": 1065
+        },
+        "answer": {
+          "verdict": "partial",
+          "quote": "Buy · was $29.99 now $19.99 once Try it before you buy · No card needed · macOS 14 or later",
+          "reason": "The opening presents a single Mac cleaner with a one-time price, which fits the no-subscription ask, but it does not compare options or name it as the best, and most of the text is UI mock-up content.",
+          "model": "anthropic/claude-sonnet-5-5"
+        }
+      },
+      "competitors": [
+        {
+          "url": "https://www.macworld.com/article/673271/best-mac-cleaner-tested-compared.html",
+          "query_id": "q01",
+          "query_text": "best mac cleaner that doesn't need a subscription",
+          "audited_at": "2026-11-10T03:54:57.633Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "Best Mac Cleaner Software 2026: 14 free & paid apps, tested & compared | Macworld",
+            "meta_description": "Looking for the best Mac cleaner? We tested the leading Mac cleanup apps for performance, safety, value and ease of use to help you choose the best.",
+            "h1": [
+              "Best Mac Cleaner Apps 2026: Tested & Compared"
+            ],
+            "canonical": "https://www.macworld.com/article/673271/best-mac-cleaner-tested-compared.html",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "Answer",
+              "Article",
+              "Brand",
+              "BreadcrumbList",
+              "FAQPage",
+              "HyperToc",
+              "HyperTocEntry",
+              "ImageObject",
+              "ItemList",
+              "ListItem",
+              "NewsArticle",
+              "Offer",
+              "Organization",
+              "Person",
+              "Product",
+              "Question",
+              "Rating",
+              "Review",
+              "WebPage"
+            ],
+            "internal_links": 92,
+            "word_count": 9301
+          },
+          "answer": {
+            "verdict": "no",
+            "quote": null,
+            "reason": "The opening is an affiliate disclosure and intro that names CleanMyMac as best for ease of use with a first-year price, but never addresses a no-subscription option, and the product shown appears subscription-priced.",
+            "model": "anthropic/claude-sonnet-5-5"
+          }
+        },
+        {
+          "url": "https://thesweetbits.com/best-mac-cleaner-software/",
+          "query_id": "q01",
+          "query_text": "best mac cleaner that doesn't need a subscription",
+          "audited_at": "2026-11-10T03:55:00.287Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "Best Mac Cleaner Apps — Including Tools for AI Clutter | TheSweetBits",
+            "meta_description": "Here we’ll walk you through the essentials and some great 3rd-party apps — to tune up your MacBook beyond its limits.",
+            "h1": [
+              "Best Mac Cleaner Apps — Including Tools for AI Clutter"
+            ],
+            "canonical": "https://thesweetbits.com/best-mac-cleaner-software/",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "BlogPosting",
+              "ImageObject",
+              "Organization",
+              "Person",
+              "WebPage",
+              "WebSite"
+            ],
+            "internal_links": 57,
+            "word_count": 3194
+          },
+          "answer": {
+            "verdict": "partial",
+            "quote": "DaisyDisk – Best for understanding where your space went CleanMyMac – Best for comprehensive cleaning Sensei – Best for system monitoring and maintenance MacKeeper – Best for automatic cleanup and real-time protection",
+            "reason": "The opening lists top Mac cleaners with use-case labels, but it never says which ones need no subscription or are one-time purchases, so the question's key constraint goes unanswered.",
+            "model": "anthropic/claude-sonnet-5-5"
+          }
+        },
+        {
+          "url": "https://www.diskcleaner.pro/blog/best-one-time-purchase-mac-cleaner/",
+          "query_id": "q01",
+          "query_text": "best mac cleaner that doesn't need a subscription",
+          "audited_at": "2026-11-10T03:55:02.491Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "Best One-Time Purchase Mac Cleaner in 2026 — Ranked and Compared — DiskCleaner",
+            "meta_description": "Tired of subscription pricing for Mac cleaning apps? We rank the best one-time purchase Mac cleaners in 2026 by what you actually get, not just the price tag.",
+            "h1": [
+              "Best One-Time Purchase Mac Cleaner in 2026 — Ranked and Compared",
+              "Best One-Time Purchase Mac Cleaner in 2026 — Ranked and Compared"
+            ],
+            "canonical": "https://www.diskcleaner.pro/blog/best-one-time-purchase-mac-cleaner/",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "Blog",
+              "BlogPosting",
+              "BreadcrumbList",
+              "ContactPoint",
+              "CreativeWork",
+              "ImageObject",
+              "ListItem",
+              "Offer",
+              "Organization",
+              "Person",
+              "SoftwareApplication",
+              "Thing",
+              "WebPage",
+              "WebSite"
+            ],
+            "internal_links": 1,
+            "word_count": 1120
+          },
+          "answer": {
+            "verdict": "no",
+            "quote": null,
+            "reason": "The opening is a preamble about subscription fatigue and criteria for a good cleaner, and names no specific one-time-purchase Mac cleaner or comparison.",
+            "model": "anthropic/claude-sonnet-5-5"
+          }
+        }
+      ],
+      "gaps": [
+        "title is 61 chars (search results cut at about 60)",
+        "JSON-LD types used by 2+ competitors but not here: BreadcrumbList, BlogPosting",
+        "1065 words vs competitor median 3194",
+        "needs check: answers \"best mac cleaner that doesn't need a subscription\" only partly near the top (partial). Why: The opening presents a single Mac cleaner with a one-time price, which fits the no-subscription ask, but it does not compare options or name it as the best, and most of the text is UI mock-up content. Quote: \"Buy · was $29.99 now $19.99 once Try it before you buy · No card needed · macOS 14 or later\""
+      ]
+    },
+    {
+      "page": {
+        "url": "https://cachedrop.io/pricing/",
+        "query_id": "q21",
+        "query_text": "CleanMyMac subscription vs one time purchase cleaner for mac",
+        "audited_at": "2026-11-10T03:55:04.490Z",
+        "http_status": 200,
+        "error": null,
+        "checks": {
+          "title": "CacheDrop Pricing – $29.99 Once for Up to 3 Macs",
+          "meta_description": "CacheDrop finds what’s filling your Mac and clears it safely. A license is $29.99 once, now $19.99 for a limited time, for up to 3 Macs, with every update through version 1 and 30-day refunds. Nothing to cancel.",
+          "h1": [
+            "Pay once. Use it on 3 Macs."
+          ],
+          "canonical": "https://cachedrop.io/pricing/",
+          "canonical_is_self": true,
+          "json_ld_types": [],
+          "internal_links": 15,
+          "word_count": 141
+        },
+        "answer": {
+          "verdict": "partial",
+          "quote": "Pay once. Use it on 3 Macs.",
+          "reason": "The opening presents CacheDrop as a one-time-purchase Mac cleaner with no subscription, which fits the ask, but it never mentions CleanMyMac or compares subscription and one-time pricing for it.",
+          "model": "anthropic/claude-sonnet-5-5"
+        }
+      },
+      "competitors": [
+        {
+          "url": "https://macpaw.com/support/cleanmymac/knowledgebase/purchase-options",
+          "query_id": "q21",
+          "query_text": "CleanMyMac subscription vs one time purchase cleaner for mac",
+          "audited_at": "2026-11-10T03:55:07.065Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "CleanMyMac purchase options",
+            "meta_description": "Learn the differences between a one-time purchase, a subscription, and a Setapp subscription of CleanMyMac.",
+            "h1": [
+              "One-time purchase or subscription"
+            ],
+            "canonical": "https://macpaw.com/support/cleanmymac/knowledgebase/purchase-options",
+            "canonical_is_self": true,
+            "json_ld_types": [],
+            "internal_links": 64,
+            "word_count": 328
+          },
+          "answer": {
+            "verdict": "partial",
+            "quote": "With a one-time purchase, you pay once and receive a CleanMyMac plan without an expiration date.",
+            "reason": "The opening explains the one-time purchase option and lists the purchase routes, but the subscription details and the actual comparison are cut off, so the opening does not give a direct recommendation or side-by-side comparison.",
+            "model": "anthropic/claude-sonnet-5-5"
+          }
+        },
+        {
+          "url": "https://www.macworld.com/article/352922/cleanmymac-x-review-macos.html",
+          "query_id": "q21",
+          "query_text": "CleanMyMac subscription vs one time purchase cleaner for mac",
+          "audited_at": "2026-11-10T03:55:09.265Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "CleanMyMac review: Veteran Mac cleaner updated for 2025 | Macworld",
+            "meta_description": "CleanMacMac can simplify Mac maintenance tasks for you and help to keep your Mac fighting fit.",
+            "h1": [
+              "CleanMyMac review: Veteran Mac cleaner updated for 2025"
+            ],
+            "canonical": "https://www.macworld.com/article/352922/cleanmymac-x-review-macos.html",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "Brand",
+              "BreadcrumbList",
+              "ImageObject",
+              "ItemList",
+              "ListItem",
+              "NewsArticle",
+              "Offer",
+              "Organization",
+              "Person",
+              "Product",
+              "Rating",
+              "Review",
+              "WebPage"
+            ],
+            "internal_links": 67,
+            "word_count": 2108
+          },
+          "answer": {
+            "verdict": "partial",
+            "quote": "Subscription or one-time purchase available",
+            "reason": "The opening only notes that CleanMyMac offers both subscription and one-time purchase options and lists a first-year price, without comparing the two or recommending one.",
+            "model": "anthropic/claude-sonnet-5-5"
+          }
+        },
+        {
+          "url": "https://cleanmymac.com/blog/cleanmymac-review",
+          "query_id": "q21",
+          "query_text": "CleanMyMac subscription vs one time purchase cleaner for mac",
+          "audited_at": "2026-11-10T03:55:11.609Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "CleanMyMac review: Is it still worth it in 2026?",
+            "meta_description": "Read this detailed CleanMyMac review to find out what this Mac app has to offer. Learn whether it’s safe to use on a Mac.",
+            "h1": [
+              "CleanMyMac review: A comprehensive look (2026)"
+            ],
+            "canonical": "https://cleanmymac.com/blog/cleanmymac-review",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "Article",
+              "ContactPoint",
+              "ImageObject",
+              "Organization",
+              "Person",
+              "WebPage"
+            ],
+            "internal_links": 17,
+            "word_count": 2685
+          },
+          "answer": {
+            "verdict": "no",
+            "quote": null,
+            "reason": "The opening is a general CleanMyMac review intro that lists features and promises to cover pricing later, but it says nothing about subscription versus one-time purchase options.",
+            "model": "anthropic/claude-sonnet-5-5"
+          }
+        }
+      ],
+      "gaps": [
+        "meta description is 211 chars (cut at about 160)",
+        "141 words vs competitor median 2108",
+        "needs check: answers \"CleanMyMac subscription vs one time purchase cleaner for mac\" only partly near the top (partial). Why: The opening presents CacheDrop as a one-time-purchase Mac cleaner with no subscription, which fits the ask, but it never mentions CleanMyMac or compares subscription and one-time pricing for it. Quote: \"Pay once. Use it on 3 Macs.\""
+      ]
+    },
+    {
+      "page": {
+        "url": "https://cachedrop.io/clear-mac-developer-caches/",
+        "query_id": "q15",
+        "query_text": "best developer mac cleaner for node modules and docker",
+        "audited_at": "2026-11-10T03:55:14.345Z",
+        "http_status": 200,
+        "error": null,
+        "checks": {
+          "title": "Clear Xcode DerivedData, node_modules & Docker Cache on Mac",
+          "meta_description": "Delete Xcode DerivedData, clear old node_modules and Docker caches on your Mac. Manual Terminal steps, plus a free developer Mac cleaner that does it safely.",
+          "h1": [
+            "How to clear Xcode DerivedData, node_modules and Docker caches on Mac"
+          ],
+          "canonical": "https://cachedrop.io/clear-mac-developer-caches/",
+          "canonical_is_self": true,
+          "json_ld_types": [
+            "Answer",
+            "Article",
+            "BreadcrumbList",
+            "FAQPage",
+            "ListItem",
+            "Organization",
+            "Question"
+          ],
+          "internal_links": 14,
+          "word_count": 674
+        },
+        "answer": {
+          "verdict": "partial",
+          "quote": "CacheDrop specifically targets: Xcode DerivedData: intermediate build output and indexes Abandoned node_modules folders in old projects Docker images and build cache, plus Homebrew, npm and Yarn package caches",
+          "reason": "The opening presents one developer Mac cleaner (CacheDrop) that covers node_modules and Docker, but it doesn't compare alternatives or say why it is the best, and the comparison is only linked, not shown.",
+          "model": "anthropic/claude-sonnet-5-5"
+        }
+      },
+      "competitors": [
+        {
+          "url": "https://diskcleaner.app/blog/best-mac-cleaner-for-developers-2026/",
+          "query_id": "q15",
+          "query_text": "best developer mac cleaner for node modules and docker",
+          "audited_at": "2026-11-10T03:55:16.123Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "Best Mac Cleaner for Developers in 2026: Tools That Actually Understand Dev Workflows - DiskCleaner Blog",
+            "meta_description": "Most Mac cleaners treat node_modules and DerivedData as generic large files. Here's a developer-focused comparison of tools that actually understand how developers work.",
+            "h1": [
+              "Best Mac Cleaner for Developers in 2026: Tools That Actually Understand Dev Workflows"
+            ],
+            "canonical": "https://diskcleaner.app/blog/best-mac-cleaner-for-developers-2026/",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "Article",
+              "BreadcrumbList",
+              "ImageObject",
+              "ListItem",
+              "Offer",
+              "Organization",
+              "SoftwareApplication"
+            ],
+            "internal_links": 14,
+            "word_count": 951
+          },
+          "answer": {
+            "verdict": "no",
+            "quote": null,
+            "reason": "The opening only frames the developer storage problem and promises a comparison, without naming any cleaner or recommending one for node_modules and Docker.",
+            "model": "anthropic/claude-sonnet-5-5"
+          }
+        },
+        {
+          "url": "https://github.com/thanhdevapp/mac-dev-cleaner-cli",
+          "query_id": "q15",
+          "query_text": "best developer mac cleaner for node modules and docker",
+          "audited_at": "2026-11-10T03:55:19.473Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "GitHub - thanhdevapp/mac-dev-cleaner-cli: 🧹 Reclaim disk space on macOS! Clean Xcode DerivedData, Gradle caches, node_modules & more. NCDU-style TUI + Desktop GUI. Free up 50GB+ instantly! ⭐ · GitHub",
+            "meta_description": "🧹 Reclaim disk space on macOS! Clean Xcode DerivedData, Gradle caches, node_modules & more. NCDU-style TUI + Desktop GUI. Free up 50GB+ instantly! ⭐ - thanhdevapp/mac-dev-cleaner-cli",
+            "h1": [
+              "Mac Dev Cleaner"
+            ],
+            "canonical": null,
+            "canonical_is_self": false,
+            "json_ld_types": [],
+            "internal_links": 100,
+            "word_count": 816
+          },
+          "answer": {
+            "verdict": "partial",
+            "quote": "Mac Dev Cleaner helps developers reclaim disk space by removing: Xcode - DerivedData, Archives, Caches Android - Gradle caches, SDK caches Node.js - node_modules, npm/yarn/pnpm/bun caches",
+            "reason": "The opening presents a single Mac developer cleaner that covers node_modules, but the visible text is mostly a file listing, shows no Docker mention, and offers no comparison of options.",
+            "model": "anthropic/claude-sonnet-5-5"
+          }
+        },
+        {
+          "url": "https://apps.apple.com/in/app/node-module-cleaner-tool/id6746368684?mt=12",
+          "query_id": "q15",
+          "query_text": "best developer mac cleaner for node modules and docker",
+          "audited_at": "2026-11-10T03:55:21.749Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "‎Node Module Cleaner Tool App - App Store",
+            "meta_description": "Download Node Module Cleaner Tool by Parth Parmar on the App Store. See screenshots, ratings and reviews, user tips and more games like Node Module Cleaner Tool…",
+            "h1": [
+              "Node Module Cleaner Tool",
+              "Version History",
+              "App Privacy"
+            ],
+            "canonical": "https://apps.apple.com/in/app/node-module-cleaner-tool/id6746368684",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "BreadcrumbList",
+              "ListItem",
+              "Offer",
+              "Organization",
+              "SoftwareApplication"
+            ],
+            "internal_links": 190,
+            "word_count": 734
+          },
+          "answer": {
+            "verdict": "partial",
+            "quote": "Mac Module Cleaner Tool is a powerful and intuitive macOS app designed specifically for developers who work with Node.js, Rust, and Solana projects.",
+            "reason": "The opening presents a single Mac cleaner that handles node_modules but never mentions Docker and doesn't compare it with other options, so it only partly fits the 'best' question.",
+            "model": "anthropic/claude-sonnet-5-5"
+          }
+        }
+      ],
+      "gaps": [
+        "JSON-LD types used by 2+ competitors but not here: Offer, SoftwareApplication",
+        "needs check: answers \"best developer mac cleaner for node modules and docker\" only partly near the top (partial). Why: The opening presents one developer Mac cleaner (CacheDrop) that covers node_modules and Docker, but it doesn't compare alternatives or say why it is the best, and the comparison is only linked, not shown. Quote: \"CacheDrop specifically targets: Xcode DerivedData: intermediate build output and indexes Abandoned node_modules folders in old projects Docker images and build cache, plus Homebrew, npm and Yarn package caches\""
+      ]
+    },
+    {
+      "page": {
+        "url": "https://cachedrop.io/clear-adobe-media-cache-mac/",
+        "query_id": "q12",
+        "query_text": "how do I delete adobe media cache files on mac to free space",
+        "audited_at": "2026-11-10T03:55:27.243Z",
+        "http_status": 200,
+        "error": null,
+        "checks": {
+          "title": "Clear Adobe Media Cache on Mac (Premiere Pro & Final Cut Pro)",
+          "meta_description": "How to clear Adobe Premiere Pro media cache and Final Cut Pro render files on a Mac, step by step, plus a free tool that clears every version at once.",
+          "h1": [
+            "How to clear the Adobe media cache on Mac"
+          ],
+          "canonical": "https://cachedrop.io/clear-adobe-media-cache-mac/",
+          "canonical_is_self": true,
+          "json_ld_types": [
+            "Answer",
+            "Article",
+            "BreadcrumbList",
+            "FAQPage",
+            "ListItem",
+            "Organization",
+            "Question"
+          ],
+          "internal_links": 14,
+          "word_count": 594
+        },
+        "answer": {
+          "verdict": "partial",
+          "quote": "On a Mac, the media cache lives here by default:",
+          "reason": "The opening is mostly a product pitch for CacheDrop and only starts to explain the cache location (the path is cut off), with no actual deletion steps shown yet.",
+          "model": "anthropic/claude-sonnet-5-5"
+        }
+      },
+      "competitors": [
+        {
+          "url": "https://macpaw.com/how-to/clear-adobe-cache",
+          "query_id": "q12",
+          "query_text": "how do I delete adobe media cache files on mac to free space",
+          "audited_at": "2026-11-10T03:55:29.909Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "A guide on clearing Adobe cache manually and automatically",
+            "meta_description": "If you use Adobe apps, they might be taking up more disk storage than they should. We’ll show you how to clear Adobe cache on MacBook to free up that space.",
+            "h1": [
+              "How to clear Adobe cache on your Mac"
+            ],
+            "canonical": "https://macpaw.com/how-to/clear-adobe-cache",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "Article",
+              "BreadcrumbList",
+              "ImageObject",
+              "ListItem",
+              "Organization",
+              "Person",
+              "WebPage"
+            ],
+            "internal_links": 74,
+            "word_count": 885
+          },
+          "answer": {
+            "verdict": "no",
+            "quote": null,
+            "reason": "The opening is a CleanMyMac pitch plus background on what Adobe cache is, and it gives no steps for deleting Adobe media cache files on a Mac.",
+            "model": "anthropic/claude-sonnet-5-5"
+          }
+        },
+        {
+          "url": "https://community.adobe.com/questions-712/adobe-cache-takes-up-too-much-space-in-my-macbook-s-system-data-1177582",
+          "query_id": "q12",
+          "query_text": "how do I delete adobe media cache files on mac to free space",
+          "audited_at": "2026-11-10T03:55:32.328Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "Adobe cache takes up too much space in my macbook's system data | Community",
+            "meta_description": "My macbook signaled that I was running out of storage space.Going to check what all that space was taken up by, I notice that I have about 450GB of “Sys...",
+            "h1": [
+              "Adobe cache takes up too much space in my macbook's system data"
+            ],
+            "canonical": "https://community.adobe.com/questions-712/adobe-cache-takes-up-too-much-space-in-my-macbook-s-system-data-1177582",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "Answer",
+              "BreadcrumbList",
+              "ListItem",
+              "Person",
+              "QAPage",
+              "Question"
+            ],
+            "internal_links": 21,
+            "word_count": 783
+          },
+          "answer": {
+            "verdict": "partial",
+            "quote": "delete it. You would set your scratch disk size in your preference file in photoshop.",
+            "reason": "The opening is a forum thread where a reply says to delete the Adobe cache folder and limit scratch disk in Photoshop, but it gives no steps for Media Cache specifically (e.g., Premiere/After Effects preferences) or how to locate and delete it on Mac.",
+            "model": "anthropic/claude-sonnet-5-5"
+          }
+        },
+        {
+          "url": "https://www.businessinsider.com/reference/how-to-free-up-space-on-mac",
+          "query_id": "q12",
+          "query_text": "how do I delete adobe media cache files on mac to free space",
+          "audited_at": "2026-11-10T03:55:34.265Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "How to Free up Space on Your Mac",
+            "meta_description": "You can free up space on your Mac by manually deleting files, cleaning out your Downloads folder, emptying your trash, and more.",
+            "h1": [
+              "How to free up space on your Mac to keep your device running smoothly"
+            ],
+            "canonical": "https://www.businessinsider.com/reference/how-to-free-up-space-on-mac",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "Article",
+              "Brand",
+              "BreadcrumbList",
+              "ContactPoint",
+              "ImageObject",
+              "ListItem",
+              "NewsMediaOrganization",
+              "Organization",
+              "Person",
+              "WebPage",
+              "WebPageElement"
+            ],
+            "internal_links": 92,
+            "word_count": 1235
+          },
+          "answer": {
+            "verdict": "no",
+            "quote": null,
+            "reason": "The opening is a general intro about freeing up Mac space and says nothing about Adobe media cache files or how to delete them.",
+            "model": "anthropic/claude-sonnet-5-5"
+          }
+        }
+      ],
+      "gaps": [
+        "title is 61 chars (search results cut at about 60)",
+        "needs check: answers \"how do I delete adobe media cache files on mac to free space\" only partly near the top (partial). Why: The opening is mostly a product pitch for CacheDrop and only starts to explain the cache location (the path is cut off), with no actual deletion steps shown yet. Quote: \"On a Mac, the media cache lives here by default:\""
+      ]
+    },
+    {
+      "page": {
+        "url": "https://cachedrop.io/uninstall-audio-plugins-mac/",
+        "query_id": "q06",
+        "query_text": "how do I remove old audio plug-ins from my mac",
+        "audited_at": "2026-11-10T03:55:36.567Z",
+        "http_status": 200,
+        "error": null,
+        "checks": {
+          "title": "How to Uninstall Audio Plug-ins on Mac (VST, AU, AAX, CLAP)",
+          "meta_description": "Uninstall VST, VST3, AU, AAX and CLAP plug-ins on a Mac with every file they installed, find where plug-ins are stored, and clear Ableton Live’s cache without touching your licenses.",
+          "h1": [
+            "Uninstall audio plug-ins on Mac, every file they left."
+          ],
+          "canonical": "https://cachedrop.io/uninstall-audio-plugins-mac/",
+          "canonical_is_self": true,
+          "json_ld_types": [
+            "Answer",
+            "Article",
+            "BreadcrumbList",
+            "FAQPage",
+            "HowTo",
+            "HowToStep",
+            "ListItem",
+            "Organization",
+            "Question"
+          ],
+          "internal_links": 14,
+          "word_count": 1171
+        },
+        "answer": {
+          "verdict": "partial",
+          "quote": "A plug-in is rarely one file. Most installers put the same plug-in in two to four formats, in different folders, plus presets and support files elsewhere. Deleting one bundle leaves the rest.",
+          "reason": "The opening pitches CacheDrop and explains why removal is multi-file, then only starts the manual steps (quit DAW, use maker's uninstaller) without giving folder locations or the full procedure.",
+          "model": "anthropic/claude-sonnet-5-5"
+        }
+      },
+      "competitors": [
+        {
+          "url": "https://forum.juce.com/t/reliably-removing-audio-unit-plugins/59856",
+          "query_id": "q06",
+          "query_text": "how do I remove old audio plug-ins from my mac",
+          "audited_at": "2026-11-10T03:55:39.222Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "Reliably removing Audio Unit plugins - MacOSX and iOS - JUCE",
+            "meta_description": "I want to remove all Audio Unit versions of my plugin. I try all the recommended ways but there is often some old “ghost” version that gets found each time I rescan. Often this will keep me from testing new versions and…",
+            "h1": [
+              "Reliably removing Audio Unit plugins"
+            ],
+            "canonical": "https://forum.juce.com/t/reliably-removing-audio-unit-plugins/59856",
+            "canonical_is_self": true,
+            "json_ld_types": [],
+            "internal_links": 28,
+            "word_count": 871
+          },
+          "answer": {
+            "verdict": "no",
+            "quote": null,
+            "reason": "The opening is a developer's forum post describing a problem with ghost Audio Unit versions and the fixes they already tried, not a set of steps for removing old plug-ins.",
+            "model": "anthropic/claude-sonnet-5-5"
+          }
+        },
+        {
+          "url": "https://process.audio/support/how-do-i-completely-uninstall-my-plug-ins",
+          "query_id": "q06",
+          "query_text": "how do I remove old audio plug-ins from my mac",
+          "audited_at": "2026-11-10T03:55:41.692Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "How do I completely uninstall my plug-ins? | Support",
+            "meta_description": "Windows When you install PROCESS.AUDIO plug-ins, an uninstall.exe file is automatically created. This file will be located here: C:\\Program Files\\ProcessAudio\\M...",
+            "h1": [
+              "How do I completely uninstall my plug-ins?"
+            ],
+            "canonical": "https://process.audio/support/how-do-i-completely-uninstall-my-plug-ins",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "Article",
+              "BreadcrumbList",
+              "ContactPoint",
+              "ImageObject",
+              "ListItem",
+              "Organization",
+              "WebPage",
+              "WebSite"
+            ],
+            "internal_links": 21,
+            "word_count": 236
+          },
+          "answer": {
+            "verdict": "yes",
+            "quote": "To uninstall the plug-ins from a Mac, you can just delete the specific PROCESS.AUDIO plug-in files at the following locations: /Library/Audio/Plug-Ins/Components/ — AU /Library/Audio/Plug-Ins/VST/ — VST2 /Library/Audio/Plug-Ins/VST3/ — VST3",
+            "reason": "The opening lists the macOS folders where plug-in files (AU, VST2, VST3, AAX) can be deleted, though it is written for one vendor's plug-ins and has Windows content first.",
+            "model": "anthropic/claude-sonnet-5-5"
+          }
+        },
+        {
+          "url": "https://www.widebluesound.com/audio-plugin-uninstaller/",
+          "query_id": "q06",
+          "query_text": "how do I remove old audio plug-ins from my mac",
+          "audited_at": "2026-11-10T03:55:44.051Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "Audio Plugin Uninstaller by Wide Blue Sound :: The Missing Plugin Uninstaller for Mac",
+            "meta_description": "The missing plugin uninstaller for Mac.",
+            "h1": [
+              "Audio Plugin Uninstaller"
+            ],
+            "canonical": "https://www.widebluesound.com/audio-plugin-uninstaller/",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "Brand",
+              "BreadcrumbList",
+              "ImageObject",
+              "ListItem",
+              "Offer",
+              "Organization",
+              "Product",
+              "WebPage",
+              "WebSite"
+            ],
+            "internal_links": 12,
+            "word_count": 489
+          },
+          "answer": {
+            "verdict": "no",
+            "quote": null,
+            "reason": "The opening is a product page for a paid plugin uninstaller, with promo banners, pricing and review quotes, and gives no steps for removing old audio plug-ins from a Mac.",
+            "model": "anthropic/claude-sonnet-5-5"
+          }
+        }
+      ],
+      "gaps": [
+        "meta description is 182 chars (cut at about 160)",
+        "needs check: answers \"how do I remove old audio plug-ins from my mac\" only partly near the top (partial). Why: The opening pitches CacheDrop and explains why removal is multi-file, then only starts the manual steps (quit DAW, use maker's uninstaller) without giving folder locations or the full procedure. Quote: \"A plug-in is rarely one file. Most installers put the same plug-in in two to four formats, in different folders, plus presets and support files elsewhere. Deleting one bundle leaves the rest.\" These answer it: process.audio."
+      ]
+    },
+    {
+      "page": {
+        "url": "https://cachedrop.io/clear-system-data-mac/",
+        "query_id": "q09",
+        "query_text": "what is system data on mac and how do I delete it",
+        "audited_at": "2026-11-10T03:55:46.186Z",
+        "http_status": 200,
+        "error": null,
+        "checks": {
+          "title": "How to Clear System Data on Mac (and Why It’s So Big)",
+          "meta_description": "What System Data on Mac is, why it grows so big, and what’s safe to remove: caches, logs, developer files and Time Machine local snapshots, with the Terminal commands and the risks.",
+          "h1": [
+            "How to clear System Data on Mac"
+          ],
+          "canonical": "https://cachedrop.io/clear-system-data-mac/",
+          "canonical_is_self": true,
+          "json_ld_types": [
+            "Answer",
+            "Article",
+            "BreadcrumbList",
+            "FAQPage",
+            "HowTo",
+            "HowToStep",
+            "ListItem",
+            "Organization",
+            "Question"
+          ],
+          "internal_links": 14,
+          "word_count": 1590
+        },
+        "answer": {
+          "verdict": "partial",
+          "quote": "System Data is the space macOS doesn’t count in one of its other storage categories, such as Applications, Documents or Photos. Most of it is caches, logs, temporary files and snapshots, plus files macOS needs to run.",
+          "reason": "The opening clearly defines System Data and where to view it, but after a product pitch it cuts off before giving any steps for deleting it.",
+          "model": "anthropic/claude-sonnet-5-5"
+        }
+      },
+      "competitors": [
+        {
+          "url": "https://www.macworld.com/article/676493/how-to-delete-system-data-mac.html",
+          "query_id": "q09",
+          "query_text": "what is system data on mac and how do I delete it",
+          "audited_at": "2026-11-10T03:55:49.671Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "How to clear System Data on Mac and free up storage space | Macworld",
+            "meta_description": "System Data taking up too much space on your Mac? Learn what you can safely remove, how to clear caches, and ways to reclaim storage without damaging macOS.",
+            "h1": [
+              "How to clear System Data on Mac and free up storage space"
+            ],
+            "canonical": "https://www.macworld.com/article/676493/how-to-delete-system-data-mac.html",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "Article",
+              "Brand",
+              "BreadcrumbList",
+              "HowTo",
+              "HowToStep",
+              "HowToTip",
+              "ImageObject",
+              "ListItem",
+              "NewsArticle",
+              "Offer",
+              "Organization",
+              "Person",
+              "Product",
+              "Rating",
+              "Review",
+              "WebPage"
+            ],
+            "internal_links": 75,
+            "word_count": 3498
+          },
+          "answer": {
+            "verdict": "no",
+            "quote": null,
+            "reason": "The opening is only an affiliate disclaimer, byline and a framing of why low storage matters; it neither defines System Data nor gives any deletion steps.",
+            "model": "anthropic/claude-sonnet-5-5"
+          }
+        },
+        {
+          "url": "https://techcommunity.microsoft.com/discussions/windowsinsiderprogram/how-to-free-or-clear-system-data-on-mac-as-it-takes-too-much-space/4517395",
+          "query_id": "q09",
+          "query_text": "what is system data on mac and how do I delete it",
+          "audited_at": "2026-11-10T03:55:52.585Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "How to free or clear system data on Mac as it takes too much space | Microsoft Community Hub",
+            "meta_description": "I'm going crazy here. My MacBook Pro storage is almost full, and when I check the storage breakdown, this mysterious thing called System Data is eating up...",
+            "h1": [
+              "How to free or clear system data on Mac as it takes too much space"
+            ],
+            "canonical": "https://techcommunity.microsoft.com/discussions/windowsinsiderprogram/how-to-free-or-clear-system-data-on-mac-as-it-takes-too-much-space/4517395",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "Answer",
+              "BreadcrumbList",
+              "ListItem",
+              "Person",
+              "QAPage",
+              "Question"
+            ],
+            "internal_links": 13,
+            "word_count": 207
+          },
+          "answer": {
+            "verdict": "no",
+            "quote": null,
+            "reason": "The opening is only the forum poster's question restating the problem, with no explanation of what System Data is or how to delete it; any answer would come later.",
+            "model": "anthropic/claude-sonnet-5-5"
+          }
+        },
+        {
+          "url": "https://www.mac-forums.com/threads/system-data-taking-up-a-large-amount-of-storage.379624/",
+          "query_id": "q09",
+          "query_text": "what is system data on mac and how do I delete it",
+          "audited_at": "2026-11-10T03:55:55.277Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "System Data taking up a large amount of storage | Mac-Forums | Fix Mac iPhone iPad | Buying Tips | iOS OS Help",
+            "meta_description": "While looking for a setting I found that the \"System Data\" on my Mac Mini is taking up most of my storage (160GB out of 245GB). I'm not as familiar with...",
+            "h1": [
+              "System Data taking up a large amount of storage"
+            ],
+            "canonical": "https://www.mac-forums.com/threads/system-data-taking-up-a-large-amount-of-storage.379624/",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "DiscussionForumPosting",
+              "InteractionCounter",
+              "Organization",
+              "Person",
+              "WebPage"
+            ],
+            "internal_links": 66,
+            "word_count": 316
+          },
+          "answer": {
+            "verdict": "no",
+            "quote": null,
+            "reason": "The opening is a forum post where a user describes the same problem and asks for ideas, so it offers no explanation of System Data and no deletion steps.",
+            "model": "anthropic/claude-sonnet-5-5"
+          }
+        }
+      ],
+      "gaps": [
+        "meta description is 181 chars (cut at about 160)",
+        "needs check: answers \"what is system data on mac and how do I delete it\" only partly near the top (partial). Why: The opening clearly defines System Data and where to view it, but after a product pitch it cuts off before giving any steps for deleting it. Quote: \"System Data is the space macOS doesn’t count in one of its other storage categories, such as Applications, Documents or Photos. Most of it is caches, logs, temporary files and snapshots, plus files macOS needs to run.\""
+      ]
+    },
+    {
+      "page": {
+        "url": "https://cachedrop.io/uninstall-apps-mac/",
+        "query_id": "q13",
+        "query_text": "how to completely uninstall an app on mac without leftover files",
+        "audited_at": "2026-11-10T03:55:57.752Z",
+        "http_status": 200,
+        "error": null,
+        "checks": {
+          "title": "How to Completely Uninstall Apps on Mac and Remove Leftovers",
+          "meta_description": "Dragging an app to the Trash leaves its settings, caches and data behind. Find where app leftovers live on a Mac, remove them by hand, or uninstall apps with every file they left.",
+          "h1": [
+            "How to completely uninstall apps on Mac"
+          ],
+          "canonical": "https://cachedrop.io/uninstall-apps-mac/",
+          "canonical_is_self": true,
+          "json_ld_types": [
+            "Answer",
+            "Article",
+            "BreadcrumbList",
+            "FAQPage",
+            "HowTo",
+            "HowToStep",
+            "ListItem",
+            "Organization",
+            "Question"
+          ],
+          "internal_links": 14,
+          "word_count": 1311
+        },
+        "answer": {
+          "verdict": "partial",
+          "quote": "Dragging an app to the Trash removes the app, not the settings, caches and data it left in your Library. Here’s where those leftovers live, how to remove them by hand, and how CacheDrop finds them for you.",
+          "reason": "The opening explains why leftovers remain and promises manual and tool-based removal, but the actual steps are not yet given within the opening and it is padded with product pitch and pricing.",
+          "model": "anthropic/claude-sonnet-5-5"
+        }
+      },
+      "competitors": [
+        {
+          "url": "https://nektony.com/how-to/uninstall-apps-on-mac",
+          "query_id": "q13",
+          "query_text": "how to completely uninstall an app on mac without leftover files",
+          "audited_at": "2026-11-10T03:56:00.511Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "How to Uninstall Apps on Mac Completely: 6 Ways in 2026",
+            "meta_description": "Dragging an app to Trash leaves files behind. Learn 6 ways to uninstall apps on Mac completely: App Cleaner, Finder, Launchpad, Terminal, Homebrew, and more.",
+            "h1": [
+              "Uninstall apps on Mac: The guide with 6 ways to do it right in 2026"
+            ],
+            "canonical": "https://nektony.com/how-to/uninstall-apps-on-mac",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "Answer",
+              "Article",
+              "BreadcrumbList",
+              "FAQPage",
+              "ImageObject",
+              "ListItem",
+              "Organization",
+              "Person",
+              "Question",
+              "WebPage",
+              "WebSite"
+            ],
+            "internal_links": 53,
+            "word_count": 3721
+          },
+          "answer": {
+            "verdict": "partial",
+            "quote": "dragging an app to the Trash deletes only the app bundle. The app’s settings, logs, caches, login items, and helpers remain and add clutter",
+            "reason": "The opening explains why leftovers remain and begins listing six methods (naming App Cleaner & Uninstaller as one-click), but it cuts off before giving actual steps for a complete uninstall, after a byline-heavy preamble.",
+            "model": "anthropic/claude-sonnet-5-5"
+          }
+        },
+        {
+          "url": "https://support.apple.com/en-us/102610",
+          "query_id": "q13",
+          "query_text": "how to completely uninstall an app on mac without leftover files",
+          "audited_at": "2026-11-10T03:56:06.351Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "Delete or uninstall apps on Mac - Apple Support",
+            "meta_description": "When you delete or uninstall an app, the storage space it was using becomes available for other items.",
+            "h1": [
+              "Delete or uninstall apps on Mac"
+            ],
+            "canonical": "https://support.apple.com/en-us/102610",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "VideoObject",
+              "WebPage"
+            ],
+            "internal_links": 10,
+            "word_count": 484
+          },
+          "answer": {
+            "verdict": "partial",
+            "quote": "If the app is currently open, quit the app before continuing. Locate the app in the Finder.",
+            "reason": "The opening begins the standard steps for deleting an app on Mac, but it is cut off before the deletion step and never covers removing leftover files such as preferences or caches, which is the core of the question.",
+            "model": "anthropic/claude-sonnet-5-5"
+          }
+        },
+        {
+          "url": "https://techcommunity.microsoft.com/discussions/windowsinsiderprogram/how-do-i-completely-uninstall-applications-on-a-mac/4509108",
+          "query_id": "q13",
+          "query_text": "how to completely uninstall an app on mac without leftover files",
+          "audited_at": "2026-11-10T03:56:09.118Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "How do I completely uninstall applications on a mac? | Microsoft Community Hub",
+            "meta_description": "Hi everyone! I'm a total newbie to the mac ecosystem, and I'm a bit confused about the proper way to remove software. Coming from Windows 10, I'm used to a...",
+            "h1": [
+              "How do I completely uninstall applications on a mac?"
+            ],
+            "canonical": "https://techcommunity.microsoft.com/discussions/windowsinsiderprogram/how-do-i-completely-uninstall-applications-on-a-mac/4509108",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "Answer",
+              "BreadcrumbList",
+              "ListItem",
+              "Person",
+              "QAPage",
+              "Question"
+            ],
+            "internal_links": 31,
+            "word_count": 1801
+          },
+          "answer": {
+            "verdict": "no",
+            "quote": null,
+            "reason": "The opening is only the original poster's question restating the problem; the first reply begins with 'To save time and effort,' and gives no actual uninstall steps or recommendation.",
+            "model": "anthropic/claude-sonnet-5-5"
+          }
+        }
+      ],
+      "gaps": [
+        "meta description is 179 chars (cut at about 160)",
+        "needs check: answers \"how to completely uninstall an app on mac without leftover files\" only partly near the top (partial). Why: The opening explains why leftovers remain and promises manual and tool-based removal, but the actual steps are not yet given within the opening and it is padded with product pitch and pricing. Quote: \"Dragging an app to the Trash removes the app, not the settings, caches and data it left in your Library. Here’s where those leftovers live, how to remove them by hand, and how CacheDrop finds them for you.\""
+      ]
+    },
+    {
+      "page": {
+        "url": "https://cachedrop.io/cleanmymac-alternative/",
+        "query_id": "q14",
+        "query_text": "alternative to CleanMyMac for music producers",
+        "audited_at": "2026-11-10T03:56:14.753Z",
+        "http_status": 200,
+        "error": null,
+        "checks": {
+          "title": "CleanMyMac alternative you pay for once | CacheDrop",
+          "meta_description": "CacheDrop cleans your Mac, uninstalls apps and plug-ins completely, and clears developer and media caches for $29.99 once, now $19.99 for a limited time, on up to 3 Macs. No subscription.",
+          "h1": [
+            "A CleanMyMac alternative you pay for once."
+          ],
+          "canonical": "https://cachedrop.io/cleanmymac-alternative/",
+          "canonical_is_self": true,
+          "json_ld_types": [
+            "Answer",
+            "BreadcrumbList",
+            "FAQPage",
+            "ListItem",
+            "Question",
+            "WebPage"
+          ],
+          "internal_links": 15,
+          "word_count": 883
+        },
+        "answer": {
+          "verdict": "partial",
+          "quote": "CacheDrop cleans your Mac, removes apps and plug-ins completely, and clears developer and media caches.",
+          "reason": "The opening offers CacheDrop as a one-time-purchase CleanMyMac alternative and mentions plug-in and media cache cleanup, but it never addresses music producers specifically and gives only a price comparison rather than a producer-focused comparison.",
+          "model": "anthropic/claude-sonnet-5-5"
+        }
+      },
+      "competitors": [
+        {
+          "url": "https://cleanmymac.com/blog/cleanmymac-alternatives",
+          "query_id": "q14",
+          "query_text": "alternative to CleanMyMac for music producers",
+          "audited_at": "2026-11-10T03:56:17.213Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "Want to choose a CleanMyMac alternative? Check these tools",
+            "meta_description": "Are there any good CleanMyMac alternatives out there? This guide has tested and rated all the best free and paid alternatives out there in 2026.",
+            "h1": [
+              "Best CleanMyMac alternatives (free & paid)"
+            ],
+            "canonical": "https://cleanmymac.com/blog/cleanmymac-alternatives",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "Article",
+              "ContactPoint",
+              "ImageObject",
+              "Organization",
+              "Person",
+              "WebPage"
+            ],
+            "internal_links": 15,
+            "word_count": 1828
+          },
+          "answer": {
+            "verdict": "no",
+            "quote": null,
+            "reason": "The opening is a byline, intro and description of CleanMyMac's features; it names no alternatives and says nothing about music producers' needs.",
+            "model": "anthropic/claude-sonnet-5-5"
+          }
+        },
+        {
+          "url": "https://softorino.com/blog/cleanmymac-alternatives",
+          "query_id": "q14",
+          "query_text": "alternative to CleanMyMac for music producers",
+          "audited_at": "2026-11-10T03:56:19.765Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "6 CleanMyMac Alternatives for App Removal and Cleanup",
+            "meta_description": "Compare 6 CleanMyMac alternatives for app removal and cleanup. See free and paid options, current license terms, practical limits, and which tool fits your Mac.",
+            "h1": [],
+            "canonical": "https://softorino.com/blog/cleanmymac-alternatives",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "Answer",
+              "BreadcrumbList",
+              "FAQPage",
+              "ImageObject",
+              "ListItem",
+              "Question",
+              "ReadAction",
+              "WebPage",
+              "WebSite"
+            ],
+            "internal_links": 46,
+            "word_count": 3601
+          },
+          "answer": {
+            "verdict": "partial",
+            "quote": "The best CleanMyMac alternatives depend on which features you use. Choose CleanAppsNow for focused Mac app removal and leftover review, AppCleaner for a free drag-and-drop uninstaller, or DaisyDisk to find large files with a visual disk map.",
+            "reason": "The opening lists CleanMyMac alternatives with a comparison table, but it is generic and never addresses music producers' needs such as sample libraries, plugins or DAW storage.",
+            "model": "anthropic/claude-sonnet-5-5"
+          }
+        },
+        {
+          "url": "https://www.theodorehq.com/shiny/blog/cleanmymac-alternatives",
+          "query_id": "q14",
+          "query_text": "alternative to CleanMyMac for music producers",
+          "audited_at": "2026-11-10T03:56:22.149Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "CleanMyMac Free Alternative (and Cheap Picks) - Shiny",
+            "meta_description": "Looking for a free alternative to CleanMyMac? An honest, job-by-job breakdown of which free and cheap tools replace it, and what each one actually does.",
+            "h1": [
+              "CleanMyMac free alternative (and cheap picks)"
+            ],
+            "canonical": "https://www.theodorehq.com/shiny/blog/cleanmymac-alternatives",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "Answer",
+              "Blog",
+              "BlogPosting",
+              "BreadcrumbList",
+              "FAQPage",
+              "ItemList",
+              "ListItem",
+              "Offer",
+              "Question",
+              "SoftwareApplication",
+              "WebPage"
+            ],
+            "internal_links": 13,
+            "word_count": 1758
+          },
+          "answer": {
+            "verdict": "partial",
+            "quote": "The best CleanMyMac alternative depends on which of its jobs you actually need. Shiny is the top pick for the headline one, freeing memory in one tap from your menu bar, for $4.99 one-time with no subscription and no telemetry.",
+            "reason": "The opening gives concrete CleanMyMac alternatives job by job, but it is generic and never addresses music producers or audio workflow needs.",
+            "model": "anthropic/claude-sonnet-5-5"
+          }
+        }
+      ],
+      "gaps": [
+        "meta description is 187 chars (cut at about 160)",
+        "883 words vs competitor median 1828",
+        "needs check: answers \"alternative to CleanMyMac for music producers\" only partly near the top (partial). Why: The opening offers CacheDrop as a one-time-purchase CleanMyMac alternative and mentions plug-in and media cache cleanup, but it never addresses music producers specifically and gives only a price comparison rather than a producer-focused comparison. Quote: \"CacheDrop cleans your Mac, removes apps and plug-ins completely, and clears developer and media caches.\""
+      ]
+    }
+  ]
+}

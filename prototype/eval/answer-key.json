@@ -1,14 +1,139 @@
 {
-  "_source": "eval/answer-key-source-2026-10-22.md (desk research 2026-10-22). Reference, not truth: disagreements are re-checked against live pages.",
-  "_format": "competitor_id -> field -> list of accepted values (strings compared case-insensitively; numbers within $0.50)",
-  "cleanmymac":       {"pricing_model": ["both"], "price_annual_usd": [39.95], "price_one_time_usd": [119.95], "feature_cleanup": ["yes"], "feature_uninstall": ["yes"], "feature_disk_map": ["yes"], "feature_duplicates": ["yes"]},
-  "daisydisk":        {"pricing_model": ["one_time"], "price_one_time_usd": [9.99], "price_annual_usd": [null], "feature_disk_map": ["yes"], "feature_duplicates": ["no"]},
-  "maccleaner-pro":   {"pricing_model": ["both"], "price_annual_usd": [39.95], "feature_cleanup": ["yes"], "feature_uninstall": ["yes"], "feature_disk_map": ["yes"], "feature_duplicates": ["yes"]},
-  "grandperspective": {"distribution": ["both"], "feature_disk_map": ["yes"]},
-  "omnidisksweeper":  {"pricing_model": ["free"], "price_annual_usd": [null]},
-  "appcleaner":       {"pricing_model": ["free", "donation"], "price_annual_usd": [null], "feature_uninstall": ["yes"]},
-  "pearcleaner":      {"pricing_model": ["free"], "distribution": ["open_source"], "feature_uninstall": ["yes"], "feature_developer_cleanup": ["yes"]},
-  "mole":             {"pricing_model": ["one_time", "freemium"], "price_one_time_usd": [19], "feature_cleanup": ["yes"], "feature_uninstall": ["yes"]},
-  "hyperspace":       {"distribution": ["mac_app_store"], "feature_duplicates": ["yes"]},
-  "sensei":           {"feature_cleanup": ["yes"], "feature_uninstall": ["yes"]}
+ "_source": "eval/answer-key-source-2026-10-22.md (desk research 2026-10-22). Reference, not truth: disagreements are re-checked against live pages.",
+ "_format": "competitor_id -> field -> list of accepted values (strings compared case-insensitively; numbers within $0.50)",
+ "cleanmymac": {
+  "pricing_model": [
+   "both"
+  ],
+  "price_annual_usd": [
+   39.95
+  ],
+  "price_one_time_usd": [
+   119.95
+  ],
+  "feature_cleanup": [
+   "yes"
+  ],
+  "feature_uninstall": [
+   "yes"
+  ],
+  "feature_disk_map": [
+   "yes"
+  ],
+  "feature_duplicates": [
+   "yes"
+  ]
+ },
+ "daisydisk": {
+  "pricing_model": [
+   "one_time"
+  ],
+  "price_one_time_usd": [
+   9.99
+  ],
+  "price_annual_usd": [
+   null
+  ],
+  "feature_disk_map": [
+   "yes"
+  ],
+  "feature_duplicates": [
+   "no"
+  ]
+ },
+ "maccleaner-pro": {
+  "pricing_model": [
+   "both"
+  ],
+  "price_annual_usd": [
+   39.95
+  ],
+  "feature_cleanup": [
+   "yes"
+  ],
+  "feature_uninstall": [
+   "yes"
+  ],
+  "feature_disk_map": [
+   "yes"
+  ],
+  "feature_duplicates": [
+   "yes"
+  ]
+ },
+ "grandperspective": {
+  "distribution": [
+   "both",
+   "open_source_and_app_store"
+  ],
+  "feature_disk_map": [
+   "yes"
+  ]
+ },
+ "omnidisksweeper": {
+  "pricing_model": [
+   "free"
+  ],
+  "price_annual_usd": [
+   null
+  ]
+ },
+ "appcleaner": {
+  "pricing_model": [
+   "free",
+   "donation"
+  ],
+  "price_annual_usd": [
+   null
+  ],
+  "feature_uninstall": [
+   "yes"
+  ]
+ },
+ "pearcleaner": {
+  "pricing_model": [
+   "free"
+  ],
+  "distribution": [
+   "open_source"
+  ],
+  "feature_uninstall": [
+   "yes"
+  ],
+  "feature_developer_cleanup": [
+   "yes"
+  ]
+ },
+ "mole": {
+  "pricing_model": [
+   "one_time",
+   "freemium"
+  ],
+  "price_one_time_usd": [
+   19
+  ],
+  "feature_cleanup": [
+   "yes"
+  ],
+  "feature_uninstall": [
+   "yes"
+  ]
+ },
+ "hyperspace": {
+  "distribution": [
+   "mac_app_store"
+  ],
+  "feature_duplicates": [
+   "yes"
+  ]
+ },
+ "sensei": {
+  "feature_cleanup": [
+   "yes"
+  ],
+  "feature_uninstall": [
+   "yes"
+  ]
+ },
+ "_notes": "2026-11-09: GrandPerspective distribution also accepts open_source_and_app_store (HEA-6). CleanMyMac prices are MacPaw direct-store prices; the App Store one-time price is $89.99 (verified live 2026-11-09), so the scorer counts a mac_app_store-channel price as a channel mismatch, not an error, once it reports per channel."
 }

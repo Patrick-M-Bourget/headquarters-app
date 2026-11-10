@@ -1,0 +1,21 @@
+{
+  "run_id": "d104d968-dec2-4e90-9b71-26988406af7c",
+  "runner": "mastra",
+  "model": "claude-sonnet-5-5",
+  "started_at": "2026-11-10T02:12:23.634Z",
+  "finished_at": "2026-11-10T02:13:07.722Z",
+  "status": "succeeded",
+  "paperclip": {
+    "issue_id": null,
+    "run_id": "d104d968-dec2-4e90-9b71-26988406af7c"
+  },
+  "errors": [
+    "fetch failed (HTTP 403): https://macpaw.com/store",
+    "fetch failed (HTTP 403): https://macpaw.com/store/cleanmymac"
+  ],
+  "usage": {
+    "input_tokens": 104885,
+    "output_tokens": 14226,
+    "cost_usd": 0.352
+  }
+}

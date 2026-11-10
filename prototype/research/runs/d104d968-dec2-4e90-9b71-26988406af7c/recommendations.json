@@ -1,0 +1,129 @@
+[
+  {
+    "title": "Own the 'creator-specific cleanup' position against generic Mac care headlines",
+    "rationale": "Competitor headlines are broad or single-purpose: CleanMyMac says 'Smart & effortless Mac care', Sensei says 'All-in-One Mac System Performance Monitoring Tool', MacCleaner Pro says 'A bundle of six professional tools', and Mole lists generic junk, apps and stats. None of the cited headlines names music producers, developers or video editors. CacheDrop can headline its audience and their workflows (plug-ins, dev caches, project media) rather than generic speed and cleanliness.",
+    "observation_refs": [
+      {
+        "competitor_id": "cleanmymac",
+        "field": "positioning_headline"
+      },
+      {
+        "competitor_id": "sensei",
+        "field": "positioning_headline"
+      },
+      {
+        "competitor_id": "maccleaner-pro",
+        "field": "positioning_headline"
+      },
+      {
+        "competitor_id": "mole",
+        "field": "positioning_headline"
+      }
+    ],
+    "status": "hypothesis"
+  },
+  {
+    "title": "Price the one-time purchase in the open band between utility pricing and the bundle price",
+    "rationale": "Observed one-time prices span DaisyDisk at $9.99, Mole at $19, Sensei at $59 and MacCleaner Pro at $85.95. CacheDrop can position a single lifetime price as a full cleanup, uninstall and plug-in suite, priced well below MacCleaner Pro and justified against single-purpose tools by breadth. Sensei and MacCleaner Pro also offer annual options ($29 and $39.95), so a clear 'pay once, no subscription' message contrasts with their dual models.",
+    "observation_refs": [
+      {
+        "competitor_id": "daisydisk",
+        "field": "price_one_time_usd"
+      },
+      {
+        "competitor_id": "mole",
+        "field": "price_one_time_usd"
+      },
+      {
+        "competitor_id": "sensei",
+        "field": "price_one_time_usd"
+      },
+      {
+        "competitor_id": "maccleaner-pro",
+        "field": "price_one_time_usd"
+      },
+      {
+        "competitor_id": "sensei",
+        "field": "price_annual_usd"
+      },
+      {
+        "competitor_id": "maccleaner-pro",
+        "field": "price_annual_usd"
+      }
+    ],
+    "status": "hypothesis"
+  },
+  {
+    "title": "Make plug-in management the headline differentiator for music producers",
+    "rationale": "Among the verified observations, MacCleaner Pro is the only competitor with a recorded plug-in management feature, and it sits at $85.95 one-time or $39.95 per year. CacheDrop can offer plug-in management (e.g. audio plug-ins) inside a lower-priced one-time product and make it the primary hook in producer-facing messaging. This is framed as a price and focus opportunity against a single priced competitor, not as an unserved market.",
+    "observation_refs": [
+      {
+        "competitor_id": "maccleaner-pro",
+        "field": "feature_plugin_management"
+      },
+      {
+        "competitor_id": "maccleaner-pro",
+        "field": "price_one_time_usd"
+      },
+      {
+        "competitor_id": "maccleaner-pro",
+        "field": "price_annual_usd"
+      }
+    ],
+    "status": "hypothesis"
+  },
+  {
+    "title": "Offer a no-card, generous trial to match the low-friction standard",
+    "rationale": "DaisyDisk offers an untimed trial with some features locked and no credit card, and MacCleaner Pro offers a 2-day full-access Pro trial with no credit card. CleanMyMac also offers a free trial but its terms are not stated. A trial with no credit card that lets creators test cleanup and uninstall on their real project machines would meet this expectation. A longer window, or a feature-limited untimed tier like DaisyDisk's, could be the differentiator compared with the 2-day trial.",
+    "observation_refs": [
+      {
+        "competitor_id": "daisydisk",
+        "field": "free_trial"
+      },
+      {
+        "competitor_id": "maccleaner-pro",
+        "field": "free_trial"
+      },
+      {
+        "competitor_id": "cleanmymac",
+        "field": "free_trial"
+      }
+    ],
+    "status": "hypothesis"
+  },
+  {
+    "title": "Bundle disk map, uninstall and cleanup in one app to replace several single-purpose utilities",
+    "rationale": "Users can currently assemble the capabilities from separate tools: DaisyDisk and GrandPerspective for disk maps, AppCleaner for uninstalling, and OmniDiskSweeper for finding large files to remove. Pearcleaner is free for app cleaning. CacheDrop can pitch one purchase that unifies disk visualisation, uninstall and cleanup in a creator-focused workflow, while acknowledging that Mole is already a one-time-priced, multi-function option at $19.",
+    "observation_refs": [
+      {
+        "competitor_id": "daisydisk",
+        "field": "feature_disk_map"
+      },
+      {
+        "competitor_id": "grandperspective",
+        "field": "feature_disk_map"
+      },
+      {
+        "competitor_id": "appcleaner",
+        "field": "feature_uninstall"
+      },
+      {
+        "competitor_id": "omnidisksweeper",
+        "field": "feature_cleanup"
+      },
+      {
+        "competitor_id": "pearcleaner",
+        "field": "pricing_model"
+      },
+      {
+        "competitor_id": "mole",
+        "field": "feature_disk_map"
+      },
+      {
+        "competitor_id": "mole",
+        "field": "price_one_time_usd"
+      }
+    ],
+    "status": "hypothesis"
+  }
+]

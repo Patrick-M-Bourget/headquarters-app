@@ -1,0 +1,982 @@
+[
+  {
+    "competitor_id": "cleanmymac",
+    "field": "pricing_model",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "cleanmymac",
+    "field": "price_one_time_usd",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null,
+    "channel": null
+  },
+  {
+    "competitor_id": "cleanmymac",
+    "field": "price_annual_usd",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null,
+    "channel": null
+  },
+  {
+    "competitor_id": "cleanmymac",
+    "field": "free_trial",
+    "value": "yes: free trial offered, terms not stated",
+    "status": "verified",
+    "source_id": "cleanmymac-1",
+    "evidence": "Start Free Trial"
+  },
+  {
+    "competitor_id": "cleanmymac",
+    "field": "distribution",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "cleanmymac",
+    "field": "feature_cleanup",
+    "value": "yes",
+    "status": "verified",
+    "source_id": "cleanmymac-1",
+    "evidence": "Clear out hidden system junk to make room for your apps, photos, and other important stuff."
+  },
+  {
+    "competitor_id": "cleanmymac",
+    "field": "feature_uninstall",
+    "value": "yes",
+    "status": "verified",
+    "source_id": "cleanmymac-1",
+    "evidence": "Uninstall apps without leaving a trace"
+  },
+  {
+    "competitor_id": "cleanmymac",
+    "field": "feature_disk_map",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "cleanmymac",
+    "field": "feature_duplicates",
+    "value": "yes",
+    "status": "verified",
+    "source_id": "cleanmymac-1",
+    "evidence": "Curb the file chaos by removing duplicates and similar photos."
+  },
+  {
+    "competitor_id": "cleanmymac",
+    "field": "feature_developer_cleanup",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "cleanmymac",
+    "field": "feature_plugin_management",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "cleanmymac",
+    "field": "positioning_headline",
+    "value": "Smart & effortless Mac care",
+    "status": "verified",
+    "source_id": "cleanmymac-1",
+    "evidence": "Smart & effortless Mac care"
+  },
+  {
+    "competitor_id": "daisydisk",
+    "field": "pricing_model",
+    "value": "one_time",
+    "status": "verified",
+    "source_id": "daisydisk-2",
+    "evidence": "DaisyDisk license is a one-time purchase, and not a subscription!"
+  },
+  {
+    "competitor_id": "daisydisk",
+    "field": "price_one_time_usd",
+    "value": 9.99,
+    "status": "verified",
+    "source_id": "daisydisk-2",
+    "evidence": "Buy $9.99",
+    "channel": "direct"
+  },
+  {
+    "competitor_id": "daisydisk",
+    "field": "price_annual_usd",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null,
+    "channel": null
+  },
+  {
+    "competitor_id": "daisydisk",
+    "field": "free_trial",
+    "value": "yes: not limited in time, some features locked, no credit card required",
+    "status": "verified",
+    "source_id": "daisydisk-3",
+    "evidence": "No, the free trial is not limited in time (though some features will be locked), and you can try it as long as you like."
+  },
+  {
+    "competitor_id": "daisydisk",
+    "field": "distribution",
+    "value": "both",
+    "status": "verified",
+    "source_id": "daisydisk-3",
+    "evidence": "For this reason we maintain two editions of DaisyDisk, and for those our App Store customers who need the extended functionality, we offer free migration to the stand-alone license."
+  },
+  {
+    "competitor_id": "daisydisk",
+    "field": "feature_cleanup",
+    "value": "yes",
+    "status": "verified",
+    "source_id": "daisydisk-1",
+    "evidence": "find and delete the large files that you no longer need"
+  },
+  {
+    "competitor_id": "daisydisk",
+    "field": "feature_uninstall",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "daisydisk",
+    "field": "feature_disk_map",
+    "value": "yes",
+    "status": "verified",
+    "source_id": "daisydisk-1",
+    "evidence": "shows you just how much storage you’re using, broken down by files and folders in neat, colorful rings"
+  },
+  {
+    "competitor_id": "daisydisk",
+    "field": "feature_duplicates",
+    "value": "no",
+    "status": "verified",
+    "source_id": "daisydisk-3",
+    "evidence": "No, because finding and removing duplicate files requires a completely different user interface."
+  },
+  {
+    "competitor_id": "daisydisk",
+    "field": "feature_developer_cleanup",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "daisydisk",
+    "field": "feature_plugin_management",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "daisydisk",
+    "field": "positioning_headline",
+    "value": "Find it.Clean it.",
+    "status": "verified",
+    "source_id": "daisydisk-1",
+    "evidence": "Find it.Clean it.Find out what’s taking up your disk space and recover it in the most efficient and easy way."
+  },
+  {
+    "competitor_id": "maccleaner-pro",
+    "field": "pricing_model",
+    "value": "both",
+    "status": "verified",
+    "source_id": "maccleaner-pro-1",
+    "evidence": "You can choose either a subscription or a one-time purchase."
+  },
+  {
+    "competitor_id": "maccleaner-pro",
+    "field": "price_one_time_usd",
+    "value": 85.95,
+    "status": "verified",
+    "source_id": "maccleaner-pro-3",
+    "evidence": "Plan for 1 Mac $85.95 Billed $85.95",
+    "channel": "direct"
+  },
+  {
+    "competitor_id": "maccleaner-pro",
+    "field": "price_annual_usd",
+    "value": 39.95,
+    "status": "verified",
+    "source_id": "maccleaner-pro-3",
+    "evidence": "Plan for 1 Mac $3.33/mo Billed $39.95 per year",
+    "channel": "direct"
+  },
+  {
+    "competitor_id": "maccleaner-pro",
+    "field": "free_trial",
+    "value": "yes: 2-day free trial with full access to Pro features, no credit card required",
+    "status": "verified",
+    "source_id": "maccleaner-pro-2",
+    "evidence": "provide a 2-day free trial with full access to Pro features, no credit card required"
+  },
+  {
+    "competitor_id": "maccleaner-pro",
+    "field": "distribution",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "maccleaner-pro",
+    "field": "feature_cleanup",
+    "value": "yes",
+    "status": "verified",
+    "source_id": "maccleaner-pro-1",
+    "evidence": "Remove junk files, optimize RAM, manage extensions and fix issues to make your Mac run faster."
+  },
+  {
+    "competitor_id": "maccleaner-pro",
+    "field": "feature_uninstall",
+    "value": "yes",
+    "status": "verified",
+    "source_id": "maccleaner-pro-1",
+    "evidence": "Completely remove programs"
+  },
+  {
+    "competitor_id": "maccleaner-pro",
+    "field": "feature_disk_map",
+    "value": "yes",
+    "status": "verified",
+    "source_id": "maccleaner-pro-1",
+    "evidence": "Analyze Mac disk space usage"
+  },
+  {
+    "competitor_id": "maccleaner-pro",
+    "field": "feature_duplicates",
+    "value": "yes",
+    "status": "verified",
+    "source_id": "maccleaner-pro-1",
+    "evidence": "Find and remove duplicates"
+  },
+  {
+    "competitor_id": "maccleaner-pro",
+    "field": "feature_developer_cleanup",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "maccleaner-pro",
+    "field": "feature_plugin_management",
+    "value": "yes",
+    "status": "verified",
+    "source_id": "maccleaner-pro-1",
+    "evidence": "Operate browser extensions"
+  },
+  {
+    "competitor_id": "maccleaner-pro",
+    "field": "positioning_headline",
+    "value": "A bundle of six professional tools for a deep Mac cleanup. Keep your Mac always fast, clean and organized.",
+    "status": "verified",
+    "source_id": "maccleaner-pro-1",
+    "evidence": "A bundle of six professional tools for a deep Mac cleanup. Keep your Mac always fast, clean and organized."
+  },
+  {
+    "competitor_id": "grandperspective",
+    "field": "pricing_model",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "grandperspective",
+    "field": "price_one_time_usd",
+    "value": 2.99,
+    "status": "verified",
+    "source_id": "grandperspective-1",
+    "evidence": "Download GrandPerspective from Sourceforge for free or from the App Store for $2.99.",
+    "channel": "mac_app_store"
+  },
+  {
+    "competitor_id": "grandperspective",
+    "field": "price_annual_usd",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null,
+    "channel": null
+  },
+  {
+    "competitor_id": "grandperspective",
+    "field": "free_trial",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "grandperspective",
+    "field": "distribution",
+    "value": "open_source_and_app_store",
+    "status": "verified",
+    "source_id": "grandperspective-1",
+    "evidence": "GrandPerspective has been released as Open Source under the GNU General Public License."
+  },
+  {
+    "competitor_id": "grandperspective",
+    "field": "feature_cleanup",
+    "value": "yes",
+    "status": "verified",
+    "source_id": "grandperspective-1",
+    "evidence": "Delete files and folders from the view"
+  },
+  {
+    "competitor_id": "grandperspective",
+    "field": "feature_uninstall",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "grandperspective",
+    "field": "feature_disk_map",
+    "value": "yes",
+    "status": "verified",
+    "source_id": "grandperspective-1",
+    "evidence": "GrandPerspective is a small utility application for macOS that graphically shows the disk usage within a file system."
+  },
+  {
+    "competitor_id": "grandperspective",
+    "field": "feature_duplicates",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "grandperspective",
+    "field": "feature_developer_cleanup",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "grandperspective",
+    "field": "feature_plugin_management",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "grandperspective",
+    "field": "positioning_headline",
+    "value": "GrandPerspective is a small utility application for macOS that graphically shows the disk usage within a file system.",
+    "status": "verified",
+    "source_id": "grandperspective-1",
+    "evidence": "GrandPerspective is a small utility application for macOS that graphically shows the disk usage within a file system."
+  },
+  {
+    "competitor_id": "omnidisksweeper",
+    "field": "pricing_model",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "omnidisksweeper",
+    "field": "price_one_time_usd",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null,
+    "channel": null
+  },
+  {
+    "competitor_id": "omnidisksweeper",
+    "field": "price_annual_usd",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null,
+    "channel": null
+  },
+  {
+    "competitor_id": "omnidisksweeper",
+    "field": "free_trial",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "omnidisksweeper",
+    "field": "distribution",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "omnidisksweeper",
+    "field": "feature_cleanup",
+    "value": "yes",
+    "status": "verified",
+    "source_id": "omnidisksweeper-1",
+    "evidence": "Quickly find large, unwanted files and sweep them into the trash"
+  },
+  {
+    "competitor_id": "omnidisksweeper",
+    "field": "feature_uninstall",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "omnidisksweeper",
+    "field": "feature_disk_map",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "omnidisksweeper",
+    "field": "feature_duplicates",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "omnidisksweeper",
+    "field": "feature_developer_cleanup",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "omnidisksweeper",
+    "field": "feature_plugin_management",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "omnidisksweeper",
+    "field": "positioning_headline",
+    "value": "Quickly find large, unwanted files and sweep them into the trash",
+    "status": "verified",
+    "source_id": "omnidisksweeper-1",
+    "evidence": "Quickly find large, unwanted files and sweep them into the trash"
+  },
+  {
+    "competitor_id": "appcleaner",
+    "field": "pricing_model",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "appcleaner",
+    "field": "price_one_time_usd",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null,
+    "channel": null
+  },
+  {
+    "competitor_id": "appcleaner",
+    "field": "price_annual_usd",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null,
+    "channel": null
+  },
+  {
+    "competitor_id": "appcleaner",
+    "field": "free_trial",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "appcleaner",
+    "field": "distribution",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "appcleaner",
+    "field": "feature_cleanup",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "appcleaner",
+    "field": "feature_uninstall",
+    "value": "yes",
+    "status": "verified",
+    "source_id": "appcleaner-1",
+    "evidence": "AppCleaner is a small application which allows you to thoroughly uninstall unwanted apps."
+  },
+  {
+    "competitor_id": "appcleaner",
+    "field": "feature_disk_map",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "appcleaner",
+    "field": "feature_duplicates",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "appcleaner",
+    "field": "feature_developer_cleanup",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "appcleaner",
+    "field": "feature_plugin_management",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "appcleaner",
+    "field": "positioning_headline",
+    "value": "AppCleaner is a small application which allows you to thoroughly uninstall unwanted apps.",
+    "status": "verified",
+    "source_id": "appcleaner-1",
+    "evidence": "AppCleaner is a small application which allows you to thoroughly uninstall unwanted apps."
+  },
+  {
+    "competitor_id": "pearcleaner",
+    "field": "pricing_model",
+    "value": "free",
+    "status": "verified",
+    "source_id": "pearcleaner-1",
+    "evidence": "A free, source-available and fair-code licensed mac app cleaner"
+  },
+  {
+    "competitor_id": "pearcleaner",
+    "field": "price_one_time_usd",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null,
+    "channel": null
+  },
+  {
+    "competitor_id": "pearcleaner",
+    "field": "price_annual_usd",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null,
+    "channel": null
+  },
+  {
+    "competitor_id": "pearcleaner",
+    "field": "free_trial",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "pearcleaner",
+    "field": "distribution",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "pearcleaner",
+    "field": "feature_cleanup",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "pearcleaner",
+    "field": "feature_uninstall",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "pearcleaner",
+    "field": "feature_disk_map",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "pearcleaner",
+    "field": "feature_duplicates",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "pearcleaner",
+    "field": "feature_developer_cleanup",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "pearcleaner",
+    "field": "feature_plugin_management",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "pearcleaner",
+    "field": "positioning_headline",
+    "value": "A free, source-available and fair-code licensed mac app cleaner",
+    "status": "verified",
+    "source_id": "pearcleaner-1",
+    "evidence": "A free, source-available and fair-code licensed mac app cleaner"
+  },
+  {
+    "competitor_id": "mole",
+    "field": "pricing_model",
+    "value": "one_time",
+    "status": "verified",
+    "source_id": "mole-1",
+    "evidence": "$19 One-time"
+  },
+  {
+    "competitor_id": "mole",
+    "field": "price_one_time_usd",
+    "value": 19,
+    "status": "verified",
+    "source_id": "mole-1",
+    "evidence": "$19 One-time",
+    "channel": "direct"
+  },
+  {
+    "competitor_id": "mole",
+    "field": "price_annual_usd",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null,
+    "channel": null
+  },
+  {
+    "competitor_id": "mole",
+    "field": "free_trial",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "mole",
+    "field": "distribution",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "mole",
+    "field": "feature_cleanup",
+    "value": "yes",
+    "status": "verified",
+    "source_id": "mole-1",
+    "evidence": "Clean tens of GB of junk and stale AI data"
+  },
+  {
+    "competitor_id": "mole",
+    "field": "feature_uninstall",
+    "value": "yes",
+    "status": "verified",
+    "source_id": "mole-1",
+    "evidence": "Uninstall apps with their leftovers reviewed together"
+  },
+  {
+    "competitor_id": "mole",
+    "field": "feature_disk_map",
+    "value": "yes",
+    "status": "verified",
+    "source_id": "mole-1",
+    "evidence": "A whole-disk treemap makes the largest files and folders easy to spot."
+  },
+  {
+    "competitor_id": "mole",
+    "field": "feature_duplicates",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "mole",
+    "field": "feature_developer_cleanup",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "mole",
+    "field": "feature_plugin_management",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "mole",
+    "field": "positioning_headline",
+    "value": "Clean tens of GB of junk and stale AI data, uninstall and update apps, analyze disk usage, maintain your system, and track live system stats.",
+    "status": "verified",
+    "source_id": "mole-1",
+    "evidence": "Clean tens of GB of junk and stale AI data, uninstall and update apps, analyze disk usage, maintain your system, and track live system stats."
+  },
+  {
+    "competitor_id": "hyperspace",
+    "field": "pricing_model",
+    "value": "both",
+    "status": "verified",
+    "source_id": "hyperspace-1",
+    "evidence": "Two kinds of purchases are possible: one-time purchases and subscriptions."
+  },
+  {
+    "competitor_id": "hyperspace",
+    "field": "price_one_time_usd",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null,
+    "channel": null
+  },
+  {
+    "competitor_id": "hyperspace",
+    "field": "price_annual_usd",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null,
+    "channel": null
+  },
+  {
+    "competitor_id": "hyperspace",
+    "field": "free_trial",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "hyperspace",
+    "field": "distribution",
+    "value": "mac_app_store",
+    "status": "verified",
+    "source_id": "hyperspace-1",
+    "evidence": "Hyperspace is a free download in the Mac App Store."
+  },
+  {
+    "competitor_id": "hyperspace",
+    "field": "feature_cleanup",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "hyperspace",
+    "field": "feature_uninstall",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "hyperspace",
+    "field": "feature_disk_map",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "hyperspace",
+    "field": "feature_duplicates",
+    "value": "yes",
+    "status": "verified",
+    "source_id": "hyperspace-1",
+    "evidence": "Hyperspace searches for files with identical contents within one or more folders."
+  },
+  {
+    "competitor_id": "hyperspace",
+    "field": "feature_developer_cleanup",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "hyperspace",
+    "field": "feature_plugin_management",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "hyperspace",
+    "field": "positioning_headline",
+    "value": "If it finds any, it can then reclaim the disk space taken by all but one of the identical files—without removing any of the files!",
+    "status": "verified",
+    "source_id": "hyperspace-1",
+    "evidence": "If it finds any, it can then reclaim the disk space taken by all but one of the identical files—without removing any of the files!"
+  },
+  {
+    "competitor_id": "sensei",
+    "field": "pricing_model",
+    "value": "both",
+    "status": "verified",
+    "source_id": "sensei-3",
+    "evidence": "One-Year SubscriptionSensei PlanValid for up to 3 Macs.$29Billed annually."
+  },
+  {
+    "competitor_id": "sensei",
+    "field": "price_one_time_usd",
+    "value": 59,
+    "status": "verified",
+    "source_id": "sensei-3",
+    "evidence": "Sensei LicenseValid for up to 3 Macs.$59One Time Purchase.",
+    "channel": "direct"
+  },
+  {
+    "competitor_id": "sensei",
+    "field": "price_annual_usd",
+    "value": 29,
+    "status": "verified",
+    "source_id": "sensei-3",
+    "evidence": "One-Year SubscriptionSensei PlanValid for up to 3 Macs.$29Billed annually.",
+    "channel": "direct"
+  },
+  {
+    "competitor_id": "sensei",
+    "field": "free_trial",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "sensei",
+    "field": "distribution",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "sensei",
+    "field": "feature_cleanup",
+    "value": "yes",
+    "status": "verified",
+    "source_id": "sensei-1",
+    "evidence": "Sensei quickly removes unnecessary files, including old caches, system logs, large downloads, and leftover installation files."
+  },
+  {
+    "competitor_id": "sensei",
+    "field": "feature_uninstall",
+    "value": "yes",
+    "status": "verified",
+    "source_id": "sensei-1",
+    "evidence": "Sensei’s Uninstaller ensures a complete removal, deleting all leftover files and freeing up valuable storage."
+  },
+  {
+    "competitor_id": "sensei",
+    "field": "feature_disk_map",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "sensei",
+    "field": "feature_duplicates",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "sensei",
+    "field": "feature_developer_cleanup",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "sensei",
+    "field": "feature_plugin_management",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "sensei",
+    "field": "positioning_headline",
+    "value": "The All-in-One Mac System Performance Monitoring Tool.",
+    "status": "verified",
+    "source_id": "sensei-1",
+    "evidence": "The All-in-One Mac System Performance Monitoring Tool."
+  }
+]

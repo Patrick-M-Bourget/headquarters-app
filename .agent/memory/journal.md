@@ -27,3 +27,12 @@
   - The agent disclosed the channel in its evidence, separated a search snippet from fetched data, and reframed the dev-cleanup recommendation as "test, not a proven gap".
 - Phase 2b: Engineer agent (claude_local, cwd prototype/, engineer.settings.json) did HEA-6 (price channel + open_source_and_app_store) in about 1 min for $0.13. Clean diff, tests 7/7, both runs still VALID (checked by me). It honestly flagged a step it couldn't run (validate.ts path) and that the distribution value isn't enforced (value is a free string). In review with the owner; uncommitted until approved.
 - My own slip: backticks in a bash double-quoted string dropped "channel" from the HEA-6 description. Patched before the agent finished and noted in a comment. Use heredoc files for issue text.
+- Phase 3 (Mastra via process adapter):
+  - In-process `createRun().start()` works without a Mastra server. Sonnet 5.5 structured output works.
+  - Runner: fetch + Readability, pick up to 3 pricing/features pages, extract, then a deterministic check that each evidence quote is on the page (otherwise downgrade to unknown), recommendations that may only cite verified observations, contract validation, Paperclip report.
+  - HEA-8 (run 61f7dcba): 100% accuracy (25/25 decided), 67.6% coverage, 52/120 verified, 0 downgrades. 49 s, $0.36. Earlier HEA-7 attempt d104d968: same quality, reporting failed.
+  - Paperclip findings:
+    1. The heartbeat-run issues endpoint returns `issueId`, not `id`. My lookup bug.
+    2. A process agent with a budget hard-stops after its first run because the run counts as "unpriced usage" (policy defaults to block), even at $0 observed. Reporting cost via POST /companies/:id/cost-events records spend but still counts the run as unpriced. Fix: `unpricedUsagePolicy: allow` + the runner reports cost.
+    3. After a failed run, Paperclip opened a recovery action on HEA-7. Retry in the UI, status→todo, reassign and heartbeat/invoke all failed to resume it (invoke started a run not linked to the issue). Had to cancel and open a new issue (HEA-8). The owner hit this in the UI ("retry seems jammed").
+  - Budget rule from owner: $100 total hard limit; per-phase caps are soft.

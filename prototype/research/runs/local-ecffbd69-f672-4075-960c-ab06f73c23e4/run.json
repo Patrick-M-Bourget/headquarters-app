@@ -1,0 +1,20 @@
+{
+  "run_id": "local-ecffbd69-f672-4075-960c-ab06f73c23e4",
+  "runner": "mastra",
+  "model": "claude-sonnet-5-5",
+  "started_at": "2026-11-10T02:09:09.386Z",
+  "finished_at": "2026-11-10T02:11:46.570Z",
+  "status": "succeeded",
+  "paperclip": {
+    "issue_id": null,
+    "run_id": null
+  },
+  "errors": [
+    "fetch failed (The operation was aborted due to timeout): https://daisydiskapp.com/download/DaisyDisk.zip"
+  ],
+  "usage": {
+    "input_tokens": 18394,
+    "output_tokens": 4884,
+    "cost_usd": 0.0856
+  }
+}

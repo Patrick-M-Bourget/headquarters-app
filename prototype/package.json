@@ -6,6 +6,9 @@
     "node": ">=24.11"
   },
   "dependencies": {
+    "@mastra/core": "^1.82.0",
+    "@mozilla/readability": "^0.6.0",
+    "linkedom": "^0.18.15",
     "paperclipai": "^2026.1106.0",
     "zod": "^4.6.7"
   },

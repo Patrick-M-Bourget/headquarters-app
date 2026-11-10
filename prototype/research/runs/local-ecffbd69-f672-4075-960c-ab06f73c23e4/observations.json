@@ -1,0 +1,198 @@
+[
+  {
+    "competitor_id": "daisydisk",
+    "field": "pricing_model",
+    "value": "one_time",
+    "status": "verified",
+    "source_id": "daisydisk-2",
+    "evidence": "DaisyDisk license is a one-time purchase, and not a subscription!"
+  },
+  {
+    "competitor_id": "daisydisk",
+    "field": "price_one_time_usd",
+    "value": 9.99,
+    "status": "verified",
+    "source_id": "daisydisk-2",
+    "evidence": "Buy $9.99",
+    "channel": "direct"
+  },
+  {
+    "competitor_id": "daisydisk",
+    "field": "price_annual_usd",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null,
+    "channel": null
+  },
+  {
+    "competitor_id": "daisydisk",
+    "field": "free_trial",
+    "value": "yes: not limited in time, some features locked, no credit card required",
+    "status": "verified",
+    "source_id": "daisydisk-3",
+    "evidence": "the free trial is not limited in time (though some features will be locked)"
+  },
+  {
+    "competitor_id": "daisydisk",
+    "field": "distribution",
+    "value": "both",
+    "status": "verified",
+    "source_id": "daisydisk-3",
+    "evidence": "For this reason we maintain two editions of DaisyDisk"
+  },
+  {
+    "competitor_id": "daisydisk",
+    "field": "feature_cleanup",
+    "value": "yes",
+    "status": "verified",
+    "source_id": "daisydisk-1",
+    "evidence": "find and delete the large files that you no longer need"
+  },
+  {
+    "competitor_id": "daisydisk",
+    "field": "feature_uninstall",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "daisydisk",
+    "field": "feature_disk_map",
+    "value": "yes",
+    "status": "verified",
+    "source_id": "daisydisk-1",
+    "evidence": "shows you just how much storage you’re using, broken down by files and folders in neat, colorful rings"
+  },
+  {
+    "competitor_id": "daisydisk",
+    "field": "feature_duplicates",
+    "value": "no",
+    "status": "verified",
+    "source_id": "daisydisk-3",
+    "evidence": "No, because finding and removing duplicate files requires a completely different user interface."
+  },
+  {
+    "competitor_id": "daisydisk",
+    "field": "feature_developer_cleanup",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "daisydisk",
+    "field": "feature_plugin_management",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "daisydisk",
+    "field": "positioning_headline",
+    "value": "Find it.Clean it.Find out what’s taking up your disk space and recover it in the most efficient and easy way.",
+    "status": "verified",
+    "source_id": "daisydisk-1",
+    "evidence": "Find it.Clean it.Find out what’s taking up your disk space and recover it in the most efficient and easy way."
+  },
+  {
+    "competitor_id": "mole",
+    "field": "pricing_model",
+    "value": "one_time",
+    "status": "verified",
+    "source_id": "mole-1",
+    "evidence": "$19 One-time"
+  },
+  {
+    "competitor_id": "mole",
+    "field": "price_one_time_usd",
+    "value": 19,
+    "status": "verified",
+    "source_id": "mole-1",
+    "evidence": "$19 One-time",
+    "channel": "direct"
+  },
+  {
+    "competitor_id": "mole",
+    "field": "price_annual_usd",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null,
+    "channel": null
+  },
+  {
+    "competitor_id": "mole",
+    "field": "free_trial",
+    "value": "yes: try before you buy, 14-day refund",
+    "status": "verified",
+    "source_id": "mole-1",
+    "evidence": "Try before you buy14-day refund"
+  },
+  {
+    "competitor_id": "mole",
+    "field": "distribution",
+    "value": "direct",
+    "status": "verified",
+    "source_id": "mole-1",
+    "evidence": "Download for Mac Buy Mole"
+  },
+  {
+    "competitor_id": "mole",
+    "field": "feature_cleanup",
+    "value": "yes",
+    "status": "verified",
+    "source_id": "mole-1",
+    "evidence": "Clean tens of GB of junk and stale AI data"
+  },
+  {
+    "competitor_id": "mole",
+    "field": "feature_uninstall",
+    "value": "yes",
+    "status": "verified",
+    "source_id": "mole-1",
+    "evidence": "Uninstall apps with their leftovers reviewed together"
+  },
+  {
+    "competitor_id": "mole",
+    "field": "feature_disk_map",
+    "value": "yes",
+    "status": "verified",
+    "source_id": "mole-1",
+    "evidence": "A whole-disk treemap makes the largest files and folders easy to spot."
+  },
+  {
+    "competitor_id": "mole",
+    "field": "feature_duplicates",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "mole",
+    "field": "feature_developer_cleanup",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "mole",
+    "field": "feature_plugin_management",
+    "value": null,
+    "status": "unknown",
+    "source_id": null,
+    "evidence": null
+  },
+  {
+    "competitor_id": "mole",
+    "field": "positioning_headline",
+    "value": "Clean tens of GB of junk and stale AI data, uninstall and update apps, analyze disk usage, maintain your system, and track live system stats.",
+    "status": "verified",
+    "source_id": "mole-1",
+    "evidence": "Clean tens of GB of junk and stale AI data, uninstall and update apps, analyze disk usage, maintain your system, and track live system stats."
+  }
+]

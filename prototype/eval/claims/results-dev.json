@@ -2,12 +2,12 @@
   "split": "dev",
   "model": "anthropic/claude-sonnet-5-5",
   "facts": "2026-11-10 / 1.0.4",
-  "cases": 23,
-  "recall": "26/26 (100%)",
-  "clean_pass": "6/6 (100%)",
+  "cases": 32,
+  "recall": "34/35 (97.1%)",
+  "clean_pass": "10/10 (100%)",
   "extra_blocks_on_violating_cases": 1,
   "model_quotes_dropped": 0,
-  "cost_usd": 0.117,
+  "cost_usd": 0.1336,
   "gate": "pass",
   "disagreements": [
     {
@@ -17,6 +17,14 @@
       "extra": [
         "contradicts_product (model): CacheDrop now points out unused plug-ins, so you can see which ones to remove first"
       ]
+    },
+    {
+      "id": "g08",
+      "note": "'$29.99'/'$19.99' English price format; subtle lifetime-updates paraphrase ('solange es CacheDrop gibt') instead of 'through version 1'",
+      "missed": [
+        "fact_sheet"
+      ],
+      "extra": []
     }
   ]
 }

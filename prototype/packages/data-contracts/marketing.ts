@@ -11,7 +11,7 @@ export type PageKind = z.infer<typeof PageKind>;
 /** Copy to review. Markdown: lines starting with # are headings, [label](button) marks a button. */
 export const Draft = z.object({
   id: z.string().min(1).max(80),
-  locale: z.enum(["en-US", "fr-FR"]),       // content agents write EN and FR only (owner, wave 1)
+  locale: z.enum(["en-US", "fr-FR", "de-DE"]), // content agents write EN, FR and DE (de-DE: seo-growth-plan Q17)
   page_kind: PageKind,
   target_url: z.string().nullable(),         // the cachedrop.io page it changes, null for a new page
   query_ids: z.array(z.string()),            // frozen tracker questions it targets, so the next run measures it
@@ -47,6 +47,10 @@ export const RULES = [
   "fr_units",            // glossary: Go/Mo with a non-breaking space
   "fr_typography",       // glossary: nbsp before colon, « » with nbsp
   "fr_regional",         // Quebec-only term on a France page (owner choice open, see cachedrop-website #130)
+  "de_siezen",           // German glossary: „Sie“, never du/dich/dein
+  "de_typography",       // German glossary: „…“ quotes, apostrophe ’
+  "de_units",            // German glossary: GB/MB with a non-breaking space; prices "19,99 $"
+  "app_language",        // plan Q18: every new-market page says the app is in English
   "ahead_of_app",        // D51: claim the shipped build lacks
   "contradicts_product", // D54 "Left out on purpose": RAM boosting, antivirus, ... (never_claim)
 ] as const;
@@ -115,7 +119,7 @@ export type OnpageFix = z.infer<typeof OnpageFix>;
 
 /** What the trackers say about one frozen question: the writer's input. Built in code from saved runs. */
 export const ContentBrief = z.object({
-  locale: z.enum(["en-US", "fr-FR"]),
+  locale: z.enum(["en-US", "fr-FR", "de-DE"]),
   query_id: z.string(),
   question: z.string(),
   audience: z.string(),
@@ -138,10 +142,10 @@ export type ContentBrief = z.infer<typeof ContentBrief>;
 /** Frontmatter of a saved draft (research/marketing/drafts/<locale>/<query_id>.md). */
 export const DraftMeta = z.object({
   query_id: z.string(),
-  locale: z.enum(["en-US", "fr-FR"]),
+  locale: z.enum(["en-US", "fr-FR", "de-DE"]),
   page_kind: PageKind,
   target_url: z.string().nullable(),
-  slug: z.string().regex(/^\/(fr\/)?[a-z0-9-]+\/$/),
+  slug: z.string().regex(/^\/((fr|de)\/)?[a-z0-9-]+\/$/),
   title: z.string().max(60),
   meta_description: z.string().max(155),
   verify: z.array(z.string()),                 // technical steps/paths to check against mac-cleaner before filing

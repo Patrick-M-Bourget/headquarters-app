@@ -104,3 +104,73 @@ test("exact fixes apply in code and leave nothing for the code checks", async ()
   assert.ok(applied >= 2);
   assert.deepEqual(codeChecks({ ...draft, text }, facts).filter(f => f.severity === "fix"), []);
 });
+
+// ---- de-DE (seo-growth-plan P1-de; research/marketing/site-drafts/de-DE/docs/german-glossary.md) ----
+const de = (t: string, extra: Partial<Draft> = {}) => codeChecks(d(t, { locale: "de-DE", ...extra }), facts);
+const deRules = (t: string, extra: Partial<Draft> = {}) => de(t, extra).map(f => f.rule);
+const APP_EN = "Die App selbst ist derzeit nur auf Englisch verfügbar.";
+const CLEAN_DE = `# Holen Sie sich den Speicherplatz Ihres Macs zurück.
+Sehen Sie, was Ihren Mac füllt, und räumen Sie sicher auf. ${APP_EN}
+[Für Mac herunterladen](button)
+Vor dem Kauf testen · Keine Karte nötig · macOS 14 oder neuer
+## Einmal zahlen. Auf 3${N}Macs nutzen.
+Regulär 29,99${N}$, jetzt 19,99${N}$ für begrenzte Zeit. Eine Lizenz gilt für bis zu 3 Macs. 30 Tage Geld-zurück-Garantie, ohne Angabe von Gründen.
+Der Scan ist immer kostenlos. Aufräumen und Deinstallieren sind kostenlos, bis 2${N}GB freigegeben sind.
+Den Adobe-Medien-Cache zu leeren bringt oft 50${N}GB und mehr: Ihre Dateien kommen in den Papierkorb, Caches werden gelöscht.`;
+
+test("clean German copy passes the code checks", () => {
+  assert.deepEqual(deRules(CLEAN_DE, { page_kind: "home" }), []);
+});
+
+test("German: shared decision rules", () => {
+  assert.ok(deRules(`Einführungspreis: 19,99${N}$ statt 29,99${N}$ für begrenzte Zeit. ${APP_EN}`).includes("launch_wording"));
+  assert.ok(deRules(`Regulär 29,99${N}$, jetzt 19,99${N}$. ${APP_EN}`).includes("offer_not_limited"));
+  assert.ok(deRules(`Eine CacheDrop-Lizenz kostet einmalig 24,99${N}$. ${APP_EN}`).includes("wrong_price"));
+  assert.ok(deRules(`Plug-ins deinstallieren ist mit CacheDrop kostenlos. ${APP_EN}`).includes("free_uninstall"));
+  assert.ok(!deRules(`Aufräumen und Deinstallieren sind kostenlos, bis 2${N}GB freigegeben sind. ${APP_EN}`).includes("free_uninstall"));
+  assert.ok(deRules(`# Der kostenlose Mac-Reiniger\n${APP_EN}`).includes("free_in_headline"));
+  assert.ok(deRules(`Entfernen Sie Datenmüll. ${APP_EN}`).includes("banned_word"));
+  assert.ok(deRules(`Finden Sie ungenutzte Plug-ins. ${APP_EN}`).includes("banned_word"));
+  assert.ok(!deRules(`Der Müllerstraße-Ordner. ${APP_EN}`).includes("banned_word"), "Müll only as a word");
+  assert.ok(deRules(`Anders als CleanMyMac zahlen Sie einmal. ${APP_EN}`).includes("competitor_named"));
+  assert.ok(deRules(`Nutzen Sie es auf bis zu 5 Macs. ${APP_EN}`).includes("fact_sheet"));
+  assert.ok(deRules(`14 Tage Geld-zurück-Garantie. ${APP_EN}`).includes("fact_sheet"));
+  assert.ok(deRules(`Läuft ab macOS 13 Ventura oder neuer. ${APP_EN}`).includes("fact_sheet"));
+  assert.ok(deRules(`Lebenslange Updates inklusive. ${APP_EN}`).includes("fact_sheet"));
+  assert.ok(deRules(`Über 10.000 Nutzer vertrauen CacheDrop. ${APP_EN}`).includes("invented_proof"));
+  assert.ok(deRules(`Der Testsieger unter den Mac-Reinigern. ${APP_EN}`).includes("invented_proof"));
+  assert.ok(deRules(`Alles, was Sie bereinigen, landet im Papierkorb. ${APP_EN}`).includes("trash_claim"));
+  assert.ok(deRules(`Tropfen für Tropfen mehr Speicher. ${APP_EN}`).includes("drop_pun"));
+});
+
+test("German conventions: Sie, units, prices, quotes", () => {
+  assert.ok(deRules(`Räum deinen Mac auf. ${APP_EN}`).includes("de_siezen"));
+  assert.ok(!deRules(`Räumen Sie Ihren Mac auf und deinstallieren Sie Apps. ${APP_EN}`).includes("de_siezen"), "deinstallieren is not dein");
+  assert.equal(de(`Geben Sie 20GB frei. ${APP_EN}`).find(f => f.rule === "de_units")!.fix, `20${N}GB`);
+  assert.equal(de(`Geben Sie 1.5 Go frei. ${APP_EN}`).find(f => f.rule === "de_units")!.fix, `1,5${N}GB`);
+  assert.equal(de(`Regulär $29.99, jetzt 19,99${N}$ für begrenzte Zeit. ${APP_EN}`).find(f => f.rule === "de_units")!.fix, `29,99${N}$`);
+  assert.equal(de(`Klicken Sie auf "Clean up". ${APP_EN}`).find(f => f.rule === "de_typography")!.fix, "„Clean up“");
+  assert.ok(!deRules(`Klicken Sie auf „Clean up“. ${APP_EN}`).includes("de_typography"));
+  assert.ok(deRules(`Achtung : Ihre Dateien. ${APP_EN}`).includes("de_typography"));
+  assert.ok(deRules("Wie geht's weiter? " + APP_EN).includes("de_typography"));
+  const ex = de(`Fertig! ${APP_EN}`).find(f => f.rule === "exclamation")!;
+  assert.equal(ex.message, "Keine Ausrufezeichen.");
+});
+
+test("German pages say the app is in English (plan Q18); fixes apply cleanly", async () => {
+  assert.ok(deRules("# Speicherplatz freigeben\nRäumen Sie Ihren Mac auf.", { page_kind: "guide" }).includes("app_language"));
+  assert.ok(!deRules("Räumen Sie Ihren Mac auf.", { page_kind: "ad" }).includes("app_language"), "ads and emails are exempt");
+  assert.ok(!deRules("# Titel\nCacheDrop ist eine englischsprachige App.", { page_kind: "guide" }).includes("app_language"));
+  assert.ok(!rules("# Free up space\nClean your Mac.", { page_kind: "guide" }).includes("app_language"), "English pages are exempt");
+  const { applyFixes } = await import("../runners/marketing/claims-rules.ts");
+  const draft = d(`Achtung : geben Sie 20GB frei, klicken Sie auf "Clean up"! ${APP_EN}`, { locale: "de-DE" });
+  const { text } = applyFixes(draft.text, codeChecks(draft, facts));
+  assert.deepEqual(codeChecks({ ...draft, text }, facts).filter(f => f.severity === "fix"), []);
+});
+
+test("German eval follow-ups: uninstalls to the Papierkorb are true; 'Zum Start' is launch wording; pricing pages check every amount", () => {
+  assert.ok(!deRules(`Beim Deinstallieren geht alles in den Papierkorb. ${APP_EN}`).includes("trash_claim"));
+  assert.ok(deRules(`Zum Start gibt es CacheDrop für 19,99${N}$ statt 29,99${N}$, für begrenzte Zeit. ${APP_EN}`).includes("launch_wording"));
+  assert.ok(deRules(`Regulär 29,99${N}$, jetzt 14,99${N}$ für begrenzte Zeit. ${APP_EN}`, { page_kind: "pricing" }).includes("wrong_price"));
+  assert.ok(rules("Was $29.99, now $14.99 for a limited time.", { page_kind: "pricing" }).includes("wrong_price"));
+});

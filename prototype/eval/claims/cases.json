@@ -466,5 +466,161 @@
       "wrong_price"
     ],
     "note": "subtle: euro prices differ from the same-number rule (34.99/24.99)"
+  },
+  {
+    "id": "g01",
+    "locale": "de-DE",
+    "page_kind": "home",
+    "text": "# Holen Sie sich den Speicherplatz Ihres Macs zurück.\n\nCacheDrop zeigt, was Ihren Mac füllt, nach Kategorien geordnet, und räumt auf, was sich bedenkenlos löschen lässt: Entwickler-Caches, den Adobe-Medien-Cache und Reste gelöschter Apps. Auf dem Mac einer Produzentin waren es 18 GB Plug-ins und Sample-Bibliotheken und 1,5 GB App-Reste.\n\n[Für Mac herunterladen](button)\n\nVor dem Kauf testen · Keine Karte nötig · macOS 14 oder neuer\n\nBevor etwas entfernt wird, listet die Übersicht jedes Element auf. Ihre persönlichen Dateien landen im Papierkorb. Die App selbst ist derzeit nur auf Englisch verfügbar.",
+    "expected": [],
+    "note": "clean DE home: Sie throughout, nbsp before GB, decimal comma, correct Papierkorb claim for personal files, app-in-English line"
+  },
+  {
+    "id": "g02",
+    "locale": "de-DE",
+    "page_kind": "pricing",
+    "text": "# Einmal zahlen. Auf 3 Macs nutzen.\n\nRegulär 29,99 $, jetzt 19,99 $ für begrenzte Zeit. Derselbe Betrag in jeder Währung.\n\n## Das ist enthalten\n\n- Eine Lizenz gilt für bis zu 3 Macs\n- Alle Updates bis einschließlich Version 1, bereit für jedes neue macOS, sobald es erscheint\n- 30 Tage Geld-zurück-Garantie, ohne Angabe von Gründen\n- macOS 14 Sonoma oder neuer, Universal-App für Apple Silicon und Intel\n\nDer Scan ist immer kostenlos. Aufräumen und Deinstallieren sind kostenlos, bis 2 GB freigegeben sind. Kein Abo. Nichts zu kündigen.\n\nCacheDrop ist auf Englisch; eine deutsche Oberfläche gibt es derzeit nicht.\n\n[Kaufen · 29,99 $](button)\n\n[CacheDrop mit anderen Mac-Reinigern vergleichen](/de/compare/)",
+    "expected": [],
+    "note": "clean DE pricing: offer with regular price and 'für begrenzte Zeit', '29,99 $' with nbsp, glossary trial line with 'kostenlos' near uninstalling (allowed wording), paraphrased app-in-English line"
+  },
+  {
+    "id": "g03",
+    "locale": "de-DE",
+    "page_kind": "guide",
+    "text": "# App auf dem Mac vollständig deinstallieren\n\nWer eine App aus dem Ordner „Programme“ in den Papierkorb zieht, lässt meist ihre Support-Dateien, Caches und Einstellungen im Ordner „Library“ zurück. Bei manchen Apps sind das nur ein paar Hundert MB, bei anderen mehrere GB.\n\nCacheDrop ordnet jeder App ihre Dateien über die Bundle-ID zu und deinstalliert sie mitsamt diesen Resten. Die deinstallierte App und ihre Dateien landen im Papierkorb; wer es sich anders überlegt, holt sie mit „Zurücklegen“ wieder.\n\nAuch Dateien von Apps, die Sie früher schon gelöscht haben, listet CacheDrop auf. Sie entscheiden, was davon weg soll. Die App selbst ist derzeit nur auf Englisch verfügbar, die Schritte oben gelten aber genauso.\n\n[Für Mac herunterladen](button)",
+    "expected": [],
+    "note": "clean DE guide: 'deinstallieren', uninstalled apps go to the Papierkorb (true), „…“ quotes, nbsp before MB/GB"
+  },
+  {
+    "id": "g04",
+    "locale": "de-DE",
+    "page_kind": "guide",
+    "text": "# Speicherplatz auf dem Mac freigeben: Xcode-Caches leeren\n\nDerivedData, alte Simulator-Caches und Archive wachsen mit jedem Projekt. Auf einem Entwickler-Mac kommen schnell 50 GB und mehr zusammen, oft verteilt auf Hunderte Ordner unter `~/Library/Developer/Xcode/`.\n\nCacheDrop findet DerivedData, node_modules-Ordner, Paket-Caches und Docker-Images in einem einzigen Scan. Was Xcode beim nächsten Build ohnehin neu erzeugt, wird gelöscht, nicht in den Papierkorb verschoben – der nächste Build dauert dafür einmal etwas länger.\n\nDer Scan ist kostenlos, und bis 2 GB freigegeben sind, kostet auch das Aufräumen nichts. Die App selbst gibt es derzeit nur auf Englisch.\n\nFür eine Vorschau im Terminal: `cachedrop clean --dry-run`.\n\n[CacheDrop ausprobieren](button)",
+    "expected": [],
+    "note": "clean DE guide: 'Speicherplatz … freigeben' headline (no 'kostenlos' in it), 'kostenlos' in body for the scan and 2 GB trial, caches correctly described as deleted not trashed, en dash with spaces"
+  },
+  {
+    "id": "g05",
+    "locale": "de-DE",
+    "page_kind": "compare",
+    "text": "# CacheDrop im Vergleich mit anderen Mac-Reinigern\n\nCleanMyMac gibt es im Jahresabo ab 39,95 $ oder als Einmalkauf. DaisyDisk kostet einmalig 9,99 $ und zeigt sehr übersichtlich, was die Festplatte füllt, deinstalliert aber keine Apps. AppCleaner ist ein kostenloser Deinstaller und reicht, wenn Sie nur das brauchen.\n\nCacheDrop vereint Mac-Reiniger, App-Deinstallationsprogramm und Plug-in-Manager für regulär 29,99 $, jetzt 19,99 $ für begrenzte Zeit, auf bis zu 3 Macs. Die App selbst ist derzeit nur auf Englisch verfügbar.\n\n## Bewusst weggelassen\n\nRAM-Booster, Virenscanner, „Zugriffsrechte reparieren“ und Systemmonitore.\n\nProduktnamen sind Marken ihrer jeweiligen Inhaber. CacheDrop steht mit keinem von ihnen in Verbindung.",
+    "expected": [],
+    "note": "clean DE compare: competitors and their prices named on the compare page, 'kostenloser Deinstaller' describes AppCleaner, never-claim features listed as left out"
+  },
+  {
+    "id": "g06",
+    "locale": "de-DE",
+    "page_kind": "guide",
+    "text": "# Audio-Plug-ins auf dem Mac deinstallieren\n\nEin Plug-in besteht fast nie aus einer Datei: AU, VST, VST3, AAX und CLAP liegen in verschiedenen Ordnern, dazu kommen Support-Dateien und Installationsbelege. Wer nur die VST3-Datei löscht, lässt den Rest liegen – oft mehrere Hundert MB pro Hersteller.\n\nIm Bereich Audio software zeigt CacheDrop Ihre DAWs, Plug-ins nach Hersteller, Sounds und Treiber. Beim Deinstallieren entfernt es ein Plug-in in allen Formaten samt seiner Support-Dateien. Alles geht in den Papierkorb, sodass „Put back“ jederzeit funktioniert. Für Native Instruments und Waves bleiben Native Access und Waves Central die richtigen Werkzeuge.\n\nDie Oberfläche von CacheDrop ist derzeit nur auf Englisch verfügbar.\n\n[Für Mac herunterladen](button)",
+    "expected": [],
+    "note": "clean DE guide: plug-in uninstall to Papierkorb (true), vendor managers named, app-in-English paraphrase"
+  },
+  {
+    "id": "g07",
+    "locale": "de-DE",
+    "page_kind": "home",
+    "text": "# Mehr Platz für Ihre Projekte\n\nCacheDrop zeigt in einem einzigen Scan, was Ihren Mac füllt: Xcode-Caches, Render-Dateien, Plug-ins nach Hersteller und Reste gelöschter Apps.\n\nProbier es einfach aus und schau dir vor dem Aufräumen jedes Element in Ruhe an. Persönliche Dateien landen im Papierkorb.\n\nRegulär 29,99 $, jetzt 19,99 $ für begrenzte Zeit. Die App selbst ist derzeit nur auf Englisch verfügbar.\n\n[Für Mac herunterladen](button)\n\nVor dem Kauf testen · Keine Karte nötig · macOS 14 oder neuer",
+    "expected": [
+      "de_siezen"
+    ],
+    "note": "subtle: one slipped du-imperative ('Probier … schau dir') in Sie copy; no du/dich/dein word"
+  },
+  {
+    "id": "g08",
+    "locale": "de-DE",
+    "page_kind": "pricing",
+    "text": "# Einmal zahlen. Auf 3 Macs nutzen.\n\nRegulär $29.99, jetzt $19.99 für begrenzte Zeit. Eine Lizenz gilt für bis zu 3 Macs, mit 30 Tagen Geld-zurück-Garantie.\n\nUpdates bekommen Sie, solange es CacheDrop gibt – ohne je wieder zu zahlen.\n\nDer Scan ist immer kostenlos. macOS 14 oder neuer. Die App selbst ist derzeit nur auf Englisch verfügbar.\n\n[Kaufen · 29,99 $](button)",
+    "expected": [
+      "de_units",
+      "fact_sheet"
+    ],
+    "note": "'$29.99'/'$19.99' English price format; subtle lifetime-updates paraphrase ('solange es CacheDrop gibt') instead of 'through version 1'"
+  },
+  {
+    "id": "g09",
+    "locale": "de-DE",
+    "page_kind": "guide",
+    "text": "# Systemdaten auf dem Mac löschen\n\nIn Systemeinstellungen › Allgemein › Speicher zeigt der graue Balken „Systemdaten“ oft 30 GB oder mehr. Darin stecken Caches, Protokolle, Auslagerungsdateien und lokale Time Machine-Snapshots; der Finder zeigt davon kaum etwas.\n\nCacheDrop erklärt, was in den Systemdaten steckt, und leert, was sich bedenkenlos löschen lässt: App-Caches und alte Protokolle. Den Rest erklärt es und lässt ihn unangetastet.\n\n[Für Mac herunterladen](button)",
+    "expected": [
+      "app_language"
+    ],
+    "note": "guide page otherwise clean but never says the app is in English"
+  },
+  {
+    "id": "g10",
+    "locale": "de-DE",
+    "page_kind": "ad",
+    "text": "# Mac aufräumen, ohne Abo\n\nCaches, Render-Dateien und Reste gelöschter Apps auf einem Bildschirm. Apps und Plug-ins zu deinstallieren kostet Sie bei CacheDrop keinen Cent – bezahlt wird nur das Aufräumen.\n\nJetzt 19,99 $ für begrenzte Zeit, auf bis zu 3 Macs.\n\n[Für Mac herunterladen](button)",
+    "expected": [
+      "free_uninstall",
+      "offer_without_regular"
+    ],
+    "note": "ad (exempt from app_language); subtle free-uninstall claim ('kostet keinen Cent', no 'kostenlos'); 19,99 without 29,99"
+  },
+  {
+    "id": "g11",
+    "locale": "de-DE",
+    "page_kind": "guide",
+    "text": "# node_modules und DerivedData aufräumen\n\nAlte node_modules-Ordner und DerivedData belegen auf einem Entwickler-Mac schnell 20 GB. CacheDrop findet sie projektübergreifend in einem Scan.\n\nKeine Sorge, falls ein Build danach streikt: Mit \"Put back\" holen Sie die gelöschten Ordner jederzeit an ihren alten Platz zurück.\n\nDie App selbst ist derzeit nur auf Englisch verfügbar.\n\n[CacheDrop ausprobieren](button)",
+    "expected": [
+      "trash_claim",
+      "de_typography"
+    ],
+    "note": "subtle implied trash claim: Put back restores deleted build folders (they are deleted, not trashed); straight \"…\" quotes"
+  },
+  {
+    "id": "g12",
+    "locale": "de-DE",
+    "page_kind": "compare",
+    "text": "# CacheDrop oder MacKeeper?\n\nMacKeeper wird im Abo verkauft und bündelt Virenscanner, VPN und Speicher-Tools. Wer nur Platz schaffen will, zahlt beim aufgeblähten Funktionsumfang von MacKeeper für vieles, das er nie öffnet.\n\nCacheDrop ist Mac-Reiniger, App-Deinstallationsprogramm und Plug-in-Manager für regulär 29,99 $, jetzt 19,99 $ für begrenzte Zeit, auf bis zu 3 Macs. Schließen Sie Ihr iPhone an, räumt CacheDrop im selben Scan auch dessen Speicher auf. Die App selbst ist derzeit nur auf Englisch verfügbar.\n\nProduktnamen sind Marken ihrer jeweiligen Inhaber.",
+    "expected": [
+      "bloat_with_competitor",
+      "ahead_of_app"
+    ],
+    "note": "'aufgeblähten' in a sentence naming MacKeeper (compare page, naming itself fine); iPhone cleanup not shipped"
+  },
+  {
+    "id": "g13",
+    "locale": "de-DE",
+    "page_kind": "home",
+    "text": "# Holen Sie sich den Speicherplatz Ihres Macs zurück.\n\nAnders als CleanMyMac verlangt CacheDrop kein Abo: einmal zahlen, auf bis zu 3 Macs nutzen.\n\nZum Start gibt es CacheDrop für 19,99 $ statt regulär 29,99 $, für begrenzte Zeit. Die App selbst ist derzeit nur auf Englisch verfügbar.\n\n[Für Mac herunterladen](button)\n\nVor dem Kauf testen · Keine Karte nötig · macOS 14 oder neuer",
+    "expected": [
+      "competitor_named",
+      "launch_wording"
+    ],
+    "note": "CleanMyMac named on the home page; subtle launch wording 'Zum Start' (no 'Einführungspreis')"
+  },
+  {
+    "id": "g14",
+    "locale": "de-DE",
+    "page_kind": "pricing",
+    "text": "# Einmal zahlen. Auf 3 Macs nutzen.\n\nRegulär 29,99 $, jetzt 14,99 $ für begrenzte Zeit. Bereits über 10.000 Mac-Nutzer räumen mit CacheDrop auf.\n\n- Eine Lizenz gilt für bis zu 3 Macs\n- Alle Updates bis einschließlich Version 1\n- 30 Tage Geld-zurück-Garantie\n- macOS 14 oder neuer\n\nDie App selbst ist derzeit nur auf Englisch verfügbar.\n\n[Kaufen · 29,99 $](button)",
+    "expected": [
+      "wrong_price",
+      "invented_proof"
+    ],
+    "note": "offer 14,99 instead of 19,99; invented user count '10.000 Mac-Nutzer'"
+  },
+  {
+    "id": "g15",
+    "locale": "de-DE",
+    "page_kind": "guide",
+    "text": "# Mac kostenlos aufräumen: Caches leeren\n\nBrowser-Caches, App-Caches und alte Protokolle sammeln sich über Monate an. Gerade Junk-Dateien aus längst gelöschten Apps findet der Finder kaum.\n\nCacheDrop listet jede Datei vor dem Löschen auf. Der Scan ist immer kostenlos, und bis 2 GB freigegeben sind, kostet das Aufräumen nichts. Die App selbst ist derzeit nur auf Englisch verfügbar.\n\n[Für Mac herunterladen](button)",
+    "expected": [
+      "free_in_headline",
+      "banned_word"
+    ],
+    "note": "'kostenlos' in the H1; 'Junk-Dateien'"
+  },
+  {
+    "id": "g16",
+    "locale": "de-DE",
+    "page_kind": "email",
+    "text": "# Ihr Mac kann wieder durchatmen\n\nSie haben die wöchentliche Erinnerung von CacheDrop aktiviert. Diese Woche sind rund 4 GB bereit zum Aufräumen, vor allem Paket-Caches und 700 MB Render-Dateien aus Final Cut Pro.\n\nNeu in diesem Update: CacheDrop gibt beim Aufräumen auch belegten Arbeitsspeicher frei, damit Ihr Mac spürbar schneller reagiert. Öffnen Sie CacheDrop und sehen Sie selbst!\n\nDie Erinnerung ist standardmäßig aus und kommt nur, wenn mindestens 1 GB bereitliegt.",
+    "expected": [
+      "contradicts_product",
+      "exclamation"
+    ],
+    "note": "email (exempt from app_language); RAM freeing / speed-up claim; exclamation mark in body"
   }
 ]

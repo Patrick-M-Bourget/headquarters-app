@@ -8,7 +8,7 @@ import { z } from "zod";
 import { Draft, Rule } from "../packages/data-contracts/marketing.ts";
 import { CLAIMS_MODEL, loadFacts, reviewDraft } from "../runners/marketing/claims-review.ts";
 
-const Case = z.object({ id: z.string(), locale: z.enum(["en-US", "fr-FR"]), page_kind: z.string(), text: z.string(), expected: z.array(Rule), note: z.string().optional() });
+const Case = z.object({ id: z.string(), locale: z.enum(["en-US", "fr-FR", "de-DE"]), page_kind: z.string(), text: z.string(), expected: z.array(Rule), note: z.string().optional() });
 const split = process.argv[2];
 if (split !== "dev" && split !== "test") throw new Error("usage: claims-agreement.ts dev|test [--no-model]");
 const useModel = !process.argv.includes("--no-model");

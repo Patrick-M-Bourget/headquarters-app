@@ -1,0 +1,1838 @@
+{
+  "site": {
+    "origin": "https://cachedrop.io",
+    "llms_txt": true,
+    "robots_allows": {
+      "GPTBot": true,
+      "ClaudeBot": true,
+      "PerplexityBot": true,
+      "Google-Extended": true
+    }
+  },
+  "pages": [
+    {
+      "page": {
+        "url": "https://cachedrop.io/fr/",
+        "query_id": "q01",
+        "query_text": "Quel est le meilleur nettoyeur Mac pour libérer de la place sur mon disque ?",
+        "audited_at": "2026-11-10T04:37:35.430Z",
+        "http_status": 200,
+        "error": null,
+        "checks": {
+          "title": "Nettoyer son Mac – Récupérez votre espace, payez une fois | CacheDrop",
+          "meta_description": "CacheDrop repère les caches, les restes et les vieux fichiers qui remplissent votre Mac, et les vide en toute sécurité. Fait pour les producteurs de musique, les développeurs et les monteurs vidéo.",
+          "h1": [
+            "Récupérez l’espace de votre Mac."
+          ],
+          "canonical": "https://cachedrop.io/fr/",
+          "canonical_is_self": true,
+          "json_ld_types": [
+            "Answer",
+            "FAQPage",
+            "Offer",
+            "Organization",
+            "Question",
+            "SoftwareApplication",
+            "UnitPriceSpecification"
+          ],
+          "internal_links": 15,
+          "word_count": 115,
+          "html_lang": "fr-CA",
+          "hreflang": [
+            {
+              "lang": "en",
+              "href": "https://cachedrop.io/"
+            },
+            {
+              "lang": "fr",
+              "href": "https://cachedrop.io/fr/"
+            },
+            {
+              "lang": "x-default",
+              "href": "https://cachedrop.io/"
+            }
+          ]
+        },
+        "answer": {
+          "verdict": "no",
+          "quote": null,
+          "reason": "The opening is only pricing and licence details for CacheDrop; it never says which Mac cleaner is best or compares options for freeing disk space.",
+          "model": "anthropic/claude-sonnet-5-5"
+        }
+      },
+      "competitors": [
+        {
+          "url": "https://www.avast.com/fr-fr/c-best-cleaning-software-mac",
+          "query_id": "q01",
+          "query_text": "Quel est le meilleur nettoyeur Mac pour libérer de la place sur mon disque ?",
+          "audited_at": "2026-11-10T04:37:41.253Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "Les meilleurs outils de nettoyage pour Mac en 2026",
+            "meta_description": "Découvrez les meilleurs logiciels de nettoyage et d’optimisation pour Mac, gratuits et payants. Obtenez les fonctionnalités dont vous avez besoin pour accélérer votre ordinateur en toute sécurité.",
+            "h1": [
+              "Les meilleurs outils de nettoyage pour Mac"
+            ],
+            "canonical": "https://www.avast.com/fr-fr/c-best-cleaning-software-mac",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "(invalid JSON-LD)",
+              "Article",
+              "ImageObject",
+              "Organization",
+              "Person"
+            ],
+            "internal_links": 91,
+            "word_count": 2956,
+            "html_lang": "fr",
+            "hreflang": []
+          },
+          "answer": {
+            "verdict": "no",
+            "quote": null,
+            "reason": "The opening is only site navigation and menus, ending with a title ('Les meilleurs outils de nettoyage pour Mac') but no cleaner recommendation or comparison.",
+            "model": "anthropic/claude-sonnet-5-5"
+          }
+        },
+        {
+          "url": "https://techcommunity.microsoft.com/discussions/windows10space/comment-nettoyer-son-mac-pour-lib%C3%A9rer-de-lespace-sans-supprimer-des-fichiers-imp/4519236",
+          "query_id": "q01",
+          "query_text": "Quel est le meilleur nettoyeur Mac pour libérer de la place sur mon disque ?",
+          "audited_at": "2026-11-10T04:37:48.188Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "Comment nettoyer son Mac pour libérer de l'espace sans supprimer des fichiers importants | Microsoft Community Hub",
+            "meta_description": "Bonjour à tous,mon Mac commence à manquer sérieusement d’espace de stockage et je ne sais pas trop par où commencer. Je voudrais savoir Comment nettoyer son...",
+            "h1": [
+              "Comment nettoyer son Mac pour libérer de l'espace sans supprimer des fichiers importants"
+            ],
+            "canonical": "https://techcommunity.microsoft.com/discussions/windows10space/comment-nettoyer-son-mac-pour-lib%c3%a9rer-de-lespace-sans-supprimer-des-fichiers-imp/4519236",
+            "canonical_is_self": false,
+            "json_ld_types": [
+              "Answer",
+              "BreadcrumbList",
+              "ListItem",
+              "Person",
+              "QAPage",
+              "Question"
+            ],
+            "internal_links": 11,
+            "word_count": 139,
+            "html_lang": "en-US",
+            "hreflang": []
+          },
+          "answer": {
+            "verdict": "no",
+            "quote": null,
+            "reason": "The opening is a forum user's own question about how to free up Mac space, with no answer or cleaner recommendation given.",
+            "model": "anthropic/claude-sonnet-5-5"
+          }
+        },
+        {
+          "url": "https://findstack.fr/resources/best-mac-cleaner-software",
+          "query_id": "q01",
+          "query_text": "Quel est le meilleur nettoyeur Mac pour libérer de la place sur mon disque ?",
+          "audited_at": "2026-11-10T04:37:51.193Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "Les 9 meilleurs logiciels de nettoyage pour Mac en 2026 (payants et gratuits)",
+            "meta_description": "Vous recherchez le meilleur logiciel de nettoyage Mac ? Trouvez le meilleur logiciel, désencombrez votre Mac et accélérez vos flux de travail.",
+            "h1": [
+              "Le meilleur logiciel de nettoyage Mac de 2026"
+            ],
+            "canonical": "https://findstack.fr/resources/best-mac-cleaner-software",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "Article",
+              "BreadcrumbList",
+              "ContactPoint",
+              "EntryPoint",
+              "ImageObject",
+              "ListItem",
+              "Organization",
+              "Person",
+              "SearchAction",
+              "SpeakableSpecification",
+              "WebPage",
+              "WebSite"
+            ],
+            "internal_links": 42,
+            "word_count": 3697,
+            "html_lang": "fr",
+            "hreflang": [
+              {
+                "lang": "x-default",
+                "href": "https://findstack.com/resources/best-mac-cleaner-software"
+              },
+              {
+                "lang": "en",
+                "href": "https://findstack.com/resources/best-mac-cleaner-software"
+              },
+              {
+                "lang": "pt-BR",
+                "href": "https://findstack.com.br/resources/best-mac-cleaner-software"
+              },
+              {
+                "lang": "es-MX",
+                "href": "https://findstack.com.mx/resources/best-mac-cleaner-software"
+              },
+              {
+                "lang": "de",
+                "href": "https://findstack.de/resources/best-mac-cleaner-software"
+              },
+              {
+                "lang": "da",
+                "href": "https://findstack.dk/resources/best-mac-cleaner-software"
+              },
+              {
+                "lang": "es",
+                "href": "https://findstack.es/resources/best-mac-cleaner-software"
+              },
+              {
+                "lang": "fr",
+                "href": "https://findstack.fr/resources/best-mac-cleaner-software"
+              },
+              {
+                "lang": "pl",
+                "href": "https://findstack.pl/resources/best-mac-cleaner-software"
+              },
+              {
+                "lang": "nl",
+                "href": "https://findstack.nl/resources/best-mac-cleaner-software"
+              },
+              {
+                "lang": "ru",
+                "href": "https://findstack.ru/resources/best-mac-cleaner-software"
+              },
+              {
+                "lang": "sv",
+                "href": "https://findstack.se/resources/best-mac-cleaner-software"
+              }
+            ]
+          },
+          "answer": {
+            "verdict": "no",
+            "quote": null,
+            "reason": "The opening contains only a table of contents, ads for unrelated software and a byline; it names no Mac cleaner and gives no recommendation.",
+            "model": "anthropic/claude-sonnet-5-5"
+          }
+        }
+      ],
+      "gaps": [
+        "<html lang=\"fr-CA\"> targets CA; the market is FR (use \"fr\" or \"fr-FR\")",
+        "title is 69 chars (search results cut at about 60)",
+        "meta description is 197 chars (cut at about 160)",
+        "JSON-LD types used by 2+ competitors but not here: Article, BreadcrumbList",
+        "115 words vs competitor median 2956",
+        "does not answer \"Quel est le meilleur nettoyeur Mac pour libérer de la place sur mon disque ?\" near the top. Why: The opening is only pricing and licence details for CacheDrop; it never says which Mac cleaner is best or compares options for freeing disk space."
+      ]
+    },
+    {
+      "page": {
+        "url": "https://cachedrop.io/fr/pricing/",
+        "query_id": "q24",
+        "query_text": "Quel nettoyeur Mac payer une seule fois plutôt qu'un abonnement ?",
+        "audited_at": "2026-11-10T04:37:53.434Z",
+        "http_status": 200,
+        "error": null,
+        "checks": {
+          "title": "Tarifs de CacheDrop – 29,99 $ une seule fois, jusqu’à 3 Mac",
+          "meta_description": "CacheDrop trouve ce qui remplit votre Mac et le nettoie en toute sécurité. La licence coûte 29,99 $ une seule fois, maintenant 19,99 $ pour un temps limité, pour un maximum de 3 Mac, avec toutes les mises à jour de la version 1 et le remboursement dans les 30 jours. Rien à annuler.",
+          "h1": [
+            "Payez une seule fois. Utilisez-le sur 3 Mac."
+          ],
+          "canonical": "https://cachedrop.io/fr/pricing/",
+          "canonical_is_self": true,
+          "json_ld_types": [],
+          "internal_links": 15,
+          "word_count": 164,
+          "html_lang": "fr-CA",
+          "hreflang": [
+            {
+              "lang": "en",
+              "href": "https://cachedrop.io/pricing/"
+            },
+            {
+              "lang": "fr",
+              "href": "https://cachedrop.io/fr/pricing/"
+            },
+            {
+              "lang": "x-default",
+              "href": "https://cachedrop.io/pricing/"
+            }
+          ]
+        },
+        "answer": {
+          "verdict": "yes",
+          "quote": "Prix régulier 29,99 $, maintenant 19,99 $ pour un temps limité, une seule fois.",
+          "reason": "The opening presents CacheDrop as a one-time-payment Mac cleaner with price, 3-Mac licence, updates and no subscription, though it does not compare it with other one-time cleaners.",
+          "model": "anthropic/claude-sonnet-5-5"
+        }
+      },
+      "competitors": [
+        {
+          "url": "https://setapp.com/fr/didacticiels/meilleures-apps-mac-cleaner-fiables",
+          "query_id": "q24",
+          "query_text": "Quel nettoyeur Mac payer une seule fois plutôt qu'un abonnement ?",
+          "audited_at": "2026-11-10T04:37:57.420Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "Mac cleaner : Meilleurs outils pour nettoyer votre Mac en 2026",
+            "meta_description": "Quel logiciel pour nettoyer votre Mac en 2026 ? Comparez les meilleures apps pour libérer de l'espace, supprimer les doublons et booster les performances.",
+            "h1": [
+              "Les meilleures apps de Mac cleaner fiables en 2026"
+            ],
+            "canonical": "https://setapp.com/fr/didacticiels/meilleures-apps-mac-cleaner-fiables",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "Article",
+              "ImageObject",
+              "Organization",
+              "Person",
+              "WebPage"
+            ],
+            "internal_links": 64,
+            "word_count": 3363,
+            "html_lang": "fr",
+            "hreflang": [
+              {
+                "lang": "x-default",
+                "href": "https://setapp.com/how-to/best-mac-cleaner-software"
+              },
+              {
+                "lang": "en",
+                "href": "https://setapp.com/how-to/best-mac-cleaner-software"
+              },
+              {
+                "lang": "es",
+                "href": "https://setapp.com/es/tutoriales/limpiar-mac-liberar-espacio-optimizar"
+              },
+              {
+                "lang": "de",
+                "href": "https://setapp.com/de/so-gehts/mac-festplatte-aufraeumen-beste-mac-cleaner"
+              },
+              {
+                "lang": "fr",
+                "href": "https://setapp.com/fr/didacticiels/meilleures-apps-mac-cleaner-fiables"
+              },
+              {
+                "lang": "pt-BR",
+                "href": "https://setapp.com/pt-br/tutoriais/melhores-apps-mac-cleaner-uteis-confiaveis"
+              }
+            ]
+          },
+          "answer": {
+            "verdict": "no",
+            "quote": null,
+            "reason": "The opening is a Setapp subscription pitch and a general CleanMyMac summary; it never names a one-time-purchase Mac cleaner or discusses pricing models.",
+            "model": "anthropic/claude-sonnet-5-5"
+          }
+        },
+        {
+          "url": "https://www.journaldugeek.com/bon-plan/cleanmymac-x-ultra-populaire-ce-nettoyeur-mac-est-a-30-au-black-friday/",
+          "query_id": "q24",
+          "query_text": "Quel nettoyeur Mac payer une seule fois plutôt qu'un abonnement ?",
+          "audited_at": "2026-11-10T04:38:01.870Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "CleanMyMac X : ultra-populaire, ce nettoyeur Mac est à -30% au Black Friday ⚡",
+            "meta_description": "A l'occasion du Black Friday, l'éditeur de logiciels MacPaw dévoile une offre inédite sur CleanMyMac X, l'un des outils de nettoyage et d'optimisation pour Mac les plus populaires du marché. Pendant 24h, ce vendredi, ce dernier profite d'une remise de 30%. C'est la meilleure occasion de l'année pour redonner à votre un ordinateur Apple, un coup de boost et le maintenir en bonne santé sans trop dépenser.",
+            "h1": [
+              "CleanMyMac X : ultra-populaire, ce nettoyeur Mac est à -30% au Black Friday ⚡"
+            ],
+            "canonical": "https://www.journaldugeek.com/bon-plan/cleanmymac-x-ultra-populaire-ce-nettoyeur-mac-est-a-30-au-black-friday/",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "BreadcrumbList",
+              "EntryPoint",
+              "ImageObject",
+              "ListItem",
+              "NewsArticle",
+              "Organization",
+              "Person",
+              "ReadAction",
+              "SearchAction",
+              "WebPage",
+              "WebSite"
+            ],
+            "internal_links": 119,
+            "word_count": 781,
+            "html_lang": "fr-FR",
+            "hreflang": []
+          },
+          "answer": {
+            "verdict": "no",
+            "quote": null,
+            "reason": "The opening is a Black Friday promo for CleanMyMac X's annual license (27,96 € instead of 39,95 €); it is not a one-time purchase and offers no comparison of one-time-payment Mac cleaners.",
+            "model": "anthropic/claude-sonnet-5-5"
+          }
+        },
+        {
+          "url": "https://apps.apple.com/fr/app/cleanmymac/id1339170533?mt=12",
+          "query_id": "q24",
+          "query_text": "Quel nettoyeur Mac payer une seule fois plutôt qu'un abonnement ?",
+          "audited_at": "2026-11-10T04:38:04.748Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "‎App CleanMyMac - App Store",
+            "meta_description": "Téléchargez l’app CleanMyMac développée par MacPaw Way Ltd dans l’App Store. Consultez les captures d’écran, les notes et avis, les astuces d’autres…",
+            "h1": [
+              "CleanMyMac",
+              "Merci",
+              "Efficace et intuitif",
+              "Simple, Efficace et multi-mac",
+              "superbe interface",
+              "Historique",
+              "Confidentialité de l’app"
+            ],
+            "canonical": "https://apps.apple.com/fr/app/cleanmymac/id1339170533",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "BreadcrumbList",
+              "ListItem",
+              "Offer",
+              "Organization",
+              "SoftwareApplication"
+            ],
+            "internal_links": 198,
+            "word_count": 866,
+            "html_lang": "fr-FR",
+            "hreflang": []
+          },
+          "answer": {
+            "verdict": "no",
+            "quote": null,
+            "reason": "The opening is an App Store-style product pitch for CleanMyMac's features and never mentions one-time purchase versus subscription pricing or recommends a one-time-payment cleaner.",
+            "model": "anthropic/claude-sonnet-5-5"
+          }
+        }
+      ],
+      "gaps": [
+        "<html lang=\"fr-CA\"> targets CA; the market is FR (use \"fr\" or \"fr-FR\")",
+        "meta description is 282 chars (cut at about 160)",
+        "JSON-LD types used by 2+ competitors but not here: BreadcrumbList",
+        "164 words vs competitor median 866"
+      ]
+    },
+    {
+      "page": {
+        "url": "https://cachedrop.io/fr/clear-mac-developer-caches/",
+        "query_id": "q15",
+        "query_text": "Quel est le meilleur nettoyeur Mac pour développeur qui supprime les caches Xcode en toute sécurité ?",
+        "audited_at": "2026-11-10T04:38:08.244Z",
+        "http_status": 200,
+        "error": null,
+        "checks": {
+          "title": "Vider DerivedData de Xcode, node_modules et le cache Docker sur Mac",
+          "meta_description": "Supprimez les DerivedData de Xcode, les vieux node_modules et les caches Docker de votre Mac. Les commandes Terminal à la main, plus un nettoyeur gratuit pour développeurs qui le fait sans risque.",
+          "h1": [
+            "Comment vider DerivedData de Xcode, node_modules et les caches Docker sur Mac"
+          ],
+          "canonical": "https://cachedrop.io/fr/clear-mac-developer-caches/",
+          "canonical_is_self": true,
+          "json_ld_types": [
+            "Answer",
+            "Article",
+            "BreadcrumbList",
+            "FAQPage",
+            "ListItem",
+            "Organization",
+            "Question"
+          ],
+          "internal_links": 14,
+          "word_count": 807,
+          "html_lang": "fr-CA",
+          "hreflang": [
+            {
+              "lang": "en",
+              "href": "https://cachedrop.io/clear-mac-developer-caches/"
+            },
+            {
+              "lang": "fr",
+              "href": "https://cachedrop.io/fr/clear-mac-developer-caches/"
+            },
+            {
+              "lang": "x-default",
+              "href": "https://cachedrop.io/clear-mac-developer-caches/"
+            }
+          ]
+        },
+        "answer": {
+          "verdict": "partial",
+          "quote": "Télécharger pour Mac Nettoyeur Mac pour développeurs · Apple Silicon et Intel Essayez-le avant d’acheter · Aucune carte requise · macOS 14 ou version ultérieure Jusqu’à 3 Mac : 29,99 $ une seule fois, maintenant 19,99 $ pour un temps limité.",
+          "reason": "L'ouverture présente un seul nettoyeur Mac pour développeurs (CacheDrop) avec son prix, mais sans comparer d'options ni expliquer la sécurité de la suppression des caches Xcode.",
+          "model": "anthropic/claude-sonnet-5-5"
+        }
+      },
+      "competitors": [
+        {
+          "url": "https://www.kangama.com/devcachecleaner/",
+          "query_id": "q15",
+          "query_text": "Quel est le meilleur nettoyeur Mac pour développeur qui supprime les caches Xcode en toute sécurité ?",
+          "audited_at": "2026-11-10T04:38:14.928Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "DevCacheCleaner : nettoyez 8 caches développeur sur Mac",
+            "meta_description": "DevCacheCleaner nettoie les caches développeur sur Mac : Xcode, Android, Flutter, npm, CocoaPods, IDE, navigateurs et apps design.",
+            "h1": [
+              "Nettoyez vos caches développeur sur Mac",
+              "Libérez plusieurs Go sur votre Mac en quelques clics"
+            ],
+            "canonical": "https://www.kangama.com/devcachecleaner/",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "BreadcrumbList",
+              "ListItem"
+            ],
+            "internal_links": 10,
+            "word_count": 533,
+            "html_lang": "fr-FR",
+            "hreflang": [
+              {
+                "lang": "fr-FR",
+                "href": "https://www.kangama.com/devcachecleaner/"
+              },
+              {
+                "lang": "en-US",
+                "href": "https://www.kangama.com/en/devcachecleaner/"
+              },
+              {
+                "lang": "fr",
+                "href": "https://www.kangama.com/devcachecleaner/"
+              },
+              {
+                "lang": "en",
+                "href": "https://www.kangama.com/en/devcachecleaner/"
+              }
+            ]
+          },
+          "answer": {
+            "verdict": "partial",
+            "quote": "DevCacheCleaner est une application macOS open source qui aide les développeurs à libérer de l’espace disque en nettoyant les caches Xcode, Android, Flutter, npm, CocoaPods, IDE, navigateurs et apps design.",
+            "reason": "The opening presents a single developer-focused Mac cleaner that handles Xcode caches and claims safe cleaning, but it offers no comparison with other tools and no detail on how Xcode cache deletion is made safe.",
+            "model": "anthropic/claude-sonnet-5-5"
+          }
+        },
+        {
+          "url": "https://www.avast.com/fr-fr/c-best-cleaning-software-mac",
+          "query_id": "q15",
+          "query_text": "Quel est le meilleur nettoyeur Mac pour développeur qui supprime les caches Xcode en toute sécurité ?",
+          "audited_at": "2026-11-10T04:38:18.862Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "Les meilleurs outils de nettoyage pour Mac en 2026",
+            "meta_description": "Découvrez les meilleurs logiciels de nettoyage et d’optimisation pour Mac, gratuits et payants. Obtenez les fonctionnalités dont vous avez besoin pour accélérer votre ordinateur en toute sécurité.",
+            "h1": [
+              "Les meilleurs outils de nettoyage pour Mac"
+            ],
+            "canonical": "https://www.avast.com/fr-fr/c-best-cleaning-software-mac",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "(invalid JSON-LD)",
+              "Article",
+              "ImageObject",
+              "Organization",
+              "Person"
+            ],
+            "internal_links": 91,
+            "word_count": 2956,
+            "html_lang": "fr",
+            "hreflang": []
+          },
+          "answer": {
+            "verdict": "no",
+            "quote": null,
+            "reason": "The opening is only site navigation and menu text, ending on a title about the best Mac cleaning tools, with no recommendation or mention of Xcode caches.",
+            "model": "anthropic/claude-sonnet-5-5"
+          }
+        },
+        {
+          "url": "https://nektony.com/fr/reviews/best-mac-cleaning-software",
+          "query_id": "q15",
+          "query_text": "Quel est le meilleur nettoyeur Mac pour développeur qui supprime les caches Xcode en toute sécurité ?",
+          "audited_at": "2026-11-10T04:38:21.387Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "Quel est le meilleur nettoyeur Mac en 2026: 10 outils testés et analysés",
+            "meta_description": "Cet article présentera une liste des nettoyeurs Mac les plus populaires payants et gratuits, ainsi qu’un tableau comparatif pour vous aider à choisir la meilleure application pour nettoyer votre Mac.",
+            "h1": [
+              "Quel est le meilleur nettoyeur Mac en 2026: 10 outils testés et analysés"
+            ],
+            "canonical": "https://nektony.com/fr/reviews/best-mac-cleaning-software",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "Answer",
+              "BreadcrumbList",
+              "FAQPage",
+              "ImageObject",
+              "ListItem",
+              "Organization",
+              "Person",
+              "Question",
+              "WebPage",
+              "WebSite"
+            ],
+            "internal_links": 40,
+            "word_count": 3265,
+            "html_lang": "fr-FR",
+            "hreflang": [
+              {
+                "lang": "en",
+                "href": "https://nektony.com/reviews/best-mac-cleaning-software"
+              },
+              {
+                "lang": "de",
+                "href": "https://nektony.com/de/reviews/best-mac-cleaning-software"
+              },
+              {
+                "lang": "ru",
+                "href": "https://nektony.com/ru/reviews/best-mac-cleaning-software"
+              },
+              {
+                "lang": "es",
+                "href": "https://nektony.com/es/reviews/best-mac-cleaning-software"
+              },
+              {
+                "lang": "fr",
+                "href": "https://nektony.com/fr/reviews/best-mac-cleaning-software"
+              },
+              {
+                "lang": "uk",
+                "href": "https://nektony.com/uk/reviews/best-mac-cleaning-software"
+              },
+              {
+                "lang": "x-default",
+                "href": "https://nektony.com/reviews/best-mac-cleaning-software"
+              }
+            ]
+          },
+          "answer": {
+            "verdict": "no",
+            "quote": null,
+            "reason": "The opening is a generic intro about Mac cleaners and digital clutter; it names no tool and says nothing about developers or safe Xcode cache removal.",
+            "model": "anthropic/claude-sonnet-5-5"
+          }
+        }
+      ],
+      "gaps": [
+        "<html lang=\"fr-CA\"> targets CA; the market is FR (use \"fr\" or \"fr-FR\")",
+        "title is 67 chars (search results cut at about 60)",
+        "meta description is 196 chars (cut at about 160)",
+        "807 words vs competitor median 2956",
+        "needs check: answers \"Quel est le meilleur nettoyeur Mac pour développeur qui supprime les caches Xcode en toute sécurité ?\" only partly near the top (partial). Why: L'ouverture présente un seul nettoyeur Mac pour développeurs (CacheDrop) avec son prix, mais sans comparer d'options ni expliquer la sécurité de la suppression des caches Xcode. Quote: \"Télécharger pour Mac Nettoyeur Mac pour développeurs · Apple Silicon et Intel Essayez-le avant d’acheter · Aucune carte requise · macOS 14 ou version ultérieure Jusqu’à 3 Mac : 29,99 $ une seule fois, maintenant 19,99 $ pour un temps limité.\""
+      ]
+    },
+    {
+      "page": {
+        "url": "https://cachedrop.io/fr/clear-adobe-media-cache-mac/",
+        "query_id": "q04",
+        "query_text": "Comment vider le cache de média Adobe Premiere Pro sur Mac ?",
+        "audited_at": "2026-11-10T04:38:23.606Z",
+        "http_status": 200,
+        "error": null,
+        "checks": {
+          "title": "Vider le cache Adobe sur Mac (Premiere Pro et Final Cut Pro)",
+          "meta_description": "Comment vider le cache de média de Premiere Pro et les fichiers de rendu de Final Cut Pro sur Mac, étape par étape, plus un outil gratuit qui vide toutes les versions d’un coup.",
+          "h1": [
+            "Comment vider le cache de média Adobe sur Mac"
+          ],
+          "canonical": "https://cachedrop.io/fr/clear-adobe-media-cache-mac/",
+          "canonical_is_self": true,
+          "json_ld_types": [
+            "Answer",
+            "Article",
+            "BreadcrumbList",
+            "FAQPage",
+            "ListItem",
+            "Organization",
+            "Question"
+          ],
+          "internal_links": 14,
+          "word_count": 706,
+          "html_lang": "fr-CA",
+          "hreflang": [
+            {
+              "lang": "en",
+              "href": "https://cachedrop.io/clear-adobe-media-cache-mac/"
+            },
+            {
+              "lang": "fr",
+              "href": "https://cachedrop.io/fr/clear-adobe-media-cache-mac/"
+            },
+            {
+              "lang": "x-default",
+              "href": "https://cachedrop.io/clear-adobe-media-cache-mac/"
+            }
+          ]
+        },
+        "answer": {
+          "verdict": "no",
+          "quote": null,
+          "reason": "The opening is mostly a product pitch for CacheDrop (pricing, download) and only begins to describe what media cache files are, without giving any steps to clear the Premiere Pro media cache on Mac.",
+          "model": "anthropic/claude-sonnet-5-5"
+        }
+      },
+      "competitors": [
+        {
+          "url": "https://macpaw.com/fr/how-to/clear-adobe-cache",
+          "query_id": "q04",
+          "query_text": "Comment vider le cache de média Adobe Premiere Pro sur Mac ?",
+          "audited_at": "2026-11-10T04:38:27.487Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "Comment effacer le cache d'Adobe sur Mac",
+            "meta_description": "Si vous utilisez les applications Adobe, elles prennent peut-être beaucoup de place sur votre disque. Videz le cache d'Adobe sur MacBook pour faire de la place.",
+            "h1": [
+              "Comment vider le cache d'Adobe sur votre Mac"
+            ],
+            "canonical": "https://macpaw.com/fr/how-to/clear-adobe-cache",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "Article",
+              "BreadcrumbList",
+              "ImageObject",
+              "ListItem",
+              "Organization",
+              "Person",
+              "WebPage"
+            ],
+            "internal_links": 57,
+            "word_count": 1037,
+            "html_lang": "fr",
+            "hreflang": [
+              {
+                "lang": "en",
+                "href": "https://macpaw.com/how-to/clear-adobe-cache"
+              },
+              {
+                "lang": "de",
+                "href": "https://macpaw.com/de/how-to/clear-adobe-cache"
+              },
+              {
+                "lang": "es",
+                "href": "https://macpaw.com/es/how-to/clear-adobe-cache"
+              },
+              {
+                "lang": "fr",
+                "href": "https://macpaw.com/fr/how-to/clear-adobe-cache"
+              },
+              {
+                "lang": "it",
+                "href": "https://macpaw.com/it/how-to/clear-adobe-cache"
+              },
+              {
+                "lang": "nl",
+                "href": "https://macpaw.com/nl/how-to/clear-adobe-cache"
+              },
+              {
+                "lang": "ja",
+                "href": "https://macpaw.com/ja/how-to/clear-adobe-cache"
+              },
+              {
+                "lang": "x-default",
+                "href": "https://macpaw.com/how-to/clear-adobe-cache"
+              }
+            ]
+          },
+          "answer": {
+            "verdict": "no",
+            "quote": null,
+            "reason": "The opening is a CleanMyMac pitch and general background on cache files; it only promises to explain how to clear the Premiere Pro cache and gives no actual steps.",
+            "model": "anthropic/claude-sonnet-5-5"
+          }
+        },
+        {
+          "url": "https://helpx.adobe.com/fr/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html",
+          "query_id": "q04",
+          "query_text": "Comment vider le cache de média Adobe Premiere Pro sur Mac ?",
+          "audited_at": "2026-11-10T04:38:31.385Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "Gérer les fichiers de cache média dans Premiere | Premiere",
+            "meta_description": "Découvrez comment configurer les préférences pour supprimer automatiquement les fichiers de cache en fonction de leur ancienneté et de l'utilisation de la mémoire dans Adobe Premiere.",
+            "h1": [
+              "Gestion automatique de vos fichiers de cache de média"
+            ],
+            "canonical": "https://helpx.adobe.com/fr/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html",
+            "canonical_is_self": true,
+            "json_ld_types": [],
+            "internal_links": 758,
+            "word_count": 5786,
+            "html_lang": "fr-FR",
+            "hreflang": [
+              {
+                "lang": "uk-UA",
+                "href": "https://helpx.adobe.com/ua/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "en-us",
+                "href": "https://helpx.adobe.com/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "ar-kw",
+                "href": "https://helpx.adobe.com/mena_ar/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "lv-LV",
+                "href": "https://helpx.adobe.com/lv/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "ms-MY",
+                "href": "https://helpx.adobe.com/my_ms/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "nl-BE",
+                "href": "https://helpx.adobe.com/be_nl/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "zh-CN",
+                "href": "https://helpx.adobe.com/cn/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "nl-NL",
+                "href": "https://helpx.adobe.com/nl/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "hi-IN",
+                "href": "https://helpx.adobe.com/in_hi/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "ar-lb",
+                "href": "https://helpx.adobe.com/mena_ar/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "he-IL",
+                "href": "https://helpx.adobe.com/il_he/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "ja-JP",
+                "href": "https://helpx.adobe.com/jp/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "de-CH",
+                "href": "https://helpx.adobe.com/ch_de/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "hu-HU",
+                "href": "https://helpx.adobe.com/hu/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "ar-qa",
+                "href": "https://helpx.adobe.com/mena_ar/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "es-CL",
+                "href": "https://helpx.adobe.com/cl/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "es-CO",
+                "href": "https://helpx.adobe.com/co/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "es-PE",
+                "href": "https://helpx.adobe.com/pe/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "es-LA",
+                "href": "https://helpx.adobe.com/la/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "pl-PL",
+                "href": "https://helpx.adobe.com/pl/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "pt-PT",
+                "href": "https://helpx.adobe.com/pt/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "ro-RO",
+                "href": "https://helpx.adobe.com/ro/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "ar-il",
+                "href": "https://helpx.adobe.com/mena_ar/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "ar-eg",
+                "href": "https://helpx.adobe.com/mena_ar/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "it-CH",
+                "href": "https://helpx.adobe.com/ch_it/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "tr-TR",
+                "href": "https://helpx.adobe.com/tr/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "et-EE",
+                "href": "https://helpx.adobe.com/ee/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "ar-ma",
+                "href": "https://helpx.adobe.com/mena_ar/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "fil-PH",
+                "href": "https://helpx.adobe.com/ph_fil/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "fr-FR",
+                "href": "https://helpx.adobe.com/fr/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "vi-VN",
+                "href": "https://helpx.adobe.com/vn_vi/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "fi-FI",
+                "href": "https://helpx.adobe.com/fi/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "nb-NO",
+                "href": "https://helpx.adobe.com/no/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "lt-LT",
+                "href": "https://helpx.adobe.com/lt/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "ar-AE",
+                "href": "https://helpx.adobe.com/ae_ar/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "sl-SI",
+                "href": "https://helpx.adobe.com/si/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "ar-iq",
+                "href": "https://helpx.adobe.com/mena_ar/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "de-AT",
+                "href": "https://helpx.adobe.com/at/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "bg-BG",
+                "href": "https://helpx.adobe.com/bg/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "cs-CZ",
+                "href": "https://helpx.adobe.com/cz/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "ar-SA",
+                "href": "https://helpx.adobe.com/sa_ar/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "de-DE",
+                "href": "https://helpx.adobe.com/de/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "zh-TW",
+                "href": "https://helpx.adobe.com/tw/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "zh-HK",
+                "href": "https://helpx.adobe.com/hk_zh/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "pt-BR",
+                "href": "https://helpx.adobe.com/br/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "ko-KR",
+                "href": "https://helpx.adobe.com/kr/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "sk-SK",
+                "href": "https://helpx.adobe.com/sk/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "es-ES",
+                "href": "https://helpx.adobe.com/es/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "ar-jo",
+                "href": "https://helpx.adobe.com/mena_ar/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "es-MX",
+                "href": "https://helpx.adobe.com/mx/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "it-IT",
+                "href": "https://helpx.adobe.com/it/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "ar-om",
+                "href": "https://helpx.adobe.com/mena_ar/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "ru-RU",
+                "href": "https://helpx.adobe.com/ru/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "es-AR",
+                "href": "https://helpx.adobe.com/ar/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "sv-SE",
+                "href": "https://helpx.adobe.com/se/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "id-ID",
+                "href": "https://helpx.adobe.com/id_id/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "da-DK",
+                "href": "https://helpx.adobe.com/dk/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "de-LU",
+                "href": "https://helpx.adobe.com/lu_de/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "th-TH",
+                "href": "https://helpx.adobe.com/th_th/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              },
+              {
+                "lang": "x-default",
+                "href": "https://helpx.adobe.com/premiere/desktop/troubleshooting/media-issues/automatically-manage-your-media-cache-files.html"
+              }
+            ]
+          },
+          "answer": {
+            "verdict": "no",
+            "quote": null,
+            "reason": "The opening is only the help-center navigation menu (release notes, technical requirements, downloads) and gives no steps for clearing the media cache on Mac.",
+            "model": "anthropic/claude-sonnet-5-5"
+          }
+        }
+      ],
+      "gaps": [
+        "<html lang=\"fr-CA\"> targets CA; the market is FR (use \"fr\" or \"fr-FR\")",
+        "meta description is 177 chars (cut at about 160)",
+        "does not answer \"Comment vider le cache de média Adobe Premiere Pro sur Mac ?\" near the top. Why: The opening is mostly a product pitch for CacheDrop (pricing, download) and only begins to describe what media cache files are, without giving any steps to clear the Premiere Pro media cache on Mac."
+      ]
+    },
+    {
+      "page": {
+        "url": "https://cachedrop.io/fr/uninstall-audio-plugins-mac/",
+        "query_id": "q02",
+        "query_text": "Comment désinstaller complètement un plug-in VST sur Mac ?",
+        "audited_at": "2026-11-10T04:38:35.267Z",
+        "http_status": 200,
+        "error": null,
+        "checks": {
+          "title": "Désinstaller des plug-ins audio sur Mac (VST, AU, AAX, CLAP)",
+          "meta_description": "Désinstallez les plug-ins VST, VST3, AU, AAX et CLAP sur Mac avec tous les fichiers qu’ils ont installés, trouvez où sont rangés les plug-ins et videz le cache d’Ableton Live sans toucher à vos licences.",
+          "h1": [
+            "Désinstallez vos plug-ins audio sur Mac, avec tout ce qu’ils ont laissé."
+          ],
+          "canonical": "https://cachedrop.io/fr/uninstall-audio-plugins-mac/",
+          "canonical_is_self": true,
+          "json_ld_types": [
+            "Answer",
+            "Article",
+            "BreadcrumbList",
+            "FAQPage",
+            "HowTo",
+            "HowToStep",
+            "ListItem",
+            "Organization",
+            "Question"
+          ],
+          "internal_links": 14,
+          "word_count": 1328,
+          "html_lang": "fr-CA",
+          "hreflang": [
+            {
+              "lang": "en",
+              "href": "https://cachedrop.io/uninstall-audio-plugins-mac/"
+            },
+            {
+              "lang": "fr",
+              "href": "https://cachedrop.io/fr/uninstall-audio-plugins-mac/"
+            },
+            {
+              "lang": "x-default",
+              "href": "https://cachedrop.io/uninstall-audio-plugins-mac/"
+            }
+          ]
+        },
+        "answer": {
+          "verdict": "no",
+          "quote": null,
+          "reason": "The opening is a product pitch for CacheDrop and only notes that plug-ins span several formats and folders, without giving any actual steps or locations for uninstalling a VST on Mac.",
+          "model": "anthropic/claude-sonnet-5-5"
+        }
+      },
+      "competitors": [
+        {
+          "url": "https://support.two-notes.com/knowledgebase.php?article=153",
+          "query_id": "q02",
+          "query_text": "Comment désinstaller complètement un plug-in VST sur Mac ?",
+          "audited_at": "2026-11-10T04:38:40.445Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "Comment désinstaller le plug-in WoS ?",
+            "meta_description": null,
+            "h1": [
+              "Comment désinstaller le plug-in WoS ?"
+            ],
+            "canonical": null,
+            "canonical_is_self": false,
+            "json_ld_types": [],
+            "internal_links": 1,
+            "word_count": 354,
+            "html_lang": "en",
+            "hreflang": []
+          },
+          "answer": {
+            "verdict": "partial",
+            "quote": "Pour désinstaller le plug-in sous Mac OS X : Il faut mettre à la corbeille le fichier correspondant à la version du plug-in installée : Plug-in AU : Aller à Machintosh HD/Library/Audio/Plug-Ins/Components/ et supprimer le fichier \"Torpedo Wall Of Sound III.component\"",
+            "reason": "The opening gives Mac uninstall steps, but only for one specific plug-in (Torpedo Wall of Sound), starting with the AU format and cut off before VST, and it does not cover other leftover files, so it is not a general answer.",
+            "model": "anthropic/claude-sonnet-5-5"
+          }
+        },
+        {
+          "url": "https://fr.audiofanzine.com/os/apple/mac-os-x-10-5-leopard/forums/t.396491,comment-desinstaller-un-plugin-dans-logic.html",
+          "query_id": "q02",
+          "query_text": "Comment désinstaller complètement un plug-in VST sur Mac ?",
+          "audited_at": "2026-11-10T04:38:43.496Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "Comment désinstaller un plugin dans Logic? - forum Apple Mac OS X 10.5 Leopard - Audiofanzine",
+            "meta_description": "Voili voilou,Pour installer les plugs, ça y'a pas photo... j'ai très bien compris!Par contre pour désinstaller... comme je fais s'il ne figure pas da…",
+            "h1": [
+              "Comment désinstaller un plugin dans Logic?"
+            ],
+            "canonical": "https://fr.audiofanzine.com/os/apple/mac-os-x-10-5-leopard/forums/t.396491,comment-desinstaller-un-plugin-dans-logic.html",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "BreadcrumbList",
+              "ListItem"
+            ],
+            "internal_links": 34,
+            "word_count": 405,
+            "html_lang": "fr",
+            "hreflang": [
+              {
+                "lang": "fr",
+                "href": "https://fr.audiofanzine.com/os/apple/mac-os-x-10-5-leopard/forums/t.396491,comment-desinstaller-un-plugin-dans-logic.html"
+              }
+            ]
+          },
+          "answer": {
+            "verdict": "no",
+            "quote": null,
+            "reason": "The opening is only forum navigation and the title of a thread asking how to uninstall a plugin in Logic; it gives no uninstall steps for VST plug-ins on Mac.",
+            "model": "anthropic/claude-sonnet-5-5"
+          }
+        },
+        {
+          "url": "https://www.imymac.fr/powermymac/uninstall-waves-plugins-mac.html",
+          "query_id": "q02",
+          "query_text": "Comment désinstaller complètement un plug-in VST sur Mac ?",
+          "audited_at": "2026-11-10T04:38:45.821Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "Comment désinstaller facilement et rapidement les plugins Waves sur Mac",
+            "meta_description": "Ce guide vous expliquera comment désinstaller les plugins Waves sur Mac. Notre objectif est de vous aider à supprimer les plugins de votre Mac sans rencontrer de problèmes.",
+            "h1": [
+              "Comment désinstaller facilement et rapidement les plugins Waves sur Mac"
+            ],
+            "canonical": null,
+            "canonical_is_self": false,
+            "json_ld_types": [
+              "Article",
+              "BreadcrumbList",
+              "ImageObject",
+              "ListItem",
+              "Organization",
+              "Person",
+              "WebPage"
+            ],
+            "internal_links": 38,
+            "word_count": 1381,
+            "html_lang": "fr",
+            "hreflang": []
+          },
+          "answer": {
+            "verdict": "no",
+            "quote": null,
+            "reason": "The opening is a promo banner, author byline and an intro about Waves plugins; it gives no uninstall steps for VST plug-ins on Mac.",
+            "model": "anthropic/claude-sonnet-5-5"
+          }
+        }
+      ],
+      "gaps": [
+        "<html lang=\"fr-CA\"> targets CA; the market is FR (use \"fr\" or \"fr-FR\")",
+        "meta description is 203 chars (cut at about 160)",
+        "does not answer \"Comment désinstaller complètement un plug-in VST sur Mac ?\" near the top. Why: The opening is a product pitch for CacheDrop and only notes that plug-ins span several formats and folders, without giving any actual steps or locations for uninstalling a VST on Mac."
+      ]
+    },
+    {
+      "page": {
+        "url": "https://cachedrop.io/fr/clear-system-data-mac/",
+        "query_id": "q05",
+        "query_text": "Comment vider les Données système sur mon Mac qui prennent trop de place ?",
+        "audited_at": "2026-11-10T04:38:51.173Z",
+        "http_status": 200,
+        "error": null,
+        "checks": {
+          "title": "Vider les Données système sur Mac (et pourquoi elles grossissent)",
+          "meta_description": "Ce que sont les Données système sur Mac, pourquoi elles grossissent autant et ce que vous pouvez supprimer sans risque : caches, journaux, fichiers de développement et instantanés locaux Time Machine, avec les commandes Terminal et leurs risques.",
+          "h1": [
+            "Comment vider les Données système sur Mac"
+          ],
+          "canonical": "https://cachedrop.io/fr/clear-system-data-mac/",
+          "canonical_is_self": true,
+          "json_ld_types": [
+            "Answer",
+            "Article",
+            "BreadcrumbList",
+            "FAQPage",
+            "HowTo",
+            "HowToStep",
+            "ListItem",
+            "Organization",
+            "Question"
+          ],
+          "internal_links": 14,
+          "word_count": 1862,
+          "html_lang": "fr-CA",
+          "hreflang": [
+            {
+              "lang": "en",
+              "href": "https://cachedrop.io/clear-system-data-mac/"
+            },
+            {
+              "lang": "fr",
+              "href": "https://cachedrop.io/fr/clear-system-data-mac/"
+            },
+            {
+              "lang": "x-default",
+              "href": "https://cachedrop.io/clear-system-data-mac/"
+            }
+          ]
+        },
+        "answer": {
+          "verdict": "no",
+          "quote": null,
+          "reason": "The opening only defines System Data and promises what can be removed, mixed with a product pitch for CacheDrop; it gives no actual steps for clearing it.",
+          "model": "anthropic/claude-sonnet-5-5"
+        }
+      },
+      "competitors": [
+        {
+          "url": "https://mackeeper.com/fr/blog/nettoyage-du-stockage-systeme-du-mac/",
+          "query_id": "q05",
+          "query_text": "Comment vider les Données système sur mon Mac qui prennent trop de place ?",
+          "audited_at": "2026-11-10T04:38:54.881Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "Comment effacer le Stockage Système sur un Mac",
+            "meta_description": "Pour effacer l'espace de stockage du système de votre Mac, suivez ces étapes ou découvrez comment le faire automatiquement.",
+            "h1": [
+              "Les 6 meilleures façons de vider le stockage système de votre Mac"
+            ],
+            "canonical": "https://mackeeper.com/fr/blog/nettoyage-du-stockage-systeme-du-mac/",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "Article",
+              "BreadcrumbList",
+              "ImageObject",
+              "ListItem",
+              "Organization",
+              "Person",
+              "WebPage"
+            ],
+            "internal_links": 40,
+            "word_count": 1302,
+            "html_lang": "fr",
+            "hreflang": [
+              {
+                "lang": "en",
+                "href": "https://mackeeper.com/blog/mac-system-storage-cleaning/"
+              },
+              {
+                "lang": "de",
+                "href": "https://mackeeper.com/de/blog/wie-den-systemspeicher-auf-ihrem-mac-zu-bereinigen/"
+              },
+              {
+                "lang": "fr",
+                "href": "https://mackeeper.com/fr/blog/nettoyage-du-stockage-systeme-du-mac/"
+              },
+              {
+                "lang": "es",
+                "href": "https://mackeeper.com/es/blog/limpiar-almacenamiento-sistema-del-mac/"
+              },
+              {
+                "lang": "it",
+                "href": "https://mackeeper.com/it/blog/eliminare-dati-di-sistema-mac/"
+              },
+              {
+                "lang": "pt",
+                "href": "https://mackeeper.com/pt/blog/limpar-dados-do-sistema-macbook/"
+              },
+              {
+                "lang": "nl",
+                "href": "https://mackeeper.com/nl/blog/systeemgegevens-mac-opschonen/"
+              },
+              {
+                "lang": "pl",
+                "href": "https://mackeeper.com/pl/blog/jak-wyczyscic-dane-systemowe-mac/"
+              },
+              {
+                "lang": "sv",
+                "href": "https://mackeeper.com/sv/blog/rensa-systemdata-mac/"
+              },
+              {
+                "lang": "no",
+                "href": "https://mackeeper.com/no/blog/hvordan-sletter-man-systemdata-pa-mac/"
+              }
+            ]
+          },
+          "answer": {
+            "verdict": "partial",
+            "quote": "Voici comment supprimer les données inutiles sur votre Mac : Téléchargez MacKeeper . Allez dans Nettoyage et sélectionnez Nettoyage sécurisé. Choisissez Lancer l'analyse et attendez que le programme examine votre Mac.",
+            "reason": "The opening gives steps, but only for one third-party tool (MacKeeper) after a promotional preamble, and says nothing about manual methods or macOS built-in options for clearing System Data.",
+            "model": "anthropic/claude-sonnet-5-5"
+          }
+        },
+        {
+          "url": "https://forums.commentcamarche.net/forum/affich-38237683-comment-diminuer-les-donnees-systemes-du-stockage-dans-mac",
+          "query_id": "q05",
+          "query_text": "Comment vider les Données système sur mon Mac qui prennent trop de place ?",
+          "audited_at": "2026-11-10T04:38:57.603Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "Comment diminuer les données systèmes du stockage dans mac ? [Résolu] - MacOS",
+            "meta_description": "bonjour, mon ordinateur est très lent et les données systèmes prennent un quart de la mémoire disponible . Je ne sais plus comment faire pour les diminuer . quelqu'un peut il m'aider? Merci C'est un mac book pro intel sequoia...",
+            "h1": [
+              "Comment diminuer les données systèmes du stockage dans mac ?"
+            ],
+            "canonical": "https://forums.commentcamarche.net/forum/affich-38237683-comment-diminuer-les-donnees-systemes-du-stockage-dans-mac",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "Answer",
+              "BreadcrumbList",
+              "ListItem",
+              "Person",
+              "QAPage",
+              "Question",
+              "WebPage"
+            ],
+            "internal_links": 18,
+            "word_count": 1932,
+            "html_lang": "fr",
+            "hreflang": []
+          },
+          "answer": {
+            "verdict": "partial",
+            "quote": "Si c'est le manque de place libre sur le disque, c'est souvent dans la Bibliothèque du compte utilisateur qu'il faut chercher les causes de la \"lourdeur\", peut-être la sauvegarde de l'iPhone, par exemple. Un outil comme \"Grand Perspective\" peut être utilise pour trouver les encombrants.",
+            "reason": "The opening is a forum thread where a reply gives partial guidance (check the user Library, iPhone backups, use GrandPerspective) but no concrete steps to actually clear System Data.",
+            "model": "anthropic/claude-sonnet-5-5"
+          }
+        },
+        {
+          "url": "https://vvmac.fr/wordpress_b/les-donnees-systeme-les-purger-soi-meme-ou-recourir-a-un-outil-dedie/",
+          "query_id": "q05",
+          "query_text": "Comment vider les Données système sur mon Mac qui prennent trop de place ?",
+          "audited_at": "2026-11-10T04:39:03.489Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "Les Données système, les purger soi-même ou recourir à un outil dédié ? – VVMac ✿ Le Blog",
+            "meta_description": null,
+            "h1": [
+              "Les Données système, les purger soi-même ou recourir à un outil dédié ?"
+            ],
+            "canonical": "https://vvmac.fr/wordpress_b/les-donnees-systeme-les-purger-soi-meme-ou-recourir-a-un-outil-dedie/",
+            "canonical_is_self": true,
+            "json_ld_types": [],
+            "internal_links": 24,
+            "word_count": 2794,
+            "html_lang": "fr-FR",
+            "hreflang": []
+          },
+          "answer": {
+            "verdict": "no",
+            "quote": null,
+            "reason": "The opening only describes the problem, warns against manual cleanup and promises explanations, but gives no actual steps or methods to reduce System Data.",
+            "model": "anthropic/claude-sonnet-5-5"
+          }
+        }
+      ],
+      "gaps": [
+        "<html lang=\"fr-CA\"> targets CA; the market is FR (use \"fr\" or \"fr-FR\")",
+        "title is 65 chars (search results cut at about 60)",
+        "meta description is 246 chars (cut at about 160)",
+        "does not answer \"Comment vider les Données système sur mon Mac qui prennent trop de place ?\" near the top. Why: The opening only defines System Data and promises what can be removed, mixed with a product pitch for CacheDrop; it gives no actual steps for clearing it."
+      ]
+    },
+    {
+      "page": {
+        "url": "https://cachedrop.io/fr/uninstall-apps-mac/",
+        "query_id": "q13",
+        "query_text": "Quelle est la meilleure application pour désinstaller complètement un logiciel sur Mac ?",
+        "audited_at": "2026-11-10T04:39:05.921Z",
+        "http_status": 200,
+        "error": null,
+        "checks": {
+          "title": "Désinstaller une application sur Mac et supprimer ses restes",
+          "meta_description": "Glisser une application dans la Corbeille laisse ses réglages, ses caches et ses données. Trouvez où se cachent les restes d’applications sur Mac, supprimez-les à la main, ou désinstallez vos applications avec tous leurs fichiers.",
+          "h1": [
+            "Comment désinstaller complètement une application sur Mac"
+          ],
+          "canonical": "https://cachedrop.io/fr/uninstall-apps-mac/",
+          "canonical_is_self": true,
+          "json_ld_types": [
+            "Answer",
+            "Article",
+            "BreadcrumbList",
+            "FAQPage",
+            "HowTo",
+            "HowToStep",
+            "ListItem",
+            "Organization",
+            "Question"
+          ],
+          "internal_links": 14,
+          "word_count": 1444,
+          "html_lang": "fr-CA",
+          "hreflang": [
+            {
+              "lang": "en",
+              "href": "https://cachedrop.io/uninstall-apps-mac/"
+            },
+            {
+              "lang": "fr",
+              "href": "https://cachedrop.io/fr/uninstall-apps-mac/"
+            },
+            {
+              "lang": "x-default",
+              "href": "https://cachedrop.io/uninstall-apps-mac/"
+            }
+          ]
+        },
+        "answer": {
+          "verdict": "partial",
+          "quote": "Voici où se trouvent ces restes, comment les supprimer à la main et comment CacheDrop les trouve pour vous.",
+          "reason": "The opening explains that the Trash leaves residual files and promotes CacheDrop as a tool, but it offers no comparison of apps and gives no actual recommendation of the best one beyond its own product pitch.",
+          "model": "anthropic/claude-sonnet-5-5"
+        }
+      },
+      "competitors": [
+        {
+          "url": "https://www.jibapps.com/fr/apps/trashme/",
+          "query_id": "q13",
+          "query_text": "Quelle est la meilleure application pour désinstaller complètement un logiciel sur Mac ?",
+          "audited_at": "2026-11-10T04:39:13.046Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "TrashMe 2 : désinstallez vos apps et nettoyez votre Mac – Jibapps",
+            "meta_description": "TrashMe 2 est notre app phare pour macOS : désinstallez complètement n'importe quelle app et récupérez de la place.",
+            "h1": [
+              "TrashMe",
+              "TrashMe 2",
+              "Désinstaller, sans aucune trace",
+              "Détection automatique",
+              "Outils puissants pour nettoyer votre Mac",
+              "Gérer vos apps favorites",
+              "Fichiers supprimés lors de la désinstallation",
+              "TrashMe parle votre langue",
+              "Obtenez TrashMe pour Mac dès maintenant"
+            ],
+            "canonical": "https://www.jibapps.com/fr/apps/trashme/",
+            "canonical_is_self": true,
+            "json_ld_types": [],
+            "internal_links": 24,
+            "word_count": 879,
+            "html_lang": "fr-FR",
+            "hreflang": [
+              {
+                "lang": "en",
+                "href": "https://www.jibapps.com/en/apps/trashme/"
+              },
+              {
+                "lang": "fr",
+                "href": "https://www.jibapps.com/fr/apps/trashme/"
+              },
+              {
+                "lang": "x-default",
+                "href": "https://www.jibapps.com/apps/trashme/"
+              }
+            ]
+          },
+          "answer": {
+            "verdict": "partial",
+            "quote": "Avec TrashMe, vous vous débarasserez de tous ces fichiers cachés ! Notre puissant algorithme a été perfectionné pendant de nombreuses années afin de trouver presque tous les fichiers créés par une app.",
+            "reason": "The opening presents a single app (TrashMe) that fully uninstalls Mac software, which fits the ask, but it is a product pitch with no comparison to other options to establish it as the best.",
+            "model": "anthropic/claude-sonnet-5-5"
+          }
+        },
+        {
+          "url": "https://www.clubic.com/telecharger-fiche215566-appcleaner.html",
+          "query_id": "q13",
+          "query_text": "Quelle est la meilleure application pour désinstaller complètement un logiciel sur Mac ?",
+          "audited_at": "2026-11-10T04:39:16.233Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "Télécharger AppCleaner (gratuit) Mac - Clubic",
+            "meta_description": "Que ce soit au fil du temps ou suite à des tests, un Mac peut vite être encombré d'applications, de widgets et plugins. Pour récupérer de l'espace disque ou pour alléger le système, il est alors nécessaire de procéder à la désinstallation des logiciels installés. Pour ce faire, il est possible d'opter pour la solution manuelle et fastidieuse ou choisir un outil qui fera le travail à l'image d'AppCleaner.",
+            "h1": [
+              "AppCleaner"
+            ],
+            "canonical": "https://www.clubic.com/telecharger-fiche215566-appcleaner.html",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "BreadcrumbList",
+              "EntryPoint",
+              "ImageObject",
+              "ItemList",
+              "ListItem",
+              "Offer",
+              "Organization",
+              "Person",
+              "Rating",
+              "ReadAction",
+              "Review",
+              "SearchAction",
+              "SoftwareApplication",
+              "WebPage",
+              "WebSite"
+            ],
+            "internal_links": 89,
+            "word_count": 514,
+            "html_lang": "fr",
+            "hreflang": []
+          },
+          "answer": {
+            "verdict": "partial",
+            "quote": "AppCleaner est une solution gratuite, efficace et très simple d'utilisation. Elle s'avère pratique pour désinstaller des logiciels macOS en toute simplicité.",
+            "reason": "The opening presents a single app (AppCleaner) as a fitting uninstaller for Mac, but it does not compare alternatives or explain why it is the best, and it spends part of the text on navigation and preamble.",
+            "model": "anthropic/claude-sonnet-5-5"
+          }
+        },
+        {
+          "url": "https://mackeeper.com/fr/blog/supprimer-des-applications-sur-mac/",
+          "query_id": "q13",
+          "query_text": "Quelle est la meilleure application pour désinstaller complètement un logiciel sur Mac ?",
+          "audited_at": "2026-11-10T04:39:19.745Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "Comment supprimer des applications sur Mac ? Désinstaller correctement une application",
+            "meta_description": "Vous cherchez à vous débarrasser de ces applications que vous avez téléchargées ? Nous vous montrerons toutes les façons de désinstaller des applicatiions.",
+            "h1": [
+              "Comment supprimer des applications et tous leurs fichiers cachés sur Mac"
+            ],
+            "canonical": "https://mackeeper.com/fr/blog/supprimer-des-applications-sur-mac/",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "Article",
+              "BreadcrumbList",
+              "ImageObject",
+              "ListItem",
+              "Organization",
+              "Person",
+              "WebPage"
+            ],
+            "internal_links": 37,
+            "word_count": 1426,
+            "html_lang": "fr",
+            "hreflang": [
+              {
+                "lang": "en",
+                "href": "https://mackeeper.com/blog/how-to-uninstall-apps-mac/"
+              },
+              {
+                "lang": "de",
+                "href": "https://mackeeper.com/de/blog/wie-apps-auf-mac-loeschen/"
+              },
+              {
+                "lang": "fr",
+                "href": "https://mackeeper.com/fr/blog/supprimer-des-applications-sur-mac/"
+              },
+              {
+                "lang": "es",
+                "href": "https://mackeeper.com/es/blog/como-desinstalar-aplicaciones-mac/"
+              },
+              {
+                "lang": "it",
+                "href": "https://mackeeper.com/it/blog/come-disinstallare-app-su-mac/"
+              },
+              {
+                "lang": "pt",
+                "href": "https://mackeeper.com/pt/blog/desinstalar-programas-mac/"
+              },
+              {
+                "lang": "nl",
+                "href": "https://mackeeper.com/nl/blog/apps-verwijderen-macbook/"
+              }
+            ]
+          },
+          "answer": {
+            "verdict": "partial",
+            "quote": "Le Désinstallteur intellilgent de MacKeeper est un moyen rapide et efficace de désinstaller des applications sur Mac.",
+            "reason": "The opening recommends a single app (MacKeeper) after a short preamble, but gives no comparison of options and no detail on how it fits the question beyond a brief pitch.",
+            "model": "anthropic/claude-sonnet-5-5"
+          }
+        }
+      ],
+      "gaps": [
+        "<html lang=\"fr-CA\"> targets CA; the market is FR (use \"fr\" or \"fr-FR\")",
+        "meta description is 230 chars (cut at about 160)",
+        "needs check: answers \"Quelle est la meilleure application pour désinstaller complètement un logiciel sur Mac ?\" only partly near the top (partial). Why: The opening explains that the Trash leaves residual files and promotes CacheDrop as a tool, but it offers no comparison of apps and gives no actual recommendation of the best one beyond its own product pitch. Quote: \"Voici où se trouvent ces restes, comment les supprimer à la main et comment CacheDrop les trouve pour vous.\""
+      ]
+    },
+    {
+      "page": {
+        "url": "https://cachedrop.io/fr/cleanmymac-alternative/",
+        "query_id": "q18",
+        "query_text": "Quelle alternative à CleanMyMac pour nettoyer un Mac de producteur de musique ?",
+        "audited_at": "2026-11-10T04:39:22.267Z",
+        "http_status": 200,
+        "error": null,
+        "checks": {
+          "title": "Alternative à CleanMyMac payée une seule fois | CacheDrop",
+          "meta_description": "CacheDrop nettoie votre Mac, désinstalle complètement applications et plug-ins, et vide les caches de développement et de média pour 29,99 $ une seule fois, maintenant 19,99 $ pour un temps limité, sur un maximum de 3 Mac. Aucun abonnement.",
+          "h1": [
+            "Une alternative à CleanMyMac que vous payez une seule fois."
+          ],
+          "canonical": "https://cachedrop.io/fr/cleanmymac-alternative/",
+          "canonical_is_self": true,
+          "json_ld_types": [
+            "Answer",
+            "BreadcrumbList",
+            "FAQPage",
+            "ListItem",
+            "Question",
+            "WebPage"
+          ],
+          "internal_links": 15,
+          "word_count": 1098,
+          "html_lang": "fr-CA",
+          "hreflang": [
+            {
+              "lang": "en",
+              "href": "https://cachedrop.io/cleanmymac-alternative/"
+            },
+            {
+              "lang": "fr",
+              "href": "https://cachedrop.io/fr/cleanmymac-alternative/"
+            },
+            {
+              "lang": "x-default",
+              "href": "https://cachedrop.io/cleanmymac-alternative/"
+            }
+          ]
+        },
+        "answer": {
+          "verdict": "partial",
+          "quote": "CacheDrop nettoie votre Mac, désinstalle complètement applications et plug-ins, et vide les caches de développement et de média. 29,99 $ une seule fois, pour un maximum de 3 Mac.",
+          "reason": "L'ouverture propose CacheDrop comme alternative sans abonnement et mentionne plug-ins et caches de média, mais ne cible pas explicitement les producteurs de musique (DAW, bibliothèques d'échantillons) et ne compare pas encore clairement les options.",
+          "model": "anthropic/claude-sonnet-5-5"
+        }
+      },
+      "competitors": [
+        {
+          "url": "https://www.clubic.com/telecharger-fiche446497-cleanmymac-x.html",
+          "query_id": "q18",
+          "query_text": "Quelle alternative à CleanMyMac pour nettoyer un Mac de producteur de musique ?",
+          "audited_at": "2026-11-10T04:39:29.107Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "Télécharger CleanMyMac (gratuit) Web - Clubic",
+            "meta_description": "CleanMyMac est un outil d'optimisation puissant et flexible qui permet de nettoyer, d'optimiser et de protéger votre Mac. Il offre une multitude de fonctionnalités qui en font un outil précieux pour tous ceux qui souhaitent maintenir leur Mac en bonne santé.",
+            "h1": [
+              "CleanMyMac"
+            ],
+            "canonical": "https://www.clubic.com/telecharger-fiche446497-cleanmymac-x.html",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "BreadcrumbList",
+              "ImageObject",
+              "ItemList",
+              "ListItem",
+              "Offer",
+              "Person",
+              "Rating",
+              "Review",
+              "SoftwareApplication"
+            ],
+            "internal_links": 100,
+            "word_count": 1179,
+            "html_lang": "fr",
+            "hreflang": []
+          },
+          "answer": {
+            "verdict": "no",
+            "quote": null,
+            "reason": "The opening is a download page promoting CleanMyMac itself, with no alternative named and nothing about music producers' Macs.",
+            "model": "anthropic/claude-sonnet-5-5"
+          }
+        },
+        {
+          "url": "https://mole.fit/fr/blog/cleanmymac-alternative",
+          "query_id": "q18",
+          "query_text": "Quelle alternative à CleanMyMac pour nettoyer un Mac de producteur de musique ?",
+          "audited_at": "2026-11-10T04:39:31.763Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "Choisir un utilitaire Mac au-delà de CleanMyMac · Mole",
+            "meta_description": "Comparez les utilitaires Mac par tâche, frontière de sécurité, permissions, récupération, support OS et licence durable, plutôt que par les promesses marketing.",
+            "h1": [
+              "Choisir un utilitaire Mac au-delà de CleanMyMac"
+            ],
+            "canonical": "https://mole.fit/fr/blog/cleanmymac-alternative",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "Answer",
+              "BlogPosting",
+              "BreadcrumbList",
+              "ContactPoint",
+              "FAQPage",
+              "ImageObject",
+              "ListItem",
+              "Organization",
+              "Person",
+              "Question",
+              "WebPage",
+              "WebSite"
+            ],
+            "internal_links": 33,
+            "word_count": 2686,
+            "html_lang": "fr",
+            "hreflang": [
+              {
+                "lang": "en",
+                "href": "https://mole.fit/blog/cleanmymac-alternative"
+              },
+              {
+                "lang": "zh-CN",
+                "href": "https://mole.fit/zh/blog/cleanmymac-alternative"
+              },
+              {
+                "lang": "zh-Hans",
+                "href": "https://mole.fit/zh/blog/cleanmymac-alternative"
+              },
+              {
+                "lang": "zh-Hant",
+                "href": "https://mole.fit/tw/blog/cleanmymac-alternative"
+              },
+              {
+                "lang": "ja",
+                "href": "https://mole.fit/ja/blog/cleanmymac-alternative"
+              },
+              {
+                "lang": "ko",
+                "href": "https://mole.fit/ko/blog/cleanmymac-alternative"
+              },
+              {
+                "lang": "fr",
+                "href": "https://mole.fit/fr/blog/cleanmymac-alternative"
+              },
+              {
+                "lang": "de",
+                "href": "https://mole.fit/de/blog/cleanmymac-alternative"
+              },
+              {
+                "lang": "it",
+                "href": "https://mole.fit/it/blog/cleanmymac-alternative"
+              },
+              {
+                "lang": "es",
+                "href": "https://mole.fit/es/blog/cleanmymac-alternative"
+              },
+              {
+                "lang": "pt-BR",
+                "href": "https://mole.fit/pt-br/blog/cleanmymac-alternative"
+              },
+              {
+                "lang": "nl",
+                "href": "https://mole.fit/nl/blog/cleanmymac-alternative"
+              },
+              {
+                "lang": "x-default",
+                "href": "https://mole.fit/blog/cleanmymac-alternative"
+              }
+            ]
+          },
+          "answer": {
+            "verdict": "no",
+            "quote": null,
+            "reason": "L'ouverture est une introduction générale sur le choix d'un utilitaire (promesse de comparaison) sans nommer d'alternative adaptée ni aborder le cas d'un producteur de musique; elle se coupe au début de la comparaison avec Mole.",
+            "model": "anthropic/claude-sonnet-5-5"
+          }
+        },
+        {
+          "url": "https://www.lesnumeriques.com/appli-logiciel/mole-l-alternative-a-cleanmymac-s-offre-une-interface-graphique-n255774.html",
+          "query_id": "q18",
+          "query_text": "Quelle alternative à CleanMyMac pour nettoyer un Mac de producteur de musique ?",
+          "audited_at": "2026-11-10T04:39:34.444Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "Mole : l’alternative à CleanMyMac s’offre une interface graphique - Les Numériques",
+            "meta_description": "Après avoir séduit les technophiles avec sa version gratuite sur GitHub, Mole débarque officiellement avec une version graphique complète. Adieu les lignes de commande : place à l'interface graphique pour retenir les utilisateurs allergiques au Terminal.",
+            "h1": [
+              "Mole : l’alternative à CleanMyMac s’offre une interface graphique"
+            ],
+            "canonical": "https://www.lesnumeriques.com/appli-logiciel/mole-l-alternative-a-cleanmymac-s-offre-une-interface-graphique-n255774.html",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "BreadcrumbList",
+              "ImageObject",
+              "InteractionCounter",
+              "ListItem",
+              "NewsArticle",
+              "Organization",
+              "Person",
+              "SpeakableSpecification",
+              "WebPage"
+            ],
+            "internal_links": 58,
+            "word_count": 452,
+            "html_lang": "fr",
+            "hreflang": []
+          },
+          "answer": {
+            "verdict": "partial",
+            "quote": "Mole est un logiciel léger et efficace pour faire le ménage dans son Mac.",
+            "reason": "The opening names Mole as a CleanMyMac alternative (free CLI, $9 GUI version), but it does not address music producers' needs (sample libraries, DAW caches, etc.) and offers no comparison of options.",
+            "model": "anthropic/claude-sonnet-5-5"
+          }
+        }
+      ],
+      "gaps": [
+        "<html lang=\"fr-CA\"> targets CA; the market is FR (use \"fr\" or \"fr-FR\")",
+        "meta description is 240 chars (cut at about 160)",
+        "needs check: answers \"Quelle alternative à CleanMyMac pour nettoyer un Mac de producteur de musique ?\" only partly near the top (partial). Why: L'ouverture propose CacheDrop comme alternative sans abonnement et mentionne plug-ins et caches de média, mais ne cible pas explicitement les producteurs de musique (DAW, bibliothèques d'échantillons) et ne compare pas encore clairement les options. Quote: \"CacheDrop nettoie votre Mac, désinstalle complètement applications et plug-ins, et vide les caches de développement et de média. 29,99 $ une seule fois, pour un maximum de 3 Mac.\""
+      ]
+    }
+  ]
+}

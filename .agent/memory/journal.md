@@ -82,3 +82,8 @@
 - Known gap for ja-JP: labels.ts slug (and geo-agreement idFor) are ASCII-only; katakana product names would become empty ids. Fix before the ja-JP run.
 - Owner's new request (late): full marketing/funnel agent suite before scheduling. Proposal with decisions in prototype/docs/marketing-agents-proposal.md. Nothing built (L3).
 - Unfinished: 5b step 4 (fr-FR on-page + hreflang/lang checks + French answer-check eval), step 5/6 for de-DE/es-ES/pt-BR/ja-JP.
+- Owner (late): wave 1 of the agent proposal approved with Claude's recommendations (drafts → Paperclip approval → Claude files website tickets; funnel data keys later; spend from the API budget); finish the French audit first.
+- 5b step 4 DONE (fr-FR): langGaps (html lang incl. region vs market, hreflang self/x-default/translation/pair back), Tavily country, French-safe quote check (narrow no-break spaces). Run local-c1d9af4e: /fr/ pages 4 no (home, Adobe cache, plug-ins, System Data), 3 partial, 1 yes (pricing); all 8 flag lang fr-CA (#130); meta descriptions too long on all 8; $0.107. Competitors are French (Clubic, Les Numériques, Journal du Geek, Audiofanzine).
+- French answer-check eval (16 blind openings, labels eval/onpage/labels-fr-FR-v1-test.json): answered-vs-no 100%, exact 93.8% → "no" verdicts are confirmed gaps. Quirk: opening ids hash the URL only, so a page found for two questions shares an id (eval judges the first question); harmless here (both "no"), keep in mind.
+- Spend this session about $1.10 (total about $8.2 of $100).
+- Next: wave 1 agents (claims reviewer → SEO content creator → on-page optimizer → funnel analyst skeleton until keys), then de-DE/es-ES/pt-BR/ja-JP (fix ASCII slug for ja-JP), then step 6.

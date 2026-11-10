@@ -2,8 +2,9 @@
 
 ## Session 3 update: read first
 - 5b steps 1–3 DONE for **fr-FR** (France replaced fr-CA, owner decision). fr-FR v1 frozen; GEO baseline 0/50; French judge eval 93.3% passed; keywords 0/41. See journal session 3.
-- **Owner decisions pending:** `prototype/docs/marketing-agents-proposal.md` (marketing/funnel agent suite, requested before scheduling). Don't build agents before answers.
-- Next if owner agrees: 5b step 4 fr-FR on-page, then wave 1 agents, then de-DE/es-ES/pt-BR/ja-JP (fix ASCII slug in labels.ts first for ja-JP).
+- **Agent suite wave 1 APPROVED** (`prototype/docs/marketing-agents-proposal.md`, #1–4) with Claude's recommendations: drafts only → owner approves in Paperclip → Claude files cachedrop-website tickets; funnel analyst data keys come later (owner sets up); spend from the API budget.
+- 5b step 4 (fr-FR on-page) DONE; French answer check eval 100% answered-vs-no. Owner to confirm `research/seo-geo/onpage-pages.fr-FR.json` mapping.
+- Next: build wave 1 (claims reviewer first: it gates the others), then de-DE/es-ES/pt-BR/ja-JP (fix ASCII slug in labels.ts first for ja-JP), then step 6 scheduling.
 - cachedrop-website #130: French pages `lang="fr"`, `og:locale fr_FR`.
 
 

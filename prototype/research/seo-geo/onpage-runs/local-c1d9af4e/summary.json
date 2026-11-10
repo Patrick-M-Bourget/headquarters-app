@@ -1,0 +1,36 @@
+{
+  "run_id": "local-c1d9af4e",
+  "locale": "fr-FR",
+  "query_set_version": 1,
+  "pages": 8,
+  "competitors": 23,
+  "model": "anthropic/claude-sonnet-5-5",
+  "own_answers_near_top": {
+    "no": 4,
+    "yes": 1,
+    "partial": 3
+  },
+  "competitor_answers_near_top": {
+    "no": 15,
+    "partial": 8
+  },
+  "gaps": 31,
+  "site_gaps": [],
+  "skipped_competitors": [
+    "q01 https://www.reddit.com/r/mac/comments/1kbevv7/best_mac_cleanup_software?tl=fr: too little readable text (blocked or script-rendered)",
+    "q24 https://www.reddit.com/r/MacOS/comments/1o9drem/best_mac_cleaner_out_there_both_free_and_paid?tl=fr: too little readable text (blocked or script-rendered)",
+    "q04 https://fr.scribd.com/document/943512856/Supprimer-Cache-Premiere-Pro: too little readable text (blocked or script-rendered)",
+    "q04 https://www.reddit.com/r/premiere/comments/fjppid/how_to_free_up_disk_space_fast_by_clearing_media?tl=fr: too little readable text (blocked or script-rendered)",
+    "q04 https://www.repaire.net/forums/discussions/fichiers-media-en-memoire-cache.187942: too little readable text (blocked or script-rendered)",
+    "q04 https://tavily.com/knowledge/company/1LGhojf0NTrw: too little readable text (blocked or script-rendered)",
+    "q02 https://www.reddit.com/r/ableton/comments/tun84q/how_to_uninstall_plug_ins_on_mac?tl=fr: too little readable text (blocked or script-rendered)",
+    "q05 https://communities.apple.com/fr/thread/255041098: too little readable text (blocked or script-rendered)",
+    "q13 https://www.reddit.com/r/macapps/comments/1ksqgkr/looking_for_a_mac_app_to_completely_uninstall?tl=fr: too little readable text (blocked or script-rendered)",
+    "q18 https://www.reddit.com/r/macapps/comments/1g0pw1x/free_alternative_to_cleanmymac_x?tl=fr: too little readable text (blocked or script-rendered)"
+  ],
+  "searches": 8,
+  "cost_usd": 0.1074,
+  "seconds": 122,
+  "delta": null,
+  "finished_at": "2026-11-10T04:39:34.644Z"
+}

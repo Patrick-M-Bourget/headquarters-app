@@ -5,7 +5,8 @@
 - Claims eval: `node --env-file=.env eval/claims-agreement.ts dev|test` (re-run both after ANY change to the reviewer's instructions or `research/marketing/product-facts.json`).
 - Owner review waiting: on-page fixes `research/marketing/onpage-fixes/<run>/fixes.md` (en-US 16, fr-FR 20 proposed); drafts `research/marketing/drafts/` (en-US q05, q10; fr-FR q14). Each draft's `verify` list must be checked against the apps before a ticket is filed. Approved items → Claude files cachedrop-website tickets.
 - Owner decisions: France vs Quebec wording in the French glossary (reviewer notes Quebec terms on fr-FR); funnel CSV export (docs/funnel-export.md) or read-only keys; decision-bound fields (pricing meta D47, compare title D54).
-- Next: owner review of wave 1 output → tickets; then de-DE/es-ES/pt-BR/ja-JP (fix ASCII slug for ja-JP first); then step 6 scheduling (add the marketing agents to the routine).
+- DONE 2026-11-10: owner approved; filed cachedrop-website #131 (on-page fixes), #132 (France French), #133 (new guide, blocked by #132). Still open for the owner: funnel CSV export (docs/funnel-export.md); € vs $ on /fr/.
+- Next: then de-DE/es-ES/pt-BR/ja-JP (fix ASCII slug for ja-JP first); then step 6 scheduling (add the marketing agents to the routine).
 
 
 ## Session 3 update: read first

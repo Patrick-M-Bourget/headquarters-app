@@ -1,0 +1,250 @@
+{
+  "locale": "fr-FR",
+  "version": 1,
+  "created_at": "2026-11-10T04:21:44.596Z",
+  "generator_model": "claude-haiku-5-5",
+  "approved_by": null,
+  "approved_at": null,
+  "queries": [
+    {
+      "id": "q01",
+      "text": "Quel est le meilleur nettoyeur Mac pour libérer de la place sur mon disque ?",
+      "audience": "general",
+      "intent": "recommendation",
+      "keywords": [
+        "nettoyeur mac",
+        "libérer espace mac"
+      ]
+    },
+    {
+      "id": "q02",
+      "text": "Comment désinstaller complètement un plug-in VST sur Mac ?",
+      "audience": "producers",
+      "intent": "how_to",
+      "keywords": [
+        "désinstaller plug-in vst mac"
+      ]
+    },
+    {
+      "id": "q03",
+      "text": "Comment supprimer DerivedData de Xcode pour libérer de l'espace sur Mac ?",
+      "audience": "developers",
+      "intent": "how_to",
+      "keywords": [
+        "supprimer derived data xcode"
+      ]
+    },
+    {
+      "id": "q04",
+      "text": "Comment vider le cache de média Adobe Premiere Pro sur Mac ?",
+      "audience": "video_editors",
+      "intent": "how_to",
+      "keywords": [
+        "cache média premiere pro mac"
+      ]
+    },
+    {
+      "id": "q05",
+      "text": "Comment vider les Données système sur mon Mac qui prennent trop de place ?",
+      "audience": "general",
+      "intent": "how_to",
+      "keywords": [
+        "données système mac",
+        "vider données système"
+      ]
+    },
+    {
+      "id": "q06",
+      "text": "Quel est le meilleur outil pour gérer et supprimer mes plug-ins audio sur Mac ?",
+      "audience": "producers",
+      "intent": "recommendation",
+      "keywords": [
+        "gestionnaire plug-ins mac"
+      ]
+    },
+    {
+      "id": "q07",
+      "text": "Comment nettoyer les vieux dossiers node_modules qui encombrent mon Mac ?",
+      "audience": "developers",
+      "intent": "how_to",
+      "keywords": [
+        "nettoyer node_modules mac"
+      ]
+    },
+    {
+      "id": "q08",
+      "text": "Où et comment supprimer les fichiers de rendu de Final Cut Pro pour libérer de l'espace ?",
+      "audience": "video_editors",
+      "intent": "how_to",
+      "keywords": [
+        "fichiers rendu final cut mac",
+        "supprimer rendu final cut"
+      ]
+    },
+    {
+      "id": "q09",
+      "text": "Mon Mac est plein, comment savoir ce qui prend la place ?",
+      "audience": "general",
+      "intent": "how_to",
+      "keywords": [
+        "stockage mac plein"
+      ]
+    },
+    {
+      "id": "q10",
+      "text": "Où sont stockés les plug-ins AU et VST3 sur macOS et comment les supprimer proprement ?",
+      "audience": "producers",
+      "intent": "how_to",
+      "keywords": [
+        "emplacement plug-ins au mac"
+      ]
+    },
+    {
+      "id": "q11",
+      "text": "Quel outil pour vider les caches Docker sur Mac et récupérer de l'espace ?",
+      "audience": "developers",
+      "intent": "recommendation",
+      "keywords": [
+        "docker cache mac",
+        "docker espace disque mac"
+      ]
+    },
+    {
+      "id": "q12",
+      "text": "Quel est le meilleur outil pour supprimer les caches de montage vidéo sur Mac ?",
+      "audience": "video_editors",
+      "intent": "recommendation",
+      "keywords": [
+        "nettoyer cache montage vidéo mac"
+      ]
+    },
+    {
+      "id": "q13",
+      "text": "Quelle est la meilleure application pour désinstaller complètement un logiciel sur Mac ?",
+      "audience": "general",
+      "intent": "recommendation",
+      "keywords": [
+        "désinstaller application mac"
+      ]
+    },
+    {
+      "id": "q14",
+      "text": "Comment vider le cache d'Ableton Live sur Mac sans perdre mes licences ?",
+      "audience": "producers",
+      "intent": "how_to",
+      "keywords": [
+        "vider cache ableton mac"
+      ]
+    },
+    {
+      "id": "q15",
+      "text": "Quel est le meilleur nettoyeur Mac pour développeur qui supprime les caches Xcode en toute sécurité ?",
+      "audience": "developers",
+      "intent": "recommendation",
+      "keywords": [
+        "nettoyeur développeur mac",
+        "nettoyer xcode mac"
+      ]
+    },
+    {
+      "id": "q16",
+      "text": "Quelle alternative à AppCleaner pour supprimer les restes de logiciels de montage vidéo ?",
+      "audience": "video_editors",
+      "intent": "alternative",
+      "keywords": [
+        "alternative appcleaner",
+        "désinstaller premiere mac"
+      ]
+    },
+    {
+      "id": "q17",
+      "text": "Comment supprimer les fichiers restants d'une application après l'avoir mise à la Corbeille ?",
+      "audience": "general",
+      "intent": "how_to",
+      "keywords": [
+        "restes application mac",
+        "supprimer fichiers application mac"
+      ]
+    },
+    {
+      "id": "q18",
+      "text": "Quelle alternative à CleanMyMac pour nettoyer un Mac de producteur de musique ?",
+      "audience": "producers",
+      "intent": "alternative",
+      "keywords": [
+        "alternative cleanmymac musique",
+        "cleanmymac producteur"
+      ]
+    },
+    {
+      "id": "q19",
+      "text": "Comment faire de la place sur un Mac de développeur quand le disque est plein à cause de Xcode ?",
+      "audience": "developers",
+      "intent": "how_to",
+      "keywords": [
+        "xcode disque plein",
+        "xcode prend trop de place"
+      ]
+    },
+    {
+      "id": "q20",
+      "text": "Comment libérer de l'espace sur un Mac de monteur vidéo quand le disque externe est plein ?",
+      "audience": "video_editors",
+      "intent": "how_to",
+      "keywords": [
+        "disque externe plein mac",
+        "monteur vidéo espace disque"
+      ]
+    },
+    {
+      "id": "q21",
+      "text": "AppCleaner ou CleanMyMac, lequel choisir pour nettoyer et désinstaller des apps sur Mac ?",
+      "audience": "general",
+      "intent": "comparison",
+      "keywords": [
+        "appcleaner vs cleanmymac",
+        "cleanmymac avis"
+      ]
+    },
+    {
+      "id": "q22",
+      "text": "Quel désinstalleur pour supprimer les plug-ins AAX et CLAP sans laisser de fichiers ?",
+      "audience": "producers",
+      "intent": "recommendation",
+      "keywords": [
+        "désinstalleur plug-in aax",
+        "désinstaller plug-in clap mac"
+      ]
+    },
+    {
+      "id": "q23",
+      "text": "DaisyDisk ou CleanMyMac pour trouver les gros dossiers de développement sur Mac ?",
+      "audience": "developers",
+      "intent": "comparison",
+      "keywords": [
+        "daisydisk vs cleanmymac",
+        "daisydisk ou cleanmymac"
+      ]
+    },
+    {
+      "id": "q24",
+      "text": "CleanMyMac ou DaisyDisk pour récupérer de l'espace après des projets vidéo sur Mac ?",
+      "audience": "video_editors",
+      "intent": "comparison",
+      "keywords": [
+        "cleanmymac ou daisydisk",
+        "daisydisk vidéo"
+      ]
+    },
+    {
+      "id": "q25",
+      "text": "Quelle alternative gratuite à CleanMyMac pour faire de la place sur Mac ?",
+      "audience": "general",
+      "intent": "alternative",
+      "keywords": [
+        "alternative cleanmymac",
+        "cleanmymac gratuit"
+      ]
+    }
+  ]
+}

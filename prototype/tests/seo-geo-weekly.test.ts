@@ -28,6 +28,9 @@ test("stage 2: optimizer only when gaps changed beyond numbers; funnel only with
   assert.deepEqual(changed.map(t => t.agent), ["On-page Optimizer", "Funnel Analyst"]);
   assert.equal(changed[0].params.run, "research/x");
   assert.equal(stage2([{ locale: "fr-FR", dir: "d", gaps: prev, previousGaps: null }], "w", null).length, 1); // first audit
+  const churn = ["/: JSON-LD types used by 2+ competitors but not here: Article", "/pricing/: title is 70 chars"];
+  const before = ["/: JSON-LD types used by 2+ competitors but not here: BreadcrumbList, BlogPosting", "/pricing/: title is 70 chars"];
+  assert.equal(stage2([{ locale: "en-US", dir: "d", gaps: churn, previousGaps: before }], "w", null).length, 0); // competitor churn only
 });
 
 test("issue parameters: key: value lines, backticks and list bullets allowed, prose ignored", () => {

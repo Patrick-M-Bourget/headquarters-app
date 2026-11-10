@@ -4,7 +4,7 @@
 //   a subtask still open            → nothing (woken early)
 //   stage 1 closed, stage 2 needed  → open stage 2: On-page Optimizer where gaps changed, Funnel Analyst if this week's CSV exists
 //   everything closed               → write research/seo-geo/weeks/<week>/report.{md,json}; the issue goes to owner review
-// A failed subtask stays `blocked` and holds the report back: cancel it in Paperclip to release it (the report then marks
+// While subtasks run, the issue is `blocked` by them (Paperclip's dependency wait). A failed subtask stays `blocked` and holds the report back: cancel it in Paperclip to release it (the report then marks
 // that market's run as older). Approve or drop proposals in the review; Claude files the website tickets and updates the ledger.
 //
 //   By hand: node runners/seo-geo/weekly.ts [--week 2026-11-09] [--locales en-US,fr-FR]   (report only, from saved runs)
@@ -30,14 +30,19 @@ function writeReport(week: string, locales: Locale[], issue: { id: string; ident
   return { report, md, path: `research/seo-geo/weeks/${week}/report.md` };
 }
 
+/** Paperclip's way to wait (recovery treats an issue left in_progress as stuck): blocked by the open subtasks; it wakes us when they close. */
+const waitOn = (parentId: string, ids: string[]) => patchIssue(parentId, { status: "blocked", blockedByIssueIds: ids });
+
 async function openTasks(parent: { id: string; identifier?: string }, tasks: Task[], stage: number) {
   const agents = await listAgents();
+  const ids: string[] = [];
   for (const t of tasks) {
     const a = agents.find(x => x.name === t.agent);
     if (!a) throw new Error(`no agent named "${t.agent}" in Paperclip`);
     const params = Object.entries(t.params).map(([k, v]) => `${k}: ${v}`).join("\n");
-    await createChild(parent.id, t.title, `${params}\nstage: ${stage}\n\nSubtask of the weekly report ${parent.identifier ?? parent.id}. Parameters are the \`key: value\` lines above.`, a.id);
+    ids.push((await createChild(parent.id, t.title, `${params}\nstage: ${stage}\n\nSubtask of the weekly report ${parent.identifier ?? parent.id}. Parameters are the \`key: value\` lines above.`, a.id)).id);
   }
+  await waitOn(parent.id, ids);
 }
 
 async function main() {
@@ -66,7 +71,7 @@ async function main() {
       return;
     }
     const open = children.filter(c => !TERMINAL.includes(c.status));
-    if (open.length) { console.log(`${open.length} subtask(s) still open; waiting`); return; }
+    if (open.length) { await waitOn(issue.id, open.map(c => c.id)); console.log(`${open.length} subtask(s) still open; waiting`); return; }
     if (!children.some(c => /\bstage: 2\b/.test(c.description ?? ""))) {
       const runs = loadRuns(root);
       const onpage = SITE_LOCALES.filter(l => due.includes(l)).map(l => ({ locale: l, o: localeFacts(root, runs, l, week).onpage }))

@@ -42,11 +42,15 @@ export function stage1(locales: Locale[], week: string): Task[] {
 /** A run's gaps by stable key (no numbers, no model wording), so "1065 words vs median 3194" and "1060 words vs median 3188" are the same gap. */
 export const gapSignature = (gaps: string[]) => [...new Set(gaps.map(gapKey))].sort();
 
+/** Gaps about the page itself. Gaps relative to competitors ("JSON-LD types used by 2+ competitors", "words vs competitor median")
+ * move whenever the search returns different competitor pages, which says nothing new about cachedrop.io (first manual run, 2026-11-10). */
+export const ownGaps = (gaps: string[]) => gaps.filter(g => !/competitor/i.test(g));
+
 /** Stage 2 (marketing agents): the on-page optimizer only when a page's gaps changed since the previous full audit; the funnel analyst only when the owner dropped this week's CSV. */
 export function stage2(onpage: { locale: Locale; dir: string; gaps: string[]; previousGaps: string[] | null }[], week: string, funnelCsv: string | null): Task[] {
   const out: Task[] = [];
   for (const o of onpage) {
-    const changed = !o.previousGaps || JSON.stringify(gapSignature(o.gaps)) !== JSON.stringify(gapSignature(o.previousGaps));
+    const changed = !o.previousGaps || JSON.stringify(gapSignature(ownGaps(o.gaps))) !== JSON.stringify(gapSignature(ownGaps(o.previousGaps)));
     if (changed) out.push({ agent: "On-page Optimizer", title: `On-page fixes · ${o.locale} · week ${week}`, params: { run: o.dir } });
   }
   if (funnelCsv) out.push({ agent: "Funnel Analyst", title: `Funnel · week ${week}`, params: { csv: funnelCsv, week } });

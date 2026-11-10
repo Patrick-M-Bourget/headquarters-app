@@ -21,7 +21,7 @@ test("code fixes: fr-CA on a France page points at the existing ticket; JSON-LD 
   const lang = f.find(x => x.field === "html_lang")!;
   assert.equal(lang.proposed, '<html lang="fr">'); assert.equal(lang.existing_ticket, "cachedrop-website #130");
   const ld = f.filter(x => x.field === "json_ld").map(x => x.proposed);
-  assert.equal(ld.length, 1); assert.match(ld[0], /BreadcrumbList/); // no Article; no HowTo on the home page
+  assert.equal(ld.length, 0); // no Article; no HowTo or BreadcrumbList on the home page
   assert.deepEqual(codeFixes(audit({ checks: { ...checks, html_lang: "fr" } }), [], "fr-FR"), []);
   assert.equal(codeFixes(audit({ url: "https://cachedrop.io/", checks: { ...checks, html_lang: "en" } }), [], "en-US").length, 0);
 });

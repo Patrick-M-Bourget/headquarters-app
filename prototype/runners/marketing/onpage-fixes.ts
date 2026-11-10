@@ -27,6 +27,9 @@ const LD_ALLOWED = ["BreadcrumbList", "FAQPage", "HowTo"];
 /** Website decisions that fix a field's wording today: a change there needs the owner to amend the decision. */
 const DECISION_BOUND: { path: RegExp; field: OnpageFix["field"]; decision: string; rule: string }[] = [
   { path: /\/cleanmymac-alternative\/$/, field: "title", decision: "website Decision 54", rule: "Title is \"CleanMyMac alternative you pay for once | CacheDrop\"." },
+  { path: /^\/(fr\/)?$/, field: "opening", decision: "website Decision 51", rule: "The homepage hero is \"Get your Mac's space back.\" with Download for Mac and Buy only." },
+  { path: /\/cleanmymac-alternative\/$/, field: "opening", decision: "website Decision 54", rule: "The hero and price table are set by the decision." },
+  { path: /\/cleanmymac-alternative\/$/, field: "meta_description", decision: "website Decision 54", rule: "The meta description is built from price." },
   { path: /\/pricing\/$/, field: "meta_description", decision: "website Decision 47", rule: "Must say \"$29.99 once, now $19.99 for a limited time\" (« 29,99 $ une seule fois, maintenant 19,99 $ pour un temps limité »)." },
 ];
 const KNOWN_TICKETS: { test: (lang: string | null | undefined, locale: Locale) => boolean; field: OnpageFix["field"]; ticket: string }[] = [
@@ -53,7 +56,7 @@ export function codeFixes(a: PageAudit, competitors: PageAudit[], locale: Locale
   }
   const counts = new Map<string, number>();
   for (const p of competitors.filter(p => p.checks)) for (const t of new Set(p.checks!.json_ld_types)) counts.set(t, (counts.get(t) ?? 0) + 1);
-  for (const t of LD_ALLOWED) if ((counts.get(t) ?? 0) >= 2 && !c.json_ld_types.includes(t) && !(t === "HowTo" && pageKind(a.url) !== "guide"))
+  for (const t of LD_ALLOWED) if ((counts.get(t) ?? 0) >= 2 && !c.json_ld_types.includes(t) && !(t === "HowTo" && pageKind(a.url) !== "guide") && !(t === "BreadcrumbList" && pageKind(a.url) === "home"))
     out.push({ ...base, field: "json_ld", current: c.json_ld_types.join(", ") || null, proposed: `Add ${t} JSON-LD built from the page's existing ${t === "BreadcrumbList" ? "path (Home › page)" : t === "FAQPage" ? "FAQ section" : "manual steps"}.`, why: `${counts.get(t)} of the top competitor pages use ${t}.`, existing_ticket: null });
   return out;
 }

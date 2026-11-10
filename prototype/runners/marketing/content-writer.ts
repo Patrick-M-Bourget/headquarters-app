@@ -42,7 +42,7 @@ export type BriefInputs = {
 /** cachedrop.io guides by topic (slugs are the same in EN and FR). A new page on one of these topics would compete with the guide. */
 export const GUIDE_TOPICS: [string, RegExp][] = [
   ["/clear-adobe-media-cache-mac/", /premiere|adobe|after effects|media cache|cache de média/i],
-  ["/uninstall-audio-plugins-mac/", /plug-?ins?|\bvst3?\b|\bau\b|\baax\b|\bclap\b/i],
+  ["/uninstall-audio-plugins-mac/", /ableton|plug-?ins?|\bvst3?\b|\bau\b|\baax\b|\bclap\b/i],
   ["/clear-system-data-mac/", /system data|données système/i],
   ["/clear-mac-developer-caches/", /xcode|deriveddata|node_modules|docker|développeur|developer/i],
   ["/uninstall-apps-mac/", /uninstall\w* (an |any )?apps?|désinstall\w*.*(application|logiciel)|leftover|restes|fichiers restants|app uninstaller/i],

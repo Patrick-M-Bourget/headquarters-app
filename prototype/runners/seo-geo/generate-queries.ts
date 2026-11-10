@@ -40,13 +40,13 @@ Rules:
 - Intents: recommendation ("best ... for ..."), how_to ("how do I ..."), comparison ("X vs Y"), alternative ("alternative to X").
 - Competitor names only in comparison or alternative questions. Use real, well-known Mac tools.
 - Every question must be one a person asks when deciding how to clean up, uninstall or free space, where a cleanup/uninstaller app could be the answer. No questions about choosing a DAW or video editor, or general performance.
-- Comparisons and alternatives: only between cleanup, uninstaller or disk-space tools (e.g. CleanMyMac, AppCleaner, DaisyDisk). Include the subscription vs one-time purchase question, and a CleanMyMac alternative question for music producers.
+- Comparisons and alternatives: only between cleanup, uninstaller or disk-space tools (e.g. CleanMyMac, AppCleaner, DaisyDisk). Include the subscription vs one-time purchase question, and a CleanMyMac alternative question for music producers. Mark exactly those two with required: true (all others false).
 - Natural phrasing, varied, no near-duplicates. 1-2 short search keywords per question (what they'd type into Google).
 - Return 36 candidates: 10 general, about 9 each for producers, developers and video_editors, with a mix of intents in each.
 - audience and intent are always the English labels above.${marketRules}`,
   });
   const r = await agent.generate(`The product (its own llms.txt):\n\n${llms}`, {
-    structuredOutput: { schema: z.object({ candidates: z.array(z.object({ text: z.string(), audience: z.string(), intent: z.string(), keywords: z.array(z.string()) })) }) },
+    structuredOutput: { schema: z.object({ candidates: z.array(z.object({ text: z.string(), audience: z.string(), intent: z.string(), keywords: z.array(z.string()), required: z.boolean() })) }) },
     maxSteps: 1,
   });
   const { queries, rejected, perAudience } = selectQueries(r.object.candidates);

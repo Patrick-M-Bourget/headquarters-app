@@ -1,7 +1,7 @@
 // Deterministic checks and selection for generated buyer queries (no model calls here).
 import { Audience, Intent, Query } from "../../packages/data-contracts/seo-geo.ts";
 
-export type Candidate = { text: string; audience: string; intent: string; keywords: string[] };
+export type Candidate = { text: string; audience: string; intent: string; keywords: string[]; required?: boolean }; // required: must survive the audience quota
 export type Rejection = { text: string; reason: string };
 
 // Words in any script; scripts written without spaces (Japanese, Chinese) are compared by character pairs.
@@ -50,7 +50,8 @@ export function selectQueries(cands: Candidate[], total = 25, perAudience = 6, d
   // Round-robin across audiences so no audience is crowded out by candidate order;
   // `quota` sets per-audience targets (general buyers are the largest group).
   const order = ["general", "producers", "developers", "video_editors"];
-  const queues = new Map(order.map(a => [a, kept.filter(c => c.audience === a)]));
+  // Required questions go to the front of their audience queue, so the quota cannot drop them (fr-FR v1 lost the subscription question that way).
+  const queues = new Map(order.map(a => [a, kept.filter(c => c.audience === a).sort((x, y) => +!!y.required - +!!x.required)]));
   const count: Record<string, number> = {};
   const chosen: Candidate[] = [];
   let progressed = true;
@@ -65,6 +66,6 @@ export function selectQueries(cands: Candidate[], total = 25, perAudience = 6, d
     }
   }
   for (const q of queues.values()) for (const c of q) rejected.push({ text: c.text, reason: `not selected (audience ${c.audience} at quota)` });
-  const queries: Query[] = chosen.map((c, i) => Query.parse({ ...c, id: `q${String(i + 1).padStart(2, "0")}` }));
+  const queries: Query[] = chosen.map(({ required: _, ...c }, i) => Query.parse({ ...c, id: `q${String(i + 1).padStart(2, "0")}` }));
   return { queries, rejected, perAudience: count };
 }

@@ -48,3 +48,12 @@ test("near-duplicate and brand checks work in French and Japanese", () => {
   assert.match(checkCandidate(c("キャッシュドロップは安全ですか"))!, /CacheDrop/);
   assert.equal(checkCandidate(c("Macの容量不足を解消", "general", "how_to", ["容量不足 mac"])), null, "short Japanese question passes");
 });
+
+test("required questions survive the audience quota and the flag is not stored", () => {
+  const gen = Array.from({ length: 9 }, (_, i) => c(["storage full", "system data", "uninstall apps", "leftover files", "disk usage", "purgeable space", "trash leftovers", "login items", "large files"][i] + " on my Mac, what do I do?", "general", "how_to"));
+  const req = { ...c("Which Mac cleaner can I buy once instead of a subscription?"), required: true };
+  const { queries } = selectQueries([...gen, req], 25, 6, 0.7, { general: 7 });
+  assert.ok(queries.some(q => q.text === req.text), "required question kept although it came last");
+  assert.equal(queries.filter(q => q.audience === "general").length, 7);
+  assert.ok(queries.every(q => !("required" in q)));
+});

@@ -55,7 +55,7 @@ export function mainText(html: string): string {
   const { document } = parseHTML(html);
   for (const el of [...document.querySelectorAll(CHROME)]) el.remove();
   // textContent runs blocks together ("<h1>Title</h1><p>Text" -> "TitleText"); separate them.
-  for (const el of [...document.querySelectorAll("p, div, section, main, article, li, h1, h2, h3, h4, h5, h6, td, th, tr, dt, dd, br, blockquote, pre, figcaption")]) el.append(document.createTextNode(" "));
+  for (const el of [...document.querySelectorAll("p, div, section, main, article, li, a, button, label, h1, h2, h3, h4, h5, h6, td, th, tr, dt, dd, br, blockquote, pre, figcaption")]) el.append(document.createTextNode(" "));
   const words = (el: any) => collapse(el?.textContent ?? "").split(" ").filter(Boolean).length;
   const main = [...document.querySelectorAll("main, [role=main], article")].sort((a, b) => words(b) - words(a))[0];
   return collapse((main && words(main) >= 100 ? main : document.body)?.textContent ?? "");
@@ -100,6 +100,12 @@ export const robotsReport = (robots: string | null) =>
 // Types every CMS emits (Yoast, Rank Math, ...): having them or not says nothing about the page.
 const BOILERPLATE_LD = new Set(["WebPage", "WebSite", "ImageObject", "Organization", "Person", "SearchAction", "EntryPoint", "ListItem", "ReadAction", "PropertyValueSpecification", "Thing", "(invalid JSON-LD)"]);
 
+/**
+ * The stable part of a gap message, for run-to-run diffs: drops the model's Why/Quote and the competitor list,
+ * and masks numbers (a page going from 138 to 141 words is the same gap, not a new one).
+ */
+export const gapKey = (g: string) => g.split(/ (?:Why|Quote|These answer it):/)[0].replace(/\d+/g, "#").trim();
+
 const median = (xs: number[]) => { const s = [...xs].sort((a, b) => a - b); return s.length ? s[Math.floor((s.length - 1) / 2)] : 0; };
 
 /** Gaps between an own page and the competitors that loaded, phrased as findings. Code only. */
@@ -124,9 +130,16 @@ export function findGaps(own: PageAudit, competitors: PageAudit[]): string[] {
     const mw = median(ok.map(p => p.checks!.word_count));
     if (mw > 0 && c.word_count < mw / 2) gaps.push(`${c.word_count} words vs competitor median ${mw}`);
   }
+  // Eval (eval/onpage-agreement.ts): "answers at all vs no" agrees with blind labels >= 90%; "yes vs partial"
+  // does not (the judge is stricter). So only "no" is a confirmed gap; partial/unverified need the owner's check.
   if (own.answer && own.answer.verdict !== "yes") {
     const better = competitors.filter(p => p.answer?.verdict === "yes").map(p => new URL(p.url).hostname.replace(/^www\./, ""));
-    gaps.push(`does not answer "${own.query_text}" directly near the top (${own.answer.verdict})${better.length ? `; these do: ${better.join(", ")}` : ""}`);
+    const why = own.answer.reason ? ` Why: ${own.answer.reason}` : "";
+    const quote = own.answer.quote ? ` Quote: "${own.answer.quote}"` : "";
+    const also = better.length ? ` These answer it: ${better.join(", ")}.` : "";
+    gaps.push(own.answer.verdict === "no"
+      ? `does not answer "${own.query_text}" near the top.${why}${also}`
+      : `needs check: answers "${own.query_text}" only partly near the top (${own.answer.verdict}).${why}${quote}${also}`);
   }
   return gaps;
 }

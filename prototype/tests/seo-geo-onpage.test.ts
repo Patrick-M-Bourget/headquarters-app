@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { findGaps, opening, pageChecks, robotsAllows, robotsReport } from "../runners/seo-geo/onpage-checks.ts";
+import { findGaps, gapKey, opening, pageChecks, robotsAllows, robotsReport } from "../runners/seo-geo/onpage-checks.ts";
 
 const html = `<!doctype html><html><head>
 <title>Uninstall audio plug-ins on Mac | CacheDrop</title>
@@ -58,7 +58,9 @@ test("gaps: own-page problems and differences from competitors", () => {
   assert.ok(g.includes("0 H1 elements (expected 1)"));
   assert.ok(g.includes("JSON-LD types used by 2+ competitors but not here: FAQPage"), "HowTo is on only one competitor; WebPage is boilerplate");
   assert.ok(g.includes("300 words vs competitor median 800"), "failed competitor is ignored");
-  assert.ok(g.some(x => x.includes("(partial); these do: a.com")));
+  assert.ok(g.some(x => x.startsWith("needs check: answers") && x.includes("(partial).") && x.includes("These answer it: a.com.")));
+  const no = findGaps(audit(url, good, { verdict: "no", quote: null, reason: "Only a product pitch.", model: "m" }) as any, []);
+  assert.deepEqual(no, ['does not answer "how do I remove old audio plug-ins from my mac" near the top. Why: Only a product pitch.'], "no = confirmed gap, with reason");
   assert.deepEqual(findGaps(audit(url, good, { verdict: "yes", quote: "q", model: "m" }) as any, []), []);
 });
 
@@ -71,4 +73,15 @@ test("mainText drops site chrome and prefers the main element", async () => {
   assert.ok(t.startsWith("Title w0 w1"));
   assert.ok(!/Logo|Home Pricing|gtm|Promo|Copyright/.test(t));
   assert.equal(mainText(`<html><body><nav>Menu</nav><main>short</main><p>Body text</p></body></html>`), "short Body text", "a near-empty main falls back to the body");
+});
+
+test("gapKey keeps the stable part of a gap for run-to-run diffs", () => {
+  assert.equal(gapKey('needs check: answers "q" only partly near the top (partial). Why: varies. Quote: "x" These answer it: a.com.'), 'needs check: answers "q" only partly near the top (partial).');
+  assert.equal(gapKey("no meta description"), "no meta description");
+  assert.equal(gapKey("138 words vs competitor median 2103"), gapKey("141 words vs competitor median 2108"));
+});
+
+test("mainText separates inline buttons and links", async () => {
+  const { mainText } = await import("../runners/seo-geo/onpage-checks.ts");
+  assert.equal(mainText("<html><body><a href='/d'>Download for Mac</a><button>Buy</button></body></html>"), "Download for Mac Buy");
 });

@@ -80,6 +80,7 @@ export type PageChecks = z.infer<typeof PageChecks>;
 export const AnswerCheck = z.object({
   verdict: z.enum(["yes", "partial", "no", "unverified"]), // "unverified" = the model said yes/partial but its quote is not in the opening
   quote: z.string().max(400).nullable(),
+  reason: z.string().max(300).nullable().optional(), // the model's one-line why; absent in runs before 2026-11-09 eval
   model: z.string(),
 }).refine(a => a.verdict === "no" || a.verdict === "unverified" || !!a.quote, { message: "yes/partial needs a verified quote" });
 export type AnswerCheck = z.infer<typeof AnswerCheck>;

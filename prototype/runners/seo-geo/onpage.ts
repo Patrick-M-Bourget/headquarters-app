@@ -10,7 +10,7 @@ import { AnswerCheck, PageAudit, PageComparison, QuerySet, SiteAudit } from "../
 import { findIssue, paperclipEnabled, reportCost, reportToIssue } from "../../packages/paperclip-client/index.ts";
 import { fetchPage, type Page } from "../mastra/fetch.ts";
 import { ANSWER_MODEL, judgeOpening } from "./answer-check.ts";
-import { findGaps, mainText, opening, pageChecks, robotsReport } from "./onpage-checks.ts";
+import { findGaps, gapKey, mainText, opening, pageChecks, robotsReport } from "./onpage-checks.ts";
 
 const arg = (n: string) => { const i = process.argv.indexOf(n); return i > 0 ? process.argv[i + 1] : undefined; };
 const root = new URL("../../", import.meta.url).pathname;
@@ -108,7 +108,8 @@ try {
     .sort((a, b) => (a.s.finished_at < b.s.finished_at ? 1 : -1))[0]?.d : undefined;
   let delta: { previous_run: string; new_gaps: string[]; fixed_gaps: string[] } | null = null;
   if (prevDir && pages.length === mapping.pages.length) {
-    const key = (c: PageComparison) => c.gaps.map(g => `${new URL(c.page.url).pathname}: ${g}`);
+    // Compare only the stable part of a gap: the model's reason/quote and the competitor list change wording each run.
+    const key = (c: PageComparison) => c.gaps.map(g => `${new URL(c.page.url).pathname}: ${gapKey(g)}`);
     const prev = new Set<string>((JSON.parse(readFileSync(join(runsDir, prevDir, "audits.json"), "utf8")).pages as PageComparison[]).flatMap(key));
     const now = new Set(comparisons.flatMap(key));
     delta = { previous_run: prevDir, new_gaps: [...now].filter(g => !prev.has(g)), fixed_gaps: [...prev].filter(g => !now.has(g)) };

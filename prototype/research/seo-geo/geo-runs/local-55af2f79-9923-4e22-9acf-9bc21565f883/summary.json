@@ -1,0 +1,135 @@
+{
+  "run_id": "local-55af2f79-9923-4e22-9acf-9bc21565f883",
+  "locale": "fr-FR",
+  "query_set_version": 1,
+  "market_signals": {
+    "claude_country": "FR",
+    "gemini": "question language only"
+  },
+  "engines": [
+    "claude",
+    "gemini"
+  ],
+  "answers": 50,
+  "failed": 0,
+  "cachedrop": {
+    "mentioned": 0,
+    "recommended": 0,
+    "top_pick": 0,
+    "cited": 0,
+    "of": 50
+  },
+  "by_engine": {
+    "claude": {
+      "n": 25,
+      "mentioned": 0,
+      "recommended": 0,
+      "cited": 0
+    },
+    "gemini": {
+      "n": 25,
+      "mentioned": 0,
+      "recommended": 0,
+      "cited": 0
+    }
+  },
+  "by_audience": {
+    "general": {
+      "n": 16,
+      "mentioned": 0,
+      "recommended": 0,
+      "cited": 0
+    },
+    "producers": {
+      "n": 12,
+      "mentioned": 0,
+      "recommended": 0,
+      "cited": 0
+    },
+    "developers": {
+      "n": 12,
+      "mentioned": 0,
+      "recommended": 0,
+      "cited": 0
+    },
+    "video_editors": {
+      "n": 10,
+      "mentioned": 0,
+      "recommended": 0,
+      "cited": 0
+    }
+  },
+  "competitors_top_pick": {
+    "appcleaner": 9,
+    "cleanmymac": 3,
+    "audio-plugin-uninstaller": 3,
+    "devcleaner": 3,
+    "npkill": 2,
+    "pearcleaner": 2,
+    "daisydisk": 2,
+    "plugin-station": 1,
+    "maintenance": 1,
+    "cachecut": 1,
+    "final-cut-library-manager": 1,
+    "buhocleaner": 1,
+    "onyx": 1
+  },
+  "competitors_recommended": {
+    "appcleaner": 16,
+    "cleanmymac": 12,
+    "pearcleaner": 11,
+    "daisydisk": 10,
+    "onyx": 8,
+    "grandperspective": 8,
+    "omnidisksweeper": 5,
+    "mole": 5,
+    "native-access": 4,
+    "waves-central": 4,
+    "arturia-software-center": 4,
+    "audio-plugin-uninstaller": 4,
+    "devcleaner": 4,
+    "sensei": 3,
+    "npkill": 3,
+    "app-cleaner-uninstaller": 3,
+    "crumb": 3,
+    "buhocleaner": 2,
+    "trashme-3": 2,
+    "maccleaner-pro": 2,
+    "appzapper": 1,
+    "izotope-product-portal": 1,
+    "ik-product-manager": 1,
+    "plugin-station": 1,
+    "uninstallpkg": 1,
+    "plugoff": 1,
+    "owlplug": 1,
+    "kondo": 1,
+    "maintenance": 1,
+    "cocktail": 1,
+    "ua-connect": 1,
+    "product-portal": 1,
+    "lazydocker": 1,
+    "orbstack": 1,
+    "cachecut": 1,
+    "deepcleanmac": 1,
+    "final-cut-library-manager": 1,
+    "cleanmydev": 1,
+    "purge": 1,
+    "adobe-creative-cloud-cleaner-tool": 1,
+    "uninstall-resolve": 1,
+    "vstcleaner": 1,
+    "ncdu": 1,
+    "gdu": 1,
+    "puremac": 1,
+    "disk-inventory-x": 1,
+    "ccleaner": 1,
+    "kudu": 1,
+    "macoscleaner": 1
+  },
+  "unverified_judgements": [],
+  "cost_usd": 0.883,
+  "searches": 43,
+  "seconds": 283,
+  "errors": [],
+  "delta": null,
+  "finished_at": "2026-11-10T04:31:23.186Z"
+}

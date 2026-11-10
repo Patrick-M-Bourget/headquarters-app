@@ -1,0 +1,17 @@
+{
+  "run_id": "8ed1c833-7ded-4e0d-acde-104c07eb78bd",
+  "runner": "claude-agent",
+  "model": "claude-sonnet-5-5",
+  "started_at": "2026-11-10T01:54:41Z",
+  "finished_at": "2026-11-10T02:05:00Z",
+  "status": "succeeded",
+  "paperclip": {
+    "issue_id": "0ec39ee9-70f4-47aa-ae13-39ab558fb957",
+    "run_id": "8ed1c833-7ded-4e0d-acde-104c07eb78bd"
+  },
+  "errors": [
+    "fetch failed (HTTP 403): https://macpaw.com/store",
+    "fetch failed (HTTP 404): https://macpaw.com/cleanmymac/pricing (guessed URL; page does not exist)",
+    "fetch failed (HTTP 404): https://daisydiskapp.com/features (guessed URL; page does not exist)"
+  ]
+}

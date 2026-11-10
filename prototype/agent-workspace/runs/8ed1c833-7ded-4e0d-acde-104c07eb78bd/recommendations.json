@@ -1,0 +1,59 @@
+[
+  {
+    "title": "Lead with 'one-time purchase, no subscription'",
+    "rationale": "DaisyDisk ($9.99) and Mole ($19) explicitly sell one-time with no subscription, while CleanMyMac, MacCleaner Pro, Hyperspace and Sensei all pair a one-time option with subscriptions. A plain no-subscription promise may stand out against the suite vendors, but DaisyDisk and Mole already own that message at the low end.",
+    "observation_refs": [
+      {"competitor_id": "daisydisk", "field": "pricing_model"},
+      {"competitor_id": "mole", "field": "pricing_model"},
+      {"competitor_id": "cleanmymac", "field": "pricing_model"},
+      {"competitor_id": "maccleaner-pro", "field": "pricing_model"}
+    ],
+    "status": "hypothesis"
+  },
+  {
+    "title": "Price in the gap between $19 and ~$60-90 one-time",
+    "rationale": "Verified one-time prices: DaisyDisk $9.99, Mole $19, Sensei $59, Hyperspace lifetime $49.99, MacCleaner Pro $85.95, CleanMyMac $89.99 (App Store price). There is a populated low tier and a populated suite tier; a price around $29-$49 for a full cleanup-plus-uninstaller app may read as fuller than Mole but cheaper than the suites.",
+    "observation_refs": [
+      {"competitor_id": "daisydisk", "field": "price_one_time_usd"},
+      {"competitor_id": "mole", "field": "price_one_time_usd"},
+      {"competitor_id": "hyperspace", "field": "price_one_time_usd"},
+      {"competitor_id": "sensei", "field": "price_one_time_usd"},
+      {"competitor_id": "maccleaner-pro", "field": "price_one_time_usd"},
+      {"competitor_id": "cleanmymac", "field": "price_one_time_usd"}
+    ],
+    "status": "hypothesis"
+  },
+  {
+    "title": "Combine cleanup, uninstaller and disk map in one native app",
+    "rationale": "Most verified products cover one or two of these: AppCleaner and Pearcleaner uninstall, DaisyDisk and GrandPerspective visualize. Only Mole was verified covering cleanup, uninstall and a disk map together, at $19. A bundle priced above Mole but with a stronger story could be viable; Mole is the closest direct threat.",
+    "observation_refs": [
+      {"competitor_id": "appcleaner", "field": "feature_uninstall"},
+      {"competitor_id": "daisydisk", "field": "feature_disk_map"},
+      {"competitor_id": "mole", "field": "feature_cleanup"},
+      {"competitor_id": "mole", "field": "feature_uninstall"},
+      {"competitor_id": "mole", "field": "feature_disk_map"}
+    ],
+    "status": "hypothesis"
+  },
+  {
+    "title": "Offer a free scan-first trial rather than a short timed trial",
+    "rationale": "Hyperspace allows unlimited free scanning and Mole lets each paid tool run twice free, while MacCleaner Pro gives only a 2-day trial and CleanMyMac a 7-day trial. Showing reclaimable space before purchase may build trust in a category where users worry about deleting the wrong files.",
+    "observation_refs": [
+      {"competitor_id": "hyperspace", "field": "free_trial"},
+      {"competitor_id": "mole", "field": "free_trial"},
+      {"competitor_id": "maccleaner-pro", "field": "free_trial"},
+      {"competitor_id": "cleanmymac", "field": "free_trial"}
+    ],
+    "status": "hypothesis"
+  },
+  {
+    "title": "Treat developer-tool cleanup as a feature to test, not yet a proven gap",
+    "rationale": "Mole was verified covering developer-tool and build-output cleanup; for the other nine competitors the field is unknown because their pages do not mention it, which is not evidence they lack it. Before treating this as a differentiator, check the other competitors' docs and release notes in a follow-up run.",
+    "observation_refs": [
+      {"competitor_id": "mole", "field": "feature_developer_cleanup"},
+      {"competitor_id": "cleanmymac", "field": "feature_developer_cleanup"},
+      {"competitor_id": "maccleaner-pro", "field": "feature_developer_cleanup"}
+    ],
+    "status": "hypothesis"
+  }
+]

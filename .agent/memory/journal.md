@@ -20,3 +20,8 @@
   - Weaknesses: it mostly fetched homepages only (shallow), and WebFetch returns model summaries, so the "verbatim" evidence quotes are really summary text. The OmniDiskSweeper seed URL (omnigroup.com/more) is a generic page, so every field came back unknown. The CleanMyMac store returned 403.
   - The single mismatch (GrandPerspective distribution open_source vs both) is an enum ambiguity: "both" doesn't cover open source + App Store.
   - The "investigate developer cleanup" recommendation contradicts the Oct 22 research (Pearcleaner, Mole); it comes from the shallow fetch.
+- Board review → changes requested on HEA-5 (via API PATCH status+comment). The agent woke at once and wrote run 2 (8ed1c833) in about 4 min, about $1.36. Total agent spend $3.02.
+  - Run 2: 37 key fields, 28 match / 2 mismatch / 7 unknown → 93.3% accuracy, 81.1% coverage (run 1: 96.2% / 70.3%). Verified 70/120 (run 1: 54).
+  - Both mismatches are key/contract problems, not agent errors. CleanMyMac one-time $89.99 is the Mac App Store price, confirmed live 2026-11-09; the key's $119.95 is MacPaw's direct store (403 to the agent). GrandPerspective is the open_source enum gap.
+  - Contract TODO: add a price channel (direct vs app store) and a distribution value covering "open source + App Store".
+  - The agent disclosed the channel in its evidence, separated a search snippet from fetched data, and reframed the dev-cleanup recommendation as "test, not a proven gap".

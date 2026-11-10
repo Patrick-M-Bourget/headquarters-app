@@ -1,0 +1,22 @@
+[
+  {"id": "cleanmymac-1", "url": "https://macpaw.com/cleanmymac", "title": "CleanMyMac homepage", "retrieved_at": "2026-11-10T02:00:00Z"},
+  {"id": "cleanmymac-2", "url": "https://macpaw.com/support/cleanmymac/knowledgebase/editions", "title": "MacPaw support: where to get CleanMyMac (editions)", "retrieved_at": "2026-11-10T02:00:00Z"},
+  {"id": "cleanmymac-3", "url": "https://macpaw.com/support/cleanmymac/knowledgebase/purchase-options", "title": "MacPaw support: CleanMyMac purchase options", "retrieved_at": "2026-11-10T02:00:00Z"},
+  {"id": "cleanmymac-4", "url": "https://apps.apple.com/us/app/cleanmymac/id1339170533?mt=12", "title": "CleanMyMac on the Mac App Store (US)", "retrieved_at": "2026-11-10T02:00:00Z"},
+  {"id": "daisydisk-1", "url": "https://daisydiskapp.com/", "title": "DaisyDisk homepage", "retrieved_at": "2026-11-10T02:00:00Z"},
+  {"id": "daisydisk-2", "url": "https://daisydiskapp.com/support/pricing/", "title": "DaisyDisk pricing", "retrieved_at": "2026-11-10T02:00:00Z"},
+  {"id": "maccleaner-pro-1", "url": "https://nektony.com/mac-cleaner-pro", "title": "MacCleaner Pro homepage", "retrieved_at": "2026-11-10T02:00:00Z"},
+  {"id": "maccleaner-pro-2", "url": "https://nektony.com/mac-cleaner-pro/buy", "title": "MacCleaner Pro buy page", "retrieved_at": "2026-11-10T02:00:00Z"},
+  {"id": "grandperspective-1", "url": "https://grandperspectiv.sourceforge.net/", "title": "GrandPerspective homepage", "retrieved_at": "2026-11-10T02:00:00Z"},
+  {"id": "omnidisksweeper-1", "url": "https://www.omnigroup.com/more/", "title": "Omni Labs page (OmniDiskSweeper section)", "retrieved_at": "2026-11-10T02:00:00Z"},
+  {"id": "omnidisksweeper-2", "url": "https://legacy.store.omnigroup.com/", "title": "Omni legacy store page", "retrieved_at": "2026-11-10T02:00:00Z"},
+  {"id": "appcleaner-1", "url": "https://freemacsoft.net/appcleaner/", "title": "AppCleaner homepage", "retrieved_at": "2026-11-10T02:00:00Z"},
+  {"id": "pearcleaner-1", "url": "https://github.com/alienator88/Pearcleaner", "title": "Pearcleaner GitHub repo", "retrieved_at": "2026-11-10T02:00:00Z"},
+  {"id": "mole-1", "url": "https://mole.fit/", "title": "Mole homepage", "retrieved_at": "2026-11-10T02:00:00Z"},
+  {"id": "mole-2", "url": "https://mole.fit/pricing.md", "title": "Mole pricing", "retrieved_at": "2026-11-10T02:00:00Z"},
+  {"id": "mole-3", "url": "https://mole.fit/mac-cleaner", "title": "Mole Mac cleaner feature page", "retrieved_at": "2026-11-10T02:00:00Z"},
+  {"id": "hyperspace-1", "url": "https://hypercritical.co/hyperspace/", "title": "Hyperspace homepage", "retrieved_at": "2026-11-10T02:00:00Z"},
+  {"id": "hyperspace-2", "url": "https://apps.apple.com/us/app/hyperspace-reclaim-disk-space/id6739505345?mt=12", "title": "Hyperspace on the Mac App Store (US)", "retrieved_at": "2026-11-10T02:00:00Z"},
+  {"id": "sensei-1", "url": "https://cindori.com/sensei", "title": "Sensei homepage", "retrieved_at": "2026-11-10T02:00:00Z"},
+  {"id": "sensei-2", "url": "https://cindori.com/store/sensei", "title": "Sensei store page", "retrieved_at": "2026-11-10T02:00:00Z"}
+]

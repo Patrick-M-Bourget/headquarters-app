@@ -1,0 +1,139 @@
+{
+  "run_id": "local-e2babdc1",
+  "site": "sc-domain:cachedrop.io",
+  "window": {
+    "start": "2026-10-11",
+    "end": "2026-11-07"
+  },
+  "previous_window": {
+    "start": "2026-09-13",
+    "end": "2026-10-10"
+  },
+  "locales": [
+    {
+      "locale": "en-US",
+      "totals": {
+        "clicks": 2,
+        "impressions": 79,
+        "ctr": 0.0253,
+        "position": 12.2
+      },
+      "previous_totals": {
+        "clicks": 0,
+        "impressions": 0,
+        "ctr": 0,
+        "position": null
+      },
+      "queries": 8,
+      "query_bands": {
+        "top10": 3,
+        "p11_20": 0,
+        "p21_50": 1,
+        "p51_plus": 4
+      },
+      "previous_query_bands": {
+        "top10": 0,
+        "p11_20": 0,
+        "p21_50": 0,
+        "p51_plus": 0
+      },
+      "striking_queries": 1,
+      "pages_with_impressions": 9,
+      "pages_no_clicks": [
+        "/cleanmymac-alternative/",
+        "/clear-mac-developer-caches/",
+        "/license-agreement/",
+        "/privacy/",
+        "/refund-policy/",
+        "/terms-of-sale/",
+        "/uninstall-audio-plugins-mac/"
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "totals": {
+        "clicks": 0,
+        "impressions": 49,
+        "ctr": 0,
+        "position": 22.4
+      },
+      "previous_totals": {
+        "clicks": 0,
+        "impressions": 0,
+        "ctr": 0,
+        "position": null
+      },
+      "queries": 14,
+      "query_bands": {
+        "top10": 0,
+        "p11_20": 0,
+        "p21_50": 11,
+        "p51_plus": 3
+      },
+      "previous_query_bands": {
+        "top10": 0,
+        "p11_20": 0,
+        "p21_50": 0,
+        "p51_plus": 0
+      },
+      "striking_queries": 8,
+      "pages_with_impressions": 7,
+      "pages_no_clicks": [
+        "/fr/",
+        "/fr/clear-adobe-media-cache-mac/",
+        "/fr/license-agreement/",
+        "/fr/privacy/",
+        "/fr/refund-policy/",
+        "/fr/uninstall-apps-mac/",
+        "/fr/uninstall-audio-plugins-mac/"
+      ]
+    }
+  ],
+  "indexing": [
+    {
+      "locale": "en-US",
+      "submitted": 12,
+      "indexed": 9,
+      "not_indexed": [
+        {
+          "path": "/clear-system-data-mac/",
+          "coverage": "URL is unknown to Google"
+        },
+        {
+          "path": "/uninstall-apps-mac/",
+          "coverage": "URL is unknown to Google"
+        },
+        {
+          "path": "/pricing/",
+          "coverage": "Discovered - currently not indexed"
+        }
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "submitted": 12,
+      "indexed": 10,
+      "not_indexed": [
+        {
+          "path": "/fr/clear-mac-developer-caches/",
+          "coverage": "Crawled - currently not indexed"
+        },
+        {
+          "path": "/fr/clear-system-data-mac/",
+          "coverage": "URL is unknown to Google"
+        }
+      ]
+    }
+  ],
+  "bing": {
+    "clicks": 0,
+    "impressions": 0,
+    "queries": 0,
+    "pages_with_inbound_links": 0,
+    "inbound_links": 0
+  },
+  "inspection_errors": 0,
+  "cost_usd": 0,
+  "seconds": 155,
+  "finished_at": "2026-11-10T22:09:13.467Z"
+}

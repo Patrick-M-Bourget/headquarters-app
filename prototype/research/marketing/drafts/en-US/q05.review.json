@@ -1,0 +1,77 @@
+{
+  "brief": {
+    "locale": "en-US",
+    "query_id": "q05",
+    "question": "how do I free up space on my mac when storage is full",
+    "audience": "general",
+    "intent": "how_to",
+    "keywords": [
+      "mac storage full",
+      "free up space"
+    ],
+    "kind": "new_page",
+    "own_page": null,
+    "page_kind": "guide",
+    "cachedrop_mentioned": 0,
+    "engines": 2,
+    "recommended": [
+      {
+        "brand": "cleanmymac",
+        "answers": 1
+      },
+      {
+        "brand": "daisydisk",
+        "answers": 1
+      },
+      {
+        "brand": "omnidisksweeper",
+        "answers": 1
+      },
+      {
+        "brand": "grandperspective",
+        "answers": 1
+      }
+    ],
+    "cited_domains": [],
+    "serp": [
+      {
+        "keyword": "mac storage full",
+        "top": [
+          "support.apple.com",
+          "reddit.com",
+          "discussions.apple.com",
+          "youtube.com",
+          "youtube.com"
+        ]
+      },
+      {
+        "keyword": "free up space",
+        "top": [
+          "support.google.com",
+          "support.microsoft.com",
+          "nytimes.com",
+          "youtube.com",
+          "play.google.com"
+        ]
+      }
+    ],
+    "related_pages": [],
+    "needs_decision": null,
+    "sources": {
+      "geo": "research/seo-geo/geo-runs/relabel-35013bd4",
+      "keywords": "research/seo-geo/keyword-runs/local-29c325f2",
+      "onpage": "research/seo-geo/onpage-runs/local-53fdc2a5"
+    }
+  },
+  "problems": [],
+  "fixes_applied": 0,
+  "review": {
+    "draft_id": "en-US-q05",
+    "reviewed_at": "2026-11-10T12:40:02.504Z",
+    "verdict": "pass",
+    "findings": [],
+    "model": "anthropic/claude-sonnet-5-5",
+    "facts_version": "2026-11-10 / 1.0.4",
+    "cost_usd": 0.00957
+  }
+}

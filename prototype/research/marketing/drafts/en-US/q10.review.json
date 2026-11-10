@@ -1,0 +1,67 @@
+{
+  "brief": {
+    "locale": "en-US",
+    "query_id": "q10",
+    "question": "how to clear ableton live cache on mac",
+    "audience": "producers",
+    "intent": "how_to",
+    "keywords": [
+      "ableton cache mac",
+      "clear ableton cache"
+    ],
+    "kind": "new_page",
+    "own_page": null,
+    "page_kind": "guide",
+    "cachedrop_mentioned": 0,
+    "engines": 2,
+    "recommended": [],
+    "cited_domains": [
+      "forum.ableton.com",
+      "sentinel.digital",
+      "acusticaudio.freshdesk.com",
+      "help.moises.ai",
+      "help.ableton.com",
+      "caretakermac.com"
+    ],
+    "serp": [
+      {
+        "keyword": "ableton cache mac",
+        "top": [
+          "reddit.com",
+          "youtube.com",
+          "acusticaudio.freshdesk.com",
+          "facebook.com",
+          "forum.ableton.com"
+        ]
+      },
+      {
+        "keyword": "clear ableton cache",
+        "top": [
+          "youtube.com",
+          "reddit.com",
+          "acusticaudio.freshdesk.com",
+          "facebook.com",
+          "ableton.com"
+        ]
+      }
+    ],
+    "related_pages": [],
+    "needs_decision": null,
+    "sources": {
+      "geo": "research/seo-geo/geo-runs/relabel-35013bd4",
+      "keywords": "research/seo-geo/keyword-runs/local-29c325f2",
+      "onpage": "research/seo-geo/onpage-runs/local-53fdc2a5"
+    }
+  },
+  "problems": [],
+  "fixes_applied": 0,
+  "review": {
+    "draft_id": "en-US-q10",
+    "reviewed_at": "2026-11-10T12:48:43.704Z",
+    "verdict": "pass",
+    "findings": [],
+    "model": "anthropic/claude-sonnet-5-5",
+    "facts_version": "2026-11-10 / 1.0.4",
+    "cost_usd": 0.00944
+  }
+}

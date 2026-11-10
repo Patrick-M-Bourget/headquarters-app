@@ -1,0 +1,56 @@
+{
+  "brief": {
+    "locale": "fr-FR",
+    "query_id": "q14",
+    "question": "Comment vider le cache d'Ableton Live sur Mac sans perdre mes licences ?",
+    "audience": "producers",
+    "intent": "how_to",
+    "keywords": [
+      "vider cache ableton mac"
+    ],
+    "kind": "new_page",
+    "own_page": null,
+    "page_kind": "guide",
+    "cachedrop_mentioned": 0,
+    "engines": 2,
+    "recommended": [],
+    "cited_domains": [
+      "help.ableton.com",
+      "sentinel.digital",
+      "ableton.com",
+      "youtube.com",
+      "caretakermac.com",
+      "fastlane.fr"
+    ],
+    "serp": [
+      {
+        "keyword": "vider cache ableton mac",
+        "top": [
+          "help.ableton.com",
+          "help.ableton.com",
+          "fastlane.fr",
+          "youtube.com",
+          "help.moises.ai"
+        ]
+      }
+    ],
+    "related_pages": [],
+    "needs_decision": null,
+    "sources": {
+      "geo": "research/seo-geo/geo-runs/local-55af2f79-9923-4e22-9acf-9bc21565f883",
+      "keywords": "research/seo-geo/keyword-runs/local-44296df8",
+      "onpage": "research/seo-geo/onpage-runs/local-c1d9af4e"
+    }
+  },
+  "problems": [],
+  "fixes_applied": 0,
+  "review": {
+    "draft_id": "fr-FR-q14",
+    "reviewed_at": "2026-11-10T12:42:42.875Z",
+    "verdict": "pass",
+    "findings": [],
+    "model": "anthropic/claude-sonnet-5-5",
+    "facts_version": "2026-11-10 / 1.0.4",
+    "cost_usd": 0.01083
+  }
+}

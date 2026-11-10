@@ -1,4 +1,11 @@
-# Hand-off: 2026-11-09, end of session 2
+# Hand-off: 2026-11-09, end of session 3 (session 2 notes below still apply)
+
+## Session 3 update: read first
+- 5b steps 1–3 DONE for **fr-FR** (France replaced fr-CA, owner decision). fr-FR v1 frozen; GEO baseline 0/50; French judge eval 93.3% passed; keywords 0/41. See journal session 3.
+- **Owner decisions pending:** `prototype/docs/marketing-agents-proposal.md` (marketing/funnel agent suite, requested before scheduling). Don't build agents before answers.
+- Next if owner agrees: 5b step 4 fr-FR on-page, then wave 1 agents, then de-DE/es-ES/pt-BR/ja-JP (fix ASCII slug in labels.ts first for ja-JP).
+- cachedrop-website #130: French pages `lang="fr"`, `og:locale fr_FR`.
+
 
 Read this first, then `project-context.md` and `prototype/docs/seo-geo-plan.md` (Q19–Q24 are new). The journal has the full history and numbers.
 

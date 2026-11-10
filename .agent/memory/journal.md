@@ -72,3 +72,13 @@
 - Owner decision: multi-language before scheduling (seo-geo-plan Q19–Q24): en-US + fr-CA weekly; de-DE, es-ES, pt-BR, ja-JP monthly (GEO + keywords only); native query sets per locale; blind eval per language.
 - Spend this session about $0.60 (all Anthropic API: on-page runs and evals). Total about $7 of $100. Serper 50/2,500 credits used. Tavily about 26 searches.
 - Unfinished: step 5b (multi-language), step 6 (synthesis + routine). Nothing pushed; origin/main shows [gone].
+
+## 2026-11-09 (session 3, owner asleep at the end)
+- 5b step 1 DONE: `locale` on QuerySet/EngineAnswer (default en-US; frozen v1.json untouched), Unicode duplicate check (old one broke Japanese), markets.ts (Claude country, Serper gl/hl, Tavily country), runners take --locale. Owner: French market = **fr-FR (France)**, not fr-CA. Website tag fix filed: cachedrop-website #130.
+- 5b step 2: generator --locale (locale also from Paperclip issue text "locale: fr-FR"); native prompt; near-dup works on Japanese (character pairs). HEA-11 generated fr-FR v1 ($0.0031); owner approved with 3 swaps (subscription question had been lost to the audience quota; duplicate comparison; off-target external-disk question; added OnyX alternative). Fix: model marks required questions, selection keeps them.
+- 5b step 3: Gemini retrievalConfig latLng/languageCode accepted but ignored by Search grounding (Paris → still USD prices). Gemini's only market signal is the question language. Claude gets user_location.country. NOTE: en-US runs now also send country US; the en-US baseline did not, so the next en-US diff mixes that change in.
+- fr-FR GEO baseline local-55af2f79: CacheDrop 0/50; top picks AppCleaner 9, CleanMyMac 3; $0.883 (vs $0.56 en-US). French judge blind eval 93.3% (56/60), CacheDrop 100% → passes. Labels eval/geo-labels-fr-FR-v1-test.json (fresh, not tuned on).
+- fr-FR keywords local-44296df8: cachedrop.io 0/41; reddit 40/41, youtube 34.
+- Known gap for ja-JP: labels.ts slug (and geo-agreement idFor) are ASCII-only; katakana product names would become empty ids. Fix before the ja-JP run.
+- Owner's new request (late): full marketing/funnel agent suite before scheduling. Proposal with decisions in prototype/docs/marketing-agents-proposal.md. Nothing built (L3).
+- Unfinished: 5b step 4 (fr-FR on-page + hreflang/lang checks + French answer-check eval), step 5/6 for de-DE/es-ES/pt-BR/ja-JP.

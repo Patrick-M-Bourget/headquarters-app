@@ -1,0 +1,238 @@
+{
+  "locale": "es-ES",
+  "version": 1,
+  "created_at": "2026-11-10T13:06:26.973Z",
+  "generator_model": "claude-haiku-5-5",
+  "approved_by": "owner",
+  "approved_at": "2026-11-10T13:08:55.931Z",
+  "queries": [
+    {
+      "id": "q01",
+      "text": "¿Merece la pena pagar la suscripción de CleanMyMac o un limpiador de pago único?",
+      "audience": "general",
+      "intent": "comparison",
+      "keywords": [
+        "cleanmymac suscripción",
+        "limpiador mac pago único"
+      ]
+    },
+    {
+      "id": "q02",
+      "text": "Alternativa a CleanMyMac para limpiar el Mac como productor musical",
+      "audience": "producers",
+      "intent": "alternative",
+      "keywords": [
+        "alternativa cleanmymac"
+      ]
+    },
+    {
+      "id": "q03",
+      "text": "¿Cómo borro DerivedData de Xcode para liberar espacio en mi Mac?",
+      "audience": "developers",
+      "intent": "how_to",
+      "keywords": [
+        "borrar deriveddata xcode"
+      ]
+    },
+    {
+      "id": "q04",
+      "text": "¿Cómo borro la caché de medios de Premiere Pro en Mac?",
+      "audience": "video_editors",
+      "intent": "how_to",
+      "keywords": [
+        "caché premiere pro mac"
+      ]
+    },
+    {
+      "id": "q05",
+      "text": "¿Cómo libero espacio en el disco de mi Mac si está casi lleno?",
+      "audience": "general",
+      "intent": "how_to",
+      "keywords": [
+        "liberar espacio mac"
+      ]
+    },
+    {
+      "id": "q06",
+      "text": "¿Cómo desinstalo plugins VST y AU en Mac sin dejar archivos sueltos?",
+      "audience": "producers",
+      "intent": "how_to",
+      "keywords": [
+        "desinstalar plugins vst mac"
+      ]
+    },
+    {
+      "id": "q07",
+      "text": "Mejor herramienta para limpiar node_modules y cachés de Docker en Mac",
+      "audience": "developers",
+      "intent": "recommendation",
+      "keywords": [
+        "limpiar node_modules mac"
+      ]
+    },
+    {
+      "id": "q08",
+      "text": "Mejor app para limpiar archivos de render de Final Cut Pro en Mac",
+      "audience": "video_editors",
+      "intent": "recommendation",
+      "keywords": [
+        "borrar render final cut mac"
+      ]
+    },
+    {
+      "id": "q09",
+      "text": "¿Cuál es el mejor limpiador para Mac para liberar espacio?",
+      "audience": "general",
+      "intent": "recommendation",
+      "keywords": [
+        "mejor limpiador mac"
+      ]
+    },
+    {
+      "id": "q10",
+      "text": "Mejor desinstalador de plugins de audio para Mac",
+      "audience": "producers",
+      "intent": "recommendation",
+      "keywords": [
+        "desinstalador plugins audio mac"
+      ]
+    },
+    {
+      "id": "q11",
+      "text": "¿Cómo elimino los datos de Docker que ocupan muchísimo en macOS?",
+      "audience": "developers",
+      "intent": "how_to",
+      "keywords": [
+        "docker ocupa mucho espacio mac"
+      ]
+    },
+    {
+      "id": "q12",
+      "text": "¿Cómo borro la caché de disco de After Effects en Mac?",
+      "audience": "video_editors",
+      "intent": "how_to",
+      "keywords": [
+        "caché after effects mac"
+      ]
+    },
+    {
+      "id": "q13",
+      "text": "¿Cómo borro los Datos del sistema en mi Mac sin romper nada?",
+      "audience": "general",
+      "intent": "how_to",
+      "keywords": [
+        "datos del sistema mac"
+      ]
+    },
+    {
+      "id": "q14",
+      "text": "¿Dónde guarda Ableton Live la caché y cómo la borro sin perder las licencias?",
+      "audience": "producers",
+      "intent": "how_to",
+      "keywords": [
+        "caché ableton live mac"
+      ]
+    },
+    {
+      "id": "q15",
+      "text": "Alternativa a DaisyDisk para ver qué ocupa espacio de desarrollo en Mac",
+      "audience": "developers",
+      "intent": "alternative",
+      "keywords": [
+        "alternativa daisydisk"
+      ]
+    },
+    {
+      "id": "q16",
+      "text": "Alternativa a CleanMyMac para editores de vídeo en Mac",
+      "audience": "video_editors",
+      "intent": "alternative",
+      "keywords": [
+        "alternativa cleanmymac vídeo"
+      ]
+    },
+    {
+      "id": "q17",
+      "text": "¿Cómo desinstalo una app en Mac sin dejar restos?",
+      "audience": "general",
+      "intent": "how_to",
+      "keywords": [
+        "desinstalar aplicaciones mac"
+      ]
+    },
+    {
+      "id": "q18",
+      "text": "¿Cómo libero espacio en el Mac si tengo muchas librerías de samples?",
+      "audience": "producers",
+      "intent": "how_to",
+      "keywords": [
+        "librerías samples espacio mac"
+      ]
+    },
+    {
+      "id": "q19",
+      "text": "DaisyDisk vs CleanMyMac para programadores: ¿cuál libera más espacio?",
+      "audience": "developers",
+      "intent": "comparison",
+      "keywords": [
+        "daisydisk vs cleanmymac"
+      ]
+    },
+    {
+      "id": "q20",
+      "text": "¿Cómo borro los archivos de proxy y caché de Adobe en un Mac?",
+      "audience": "video_editors",
+      "intent": "how_to",
+      "keywords": [
+        "proxy adobe borrar mac"
+      ]
+    },
+    {
+      "id": "q21",
+      "text": "Alternativa a AppCleaner para desinstalar apps en Mac",
+      "audience": "general",
+      "intent": "alternative",
+      "keywords": [
+        "alternativa appcleaner"
+      ]
+    },
+    {
+      "id": "q22",
+      "text": "¿Cómo borro los sonidos de Logic Pro que no uso para liberar espacio?",
+      "audience": "producers",
+      "intent": "how_to",
+      "keywords": [
+        "borrar sonidos logic pro",
+        "logic pro espacio mac"
+      ]
+    },
+    {
+      "id": "q23",
+      "text": "¿Cómo borro simuladores de iOS antiguos de Xcode para ganar espacio?",
+      "audience": "developers",
+      "intent": "how_to",
+      "keywords": [
+        "borrar simuladores xcode"
+      ]
+    },
+    {
+      "id": "q24",
+      "text": "¿Cómo borro los medios optimizados y proxy de Final Cut Pro en Mac?",
+      "audience": "video_editors",
+      "intent": "how_to",
+      "keywords": [
+        "borrar proxy final cut",
+        "medios optimizados final cut"
+      ]
+    },
+    {
+      "id": "q25",
+      "text": "¿Cómo borro las cachés del Mac de forma segura?",
+      "audience": "general",
+      "intent": "how_to",
+      "keywords": [
+        "borrar caché mac"
+      ]
+    }
+  ]
+}

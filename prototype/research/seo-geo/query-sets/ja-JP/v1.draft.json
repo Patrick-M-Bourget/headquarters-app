@@ -1,0 +1,260 @@
+{
+  "locale": "ja-JP",
+  "version": 1,
+  "created_at": "2026-11-10T13:07:17.419Z",
+  "generator_model": "claude-haiku-5-5",
+  "approved_by": null,
+  "approved_at": null,
+  "queries": [
+    {
+      "id": "q01",
+      "text": "CleanMyMacは買い切りとサブスク、どちらがお得ですか？",
+      "audience": "general",
+      "intent": "comparison",
+      "keywords": [
+        "CleanMyMac 買い切り",
+        "CleanMyMac サブスク"
+      ]
+    },
+    {
+      "id": "q02",
+      "text": "CleanMyMacの代わりになる、音楽制作向けのMacクリーナーはありますか？",
+      "audience": "producers",
+      "intent": "alternative",
+      "keywords": [
+        "CleanMyMac 代替 音楽制作",
+        "CleanMyMac 代わり"
+      ]
+    },
+    {
+      "id": "q03",
+      "text": "XcodeのDerivedDataを削除する方法を教えてください",
+      "audience": "developers",
+      "intent": "how_to",
+      "keywords": [
+        "DerivedData 削除 Xcode",
+        "Xcode キャッシュ 消す"
+      ]
+    },
+    {
+      "id": "q04",
+      "text": "Premiere ProのメディアキャッシュをMacから削除する方法を教えてください",
+      "audience": "video_editors",
+      "intent": "how_to",
+      "keywords": [
+        "Premiere メディアキャッシュ 削除",
+        "Premiere キャッシュ 消す"
+      ]
+    },
+    {
+      "id": "q05",
+      "text": "Macの容量がいっぱいです。削除しても大丈夫なファイルを安全に見つけるおすすめアプリはありますか？",
+      "audience": "general",
+      "intent": "recommendation",
+      "keywords": [
+        "Mac 容量 不足",
+        "不要ファイル 削除 Mac"
+      ]
+    },
+    {
+      "id": "q06",
+      "text": "音楽制作用のMacで、使わなくなったプラグインを残骸まで完全にアンインストールする方法を教えてください",
+      "audience": "producers",
+      "intent": "how_to",
+      "keywords": [
+        "プラグイン アンインストール Mac",
+        "プラグイン 削除 残骸"
+      ]
+    },
+    {
+      "id": "q07",
+      "text": "使っていない古いnode_modulesをMacから一括で削除できるおすすめの方法はありますか？",
+      "audience": "developers",
+      "intent": "recommendation",
+      "keywords": [
+        "node_modules 一括削除",
+        "node_modules 消す Mac"
+      ]
+    },
+    {
+      "id": "q08",
+      "text": "Final Cut Proのレンダリングファイルを消すにはどうすればいいですか？",
+      "audience": "video_editors",
+      "intent": "how_to",
+      "keywords": [
+        "Final Cut レンダリング 削除",
+        "Final Cut 容量 減らす"
+      ]
+    },
+    {
+      "id": "q09",
+      "text": "Macのシステムデータが100GB以上になってしまいました。減らす方法を教えてください",
+      "audience": "general",
+      "intent": "how_to",
+      "keywords": [
+        "システムデータ 削除",
+        "Mac システムデータ 減らす"
+      ]
+    },
+    {
+      "id": "q10",
+      "text": "MacでVST3プラグインを消したいのですが、フォルダがどこにあるかわかりません。どう消せばいいですか？",
+      "audience": "producers",
+      "intent": "how_to",
+      "keywords": [
+        "VST3 削除 Mac",
+        "VST3 フォルダ 場所"
+      ]
+    },
+    {
+      "id": "q11",
+      "text": "DockerのキャッシュでMacの容量が減りません。減らすにはどうすればいいですか？",
+      "audience": "developers",
+      "intent": "how_to",
+      "keywords": [
+        "Docker 容量 削除 Mac",
+        "Docker キャッシュ 消す"
+      ]
+    },
+    {
+      "id": "q12",
+      "text": "動画編集用のMacで容量が足りません。おすすめの掃除ツールはありますか？",
+      "audience": "video_editors",
+      "intent": "recommendation",
+      "keywords": [
+        "動画編集 Mac 容量",
+        "動画編集 Mac 掃除"
+      ]
+    },
+    {
+      "id": "q13",
+      "text": "Mac 掃除ソフト おすすめを教えてください。無料で使えるものがいいです",
+      "audience": "general",
+      "intent": "recommendation",
+      "keywords": [
+        "Mac 掃除ソフト",
+        "Mac 掃除 無料"
+      ]
+    },
+    {
+      "id": "q14",
+      "text": "Ableton Liveのキャッシュを安全に削除できるおすすめのツールはありますか？",
+      "audience": "producers",
+      "intent": "recommendation",
+      "keywords": [
+        "Ableton キャッシュ 削除",
+        "Ableton Live 容量 減らす"
+      ]
+    },
+    {
+      "id": "q15",
+      "text": "開発者向けのMacクリーナーでおすすめのものを教えてください",
+      "audience": "developers",
+      "intent": "recommendation",
+      "keywords": [
+        "開発 Mac 掃除 アプリ",
+        "開発者 Mac クリーナー"
+      ]
+    },
+    {
+      "id": "q16",
+      "text": "Adobeのキャッシュを全バージョン分まとめて消す方法はありますか？",
+      "audience": "video_editors",
+      "intent": "how_to",
+      "keywords": [
+        "Adobe キャッシュ 一括削除",
+        "Adobe メディアキャッシュ 全部"
+      ]
+    },
+    {
+      "id": "q17",
+      "text": "Macでアプリをゴミ箱に入れても設定ファイルが残るのですが、完全に削除するにはどうすればいいですか？",
+      "audience": "general",
+      "intent": "how_to",
+      "keywords": [
+        "アプリ 完全削除 Mac",
+        "Mac アンインストール 残り"
+      ]
+    },
+    {
+      "id": "q18",
+      "text": "使っていないサンプルライブラリで容量が圧迫されています。減らす方法はありますか？",
+      "audience": "producers",
+      "intent": "how_to",
+      "keywords": [
+        "サンプルライブラリ 容量",
+        "サンプル 削除 Mac"
+      ]
+    },
+    {
+      "id": "q19",
+      "text": "XcodeのシミュレーターがMacの容量を大量に食べています。消し方を教えてください",
+      "audience": "developers",
+      "intent": "how_to",
+      "keywords": [
+        "Xcode シミュレーター 削除",
+        "Xcode 容量 減らす"
+      ]
+    },
+    {
+      "id": "q20",
+      "text": "Final Cut Proのキャッシュを掃除できるおすすめのアプリを教えてください",
+      "audience": "video_editors",
+      "intent": "recommendation",
+      "keywords": [
+        "Final Cut キャッシュ 掃除",
+        "Final Cut 容量 アプリ"
+      ]
+    },
+    {
+      "id": "q21",
+      "text": "AppCleanerとDaisyDiskの違いは何ですか？どちらを使うべきか迷っています",
+      "audience": "general",
+      "intent": "comparison",
+      "keywords": [
+        "AppCleaner DaisyDisk 違い",
+        "Mac 容量 確認 アプリ"
+      ]
+    },
+    {
+      "id": "q22",
+      "text": "DTM用のMacの容量が足りなくなってきました。おすすめのクリーナーを教えてください",
+      "audience": "producers",
+      "intent": "recommendation",
+      "keywords": [
+        "DTM Mac 容量 掃除",
+        "音楽制作 Mac 容量 不足"
+      ]
+    },
+    {
+      "id": "q23",
+      "text": "CleanMyMacとAppCleanerは開発者にはどちらがおすすめですか？",
+      "audience": "developers",
+      "intent": "comparison",
+      "keywords": [
+        "CleanMyMac 開発者",
+        "AppCleaner 比較"
+      ]
+    },
+    {
+      "id": "q24",
+      "text": "AppCleanerとDaisyDiskは動画編集者にはどちらが使いやすいですか？",
+      "audience": "video_editors",
+      "intent": "comparison",
+      "keywords": [
+        "AppCleaner DaisyDisk",
+        "Mac 容量 比較 アプリ"
+      ]
+    },
+    {
+      "id": "q25",
+      "text": "Macの空き容量を増やしたいのですが、安全な方法を教えてください",
+      "audience": "general",
+      "intent": "how_to",
+      "keywords": [
+        "Mac 空き容量 増やす",
+        "Mac ストレージ 整理"
+      ]
+    }
+  ]
+}

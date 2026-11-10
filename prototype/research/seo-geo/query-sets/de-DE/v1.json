@@ -1,0 +1,240 @@
+{
+  "locale": "de-DE",
+  "version": 1,
+  "created_at": "2026-11-10T13:06:03.585Z",
+  "generator_model": "claude-haiku-5-5",
+  "approved_by": "owner",
+  "approved_at": "2026-11-10T13:08:55.931Z",
+  "queries": [
+    {
+      "id": "q01",
+      "text": "CleanMyMac Abo oder Einmalkauf: was lohnt sich mehr für den Mac?",
+      "audience": "general",
+      "intent": "comparison",
+      "keywords": [
+        "CleanMyMac Abo",
+        "Mac Reiniger Einmalkauf"
+      ]
+    },
+    {
+      "id": "q02",
+      "text": "Alternative zu CleanMyMac für Musikproduzenten mit vielen Plug-ins?",
+      "audience": "producers",
+      "intent": "alternative",
+      "keywords": [
+        "CleanMyMac Alternative"
+      ]
+    },
+    {
+      "id": "q03",
+      "text": "Wie lösche ich Xcode DerivedData auf dem Mac richtig?",
+      "audience": "developers",
+      "intent": "how_to",
+      "keywords": [
+        "Xcode DerivedData löschen"
+      ]
+    },
+    {
+      "id": "q04",
+      "text": "Wie lösche ich den Medien-Cache von Premiere Pro auf dem Mac?",
+      "audience": "video_editors",
+      "intent": "how_to",
+      "keywords": [
+        "Premiere Medien-Cache löschen"
+      ]
+    },
+    {
+      "id": "q05",
+      "text": "Welcher Mac-Reiniger ist empfehlenswert, um Speicherplatz zurückzuholen?",
+      "audience": "general",
+      "intent": "recommendation",
+      "keywords": [
+        "Mac Reiniger",
+        "Mac aufräumen"
+      ]
+    },
+    {
+      "id": "q06",
+      "text": "Wie deinstalliere ich VST-Plug-ins auf dem Mac vollständig?",
+      "audience": "producers",
+      "intent": "how_to",
+      "keywords": [
+        "VST Plug-ins deinstallieren",
+        "Plug-in entfernen Mac"
+      ]
+    },
+    {
+      "id": "q07",
+      "text": "Wie entferne ich alle node_modules-Ordner auf meinem Mac auf einmal?",
+      "audience": "developers",
+      "intent": "how_to",
+      "keywords": [
+        "node_modules löschen"
+      ]
+    },
+    {
+      "id": "q08",
+      "text": "Wo liegen die Render-Dateien von Final Cut Pro und wie lösche ich sie sicher?",
+      "audience": "video_editors",
+      "intent": "how_to",
+      "keywords": [
+        "Final Cut Render Dateien löschen"
+      ]
+    },
+    {
+      "id": "q09",
+      "text": "Wie kann ich auf meinem Mac Speicherplatz freigeben?",
+      "audience": "general",
+      "intent": "how_to",
+      "keywords": [
+        "Mac Speicherplatz freigeben"
+      ]
+    },
+    {
+      "id": "q10",
+      "text": "Wo werden VST3- und AU-Plug-ins auf dem Mac gespeichert?",
+      "audience": "producers",
+      "intent": "how_to",
+      "keywords": [
+        "AU Plug-ins Ordner Mac"
+      ]
+    },
+    {
+      "id": "q11",
+      "text": "Wie räume ich Docker-Images und Cache auf dem Mac auf, ohne Daten zu verlieren?",
+      "audience": "developers",
+      "intent": "how_to",
+      "keywords": [
+        "Docker Speicher Mac"
+      ]
+    },
+    {
+      "id": "q12",
+      "text": "Bester Speicher-Cleaner für den Mac, wenn Videoschnitt den Speicher füllt?",
+      "audience": "video_editors",
+      "intent": "recommendation",
+      "keywords": [
+        "Videoschnitt Speicher Mac"
+      ]
+    },
+    {
+      "id": "q13",
+      "text": "Mein Mac-Speicher ist voll, was kann ich bedenkenlos löschen?",
+      "audience": "general",
+      "intent": "how_to",
+      "keywords": [
+        "Mac Speicher voll"
+      ]
+    },
+    {
+      "id": "q14",
+      "text": "Bester Plug-in-Manager für den Mac zum Verwalten und Entfernen von Plug-ins?",
+      "audience": "producers",
+      "intent": "recommendation",
+      "keywords": [
+        "Plug-in Manager Mac"
+      ]
+    },
+    {
+      "id": "q15",
+      "text": "Bester Mac Cleaner für Entwickler, wenn Xcode zu viel Speicher belegt?",
+      "audience": "developers",
+      "intent": "recommendation",
+      "keywords": [
+        "Mac Cleaner Entwickler"
+      ]
+    },
+    {
+      "id": "q16",
+      "text": "Wie leere ich den Adobe-Cache auf dem Mac für alle Versionen auf einmal?",
+      "audience": "video_editors",
+      "intent": "how_to",
+      "keywords": [
+        "Adobe Cache leeren Mac"
+      ]
+    },
+    {
+      "id": "q17",
+      "text": "Wie lösche ich Systemdaten auf dem Mac, ohne etwas kaputt zu machen?",
+      "audience": "general",
+      "intent": "how_to",
+      "keywords": [
+        "Systemdaten Mac löschen"
+      ]
+    },
+    {
+      "id": "q18",
+      "text": "Wie leere ich den Ableton-Cache, ohne meine Lizenzen zu verlieren?",
+      "audience": "producers",
+      "intent": "how_to",
+      "keywords": [
+        "Ableton Cache löschen"
+      ]
+    },
+    {
+      "id": "q19",
+      "text": "CleanMyMac oder DaisyDisk: was hilft besser bei Entwickler-Caches?",
+      "audience": "developers",
+      "intent": "comparison",
+      "keywords": [
+        "CleanMyMac DaisyDisk"
+      ]
+    },
+    {
+      "id": "q20",
+      "text": "Wie lösche ich optimierte Medien und Proxys in Final Cut Pro?",
+      "audience": "video_editors",
+      "intent": "how_to",
+      "keywords": [
+        "Final Cut Proxy löschen",
+        "optimierte Medien löschen"
+      ]
+    },
+    {
+      "id": "q21",
+      "text": "Wie deinstalliere ich eine App auf dem Mac komplett inklusive aller Reste?",
+      "audience": "general",
+      "intent": "how_to",
+      "keywords": [
+        "App deinstallieren Mac",
+        "App Reste entfernen"
+      ]
+    },
+    {
+      "id": "q22",
+      "text": "Wie lösche ich Sample-Bibliotheken, die auf dem Mac zu viel Speicher fressen?",
+      "audience": "producers",
+      "intent": "how_to",
+      "keywords": [
+        "Sample Bibliothek löschen Mac"
+      ]
+    },
+    {
+      "id": "q23",
+      "text": "Warum ist Xcode auf meinem Mac so groß und was darf ich davon löschen?",
+      "audience": "developers",
+      "intent": "how_to",
+      "keywords": [
+        "Xcode Speicher Mac"
+      ]
+    },
+    {
+      "id": "q24",
+      "text": "Alternative zu DaisyDisk, um große Videodateien am Mac aufzuspüren?",
+      "audience": "video_editors",
+      "intent": "alternative",
+      "keywords": [
+        "DaisyDisk Alternative"
+      ]
+    },
+    {
+      "id": "q25",
+      "text": "Bester kostenloser Mac Cleaner zum Speicher aufräumen?",
+      "audience": "general",
+      "intent": "recommendation",
+      "keywords": [
+        "Mac Cleaner kostenlos"
+      ]
+    }
+  ]
+}

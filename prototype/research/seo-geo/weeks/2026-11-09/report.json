@@ -1,0 +1,708 @@
+{
+  "week": "2026-11-09",
+  "generated_at": "2026-11-10T20:41:32.159Z",
+  "locales": [
+    {
+      "locale": "en-US",
+      "stale": [],
+      "missing": [],
+      "geo": {
+        "run": "5d40feb0-8c73-42b9-8287-1cc11604cb5c",
+        "previous": "relabel-66062516",
+        "n": 50,
+        "recommended": 0,
+        "mentioned": 0,
+        "cited": 0,
+        "d_recommended": 0,
+        "d_mentioned": 0,
+        "competitors": [
+          [
+            "appcleaner",
+            15,
+            -1
+          ],
+          [
+            "daisydisk",
+            14,
+            -2
+          ],
+          [
+            "grandperspective",
+            12,
+            2
+          ],
+          [
+            "cleanmymac",
+            11,
+            -2
+          ],
+          [
+            "omnidisksweeper",
+            9,
+            2
+          ]
+        ],
+        "cited_domains": [
+          [
+            "github.com",
+            6
+          ],
+          [
+            "macpaw.com",
+            6
+          ],
+          [
+            "youtube.com",
+            6
+          ],
+          [
+            "reddit.com",
+            5
+          ],
+          [
+            "widebluesound.com",
+            5
+          ],
+          [
+            "apple.com",
+            4
+          ],
+          [
+            "cleanmymac.com",
+            4
+          ],
+          [
+            "cleanwithcrumb.com",
+            4
+          ]
+        ],
+        "cachedrop_mentions": [],
+        "gaps": [
+          {
+            "query_id": "q19",
+            "text": "alternative to DaisyDisk for developers checking mac disk usage",
+            "competitors": 15
+          },
+          {
+            "query_id": "q20",
+            "text": "alternative to CleanMyMac for video editors on mac",
+            "competitors": 11
+          },
+          {
+            "query_id": "q22",
+            "text": "best plugin manager for mac to remove unused AU and VST3 plugins",
+            "competitors": 8
+          },
+          {
+            "query_id": "q16",
+            "text": "best mac cleaner for premiere pro and final cut caches",
+            "competitors": 7
+          },
+          {
+            "query_id": "q03",
+            "text": "best mac cleaner for xcode deriveddata",
+            "competitors": 6
+          },
+          {
+            "query_id": "q23",
+            "text": "DaisyDisk vs CleanMyMac for clearing developer caches",
+            "competitors": 6
+          },
+          {
+            "query_id": "q02",
+            "text": "best tool to uninstall vst plugins on mac completely",
+            "competitors": 5
+          },
+          {
+            "query_id": "q25",
+            "text": "best app uninstaller for mac",
+            "competitors": 5
+          },
+          {
+            "query_id": "q08",
+            "text": "best tool to clear final cut pro render files on mac",
+            "competitors": 4
+          },
+          {
+            "query_id": "q05",
+            "text": "how do I free up space on my mac when storage is full",
+            "competitors": 3
+          },
+          {
+            "query_id": "q17",
+            "text": "AppCleaner vs CleanMyMac which is better for uninstalling mac apps",
+            "competitors": 2
+          },
+          {
+            "query_id": "q18",
+            "text": "CleanMyMac vs AppCleaner for removing audio plugins",
+            "competitors": 2
+          },
+          {
+            "query_id": "q24",
+            "text": "CleanMyMac vs DaisyDisk for freeing space from video projects",
+            "competitors": 2
+          },
+          {
+            "query_id": "q07",
+            "text": "how do I delete node_modules folders on mac to free space",
+            "competitors": 1
+          }
+        ],
+        "cost_usd": 0.8872,
+        "finished_at": "2026-11-10T20:32:31.746Z"
+      },
+      "keywords": {
+        "run": "03bf601a-07df-4fe5-87cd-929eb71b701e",
+        "previous": "local-29c325f2",
+        "n": 48,
+        "ranked": 0,
+        "top3": 0,
+        "d_ranked": 0,
+        "domains": [
+          [
+            "reddit.com",
+            47
+          ],
+          [
+            "youtube.com",
+            38
+          ],
+          [
+            "discussions.apple.com",
+            18
+          ],
+          [
+            "facebook.com",
+            17
+          ],
+          [
+            "medium.com",
+            15
+          ]
+        ],
+        "brands": [
+          [
+            "cleanmymac",
+            12
+          ],
+          [
+            "app-cleaner-uninstaller",
+            8
+          ],
+          [
+            "audio-plugin-uninstaller",
+            5
+          ],
+          [
+            "appcleaner",
+            3
+          ],
+          [
+            "buhocleaner",
+            2
+          ]
+        ],
+        "credits": 48,
+        "finished_at": "2026-11-10T20:28:49.515Z"
+      },
+      "onpage": {
+        "run": "073e696f-345f-4221-b920-e76e53f85603",
+        "previous": "local-53fdc2a5",
+        "pages": 8,
+        "own": {
+          "partial": 8
+        },
+        "gaps": 20,
+        "new_gaps": [
+          "/: JSON-LD types used by #+ competitors but not here: Article"
+        ],
+        "fixed_gaps": [
+          "/: JSON-LD types used by #+ competitors but not here: BreadcrumbList, BlogPosting"
+        ],
+        "no_answer": [],
+        "cost_usd": 0.0969,
+        "finished_at": "2026-11-10T20:29:37.635Z",
+        "dir": "research/seo-geo/onpage-runs/073e696f-345f-4221-b920-e76e53f85603",
+        "gap_list": [
+          "/: title is 61 chars (search results cut at about 60)",
+          "/: JSON-LD types used by 2+ competitors but not here: Article",
+          "/: 1065 words vs competitor median 3194",
+          "/: needs check: answers \"best mac cleaner that doesn't need a subscription\" only partly near the top (partial). Why: The opening presents a single Mac cleaner with one-time pricing (no subscription) but does not compare it with other options or say it is the best choice. Quote: \"Buy · was $29.99 now $19.99 once Try it before you buy · No card needed · macOS 14 or later\"",
+          "/pricing/: meta description is 211 chars (cut at about 160)",
+          "/pricing/: 141 words vs competitor median 2108",
+          "/pricing/: needs check: answers \"CleanMyMac subscription vs one time purchase cleaner for mac\" only partly near the top (partial). Why: The opening presents a one-time-purchase Mac cleaner (CacheDrop) as an alternative to subscriptions, but it never mentions CleanMyMac or compares its subscription with a one-time purchase. Quote: \"Pay once. Use it on 3 Macs. ... No subscription. Nothing to cancel.\"",
+          "/clear-mac-developer-caches/: JSON-LD types used by 2+ competitors but not here: Offer, SoftwareApplication",
+          "/clear-mac-developer-caches/: needs check: answers \"best developer mac cleaner for node modules and docker\" only partly near the top (partial). Why: The opening presents one developer Mac cleaner (CacheDrop) that covers node_modules and Docker, which fits the ask, but it compares no alternatives and the opening is mostly a pitch for that single product. Quote: \"CacheDrop specifically targets: Xcode DerivedData: intermediate build output and indexes Abandoned node_modules folders in old projects Docker images and build cache, plus Homebrew, npm and Yarn package caches\"",
+          "/clear-adobe-media-cache-mac/: title is 61 chars (search results cut at about 60)",
+          "/clear-adobe-media-cache-mac/: needs check: answers \"how do I delete adobe media cache files on mac to free space\" only partly near the top (partial). Why: The opening explains what the media cache is and begins to say where it lives, but it is mostly a product pitch and cuts off before giving the path or any deletion steps. Quote: \"On a Mac, the media cache lives here by default:\"",
+          "/uninstall-audio-plugins-mac/: meta description is 182 chars (cut at about 160)",
+          "/uninstall-audio-plugins-mac/: needs check: answers \"how do I remove old audio plug-ins from my mac\" only partly near the top (partial). Why: The opening promotes CacheDrop and explains that plug-ins span multiple files, but the manual steps are only just starting (quit DAW, use the maker's uninstaller) and the actual folders and removal steps are cut off. Quote: \"A plug-in is rarely one file. Most installers put the same plug-in in two to four formats, in different folders, plus presets and support files elsewhere. Deleting one bundle leaves the rest.\" These answer it: process.audio.",
+          "/clear-system-data-mac/: meta description is 181 chars (cut at about 160)",
+          "/clear-system-data-mac/: needs check: answers \"what is system data on mac and how do I delete it\" only partly near the top (partial). Why: The opening clearly defines System Data and says how to view it, but after a product pitch it cuts off before giving any steps for deleting it. Quote: \"System Data is the space macOS doesn’t count in one of its other storage categories, such as Applications, Documents or Photos. Most of it is caches, logs, temporary files and snapshots, plus files macOS needs to run.\"",
+          "/uninstall-apps-mac/: meta description is 179 chars (cut at about 160)",
+          "/uninstall-apps-mac/: needs check: answers \"how to completely uninstall an app on mac without leftover files\" only partly near the top (partial). Why: The opening explains why leftovers remain and promises manual and tool-based removal, but the actual uninstall steps are not yet given in the opening text. Quote: \"Dragging an app to the Trash removes the app, not the settings, caches and data it left in your Library. Here’s where those leftovers live, how to remove them by hand, and how CacheDrop finds them for you.\"",
+          "/cleanmymac-alternative/: meta description is 187 chars (cut at about 160)",
+          "/cleanmymac-alternative/: 883 words vs competitor median 1828",
+          "/cleanmymac-alternative/: needs check: answers \"alternative to CleanMyMac for music producers\" only partly near the top (partial). Why: The opening offers CacheDrop as a one-time-payment CleanMyMac alternative that handles plug-ins and media caches, which loosely suits producers, but it never addresses music producers directly and is mainly a pricing comparison. Quote: \"CacheDrop cleans your Mac, removes apps and plug-ins completely, and clears developer and media caches.\""
+        ],
+        "previous_gap_list": [
+          "/: title is 61 chars (search results cut at about 60)",
+          "/: JSON-LD types used by 2+ competitors but not here: BreadcrumbList, BlogPosting",
+          "/: 1065 words vs competitor median 3194",
+          "/: needs check: answers \"best mac cleaner that doesn't need a subscription\" only partly near the top (partial). Why: The opening presents a single Mac cleaner with a one-time price, which fits the no-subscription ask, but it does not compare options or name it as the best, and most of the text is UI mock-up content. Quote: \"Buy · was $29.99 now $19.99 once Try it before you buy · No card needed · macOS 14 or later\"",
+          "/pricing/: meta description is 211 chars (cut at about 160)",
+          "/pricing/: 141 words vs competitor median 2108",
+          "/pricing/: needs check: answers \"CleanMyMac subscription vs one time purchase cleaner for mac\" only partly near the top (partial). Why: The opening presents CacheDrop as a one-time-purchase Mac cleaner with no subscription, which fits the ask, but it never mentions CleanMyMac or compares subscription and one-time pricing for it. Quote: \"Pay once. Use it on 3 Macs.\"",
+          "/clear-mac-developer-caches/: JSON-LD types used by 2+ competitors but not here: Offer, SoftwareApplication",
+          "/clear-mac-developer-caches/: needs check: answers \"best developer mac cleaner for node modules and docker\" only partly near the top (partial). Why: The opening presents one developer Mac cleaner (CacheDrop) that covers node_modules and Docker, but it doesn't compare alternatives or say why it is the best, and the comparison is only linked, not shown. Quote: \"CacheDrop specifically targets: Xcode DerivedData: intermediate build output and indexes Abandoned node_modules folders in old projects Docker images and build cache, plus Homebrew, npm and Yarn package caches\"",
+          "/clear-adobe-media-cache-mac/: title is 61 chars (search results cut at about 60)",
+          "/clear-adobe-media-cache-mac/: needs check: answers \"how do I delete adobe media cache files on mac to free space\" only partly near the top (partial). Why: The opening is mostly a product pitch for CacheDrop and only starts to explain the cache location (the path is cut off), with no actual deletion steps shown yet. Quote: \"On a Mac, the media cache lives here by default:\"",
+          "/uninstall-audio-plugins-mac/: meta description is 182 chars (cut at about 160)",
+          "/uninstall-audio-plugins-mac/: needs check: answers \"how do I remove old audio plug-ins from my mac\" only partly near the top (partial). Why: The opening pitches CacheDrop and explains why removal is multi-file, then only starts the manual steps (quit DAW, use maker's uninstaller) without giving folder locations or the full procedure. Quote: \"A plug-in is rarely one file. Most installers put the same plug-in in two to four formats, in different folders, plus presets and support files elsewhere. Deleting one bundle leaves the rest.\" These answer it: process.audio.",
+          "/clear-system-data-mac/: meta description is 181 chars (cut at about 160)",
+          "/clear-system-data-mac/: needs check: answers \"what is system data on mac and how do I delete it\" only partly near the top (partial). Why: The opening clearly defines System Data and where to view it, but after a product pitch it cuts off before giving any steps for deleting it. Quote: \"System Data is the space macOS doesn’t count in one of its other storage categories, such as Applications, Documents or Photos. Most of it is caches, logs, temporary files and snapshots, plus files macOS needs to run.\"",
+          "/uninstall-apps-mac/: meta description is 179 chars (cut at about 160)",
+          "/uninstall-apps-mac/: needs check: answers \"how to completely uninstall an app on mac without leftover files\" only partly near the top (partial). Why: The opening explains why leftovers remain and promises manual and tool-based removal, but the actual steps are not yet given within the opening and it is padded with product pitch and pricing. Quote: \"Dragging an app to the Trash removes the app, not the settings, caches and data it left in your Library. Here’s where those leftovers live, how to remove them by hand, and how CacheDrop finds them for you.\"",
+          "/cleanmymac-alternative/: meta description is 187 chars (cut at about 160)",
+          "/cleanmymac-alternative/: 883 words vs competitor median 1828",
+          "/cleanmymac-alternative/: needs check: answers \"alternative to CleanMyMac for music producers\" only partly near the top (partial). Why: The opening offers CacheDrop as a one-time-purchase CleanMyMac alternative and mentions plug-in and media cache cleanup, but it never addresses music producers specifically and gives only a price comparison rather than a producer-focused comparison. Quote: \"CacheDrop cleans your Mac, removes apps and plug-ins completely, and clears developer and media caches.\""
+        ]
+      }
+    },
+    {
+      "locale": "fr-FR",
+      "stale": [],
+      "missing": [],
+      "geo": {
+        "run": "f68b028b-5d51-4cfc-b3c0-d287d64db419",
+        "previous": "relabel-6acc1f45",
+        "n": 50,
+        "recommended": 0,
+        "mentioned": 0,
+        "cited": 0,
+        "d_recommended": 0,
+        "d_mentioned": 0,
+        "competitors": [
+          [
+            "appcleaner",
+            16,
+            0
+          ],
+          [
+            "daisydisk",
+            14,
+            4
+          ],
+          [
+            "cleanmymac",
+            12,
+            1
+          ],
+          [
+            "grandperspective",
+            11,
+            3
+          ],
+          [
+            "onyx",
+            10,
+            2
+          ]
+        ],
+        "cited_domains": [
+          [
+            "cleanwithcrumb.com",
+            7
+          ],
+          [
+            "macpaw.com",
+            6
+          ],
+          [
+            "1dot.ai",
+            4
+          ],
+          [
+            "github.com",
+            4
+          ],
+          [
+            "cindori.com",
+            3
+          ],
+          [
+            "cleanmymac.com",
+            3
+          ],
+          [
+            "setapp.com",
+            3
+          ],
+          [
+            "widebluesound.com",
+            3
+          ]
+        ],
+        "cachedrop_mentions": [],
+        "gaps": [
+          {
+            "query_id": "q09",
+            "text": "Quelle alternative à OnyX pour nettoyer mon Mac sans risque ?",
+            "competitors": 10
+          },
+          {
+            "query_id": "q16",
+            "text": "Quelle alternative à AppCleaner pour supprimer les restes de logiciels de montage vidéo ?",
+            "competitors": 10
+          },
+          {
+            "query_id": "q12",
+            "text": "Quel est le meilleur outil pour supprimer les caches de montage vidéo sur Mac ?",
+            "competitors": 7
+          },
+          {
+            "query_id": "q25",
+            "text": "Quelle alternative gratuite à CleanMyMac pour faire de la place sur Mac ?",
+            "competitors": 7
+          },
+          {
+            "query_id": "q23",
+            "text": "DaisyDisk ou CleanMyMac pour trouver les gros dossiers de développement sur Mac ?",
+            "competitors": 6
+          },
+          {
+            "query_id": "q21",
+            "text": "AppCleaner ou CleanMyMac, lequel choisir pour nettoyer et désinstaller des apps sur Mac ?",
+            "competitors": 5
+          },
+          {
+            "query_id": "q06",
+            "text": "Quel est le meilleur outil pour gérer et supprimer mes plug-ins audio sur Mac ?",
+            "competitors": 4
+          },
+          {
+            "query_id": "q22",
+            "text": "Quel désinstalleur pour supprimer les plug-ins AAX et CLAP sans laisser de fichiers ?",
+            "competitors": 4
+          },
+          {
+            "query_id": "q11",
+            "text": "Quel outil pour vider les caches Docker sur Mac et récupérer de l'espace ?",
+            "competitors": 3
+          },
+          {
+            "query_id": "q19",
+            "text": "Comment faire de la place sur un Mac de développeur quand le disque est plein à cause de Xcode ?",
+            "competitors": 3
+          },
+          {
+            "query_id": "q07",
+            "text": "Comment nettoyer les vieux dossiers node_modules qui encombrent mon Mac ?",
+            "competitors": 2
+          },
+          {
+            "query_id": "q17",
+            "text": "Comment supprimer les fichiers restants d'une application après l'avoir mise à la Corbeille ?",
+            "competitors": 2
+          },
+          {
+            "query_id": "q10",
+            "text": "Où sont stockés les plug-ins AU et VST3 sur macOS et comment les supprimer proprement ?",
+            "competitors": 1
+          }
+        ],
+        "cost_usd": 0.9247,
+        "finished_at": "2026-11-10T20:37:06.602Z"
+      },
+      "keywords": {
+        "run": "1c503ccc-5c4a-4ea9-bd19-431c73d3f48d",
+        "previous": "local-44296df8",
+        "n": 41,
+        "ranked": 0,
+        "top3": 0,
+        "d_ranked": 0,
+        "domains": [
+          [
+            "reddit.com",
+            40
+          ],
+          [
+            "youtube.com",
+            38
+          ],
+          [
+            "macpaw.com",
+            13
+          ],
+          [
+            "apps.apple.com",
+            10
+          ],
+          [
+            "support.apple.com",
+            10
+          ]
+        ],
+        "brands": [
+          [
+            "cleanmymac",
+            17
+          ],
+          [
+            "mole",
+            8
+          ],
+          [
+            "ccleaner",
+            3
+          ],
+          [
+            "app-cleaner-uninstaller",
+            2
+          ],
+          [
+            "onyx",
+            2
+          ]
+        ],
+        "credits": 41,
+        "finished_at": "2026-11-10T20:30:17.523Z"
+      },
+      "onpage": {
+        "run": "8ef8840f-dd1f-4175-94a7-4535945be1eb",
+        "previous": "local-c1d9af4e",
+        "pages": 8,
+        "own": {
+          "no": 4,
+          "yes": 1,
+          "partial": 3
+        },
+        "gaps": 31,
+        "new_gaps": [
+          "/fr/pricing/: JSON-LD types used by #+ competitors but not here: BreadcrumbList, ContactPoint, Article"
+        ],
+        "fixed_gaps": [
+          "/fr/pricing/: JSON-LD types used by #+ competitors but not here: BreadcrumbList"
+        ],
+        "no_answer": [
+          {
+            "url": "https://cachedrop.io/fr/",
+            "query_id": "q01",
+            "query_text": "Quel est le meilleur nettoyeur Mac pour libérer de la place sur mon disque ?"
+          },
+          {
+            "url": "https://cachedrop.io/fr/clear-adobe-media-cache-mac/",
+            "query_id": "q04",
+            "query_text": "Comment vider le cache de média Adobe Premiere Pro sur Mac ?"
+          },
+          {
+            "url": "https://cachedrop.io/fr/uninstall-audio-plugins-mac/",
+            "query_id": "q02",
+            "query_text": "Comment désinstaller complètement un plug-in VST sur Mac ?"
+          },
+          {
+            "url": "https://cachedrop.io/fr/clear-system-data-mac/",
+            "query_id": "q05",
+            "query_text": "Comment vider les Données système sur mon Mac qui prennent trop de place ?"
+          }
+        ],
+        "cost_usd": 0.1103,
+        "finished_at": "2026-11-10T20:31:43.174Z",
+        "dir": "research/seo-geo/onpage-runs/8ef8840f-dd1f-4175-94a7-4535945be1eb",
+        "gap_list": [
+          "/fr/: <html lang=\"fr-CA\"> targets CA; the market is FR (use \"fr\" or \"fr-FR\")",
+          "/fr/: title is 69 chars (search results cut at about 60)",
+          "/fr/: meta description is 197 chars (cut at about 160)",
+          "/fr/: JSON-LD types used by 2+ competitors but not here: Article, BreadcrumbList",
+          "/fr/: 115 words vs competitor median 2956",
+          "/fr/: does not answer \"Quel est le meilleur nettoyeur Mac pour libérer de la place sur mon disque ?\" near the top. Why: The opening is only a pricing and licence blurb for CacheDrop, with no recommendation, comparison of Mac cleaners, or explanation of how to free up disk space.",
+          "/fr/pricing/: <html lang=\"fr-CA\"> targets CA; the market is FR (use \"fr\" or \"fr-FR\")",
+          "/fr/pricing/: meta description is 282 chars (cut at about 160)",
+          "/fr/pricing/: JSON-LD types used by 2+ competitors but not here: BreadcrumbList, ContactPoint, Article",
+          "/fr/pricing/: 164 words vs competitor median 3363",
+          "/fr/clear-mac-developer-caches/: <html lang=\"fr-CA\"> targets CA; the market is FR (use \"fr\" or \"fr-FR\")",
+          "/fr/clear-mac-developer-caches/: title is 67 chars (search results cut at about 60)",
+          "/fr/clear-mac-developer-caches/: meta description is 196 chars (cut at about 160)",
+          "/fr/clear-mac-developer-caches/: 807 words vs competitor median 2956",
+          "/fr/clear-mac-developer-caches/: needs check: answers \"Quel est le meilleur nettoyeur Mac pour développeur qui supprime les caches Xcode en toute sécurité ?\" only partly near the top (partial). Why: The opening pitches a single developer-focused Mac cleaner (CacheDrop) that targets Xcode DerivedData, but it compares no options and does not yet explain how it removes Xcode caches safely. Quote: \"Télécharger pour Mac Nettoyeur Mac pour développeurs · Apple Silicon et Intel Essayez-le avant d’acheter · Aucune carte requise · macOS 14 ou version ultérieure\"",
+          "/fr/clear-adobe-media-cache-mac/: <html lang=\"fr-CA\"> targets CA; the market is FR (use \"fr\" or \"fr-FR\")",
+          "/fr/clear-adobe-media-cache-mac/: meta description is 177 chars (cut at about 160)",
+          "/fr/clear-adobe-media-cache-mac/: does not answer \"Comment vider le cache de média Adobe Premiere Pro sur Mac ?\" near the top. Why: The opening is mostly a product pitch for CacheDrop (pricing, download) and only starts describing what Premiere's cache files are, without giving any steps to clear the media cache on Mac. These answer it: adobebasics.com.",
+          "/fr/uninstall-audio-plugins-mac/: <html lang=\"fr-CA\"> targets CA; the market is FR (use \"fr\" or \"fr-FR\")",
+          "/fr/uninstall-audio-plugins-mac/: meta description is 203 chars (cut at about 160)",
+          "/fr/uninstall-audio-plugins-mac/: does not answer \"Comment désinstaller complètement un plug-in VST sur Mac ?\" near the top. Why: The opening is a product pitch for CacheDrop and only begins to say that plug-ins span several formats and folders, without giving any actual uninstall steps or folder locations. These answer it: process.audio.",
+          "/fr/clear-system-data-mac/: <html lang=\"fr-CA\"> targets CA; the market is FR (use \"fr\" or \"fr-FR\")",
+          "/fr/clear-system-data-mac/: title is 65 chars (search results cut at about 60)",
+          "/fr/clear-system-data-mac/: meta description is 246 chars (cut at about 160)",
+          "/fr/clear-system-data-mac/: does not answer \"Comment vider les Données système sur mon Mac qui prennent trop de place ?\" near the top. Why: The opening only defines System Data and promises to explain what can be removed, mixed with a product pitch for CacheDrop; it gives no actual steps for clearing it.",
+          "/fr/uninstall-apps-mac/: <html lang=\"fr-CA\"> targets CA; the market is FR (use \"fr\" or \"fr-FR\")",
+          "/fr/uninstall-apps-mac/: meta description is 230 chars (cut at about 160)",
+          "/fr/uninstall-apps-mac/: needs check: answers \"Quelle est la meilleure application pour désinstaller complètement un logiciel sur Mac ?\" only partly near the top (partial). Why: The opening explains that the Trash leaves leftovers and promotes CacheDrop as a tool, but it doesn't compare apps or name a best one, and the actual steps are not yet given. Quote: \"Voici où se trouvent ces restes, comment les supprimer à la main et comment CacheDrop les trouve pour vous.\" These answer it: macpaw.com.",
+          "/fr/cleanmymac-alternative/: <html lang=\"fr-CA\"> targets CA; the market is FR (use \"fr\" or \"fr-FR\")",
+          "/fr/cleanmymac-alternative/: meta description is 240 chars (cut at about 160)",
+          "/fr/cleanmymac-alternative/: needs check: answers \"Quelle alternative à CleanMyMac pour nettoyer un Mac de producteur de musique ?\" only partly near the top (partial). Why: The opening names one alternative (CacheDrop) and its one-time price, and begins a price comparison, but it doesn't address music-producer needs (audio plug-ins, sample libraries) beyond a brief mention of plug-ins and media caches. Quote: \"CacheDrop nettoie votre Mac, désinstalle complètement applications et plug-ins, et vide les caches de développement et de média. 29,99 $ une seule fois, pour un maximum de 3 Mac.\""
+        ],
+        "previous_gap_list": [
+          "/fr/: <html lang=\"fr-CA\"> targets CA; the market is FR (use \"fr\" or \"fr-FR\")",
+          "/fr/: title is 69 chars (search results cut at about 60)",
+          "/fr/: meta description is 197 chars (cut at about 160)",
+          "/fr/: JSON-LD types used by 2+ competitors but not here: Article, BreadcrumbList",
+          "/fr/: 115 words vs competitor median 2956",
+          "/fr/: does not answer \"Quel est le meilleur nettoyeur Mac pour libérer de la place sur mon disque ?\" near the top. Why: The opening is only pricing and licence details for CacheDrop; it never says which Mac cleaner is best or compares options for freeing disk space.",
+          "/fr/pricing/: <html lang=\"fr-CA\"> targets CA; the market is FR (use \"fr\" or \"fr-FR\")",
+          "/fr/pricing/: meta description is 282 chars (cut at about 160)",
+          "/fr/pricing/: JSON-LD types used by 2+ competitors but not here: BreadcrumbList",
+          "/fr/pricing/: 164 words vs competitor median 866",
+          "/fr/clear-mac-developer-caches/: <html lang=\"fr-CA\"> targets CA; the market is FR (use \"fr\" or \"fr-FR\")",
+          "/fr/clear-mac-developer-caches/: title is 67 chars (search results cut at about 60)",
+          "/fr/clear-mac-developer-caches/: meta description is 196 chars (cut at about 160)",
+          "/fr/clear-mac-developer-caches/: 807 words vs competitor median 2956",
+          "/fr/clear-mac-developer-caches/: needs check: answers \"Quel est le meilleur nettoyeur Mac pour développeur qui supprime les caches Xcode en toute sécurité ?\" only partly near the top (partial). Why: L'ouverture présente un seul nettoyeur Mac pour développeurs (CacheDrop) avec son prix, mais sans comparer d'options ni expliquer la sécurité de la suppression des caches Xcode. Quote: \"Télécharger pour Mac Nettoyeur Mac pour développeurs · Apple Silicon et Intel Essayez-le avant d’acheter · Aucune carte requise · macOS 14 ou version ultérieure Jusqu’à 3 Mac : 29,99 $ une seule fois, maintenant 19,99 $ pour un temps limité.\"",
+          "/fr/clear-adobe-media-cache-mac/: <html lang=\"fr-CA\"> targets CA; the market is FR (use \"fr\" or \"fr-FR\")",
+          "/fr/clear-adobe-media-cache-mac/: meta description is 177 chars (cut at about 160)",
+          "/fr/clear-adobe-media-cache-mac/: does not answer \"Comment vider le cache de média Adobe Premiere Pro sur Mac ?\" near the top. Why: The opening is mostly a product pitch for CacheDrop (pricing, download) and only begins to describe what media cache files are, without giving any steps to clear the Premiere Pro media cache on Mac.",
+          "/fr/uninstall-audio-plugins-mac/: <html lang=\"fr-CA\"> targets CA; the market is FR (use \"fr\" or \"fr-FR\")",
+          "/fr/uninstall-audio-plugins-mac/: meta description is 203 chars (cut at about 160)",
+          "/fr/uninstall-audio-plugins-mac/: does not answer \"Comment désinstaller complètement un plug-in VST sur Mac ?\" near the top. Why: The opening is a product pitch for CacheDrop and only notes that plug-ins span several formats and folders, without giving any actual steps or locations for uninstalling a VST on Mac.",
+          "/fr/clear-system-data-mac/: <html lang=\"fr-CA\"> targets CA; the market is FR (use \"fr\" or \"fr-FR\")",
+          "/fr/clear-system-data-mac/: title is 65 chars (search results cut at about 60)",
+          "/fr/clear-system-data-mac/: meta description is 246 chars (cut at about 160)",
+          "/fr/clear-system-data-mac/: does not answer \"Comment vider les Données système sur mon Mac qui prennent trop de place ?\" near the top. Why: The opening only defines System Data and promises what can be removed, mixed with a product pitch for CacheDrop; it gives no actual steps for clearing it.",
+          "/fr/uninstall-apps-mac/: <html lang=\"fr-CA\"> targets CA; the market is FR (use \"fr\" or \"fr-FR\")",
+          "/fr/uninstall-apps-mac/: meta description is 230 chars (cut at about 160)",
+          "/fr/uninstall-apps-mac/: needs check: answers \"Quelle est la meilleure application pour désinstaller complètement un logiciel sur Mac ?\" only partly near the top (partial). Why: The opening explains that the Trash leaves residual files and promotes CacheDrop as a tool, but it offers no comparison of apps and gives no actual recommendation of the best one beyond its own product pitch. Quote: \"Voici où se trouvent ces restes, comment les supprimer à la main et comment CacheDrop les trouve pour vous.\"",
+          "/fr/cleanmymac-alternative/: <html lang=\"fr-CA\"> targets CA; the market is FR (use \"fr\" or \"fr-FR\")",
+          "/fr/cleanmymac-alternative/: meta description is 240 chars (cut at about 160)",
+          "/fr/cleanmymac-alternative/: needs check: answers \"Quelle alternative à CleanMyMac pour nettoyer un Mac de producteur de musique ?\" only partly near the top (partial). Why: L'ouverture propose CacheDrop comme alternative sans abonnement et mentionne plug-ins et caches de média, mais ne cible pas explicitement les producteurs de musique (DAW, bibliothèques d'échantillons) et ne compare pas encore clairement les options. Quote: \"CacheDrop nettoie votre Mac, désinstalle complètement applications et plug-ins, et vide les caches de développement et de média. 29,99 $ une seule fois, pour un maximum de 3 Mac.\""
+        ]
+      }
+    }
+  ],
+  "proposals": [
+    {
+      "key": "page:en-US:q19",
+      "kind": "new_page",
+      "target": "cachedrop-website",
+      "title": "New en-US page for q19: \"alternative to DaisyDisk for developers checking mac disk usage\"",
+      "why": "No cachedrop.io page is mapped to it; AI answers recommend 15 other product(s) and not CacheDrop (GEO run 5d40feb0-8c73-42b9-8287-1cc11604cb5c).",
+      "next": "Claude first checks whether an existing page could answer it instead; otherwise the Content Writer drafts it, the claims reviewer checks it, and Claude files it."
+    },
+    {
+      "key": "page:fr-FR:q09",
+      "kind": "new_page",
+      "target": "cachedrop-website",
+      "title": "New fr-FR page for q09: \"Quelle alternative à OnyX pour nettoyer mon Mac sans risque ?\"",
+      "why": "No cachedrop.io page is mapped to it; AI answers recommend 10 other product(s) and not CacheDrop (GEO run f68b028b-5d51-4cfc-b3c0-d287d64db419).",
+      "next": "Claude first checks whether an existing page could answer it instead; otherwise the Content Writer drafts it, the claims reviewer checks it, and Claude files it."
+    },
+    {
+      "key": "cite:github.com",
+      "kind": "citation_source",
+      "target": "owner",
+      "title": "AI engines cite github.com most: decide whether CacheDrop should be there",
+      "why": "Cited in 10 answers across 2 market(s) (en-US, fr-FR).",
+      "next": "Owner decision (not a website ticket): an honest developer post, a listing request, or nothing."
+    },
+    {
+      "key": "page:en-US:q20",
+      "kind": "new_page",
+      "target": "cachedrop-website",
+      "title": "New en-US page for q20: \"alternative to CleanMyMac for video editors on mac\"",
+      "why": "No cachedrop.io page is mapped to it; AI answers recommend 11 other product(s) and not CacheDrop (GEO run 5d40feb0-8c73-42b9-8287-1cc11604cb5c).",
+      "next": "Claude first checks whether an existing page could answer it instead; otherwise the Content Writer drafts it, the claims reviewer checks it, and Claude files it."
+    },
+    {
+      "key": "page:fr-FR:q16",
+      "kind": "new_page",
+      "target": "cachedrop-website",
+      "title": "New fr-FR page for q16: \"Quelle alternative à AppCleaner pour supprimer les restes de logiciels de montage vidéo ?\"",
+      "why": "No cachedrop.io page is mapped to it; AI answers recommend 10 other product(s) and not CacheDrop (GEO run f68b028b-5d51-4cfc-b3c0-d287d64db419).",
+      "next": "Claude first checks whether an existing page could answer it instead; otherwise the Content Writer drafts it, the claims reviewer checks it, and Claude files it."
+    }
+  ],
+  "cost_usd": 2.0191,
+  "serper_credits": 89,
+  "skipped": [
+    {
+      "key": "opening:https://cachedrop.io/",
+      "ref": "decision website Decision 51"
+    },
+    {
+      "key": "opening:https://cachedrop.io/pricing/",
+      "ref": "ticketed cachedrop-website #131"
+    },
+    {
+      "key": "opening:https://cachedrop.io/clear-mac-developer-caches/",
+      "ref": "ticketed cachedrop-website #131"
+    },
+    {
+      "key": "opening:https://cachedrop.io/clear-adobe-media-cache-mac/",
+      "ref": "ticketed cachedrop-website #131"
+    },
+    {
+      "key": "opening:https://cachedrop.io/uninstall-audio-plugins-mac/",
+      "ref": "ticketed cachedrop-website #131"
+    },
+    {
+      "key": "opening:https://cachedrop.io/clear-system-data-mac/",
+      "ref": "ticketed cachedrop-website #131"
+    },
+    {
+      "key": "opening:https://cachedrop.io/uninstall-apps-mac/",
+      "ref": "ticketed cachedrop-website #131"
+    },
+    {
+      "key": "opening:https://cachedrop.io/cleanmymac-alternative/",
+      "ref": "decision website Decision 54"
+    },
+    {
+      "key": "opening:https://cachedrop.io/fr/",
+      "ref": "decision website Decision 51"
+    },
+    {
+      "key": "opening:https://cachedrop.io/fr/pricing/",
+      "ref": "ticketed cachedrop-website #131"
+    },
+    {
+      "key": "opening:https://cachedrop.io/fr/clear-mac-developer-caches/",
+      "ref": "ticketed cachedrop-website #131"
+    },
+    {
+      "key": "opening:https://cachedrop.io/fr/clear-adobe-media-cache-mac/",
+      "ref": "ticketed cachedrop-website #131"
+    },
+    {
+      "key": "opening:https://cachedrop.io/fr/uninstall-audio-plugins-mac/",
+      "ref": "ticketed cachedrop-website #131"
+    },
+    {
+      "key": "opening:https://cachedrop.io/fr/clear-system-data-mac/",
+      "ref": "ticketed cachedrop-website #131"
+    },
+    {
+      "key": "opening:https://cachedrop.io/fr/uninstall-apps-mac/",
+      "ref": "ticketed cachedrop-website #131"
+    },
+    {
+      "key": "opening:https://cachedrop.io/fr/cleanmymac-alternative/",
+      "ref": "decision website Decision 54"
+    },
+    {
+      "key": "page:en-US:q05",
+      "ref": "ticketed cachedrop-website #133"
+    },
+    {
+      "key": "page:en-US:q10",
+      "ref": "dropped owner review 2026-11-10"
+    },
+    {
+      "key": "page:fr-FR:q14",
+      "ref": "dropped owner review 2026-11-10"
+    }
+  ],
+  "issue": {
+    "id": "2d777317-c4bd-4263-a786-7b89c2f61fd8",
+    "identifier": "HEA-19"
+  }
+}

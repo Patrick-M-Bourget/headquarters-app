@@ -1,0 +1,40 @@
+{
+  "run_id": "8ef8840f-dd1f-4175-94a7-4535945be1eb",
+  "locale": "fr-FR",
+  "query_set_version": 1,
+  "pages": 8,
+  "competitors": 24,
+  "model": "anthropic/claude-sonnet-5-5",
+  "own_answers_near_top": {
+    "no": 4,
+    "yes": 1,
+    "partial": 3
+  },
+  "competitor_answers_near_top": {
+    "no": 15,
+    "partial": 6,
+    "yes": 3
+  },
+  "gaps": 31,
+  "site_gaps": [],
+  "skipped_competitors": [
+    "q04 https://fr.scribd.com/document/943512856/Supprimer-Cache-Premiere-Pro: too little readable text (blocked or script-rendered)",
+    "q02 https://www.reddit.com/r/ableton/comments/tun84q/how_to_uninstall_plug_ins_on_mac: too little readable text (blocked or script-rendered)",
+    "q02 https://audiosex.pro/threads/how-to-uninstall-plugins-on-mac-os.74924: terminated",
+    "q13 https://www.reddit.com/r/macapps/comments/1ksqgkr/looking_for_a_mac_app_to_completely_uninstall?tl=fr: too little readable text (blocked or script-rendered)",
+    "q18 https://www.reddit.com/r/macapps/comments/1g0pw1x/free_alternative_to_cleanmymac_x?tl=fr: too little readable text (blocked or script-rendered)"
+  ],
+  "searches": 8,
+  "cost_usd": 0.1103,
+  "seconds": 125,
+  "delta": {
+    "previous_run": "local-c1d9af4e",
+    "new_gaps": [
+      "/fr/pricing/: JSON-LD types used by #+ competitors but not here: BreadcrumbList, ContactPoint, Article"
+    ],
+    "fixed_gaps": [
+      "/fr/pricing/: JSON-LD types used by #+ competitors but not here: BreadcrumbList"
+    ]
+  },
+  "finished_at": "2026-11-10T20:31:43.174Z"
+}

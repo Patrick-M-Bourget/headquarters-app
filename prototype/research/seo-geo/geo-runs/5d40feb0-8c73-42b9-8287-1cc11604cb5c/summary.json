@@ -1,0 +1,156 @@
+{
+  "run_id": "5d40feb0-8c73-42b9-8287-1cc11604cb5c",
+  "locale": "en-US",
+  "query_set_version": 1,
+  "market_signals": {
+    "claude_country": "US",
+    "gemini": "question language only"
+  },
+  "engines": [
+    "claude",
+    "gemini"
+  ],
+  "answers": 50,
+  "failed": 0,
+  "cachedrop": {
+    "mentioned": 0,
+    "recommended": 0,
+    "top_pick": 0,
+    "cited": 0,
+    "of": 50
+  },
+  "by_engine": {
+    "claude": {
+      "n": 25,
+      "mentioned": 0,
+      "recommended": 0,
+      "cited": 0
+    },
+    "gemini": {
+      "n": 25,
+      "mentioned": 0,
+      "recommended": 0,
+      "cited": 0
+    }
+  },
+  "by_audience": {
+    "general": {
+      "n": 14,
+      "mentioned": 0,
+      "recommended": 0,
+      "cited": 0
+    },
+    "producers": {
+      "n": 12,
+      "mentioned": 0,
+      "recommended": 0,
+      "cited": 0
+    },
+    "developers": {
+      "n": 12,
+      "mentioned": 0,
+      "recommended": 0,
+      "cited": 0
+    },
+    "video_editors": {
+      "n": 12,
+      "mentioned": 0,
+      "recommended": 0,
+      "cited": 0
+    }
+  },
+  "competitors_top_pick": {
+    "appcleaner": 9,
+    "audio-plugin-uninstaller": 6,
+    "daisydisk": 5,
+    "cachecut": 3,
+    "devcleaner": 2,
+    "npkill": 2,
+    "cleanmymac": 2,
+    "arctic": 1,
+    "mole": 1,
+    "devcleanup": 1,
+    "ncdu": 1,
+    "gdu": 1
+  },
+  "competitors_recommended": {
+    "appcleaner": 15,
+    "daisydisk": 14,
+    "grandperspective": 12,
+    "cleanmymac": 11,
+    "omnidisksweeper": 9,
+    "pearcleaner": 8,
+    "onyx": 7,
+    "audio-plugin-uninstaller": 7,
+    "devcleaner": 6,
+    "npkill": 6,
+    "buhocleaner": 3,
+    "plugin-station": 3,
+    "arctic": 3,
+    "mole": 3,
+    "plugoff": 3,
+    "cachecut": 3,
+    "puremac": 2,
+    "vst-manager": 2,
+    "cleanmydev": 2,
+    "diskcleaner": 2,
+    "shedi": 2,
+    "ncdu": 2,
+    "gdu": 2,
+    "macdiskcleaner": 1,
+    "uninstallpkg": 1,
+    "devcleanr": 1,
+    "raycast": 1,
+    "xclean": 1,
+    "final-cut-library-manager": 1,
+    "render-cleaner-2-0": 1,
+    "fcp-library-cleaner": 1,
+    "appdelete": 1,
+    "ccleaner": 1,
+    "unplugin": 1,
+    "aax-plugin-manager": 1,
+    "plug-pane": 1,
+    "stats": 1,
+    "symboliclinker": 1,
+    "devcleanup": 1,
+    "codecleaner": 1,
+    "megacleaner": 1,
+    "orbstack": 1,
+    "deepcleanmac": 1,
+    "fcp-cleaner": 1,
+    "editingtools-io-fcp-library-cleaner": 1,
+    "opendisk": 1,
+    "macdirstat": 1,
+    "disk-inventory-x": 1,
+    "disk-graph": 1,
+    "disksight": 1,
+    "disk-xray": 1,
+    "dust": 1,
+    "dua-cli": 1,
+    "cache-kid": 1,
+    "crumb": 1,
+    "maccleaner-pro": 1,
+    "pluginize": 1,
+    "kvr-studio-manager": 1,
+    "pluginfo": 1,
+    "pluginhub": 1,
+    "app-cleaner-uninstaller": 1,
+    "trashme-3": 1
+  },
+  "unverified_judgements": [
+    "q15/gemini: quote not in answer: DevClean",
+    "q15/gemini: quote not in answer: MintDisk",
+    "q21/gemini: quote not in answer: CleanMyMac"
+  ],
+  "cost_usd": 0.8872,
+  "searches": 50,
+  "seconds": 281,
+  "errors": [],
+  "delta": {
+    "previous_run": "local-136b0381-7c00-4236-b995-a280b5053178",
+    "mentioned": 0,
+    "recommended": 0,
+    "cited": -1
+  },
+  "finished_at": "2026-11-10T20:32:31.746Z"
+}

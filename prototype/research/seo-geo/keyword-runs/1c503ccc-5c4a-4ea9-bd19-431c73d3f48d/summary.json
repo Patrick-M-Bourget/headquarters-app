@@ -1,0 +1,80 @@
+{
+  "run_id": "1c503ccc-5c4a-4ea9-bd19-431c73d3f48d",
+  "locale": "fr-FR",
+  "query_set_version": 1,
+  "gl": "fr",
+  "hl": "fr",
+  "keywords": 41,
+  "failed": 0,
+  "own": {
+    "ranked": 0,
+    "top3": 0,
+    "positions": {}
+  },
+  "brands_in_top10": {
+    "cleanmymac": 17,
+    "mole": 8,
+    "ccleaner": 3,
+    "onyx": 2,
+    "app-cleaner-uninstaller": 2,
+    "buhocleaner": 1
+  },
+  "domains_in_top10": {
+    "reddit.com": 40,
+    "youtube.com": 38,
+    "macpaw.com": 13,
+    "apps.apple.com": 10,
+    "support.apple.com": 10,
+    "communities.apple.com": 9,
+    "mole.fit": 8,
+    "01net.com": 7,
+    "youtips.com": 7,
+    "cleanmymac.com": 7,
+    "facebook.com": 6,
+    "findstack.fr": 5,
+    "macoptimizers.informatiqueconnect.fr": 5,
+    "forums.macg.co": 5,
+    "mac4ever.com": 4
+  },
+  "serper_credits": 41,
+  "cost_usd": 0,
+  "seconds": 87,
+  "delta": {
+    "previous_run": "local-44296df8",
+    "changes": [
+      {
+        "keyword": "données système mac",
+        "change": "cleanmymac left the top 10"
+      },
+      {
+        "keyword": "nettoyer node_modules mac",
+        "change": "mole left the top 10"
+      },
+      {
+        "keyword": "désinstaller application mac",
+        "change": "cleanmymac left the top 10"
+      },
+      {
+        "keyword": "alternative appcleaner",
+        "change": "app-cleaner-uninstaller entered the top 10"
+      },
+      {
+        "keyword": "restes application mac",
+        "change": "cleanmymac left the top 10"
+      },
+      {
+        "keyword": "vider cache premiere pro mac",
+        "change": "mole entered the top 10"
+      },
+      {
+        "keyword": "désinstalleur plug-in aax",
+        "change": "audio-plugin-uninstaller left the top 10"
+      },
+      {
+        "keyword": "désinstaller plug-in clap mac",
+        "change": "audio-plugin-uninstaller left the top 10"
+      }
+    ]
+  },
+  "finished_at": "2026-11-10T20:30:17.523Z"
+}

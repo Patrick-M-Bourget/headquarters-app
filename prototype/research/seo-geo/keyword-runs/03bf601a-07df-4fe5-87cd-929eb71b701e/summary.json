@@ -1,0 +1,99 @@
+{
+  "run_id": "03bf601a-07df-4fe5-87cd-929eb71b701e",
+  "locale": "en-US",
+  "query_set_version": 1,
+  "gl": "us",
+  "hl": "en",
+  "keywords": 48,
+  "failed": 0,
+  "own": {
+    "ranked": 0,
+    "top3": 0,
+    "positions": {}
+  },
+  "brands_in_top10": {
+    "cleanmymac": 12,
+    "app-cleaner-uninstaller": 8,
+    "audio-plugin-uninstaller": 5,
+    "appcleaner": 3,
+    "ccleaner": 2,
+    "buhocleaner": 2,
+    "pearcleaner": 1,
+    "mole": 1,
+    "daisydisk": 1
+  },
+  "domains_in_top10": {
+    "reddit.com": 47,
+    "youtube.com": 38,
+    "discussions.apple.com": 18,
+    "facebook.com": 17,
+    "medium.com": 15,
+    "apps.apple.com": 11,
+    "support.apple.com": 11,
+    "github.com": 10,
+    "nektony.com": 8,
+    "techcommunity.microsoft.com": 8,
+    "gearspace.com": 8,
+    "cleanmymac.com": 8,
+    "stackoverflow.com": 7,
+    "macpaw.com": 7,
+    "quora.com": 6
+  },
+  "serper_credits": 48,
+  "cost_usd": 0,
+  "seconds": 59,
+  "delta": {
+    "previous_run": "local-29c325f2",
+    "changes": [
+      {
+        "keyword": "mac cleaner",
+        "change": "cleanmymac left the top 10"
+      },
+      {
+        "keyword": "mac developer cleaner",
+        "change": "pearcleaner entered the top 10"
+      },
+      {
+        "keyword": "mac developer cleaner",
+        "change": "cleanmymac entered the top 10"
+      },
+      {
+        "keyword": "mac developer cleaner",
+        "change": "mole entered the top 10"
+      },
+      {
+        "keyword": "mac developer cleaner",
+        "change": "ccleaner left the top 10"
+      },
+      {
+        "keyword": "system data mac",
+        "change": "mole left the top 10"
+      },
+      {
+        "keyword": "docker disk space mac",
+        "change": "cleanmymac left the top 10"
+      },
+      {
+        "keyword": "uninstall mac app",
+        "change": "app-cleaner-uninstaller entered the top 10"
+      },
+      {
+        "keyword": "cleanmymac alternative",
+        "change": "mole left the top 10"
+      },
+      {
+        "keyword": "video editor mac cleaner",
+        "change": "ccleaner entered the top 10"
+      },
+      {
+        "keyword": "cleanmymac vs daisydisk",
+        "change": "buhocleaner entered the top 10"
+      },
+      {
+        "keyword": "uninstall apps mac",
+        "change": "appcleaner left the top 10"
+      }
+    ]
+  },
+  "finished_at": "2026-11-10T20:28:49.515Z"
+}

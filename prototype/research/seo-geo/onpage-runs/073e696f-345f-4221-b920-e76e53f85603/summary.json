@@ -1,0 +1,36 @@
+{
+  "run_id": "073e696f-345f-4221-b920-e76e53f85603",
+  "locale": "en-US",
+  "query_set_version": 1,
+  "pages": 8,
+  "competitors": 21,
+  "model": "anthropic/claude-sonnet-5-5",
+  "own_answers_near_top": {
+    "partial": 8
+  },
+  "competitor_answers_near_top": {
+    "partial": 11,
+    "no": 9,
+    "yes": 1
+  },
+  "gaps": 20,
+  "site_gaps": [],
+  "skipped_competitors": [
+    "q12 https://tavily.com/knowledge/company/1LGhojf0NTrw: too little readable text (blocked or script-rendered)",
+    "q13 https://www.reddit.com/r/MacOS/comments/1err6fx/how_to_fully_delete_apps: too little readable text (blocked or script-rendered)",
+    "q13 https://medium.com/@polina.fomenkova1/step-by-step-remove-leftover-files-after-uninstalling-mac-apps-17f3fc37eff6: HTTP 403"
+  ],
+  "searches": 8,
+  "cost_usd": 0.0969,
+  "seconds": 107,
+  "delta": {
+    "previous_run": "local-53fdc2a5",
+    "new_gaps": [
+      "/: JSON-LD types used by #+ competitors but not here: Article"
+    ],
+    "fixed_gaps": [
+      "/: JSON-LD types used by #+ competitors but not here: BreadcrumbList, BlogPosting"
+    ]
+  },
+  "finished_at": "2026-11-10T20:29:37.635Z"
+}

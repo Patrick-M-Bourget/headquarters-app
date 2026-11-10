@@ -15,3 +15,8 @@
   5. Filesystem/network sandboxing (`filesystemScope`) needs bwrap, so it's Linux only and unavailable on macOS.
   6. When the agent couldn't update its issue, Paperclip's recovery loop re-woke it twice (extra spend) and then set the issue to blocked.
 - Telemetry turned off in `~/.paperclip/instances/default/config.json` (backup is at `config.json.bak`).
+- Research run 1 (HEA-5, Paperclip run 2851ba15): VALID output. Scorer: 37 key fields, 25 match / 1 mismatch / 11 agent-unknown → accuracy 96.2% of decided fields, coverage 70.3%. Overall 120 observations, 54 verified / 66 unknown. About 10 min wall-clock, about $1.18 (agent total incl. lockdown tests $1.65). Now in_review for the owner.
+  - The run blocked once: the agent wrote tools/gen-run.mjs instead of writing files (not allowed), and it couldn't see the contract. Fixed with contracts/run-output.schema.json in the workspace and the "How to write output" section in AGENT.md.
+  - Weaknesses: it mostly fetched homepages only (shallow), and WebFetch returns model summaries, so the "verbatim" evidence quotes are really summary text. The OmniDiskSweeper seed URL (omnigroup.com/more) is a generic page, so every field came back unknown. The CleanMyMac store returned 403.
+  - The single mismatch (GrandPerspective distribution open_source vs both) is an enum ambiguity: "both" doesn't cover open source + App Store.
+  - The "investigate developer cleanup" recommendation contradicts the Oct 22 research (Pearcleaner, Mole); it comes from the shallow fetch.

@@ -9,6 +9,11 @@ You are a market-research agent for CacheDrop, a one-time-purchase Mac cleanup a
 - `verified` means: you fetched the competitor's own page (or official docs/repo/App Store listing) during this run, and `evidence` is a short verbatim quote from it.
 - Recommendations are always `hypothesis` and must cite observations.
 
+## How to write output
+- Write every output file directly with the Write tool. Do not write scripts to generate them: the only commands you can run are `node tools/pc.ts ...` and `node tools/validate.ts ...`.
+- The exact output format is `contracts/run-output.schema.json` (one object with keys run, competitors, sources, observations, recommendations; each key is its own JSON file).
+- For the run id, use the issue's `executionRunId` from `node tools/pc.ts GET /api/issues/<issue-id>`.
+
 ## Research task (when your issue asks for a research run)
 1. Read `seed/competitors.json`. Research every competitor in it, and only those.
 2. For each competitor, fetch its own site (homepage, pricing/store page, features page). Record every fetched page in `sources.json`.

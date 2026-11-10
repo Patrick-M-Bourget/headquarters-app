@@ -1,0 +1,15 @@
+{
+  "run_id": "2851ba15-ca74-43ef-972f-b875d9940030",
+  "runner": "claude-agent",
+  "model": "claude-sonnet-5-5",
+  "started_at": "2026-11-10T01:41:16Z",
+  "finished_at": "2026-11-10T01:50:00Z",
+  "status": "succeeded",
+  "paperclip": {
+    "issue_id": "0ec39ee9-70f4-47aa-ae13-39ab558fb957",
+    "run_id": "2851ba15-ca74-43ef-972f-b875d9940030"
+  },
+  "errors": [
+    "fetch failed (HTTP 403): https://macpaw.com/store/cleanmymac"
+  ]
+}

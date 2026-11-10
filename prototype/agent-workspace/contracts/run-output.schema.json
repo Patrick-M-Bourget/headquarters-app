@@ -1,0 +1,285 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "run": {
+      "type": "object",
+      "properties": {
+        "run_id": {
+          "type": "string"
+        },
+        "runner": {
+          "type": "string",
+          "enum": [
+            "claude-agent",
+            "mastra"
+          ]
+        },
+        "model": {
+          "type": "string"
+        },
+        "started_at": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+        },
+        "finished_at": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "succeeded",
+            "partial",
+            "failed"
+          ]
+        },
+        "paperclip": {
+          "type": "object",
+          "properties": {
+            "issue_id": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "run_id": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "issue_id",
+            "run_id"
+          ],
+          "additionalProperties": false
+        },
+        "errors": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "usage": {
+          "type": "object",
+          "properties": {
+            "input_tokens": {
+              "type": "number"
+            },
+            "output_tokens": {
+              "type": "number"
+            },
+            "cost_usd": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "run_id",
+        "runner",
+        "model",
+        "started_at",
+        "finished_at",
+        "status",
+        "paperclip",
+        "errors"
+      ],
+      "additionalProperties": false
+    },
+    "competitors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "website": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "website"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "retrieved_at": {
+            "type": "string",
+            "format": "date-time",
+            "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+          },
+          "title": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "url",
+          "retrieved_at"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "observations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "competitor_id": {
+            "type": "string"
+          },
+          "field": {
+            "type": "string",
+            "enum": [
+              "pricing_model",
+              "price_one_time_usd",
+              "price_annual_usd",
+              "free_trial",
+              "distribution",
+              "feature_cleanup",
+              "feature_uninstall",
+              "feature_disk_map",
+              "feature_duplicates",
+              "feature_developer_cleanup",
+              "feature_plugin_management",
+              "positioning_headline"
+            ]
+          },
+          "value": {
+            "type": [
+              "string",
+              "number",
+              "null"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "verified",
+              "unknown",
+              "hypothesis"
+            ]
+          },
+          "source_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "evidence": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 400
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "competitor_id",
+          "field",
+          "value",
+          "status",
+          "source_id",
+          "evidence"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "recommendations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "rationale": {
+            "type": "string"
+          },
+          "observation_refs": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "competitor_id": {
+                  "type": "string"
+                },
+                "field": {
+                  "type": "string",
+                  "enum": [
+                    "pricing_model",
+                    "price_one_time_usd",
+                    "price_annual_usd",
+                    "free_trial",
+                    "distribution",
+                    "feature_cleanup",
+                    "feature_uninstall",
+                    "feature_disk_map",
+                    "feature_duplicates",
+                    "feature_developer_cleanup",
+                    "feature_plugin_management",
+                    "positioning_headline"
+                  ]
+                }
+              },
+              "required": [
+                "competitor_id",
+                "field"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "status": {
+            "type": "string",
+            "const": "hypothesis"
+          }
+        },
+        "required": [
+          "title",
+          "rationale",
+          "observation_refs",
+          "status"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "run",
+    "competitors",
+    "sources",
+    "observations",
+    "recommendations"
+  ],
+  "additionalProperties": false
+}

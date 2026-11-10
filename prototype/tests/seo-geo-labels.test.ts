@@ -29,3 +29,11 @@ test("stripMd lets plain quotes match markdown answers", async () => {
   assert.ok(evidenceOnPage(stripMd("OnyX for maintenance"), stripMd(answer)));
   assert.ok(evidenceOnPage(stripMd("Alternative: npkill"), stripMd(answer)));
 });
+
+test("product ids work in every script (ja-JP) and fold accents", async () => {
+  const { productId } = await import("../runners/seo-geo/labels.ts");
+  assert.equal(productId("Mac Cleaner by Foo Inc"), "mac-cleaner");
+  assert.equal(productId("Désinstalleur Pro"), "desinstalleur-pro");
+  assert.equal(productId("キャッシュクリーナー"), "キャッシュクリーナー");
+  assert.equal(productId("ＭａｃＣｌｅａｎｅｒ　プロ"), "maccleaner-プロ");
+});

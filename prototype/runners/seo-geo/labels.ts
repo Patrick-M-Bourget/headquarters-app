@@ -65,7 +65,10 @@ Evidence: a short quote copied VERBATIM from the answer (max 300 chars). The ans
 
 export type Stance = "top_pick" | "suggested" | "mentioned";
 export type Labelled = { brand: string; name: string; position: number; stance: Stance; evidence: string | null; cited_own_site: boolean };
-const slug = (n: string) => n.replace(/\s+(by|from)\s+.*$/i, "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+/** Id for a product the tracker doesn't know: ASCII-folded where the script allows (é → e), other scripts kept (katakana, kanji). */
+export const productId = (n: string) => n.replace(/\s+(by|from)\s+.*$/i, "").normalize("NFKD").replace(/(\p{Script=Latin})\p{M}+/gu, "$1").normalize("NFKC")
+  .toLowerCase().replace(/[^\p{L}\p{N}]+/gu, "-").replace(/^-|-$/g, "");
+const slug = productId;
 /** Answers are markdown; compare quotes without formatting so **OnyX** matches OnyX. */
 export const stripMd = (s: string) => s.replace(/```[a-z]*\n?/gi, " ").replace(/[*_`#>]+/g, "").replace(/\[([^\]]+)\]\([^)]*\)/g, "$1");
 const norm = (s: string) => s.toLowerCase().replace(/[\u2018\u2019]/g, "'").replace(/\s+/g, " ");

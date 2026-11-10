@@ -3,13 +3,13 @@
 // Unit = (answer, product) in the union of both lists. Agree = both list it AND agree on "recommended".
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
-import { BRANDS } from "../runners/seo-geo/labels.ts";
+import { BRANDS, productId } from "../runners/seo-geo/labels.ts";
 
 type Human = { id: string; cachedrop_mentioned: boolean; products: { name: string; recommended: boolean }[] };
 const [runDir, labelsPath] = process.argv.slice(2);
 const mentions: any[] = JSON.parse(readFileSync(join(runDir, "mentions.json"), "utf8"));
 const human: Human[] = JSON.parse(readFileSync(labelsPath, "utf8"));
-const idFor = (name: string) => BRANDS.find(b => b.pattern.test(name))?.id ?? name.replace(/\s+(by|from)\s+.*$/i, "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+const idFor = (name: string) => BRANDS.find(b => b.pattern.test(name))?.id ?? productId(name);
 
 let units = 0, agree = 0, onlyTracker = 0, onlyHuman = 0, recDisagree = 0, cdAgree = 0;
 const issues: string[] = [];

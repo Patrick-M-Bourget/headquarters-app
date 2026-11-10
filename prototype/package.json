@@ -6,6 +6,7 @@
     "node": ">=24.11"
   },
   "dependencies": {
-    "paperclipai": "^2026.1106.0"
+    "paperclipai": "^2026.1106.0",
+    "zod": "^4.6.7"
   }
 }

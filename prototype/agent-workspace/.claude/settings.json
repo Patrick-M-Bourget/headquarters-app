@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "defaultMode": "acceptEdits",
+    "allow": [
+      "WebSearch",
+      "WebFetch",
+      "Bash(node tools/pc.ts:*)",
+      "Bash(node tools/validate.ts:*)"
+    ],
+    "deny": [
+      "Bash(curl:*)",
+      "Bash(wget:*)",
+      "Read(~/.ssh/**)",
+      "Read(~/.paperclip/**)",
+      "Read(//Users/bender/Workspace/headquarters-app/prototype/eval/**)",
+      "Read(//Users/bender/Workspace/headquarters-app/prototype/.env)",
+      "Read(//Users/bender/Workspace/mac-cleaner/**)",
+      "Read(//Users/bender/Workspace/cachedrop-website/**)"
+    ]
+  }
+}

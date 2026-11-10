@@ -85,3 +85,25 @@ test("mainText separates inline buttons and links", async () => {
   const { mainText } = await import("../runners/seo-geo/onpage-checks.ts");
   assert.equal(mainText("<html><body><a href='/d'>Download for Mac</a><button>Buy</button></body></html>"), "Download for Mac Buy");
 });
+
+test("html lang and hreflang are extracted; language targeting gaps (plan Q23)", async () => {
+  const { langGaps, pageChecks } = await import("../runners/seo-geo/onpage-checks.ts");
+  const html = `<html lang="fr-CA"><head><link rel="alternate" hreflang="en" href="/pricing/"><link rel="alternate" hreflang="fr" href="/fr/pricing/"><link rel="alternate" hreflang="x-default" href="/pricing/"></head><body><h1>Payez une seule fois</h1></body></html>`;
+  const url = "https://cachedrop.io/fr/pricing/";
+  const c = pageChecks(html, url, "Payez une seule fois");
+  assert.equal(c.html_lang, "fr-CA");
+  assert.deepEqual(c.hreflang!.map(a => a.href), ["https://cachedrop.io/pricing/", "https://cachedrop.io/fr/pricing/", "https://cachedrop.io/pricing/"]);
+  const ok = { "https://cachedrop.io/pricing/": ["https://cachedrop.io/pricing/", "https://cachedrop.io/fr/pricing/"] };
+  assert.deepEqual(langGaps(url, c, "fr-FR", ok), [`<html lang="fr-CA"> targets CA; the market is FR (use "fr" or "fr-FR")`]);
+  assert.deepEqual(langGaps(url, { ...c, html_lang: "fr" }, "fr-FR", ok), []);
+  assert.deepEqual(langGaps(url, { ...c, html_lang: "en" }, "fr-FR", ok), [`<html lang="en"> but the page serves fr-FR`]);
+  assert.match(langGaps(url, { ...c, html_lang: "fr" }, "fr-FR", { "https://cachedrop.io/pricing/": ["https://cachedrop.io/pricing/"] })[0], /pair broken/);
+  const noXd = { ...c, html_lang: "fr", hreflang: c.hreflang!.filter(a => a.lang !== "x-default") };
+  assert.deepEqual(langGaps(url, noXd, "fr-FR", ok), ["no hreflang x-default"]);
+  assert.deepEqual(langGaps(url, { ...c, html_lang: null, hreflang: [] }, "fr-FR", {}), ["no <html lang>", "no hreflang alternates"]);
+});
+
+test("quotes match across French narrow no-break spaces", async () => {
+  const { evidenceOnPage } = await import("../runners/mastra/fetch.ts");
+  assert.ok(evidenceOnPage("Combien ça coûte ?", "Tarifs. Combien ça coûte ? Une seule fois."));
+});

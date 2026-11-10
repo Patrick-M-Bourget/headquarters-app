@@ -82,6 +82,8 @@ export const PageChecks = z.object({
   json_ld_types: z.array(z.string()),        // @type values from all JSON-LD blocks, @graph included
   internal_links: z.number().int().nonnegative(),
   word_count: z.number().int().nonnegative(), // readable text
+  html_lang: z.string().nullable().optional(), // <html lang>; absent in runs before 5b step 4
+  hreflang: z.array(z.object({ lang: z.string(), href: z.string() })).optional(), // <link rel=alternate hreflang>, hrefs absolute
 });
 export type PageChecks = z.infer<typeof PageChecks>;
 

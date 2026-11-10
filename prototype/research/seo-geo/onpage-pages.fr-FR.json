@@ -1,0 +1,15 @@
+{
+  "note": "Each French sitemap page of cachedrop.io and the frozen fr-FR query (v1) it should answer, chosen to mirror the English mapping's intent. Proposed by Claude 2026-11-09 while the owner was away; owner to confirm. Change it only together with a query set version.",
+  "locale": "fr-FR",
+  "query_set_version": 1,
+  "pages": [
+    { "url": "https://cachedrop.io/fr/", "query_id": "q01" },
+    { "url": "https://cachedrop.io/fr/pricing/", "query_id": "q24" },
+    { "url": "https://cachedrop.io/fr/clear-mac-developer-caches/", "query_id": "q15" },
+    { "url": "https://cachedrop.io/fr/clear-adobe-media-cache-mac/", "query_id": "q04" },
+    { "url": "https://cachedrop.io/fr/uninstall-audio-plugins-mac/", "query_id": "q02" },
+    { "url": "https://cachedrop.io/fr/clear-system-data-mac/", "query_id": "q05" },
+    { "url": "https://cachedrop.io/fr/uninstall-apps-mac/", "query_id": "q13" },
+    { "url": "https://cachedrop.io/fr/cleanmymac-alternative/", "query_id": "q18" }
+  ]
+}

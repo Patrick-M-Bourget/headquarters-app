@@ -51,7 +51,7 @@ export function candidatePages(home: Page, max = 3): string[] {
 }
 const score = (u: string) => (/(pric|buy|store|purchase|plans)/i.test(u) ? 2 : 0) + (/feature/i.test(u) ? 1 : 0) - u.length / 1000;
 
-const norm = (s: string) => collapse(s.toLowerCase().replace(/[‘’]/g, "'").replace(/[“”]/g, '"').replace(/ /g, " "));
+const norm = (s: string) => collapse(s.toLowerCase().replace(/[‘’]/g, "'").replace(/[“”]/g, '"').replace(/[\u00a0\u202f\u2009]/g, " ")); // no-break, narrow no-break (French « ? ! : ») and thin spaces
 /** True when the evidence quote appears verbatim (modulo whitespace, case and curly quotes) in the page text. */
 export function evidenceOnPage(evidence: string, pageText: string): boolean {
   const e = norm(evidence).replace(/^\.+|\.+$/g, "").replace(/\s*(\.\.\.|…)\s*/g, "\u0000");

@@ -43,6 +43,10 @@ export function pageChecks(html: string, url: string, text: string): PageChecks 
     json_ld_types: [...types].sort(),
     internal_links: internal.size,
     word_count: collapse(text).split(" ").filter(Boolean).length,
+    html_lang: document.documentElement?.getAttribute("lang") || null,
+    hreflang: [...document.querySelectorAll('link[rel="alternate"][hreflang]')].flatMap(l => {
+      try { return [{ lang: l.getAttribute("hreflang")!, href: new URL(l.getAttribute("href") ?? "", url).toString() }]; } catch { return []; }
+    }),
   };
 }
 
@@ -109,6 +113,33 @@ export const gapKey = (g: string) => g.split(/ (?:Why|Quote|These answer it):/)[
 const median = (xs: number[]) => { const s = [...xs].sort((a, b) => a - b); return s.length ? s[Math.floor((s.length - 1) / 2)] : 0; };
 
 /** Gaps between an own page and the competitors that loaded, phrased as findings. Code only. */
+/**
+ * Language targeting of an own page (plan Q23). `market` is the locale the page should serve, e.g. "fr-FR".
+ * `back` maps each translation href to the hrefs that translation lists (fetched by the runner), for the pair check.
+ */
+export function langGaps(url: string, c: PageChecks, market: string, back: Record<string, string[]>): string[] {
+  const gaps: string[] = [];
+  const [lang, country] = market.split("-");
+  const tag = c.html_lang ?? null;
+  if (!tag) gaps.push("no <html lang>");
+  else {
+    const [l, region] = tag.split("-");
+    if (l.toLowerCase() !== lang) gaps.push(`<html lang="${tag}"> but the page serves ${market}`);
+    else if (region && region.toUpperCase() !== country) gaps.push(`<html lang="${tag}"> targets ${region.toUpperCase()}; the market is ${country} (use "${lang}" or "${market}")`);
+  }
+  const alts = c.hreflang ?? [];
+  if (!alts.length) return [...gaps, "no hreflang alternates"];
+  if (!alts.some(a => noSlash(a.href) === noSlash(url))) gaps.push("hreflang does not list the page itself");
+  if (!alts.some(a => a.lang.toLowerCase() === "x-default")) gaps.push("no hreflang x-default");
+  const translations = alts.filter(a => a.lang.toLowerCase() !== "x-default" && noSlash(a.href) !== noSlash(url));
+  if (!translations.length) gaps.push("hreflang lists no translation");
+  for (const t of translations) {
+    const listed = back[t.href];
+    if (listed && !listed.some(h => noSlash(h) === noSlash(url))) gaps.push(`hreflang pair broken: ${t.href} (${t.lang}) does not link back`);
+  }
+  return gaps;
+}
+
 export function findGaps(own: PageAudit, competitors: PageAudit[]): string[] {
   const c = own.checks;
   if (!c) return [`page failed to load: ${own.error}`];

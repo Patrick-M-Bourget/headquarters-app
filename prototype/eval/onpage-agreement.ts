@@ -1,4 +1,4 @@
-// Usage: node --env-file=.env eval/onpage-agreement.ts <dev|test>
+// Usage: node --env-file=.env eval/onpage-agreement.ts <dev|test> [locale]   (locale: fr-FR etc.; default English v1 sets)
 // Runs the on-page answer check (runners/seo-geo/answer-check.ts) on the saved openings
 // (eval/onpage/openings.local.json, built by eval/onpage/build-openings.ts) and compares it with blind labels
 // (eval/onpage/labels-v1-<split>.json). Gate: >= 90% on answered-vs-no, which decides confirmed gaps.
@@ -8,9 +8,10 @@ import { readFileSync } from "node:fs";
 import { ANSWER_MODEL, judgeOpening } from "../runners/seo-geo/answer-check.ts";
 
 const split = process.argv[2];
+const locale = process.argv[3];
 if (split !== "dev" && split !== "test") throw new Error("usage: onpage-agreement.ts <dev|test>");
-const openings: { id: string; url: string; question: string; opening: string }[] = JSON.parse(readFileSync(new URL("./onpage/openings.local.json", import.meta.url), "utf8"));
-const labels: { id: string; verdict: "yes" | "partial" | "no" }[] = JSON.parse(readFileSync(new URL(`./onpage/labels-v1-${split}.json`, import.meta.url), "utf8"));
+const openings: { id: string; url: string; question: string; opening: string }[] = JSON.parse(readFileSync(new URL(locale ? `./onpage/openings.${locale}.local.json` : "./onpage/openings.local.json", import.meta.url), "utf8"));
+const labels: { id: string; verdict: "yes" | "partial" | "no" }[] = JSON.parse(readFileSync(new URL(locale ? `./onpage/labels-${locale}-v1-${split}.json` : `./onpage/labels-v1-${split}.json`, import.meta.url), "utf8"));
 
 let cost = 0, exact = 0, yesAgree = 0, answeredAgree = 0;
 const confusion: Record<string, Record<string, number>> = {};

@@ -1,21 +1,24 @@
 // On-page auditor (plan Q13): each own page vs the top competing pages for the question it should answer.
 // Code checks (title, meta, H1, canonical, JSON-LD, internal links, llms.txt, robots.txt for AI crawlers),
 // plus a model check (quote verified in code): does the page answer its question near the top?
-// Usage: node --env-file=.env runners/seo-geo/onpage.ts [--only pricing,uninstall-apps] [--competitors 3] [--no-model]
+// Usage: node --env-file=.env runners/seo-geo/onpage.ts [--locale fr-FR] [--only pricing,uninstall-apps] [--competitors 3] [--no-model]
+// Pages per locale: research/seo-geo/onpage-pages.json (en-US) or onpage-pages.<locale>.json. Competitors are searched in that market.
 // Page HTML is never saved (public repo): outputs hold extracted facts and short verified quotes only.
 import { mkdirSync, readFileSync, writeFileSync, readdirSync, existsSync } from "node:fs";
 import { join } from "node:path";
 import { randomUUID } from "node:crypto";
 import { AnswerCheck, Locale, PageAudit, PageComparison, QuerySet, SiteAudit } from "../../packages/data-contracts/seo-geo.ts";
-import { querySetPath } from "../../packages/data-contracts/markets.ts";
+import { MARKETS, querySetPath } from "../../packages/data-contracts/markets.ts";
 import { findIssue, paperclipEnabled, reportCost, reportToIssue } from "../../packages/paperclip-client/index.ts";
 import { fetchPage, type Page } from "../mastra/fetch.ts";
 import { ANSWER_MODEL, judgeOpening } from "./answer-check.ts";
-import { findGaps, gapKey, mainText, opening, pageChecks, robotsReport } from "./onpage-checks.ts";
+import { findGaps, gapKey, langGaps, mainText, opening, pageChecks, robotsReport } from "./onpage-checks.ts";
+import { parseHTML } from "linkedom";
 
 const arg = (n: string) => { const i = process.argv.indexOf(n); return i > 0 ? process.argv[i + 1] : undefined; };
 const root = new URL("../../", import.meta.url).pathname;
-const mapping = JSON.parse(readFileSync(join(root, "research/seo-geo/onpage-pages.json"), "utf8")) as { locale?: string; query_set_version: number; pages: { url: string; query_id: string }[] };
+const pagesLocale = arg("--locale") ?? "en-US";
+const mapping = JSON.parse(readFileSync(join(root, pagesLocale === "en-US" ? "research/seo-geo/onpage-pages.json" : `research/seo-geo/onpage-pages.${pagesLocale}.json`), "utf8")) as { locale?: string; query_set_version: number; pages: { url: string; query_id: string }[] };
 const set = QuerySet.parse(JSON.parse(readFileSync(join(root, querySetPath(Locale.parse(mapping.locale ?? "en-US"), mapping.query_set_version)), "utf8")));
 const sameLocale = (s: { locale?: string }) => (s.locale ?? "en-US") === set.locale; // summaries before 5b have no locale: en-US
 const only = arg("--only")?.split(",");
@@ -37,7 +40,7 @@ async function tavily(query: string): Promise<string[]> {
   if (!key) throw new Error("TAVILY_API_KEY is not set (run with --env-file=.env)");
   const res = await fetch("https://api.tavily.com/search", {
     method: "POST", headers: { "content-type": "application/json", authorization: `Bearer ${key}` },
-    body: JSON.stringify({ query, search_depth: "basic", max_results: 10, include_answer: false }), signal: AbortSignal.timeout(30000),
+    body: JSON.stringify({ query, search_depth: "basic", max_results: 10, include_answer: false, topic: "general", country: MARKETS[set.locale].tavilyCountry }), signal: AbortSignal.timeout(30000),
   });
   searches++;
   if (!res.ok) throw new Error(`Tavily HTTP ${res.status}: ${(await res.text()).slice(0, 200)}`);
@@ -86,7 +89,15 @@ try {
       if (c.audit.error) { skipped.push(`${p.query_id} ${u}: ${c.audit.error}`); continue; }
       competitors.push(c.audit);
     }
-    comparisons.push(PageComparison.parse({ page: own.audit, competitors, gaps: findGaps(own.audit, competitors) }));
+    // Language targeting (plan Q23): fetch each listed translation (no model) to check it links back.
+    const back: Record<string, string[]> = {};
+    for (const a of own.audit.checks?.hreflang ?? []) {
+      if (a.lang.toLowerCase() === "x-default" || a.href.replace(/\/$/, "") === own.audit.url.replace(/\/$/, "")) continue;
+      const t = await fetchPage(a.href);
+      if (t.ok) back[a.href] = [...parseHTML(t.html).document.querySelectorAll('link[rel="alternate"][hreflang]')].map(l => { try { return new URL(l.getAttribute("href") ?? "", a.href).toString(); } catch { return ""; } });
+    }
+    const lang = own.audit.checks ? langGaps(own.audit.url, own.audit.checks, set.locale, back) : [];
+    comparisons.push(PageComparison.parse({ page: own.audit, competitors, gaps: [...lang, ...findGaps(own.audit, competitors)] }));
     console.log(`${new URL(p.url).pathname}: ${own.audit.answer?.verdict ?? "-"}, ${competitors.length} competitors, ${comparisons.at(-1)!.gaps.length} gaps`);
   }
 

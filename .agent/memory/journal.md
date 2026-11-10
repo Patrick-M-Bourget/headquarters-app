@@ -42,3 +42,4 @@
   - ADR 0001 written (Proposed): pipeline + Mastra kept as default for research workers, Claude Code agent for open-ended work only, Paperclip on probation pending the SEO/GEO re-test. Owner decides (L3).
   - Total spend about $4.15.
 - Owner approved HEA-8 and accepted ADR 0001 as written (2026-11-09).
+- Paperclip finding: HEA-8 approval needed two PATCHes. The owner's UI "mark done" plus my first approval only re-synced a drifted review hold (issue-execution-policy holdDrifted path) without recording a decision; the second PATCH approved it. Approvals can silently not take: check executionState.lastDecisionOutcome after approving.

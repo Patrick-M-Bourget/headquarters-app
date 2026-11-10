@@ -53,7 +53,7 @@ All runs used the same 10-competitor seed list and were scored against `eval/ans
 - (−) Budgets hard-stop a `process` agent after its first run because the run counts as "unpriced" (default policy: block), even at $0 observed. Local-model runs would always be unpriced.
 - (−) After a failed run, Paperclip's recovery put HEA-7 on hold. UI retry, setting status back to todo, reassigning and heartbeat/invoke all failed to resume it; it took a new issue. The owner hit this as "retry seems jammed".
 - (−) 2.7 GB of `node_modules` (embedded Postgres) and about 560 MB RAM on a 16 GB machine; 373 database migrations on first start.
-- (−) Paperclip had to be operated mostly through its API. Its UI was touched only for the jammed retry.
+- (−) Paperclip had to be operated mostly through its API. Its UI was touched only twice: the jammed retry, and a "mark done" on HEA-8 that left the review stage out of sync. A review approval can silently not take effect; it took a second approval call.
 
 ## Decision
 

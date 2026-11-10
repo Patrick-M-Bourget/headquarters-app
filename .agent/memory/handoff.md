@@ -4,6 +4,9 @@
 - Weekly routine 737794c4 is ON (Mondays 14:00 UTC; Paperclip must be running). Weekly Report agent d4f6ae02 orchestrates; report at `research/seo-geo/weeks/<week>/report.md`, parent issue goes to owner review.
 - HEA-19 (first manual run) is in owner review: 5 proposals (new pages en q19/q20, fr q09/q16; GitHub as most-cited source). On approval: Claude checks existing pages, runs the Content Writer, files tickets, and adds every decided key to `research/seo-geo/proposals-ledger.json`.
 - Approve via review PATCH only; never comment on the agent's issue (re-runs it).
+- Repo is pushed (public, `main` up to date at end of session 4). Ask before every push.
+- Open owner items: HEA-19 review; mac-cleaner repo still public (website Decision 30); € vs $ on /fr/; funnel CSV (docs/funnel-export.md); `research/marketing/onpage-fixes/local-c1d9af4e-only/` throwaway (owner may delete); Search Console #96; OpenAI key; confirm fr-FR on-page mapping; cachedrop-website #130.
+- First thing next session: check that Paperclip is up (`curl -s 127.0.0.1:3100/api/health`) and, after Monday 2026-11-16 14:00 UTC, that the scheduled run went to review without the disposition-repair block (the blocked-by-subtasks wait is untested in a scheduled run).
 - Cost: normal week ≈ $2.02 + 89 Serper credits; first week of month ≈ +$3.3 and +157 credits. ~$21.6 of $100 spent.
 
 ## Session 4 update: read first
@@ -84,7 +87,7 @@ Read this first, then `project-context.md` and `prototype/docs/seo-geo-plan.md` 
 - Approve each native query set (fr-CA first).
 - cachedrop-website #96: verify Search Console (unblocks own keyword positions beyond the top 10).
 - OpenAI key, after claiming the ChatGPT Pro API credits (adds ChatGPT as a GEO engine; plan Q9).
-- Nothing pushed; local `main` tracks `origin/main`, which shows **[gone]**. Sort out the remote before the first push; run `gh auth status` first. Ask before pushing.
+- Pushed 2026-11-10 (owner: "push it public for now"): `main` tracks `origin/main` on the PUBLIC GitHub repo. Run `gh auth status` first; ask before every push.
 
 ## Suggested first message for the next session
 

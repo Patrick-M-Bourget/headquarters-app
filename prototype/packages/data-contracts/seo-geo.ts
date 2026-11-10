@@ -52,9 +52,11 @@ export const Mention = z.object({
   engine: Engine,
   brand: z.string(),                         // "cachedrop" or a competitor id
   mentioned: z.boolean(),
-  recommended: z.boolean(),                  // presented as a pick, not just listed or warned against
+  recommended: z.boolean(),                  // stance is top_pick or suggested
+  stance: z.enum(["top_pick", "suggested", "mentioned"]).nullable().optional(), // null/absent when not mentioned (older runs: absent)
   position: z.number().int().positive().nullable(), // order of first mention among named products
   cited_own_site: z.boolean(),               // the brand's own domain is among cited URLs
   evidence: z.string().max(400).nullable(),  // verbatim sentence from the answer (checked in code)
 }).refine(m => !m.recommended || m.mentioned, { message: "recommended implies mentioned" })
+  .refine(m => m.stance == null || (m.mentioned && m.recommended === (m.stance !== "mentioned")), { message: "stance must agree with mentioned/recommended" })
   .refine(m => !m.mentioned || (m.position !== null && !!m.evidence), { message: "a mention needs position and evidence" });

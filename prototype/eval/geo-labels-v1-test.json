@@ -1,0 +1,47 @@
+[
+ {"id": "q21/claude", "cachedrop_mentioned": false, "products": [{"name": "CleanMyMac", "recommended": true}]},
+ {"id": "q22/claude", "cachedrop_mentioned": false, "products": [
+  {"name": "Audio Plugin Uninstaller", "recommended": true},
+  {"name": "Plugoff", "recommended": true},
+  {"name": "Pluginize!", "recommended": true},
+  {"name": "Unplugged", "recommended": true},
+  {"name": "VST Manager", "recommended": true},
+  {"name": "Plugin Station", "recommended": true}]},
+ {"id": "q25/gemini", "cachedrop_mentioned": false, "products": [
+  {"name": "AppCleaner", "recommended": true},
+  {"name": "Pearcleaner", "recommended": true},
+  {"name": "TrashMe 3", "recommended": true},
+  {"name": "CleanMyMac", "recommended": true},
+  {"name": "UninstallPKG", "recommended": true}]},
+ {"id": "q10/claude", "cachedrop_mentioned": false, "products": []},
+ {"id": "q06/claude", "cachedrop_mentioned": false, "products": []},
+ {"id": "q19/claude", "cachedrop_mentioned": false, "products": [
+  {"name": "DaisyDisk", "recommended": false},
+  {"name": "OpenDisk", "recommended": true},
+  {"name": "GrandPerspective", "recommended": true},
+  {"name": "Disk Space Analyzer (Nektony)", "recommended": true},
+  {"name": "DiskTree", "recommended": true},
+  {"name": "ncdu", "recommended": true},
+  {"name": "dua-cli", "recommended": true},
+  {"name": "MAC-LIMPO", "recommended": true},
+  {"name": "ClearDisk", "recommended": true},
+  {"name": "DiskInsight", "recommended": true},
+  {"name": "Anillo", "recommended": true},
+  {"name": "CleanMyMac", "recommended": true}]},
+ {"id": "q13/claude", "cachedrop_mentioned": false, "products": [{"name": "AppCleaner", "recommended": true}]},
+ {"id": "q12/claude", "cachedrop_mentioned": false, "products": []},
+ {"id": "q15/gemini", "cachedrop_mentioned": false, "products": [
+  {"name": "CleanMyMac", "recommended": false},
+  {"name": "npkill", "recommended": true},
+  {"name": "kondo", "recommended": true},
+  {"name": "Mac Dev Cleaner", "recommended": true},
+  {"name": "PureMac", "recommended": true},
+  {"name": "DevClean", "recommended": true},
+  {"name": "Shedi", "recommended": true}]},
+ {"id": "q15/claude", "cachedrop_mentioned": false, "products": [
+  {"name": "npkill", "recommended": true},
+  {"name": "Mole", "recommended": true},
+  {"name": "DevCleanup", "recommended": true},
+  {"name": "CleanMyDev", "recommended": true},
+  {"name": "CodeCleaner", "recommended": true}]}
+]

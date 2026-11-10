@@ -43,8 +43,8 @@ try {
     const j = r.error ? { labelled: [], usage: { input_tokens: 0, output_tokens: 0 }, unverified: [] as string[] } : await labelAnswer(r.answer_text, r.cited_urls);
     const rows = j.labelled.some(l => l.brand === "cachedrop") ? j.labelled
       // CacheDrop always gets a row, so "not mentioned" is recorded explicitly.
-      : [{ brand: "cachedrop", name: "CacheDrop", position: null, recommended: false, evidence: null, cited_own_site: r.cited_urls.some(u => u.includes("cachedrop.io")) }, ...j.labelled];
-    const mentions = rows.map(l => Mention.parse({ query_id: q.id, engine, brand: l.brand, mentioned: l.position !== null, recommended: l.position !== null && l.recommended,
+      : [{ brand: "cachedrop", name: "CacheDrop", position: null, stance: null, evidence: null, cited_own_site: r.cited_urls.some(u => u.includes("cachedrop.io")) }, ...j.labelled];
+    const mentions = rows.map(l => Mention.parse({ query_id: q.id, engine, brand: l.brand, mentioned: l.position !== null, recommended: l.position !== null && l.stance !== "mentioned" && l.stance !== null, stance: l.position !== null ? l.stance : null,
       position: l.position, cited_own_site: l.cited_own_site, evidence: l.position !== null ? l.evidence : null }));
     const [pi, po] = JUDGE_PRICE[JUDGE_MODEL] ?? [0, 0];
     return { answer, mentions, cost: r.cost_usd + j.usage.input_tokens * pi + j.usage.output_tokens * po, searches: r.searches, unverified: j.unverified.map(u => `${q.id}/${engine}: ${u}`) };
@@ -65,12 +65,15 @@ try {
     return Object.fromEntries(groups);
   };
   const competitorCounts: Record<string, number> = {};
+  const topPicks: Record<string, number> = {};
+  for (const m of mentions) if (m.brand !== "cachedrop" && m.stance === "top_pick") topPicks[m.brand] = (topPicks[m.brand] ?? 0) + 1;
   for (const m of mentions) if (m.brand !== "cachedrop" && m.recommended) competitorCounts[m.brand] = (competitorCounts[m.brand] ?? 0) + 1;
   const okAnswers = answers.length - errors.length;
   const summary = {
     run_id: runId, query_set_version: set.version, engines, answers: answers.length, failed: errors.length,
-    cachedrop: { mentioned: own.filter(m => m.mentioned).length, recommended: own.filter(m => m.recommended).length, cited: own.filter(m => m.cited_own_site).length, of: okAnswers },
+    cachedrop: { mentioned: own.filter(m => m.mentioned).length, recommended: own.filter(m => m.recommended).length, top_pick: own.filter(m => m.stance === "top_pick").length, cited: own.filter(m => m.cited_own_site).length, of: okAnswers },
     by_engine: by("engine"), by_audience: by("audience"),
+    competitors_top_pick: Object.fromEntries(Object.entries(topPicks).sort((a, b) => b[1] - a[1])),
     competitors_recommended: Object.fromEntries(Object.entries(competitorCounts).sort((a, b) => b[1] - a[1])),
     unverified_judgements: results.flatMap(r => r.unverified),
     cost_usd: Number(cost.toFixed(4)), searches: results.reduce((s, r) => s + r.searches, 0), seconds: Math.round((Date.now() - t0) / 1000), errors,
@@ -90,7 +93,7 @@ try {
   const text = [
     `GEO run ${runId} (query set v${set.version}, ${engines.join(" + ")}): CacheDrop recommended in ${summary.cachedrop.recommended}/${okAnswers} answers (${pct(summary.cachedrop.recommended, okAnswers)}), mentioned in ${summary.cachedrop.mentioned}, cachedrop.io cited in ${summary.cachedrop.cited}.`,
     delta ? `Since ${delta.previous_run}: recommended ${delta.recommended >= 0 ? "+" : ""}${delta.recommended}, mentioned ${delta.mentioned >= 0 ? "+" : ""}${delta.mentioned}, cited ${delta.cited >= 0 ? "+" : ""}${delta.cited}.` : "No previous run on this query set.",
-    `Most-recommended competitors: ${Object.entries(summary.competitors_recommended).slice(0, 5).map(([b, n]) => `${b} ${n}`).join(", ") || "none"}.`,
+    `Top picks: ${Object.entries(summary.competitors_top_pick).slice(0, 5).map(([b, n]) => `${b} ${n}`).join(", ") || "none"}. Most-suggested competitors: ${Object.entries(summary.competitors_recommended).slice(0, 5).map(([b, n]) => `${b} ${n}`).join(", ") || "none"}.`,
     `${summary.searches} searches, $${summary.cost_usd}, ${summary.seconds}s. ${errors.length} failed answers. Output: prototype/research/seo-geo/geo-runs/${runId}/`,
     ...(errors.length ? ["Errors:", ...errors.slice(0, 10).map(e => `- ${e}`)] : []),
   ].join("\n");

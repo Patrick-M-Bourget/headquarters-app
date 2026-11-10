@@ -51,3 +51,8 @@
   - Gemini free-tier grounding is gone for new users (2.5 Flash closed); the owner prepaid $25 on Gemini (cash, separate from the $100 API budget).
   - Baseline (local-136b0381, relabel-35013bd4): CacheDrop mentioned 0/50, recommended 0/50; cachedrop.io cited once (Gemini, q22 plug-in manager). Top recommended: AppCleaner 16, DaisyDisk 16, CleanMyMac 11, Pearcleaner 10, GrandPerspective 9. $0.56, 48 searches, 264 s. New competitors discovered: Audio Plugin Uninstaller (Wide Blue Sound, $9; top pick for VST uninstall on both engines), Crumb ($9 one-time), MacDiskCleaner, Plugin Station, Plugoff, Bypass, UninstallPKG.
   - Slip: `node -e import(run-geo.ts)` executed a run (no keys loaded, 50 failures, $0). Removed that folder; the diff now skips failed and relabel runs.
+- GEO eval gate (Q17) PASSED. Blind reviewer subagent labels: dev set of 15 (eval/geo-labels-v1-blind.json, tuned on) and fresh test set of 10 (eval/geo-labels-v1-test.json, never tuned on). Scorer: eval/geo-agreement.ts.
+  - Haiku judge with binary "recommended": 76.8% on dev. Fixes: three-level stance (top_pick/suggested/mentioned; `recommended` = suggested or better), scope rules (no built-ins, commands, bundles, Windows-only tools), name normalisation ("X by Y").
+  - Haiku + stance: 81.5% dev. Sonnet + stance + scope: 94.4% dev, **97.4% test** (stance 100%). Haiku on test (before the scope rule): 87.5%. Judge default is now Sonnet 5.5 (GEO_JUDGE_MODEL); the generator stays on Haiku.
+  - Local-Qwen implication: judging stance is the step that needs model strength. Run eval/geo-agreement.ts on Qwen before switching it.
+  - Expected weekly GEO cost: about $0.56 engines + $0.34 judge = about $0.90.

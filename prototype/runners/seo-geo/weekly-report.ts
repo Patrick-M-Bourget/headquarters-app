@@ -9,6 +9,8 @@ import { MARKETS, querySetPath } from "../../packages/data-contracts/markets.ts"
 import { keywordsFrom } from "./keyword-checks.ts";
 import { BRANDS } from "./labels.ts";
 import { gapKey } from "./onpage-checks.ts";
+import { latestSearchConsole, renderSearchConsole } from "./search-console-report.ts";
+import type { SearchConsoleSummary } from "../../packages/data-contracts/search.ts";
 
 export const LOCALES = Locale.options;
 export const WEEKLY: Locale[] = ["en-US", "fr-FR"]; // plan Q22; the other four run in the first week of each month
@@ -28,15 +30,15 @@ export function dueLocales(week: string): Locale[] {
   return Number(week.slice(8, 10)) <= 7 ? [...LOCALES] : [...WEEKLY];
 }
 
-export type Task = { agent: "GEO Tracker" | "Keyword Tracker" | "On-page Auditor" | "On-page Optimizer" | "Funnel Analyst"; title: string; params: Record<string, string> };
+export type Task = { agent: "GEO Tracker" | "Keyword Tracker" | "On-page Auditor" | "On-page Optimizer" | "Funnel Analyst" | "Search Console Reader"; title: string; params: Record<string, string> };
 
-/** Stage 1: the three trackers for each due locale (on-page only where the site has pages). */
+/** Stage 1: the Search Console Reader once (it covers every site locale), then the three trackers for each due locale (on-page only where the site has pages). */
 export function stage1(locales: Locale[], week: string): Task[] {
-  return locales.flatMap(l => [
+  return [{ agent: "Search Console Reader" as const, title: `Search Console · week ${week}`, params: { week } }, ...locales.flatMap(l => [
     { agent: "GEO Tracker" as const, title: `GEO tracker · ${l} · week ${week}`, params: { locale: l } },
     { agent: "Keyword Tracker" as const, title: `Keyword tracker · ${l} · week ${week}`, params: { locale: l } },
     ...(SITE_LOCALES.includes(l) ? [{ agent: "On-page Auditor" as const, title: `On-page audit · ${l} · week ${week}`, params: { locale: l } }] : []),
-  ]);
+  ])];
 }
 
 /** A run's gaps by stable key (no numbers, no model wording), so "1065 words vs median 3194" and "1060 words vs median 3188" are the same gap. */
@@ -231,7 +233,8 @@ export function proposals(facts: LocaleFacts[], ledger: LedgerEntry[], max = 5):
 const sign = (n: number | null) => (n === null ? "" : n === 0 ? " (±0)" : n > 0 ? ` (+${n})` : ` (${n})`);
 const pct = (a: number, b: number) => (b ? `${Math.round((100 * a) / b)}%` : "n/a");
 
-export type WeeklyReport = { week: string; generated_at: string; locales: LocaleFacts[]; proposals: Proposal[]; cost_usd: number; serper_credits: number; skipped: { key: string; ref: string }[] };
+export type WeeklyReport = { week: string; generated_at: string; locales: LocaleFacts[]; proposals: Proposal[]; cost_usd: number; serper_credits: number; skipped: { key: string; ref: string }[];
+  search_console: SearchConsoleSummary | null };
 
 export function buildReport(root: string, week: string, locales: Locale[] = [...LOCALES], ledger: LedgerEntry[] = [], now = new Date()): WeeklyReport {
   const runs = loadRuns(root);
@@ -240,7 +243,7 @@ export function buildReport(root: string, week: string, locales: Locale[] = [...
   const cost = facts.reduce((s, f) => s + (fresh(f.geo?.finished_at) ? f.geo!.cost_usd : 0) + (fresh(f.onpage?.finished_at) ? f.onpage!.cost_usd : 0), 0);
   const credits = facts.reduce((s, f) => s + (fresh(f.keywords?.finished_at) ? f.keywords!.credits : 0), 0);
   return { week, generated_at: now.toISOString(), locales: facts, proposals: proposals(facts, ledger), cost_usd: Number(cost.toFixed(4)), serper_credits: credits,
-    skipped: ledger.map(l => ({ key: l.key, ref: `${l.status} ${l.ref}` })) };
+    skipped: ledger.map(l => ({ key: l.key, ref: `${l.status} ${l.ref}` })), search_console: latestSearchConsole(root, week)?.summary ?? null };
 }
 
 export function renderReport(r: WeeklyReport): string {
@@ -257,6 +260,7 @@ export function renderReport(r: WeeklyReport): string {
   for (const f of r.locales) for (const [b, n] of f.geo?.competitors ?? []) all.set(b, (all.get(b) ?? 0) + n);
   L.push("", "Competitors AI answers recommend most, summed over each market's top 5: " + [...all.entries()].sort((a, b) => b[1] - a[1]).slice(0, 8).map(([b, n]) => `${b} ${n}`).join(", ") + ".", "");
 
+  L.push("## Search Console and Bing", "", r.search_console ? renderSearchConsole(r.search_console) : "No Search Console run this week.\n");
   L.push("## Proposals for the owner", "", r.proposals.length ? "Approve, drop or edit each in the Paperclip review of this issue. Claude files the approved website tickets." : "Nothing new to propose: every candidate is already ticketed or decided (ledger).", "");
   r.proposals.forEach((p, i) => L.push(`${i + 1}. **${p.title}** (${p.target === "owner" ? "owner action" : "website ticket"}). ${p.why} Next: ${p.next} \`${p.key}\``));
   L.push("");

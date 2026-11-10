@@ -14,9 +14,9 @@ test("week starts on Monday (UTC); the monthly markets run in the month's first 
   assert.deepEqual(dueLocales("2026-12-14"), ["en-US", "fr-FR"]);
 });
 
-test("stage 1: GEO and keywords per locale, on-page only where the site has pages", () => {
+test("stage 1: Search Console once, GEO and keywords per locale, on-page only where the site has pages", () => {
   const t = stage1(["en-US", "de-DE"], "2026-11-09");
-  assert.deepEqual(t.map(x => `${x.agent}/${x.params.locale}`), ["GEO Tracker/en-US", "Keyword Tracker/en-US", "On-page Auditor/en-US", "GEO Tracker/de-DE", "Keyword Tracker/de-DE"]);
+  assert.deepEqual(t.map(x => `${x.agent}/${x.params.locale}`), ["Search Console Reader/undefined", "GEO Tracker/en-US", "Keyword Tracker/en-US", "On-page Auditor/en-US", "GEO Tracker/de-DE", "Keyword Tracker/de-DE"]);
 });
 
 test("stage 2: optimizer only when gaps changed beyond numbers; funnel only with a CSV", () => {

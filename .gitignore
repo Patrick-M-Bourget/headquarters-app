@@ -10,3 +10,5 @@ prototype/research/runs/*/snapshots/
 prototype/eval/**/*.local.json
 # Funnel inputs and reports: the business's own numbers (public repo)
 prototype/research/marketing/funnel/
+# Search Console rows and query text: the business's own search data (public repo; owner 2026-11-10)
+prototype/research/search-console/private/

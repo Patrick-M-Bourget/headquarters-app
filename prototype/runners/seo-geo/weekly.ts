@@ -12,6 +12,7 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { Locale } from "../../packages/data-contracts/seo-geo.ts";
 import { createChild, getIssue, issueParams, listAgents, listChildren, patchIssue, reportToIssue } from "../../packages/paperclip-client/index.ts";
+import { latestSearchConsole } from "./search-console-report.ts";
 import { buildReport, dueLocales, loadRuns, localeFacts, renderReport, SITE_LOCALES, stage1, stage2, weekOf, type LedgerEntry, type Task } from "./weekly-report.ts";
 
 const root = new URL("../../", import.meta.url).pathname;
@@ -87,7 +88,9 @@ async function main() {
     }
     const { report, md, path } = writeReport(week, due, issue);
     await patchIssue(issue.id, { executionPolicy: BOARD_REVIEW }).catch(e => console.error("could not add the owner review stage:", e.message));
-    await reportToIssue(issue.id, `${md}\nFile: ${path}`, "done");
+    // The issue is local, so it also gets the query-level lists; the committed report.md has counts only (owner, 2026-11-10).
+    const privateMd = latestSearchConsole(root, week)?.privateMd;
+    await reportToIssue(issue.id, `${md}${privateMd ? `\n${privateMd}` : ""}\nFile: ${path}`, "done");
     console.log(`Weekly report ${week}: ${report.proposals.length} proposals. ${path}`);
   } catch (e) {
     await reportToIssue(issue.id, `Weekly report failed: ${(e as Error).message}`, "blocked").catch(() => {});

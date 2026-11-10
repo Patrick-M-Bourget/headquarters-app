@@ -6,6 +6,7 @@ On session start, read:
 - `.agent/instructions.md`: project context, stack, workflow rules
 - `.agent/escalation-levels.md`: L1–L3 autonomy boundaries
 - `.agent/commands.md`: `start session`, `end session`
+- `.agent/memory/handoff.md`: START HERE (latest hand-off, next steps, gotchas)
 - `.agent/memory/project-context.md`: current phase and decisions
 - `.agent/memory/anti-patterns.md`: mistakes not to repeat
 - `.agent/memory/journal.md`: session log

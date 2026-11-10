@@ -56,3 +56,4 @@
   - Haiku + stance: 81.5% dev. Sonnet + stance + scope: 94.4% dev, **97.4% test** (stance 100%). Haiku on test (before the scope rule): 87.5%. Judge default is now Sonnet 5.5 (GEO_JUDGE_MODEL); the generator stays on Haiku.
   - Local-Qwen implication: judging stance is the step that needs model strength. Run eval/geo-agreement.ts on Qwen before switching it.
   - Expected weekly GEO cost: about $0.56 engines + $0.34 judge = about $0.90.
+- END OF SESSION 1 (2026-11-09): hand-off written to .agent/memory/handoff.md. Unfinished: SEO/GEO steps 4–6. Nothing pushed. Paperclip may still be running locally.

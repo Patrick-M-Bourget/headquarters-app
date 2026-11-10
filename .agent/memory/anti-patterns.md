@@ -6,3 +6,5 @@
 - A claude_local agent needs `--setting-sources project --settings <abs>/.claude/settings.json`; neither flag alone works.
 - Put everything the agent needs (contract schema, rules on how to write output) INSIDE its workspace; it can't read the rest of the repo.
 - WebFetch evidence is summarizer output, not verbatim page text. Don't call it a verbatim quote.
+- Importing a runner script (`node -e "import('...run-geo.ts')"`) executes it. Check runners with `npm test` or a run limited with `--only`.
+- Don't tune a model judge on the same labels you report: keep a fresh blind test set (eval/geo-labels-v1-test.json).

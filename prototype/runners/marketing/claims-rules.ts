@@ -140,3 +140,10 @@ export function dedupe(fs: F[]): F[] {
   const seen = new Set<string>();
   return fs.filter(f => { const k = `${f.rule}|${f.quote.toLowerCase()}`; if (seen.has(k)) return false; seen.add(k); return true; });
 }
+
+/** Applies the reviewer's exact fixes (severity "fix" with a replacement) to the text. Returns the new text and how many applied. */
+export function applyFixes(text: string, findings: F[]): { text: string; applied: number } {
+  let out = text, applied = 0;
+  for (const f of findings) if (f.severity === "fix" && f.fix && f.fix !== f.quote && out.includes(f.quote)) { out = out.split(f.quote).join(f.fix); applied++; }
+  return { text: out, applied };
+}

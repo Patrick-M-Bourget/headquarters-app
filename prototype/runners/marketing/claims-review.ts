@@ -26,7 +26,7 @@ const SEVERITY: Record<(typeof MODEL_RULES)[number], Finding["severity"]> = {
 export const instructions = (facts: ProductFacts) => `You review marketing copy for CacheDrop, a Mac storage cleaner, app uninstaller and plug-in manager sold for a one-time price.
 Report only these problems, each with a VERBATIM quote from the draft (the shortest phrase that shows it, max 200 chars):
 - invented_proof: any number of users, downloads, customers, cleanups, ratings, reviews, testimonials, awards, press quotes, certifications or rankings ("loved by producers", "the #1 cleaner"). Real measurements tied to the owner's own Mac or a stated example are fine.
-- trash_claim: says or implies that everything CacheDrop removes goes to the Trash or can be restored. Truth: personal files go to the Trash; caches and build files that tools rebuild are deleted.
+- trash_claim: says or implies that everything CacheDrop removes goes to the Trash or can be restored. Truth: in a cleanup, personal files go to the Trash while caches and build files that tools rebuild are deleted. Uninstalling apps and plug-ins is different: everything uninstalled goes to the Trash and Put back works, so saying that about uninstalls is correct. "Safe", "safely" or "without risk" alone is not a trash_claim; it needs the Trash, restoring or undoing.
 - drop_pun: a pun or wordplay on "drop" (the brand name).
 - free_uninstall: says or implies uninstalling apps or plug-ins is free or unlimited without buying. Truth: scanning is always free; cleanup and uninstalls are free only until they have freed 2 GB.
 - contradicts_product: claims a capability CacheDrop deliberately doesn't have: ${facts.never_claim.join("; ")}. Also invented speed-ups ("makes your Mac 2x faster").
@@ -93,7 +93,15 @@ async function main() {
   }
   try {
     if (!path) throw new Error("no draft: pass a path or put `draft: <path>` in the issue");
-    const d = Draft.parse({ id: path.split("/").pop()!.replace(/\.\w+$/, ""), locale: locale ?? "en-US", page_kind: PageKind.parse(page ?? "other"), target_url: url, query_ids: [], text: readFileSync(path, "utf8") });
+    // Drafts from content-writer.ts carry frontmatter (one JSON value per line); the title and meta are copy too.
+    let text = readFileSync(path, "utf8"); const fm: Record<string, any> = {};
+    const m = text.match(/^---\n([\s\S]*?)\n---\n/);
+    if (m) {
+      for (const l of m[1].split("\n")) { const i = l.indexOf(": "); if (i > 0) fm[l.slice(0, i)] = JSON.parse(l.slice(i + 2)); }
+      text = `# ${fm.title ?? ""}\n${fm.meta_description ?? ""}\n\n${text.slice(m[0].length)}`;
+    }
+    const d = Draft.parse({ id: path.split("/").pop()!.replace(/\.\w+$/, ""), locale: locale ?? fm.locale ?? "en-US", page_kind: PageKind.parse(page ?? fm.page_kind ?? "other"),
+      target_url: url ?? fm.target_url ?? null, query_ids: fm.query_id ? [fm.query_id] : [], text });
     const { review, unverified, usage } = await reviewDraft(d, loadFacts(), { model: !process.argv.includes("--no-model") });
     const out = arg("--out"); if (out) writeFileSync(out, JSON.stringify(review, null, 2) + "\n");
     const report = formatReview(review) + (unverified ? `\n(${unverified} model finding(s) dropped: quote not in the draft.)` : "");

@@ -7,7 +7,7 @@
   "clean_pass": "6/6 (100%)",
   "extra_blocks_on_violating_cases": 1,
   "model_quotes_dropped": 0,
-  "cost_usd": 0.1097,
+  "cost_usd": 0.117,
   "gate": "pass",
   "disagreements": [
     {

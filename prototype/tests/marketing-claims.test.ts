@@ -96,3 +96,11 @@ test("review verdict follows findings; formatter lists blocks first", () => {
   assert.ok(!ClaimsReview.safeParse({ ...r, verdict: "pass" }).success);
   assert.match(formatReview(r).split("\n")[1], /\[block\]/);
 });
+
+test("exact fixes apply in code and leave nothing for the code checks", async () => {
+  const { applyFixes } = await import("../runners/marketing/claims-rules.ts");
+  const draft = d("Attention: libérez 20 GB maintenant!", { locale: "fr-FR" });
+  const { text, applied } = applyFixes(draft.text, codeChecks(draft, facts));
+  assert.ok(applied >= 2);
+  assert.deepEqual(codeChecks({ ...draft, text }, facts).filter(f => f.severity === "fix"), []);
+});

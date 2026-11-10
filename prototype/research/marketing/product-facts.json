@@ -3,9 +3,13 @@
   "sources": [
     "mac-cleaner docs/releases/0.9.3.html … 1.0.4.html (the update feed's notes)",
     "cachedrop-website docs/DECISIONS.md 23, 46, 47, 48, 51, 54",
-    "cachedrop-website src/components/pricing.ts (price, items)"
+    "cachedrop-website src/components/pricing.ts (price, items)",
+    "mac-cleaner GLOSSARY.md (Audio software, Photo and video, plug-in product, Open <tool>) and docs/RESET.md Decisions 41, 50, 53, 154"
   ],
-  "price": { "regular": "29.99", "offer": "19.99" },
+  "price": {
+    "regular": "29.99",
+    "offer": "19.99"
+  },
   "fact_sheet": [
     "One-time price: $29.99, now $19.99 for a limited time (the same number in USD, CAD, EUR, GBP, AUD)",
     "A license covers up to 3 Macs",
@@ -16,23 +20,94 @@
     "Apple Silicon and Intel (universal app)"
   ],
   "shipped_features": [
-    { "feature": "Scan the Mac and show what fills it, by category", "since": "0.9" },
-    { "feature": "Smart clean: one screen, pre-ticked safe categories, one Clean up button", "since": "1.0.4" },
-    { "feature": "Review sheet lists every item before anything is removed", "since": "1.0.0" },
-    { "feature": "Personal files go to the Trash; caches and build files tools rebuild are deleted", "since": "0.9" },
-    { "feature": "Developer caches and build files: Xcode DerivedData, node_modules, package caches, Docker", "since": "0.9" },
-    { "feature": "Complete app uninstalls, including leftover files from deleted apps", "since": "0.9" },
-    { "feature": "Audio software section: DAWs, plug-ins by maker, sounds and samples, drivers; uninstall plug-ins", "since": "1.0.2" },
-    { "feature": "Photo and video category: Adobe media cache (also moved locations, Peak Files), Premiere Pro and After Effects caches, Final Cut Pro render files; optimized/proxy media per library", "since": "1.0.3" },
-    { "feature": "Explore storage with a storage map", "since": "1.0.2" },
-    { "feature": "System Data explained and partly cleaned (caches, logs inside it)", "since": "0.9" },
-    { "feature": "Worth a look: apps not opened in 6 months and files from deleted apps, never pre-ticked", "since": "1.0.4" },
-    { "feature": "Empty Trash from CacheDrop, listing everything first; menu bar shows the Trash", "since": "1.0.1" },
-    { "feature": "Optional weekly reminder when at least 1 GB is ready to clean (off by default)", "since": "1.0.1" },
-    { "feature": "History of what each cleanup freed", "since": "1.0.0" },
-    { "feature": "Command line: cachedrop clean, with --dry-run", "since": "1.0.2" },
-    { "feature": "Checks for updates weekly; installs only when you choose", "since": "1.0.1" },
-    { "feature": "Results show the space measurably got back", "since": "1.0.0" }
+    {
+      "feature": "Scan the Mac and show what fills it, by category",
+      "since": "0.9"
+    },
+    {
+      "feature": "Smart clean: one screen, pre-ticked safe categories, one Clean up button",
+      "since": "1.0.4"
+    },
+    {
+      "feature": "Review sheet lists every item before anything is removed",
+      "since": "1.0.0"
+    },
+    {
+      "feature": "Personal files go to the Trash; caches and build files tools rebuild are deleted",
+      "since": "0.9"
+    },
+    {
+      "feature": "Developer caches and build files: Xcode DerivedData, node_modules, package caches, Docker",
+      "since": "0.9"
+    },
+    {
+      "feature": "Complete app uninstalls, including leftover files from deleted apps",
+      "since": "0.9"
+    },
+    {
+      "feature": "Audio software section: DAWs, plug-ins by maker, sounds and samples, drivers; uninstall plug-ins",
+      "since": "1.0.2"
+    },
+    {
+      "feature": "Photo and video category: Adobe media cache (also moved locations, Peak Files), Premiere Pro and After Effects caches, Final Cut Pro render files; optimized/proxy media per library",
+      "since": "1.0.3"
+    },
+    {
+      "feature": "Explore storage with a storage map",
+      "since": "1.0.2"
+    },
+    {
+      "feature": "System Data explained and partly cleaned (caches, logs inside it)",
+      "since": "0.9"
+    },
+    {
+      "feature": "Worth a look: apps not opened in 6 months and files from deleted apps, never pre-ticked",
+      "since": "1.0.4"
+    },
+    {
+      "feature": "Empty Trash from CacheDrop, listing everything first; menu bar shows the Trash",
+      "since": "1.0.1"
+    },
+    {
+      "feature": "Optional weekly reminder when at least 1 GB is ready to clean (off by default)",
+      "since": "1.0.1"
+    },
+    {
+      "feature": "History of what each cleanup freed",
+      "since": "1.0.0"
+    },
+    {
+      "feature": "Command line: cachedrop clean, with --dry-run",
+      "since": "1.0.2"
+    },
+    {
+      "feature": "Checks for updates weekly; installs only when you choose",
+      "since": "1.0.1"
+    },
+    {
+      "feature": "Results show the space measurably got back",
+      "since": "1.0.0"
+    },
+    {
+      "feature": "Audio software category cleans Ableton Live's cache",
+      "since": "1.0.2"
+    },
+    {
+      "feature": "Plug-in uninstall removes a plug-in product in all its formats (AU, VST, VST3, AAX, CLAP) plus allow-listed support files found through installer receipts; uninstalled items go to the Trash, so Put back works",
+      "since": "1.0.2"
+    },
+    {
+      "feature": "Opens a vendor's own manager (Native Access, Waves Central) for its plug-ins and sound libraries when installed",
+      "since": "1.0.2"
+    },
+    {
+      "feature": "Apps are matched to their files by bundle ID; files from deleted apps are listed for you to choose",
+      "since": "0.9"
+    },
+    {
+      "feature": "Reason's additional devices can go to the Trash one by one",
+      "since": "1.0.2"
+    }
   ],
   "never_claim": [
     "RAM boosting or memory cleaning",
@@ -42,11 +117,32 @@
     "Speeding up the Mac by a stated percentage",
     "Finding duplicate files or calling a plug-in unused"
   ],
-  "vendor_tools_allowed": ["Native Access", "Waves Central", "Splice", "Sound Library Manager", "Adobe Creative Cloud", "Finder", "Storage settings", "Terminal"],
+  "vendor_tools_allowed": [
+    "Native Access",
+    "Waves Central",
+    "Splice",
+    "Sound Library Manager",
+    "Adobe Creative Cloud",
+    "Finder",
+    "Storage settings",
+    "Terminal"
+  ],
   "extra_competitors": [
-    { "id": "mackeeper", "pattern": "\\bmac\\s?keeper\\b" },
-    { "id": "npkill", "pattern": "\\bnpkill\\b" },
-    { "id": "setapp", "pattern": "\\bsetapp\\b" },
-    { "id": "disk-drill", "pattern": "\\bdisk\\s?drill\\b" }
+    {
+      "id": "mackeeper",
+      "pattern": "\\bmac\\s?keeper\\b"
+    },
+    {
+      "id": "npkill",
+      "pattern": "\\bnpkill\\b"
+    },
+    {
+      "id": "setapp",
+      "pattern": "\\bsetapp\\b"
+    },
+    {
+      "id": "disk-drill",
+      "pattern": "\\bdisk\\s?drill\\b"
+    }
   ]
 }

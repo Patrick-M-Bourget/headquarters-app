@@ -43,3 +43,14 @@ test("page audit: checks present exactly when the fetch worked; yes/partial need
   assert.ok(AnswerCheck.safeParse({ verdict: "partial", quote: "Remove leftovers in one click.", model: "m" }).success);
   assert.ok(!SiteAudit.safeParse({ origin: "https://cachedrop.io", llms_txt: true, robots_allows: { GPTBot: true } }).success, "every AI crawler must be checked");
 });
+
+test("keyword result: own position must match a cachedrop row; failures carry no results", async () => {
+  const { KeywordResult } = await import("../packages/data-contracts/seo-geo.ts");
+  const row = (position: number, brand: string | null) => ({ position, url: `https://x${position}.com/`, domain: `x${position}.com`, title: "t", brand });
+  const base = { keyword: "uninstall vst mac", query_ids: ["q02"], checked_at: "2026-11-09T00:00:00Z", engine: "google", gl: "us", hl: "en", related_searches: [], error: null };
+  assert.ok(KeywordResult.safeParse({ ...base, results: [row(1, null), row(2, "cachedrop")], own_position: 2 }).success);
+  assert.ok(!KeywordResult.safeParse({ ...base, results: [row(1, null)], own_position: 1 }).success);
+  assert.ok(KeywordResult.safeParse({ ...base, results: [row(1, null)], own_position: null }).success);
+  assert.ok(!KeywordResult.safeParse({ ...base, results: [row(1, null)], own_position: null, error: "HTTP 429" }).success);
+  assert.ok(KeywordResult.safeParse({ ...base, results: [], own_position: null, error: "HTTP 429" }).success);
+});

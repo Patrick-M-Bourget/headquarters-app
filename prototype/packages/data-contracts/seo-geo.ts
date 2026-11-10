@@ -115,3 +115,31 @@ export const PageComparison = z.object({
   gaps: z.array(z.string()),
 });
 export type PageComparison = z.infer<typeof PageComparison>;
+
+// ---- Keyword tracker (plan Q7/Q14) ----
+
+/** One organic result in a search engine's top 10. Snippets are not stored (third-party text, public repo). */
+export const SerpResult = z.object({
+  position: z.number().int().positive(),
+  url: z.string().url(),                     // tracking params (srsltid, utm_*) stripped
+  domain: z.string(),                        // hostname without www.
+  title: z.string(),
+  brand: z.string().nullable(),              // known brand id when the domain is a tracked product's own site
+});
+export type SerpResult = z.infer<typeof SerpResult>;
+
+/** Top-10 for one keyword. Own position is from the SERP; Search Console positions come later (cachedrop-website #96). */
+export const KeywordResult = z.object({
+  keyword: z.string().min(2),
+  query_ids: z.array(z.string()).min(1),     // the frozen queries this keyword came from
+  checked_at: z.iso.datetime(),
+  engine: z.literal("google"),
+  gl: z.string().length(2),                  // country
+  hl: z.string().min(2),                     // language
+  results: z.array(SerpResult).max(10),
+  own_position: z.number().int().positive().nullable(), // best cachedrop.io position in the top 10, null = not ranked
+  related_searches: z.array(z.string()),
+  error: z.string().nullable(),
+}).refine(k => k.error === null || k.results.length === 0, { message: "a failed check has no results" })
+  .refine(k => k.own_position === null || k.results.some(r => r.position === k.own_position && r.brand === "cachedrop"), { message: "own_position must point at a cachedrop result" });
+export type KeywordResult = z.infer<typeof KeywordResult>;

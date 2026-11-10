@@ -1,0 +1,28 @@
+{
+  "path": "src/components/FeedbackModal.astro",
+  "base_commit": "d8d7480",
+  "locale": "de-DE",
+  "kind": "other",
+  "values": [
+    {
+      "index": 0,
+      "key": "copy",
+      "de": "{\n    title: 'Schnelles Feedback geben',\n    question: 'Wie läuft es mit CacheDrop für Sie?',\n    close: 'Feedback schließen',\n    thanks: 'Danke, das hilft uns.',\n    read: 'Wir lesen jede Nachricht und entscheiden damit, was wir als Nächstes entwickeln.',\n    back: 'Zurück zu CacheDrop',\n    rating: 'Ihre Bewertung',\n    ratings: ['Sehr unzufrieden', 'Unzufrieden', 'Neutral', 'Zufrieden', 'Begeistert'],\n    email: 'E-Mail',\n    optional: '(optional)',\n    placeholder: 'sie@beispiel.de',\n    change: 'Was sollen wir ändern?',\n    notes: 'Oder einen Fehler melden … (Markdown wird unterstützt)',\n    specs: 'Anonyme Systemdaten senden',\n    specsWhat: '(User-Agent des Browsers, Plattform und Sprache)',\n    privacy: 'Datenschutz (Englisch)',\n    cancel: 'Abbrechen',\n    submit: 'Feedback senden',\n    empty: 'Wählen Sie eine Bewertung oder schreiben Sie eine Nachricht und senden Sie sie dann ab.',\n    failed: 'Das konnten wir nicht senden. Prüfen Sie Ihre Verbindung und versuchen Sie es erneut.',\n  }"
+    }
+  ],
+  "verify": [],
+  "problems": [],
+  "page_findings": [],
+  "review": {
+    "draft_id": "de-DE-src-components-FeedbackModal-astro",
+    "reviewed_at": "2026-11-10T23:21:55.782Z",
+    "verdict": "pass",
+    "findings": [],
+    "model": "anthropic/claude-sonnet-5-5",
+    "facts_version": "2026-11-10 / 1.0.4",
+    "cost_usd": 0.00483
+  },
+  "fixes_applied": 0,
+  "model": "anthropic/claude-sonnet-5-5",
+  "cost_usd": 0.0335
+}

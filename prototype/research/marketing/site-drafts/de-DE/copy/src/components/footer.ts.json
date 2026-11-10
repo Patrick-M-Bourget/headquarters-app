@@ -1,0 +1,31 @@
+{
+  "path": "src/components/footer.ts",
+  "base_commit": "d8d7480",
+  "locale": "de-DE",
+  "kind": "other",
+  "values": [
+    {
+      "index": 0,
+      "key": "footerCopy",
+      "de": "{\n    tagline: 'Holen Sie sich den Speicherplatz Ihres Macs zurück: ein Mac-Reiniger, ein App-Deinstallationsprogramm und ein Plug-in-Manager, die Sie nur einmal bezahlen.',\n    guides: 'Anleitungen zum Aufräumen',\n    developer: 'Entwickler-Caches leeren',\n    creator: 'Adobe-Medien-Cache leeren',\n    producer: 'Audio-Plug-ins deinstallieren',\n    systemData: 'Systemdaten löschen',\n    apps: 'Apps deinstallieren',\n    product: 'Produkt',\n    overview: 'Überblick',\n    download: 'Für Mac herunterladen',\n    feedback: 'Feedback geben',\n    resendKey: 'Lizenzschlüssel erneut senden',\n    compare: 'Vergleich mit anderen Mac-Reinigern',\n    platform: 'Plattform',\n    chips: 'Apple Silicon und Intel',\n    macos: 'macOS 14 Sonoma oder neuer',\n    trademarks: 'Apple, Mac und macOS sind Marken von Apple Inc.',\n    privacy: 'Datenschutz (Englisch)',\n    terms: 'Verkaufsbedingungen (Englisch)',\n    refunds: 'Rückerstattung (Englisch)',\n    license: 'Lizenzvereinbarung (Englisch)',\n    switchTo: 'English',\n  }"
+    }
+  ],
+  "verify": [
+    "Systemdaten (macOS-Bezeichnung im Footer-Link „Systemdaten löschen“)",
+    "macOS 14 Sonoma"
+  ],
+  "problems": [],
+  "page_findings": [],
+  "review": {
+    "draft_id": "de-DE-src-components-footer-ts",
+    "reviewed_at": "2026-11-10T23:21:45.989Z",
+    "verdict": "pass",
+    "findings": [],
+    "model": "anthropic/claude-sonnet-5-5",
+    "facts_version": "2026-11-10 / 1.0.4",
+    "cost_usd": 0.00481
+  },
+  "fixes_applied": 0,
+  "model": "anthropic/claude-sonnet-5-5",
+  "cost_usd": 0.0633
+}

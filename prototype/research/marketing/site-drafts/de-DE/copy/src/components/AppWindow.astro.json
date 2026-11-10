@@ -1,0 +1,30 @@
+{
+  "path": "src/components/AppWindow.astro",
+  "base_commit": "d8d7480",
+  "locale": "de-DE",
+  "kind": "other",
+  "values": [
+    {
+      "index": 0,
+      "key": "label",
+      "de": "'Die CacheDrop-App mit der Speicherübersicht (Storage overview)'"
+    }
+  ],
+  "verify": [
+    "Storage overview"
+  ],
+  "problems": [],
+  "page_findings": [],
+  "review": {
+    "draft_id": "de-DE-src-components-AppWindow-astro",
+    "reviewed_at": "2026-11-10T23:22:02.790Z",
+    "verdict": "pass",
+    "findings": [],
+    "model": "anthropic/claude-sonnet-5-5",
+    "facts_version": "2026-11-10 / 1.0.4",
+    "cost_usd": 0.00415
+  },
+  "fixes_applied": 0,
+  "model": "anthropic/claude-sonnet-5-5",
+  "cost_usd": 0.029
+}

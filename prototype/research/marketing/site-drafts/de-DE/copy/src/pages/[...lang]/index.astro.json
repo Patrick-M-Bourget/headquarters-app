@@ -1,0 +1,51 @@
+{
+  "path": "src/pages/[...lang]/index.astro",
+  "base_commit": "d8d7480",
+  "locale": "de-DE",
+  "kind": "home",
+  "values": [
+    {
+      "index": 0,
+      "key": "copy",
+      "de": "{\n    title: 'Mac-Reiniger: Speicherplatz freigeben, einmal zahlen | CacheDrop',\n    description: 'CacheDrop findet die Caches, Reste und alten Dateien, die Ihren Mac füllen, und räumt sie sicher auf. Für Musikproduktion, Entwicklung und Videoschnitt.',\n    operatingSystem: 'macOS 14 oder neuer',\n    // Decision 51's proof: the 18 GB of plug-ins on the owner's Mac, until the Smart clean figure (#105).\n    proof: 'CacheDrop fand 18\\u00a0GB Plug-ins auf dem Mac eines Musikproduzenten',\n    h1: 'Holen Sie sich den Speicherplatz Ihres Macs zurück.',\n    lede: 'CacheDrop findet die Caches, Reste und alten Dateien, die Ihren Mac füllen, und räumt sie sicher auf. Für Musikproduktion, Entwicklung und Videoschnitt.',\n    download: 'Für Mac herunterladen',\n    valueEyebrow: 'Eine App statt drei',\n    valueTitle: 'Ein Mac-Reiniger, ein App-Deinstallationsprogramm und ein Plug-in-Manager.',\n    values: [\n      ['Sehen, was Ihren Mac füllt', 'Ein Scan zeigt Caches, alte Projektdateien, Reste und große Downloads mit ihrer Größe.'],\n      ['Apps und Plug-ins vollständig entfernen', 'Jede Datei, die sie installiert haben, verschwindet in einem Schritt, und Ihre Lizenzen bleiben unangetastet.'],\n      ['Nichts geht versehentlich verloren', 'Sie prüfen vorher alles. Ihre Dateien landen im Papierkorb, und History legt sie zurück.'],\n    ],\n    workEyebrow: 'Für Ihre Arbeit gemacht',\n    workTitle: 'Musik, Code und Video füllen einen Mac am schnellsten.',\n    workBody: 'CacheDrop weiß, wo Ihre Tools ihre Dateien ablegen, und findet deshalb die Gigabyte, die ein allgemeiner Reiniger übersieht.',\n    producers: {\n      title: 'Für Musikproduktion',\n      body: 'Deinstallieren Sie VST-, AU-, AAX- und CLAP-Plug-ins mit allen Dateien, die sie installiert haben, und leeren Sie den Cache von Ableton Live. Ihre Lizenzen bleiben unangetastet.',\n      chips: ['VST3 / AU', 'AAX / CLAP', 'Ableton-Cache'],\n      link: 'So deinstallieren Sie Audio-Plug-ins',\n    },\n    developers: {\n      title: 'Für die Entwicklung',\n      body: 'Löschen Sie vergessene <span class=\"mono\" style=\"font-size: 13px\">node_modules</span>-Ordner, Xcode DerivedData und Docker-Caches sicher.',\n      chips: ['node_modules', 'DerivedData', 'Docker-Images'],\n      link: 'So leeren Sie Entwickler-Caches',\n    },\n    editors: {\n      title: 'Für den Videoschnitt',\n      body: 'Leeren Sie versteckte Adobe-Medien-Caches und prüfen Sie die Größe von Final Cut Pro Mediatheken voller Render-Dateien, ohne Ihre Timelines zu verlieren.',\n      chips: ['.cfa / .pek', 'Medien-Cache', 'FCPX-Mediatheken'],\n      link: 'So leeren Sie den Adobe-Medien-Cache',\n    },\n    safeEyebrow: 'Von Grund auf sicher',\n    safeTitle: 'Sie entscheiden, was verschwindet.',\n    safeBody: 'CacheDrop zeigt, was es gefunden hat, wo es liegt und wie viel Platz Sie zurückbekommen. Dann wartet es auf Sie.',\n    steps: [\n      ['Sie prüfen zuerst', 'Jeder Eintrag zeigt Größe und Speicherort, bevor etwas verschoben wird.'],\n      ['Gelöscht wird nur, was Apps selbst wieder anlegen', 'Caches und Build-Dateien werden gelöscht, weil Ihre Apps sie wieder anlegen. Ihre eigenen Dateien landen im Papierkorb.'],\n      ['Put back (Zurücklegen)', 'History listet jede Bereinigung auf und legt Ihre Dateien an ihren ursprünglichen Ort zurück.'],\n      ['Ihre Lizenzen bleiben sicher', 'CacheDrop berührt nie die Lizenzdaten Ihrer Apps und Plug-ins.'],\n      ['macOS öffnet es ohne Warnung', 'Jede Version wird vor der Veröffentlichung signiert und geprüft, damit macOS sie ohne Warnung öffnet.'],\n    ],\n    faqTitle: 'Mac-Speicher, kurz erklärt.',\n    faqAsk: 'Noch eine Frage? <a class=\"textlink\" href=\"#feedback\" data-feedback style=\"color: var(--accent-text)\">Fragen Sie uns direkt</a>.',\n    // One list feeds both the visible FAQ and the FAQPage JSON-LD, so they can't drift apart.\n    faq: [\n      ['Was ist CacheDrop?', 'CacheDrop ist eine Mac-App, die die Caches, Reste und alten Dateien findet, die Ihren Mac füllen, und sie sicher bereinigt. Sie entfernt außerdem Apps und Audio-Plug-ins mit allen Dateien, die sie installiert haben. Gemacht ist sie für Musikproduktion, Entwicklung und Videoschnitt.'],\n      ['Wie kann ich auf meinem Mac Speicherplatz freigeben?', 'Beginnen Sie bei den Dateien, die Sie nicht sehen. Caches, Build-Dateien und App-Reste können Dutzende Gigabyte belegen, und macOS versteckt sie unter „Systemdaten“. CacheDrop scannt danach, zeigt, was es gefunden hat und wie groß jeder Eintrag ist, und leert, was Sie freigeben.'],\n      ['Was sind Systemdaten auf dem Mac, und kann ich sie löschen?', 'Unter „Systemdaten“ zählt macOS Dateien, die in keine andere Kategorie passen, darunter App-Caches, Protokolle und Entwicklerdateien. Vieles davon lässt sich bedenkenlos entfernen, weil Apps diese Dateien wieder anlegen. CacheDrop nimmt sich nur diese Teile vor.'],\n      ['Kann ich Caches auf dem Mac bedenkenlos löschen?', 'Ja, wenn es Caches sind, die Apps wieder anlegen: Die App erzeugt sie beim nächsten Bedarf einfach erneut. CacheDrop zeigt Ihnen jeden Eintrag, bevor etwas geleert wird.'],\n      ['Wie deinstalliere ich eine App oder ein Plug-in auf dem Mac vollständig?', 'Wenn Sie eine App in den Papierkorb ziehen, bleiben ihre Einstellungen, Caches und Support-Dateien zurück, und Plug-ins legen Dateien in mehreren Ordnern ab. CacheDrop findet jede Datei, die eine App oder ein Plug-in installiert hat, und entfernt sie in einem Schritt, ohne Ihre Lizenzen anzutasten.'],\n      ['Wie räume ich meinen Mac auf, ohne Dateien zu verlieren?', 'Leeren Sie Caches und Build-Dateien, nicht Dokumente. CacheDrop löscht nur Dateien, die Apps wieder anlegen. Ihre eigenen Dateien landen im Papierkorb, und History legt sie zurück.'],\n      ['Ist CacheDrop ein Abo?', `Nein. Sie zahlen einmal: Eine Lizenz kostet ${pricingCopy.de.license}, gilt für bis zu 3 Macs und enthält alle Updates für Version 1. Kein Abo, nichts zu kündigen.`],\n      ['Was kostet CacheDrop, und welche Macs werden unterstützt?', `Eine Lizenz kostet ${pricingCopy.de.license}, gilt für bis zu 3 Macs und kommt mit 30 Tagen Geld-zurück-Garantie. Sie können vor dem Kauf testen: Der Scan ist immer kostenlos, und bis zu 2\\u00a0GB können Sie vorab aufräumen. Es ist eine Universal-App für Apple Silicon und Intel Macs mit macOS 14 oder neuer.`],\n    ],\n    closingTitle: 'Probieren Sie es auf Ihrem Mac aus.',\n    closingBody: 'Eine App für Apple Silicon und Intel Macs mit macOS 14 oder neuer. Die App selbst ist derzeit nur auf Englisch verfügbar.',\n  }"
+    }
+  ],
+  "verify": [
+    "Systemdaten (Name in den macOS-Speichereinstellungen)",
+    "Papierkorb",
+    "Put back (Zurücklegen) – Finder-Menüpunkt „Zurücklegen“ gegenüber dem App-Label „Put back“",
+    "Medien-Cache (Bezeichnung in den Premiere-Pro-Einstellungen)",
+    "Mediathek (Final Cut Pro)"
+  ],
+  "problems": [],
+  "page_findings": [],
+  "review": {
+    "draft_id": "de-DE-src-pages-lang-index-astro",
+    "reviewed_at": "2026-11-10T23:24:15.943Z",
+    "verdict": "pass_with_notes",
+    "findings": [
+      {
+        "rule": "ahead_of_app",
+        "severity": "ahead_of_app",
+        "source": "model",
+        "quote": "History listet jede Bereinigung auf und legt Ihre Dateien an ihren ursprünglichen Ort zurück.",
+        "message": "Der Verlauf zeigt nur, was jede Bereinigung freigegeben hat. Eine Wiederherstellungsfunktion über History gibt es nicht. Put back funktioniert nur für deinstallierte Apps und Plug-ins im Papierkorb.",
+        "fix": null
+      },
+      {
+        "rule": "ahead_of_app",
+        "severity": "ahead_of_app",
+        "source": "model",
+        "quote": "Ihre Dateien landen im Papierkorb, und History legt sie zurück.",
+        "message": "History kann keine Dateien zurücklegen. Es ist nur ein Verlauf der freigegebenen Bereinigungen.",
+        "fix": null
+      }
+    ],
+    "model": "anthropic/claude-sonnet-5-5",
+    "facts_version": "2026-11-10 / 1.0.4",
+    "cost_usd": 0.0269
+  },
+  "fixes_applied": 0,
+  "model": "anthropic/claude-sonnet-5-5",
+  "cost_usd": 0.2803
+}

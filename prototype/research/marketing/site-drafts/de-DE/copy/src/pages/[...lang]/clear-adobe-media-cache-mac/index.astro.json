@@ -1,0 +1,39 @@
+{
+  "path": "src/pages/[...lang]/clear-adobe-media-cache-mac/index.astro",
+  "base_commit": "d8d7480",
+  "locale": "de-DE",
+  "kind": "guide",
+  "values": [
+    {
+      "index": 0,
+      "key": "copy",
+      "de": "{\n    guide: {\n      ...guides.creator.de,\n      crumb: 'Speicher-Guide für Kreative',\n      headline: 'So leeren Sie den Adobe-Medien-Cache auf dem Mac',\n      lede: 'Schluss mit dem Kauf externer Festplatten. Meldet Premiere Pro oder Final Cut Pro, dass der Speicher voll ist, sind es oft Cache-Dateien: Videoschnitt-Software legt riesige, unsichtbare Caches an, damit die Wiedergabe flüssig bleibt, und nach Projektende bleiben sie für immer auf Ihrem Mac. CacheDrop findet sie.',\n      cta: 'Für Mac herunterladen',\n      ctaNote: 'Premiere Pro · After Effects · Final Cut Pro',\n      updated: 'Oktober 2026',\n      readTime: '5 Min. Lesezeit',\n      faqTitle: 'FAQ zum Speicher für Kreative',\n      // One list feeds both the visible FAQ and the FAQPage JSON-LD (answers lose their tags there).\n      faq: [\n        ['Ist es sicher, den Medien-Cache von Premiere Pro zu leeren?', 'Ja. Die Dateien im Medien-Cache sind Kopien, die Premiere für eine schnellere Wiedergabe anlegt. Beim nächsten Öffnen eines Projekts erzeugt Premiere sie erneut, deshalb kann die erste Wiedergabe etwas länger dauern, während Wellenformen und konformiertes Audio neu aufgebaut werden.'],\n        ['Was sind .cfa- und .pek-Dateien?', '<span class=\"ic\">.cfa</span>-Dateien sind konformiertes Audio: Versionen des Tons Ihrer Clips, die Adobe-Apps schnell abspielen können. In <span class=\"ic\">.pek</span>-Dateien stehen Spitzenwerte, aus denen die Audio-Wellenformen gezeichnet werden. Beide lassen sich bedenkenlos löschen.'],\n        ['Gehen beim Löschen der Render-Dateien von Final Cut Pro auch meine Schnitte verloren?', 'Nein. Ihre Projekte, Timelines und Originalmedien bleiben in der Mediathek. Final Cut Pro rendert Effekte und Übergänge erneut, sobald es sie wieder braucht.'],\n        ['Warum ist mein Mac nach dem Löschen alter Projekte noch voll?', 'Beim Löschen eines Projekts werden die Caches, die es angelegt hat, nicht mit entfernt. Dateien des Medien-Cache, der Disk-Cache von After Effects und Render-Dateien bleiben im Ordner „Library“ liegen, bis Sie sie leeren.'],\n        ['Für welche Apps leert CacheDrop Caches?', 'Für Adobe Premiere Pro, After Effects und Media Encoder, die sich einen Medien-Cache teilen. Bei Final Cut Pro zeigt CacheDrop die Größe jeder Mediathek und wie Sie deren Render-Dateien in Final Cut löschen. Sie prüfen jeden Eintrag, bevor etwas geleert wird.'],\n      ] as Array<[string, string]>,\n      other: { eyebrow: 'Sie schreiben auch Code?', title: 'Xcode DerivedData und alte node_modules-Ordner löschen', href: '/clear-mac-developer-caches/', link: 'Den Entwickler-Guide lesen' },\n      closing: { title: 'Behalten Sie das Laufwerk, das Sie haben.', body: 'CacheDrop findet den Adobe-Medien-Cache und Ihre Final-Cut-Pro-Mediatheken in einem einzigen Scan.' },\n      trademarks: 'Adobe, Premiere Pro, After Effects und Photoshop sind Marken von Adobe. Final Cut Pro, Apple, Mac und macOS sind Marken von Apple Inc.',\n    },\n    toc: ['Adobe Premiere: Medien-Cache leeren', 'Final Cut Pro: Render-Dateien löschen'],\n    premiere: {\n      title: 'Medien-Cache von Adobe Premiere leeren',\n      intro: 'Adobe Premiere Pro erzeugt <span class=\"ic\">.cfa</span>- und <span class=\"ic\">.pek</span>-Dateien, um die Audio- und Videowiedergabe zu optimieren. Innerhalb weniger Monate kann dieser versteckte Ordner auf über 100\\u00a0GB anwachsen.',\n      where: 'Auf dem Mac liegt der Medien-Cache standardmäßig hier:',\n      path: 'Pfad',\n      manualTitle: 'So geht es manuell:',\n      manualSteps: ['Öffnen Sie Premiere Pro.', 'Gehen Sie zu Settings › Media Cache (in älteren Versionen Preferences › Media Cache).', 'Klicken Sie auf „Delete“.'],\n      manualNote: 'Hinweis: Adobe empfiehlt, das direkt nach dem Start von Premiere zu tun, bevor Sie ein Projekt öffnen.',\n      oursTitle: 'So geht es mit CacheDrop:',\n      ours: 'CacheDrop findet den Medien-Cache, den sich Premiere Pro, After Effects und Media Encoder teilen, und leert ihn, wenn Sie bestätigen. Premiere müssen Sie dafür nicht öffnen.',\n    },\n    fcpx: {\n      title: 'Render-Dateien von Final Cut Pro',\n      intro: 'FCPX legt Render-Dateien direkt im Mediathek-Paket ab. CacheDrop findet Ihre FCPX-Mediatheken, zeigt, wie viel Speicherplatz jede belegt, und verweist Sie auf den Befehl in Final Cut, der die Render-Dateien entfernt.',\n      why: 'Deshalb kann eine abgeschlossene Final-Cut-Pro-Mediathek weit mehr Platz belegen als ihre Quellmedien. Die Render-Dateien liegen im <span class=\"ic\">.fcpbundle</span>, wo der Finder sie nicht anzeigt.',\n      manualTitle: 'Render-Dateien in Final Cut Pro löschen',\n      manualSteps: ['Wählen Sie die Mediathek in der Seitenleiste „Libraries“ aus.', 'Wählen Sie File › Delete Generated Library Files.', 'Wählen Sie Delete Render Files, dann Unused Only oder All, und klicken Sie auf OK.'],\n      manualNote: 'Immer nur eine Mediathek, und nur Mediatheken, die Sie öffnen.',\n      oursTitle: 'Mit CacheDrop finden',\n      ours: 'CacheDrop listet jede gefundene Final-Cut-Pro-Mediathek mit ihrer Größe auf, damit Sie wissen, welche Sie in Final Cut bereinigen sollten. Eine Mediathek verändert CacheDrop nie selbst.',\n    },\n    get: 'CacheDrop ausprobieren',\n  }"
+    }
+  ],
+  "verify": [
+    "Ordner „Library“ (Finder-Name für ~/Library)",
+    "Mediathek (Final Cut Pro, Library)",
+    "Seitenleiste „Libraries“ in Final Cut Pro",
+    "File › Delete Generated Library Files (Final Cut Pro)",
+    "Delete Render Files, Unused Only, All (Final Cut Pro)",
+    "Settings › Media Cache (Premiere Pro)",
+    "Preferences › Media Cache (ältere Premiere-Versionen)",
+    "„Delete“-Schaltfläche im Media-Cache-Bereich von Premiere Pro",
+    "Medien-Cache (deutscher Begriff in Premiere Pro)",
+    "Finder"
+  ],
+  "problems": [],
+  "page_findings": [],
+  "review": {
+    "draft_id": "de-DE-src-pages-lang-clear-adobe-media-cache-mac-index-astro",
+    "reviewed_at": "2026-11-10T23:27:13.300Z",
+    "verdict": "pass",
+    "findings": [],
+    "model": "anthropic/claude-sonnet-5-5",
+    "facts_version": "2026-11-10 / 1.0.4",
+    "cost_usd": 0.01548
+  },
+  "fixes_applied": 0,
+  "model": "anthropic/claude-sonnet-5-5",
+  "cost_usd": 0.1156
+}

@@ -1,0 +1,28 @@
+{
+  "path": "src/pages/[...lang]/pricing/index.astro",
+  "base_commit": "d8d7480",
+  "locale": "de-DE",
+  "kind": "pricing",
+  "values": [
+    {
+      "index": 0,
+      "key": "copy",
+      "de": "{\n    title: `CacheDrop Preise – ${pricingCopy.de.was} einmalig für bis zu 3 Macs`,\n    description: `CacheDrop findet, was den Speicherplatz Ihres Macs füllt, und räumt es sicher auf. Eine Lizenz kostet ${pricingCopy.de.license} als Einmalkauf, gilt für bis zu 3 Macs und enthält alle Updates für Version 1 sowie 30 Tage Geld-zurück-Garantie. Kein Abo, nichts zu kündigen.`,\n  }"
+    }
+  ],
+  "verify": [],
+  "problems": [],
+  "page_findings": [],
+  "review": {
+    "draft_id": "de-DE-src-pages-lang-pricing-index-astro",
+    "reviewed_at": "2026-11-10T23:24:21.715Z",
+    "verdict": "pass",
+    "findings": [],
+    "model": "anthropic/claude-sonnet-5-5",
+    "facts_version": "2026-11-10 / 1.0.4",
+    "cost_usd": 0.00449
+  },
+  "fixes_applied": 0,
+  "model": "anthropic/claude-sonnet-5-5",
+  "cost_usd": 0.0222
+}

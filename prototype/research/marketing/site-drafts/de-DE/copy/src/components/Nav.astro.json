@@ -1,0 +1,28 @@
+{
+  "path": "src/components/Nav.astro",
+  "base_commit": "d8d7480",
+  "locale": "de-DE",
+  "kind": "other",
+  "values": [
+    {
+      "index": 0,
+      "key": "copy",
+      "de": "{ home: 'CacheDrop Startseite', primary: 'Hauptnavigation', developers: 'Für Entwickler', creators: 'Für Kreative', producers: 'Für Musikproduzenten', pricing: 'Preise', feedback: 'Feedback geben', download: 'Für Mac herunterladen' }"
+    }
+  ],
+  "verify": [],
+  "problems": [],
+  "page_findings": [],
+  "review": {
+    "draft_id": "de-DE-src-components-Nav-astro",
+    "reviewed_at": "2026-11-10T23:21:49.806Z",
+    "verdict": "pass",
+    "findings": [],
+    "model": "anthropic/claude-sonnet-5-5",
+    "facts_version": "2026-11-10 / 1.0.4",
+    "cost_usd": 0.00424
+  },
+  "fixes_applied": 0,
+  "model": "anthropic/claude-sonnet-5-5",
+  "cost_usd": 0.0216
+}

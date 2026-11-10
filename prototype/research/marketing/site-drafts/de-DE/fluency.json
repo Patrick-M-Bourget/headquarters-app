@@ -1,0 +1,105 @@
+{
+  "model": "gemini-3.8-flash",
+  "judged_at": "2026-11-10T23:36:40.773Z",
+  "sentences_total": 588,
+  "sampled": 200,
+  "passed": "200/200 (100%)",
+  "canaries_caught": "6/6",
+  "gate": "pass",
+  "glossary_flagged": 5,
+  "glossary_total": 78,
+  "cost_usd": 0.0858,
+  "flagged": [],
+  "canaries": [
+    {
+      "sentence": "Es ist empfohlen, dass Sie den Cache leeren machen.",
+      "id": 29,
+      "fluent": false,
+      "terms_ok": false,
+      "reason": "Unnatural phrasing and incorrect grammar ('den Cache leeren machen').",
+      "suggestion": "Es wird empfohlen, den Cache zu leeren."
+    },
+    {
+      "sentence": "Ziehen Sie die App in den Mülleimer, um sie zu entfernen.",
+      "id": 59,
+      "fluent": false,
+      "terms_ok": false,
+      "reason": "Uses Windows/generic 'Mülleimer' instead of official macOS 'Papierkorb'.",
+      "suggestion": "Ziehen Sie die App in den Papierkorb, um sie zu entfernen."
+    },
+    {
+      "sentence": "Öffnen Sie Systempräferenzen › Allgemein › Speicher, um die Belegung zu sehen.",
+      "id": 89,
+      "fluent": false,
+      "terms_ok": false,
+      "reason": "'Systempräferenzen' is an English calque; the official macOS term is 'Systemeinstellungen'.",
+      "suggestion": "Öffnen Sie Systemeinstellungen › Allgemein › Speicher, um die Belegung zu sehen."
+    },
+    {
+      "sentence": "Dieses Werkzeug hilft Ihnen, um Raum auf Ihrem Mac zu befreien.",
+      "id": 120,
+      "fluent": false,
+      "terms_ok": false,
+      "reason": "'Raum ... zu befreien' is a literal English calque; the standard macOS term is 'Speicherplatz freigeben'.",
+      "suggestion": "Dieses Werkzeug hilft Ihnen, Speicherplatz auf Ihrem Mac freizugeben."
+    },
+    {
+      "sentence": "Die Caches werden wiederaufgebaut von dem Werkzeug in der nächsten Zeit.",
+      "id": 150,
+      "fluent": false,
+      "terms_ok": true,
+      "reason": "Clumsy and unnatural passive word order ('wiederaufgebaut von dem Werkzeug in der nächsten Zeit').",
+      "suggestion": "Die Caches werden in nächster Zeit vom Tool automatisch wieder aufgebaut."
+    },
+    {
+      "sentence": "Klicke auf den Knopf, um CacheDrop zu herunterladen.",
+      "id": 181,
+      "fluent": false,
+      "terms_ok": false,
+      "reason": "Uses informal 'Klicke' ('du' error), calque 'Knopf' instead of 'Schaltfläche/Button', and grammatical error 'zu herunterladen'.",
+      "suggestion": "Klicken Sie auf den Button, um CacheDrop herunterzuladen."
+    }
+  ],
+  "glossary": [
+    {
+      "sentence": "storage cleaner, Mac cleaner → Mac-Reiniger; Speicher-Cleaner",
+      "id": 1,
+      "fluent": false,
+      "terms_ok": false,
+      "reason": "'Speicher-Cleaner' is an awkward Denglish hybrid; Mac users and marketers use Mac-Cleaner or Bereinigungsprogramm.",
+      "suggestion": "Mac-Cleaner; Mac-Bereinigungsprogramm"
+    },
+    {
+      "sentence": "Time Machine local snapshot → lokaler Time-Machine-Snapshot",
+      "id": 26,
+      "fluent": true,
+      "terms_ok": false,
+      "reason": "Apple's official German macOS terminology uses 'Schnappschuss' rather than 'Snapshot'.",
+      "suggestion": "lokaler Time-Machine-Schnappschuss"
+    },
+    {
+      "sentence": "break (a project) → kaputtmachen",
+      "id": 42,
+      "fluent": false,
+      "terms_ok": false,
+      "reason": "'kaputtmachen' is overly colloquial for software website copy; 'beschädigen' is professional and idiomatic.",
+      "suggestion": "beschädigen"
+    },
+    {
+      "sentence": "Limited-time price (pill) → Zeitlich begrenzter Preis",
+      "id": 62,
+      "fluent": false,
+      "terms_ok": false,
+      "reason": "'Zeitlich begrenzter Preis' is a wooden calque; 'Aktionspreis' is the standard German e-commerce term.",
+      "suggestion": "Aktionspreis"
+    },
+    {
+      "sentence": "Was $29.99, now $19.99 for a limited time (spoken) → Regulär 29,99 $, jetzt 19,99 $ für begrenzte Zeit",
+      "id": 63,
+      "fluent": false,
+      "terms_ok": true,
+      "reason": "'für begrenzte Zeit' is an English calque; 'nur für kurze Zeit' is natural German.",
+      "suggestion": "Regulär 29,99 $, jetzt 19,99 $ (nur für kurze Zeit)"
+    }
+  ]
+}

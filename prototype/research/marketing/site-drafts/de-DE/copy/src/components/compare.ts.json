@@ -1,0 +1,103 @@
+{
+  "path": "src/components/compare.ts",
+  "base_commit": "d8d7480",
+  "locale": "de-DE",
+  "kind": "compare",
+  "values": [
+    {
+      "index": 0,
+      "key": "",
+      "de": "`CacheDrop räumt Ihren Mac auf, deinstalliert Apps und Plug-ins vollständig und leert Entwickler- und Medien-Caches für ${pricingCopy.de.license}, auf bis zu 3 Macs. Kein Abo. Die App selbst ist derzeit nur auf Englisch verfügbar.`"
+    },
+    {
+      "index": 1,
+      "key": "goodFor",
+      "de": "'Aufräumen, vollständiges Deinstallieren von Apps und Plug-ins sowie Entwickler- und Medien-Caches in einer App.'"
+    },
+    {
+      "index": 2,
+      "key": "goodFor",
+      "de": "'Eine Komplettlösung: Aufräumen, Malware-Scans, App-Updater und Systemmonitore.'"
+    },
+    {
+      "index": 3,
+      "key": "goodFor",
+      "de": "'Der günstigere Tarif von CleanMyMac mit weniger Werkzeugen.'"
+    },
+    {
+      "index": 4,
+      "key": "edition",
+      "de": "'Einmalkauf'"
+    },
+    {
+      "index": 5,
+      "key": "goodFor",
+      "de": "'Dieselbe Suite, einmal bezahlt. Die nächste Hauptversion ist ein kostenpflichtiges Upgrade.'"
+    },
+    {
+      "index": 6,
+      "key": "goodFor",
+      "de": "'Aufräumen, kombiniert mit Antivirus, VPN und Werbeblocker.'"
+    },
+    {
+      "index": 7,
+      "key": "goodFor",
+      "de": "'Aufräumen und App-Deinstallation, jährlich oder einmalig bezahlt.'"
+    },
+    {
+      "index": 8,
+      "key": "goodFor",
+      "de": "'Ein Paket aus sechs Werkzeugen, darunter ein Arbeitsspeicher-Cleaner und eine Duplikatsuche.'"
+    },
+    {
+      "index": 9,
+      "key": "goodFor",
+      "de": "'Apps entfernen, einschließlich der Dateien, die sie zurücklassen.'"
+    },
+    {
+      "index": 10,
+      "key": "goodFor",
+      "de": "'Systemüberwachung und Leistungswerkzeuge, dazu Aufräumen.'"
+    },
+    {
+      "index": 11,
+      "key": "goodFor",
+      "de": "'Aufräumen plus Systemmonitore und Lüftersteuerung, pro Lizenz für zwei Macs.'"
+    },
+    {
+      "index": 12,
+      "key": "goodFor",
+      "de": "'Eine visuelle Karte Ihres Laufwerks. Dateien suchen und löschen Sie selbst.'"
+    },
+    {
+      "index": 13,
+      "key": "goodFor",
+      "de": "'Wartungsskripte und versteckte Systemeinstellungen, ohne Kosten.'"
+    },
+    {
+      "index": 14,
+      "key": "goodFor",
+      "de": "'Entfernt jeweils eine App samt ihren Dateien, ohne Kosten.'"
+    },
+    {
+      "index": 15,
+      "key": "words",
+      "de": "{ perYear: '/Jahr', once: 'einmalig', or: 'oder', then: 'danach', firstYear: 'erstes Jahr', none: 'Keine Kosten', yearly: 'Jährlich', oneTime: 'Einmalig', both: 'Jährlich oder einmalig', any: 'Beliebig' }"
+    }
+  ],
+  "verify": [],
+  "problems": [],
+  "page_findings": [],
+  "review": {
+    "draft_id": "de-DE-src-components-compare-ts",
+    "reviewed_at": "2026-11-10T23:22:36.709Z",
+    "verdict": "pass",
+    "findings": [],
+    "model": "anthropic/claude-sonnet-5-5",
+    "facts_version": "2026-11-10 / 1.0.4",
+    "cost_usd": 0.00969
+  },
+  "fixes_applied": 0,
+  "model": "anthropic/claude-sonnet-5-5",
+  "cost_usd": 0.1151
+}

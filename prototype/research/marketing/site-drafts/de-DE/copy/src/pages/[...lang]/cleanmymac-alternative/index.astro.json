@@ -1,0 +1,55 @@
+{
+  "path": "src/pages/[...lang]/cleanmymac-alternative/index.astro",
+  "base_commit": "d8d7480",
+  "locale": "de-DE",
+  "kind": "compare",
+  "values": [
+    {
+      "index": 0,
+      "key": "copy",
+      "de": "{\n    title: 'CleanMyMac-Alternative mit Einmalkauf | CacheDrop',\n    description: compareDescription.de,\n    crumb: 'CleanMyMac-Alternative',\n    badge: 'Kein Abo · Bis zu 3 Macs',\n    h1: 'Eine CleanMyMac-Alternative, die Sie nur einmal bezahlen.',\n    lede: `Sie suchen eine CleanMyMac-Alternative ohne Abo? CacheDrop räumt Ihren Mac auf, deinstalliert Apps und Plug-ins vollständig und leert Entwickler- und Medien-Caches. ${p.was} einmalig, für bis zu 3 Macs.`,\n    priceEyebrow: 'Preise im Vergleich',\n    priceTitle: 'Einmal zahlen. Nicht jedes Jahr.',\n    priceBody: 'Die meisten Mac-Reiniger sind Abos, die sich von selbst verlängern. Hier steht, was jeder kostet – auch die, die weniger kosten als CacheDrop.',\n    caption: 'Preise von Mac-Reinigern im Vergleich',\n    cols: { product: 'App', price: 'Preis', billing: 'Abrechnung', macs: 'Macs', three: '3 Jahre, 1 Mac', goodFor: 'Geeignet für' },\n    note: `Listenpreise in US-Dollar für eine Lizenz, ohne Steuern, von der Website des jeweiligen Herstellers, geprüft am ${checkedLabel}. „3 Jahre, 1 Mac“ ist der günstigste Weg, einen Mac drei Jahre lang abzudecken.`,\n    offer: `Zeitlich begrenzter Preis: derzeit ${p.now}.`,\n    why: 'Manche Tools kosten weniger und erledigen nur eine Aufgabe. CacheDrop ist eine App für Aufräumen, vollständige Deinstallation und Plug-ins, auf 3 Macs, bereit für jedes neue macOS, sobald es erscheint.',\n    leaveEyebrow: 'Bewusst weggelassen',\n    leaveTitle: 'Kein RAM-Booster. Kein Virenschutz. Nur Ihr Speicherplatz.',\n    leaveBody: 'Viele Mac-Reiniger wachsen zu Werkzeugsammlungen heran, um die sich macOS ohnehin kümmert. CacheDrop lässt sie weg. Jede Funktion von CacheDrop gibt Speicherplatz frei oder zeigt, wohin er verschwunden ist.',\n    leave: [\n      ['RAM-Booster', 'macOS verwaltet den Arbeitsspeicher selbst. Ihn zu leeren zwingt Ihre Apps, gerade Geladenes neu zu laden – das ist langsamer, nicht schneller.'],\n      ['Virenschutz', 'XProtect ist in macOS integriert und aktualisiert sich im Hintergrund selbst.'],\n      ['„Zugriffsrechte reparieren“', 'macOS schützt seine eigenen Systemdateien seit OS X El Capitan. Es gibt nichts mehr zu reparieren.'],\n      ['Systemmonitore', 'Die Aktivitätsanzeige zeigt bereits Prozessor, Arbeitsspeicher, Batterie und Netzwerk.'],\n      ['Newsletter in der App', 'Keine Ankündigungen und keine Verkaufsangebote in der App. Von CacheDrop hören Sie, wenn ein Update bereitsteht.'],\n    ],\n    doesEyebrow: 'Das bekommen Sie',\n    doesTitle: 'Eine App statt drei.',\n    does: [\n      ['Smart clean', 'Ein Scan findet die Caches, alten Projektdateien, Reste und großen Downloads, die Ihren Mac füllen. Sie prüfen sie und räumen sie mit einem Klick auf.'],\n      ['App-Deinstallation, vollständig', 'Entfernen Sie eine App mit allen Dateien, die sie im Ordner „Library“ angelegt hat – nicht nur mit dem Teil, den Sie in den Papierkorb ziehen.'],\n      ['Plug-in-Manager', 'Deinstallieren Sie VST-, AU-, AAX- und CLAP-Plug-ins mit allen zugehörigen Dateien. Ihre Lizenzen bleiben dabei sicher.'],\n      ['Entwickler-Caches', 'Leeren Sie Xcode-DerivedData, vergessene node_modules-Ordner und Docker-Caches sicher.'],\n      ['Medien-Caches', 'Leeren Sie den Adobe-Medien-Cache und Render-Dateien von Final Cut Pro, die Sie nicht mehr brauchen.'],\n      ['Systemdaten, erklärt', 'Sehen Sie, was die Systemdaten unter Systemeinstellungen › Allgemein › Speicher füllt, und räumen Sie die Teile auf, die sich gefahrlos löschen lassen.'],\n    ],\n    faqTitle: 'Der Wechsel, beantwortet.',\n    faq: [\n      ['Ist CacheDrop eine gute CleanMyMac-Alternative?', `Ja, wenn Sie Ihren Speicherplatz zurückhaben möchten. CacheDrop findet Caches, Reste und alte Dateien, deinstalliert Apps und Plug-ins vollständig und kostet ${p.license} statt eines Jahresabos. Virenschutz, RAM-Booster und Systemmonitor gibt es nicht.`],\n      ['Ist CacheDrop ein Abo?', `Nein. Eine Lizenz kostet ${p.license}, gilt für bis zu 3 Macs und enthält alle Updates für Version 1. Nichts verlängert sich, und es gibt nichts zu kündigen.`],\n      ['Kann ich CacheDrop vor dem Kauf testen?', 'Ja. Der Scan ist immer kostenlos. Aufräumen und Deinstallieren sind kostenlos, bis 2\\u00a0GB freigegeben sind. Keine Karte nötig. Wenn Sie kaufen und es sich anders überlegen, gibt es 30 Tage lang Ihr Geld zurück, ohne Angabe von Gründen.'],\n      ['Brauche ich auf dem Mac einen RAM-Cleaner oder Virenschutz?', 'Nein. macOS verwaltet den Arbeitsspeicher selbst und hält aktuelle Daten absichtlich im Speicher, und XProtect prüft Apps auf Schadsoftware und aktualisiert sich selbst.'],\n      ['Was geschieht mit meinen Dateien?', 'Sie sehen alles, bevor es entfernt wird. Caches, die Apps selbst neu anlegen, werden gelöscht; Ihre eigenen Dateien kommen in den Papierkorb, und mit History legen Sie sie zurück.'],\n    ],\n    trademarks: `${footerCopy.de.trademarks} Produktnamen sind Marken ihrer jeweiligen Inhaber. CacheDrop steht in keiner Verbindung zu ihnen.`,\n    closingTitle: 'Sehen Sie, was CacheDrop auf Ihrem Mac findet.',\n    closingBody: 'Eine App für Macs mit Apple Silicon und Intel unter macOS 14 oder neuer.',\n  }"
+    }
+  ],
+  "verify": [
+    "Systemeinstellungen › Allgemein › Speicher",
+    "Systemdaten (in den Speichereinstellungen)",
+    "Papierkorb",
+    "Aktivitätsanzeige",
+    "Ordner „Library“ (Finder zeigt den Ordnernamen auf Deutsch als „Library“)",
+    "„Zugriffsrechte reparieren“ (früherer Name der Funktion im Festplattendienstprogramm)",
+    "XProtect",
+    "History (App-Label, bleibt Englisch)",
+    "Smart clean (App-Label, bleibt Englisch)"
+  ],
+  "problems": [],
+  "page_findings": [],
+  "review": {
+    "draft_id": "de-DE-src-pages-lang-cleanmymac-alternative-index-astro",
+    "reviewed_at": "2026-11-10T23:25:14.942Z",
+    "verdict": "pass_with_notes",
+    "findings": [
+      {
+        "rule": "ahead_of_app",
+        "severity": "ahead_of_app",
+        "source": "model",
+        "quote": "Ihre eigenen Dateien kommen in den Papierkorb, und mit History legen Sie sie zurück.",
+        "message": "History only lists what each cleanup freed. Restoring files from it is not a shipped feature. Restoring uses the Trash's Put back.",
+        "fix": null
+      },
+      {
+        "rule": "ahead_of_app",
+        "severity": "ahead_of_app",
+        "source": "model",
+        "quote": "die Caches, alten Projektdateien, Reste und großen Downloads, die Ihren Mac füllen",
+        "message": "The shipped feature list has no detection of old project files or large downloads. The scan covers categories, caches, build files and leftovers from deleted apps.",
+        "fix": null
+      }
+    ],
+    "model": "anthropic/claude-sonnet-5-5",
+    "facts_version": "2026-11-10 / 1.0.4",
+    "cost_usd": 0.02194
+  },
+  "fixes_applied": 0,
+  "model": "anthropic/claude-sonnet-5-5",
+  "cost_usd": 0.1363
+}

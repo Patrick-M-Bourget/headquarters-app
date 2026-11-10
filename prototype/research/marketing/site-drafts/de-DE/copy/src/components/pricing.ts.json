@@ -1,0 +1,35 @@
+{
+  "path": "src/components/pricing.ts",
+  "base_commit": "d8d7480",
+  "locale": "de-DE",
+  "kind": "compare",
+  "values": [
+    {
+      "index": 0,
+      "key": "",
+      "de": "true"
+    },
+    {
+      "index": 1,
+      "key": "pricingCopy",
+      "de": "{\n    eyebrow: 'Preise',\n    // The trial, stated once under the primary button of the homepage and every guide (Decision 51).\n    trial: 'Vor dem Kauf testen · Keine Karte nötig · macOS 14 oder neuer · App auf Englisch',\n    // Outcomes first, then the price (Decision 51, #113).\n    title: 'Einmal zahlen. Auf 3 Macs nutzen.',\n    body: 'Sehen Sie, was Ihren Mac füllt, räumen Sie es sicher auf und entfernen Sie Apps und Plug-ins vollständig. Sie prüfen vorher alles, und Ihre Dateien landen im Papierkorb, sodass nichts versehentlich verloren geht. Die App selbst ist derzeit nur auf Englisch verfügbar.',\n    name: 'CacheDrop-Lizenz',\n    was: de(price.regular),\n    now: de(price.offer),\n    spoken: `Regulär ${de(price.regular)}, jetzt ${de(price.offer)} für begrenzte Zeit, einmalig.`,\n    limited: 'Zeitlich begrenzter Preis',\n    once: 'einmalig',\n    currencies: 'Zahlen Sie in USD, CAD, EUR, GBP oder AUD: derselbe Betrag in jeder Währung.',\n    included: 'Das ist enthalten',\n    items: [\n      'Nutzbar auf bis zu 3 Ihrer Macs.',\n      'Alle Updates für Version 1, bereit für jedes neue macOS, sobald es erscheint.',\n      'Kein Abo. Nichts zu kündigen.',\n      '30 Tage Geld-zurück-Garantie, ohne Angabe von Gründen.',\n      'Der Scan ist immer kostenlos, und Sie können vor dem Kauf bis zu 2\\u00a0GB aufräumen.',\n    ],\n    // Shown only while the compare page (#87) is built and indexed in this language (`compareLive`).\n    // The homepage's \"Pay once\" line (Decision 51): the regular price against CleanMyMac's yearly one.\n    versus: `${de(price.regular)} einmalig für bis zu 3 Macs. CleanMyMac kostet 39,95\\u00a0$ pro Jahr, für einen Mac.`,\n    compare: 'CacheDrop mit anderen Mac-Reinigern vergleichen',\n    // The Buy button (Decision 51): \"Buy · $29.99 once\", with the offer shown as on the card (Decision 47).\n    buy: 'Kaufen',\n    buyOnce: 'einmalig',\n    wasWord: 'regulär',\n    nowWord: 'jetzt',\n    download: 'Für Mac herunterladen',\n    // Odd entries are the links to the terms of sale, refund policy and license agreement, in order.\n    // Prose for meta descriptions and answers: the regular price, then the discount while it runs.\n    license: discounted ? `${de(price.regular)} einmalig, jetzt ${de(price.offer)} für begrenzte Zeit` : `${de(price.regular)} einmalig`,\n    legal: ['Siehe ', 'Verkaufsbedingungen (Englisch)', ', ', 'Rückerstattung (Englisch)', ' und ', 'Lizenzvereinbarung (Englisch)', '.'],\n  }"
+    }
+  ],
+  "verify": [
+    "Papierkorb"
+  ],
+  "problems": [],
+  "page_findings": [],
+  "review": {
+    "draft_id": "de-DE-src-components-pricing-ts",
+    "reviewed_at": "2026-11-10T23:21:08.438Z",
+    "verdict": "pass",
+    "findings": [],
+    "model": "anthropic/claude-sonnet-5-5",
+    "facts_version": "2026-11-10 / 1.0.4",
+    "cost_usd": 0.01091
+  },
+  "fixes_applied": 0,
+  "model": "anthropic/claude-sonnet-5-5",
+  "cost_usd": 0.0641
+}

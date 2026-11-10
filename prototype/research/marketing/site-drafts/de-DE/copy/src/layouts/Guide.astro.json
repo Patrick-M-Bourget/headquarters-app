@@ -1,0 +1,28 @@
+{
+  "path": "src/layouts/Guide.astro",
+  "base_commit": "d8d7480",
+  "locale": "de-DE",
+  "kind": "other",
+  "values": [
+    {
+      "index": 0,
+      "key": "copy",
+      "de": "{ breadcrumb: 'Brotkrumennavigation', updated: 'Aktualisiert', price: `Bis zu 3 Macs: ${pricingCopy.de.license}.` }"
+    }
+  ],
+  "verify": [],
+  "problems": [],
+  "page_findings": [],
+  "review": {
+    "draft_id": "de-DE-src-layouts-Guide-astro",
+    "reviewed_at": "2026-11-10T23:21:30.981Z",
+    "verdict": "pass",
+    "findings": [],
+    "model": "anthropic/claude-sonnet-5-5",
+    "facts_version": "2026-11-10 / 1.0.4",
+    "cost_usd": 0.00423
+  },
+  "fixes_applied": 0,
+  "model": "anthropic/claude-sonnet-5-5",
+  "cost_usd": 0.026
+}

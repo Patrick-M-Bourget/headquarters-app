@@ -1,0 +1,28 @@
+{
+  "path": "src/components/bot-check.ts",
+  "base_commit": "d8d7480",
+  "locale": "de-DE",
+  "kind": "other",
+  "values": [
+    {
+      "index": 0,
+      "key": "botCheckCopy",
+      "de": "{\n    /** The function refused the token, or Turnstile couldn't run in this browser. */\n    failed: 'Wir konnten nicht bestätigen, dass die Anfrage von einer Person stammt. Laden Sie die Seite neu und versuchen Sie es erneut.',\n    /** Too many sends from one place; {wait} is `minute` or `minutes`. */\n    limited: 'Von Ihrem Netzwerk kamen sehr viele Versuche. Versuchen Sie es in {wait} erneut.',\n    minute: 'einer Minute',\n    minutes: '{n}\\u00a0Minuten',\n  }"
+    }
+  ],
+  "verify": [],
+  "problems": [],
+  "page_findings": [],
+  "review": {
+    "draft_id": "de-DE-src-components-bot-check-ts",
+    "reviewed_at": "2026-11-10T23:21:59.561Z",
+    "verdict": "pass",
+    "findings": [],
+    "model": "anthropic/claude-sonnet-5-5",
+    "facts_version": "2026-11-10 / 1.0.4",
+    "cost_usd": 0.00433
+  },
+  "fixes_applied": 0,
+  "model": "anthropic/claude-sonnet-5-5",
+  "cost_usd": 0.0219
+}

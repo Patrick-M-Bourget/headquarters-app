@@ -9,12 +9,14 @@ import { join } from "node:path";
 import { randomUUID } from "node:crypto";
 import { KeywordResult, Locale, QuerySet } from "../../packages/data-contracts/seo-geo.ts";
 import { MARKETS, querySetPath } from "../../packages/data-contracts/markets.ts";
-import { findIssue, paperclipEnabled, reportCost, reportToIssue } from "../../packages/paperclip-client/index.ts";
+import { issueParams, paperclipEnabled, reportCost, reportToIssue } from "../../packages/paperclip-client/index.ts";
 import { diffRuns, keywordsFrom, parseSerp, summarize } from "./keyword-checks.ts";
 
 const arg = (n: string) => { const i = process.argv.indexOf(n); return i > 0 ? process.argv[i + 1] : undefined; };
 const root = new URL("../../", import.meta.url).pathname;
-const set = QuerySet.parse(JSON.parse(readFileSync(join(root, arg("--set") ?? querySetPath(Locale.parse(arg("--locale") ?? "en-US"), Number(arg("--version") ?? 1))), "utf8")));
+// In Paperclip the issue text carries the parameters (`locale: fr-FR`); command-line flags win.
+const pc = await issueParams();
+const set = QuerySet.parse(JSON.parse(readFileSync(join(root, arg("--set") ?? querySetPath(Locale.parse(arg("--locale") ?? pc.params.locale ?? "en-US"), Number(arg("--version") ?? 1))), "utf8")));
 if (!set.approved_by) throw new Error("query set is a draft; only approved (frozen) sets can be tracked");
 const { gl, hl } = MARKETS[set.locale].serper;
 const sameLocale = (s: { locale?: string }) => (s.locale ?? "en-US") === set.locale; // summaries before 5b have no locale: en-US
@@ -42,7 +44,7 @@ async function serper(q: string) {
 }
 
 try {
-  if (paperclipEnabled()) issue = await findIssue();
+  issue = pc.issue;
   const results: KeywordResult[] = [];
   for (const kw of keywords) {
     try { results.push(parseSerp(await serper(kw.keyword), kw, gl, hl)); }

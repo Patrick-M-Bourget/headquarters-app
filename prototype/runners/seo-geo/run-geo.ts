@@ -5,15 +5,17 @@ import { join } from "node:path";
 import { randomUUID } from "node:crypto";
 import { EngineAnswer, Locale, Mention, QuerySet } from "../../packages/data-contracts/seo-geo.ts";
 import { MARKETS, querySetPath } from "../../packages/data-contracts/markets.ts";
-import { findIssue, paperclipEnabled, reportCost, reportToIssue } from "../../packages/paperclip-client/index.ts";
+import { issueParams, paperclipEnabled, reportCost, reportToIssue } from "../../packages/paperclip-client/index.ts";
 import { askClaude, askGemini, type EngineResult } from "./engines.ts";
 import { labelAnswer, JUDGE_MODEL } from "./labels.ts";
 
 const arg = (n: string) => { const i = process.argv.indexOf(n); return i > 0 ? process.argv[i + 1] : undefined; };
 const root = new URL("../../", import.meta.url).pathname;
 // A relabel judges a saved run: its locale and version come from that run unless given (summaries before 5b: en-US).
+// In Paperclip the issue text carries the parameters (`locale: fr-FR`); command-line flags win.
+const pc = await issueParams();
 const savedSummary = arg("--relabel") ? JSON.parse(readFileSync(join(root, arg("--relabel")!, "summary.json"), "utf8")) : {};
-const set = QuerySet.parse(JSON.parse(readFileSync(join(root, arg("--set") ?? querySetPath(Locale.parse(arg("--locale") ?? savedSummary.locale ?? "en-US"), Number(arg("--version") ?? savedSummary.query_set_version ?? 1))), "utf8")));
+const set = QuerySet.parse(JSON.parse(readFileSync(join(root, arg("--set") ?? querySetPath(Locale.parse(arg("--locale") ?? pc.params.locale ?? savedSummary.locale ?? "en-US"), Number(arg("--version") ?? savedSummary.query_set_version ?? 1))), "utf8")));
 if (!set.approved_by) throw new Error("query set is a draft; only approved (frozen) sets can be tracked");
 const sameLocale = (s: { locale?: string }) => (s.locale ?? "en-US") === set.locale; // summaries before 5b have no locale: en-US
 const engines = (arg("--engines") ?? "claude,gemini").split(",") as ("claude" | "gemini")[];
@@ -37,7 +39,7 @@ async function pool<T, R>(items: T[], n: number, fn: (t: T) => Promise<R>): Prom
 }
 
 try {
-  if (paperclipEnabled()) issue = await findIssue();
+  issue = pc.issue;
   const jobs = queries.flatMap(q => engines.map(engine => ({ q, engine })));
   const results = await pool(jobs, 3, async ({ q, engine }) => {
     const prior = saved.find(a => a.query_id === q.id && a.engine === engine);

@@ -53,3 +53,43 @@ export async function reportCost(issueId: string | null, model: string, usage: {
     costCents: Number((costUsd * 100).toFixed(4)), occurredAt: new Date().toISOString(),
   });
 }
+
+/** `key: value` lines of an issue's text (one value per key, first wins): how the board passes parameters to a process agent. */
+export function parseParams(text: string): Record<string, string> {
+  const out: Record<string, string> = {};
+  for (const m of text.matchAll(/^[ \t]*(?:[-*][ \t]+)?`?([a-z][a-z_]*)`?:[ \t]*`?([^\s`]+)`?[ \t]*$/gim)) out[m[1].toLowerCase()] ??= m[2];
+  return out;
+}
+
+/** The issue this heartbeat run works on, with its parameters. Outside Paperclip: no issue, no parameters. */
+export async function issueParams(): Promise<{ issue: { id: string; identifier?: string } | null; params: Record<string, string> }> {
+  if (!paperclipEnabled()) return { issue: null, params: {} };
+  const issue = await findIssue();
+  return { issue, params: issue ? parseParams(await getIssueText(issue.id)) : {} };
+}
+
+// ---- Orchestration (weekly routine): the parent's agent creates and reads its subtasks.
+export type IssueRow = { id: string; identifier?: string; title: string; status: string; description?: string | null; createdAt?: string; parentId?: string | null };
+
+export async function getIssue(issueId: string): Promise<IssueRow> {
+  return call("GET", `/issues/${issueId}`);
+}
+
+export async function listChildren(parentId: string): Promise<IssueRow[]> {
+  const d = await call("GET", `/companies/${process.env.PAPERCLIP_COMPANY_ID}/issues?parentId=${parentId}`);
+  const list: IssueRow[] = Array.isArray(d) ? d : d?.items ?? d?.issues ?? [];
+  return list.filter(i => i.parentId === parentId); // never trust a filter the server might ignore
+}
+
+export async function listAgents(): Promise<{ id: string; name: string }[]> {
+  const d = await call("GET", `/companies/${process.env.PAPERCLIP_COMPANY_ID}/agents`);
+  return Array.isArray(d) ? d : d?.items ?? [];
+}
+
+export async function createChild(parentId: string, title: string, description: string, assigneeAgentId: string): Promise<IssueRow> {
+  return call("POST", `/companies/${process.env.PAPERCLIP_COMPANY_ID}/issues`, { parentId, title, description, assigneeAgentId, status: "todo", priority: "medium" });
+}
+
+export async function patchIssue(issueId: string, body: Record<string, unknown>) {
+  return call("PATCH", `/issues/${issueId}`, body);
+}

@@ -9,7 +9,7 @@ import { join } from "node:path";
 import { randomUUID } from "node:crypto";
 import { AnswerCheck, Locale, PageAudit, PageComparison, QuerySet, SiteAudit } from "../../packages/data-contracts/seo-geo.ts";
 import { MARKETS, querySetPath } from "../../packages/data-contracts/markets.ts";
-import { findIssue, paperclipEnabled, reportCost, reportToIssue } from "../../packages/paperclip-client/index.ts";
+import { issueParams, paperclipEnabled, reportCost, reportToIssue } from "../../packages/paperclip-client/index.ts";
 import { fetchPage, type Page } from "../mastra/fetch.ts";
 import { ANSWER_MODEL, judgeOpening } from "./answer-check.ts";
 import { findGaps, gapKey, langGaps, mainText, opening, pageChecks, robotsReport } from "./onpage-checks.ts";
@@ -17,7 +17,9 @@ import { parseHTML } from "linkedom";
 
 const arg = (n: string) => { const i = process.argv.indexOf(n); return i > 0 ? process.argv[i + 1] : undefined; };
 const root = new URL("../../", import.meta.url).pathname;
-const pagesLocale = arg("--locale") ?? "en-US";
+// In Paperclip the issue text carries the parameters (`locale: fr-FR`); command-line flags win.
+const pc = await issueParams();
+const pagesLocale = arg("--locale") ?? pc.params.locale ?? "en-US";
 const mapping = JSON.parse(readFileSync(join(root, pagesLocale === "en-US" ? "research/seo-geo/onpage-pages.json" : `research/seo-geo/onpage-pages.${pagesLocale}.json`), "utf8")) as { locale?: string; query_set_version: number; pages: { url: string; query_id: string }[] };
 const set = QuerySet.parse(JSON.parse(readFileSync(join(root, querySetPath(Locale.parse(mapping.locale ?? "en-US"), mapping.query_set_version)), "utf8")));
 const sameLocale = (s: { locale?: string }) => (s.locale ?? "en-US") === set.locale; // summaries before 5b have no locale: en-US
@@ -63,7 +65,7 @@ async function audit(url: string, q: { id: string; text: string }, page?: Page):
 }
 
 try {
-  if (paperclipEnabled()) issue = await findIssue();
+  issue = pc.issue;
   const origin = new URL(pages[0]?.url ?? "https://cachedrop.io/").origin;
   // Plain-text files: fetch directly (fetchPage parses HTML). A missing robots.txt means everything is allowed.
   const getText = async (path: string) => { const r = await fetch(origin + path, { signal: AbortSignal.timeout(20000) }); return { status: r.status, body: r.ok ? await r.text() : "" }; };

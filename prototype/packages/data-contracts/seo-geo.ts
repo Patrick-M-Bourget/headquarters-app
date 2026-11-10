@@ -60,3 +60,57 @@ export const Mention = z.object({
 }).refine(m => !m.recommended || m.mentioned, { message: "recommended implies mentioned" })
   .refine(m => m.stance == null || (m.mentioned && m.recommended === (m.stance !== "mentioned")), { message: "stance must agree with mentioned/recommended" })
   .refine(m => !m.mentioned || (m.position !== null && !!m.evidence), { message: "a mention needs position and evidence" });
+
+// ---- On-page auditor (plan Q13) ----
+
+/** Facts read from a page's HTML in code. No model involved. */
+export const PageChecks = z.object({
+  title: z.string().nullable(),
+  meta_description: z.string().nullable(),
+  h1: z.array(z.string()),                   // every H1 on the page (more than one is itself a finding)
+  canonical: z.string().nullable(),
+  canonical_is_self: z.boolean(),            // canonical points at the fetched URL (ignoring trailing slash)
+  json_ld_types: z.array(z.string()),        // @type values from all JSON-LD blocks, @graph included
+  internal_links: z.number().int().nonnegative(),
+  word_count: z.number().int().nonnegative(), // readable text
+});
+export type PageChecks = z.infer<typeof PageChecks>;
+
+/** Model judgment: does the page answer its question near the top? The quote is checked in code. */
+export const AnswerCheck = z.object({
+  verdict: z.enum(["yes", "partial", "no", "unverified"]), // "unverified" = the model said yes/partial but its quote is not in the opening
+  quote: z.string().max(400).nullable(),
+  model: z.string(),
+}).refine(a => a.verdict === "no" || a.verdict === "unverified" || !!a.quote, { message: "yes/partial needs a verified quote" });
+export type AnswerCheck = z.infer<typeof AnswerCheck>;
+
+/** One page audited against one question from the frozen query set. */
+export const PageAudit = z.object({
+  url: z.string().url(),
+  query_id: z.string(),
+  query_text: z.string(),
+  audited_at: z.iso.datetime(),
+  http_status: z.number().int(),
+  error: z.string().nullable(),
+  checks: PageChecks.nullable(),             // null when the fetch failed
+  answer: AnswerCheck.nullable(),            // null when the fetch failed or the model step was skipped
+}).refine(p => (p.error === null) === (p.checks !== null), { message: "checks are present exactly when the fetch succeeded" });
+export type PageAudit = z.infer<typeof PageAudit>;
+
+export const AI_CRAWLERS = ["GPTBot", "ClaudeBot", "PerplexityBot", "Google-Extended"] as const;
+
+/** Site-wide checks for AI answer engines. */
+export const SiteAudit = z.object({
+  origin: z.string().url(),
+  llms_txt: z.boolean(),                     // /llms.txt returns 200 with content
+  robots_allows: z.record(z.enum(AI_CRAWLERS), z.boolean()), // may the crawler fetch "/"
+});
+export type SiteAudit = z.infer<typeof SiteAudit>;
+
+/** One own page next to the top competing pages for the same question, with the gaps found in code. */
+export const PageComparison = z.object({
+  page: PageAudit,
+  competitors: z.array(PageAudit).max(5),
+  gaps: z.array(z.string()),
+});
+export type PageComparison = z.infer<typeof PageComparison>;

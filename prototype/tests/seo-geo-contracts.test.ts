@@ -29,3 +29,17 @@ test("mention rules: recommended implies mentioned; mentions need position and e
   assert.ok(!Mention.safeParse({ ...base, mentioned: true, recommended: false, position: null, evidence: null }).success);
   assert.ok(Mention.safeParse({ ...base, mentioned: true, recommended: true, position: 1, evidence: "CacheDrop is a good pick." }).success);
 });
+
+test("page audit: checks present exactly when the fetch worked; yes/partial need a quote", async () => {
+  const { PageAudit, AnswerCheck, SiteAudit } = await import("../packages/data-contracts/seo-geo.ts");
+  const checks = { title: "T", meta_description: null, h1: ["H"], canonical: null, canonical_is_self: false, json_ld_types: [], internal_links: 3, word_count: 500 };
+  const base = { url: "https://cachedrop.io/", query_id: "q01", query_text: "best mac cleaner", audited_at: "2026-11-09T00:00:00Z", http_status: 200, answer: null };
+  assert.ok(PageAudit.safeParse({ ...base, error: null, checks }).success);
+  assert.ok(!PageAudit.safeParse({ ...base, error: null, checks: null }).success);
+  assert.ok(!PageAudit.safeParse({ ...base, error: "HTTP 403", checks }).success);
+  assert.ok(PageAudit.safeParse({ ...base, http_status: 403, error: "HTTP 403", checks: null }).success);
+  assert.ok(!AnswerCheck.safeParse({ verdict: "yes", quote: null, model: "m" }).success);
+  assert.ok(AnswerCheck.safeParse({ verdict: "unverified", quote: null, model: "m" }).success);
+  assert.ok(AnswerCheck.safeParse({ verdict: "partial", quote: "Remove leftovers in one click.", model: "m" }).success);
+  assert.ok(!SiteAudit.safeParse({ origin: "https://cachedrop.io", llms_txt: true, robots_allows: { GPTBot: true } }).success, "every AI crawler must be checked");
+});

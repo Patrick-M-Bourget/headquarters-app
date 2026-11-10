@@ -50,12 +50,12 @@ Step 4 eval result (2026-11-09): the on-page answer check agrees with blind labe
    4. On-page: fr-FR mapping, hreflang and lang checks, French answer-check eval. DONE 2026-11-09: run local-c1d9af4e (4 no / 3 partial / 1 yes; fr-CA lang on all 8), eval answered-vs-no 100%, exact 93.8% (16 openings). Mapping awaits owner confirmation.
    5. Keyword tracker per locale (Serper gl/hl).
    6. Baselines for all six locales; record cost per locale.
-6. Synthesis (per locale and combined), then the Paperclip routine with parent/subtask wiring and the weekly/monthly split. First manual run, measured cost, then the schedule.
+6. Synthesis (per locale and combined), then the Paperclip routine with parent/subtask wiring and the weekly/monthly split. First manual run, measured cost, then the schedule. **DONE 2026-11-10**: `runners/seo-geo/weekly.ts` + `weekly-report.ts` (code only), proposals ledger, routine on Mondays 14:00 UTC. Manual run HEA-19: $2.02 + 89 Serper credits a normal week.
 
 ## Paperclip probation checks (record in the ADR follow-up)
 
 - Do routines fire reliably and create the parent issue and its subtasks?
-- Does the parent wait for all subtasks before synthesis runs?
+- Does the parent wait for all subtasks before synthesis runs? **Yes** (children-completed wake), once the parent is `blocked` by its subtasks; left `in_progress`, recovery re-wakes it and blocks it (HEA-19).
 - Do failures in one subtask jam the tree (cf. HEA-7)?
 - Do review approvals take on the first try (cf. HEA-8)?
 - Do unpriced `process` runs behave with `unpricedUsagePolicy: allow` plus self-reported cost?

@@ -1,5 +1,11 @@
 # Hand-off: 2026-11-10, end of session 4 (session 3 and 2 notes below still apply)
 
+## Session 4 (late): step 6 DONE
+- Weekly routine 737794c4 is ON (Mondays 14:00 UTC; Paperclip must be running). Weekly Report agent d4f6ae02 orchestrates; report at `research/seo-geo/weeks/<week>/report.md`, parent issue goes to owner review.
+- HEA-19 (first manual run) is in owner review: 5 proposals (new pages en q19/q20, fr q09/q16; GitHub as most-cited source). On approval: Claude checks existing pages, runs the Content Writer, files tickets, and adds every decided key to `research/seo-geo/proposals-ledger.json`.
+- Approve via review PATCH only; never comment on the agent's issue (re-runs it).
+- Cost: normal week ≈ $2.02 + 89 Serper credits; first week of month ≈ +$3.3 and +157 credits. ~$21.6 of $100 spent.
+
 ## Session 4 update: read first
 - **Marketing wave 1 BUILT** (`prototype/docs/marketing-agents-proposal.md` "Wave 1 as built"): claims reviewer, content writer, on-page optimizer, funnel analyst in `prototype/runners/marketing/`, all pipelines, all in Paperclip as process agents (Claims Reviewer 5cf09692, Content Writer 4c9f196d, On-page Optimizer 34086c94, Funnel Analyst 7b25ede5). Probation HEA-12/13/14 done. New agents start paused: POST /api/agents/:id/resume.
 - Claims eval: `node --env-file=.env eval/claims-agreement.ts dev|test` (re-run both after ANY change to the reviewer's instructions or `research/marketing/product-facts.json`).
@@ -8,7 +14,7 @@
 - DONE 2026-11-10: owner approved; filed cachedrop-website #131 (on-page fixes), #132 (France French), #133 (new guide, blocked by #132). Still open for the owner: funnel CSV export (docs/funnel-export.md); € vs $ on /fr/.
 - 5b DONE for all six locales (journal 2026-11-10). Baselines are the relabel-* runs listed in the journal; judge rubric r2 (vendor installers and security tools excluded).
 - Owner: mac-cleaner repo is still PUBLIC and AI engines cite it as an unfinished open-source tool (website Decision 30).
-- Next: step 6, synthesis report + routine (en-US + fr-FR weekly, others monthly; add the marketing agents). Never comment on a process agent's own issue (it re-runs).
+- Step 6 done (see top). Never comment on a process agent's own issue (it re-runs).
 
 
 ## Session 3 update: read first

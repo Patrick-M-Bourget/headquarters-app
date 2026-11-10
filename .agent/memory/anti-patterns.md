@@ -14,3 +14,5 @@
 - A 3-level model verdict can pass on one boundary and fail on another: score each boundary separately and only act automatically on the one that passed.
 - Asking the judge for a one-line reason made it more accurate (on-page eval). Try it before tuning the rubric.
 - A comment on a `process` agent's issue WAKES the agent and re-runs it (2026-11-10: "approved" comments on HEA-13/15-18 regenerated four drafts and a content draft). Record approvals in the repo (journal, frozen file) or on a separate unassigned issue, never as a comment on the agent's own issue.
+- A Paperclip agent that waits on subtasks must NOT leave its issue in_progress: recovery's "disposition repair" re-wakes it twice, then marks it blocked. Set `status: blocked` with `blockedByIssueIds` = the open subtasks.
+- Don't trigger paid follow-up work on run-to-run diffs that include competitor-relative findings: competitor search results churn weekly. Diff only what's about our own pages.

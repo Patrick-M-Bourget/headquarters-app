@@ -107,3 +107,11 @@
 - Relabel bug fixed: it used the en-US set for every run (now reads the saved run's locale).
 - My mistake: "approved" comments on HEA-13/15-18 woke the agents and re-ran them (stray drafts restored from git; ~$0.12). Anti-pattern recorded.
 - Spend this part about $6.2 (GEO $3.27, relabels ~$2, evals/agents rest). Total about $19 of $100.
+
+## 2026-11-10 session 4 (cont.): step 6, weekly synthesis + routine
+- Trackers (run-geo, keywords, onpage) read `locale:` from their Paperclip issue (`issueParams` in paperclip-client; flags win).
+- `runners/seo-geo/weekly-report.ts` (code only, $0): latest full run per locale/kind (relabels replace the run they re-judged, `--only` trials ignored), deltas, cross-market competitors, cited sources, CacheDrop mentions with quotes, 3-5 proposals (regressions → own pages not answering → best page gap per site locale → most-cited outside source in 2+ markets → more page gaps). `research/seo-geo/proposals-ledger.json` lists decided keys (#131 openings, D51/D54, #133 q05, dropped Ableton pages); Claude adds entries when filing/dropping.
+- `runners/seo-geo/weekly.ts` orchestrator. New process agents: GEO Tracker 46d95559, Keyword Tracker 737c849b, On-page Auditor a508adac, Weekly Report d4f6ae02 (budgets $15/$1/$3/$1 a month, unpriced allow).
+- Routine 737794c4 "Weekly SEO/GEO report", trigger e4b51f23 Mondays 14:00 UTC, skip_if_active, skip_missed. ENABLED after the manual run. Needs Paperclip running at that time.
+- Manual run HEA-19 (subtasks HEA-20..27): stage 1 $2.02 + 89 Serper credits (GEO en $0.89, fr $0.92; on-page $0.10/$0.11; ~5 min GEO each). Stage 2 optimizer fired on competitor churn ($0.59, duplicates #131) → fixed: only own-page gaps count. Normal week ≈ $2.02; monthly week ≈ +$3.3. Report: research/seo-geo/weeks/2026-11-09/report.md; HEA-19 in owner review. Results unchanged vs baselines (0/50 both).
+- Paperclip probation: routine fired and created the issue; children-completed wake works; BUT leaving the parent in_progress while waiting triggers "disposition repair" (2 retries, then blocked). Fix: agent sets parent `blocked` with `blockedByIssueIds` = open subtasks. Agent PATCH of its own executionPolicy (review stage) worked → in_review.

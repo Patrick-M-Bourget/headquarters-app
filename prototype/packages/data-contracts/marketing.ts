@@ -110,3 +110,73 @@ export const OnpageFix = z.object({
   decision_bound: z.string().nullable(),     // the website decision that fixes this field today, if any: needs an amendment
 });
 export type OnpageFix = z.infer<typeof OnpageFix>;
+
+// ---- SEO content creator (wave 1, agent #2) ----
+
+/** What the trackers say about one frozen question: the writer's input. Built in code from saved runs. */
+export const ContentBrief = z.object({
+  locale: z.enum(["en-US", "fr-FR"]),
+  query_id: z.string(),
+  question: z.string(),
+  audience: z.string(),
+  intent: z.string(),
+  keywords: z.array(z.string()),
+  kind: z.enum(["new_page", "expand_page"]),   // no own page maps to it / the mapped page doesn't answer it
+  own_page: z.object({ url: z.string(), verdict: z.string().nullable() }).nullable(),
+  page_kind: PageKind,
+  cachedrop_mentioned: z.number().int().nonnegative(), // answers (of all engines) naming CacheDrop
+  engines: z.number().int().positive(),
+  recommended: z.array(z.object({ brand: z.string(), answers: z.number().int() })), // who the engines recommend instead
+  cited_domains: z.array(z.string()),          // what AI answers cite for it
+  serp: z.array(z.object({ keyword: z.string(), top: z.array(z.string()) })), // top Google domains per keyword
+  related_pages: z.array(z.string()),         // existing guides on the same topic: extend them rather than compete with them
+  needs_decision: z.string().nullable(),       // e.g. a second compare page needs a website decision first
+  sources: z.object({ geo: z.string(), keywords: z.string().nullable(), onpage: z.string().nullable() }),
+});
+export type ContentBrief = z.infer<typeof ContentBrief>;
+
+/** Frontmatter of a saved draft (research/marketing/drafts/<locale>/<query_id>.md). */
+export const DraftMeta = z.object({
+  query_id: z.string(),
+  locale: z.enum(["en-US", "fr-FR"]),
+  page_kind: PageKind,
+  target_url: z.string().nullable(),
+  slug: z.string().regex(/^\/(fr\/)?[a-z0-9-]+\/$/),
+  title: z.string().max(60),
+  meta_description: z.string().max(155),
+  verify: z.array(z.string()),                 // technical steps/paths to check against mac-cleaner before filing
+  review: z.enum(["block", "pass_with_notes", "pass"]),
+  model: z.string(),
+  cost_usd: z.number().nonnegative(),
+});
+export type DraftMeta = z.infer<typeof DraftMeta>;
+
+// ---- Funnel analyst (wave 1, agent #4) ----
+
+/** Funnel steps the site can measure today (cachedrop-website: Vercel Web Analytics, signups, releases.download_starts,
+ *  opt-in telemetry_events, licenses). Downloads and app events are totals only: they don't link to a signup. */
+export const FunnelStep = z.enum(["visitors", "signups", "download_starts", "first_launch", "first_scan", "first_cleanup", "purchases"]);
+export const FunnelDim = z.enum(["all", "lang", "filling", "utm_source", "utm_campaign", "page"]);
+
+/** One aggregate count. No row ever identifies a person: the CSV loader refuses personal columns. */
+export const FunnelRow = z.object({
+  week: z.iso.date(),                        // Monday of the ISO week
+  step: FunnelStep,
+  dim: FunnelDim,
+  value: z.string().max(150),                // "all" when dim is "all"
+  count: z.number().int().nonnegative(),
+}).refine(r => (r.dim === "all") === (r.value === "all"), { message: "dim all goes with value all" });
+export type FunnelRow = z.infer<typeof FunnelRow>;
+
+export const FunnelReport = z.object({
+  week: z.iso.date(),
+  steps: z.array(z.object({ step: FunnelStep, count: z.number().int(), from_previous: z.number().nullable() })),
+  biggest_drop: z.object({ from: FunnelStep, to: FunnelStep, rate: z.number() }).nullable(),
+  segments: z.array(z.object({ dim: FunnelDim, value: z.string(), signups: z.number().int(), purchases: z.number().int().nullable(), rate: z.number().nullable() })),
+  low_sample: z.boolean(),                   // fewer than 30 at the step that matters: no experiment conclusions
+  summary: z.string().nullable(),            // model text; every number in it is checked against the table
+  experiment: z.object({ hypothesis: z.string(), change: z.string(), metric: z.string(), min_weeks: z.number().int().positive() }).nullable(),
+  model: z.string().nullable(),
+  cost_usd: z.number().nonnegative(),
+});
+export type FunnelReport = z.infer<typeof FunnelReport>;

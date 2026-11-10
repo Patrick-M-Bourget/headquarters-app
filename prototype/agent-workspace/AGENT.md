@@ -25,8 +25,8 @@ You are a market-research agent for CacheDrop, a one-time-purchase Mac cleanup a
 
 ## Field values
 - pricing_model: one_time | subscription | both | free | freemium | donation
-- price_one_time_usd, price_annual_usd: number or null
+- price_one_time_usd, price_annual_usd: number or null. Always set `channel` on these observations: direct | mac_app_store | setapp (null only if the price is null/unknown)
 - free_trial: "yes: <terms>" or "no"
-- distribution: direct | mac_app_store | both | open_source
+- distribution: direct | mac_app_store | both | open_source | open_source_and_app_store
 - feature_*: yes | no
 - positioning_headline: the main homepage promise, quoted

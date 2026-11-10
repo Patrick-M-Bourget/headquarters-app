@@ -201,6 +201,21 @@
                 "type": "null"
               }
             ]
+          },
+          "channel": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "direct",
+                  "mac_app_store",
+                  "setapp"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ]
           }
         },
         "required": [

@@ -6,7 +6,7 @@ export const FIELDS = [
   "price_one_time_usd",   // number or null
   "price_annual_usd",     // number or null
   "free_trial",           // "yes: <terms>" | "no"
-  "distribution",         // direct | mac_app_store | both | open_source
+  "distribution",         // direct | mac_app_store | both | open_source | open_source_and_app_store
   "feature_cleanup",      // yes | no
   "feature_uninstall",    // yes | no
   "feature_disk_map",     // yes | no
@@ -25,6 +25,9 @@ export const Source = z.object({
   title: z.string().optional(),
 });
 
+// Where a price was seen. Set on price_* observations; optional so older runs still validate.
+export const SalesChannel = z.enum(["direct", "mac_app_store", "setapp"]);
+
 export const Observation = z.object({
   competitor_id: z.string(),
   field: z.enum(FIELDS),
@@ -32,6 +35,7 @@ export const Observation = z.object({
   status: Status,
   source_id: z.string().nullable(),       // required when status = verified
   evidence: z.string().max(400).nullable(), // short verbatim quote from the source
+  channel: SalesChannel.nullable().optional(), // sales channel for price_* fields
 }).refine(o => o.status !== "verified" || (o.source_id && o.evidence), {
   message: "verified observations need source_id and evidence",
 });

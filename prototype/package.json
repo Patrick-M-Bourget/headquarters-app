@@ -1,0 +1,11 @@
+{
+  "name": "hq-prototype",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.11"
+  },
+  "dependencies": {
+    "paperclipai": "^2026.1106.0"
+  }
+}

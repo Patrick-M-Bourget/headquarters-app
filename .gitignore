@@ -8,3 +8,5 @@ prototype/research/runs/*/snapshots/
 .DS_Store
 # Eval inputs holding third-party page text (public repo)
 prototype/eval/**/*.local.json
+# Funnel inputs and reports: the business's own numbers (public repo)
+prototype/research/marketing/funnel/

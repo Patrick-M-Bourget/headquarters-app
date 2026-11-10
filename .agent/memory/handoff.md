@@ -7,6 +7,8 @@
 - Reconcile gate PASSED (111 impressions / 1 click = UI). 5 unindexed pages → cachedrop-website #138 (owner requests indexing; ledger keys index:<url>).
 - Next: P1-de (German glossary + Claims Reviewer rules, Content Writer de-DE + site-drafts, mockup build script).
 - Don't regenerate a week's report by hand while it is in owner review (it overwrites report.json's issue link).
+- Commits 27ab855..47a952e are local, NOT pushed (ask before pushing).
+- Suggested first message next session: `start session`, then "Start P1-de (German pages) per prototype/docs/seo-growth-plan.md." Read the Settled decisions table first (Q17–Q23, Q25–Q27), and cachedrop-website `src/i18n.ts` + `docs/french-glossary.md` (the pattern to copy).
 
 
 ## Session 4 (late): step 6 DONE

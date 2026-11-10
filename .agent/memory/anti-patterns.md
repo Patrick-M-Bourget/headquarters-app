@@ -16,3 +16,6 @@
 - A comment on a `process` agent's issue WAKES the agent and re-runs it (2026-11-10: "approved" comments on HEA-13/15-18 regenerated four drafts and a content draft). Record approvals in the repo (journal, frozen file) or on a separate unassigned issue, never as a comment on the agent's own issue.
 - A Paperclip agent that waits on subtasks must NOT leave its issue in_progress: recovery's "disposition repair" re-wakes it twice, then marks it blocked. Set `status: blocked` with `blockedByIssueIds` = the open subtasks.
 - Don't trigger paid follow-up work on run-to-run diffs that include competitor-relative findings: competitor search results churn weekly. Diff only what's about our own pages.
+- Search Console: never sum per-page rows for a site total; a search showing two of our pages counts once per page (128 vs the UI's 111). Use a no-dimension query for totals.
+- Don't regenerate a week's report by hand (`weekly.ts --week`) while that week is in owner review: it overwrites report.json's issue link. Restore with git checkout.
+- Search Console query text never goes into a committed file (public repo); the strict contract in `packages/data-contracts/search.ts` enforces counts-only summaries.

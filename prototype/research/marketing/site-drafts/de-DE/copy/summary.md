@@ -1,22 +1,24 @@
 # de-DE site drafts (website d8d7480)
 
-Model anthropic/claude-sonnet-5-5. Total $1.9792.
+Model anthropic/claude-sonnet-5-5. Total $2.0714.
 
 | File | Kind | Review | Values | Fixes applied | Cost |
 | --- | --- | --- | --- | --- | --- |
 | `src/components/pricing.ts` | compare | pass | 2 | 0 | $0.0641 |
-| `src/components/guides.ts` | other | pass | 5 | 0 | $0.0534 |
+| `src/components/guides.ts` | other | pass | 5 | 0 | $0.1033 |
 | `src/layouts/Guide.astro` | other | pass | 1 | 0 | $0.0260 |
 | `src/components/footer.ts` | other | pass | 1 | 0 | $0.0633 |
 | `src/components/Nav.astro` | other | pass | 1 | 0 | $0.0216 |
 | `src/components/FeedbackModal.astro` | other | pass | 1 | 0 | $0.0335 |
 | `src/components/bot-check.ts` | other | pass | 1 | 0 | $0.0219 |
 | `src/components/AppWindow.astro` | other | pass | 1 | 0 | $0.0290 |
+| `src/components/CodeBlock.astro` | other | pass | 1 | 0 | $0.0190 |
+| `src/components/Toc.astro` | other | pass | 1 | 0 | $0.0185 |
 | `src/components/compare.ts` | compare | pass | 16 | 0 | $0.1151 |
 | `src/pages/[...lang]/index.astro` | home | pass_with_notes | 1 | 0 | $0.2803 |
 | `src/pages/[...lang]/pricing/index.astro` | pricing | pass | 1 | 0 | $0.0222 |
 | `src/pages/[...lang]/cleanmymac-alternative/index.astro` | compare | pass_with_notes | 1 | 0 | $0.1363 |
-| `src/pages/[...lang]/clear-mac-developer-caches/index.astro` | guide | pass_with_notes | 1 | 0 | $0.2246 |
+| `src/pages/[...lang]/clear-mac-developer-caches/index.astro` | guide | pass_with_notes | 1 | 0 | $0.2294 |
 | `src/pages/[...lang]/clear-adobe-media-cache-mac/index.astro` | guide | pass | 1 | 0 | $0.1156 |
 | `src/pages/[...lang]/clear-system-data-mac/index.astro` | guide | pass_with_notes | 1 | 0 | $0.2358 |
 | `src/pages/[...lang]/uninstall-apps-mac/index.astro` | guide | pass_with_notes | 1 | 0 | $0.1962 |
@@ -38,8 +40,8 @@ Facts 2026-11-10 / 1.0.4; anthropic/claude-sonnet-5-5; $0.02194.
 
 ### src/pages/[...lang]/clear-mac-developer-caches/index.astro
 Claims review of de-DE-src-pages-lang-clear-mac-developer-caches-index-astro: Passes, with notes.
-- [ahead_of_app] ahead_of_app: “Projekte, die Sie in dieser Woche geändert haben, überspringt es.” — Skipping recently modified projects is not in the shipped feature list. The app lists node_modules folders for the user to review, and nothing says it skips recent projects.
-Facts 2026-11-10 / 1.0.4; anthropic/claude-sonnet-5-5; $0.01635.
+- [ahead_of_app] ahead_of_app: “Projekte, die Sie in dieser Woche geändert haben, überspringt es.” — Das automatische Überspringen kürzlich geänderter Projekte steht nicht in der Liste der ausgelieferten Funktionen (Version 1.0.4).
+Facts 2026-11-10 / 1.0.4; anthropic/claude-sonnet-5-5; $0.01606.
 
 ### src/pages/[...lang]/clear-system-data-mac/index.astro
 Claims review of de-DE-src-pages-lang-clear-system-data-mac-index-astro: Passes, with notes.
@@ -54,10 +56,10 @@ Facts 2026-11-10 / 1.0.4; anthropic/claude-sonnet-5-5; $0.0239.
 ## Verify on a German Mac
 
 - Papierkorb
-- Systemdaten (macOS-Name für System Data)
+- Medien-Cache (Premiere Pro, German settings name)
+- Systemdaten (macOS Storage name)
 - Terminal
-- Medien-Cache (Name in Premiere Pro)
-- lokale Time-Machine-Snapshots
+- lokale Time-Machine-Snapshots (Apple's German term)
 - Systemdaten (macOS-Bezeichnung im Footer-Link „Systemdaten löschen“)
 - macOS 14 Sonoma
 - Storage overview
@@ -73,10 +75,11 @@ Facts 2026-11-10 / 1.0.4; anthropic/claude-sonnet-5-5; $0.0239.
 - XProtect
 - History (App-Label, bleibt Englisch)
 - Smart clean (App-Label, bleibt Englisch)
-- Xcode › Settings › Locations (Menüpfad in Xcode, englisch belassen)
+- Xcode › Settings › Locations (Menüpfad in Xcode, auf Englisch belassen)
 - Derived Data (Bezeichnung in Xcode Settings › Locations)
-- Systemdaten (macOS-Speichereinstellungen)
-- Ordner „Library“ (deutscher Finder-Name)
+- „Systemdaten“ (macOS-Speicheransicht)
+- Ordner „Library“ (deutscher Finder-Name für ~/Library)
+- Papierkorb (Xcode-Pfeil neben Derived Data verschiebt Ordner dorthin)
 - Ordner „Library“ (Finder-Name für ~/Library)
 - Mediathek (Final Cut Pro, Library)
 - Seitenleiste „Libraries“ in Final Cut Pro

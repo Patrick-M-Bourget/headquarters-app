@@ -7,48 +7,48 @@
     {
       "index": 0,
       "key": "developer",
-      "de": "{\n      title: 'Xcode DerivedData löschen, node_modules & Docker-Cache leeren auf dem Mac',\n      description: 'Xcode DerivedData löschen, alte node_modules-Ordner entfernen und Docker-Caches leeren: die Terminal-Schritte von Hand, plus ein Mac-Reiniger für Entwickler, der es sicher erledigt.',\n    }"
+      "de": "{\n      title: 'Xcode DerivedData löschen, node_modules und Docker-Cache leeren',\n      description: 'Xcode DerivedData löschen, alte node_modules-Ordner und Docker-Caches auf dem Mac leeren: die Terminal-Schritte von Hand, dazu ein Mac-Reiniger für die Entwicklung, der es sicher erledigt.',\n    }"
     },
     {
       "index": 1,
       "key": "creator",
-      "de": "{\n      title: 'Adobe-Cache leeren auf dem Mac (Premiere Pro & Final Cut Pro)',\n      description: 'So löschen Sie den Medien-Cache von Premiere Pro und die Render-Dateien von Final Cut Pro auf dem Mac Schritt für Schritt – plus ein Tool, das den Adobe-Cache aller Versionen auf einmal leert.',\n    }"
+      "de": "{\n      title: 'Adobe-Cache auf dem Mac leeren (Premiere Pro & Final Cut Pro)',\n      description: 'So löschen Sie den Medien-Cache von Premiere Pro und die Render-Dateien von Final Cut Pro auf dem Mac, Schritt für Schritt – dazu ein Tool, das den Adobe-Cache aller Versionen auf einmal leert.',\n    }"
     },
     {
       "index": 2,
       "key": "producer",
-      "de": "{\n      title: 'Plug-ins deinstallieren auf dem Mac (VST, AU, AAX, CLAP)',\n      description: 'VST-, VST3-, AU-, AAX- und CLAP-Plug-ins auf dem Mac mit allen installierten Dateien deinstallieren, den Speicherort der Plug-ins finden und den Cache von Ableton Live leeren, ohne Ihre Lizenzen anzufassen.',\n    }"
+      "de": "{\n      title: 'Audio-Plug-ins auf dem Mac deinstallieren (VST, AU, AAX, CLAP)',\n      description: 'VST-, VST3-, AU-, AAX- und CLAP-Plug-ins auf dem Mac deinstallieren, mit allen Dateien, die sie angelegt haben. Dazu: wo Plug-ins liegen und wie Sie den Cache von Ableton Live leeren, ohne Ihre Lizenzen anzutasten.',\n    }"
     },
     {
       "index": 3,
       "key": "systemData",
-      "de": "{\n      title: 'Systemdaten auf dem Mac löschen (und warum sie so groß sind)',\n      description: 'Was die Systemdaten auf dem Mac sind, warum sie so stark wachsen und was sich bedenkenlos löschen lässt: Caches, Protokolle, Dateien aus der Entwicklung und lokale Time-Machine-Snapshots, mit Terminal-Befehlen und Risiken.',\n    }"
+      "de": "{\n      title: 'Systemdaten auf dem Mac löschen (und warum sie so groß sind)',\n      description: 'Was die Systemdaten auf dem Mac sind, warum sie so groß werden und was sich bedenkenlos löschen lässt: Caches, Protokolle, Dateien aus der Entwicklung und lokale Time-Machine-Snapshots, mit Terminal-Befehlen und Risiken.',\n    }"
     },
     {
       "index": 4,
       "key": "apps",
-      "de": "{\n      title: 'App deinstallieren auf dem Mac: komplett und mit allen Resten',\n      description: 'Eine App in den Papierkorb zu ziehen lässt Einstellungen, Caches und Daten zurück. So finden Sie App-Reste auf dem Mac, entfernen sie von Hand oder deinstallieren Apps samt aller übrigen Dateien.',\n    }"
+      "de": "{\n      title: 'App deinstallieren auf dem Mac: komplett, mit allen Resten',\n      description: 'Wer eine App in den Papierkorb zieht, lässt Einstellungen, Caches und Daten zurück. So finden Sie App-Reste auf dem Mac, entfernen sie von Hand oder deinstallieren Apps samt aller Dateien.',\n    }"
     }
   ],
   "verify": [
-    "Systemdaten (macOS-Name für System Data)",
+    "Medien-Cache (Premiere Pro, German settings name)",
+    "Systemdaten (macOS Storage name)",
     "Papierkorb",
     "Terminal",
-    "Medien-Cache (Name in Premiere Pro)",
-    "lokale Time-Machine-Snapshots"
+    "lokale Time-Machine-Snapshots (Apple's German term)"
   ],
   "problems": [],
   "page_findings": [],
   "review": {
     "draft_id": "de-DE-src-components-guides-ts",
-    "reviewed_at": "2026-11-10T23:21:27.477Z",
+    "reviewed_at": "2026-11-11T00:11:13.361Z",
     "verdict": "pass",
     "findings": [],
     "model": "anthropic/claude-sonnet-5-5",
     "facts_version": "2026-11-10 / 1.0.4",
-    "cost_usd": 0.01276
+    "cost_usd": 0.01107
   },
   "fixes_applied": 0,
   "model": "anthropic/claude-sonnet-5-5",
-  "cost_usd": 0.0534
+  "cost_usd": 0.1033
 }

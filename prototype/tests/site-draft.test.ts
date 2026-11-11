@@ -1,5 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
 import { asMarkdown, findBlocks, insertLang, shapeProblem, skeleton, strings } from "../runners/marketing/copy-blocks.ts";
 import { pageFindings, UNITS, valueProblems } from "../runners/marketing/site-draft.ts";
 
@@ -100,4 +101,12 @@ test("fluency sample: sentences of 4+ words, split before a capital, fixed sampl
     ["Der Scan ist immer kostenlos.", "Danach: Sie prüfen alles vorher."]);
   assert.deepEqual(sample(["a", "b", "c"], 2), sample(["c", "b", "a"], 2));
   assert.equal(CANARIES.length, 6);
+});
+
+test("mockup: dropKeys removes a property line; screenshot names", async () => {
+  const { dropKeys } = await import("../runners/marketing/site-mockup.ts");
+  assert.equal(dropKeys("{\n    a: 'x',\n    switchTo: 'English',\n    b: 'y',\n  }", ["switchTo"]), "{\n    a: 'x',\n    b: 'y',\n  }");
+  assert.equal(dropKeys("{ a: 'x' }", ["switchTo"]), "{ a: 'x' }");
+  const src = readFileSync(new URL("../runners/marketing/site-screens.ts", import.meta.url), "utf8");
+  assert.match(src, /export const shotName/);
 });

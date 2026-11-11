@@ -12,3 +12,5 @@ prototype/eval/**/*.local.json
 prototype/research/marketing/funnel/
 # Search Console rows and query text: the business's own search data (public repo; owner 2026-11-10)
 prototype/research/search-console/private/
+# Screenshots of the German mockup pages: big binaries, rebuilt on demand (site-screens.ts)
+prototype/research/marketing/site-drafts/*/screenshots/

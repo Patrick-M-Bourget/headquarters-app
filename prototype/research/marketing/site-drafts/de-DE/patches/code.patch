@@ -1,0 +1,887 @@
+diff --git a/public/sitemap.xml b/public/sitemap.xml
+index 25c4a12..04ca531 100644
+--- a/public/sitemap.xml
++++ b/public/sitemap.xml
+@@ -1,74 +1,130 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+-<!-- Each page lists its English and French addresses as alternates of each other (Decision 5). -->
++<!-- Each page lists its English, French and (core pages) German addresses as alternates of each other (Decision 5). -->
+ <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+   <url><loc>https://cachedrop.io/</loc><lastmod>2026-11-03</lastmod>
+     <xhtml:link rel="alternate" hreflang="en" href="https://cachedrop.io/"/>
+     <xhtml:link rel="alternate" hreflang="fr" href="https://cachedrop.io/fr/"/>
++    <xhtml:link rel="alternate" hreflang="de" href="https://cachedrop.io/de/"/>
+     <xhtml:link rel="alternate" hreflang="x-default" href="https://cachedrop.io/"/>
+   </url>
+   <url><loc>https://cachedrop.io/fr/</loc><lastmod>2026-11-03</lastmod>
+     <xhtml:link rel="alternate" hreflang="en" href="https://cachedrop.io/"/>
+     <xhtml:link rel="alternate" hreflang="fr" href="https://cachedrop.io/fr/"/>
++    <xhtml:link rel="alternate" hreflang="de" href="https://cachedrop.io/de/"/>
++    <xhtml:link rel="alternate" hreflang="x-default" href="https://cachedrop.io/"/>
++  </url>
++  <url><loc>https://cachedrop.io/de/</loc><lastmod>2026-11-03</lastmod>
++    <xhtml:link rel="alternate" hreflang="en" href="https://cachedrop.io/"/>
++    <xhtml:link rel="alternate" hreflang="fr" href="https://cachedrop.io/fr/"/>
++    <xhtml:link rel="alternate" hreflang="de" href="https://cachedrop.io/de/"/>
+     <xhtml:link rel="alternate" hreflang="x-default" href="https://cachedrop.io/"/>
+   </url>
+   <url><loc>https://cachedrop.io/clear-mac-developer-caches/</loc><lastmod>2026-10-29</lastmod>
+     <xhtml:link rel="alternate" hreflang="en" href="https://cachedrop.io/clear-mac-developer-caches/"/>
+     <xhtml:link rel="alternate" hreflang="fr" href="https://cachedrop.io/fr/clear-mac-developer-caches/"/>
++    <xhtml:link rel="alternate" hreflang="de" href="https://cachedrop.io/de/clear-mac-developer-caches/"/>
+     <xhtml:link rel="alternate" hreflang="x-default" href="https://cachedrop.io/clear-mac-developer-caches/"/>
+   </url>
+   <url><loc>https://cachedrop.io/fr/clear-mac-developer-caches/</loc><lastmod>2026-10-29</lastmod>
+     <xhtml:link rel="alternate" hreflang="en" href="https://cachedrop.io/clear-mac-developer-caches/"/>
+     <xhtml:link rel="alternate" hreflang="fr" href="https://cachedrop.io/fr/clear-mac-developer-caches/"/>
++    <xhtml:link rel="alternate" hreflang="de" href="https://cachedrop.io/de/clear-mac-developer-caches/"/>
++    <xhtml:link rel="alternate" hreflang="x-default" href="https://cachedrop.io/clear-mac-developer-caches/"/>
++  </url>
++  <url><loc>https://cachedrop.io/de/clear-mac-developer-caches/</loc><lastmod>2026-10-29</lastmod>
++    <xhtml:link rel="alternate" hreflang="en" href="https://cachedrop.io/clear-mac-developer-caches/"/>
++    <xhtml:link rel="alternate" hreflang="fr" href="https://cachedrop.io/fr/clear-mac-developer-caches/"/>
++    <xhtml:link rel="alternate" hreflang="de" href="https://cachedrop.io/de/clear-mac-developer-caches/"/>
+     <xhtml:link rel="alternate" hreflang="x-default" href="https://cachedrop.io/clear-mac-developer-caches/"/>
+   </url>
+   <url><loc>https://cachedrop.io/clear-adobe-media-cache-mac/</loc><lastmod>2026-10-29</lastmod>
+     <xhtml:link rel="alternate" hreflang="en" href="https://cachedrop.io/clear-adobe-media-cache-mac/"/>
+     <xhtml:link rel="alternate" hreflang="fr" href="https://cachedrop.io/fr/clear-adobe-media-cache-mac/"/>
++    <xhtml:link rel="alternate" hreflang="de" href="https://cachedrop.io/de/clear-adobe-media-cache-mac/"/>
+     <xhtml:link rel="alternate" hreflang="x-default" href="https://cachedrop.io/clear-adobe-media-cache-mac/"/>
+   </url>
+   <url><loc>https://cachedrop.io/fr/clear-adobe-media-cache-mac/</loc><lastmod>2026-10-29</lastmod>
+     <xhtml:link rel="alternate" hreflang="en" href="https://cachedrop.io/clear-adobe-media-cache-mac/"/>
+     <xhtml:link rel="alternate" hreflang="fr" href="https://cachedrop.io/fr/clear-adobe-media-cache-mac/"/>
++    <xhtml:link rel="alternate" hreflang="de" href="https://cachedrop.io/de/clear-adobe-media-cache-mac/"/>
++    <xhtml:link rel="alternate" hreflang="x-default" href="https://cachedrop.io/clear-adobe-media-cache-mac/"/>
++  </url>
++  <url><loc>https://cachedrop.io/de/clear-adobe-media-cache-mac/</loc><lastmod>2026-10-29</lastmod>
++    <xhtml:link rel="alternate" hreflang="en" href="https://cachedrop.io/clear-adobe-media-cache-mac/"/>
++    <xhtml:link rel="alternate" hreflang="fr" href="https://cachedrop.io/fr/clear-adobe-media-cache-mac/"/>
++    <xhtml:link rel="alternate" hreflang="de" href="https://cachedrop.io/de/clear-adobe-media-cache-mac/"/>
+     <xhtml:link rel="alternate" hreflang="x-default" href="https://cachedrop.io/clear-adobe-media-cache-mac/"/>
+   </url>
+   <url><loc>https://cachedrop.io/uninstall-audio-plugins-mac/</loc><lastmod>2026-11-02</lastmod>
+     <xhtml:link rel="alternate" hreflang="en" href="https://cachedrop.io/uninstall-audio-plugins-mac/"/>
+     <xhtml:link rel="alternate" hreflang="fr" href="https://cachedrop.io/fr/uninstall-audio-plugins-mac/"/>
++    <xhtml:link rel="alternate" hreflang="de" href="https://cachedrop.io/de/uninstall-audio-plugins-mac/"/>
+     <xhtml:link rel="alternate" hreflang="x-default" href="https://cachedrop.io/uninstall-audio-plugins-mac/"/>
+   </url>
+   <url><loc>https://cachedrop.io/fr/uninstall-audio-plugins-mac/</loc><lastmod>2026-11-02</lastmod>
+     <xhtml:link rel="alternate" hreflang="en" href="https://cachedrop.io/uninstall-audio-plugins-mac/"/>
+     <xhtml:link rel="alternate" hreflang="fr" href="https://cachedrop.io/fr/uninstall-audio-plugins-mac/"/>
++    <xhtml:link rel="alternate" hreflang="de" href="https://cachedrop.io/de/uninstall-audio-plugins-mac/"/>
++    <xhtml:link rel="alternate" hreflang="x-default" href="https://cachedrop.io/uninstall-audio-plugins-mac/"/>
++  </url>
++  <url><loc>https://cachedrop.io/de/uninstall-audio-plugins-mac/</loc><lastmod>2026-11-02</lastmod>
++    <xhtml:link rel="alternate" hreflang="en" href="https://cachedrop.io/uninstall-audio-plugins-mac/"/>
++    <xhtml:link rel="alternate" hreflang="fr" href="https://cachedrop.io/fr/uninstall-audio-plugins-mac/"/>
++    <xhtml:link rel="alternate" hreflang="de" href="https://cachedrop.io/de/uninstall-audio-plugins-mac/"/>
+     <xhtml:link rel="alternate" hreflang="x-default" href="https://cachedrop.io/uninstall-audio-plugins-mac/"/>
+   </url>
+   <url><loc>https://cachedrop.io/clear-system-data-mac/</loc><lastmod>2026-11-03</lastmod>
+     <xhtml:link rel="alternate" hreflang="en" href="https://cachedrop.io/clear-system-data-mac/"/>
+     <xhtml:link rel="alternate" hreflang="fr" href="https://cachedrop.io/fr/clear-system-data-mac/"/>
++    <xhtml:link rel="alternate" hreflang="de" href="https://cachedrop.io/de/clear-system-data-mac/"/>
+     <xhtml:link rel="alternate" hreflang="x-default" href="https://cachedrop.io/clear-system-data-mac/"/>
+   </url>
+   <url><loc>https://cachedrop.io/fr/clear-system-data-mac/</loc><lastmod>2026-11-03</lastmod>
+     <xhtml:link rel="alternate" hreflang="en" href="https://cachedrop.io/clear-system-data-mac/"/>
+     <xhtml:link rel="alternate" hreflang="fr" href="https://cachedrop.io/fr/clear-system-data-mac/"/>
++    <xhtml:link rel="alternate" hreflang="de" href="https://cachedrop.io/de/clear-system-data-mac/"/>
++    <xhtml:link rel="alternate" hreflang="x-default" href="https://cachedrop.io/clear-system-data-mac/"/>
++  </url>
++  <url><loc>https://cachedrop.io/de/clear-system-data-mac/</loc><lastmod>2026-11-03</lastmod>
++    <xhtml:link rel="alternate" hreflang="en" href="https://cachedrop.io/clear-system-data-mac/"/>
++    <xhtml:link rel="alternate" hreflang="fr" href="https://cachedrop.io/fr/clear-system-data-mac/"/>
++    <xhtml:link rel="alternate" hreflang="de" href="https://cachedrop.io/de/clear-system-data-mac/"/>
+     <xhtml:link rel="alternate" hreflang="x-default" href="https://cachedrop.io/clear-system-data-mac/"/>
+   </url>
+   <url><loc>https://cachedrop.io/uninstall-apps-mac/</loc><lastmod>2026-11-03</lastmod>
+     <xhtml:link rel="alternate" hreflang="en" href="https://cachedrop.io/uninstall-apps-mac/"/>
+     <xhtml:link rel="alternate" hreflang="fr" href="https://cachedrop.io/fr/uninstall-apps-mac/"/>
++    <xhtml:link rel="alternate" hreflang="de" href="https://cachedrop.io/de/uninstall-apps-mac/"/>
+     <xhtml:link rel="alternate" hreflang="x-default" href="https://cachedrop.io/uninstall-apps-mac/"/>
+   </url>
+   <url><loc>https://cachedrop.io/fr/uninstall-apps-mac/</loc><lastmod>2026-11-03</lastmod>
+     <xhtml:link rel="alternate" hreflang="en" href="https://cachedrop.io/uninstall-apps-mac/"/>
+     <xhtml:link rel="alternate" hreflang="fr" href="https://cachedrop.io/fr/uninstall-apps-mac/"/>
++    <xhtml:link rel="alternate" hreflang="de" href="https://cachedrop.io/de/uninstall-apps-mac/"/>
++    <xhtml:link rel="alternate" hreflang="x-default" href="https://cachedrop.io/uninstall-apps-mac/"/>
++  </url>
++  <url><loc>https://cachedrop.io/de/uninstall-apps-mac/</loc><lastmod>2026-11-03</lastmod>
++    <xhtml:link rel="alternate" hreflang="en" href="https://cachedrop.io/uninstall-apps-mac/"/>
++    <xhtml:link rel="alternate" hreflang="fr" href="https://cachedrop.io/fr/uninstall-apps-mac/"/>
++    <xhtml:link rel="alternate" hreflang="de" href="https://cachedrop.io/de/uninstall-apps-mac/"/>
+     <xhtml:link rel="alternate" hreflang="x-default" href="https://cachedrop.io/uninstall-apps-mac/"/>
+   </url>
+   <url><loc>https://cachedrop.io/cleanmymac-alternative/</loc><lastmod>2026-11-03</lastmod>
+     <xhtml:link rel="alternate" hreflang="en" href="https://cachedrop.io/cleanmymac-alternative/"/>
+     <xhtml:link rel="alternate" hreflang="fr" href="https://cachedrop.io/fr/cleanmymac-alternative/"/>
++    <xhtml:link rel="alternate" hreflang="de" href="https://cachedrop.io/de/cleanmymac-alternative/"/>
+     <xhtml:link rel="alternate" hreflang="x-default" href="https://cachedrop.io/cleanmymac-alternative/"/>
+   </url>
+   <url><loc>https://cachedrop.io/fr/cleanmymac-alternative/</loc><lastmod>2026-11-03</lastmod>
+     <xhtml:link rel="alternate" hreflang="en" href="https://cachedrop.io/cleanmymac-alternative/"/>
+     <xhtml:link rel="alternate" hreflang="fr" href="https://cachedrop.io/fr/cleanmymac-alternative/"/>
++    <xhtml:link rel="alternate" hreflang="de" href="https://cachedrop.io/de/cleanmymac-alternative/"/>
++    <xhtml:link rel="alternate" hreflang="x-default" href="https://cachedrop.io/cleanmymac-alternative/"/>
++  </url>
++  <url><loc>https://cachedrop.io/de/cleanmymac-alternative/</loc><lastmod>2026-11-03</lastmod>
++    <xhtml:link rel="alternate" hreflang="en" href="https://cachedrop.io/cleanmymac-alternative/"/>
++    <xhtml:link rel="alternate" hreflang="fr" href="https://cachedrop.io/fr/cleanmymac-alternative/"/>
++    <xhtml:link rel="alternate" hreflang="de" href="https://cachedrop.io/de/cleanmymac-alternative/"/>
+     <xhtml:link rel="alternate" hreflang="x-default" href="https://cachedrop.io/cleanmymac-alternative/"/>
+   </url>
+   <url><loc>https://cachedrop.io/privacy/</loc><lastmod>2026-11-03</lastmod>
+@@ -114,11 +170,19 @@
+   <url><loc>https://cachedrop.io/pricing/</loc><lastmod>2026-11-01</lastmod>
+     <xhtml:link rel="alternate" hreflang="en" href="https://cachedrop.io/pricing/"/>
+     <xhtml:link rel="alternate" hreflang="fr" href="https://cachedrop.io/fr/pricing/"/>
++    <xhtml:link rel="alternate" hreflang="de" href="https://cachedrop.io/de/pricing/"/>
+     <xhtml:link rel="alternate" hreflang="x-default" href="https://cachedrop.io/pricing/"/>
+   </url>
+   <url><loc>https://cachedrop.io/fr/pricing/</loc><lastmod>2026-11-01</lastmod>
+     <xhtml:link rel="alternate" hreflang="en" href="https://cachedrop.io/pricing/"/>
+     <xhtml:link rel="alternate" hreflang="fr" href="https://cachedrop.io/fr/pricing/"/>
++    <xhtml:link rel="alternate" hreflang="de" href="https://cachedrop.io/de/pricing/"/>
++    <xhtml:link rel="alternate" hreflang="x-default" href="https://cachedrop.io/pricing/"/>
++  </url>
++  <url><loc>https://cachedrop.io/de/pricing/</loc><lastmod>2026-11-01</lastmod>
++    <xhtml:link rel="alternate" hreflang="en" href="https://cachedrop.io/pricing/"/>
++    <xhtml:link rel="alternate" hreflang="fr" href="https://cachedrop.io/fr/pricing/"/>
++    <xhtml:link rel="alternate" hreflang="de" href="https://cachedrop.io/de/pricing/"/>
+     <xhtml:link rel="alternate" hreflang="x-default" href="https://cachedrop.io/pricing/"/>
+   </url>
+ </urlset>
+diff --git a/src/components/Footer.astro b/src/components/Footer.astro
+index d2b3f77..8a0eadd 100644
+--- a/src/components/Footer.astro
++++ b/src/components/Footer.astro
+@@ -3,14 +3,14 @@
+ // purpose (HANDOFF.md §4); don't rename them.
+ // The "Privacy Policy" link in the bottom row is Decision 19; the handoff has none.
+ // The terms of sale, refund policy and license agreement links after it are Decision 43; the row wraps.
+-// The language switch at the end of that row is Decision 5: it opens this page in the other language.
++// The language switch at the end of that row is Decision 5: it opens this page in each other language it exists in.
+ // "Resend License Key" at the end of Product is Decision 42; "Compare to CleanMyMac" after it is Decision 54.
+ // The producer page's link after the two guides is Decision 48.
+ // The System Data guide's link after it is #110.
+ // The app uninstall guide's link after it is #111 (Decision 51).
+ import BrandMark from './BrandMark.astro';
+ import { footerCopy as copy } from './footer';
+-import { langOf, localize, other } from '../i18n';
++import { langName, langOf, langsOf, localize } from '../i18n';
+ 
+ interface Props {
+   /** Root-relative English path of this page (as Base's `path`); the language switch goes to its twin. */
+@@ -23,7 +23,6 @@ interface Props {
+ 
+ const lang = langOf(Astro.url);
+ const t = copy[lang];
+-const to = other(lang);
+ const href = (english: string) => localize(lang, english);
+ const { path, overview = false, trademarks = t.trademarks } = Astro.props;
+ ---
+@@ -61,7 +60,7 @@ const { path, overview = false, trademarks = t.trademarks } = Astro.props;
+ </div>
+ <div style="margin-top: var(--space-14); padding-top: var(--space-6); border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--space-3); font-size: 12px; color: var(--ink-secondary)">
+ <span>© 2026 CacheDrop. {trademarks}</span>
+-<span style="display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-4)"><a class="flink" href={href('/privacy/')}>{t.privacy}</a><a class="flink" href={href('/terms-of-sale/')}>{t.terms}</a><a class="flink" href={href('/refund-policy/')}>{t.refunds}</a><a class="flink" href={href('/license-agreement/')}>{t.license}</a><a class="flink" href={localize(to, path)} hreflang={to} lang={to}>{t.switchTo}</a></span>
++<span style="display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-4)"><a class="flink" href={href('/privacy/')}>{t.privacy}</a><a class="flink" href={href('/terms-of-sale/')}>{t.terms}</a><a class="flink" href={href('/refund-policy/')}>{t.refunds}</a><a class="flink" href={href('/license-agreement/')}>{t.license}</a>{langsOf(path).filter((l) => l !== lang).map((l) => <a class="flink" href={localize(l, path)} hreflang={l} lang={l}>{langName[l]}</a>)}</span>
+ </div>
+ </div>
+ </footer>
+diff --git a/src/components/compare.ts b/src/components/compare.ts
+index b1f7365..8e03cb7 100644
+--- a/src/components/compare.ts
++++ b/src/components/compare.ts
+@@ -209,7 +209,7 @@ export const rows: CompareRow[] = [
+ 
+ const money = (lang: Lang, n: number) => {
+   const s = n.toFixed(2).replace(/\.00$/, '');
+-  return lang === 'fr' ? `${s.replace('.', ',')} $` : `$${s}`;
++  return lang === 'en' ? `$${s}` : `${s.replace('.', ',')} $`;
+ };
+ 
+ const words = {
+diff --git a/src/components/footer.ts b/src/components/footer.ts
+index 264b6e0..eefd919 100644
+--- a/src/components/footer.ts
++++ b/src/components/footer.ts
+@@ -23,7 +23,6 @@ export const footerCopy = {
+     terms: 'Terms of Sale',
+     refunds: 'Refund Policy',
+     license: 'License Agreement',
+-    switchTo: 'Français',
+   },
+   fr: {
+     tagline: 'Récupérez l’espace de votre Mac : un nettoyeur, un désinstalleur d’applications et un gestionnaire de plug-ins, payés une seule fois.',
+@@ -47,6 +46,5 @@ export const footerCopy = {
+     terms: 'Conditions de vente',
+     refunds: 'Politique de remboursement',
+     license: 'Contrat de licence',
+-    switchTo: 'English',
+   },
+ } as const;
+diff --git a/src/components/pricing.ts b/src/components/pricing.ts
+index 2e38113..7ac0ecb 100644
+--- a/src/components/pricing.ts
++++ b/src/components/pricing.ts
+@@ -1,9 +1,9 @@
+ // The price and the pricing section's copy (Decisions 44 and 47). Pricing is always on: the
+ // launch setting that once hid it retired with Decision 52.
+-import type { Lang } from '../i18n';
++import { flowLang, type Lang } from '../i18n';
+ 
+-/** Where a page in `lang` sends its Buy links (Decision 41). */
+-export const buyHref = (lang: Lang) => (lang === 'fr' ? '/buy?lang=fr' : '/buy');
++/** Where a page in `lang` sends its Buy links (Decision 41). German pages use the English checkout for now. */
++export const buyHref = (lang: Lang) => (flowLang(lang) === 'fr' ? '/buy?lang=fr' : '/buy');
+ 
+ /**
+  * The price in each currency's number (Decision 47, amends 44): the regular price is 29.99 and 19.99
+@@ -25,6 +25,7 @@ export const discounted = price.offer !== price.regular;
+ 
+ const en = (n: string) => `$${n}`;
+ const fr = (n: string) => `${n.replace('.', ',')}\u00a0$`;
++const de = fr; // German writes prices as French does: 29,99 $ (german-glossary.md)
+ 
+ //   is a non-breaking space: before the French colon and currency symbol, and between a
+ // number and its unit (docs/french-glossary.md).
+diff --git a/src/i18n.ts b/src/i18n.ts
+index 350a388..171efb3 100644
+--- a/src/i18n.ts
++++ b/src/i18n.ts
+@@ -1,19 +1,43 @@
+-// The site's two languages (Decision 5): English at /, French at /fr/. A page that exists in
+-// both lives once under src/pages/[...lang]/ and picks its strings with `langOf(Astro.url)`.
++// The site's languages (Decision 5, amended for German): English at /, French at /fr/, German at /de/.
++// A page that exists in more than one lives once under src/pages/[...lang]/ and picks its strings with
++// `langOf(Astro.url)`. French covers every page; German covers the core pages in `dePages` (headquarters-app
++// seo-growth-plan Q26), and the others link to their English page from German pages.
+ 
+-export type Lang = 'en' | 'fr';
++export type Lang = 'en' | 'fr' | 'de';
++/** The languages forms, emails and checkout speak. German pages use the English flows for now. */
++export type FlowLang = 'en' | 'fr';
+ 
+-/** The value of <html lang>: the French is Quebec French. */
+-export const htmlLang: Record<Lang, string> = { en: 'en', fr: 'fr-CA' };
++/** The value of <html lang>: the French is Quebec French, the German is Germany's. */
++export const htmlLang: Record<Lang, string> = { en: 'en', fr: 'fr-CA', de: 'de-DE' };
++
++/** Each language's name in itself, for the language switch. */
++export const langName: Record<Lang, string> = { en: 'English', fr: 'Français', de: 'Deutsch' };
++
++/** English paths of the pages built in German. */
++export const dePages: ReadonlySet<string> = new Set([
++  '/', '/pricing/', '/cleanmymac-alternative/', '/clear-mac-developer-caches/', '/clear-adobe-media-cache-mac/',
++  '/clear-system-data-mac/', '/uninstall-apps-mac/', '/uninstall-audio-plugins-mac/',
++]);
+ 
+ /** getStaticPaths for a page under src/pages/[...lang]/: one build at /, one at /fr/. */
+ export const langPaths = () => [{ params: { lang: undefined } }, { params: { lang: 'fr' } }];
++/** getStaticPaths for a page in `dePages`: also one at /de/. */
++export const langPathsDe = () => [...langPaths(), { params: { lang: 'de' } }];
+ 
++const prefixed = (url: URL, p: string) => url.pathname === `/${p}` || url.pathname.startsWith(`/${p}/`);
+ /** The language of the page at `url`. */
+-export const langOf = (url: URL): Lang => (url.pathname === '/fr' || url.pathname.startsWith('/fr/') ? 'fr' : 'en');
++export const langOf = (url: URL): Lang => (prefixed(url, 'fr') ? 'fr' : prefixed(url, 'de') ? 'de' : 'en');
++
++/** The language a form, email or checkout reached from a page in `lang` speaks. */
++export const flowLang = (lang: Lang): FlowLang => (lang === 'fr' ? 'fr' : 'en');
++
++/** Whether the page at English `path` exists in `lang`. Fragments and queries are ignored. */
++export const hasPage = (lang: Lang, path: string) => lang !== 'de' || dePages.has(path.replace(/[?#].*$/, ''));
+ 
+-/** A root-relative English path, e.g. `/download/`, in `lang`. Fragments and `#feedback` pass through. */
+-export const localize = (lang: Lang, path: string) => (lang === 'en' || !path.startsWith('/') ? path : `/fr${path}`);
++/** A root-relative English path, e.g. `/download/`, in `lang`; a page not built in German stays English.
++ *  Fragments and `#feedback` pass through. */
++export const localize = (lang: Lang, path: string) =>
++  lang === 'en' || !path.startsWith('/') || !hasPage(lang, path) ? path : `/${lang}${path}`;
+ 
+-/** The other language, for the language switch. */
+-export const other = (lang: Lang): Lang => (lang === 'en' ? 'fr' : 'en');
++/** The languages the page at English `path` exists in, in switch order. */
++export const langsOf = (path: string): Lang[] => (['en', 'fr', 'de'] as Lang[]).filter(l => hasPage(l, path));
+diff --git a/src/layouts/Base.astro b/src/layouts/Base.astro
+index d6ea592..641aa2c 100644
+--- a/src/layouts/Base.astro
++++ b/src/layouts/Base.astro
+@@ -2,13 +2,14 @@
+ // The document shell every page shares: the handoff's head tags in the handoff's
+ // order, the design tokens, the site-wide styles, the feedback modal, bot-check.js and site.js.
+ // Keep the head tags exactly as delivered (HANDOFF.md §2); tests/head.spec.ts diffs them.
+-// Decision 5 adds the hreflang alternates after the canonical, and og:locale on French pages.
++// Decision 5 adds the hreflang alternates after the canonical (one per language the page exists in), and
++// og:locale on French and German pages.
+ import '../../handoff/design-system/tokens.css';
+ import '../styles/tokens.css';
+ import '../styles/global.css';
+ import FeedbackModal from '../components/FeedbackModal.astro';
+ import Analytics from '@vercel/analytics/astro';
+-import { htmlLang, langOf, localize } from '../i18n';
++import { htmlLang, langOf, langsOf, localize } from '../i18n';
+ 
+ interface Props {
+   title: string;
+@@ -30,10 +31,10 @@ const site = Astro.site!.origin; // https://cachedrop.io (astro.config.mjs)
+ const lang = langOf(Astro.url);
+ const url = new URL(localize(lang, path), site).href;
+ const alternates = [
+-  ['en', new URL(path, site).href],
+-  ['fr', new URL(localize('fr', path), site).href],
++  ...langsOf(path).map((l) => [l, new URL(localize(l, path), site).href]),
+   ['x-default', new URL(path, site).href],
+ ];
++const ogLocale = { en: null, fr: 'fr_CA', de: 'de_DE' }[lang];
+ ---
+ <!doctype html>
+ <html lang={htmlLang[lang]}>
+@@ -50,7 +51,7 @@ const alternates = [
+ <meta property="og:title" content={title}>
+ <meta property="og:description" content={description}>
+ <meta property="og:url" content={url}>
+-{lang === 'fr' && <meta property="og:locale" content="fr_CA">}
++{ogLocale && <meta property="og:locale" content={ogLocale}>}
+ <meta property="og:image" content={`${site}/assets/og-image.png`}>
+ <meta name="twitter:card" content="summary_large_image">
+ <meta name="theme-color" content="#FFFFFF">
+diff --git a/src/pages/[...lang]/cleanmymac-alternative/index.astro b/src/pages/[...lang]/cleanmymac-alternative/index.astro
+index 647f50e..eb4dd1c 100644
+--- a/src/pages/[...lang]/cleanmymac-alternative/index.astro
++++ b/src/pages/[...lang]/cleanmymac-alternative/index.astro
+@@ -14,14 +14,14 @@ import { footerCopy } from '../../../components/footer';
+ import { discounted, pricingCopy } from '../../../components/pricing';
+ import { billingText, checkedOn, compareDescription, productName, macsText, priceText, rows, threeYearsText } from '../../../components/compare';
+ import { breadcrumbPage } from '../../../components/structured-data';
+-import { langOf, langPaths, localize } from '../../../i18n';
++import { htmlLang, langOf, langPathsDe, localize } from '../../../i18n';
+ 
+-export const getStaticPaths = langPaths;
++export const getStaticPaths = langPathsDe;
+ 
+ const lang = langOf(Astro.url);
+ const p = pricingCopy[lang];
+ const checked = checkedOn();
+-const checkedLabel = new Date(`${checked}T12:00:00Z`).toLocaleDateString(lang === 'fr' ? 'fr-CA' : 'en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
++const checkedLabel = new Date(`${checked}T12:00:00Z`).toLocaleDateString(lang === 'en' ? 'en-US' : htmlLang[lang], { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
+ 
+ const copy = {
+   en: {
+diff --git a/src/pages/[...lang]/clear-adobe-media-cache-mac/index.astro b/src/pages/[...lang]/clear-adobe-media-cache-mac/index.astro
+index a9c97fb..d5b96ca 100644
+--- a/src/pages/[...lang]/clear-adobe-media-cache-mac/index.astro
++++ b/src/pages/[...lang]/clear-adobe-media-cache-mac/index.astro
+@@ -6,9 +6,9 @@ import Toc from '../../../components/Toc.astro';
+ import CodeBlock from '../../../components/CodeBlock.astro';
+ import { guideH2, guideP, arrowLink } from '../../../components/guide-styles';
+ import { guides } from '../../../components/guides';
+-import { langOf, langPaths, localize } from '../../../i18n';
++import { langOf, langPathsDe, localize } from '../../../i18n';
+ 
+-export const getStaticPaths = langPaths;
++export const getStaticPaths = langPathsDe;
+ 
+ const section = 'padding-top: var(--space-22); display: flex; flex-direction: column; gap: var(--space-5)';
+ const pair = 'margin-top: var(--space-4); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: var(--space-4)';
+diff --git a/src/pages/[...lang]/clear-mac-developer-caches/index.astro b/src/pages/[...lang]/clear-mac-developer-caches/index.astro
+index 991a522..451fcdb 100644
+--- a/src/pages/[...lang]/clear-mac-developer-caches/index.astro
++++ b/src/pages/[...lang]/clear-mac-developer-caches/index.astro
+@@ -7,9 +7,9 @@ import CodeBlock from '../../../components/CodeBlock.astro';
+ import Kicker from '../../../components/Kicker.astro';
+ import { guideH2, guideP, guideSection } from '../../../components/guide-styles';
+ import { guides } from '../../../components/guides';
+-import { langOf, langPaths } from '../../../i18n';
++import { langOf, langPathsDe } from '../../../i18n';
+ 
+-export const getStaticPaths = langPaths;
++export const getStaticPaths = langPathsDe;
+ 
+ const h3 = 'margin: 0; font-size: 24px; line-height: 30px; font-weight: 600; letter-spacing: -0.015em';
+ const cell = 'padding: var(--space-3) var(--space-4)';
+diff --git a/src/pages/[...lang]/clear-system-data-mac/index.astro b/src/pages/[...lang]/clear-system-data-mac/index.astro
+index 1b4e78a..b7a498f 100644
+--- a/src/pages/[...lang]/clear-system-data-mac/index.astro
++++ b/src/pages/[...lang]/clear-system-data-mac/index.astro
+@@ -15,9 +15,9 @@ import CodeBlock from '../../../components/CodeBlock.astro';
+ import Kicker from '../../../components/Kicker.astro';
+ import { guideH2, guideP } from '../../../components/guide-styles';
+ import { guides } from '../../../components/guides';
+-import { langOf, langPaths } from '../../../i18n';
++import { langOf, langPathsDe, localize } from '../../../i18n';
+ 
+-export const getStaticPaths = langPaths;
++export const getStaticPaths = langPathsDe;
+ 
+ const section = 'padding-top: var(--space-22); display: flex; flex-direction: column; gap: var(--space-5)';
+ const pair = 'margin-top: var(--space-4); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: var(--space-4)';
+@@ -262,7 +262,7 @@ const copy = {
+ };
+ const lang = langOf(Astro.url);
+ const t = copy[lang];
+-const dev = lang === 'fr' ? '/fr/clear-mac-developer-caches/' : '/clear-mac-developer-caches/';
++const dev = localize(lang, '/clear-mac-developer-caches/');
+ const ids = ['what', 'why', 'safe', 'clear', 'snapshots', 'cachedrop'];
+ const howTo = { name: t.howTo, steps: t.clear.manual };
+ ---
+diff --git a/src/pages/[...lang]/index.astro b/src/pages/[...lang]/index.astro
+index 7d2dce8..7b4d12a 100644
+--- a/src/pages/[...lang]/index.astro
++++ b/src/pages/[...lang]/index.astro
+@@ -14,9 +14,9 @@ import { discounted, price, pricingCopy } from '../../components/pricing';
+ import { card, eyebrow, faqItem, faqQuestion, primaryLg, sectionH2, titleMd } from '../../components/guide-styles';
+ import { guides } from '../../components/guides';
+ import { lastModified } from '../../components/structured-data';
+-import { langOf, langPaths, localize } from '../../i18n';
++import { langOf, langPathsDe, localize } from '../../i18n';
+ 
+-export const getStaticPaths = langPaths;
++export const getStaticPaths = langPathsDe;
+ 
+ const copy = {
+   en: {
+diff --git a/src/pages/[...lang]/pricing/index.astro b/src/pages/[...lang]/pricing/index.astro
+index 85f9a78..ff5cf6f 100644
+--- a/src/pages/[...lang]/pricing/index.astro
++++ b/src/pages/[...lang]/pricing/index.astro
+@@ -5,9 +5,9 @@ import Nav from '../../../components/Nav.astro';
+ import Footer from '../../../components/Footer.astro';
+ import PricingSection from '../../../components/PricingSection.astro';
+ import { pricingCopy } from '../../../components/pricing';
+-import { langOf, langPaths } from '../../../i18n';
++import { langOf, langPathsDe } from '../../../i18n';
+ 
+-export const getStaticPaths = langPaths;
++export const getStaticPaths = langPathsDe;
+ 
+ // Outcomes first, then the price (#113); the title names the regular price (Decision 47).
+ const copy = {
+diff --git a/src/pages/[...lang]/uninstall-apps-mac/index.astro b/src/pages/[...lang]/uninstall-apps-mac/index.astro
+index 64581a3..92622a1 100644
+--- a/src/pages/[...lang]/uninstall-apps-mac/index.astro
++++ b/src/pages/[...lang]/uninstall-apps-mac/index.astro
+@@ -13,9 +13,9 @@ import Toc from '../../../components/Toc.astro';
+ import CodeBlock from '../../../components/CodeBlock.astro';
+ import { guideH2, guideP } from '../../../components/guide-styles';
+ import { guides } from '../../../components/guides';
+-import { langOf, langPaths, localize } from '../../../i18n';
++import { langOf, langPathsDe, localize } from '../../../i18n';
+ 
+-export const getStaticPaths = langPaths;
++export const getStaticPaths = langPathsDe;
+ 
+ const section = 'padding-top: var(--space-22); display: flex; flex-direction: column; gap: var(--space-5)';
+ const card = 'padding: var(--space-7); border-radius: var(--radius-2xl); display: flex; flex-direction: column; gap: 14px';
+diff --git a/src/pages/[...lang]/uninstall-audio-plugins-mac/index.astro b/src/pages/[...lang]/uninstall-audio-plugins-mac/index.astro
+index 731fd5f..4098a3d 100644
+--- a/src/pages/[...lang]/uninstall-audio-plugins-mac/index.astro
++++ b/src/pages/[...lang]/uninstall-audio-plugins-mac/index.astro
+@@ -12,9 +12,9 @@ import Toc from '../../../components/Toc.astro';
+ import CodeBlock from '../../../components/CodeBlock.astro';
+ import { guideH2, guideP } from '../../../components/guide-styles';
+ import { guides } from '../../../components/guides';
+-import { langOf, langPaths, localize } from '../../../i18n';
++import { langOf, langPathsDe, localize } from '../../../i18n';
+ 
+-export const getStaticPaths = langPaths;
++export const getStaticPaths = langPathsDe;
+ 
+ const section = 'padding-top: var(--space-22); display: flex; flex-direction: column; gap: var(--space-5)';
+ const pair = 'margin-top: var(--space-4); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: var(--space-4)';
+diff --git a/src/server/download-email.ts b/src/server/download-email.ts
+index 70619ae..ae78312 100644
+--- a/src/server/download-email.ts
++++ b/src/server/download-email.ts
+@@ -5,7 +5,7 @@
+ // in the language the person signed up in (Decision 5); the French ships as Claude drafted it
+ // (Decision 34).
+ import type { Email } from './gate.ts';
+-import type { Lang } from '../i18n.ts';
++import type { FlowLang as Lang } from '../i18n.ts'; // emails and forms speak English and French
+ 
+ const COPY = {
+   en: {
+diff --git a/src/server/gate.ts b/src/server/gate.ts
+index 47c7d09..7676e31 100644
+--- a/src/server/gate.ts
++++ b/src/server/gate.ts
+@@ -2,7 +2,7 @@
+ // api/download. Supabase and the mail sender come in as dependencies, so Vitest can stand in for
+ // both at the boundary (Decision 27). The api/ files wire in the real ones.
+ import { guard, type Guard } from './bot-check.js';
+-import type { Lang } from '../i18n.ts';
++import type { FlowLang as Lang } from '../i18n.ts'; // emails and forms speak English and French
+ import { EMAIL, json, type Result } from './shared.js';
+ import { downloadEmail, pagesFor } from './download-email.js';
+ import { TOKEN, hashToken, newToken } from './tokens.js';
+diff --git a/src/server/unsubscribe.ts b/src/server/unsubscribe.ts
+index a6ee4f5..eac85c0 100644
+--- a/src/server/unsubscribe.ts
++++ b/src/server/unsubscribe.ts
+@@ -17,7 +17,7 @@
+ // and List-Unsubscribe adds &lang=fr so a GET lands on the French page.
+ import { pagesFor } from './download-email.js';
+ import type { GateDb } from './gate.ts';
+-import type { Lang } from '../i18n.ts';
++import type { FlowLang as Lang } from '../i18n.ts'; // emails and forms speak English and French
+ import { TOKEN, hashToken } from './tokens.js';
+ 
+ export const ONE_CLICK = 'List-Unsubscribe=One-Click';
+diff --git a/tests/compare.spec.ts b/tests/compare.spec.ts
+index 18cae9e..047c04b 100644
+--- a/tests/compare.spec.ts
++++ b/tests/compare.spec.ts
+@@ -26,8 +26,8 @@ const pages = {
+ 
+ const competitors = rows.filter((r) => !r.us).map((r) => r.product);
+ 
+-test('the compare page is live in both languages, so the pricing section links to it', () => {
+-  expect(compareLive).toEqual({ en: true, fr: true });
++test('the compare page is live in every language, so the pricing section links to it', () => {
++  expect(compareLive).toEqual({ en: true, fr: true, de: true });
+ });
+ 
+ for (const [lang, c] of Object.entries(pages) as [keyof typeof pages, (typeof pages)[keyof typeof pages]][]) {
+diff --git a/tests/download.spec.ts b/tests/download.spec.ts
+index 3a27cc9..a3bce49 100644
+--- a/tests/download.spec.ts
++++ b/tests/download.spec.ts
+@@ -13,7 +13,7 @@ test.describe('every Download button leads to the form', () => {
+   for (const p of pages.filter((p) => !/^(\/fr)?\/download\//.test(p.path))) {
+     test(`on ${p.path}`, async ({ page }) => {
+       await page.goto(p.path);
+-      const links = page.locator('a', { hasText: /download|télécharg|try cachedrop|essayer cachedrop/i });
++      const links = page.locator('a', { hasText: /download|télécharg|herunterladen|try cachedrop|essayer cachedrop|cachedrop ausprobieren/i });
+       const hrefs = await links.evaluateAll((as) => as.map((a) => a.getAttribute('href')));
+       expect(hrefs.length).toBeGreaterThan(0);
+       for (const href of hrefs) expect(href).toBe(uiOf(p).download);
+diff --git a/tests/handoff-changes.ts b/tests/handoff-changes.ts
+index c3f836a..00a321c 100644
+--- a/tests/handoff-changes.ts
++++ b/tests/handoff-changes.ts
+@@ -6,7 +6,8 @@
+ // - each page's copy fixes in copy-fixes.ts (Decision 23: claims match the app).
+ import { withCopyFixes } from './copy-fixes';
+ 
+-export type HandoffChange = { decision: number; why: string; find: string; replace: string };
++/** `only`: the handoff files the change applies to; omitted means every page. */
++export type HandoffChange = { decision: number; why: string; find: string; replace: string; only?: string[] };
+ 
+ export const handoffChanges: HandoffChange[] = [
+   {
+@@ -27,6 +28,13 @@ export const handoffChanges: HandoffChange[] = [
+     find: '<span>Public beta</span>',
+     replace: '<span>Public beta</span><a class="flink" href="/fr/" hreflang="fr" lang="fr">Français</a>',
+   },
++  {
++    decision: 5,
++    why: 'German (amends Decision 5): the core pages also switch to the page in German, after French.',
++    find: 'lang="fr">Français</a>',
++    replace: 'lang="fr">Français</a><a class="flink" href="/de/" hreflang="de" lang="de">Deutsch</a>',
++    only: ['clear-mac-developer-caches/index.html', 'clear-adobe-media-cache-mac/index.html'],
++  },
+   {
+     decision: 42,
+     why: 'The footer\'s Product column links to the page that re-sends a license key.',
+@@ -104,6 +112,7 @@ export const handoffChanges: HandoffChange[] = [
+ /** Returns the handoff page's HTML with every decided change applied. */
+ export function applyHandoffChanges(html: string, page: string) {
+   for (const c of handoffChanges) {
++    if (c.only && !c.only.includes(page)) continue;
+     const count = html.split(c.find).length - 1;
+     if (count !== 1) throw new Error(`Decision ${c.decision} change expects "${c.find}" once in ${page}, found ${count}`);
+     html = html.replace(c.find, c.replace);
+diff --git a/tests/head.spec.ts b/tests/head.spec.ts
+index 577ba09..e107c07 100644
+--- a/tests/head.spec.ts
++++ b/tests/head.spec.ts
+@@ -8,12 +8,12 @@ import { withHandoffChanges } from './handoff-changes';
+ // The other changes in handoff-changes.ts are body-only, so they don't touch the head.
+ const toProductionDomain = (html: string) => html.replaceAll('cachedrop.app', 'cachedrop.io');
+ 
+-/** Decision 5: a page with a French twin lists both languages as alternates, after its canonical. */
++/** Decision 5: a page with a French (and German) twin lists every language as an alternate, after its canonical. */
+ function withAlternates(html: string, path: string) {
+   const pair = pairs.find((p) => p.en === path);
+   if (!pair) return html;
+   const link = (lang: string, to: string) => `<link rel="alternate" hreflang="${lang}" href="https://cachedrop.io${to}">`;
+-  const alternates = [link('en', pair.canonical.en), link('fr', pair.canonical.fr), link('x-default', pair.canonical.en)].join('');
++  const alternates = [link('en', pair.canonical.en), link('fr', pair.canonical.fr), ...(pair.canonical.de ? [link('de', pair.canonical.de)] : []), link('x-default', pair.canonical.en)].join('');
+   return html.replace(/(<link rel="canonical"[^>]*>)/, `$1${alternates}`);
+ }
+ 
+diff --git a/tests/i18n.spec.ts b/tests/i18n.spec.ts
+index 7c7080c..1d0a9c2 100644
+--- a/tests/i18n.spec.ts
++++ b/tests/i18n.spec.ts
+@@ -2,8 +2,8 @@ import { test, expect, type Page } from '@playwright/test';
+ import { readFile } from 'node:fs/promises';
+ import { pairs } from './pages';
+ 
+-// Decision 5: English at /, French at /fr/, each page linking to the other with hreflang
+-// and a language switch. The canonical and og:url of a French page are its own /fr/ address.
++// Decision 5: English at /, French at /fr/ and, for the core pages, German at /de/; each page links to
++// its twins with hreflang and a language switch. The canonical and og:url of a page are its own address.
+ const SITE = 'https://cachedrop.io';
+ 
+ async function head(page: Page) {
+@@ -16,12 +16,13 @@ async function head(page: Page) {
+   }));
+ }
+ 
+-for (const { en, fr, canonical } of pairs) {
++for (const { en, fr, de, canonical } of pairs) {
+   test.describe(`${en} and ${fr}`, () => {
+-    // Both pages of a pair list the same alternates, so each points at the other (reciprocal).
++    // All pages of a pair list the same alternates, so each points at the others (reciprocal).
+     const alternates = [
+       ['en', `${SITE}${canonical.en}`],
+       ['fr', `${SITE}${canonical.fr}`],
++      ...(canonical.de ? [['de', `${SITE}${canonical.de}`]] : []),
+       ['x-default', `${SITE}${canonical.en}`],
+     ];
+ 
+@@ -42,6 +43,26 @@ for (const { en, fr, canonical } of pairs) {
+       await page.getByRole('contentinfo').getByRole('link', { name: 'English' }).click();
+       await expect(page).toHaveURL(`${baseURL}${canonical.en}`);
+     });
++
++    if (de && canonical.de) {
++      test('the German page is in German at its own address and points to its twins', async ({ page }) => {
++        await page.goto(de);
++        expect(await head(page)).toEqual({ lang: 'de-DE', canonical: `${SITE}${canonical.de}`, ogUrl: `${SITE}${canonical.de}`, ogLocale: 'de_DE', alternates });
++      });
++
++      test('the footer switches from English to German and back', async ({ page, baseURL }) => {
++        await page.goto(en);
++        await page.getByRole('contentinfo').getByRole('link', { name: 'Deutsch' }).click();
++        await expect(page).toHaveURL(`${baseURL}${canonical.de}`);
++        await page.getByRole('contentinfo').getByRole('link', { name: 'English' }).click();
++        await expect(page).toHaveURL(`${baseURL}${canonical.en}`);
++      });
++    } else {
++      test('the page has no German twin, so the footer offers none', async ({ page }) => {
++        await page.goto(en);
++        await expect(page.getByRole('contentinfo').getByRole('link', { name: 'Deutsch' })).toHaveCount(0);
++      });
++    }
+   });
+ }
+ 
+@@ -100,3 +121,14 @@ test('the sitemap lists each indexed page in both languages, with alternates', a
+     }
+   }
+ });
++
++test('the sitemap lists each German page, with all three alternates', async () => {
++  const xml = await readFile('dist/sitemap.xml', 'utf8');
++  for (const { canonical } of pairs.filter((p) => p.indexed && p.canonical.de)) {
++    for (const loc of [canonical.en, canonical.fr, canonical.de!]) {
++      const entry = xml.match(new RegExp(`<url><loc>${SITE}${loc}</loc>[\\s\\S]*?</url>`))?.[0];
++      expect(entry, loc).toBeTruthy();
++      expect(entry).toContain(`<xhtml:link rel="alternate" hreflang="de" href="${SITE}${canonical.de}"/>`);
++    }
++  }
++});
+diff --git a/tests/pages.ts b/tests/pages.ts
+index e4ab065..ae92bf4 100644
+--- a/tests/pages.ts
++++ b/tests/pages.ts
+@@ -11,7 +11,7 @@ export type PageUnderTest = {
+   /** Base name of the reference renders: `desktop-<name>.png` (1440 px) and `mobile-<name>.png` (390 px). */
+   screenshots?: string;
+   /** Omitted means English. */
+-  lang?: 'fr';
++  lang?: 'fr' | 'de';
+ };
+ 
+ export const pages: PageUnderTest[] = [
+@@ -50,26 +50,37 @@ export const pages: PageUnderTest[] = [
+   { path: '/fr/refund-policy/', lang: 'fr' },
+   { path: '/fr/license-agreement/', lang: 'fr' },
+   { path: '/fr/resend-license-key/', lang: 'fr' },
++  // German: the core pages only (dePages in src/i18n.ts). No handoff originals.
++  { path: '/de/', lang: 'de' },
++  { path: '/de/pricing/', lang: 'de' },
++  { path: '/de/clear-mac-developer-caches/', lang: 'de' },
++  { path: '/de/clear-adobe-media-cache-mac/', lang: 'de' },
++  { path: '/de/uninstall-audio-plugins-mac/', lang: 'de' },
++  { path: '/de/clear-system-data-mac/', lang: 'de' },
++  { path: '/de/uninstall-apps-mac/', lang: 'de' },
++  { path: '/de/cleanmymac-alternative/', lang: 'de' },
+ ];
+ 
+-/** Each English page and its French twin: where each is built and its canonical address. */
+-export type Pair = { en: string; fr: string; canonical: { en: string; fr: string }; indexed: boolean };
++/** Each English page and its French twin (and German twin for the core pages): where each is built and its canonical address. */
++export type Pair = { en: string; fr: string; de?: string; canonical: { en: string; fr: string; de?: string }; indexed: boolean };
+ 
+-const pair = (en: string, indexed: boolean, canonical = en): Pair => ({
++const pair = (en: string, indexed: boolean, canonical = en, de = false): Pair => ({
+   en,
+   fr: `/fr${en}`,
+-  canonical: { en: canonical, fr: `/fr${canonical}` },
++  ...(de ? { de: `/de${en}` } : {}),
++  canonical: { en: canonical, fr: `/fr${canonical}`, ...(de ? { de: `/de${canonical}` } : {}) },
+   indexed,
+ });
+ 
+ export const pairs: Pair[] = [
+-  pair('/', true),
+-  pair('/clear-mac-developer-caches/', true),
+-  pair('/clear-adobe-media-cache-mac/', true),
+-  pair('/uninstall-audio-plugins-mac/', true),
+-  pair('/clear-system-data-mac/', true),
+-  pair('/uninstall-apps-mac/', true),
+-  pair('/cleanmymac-alternative/', true),
++  pair('/', true, '/', true),
++  pair('/pricing/', true, '/pricing/', true),
++  pair('/clear-mac-developer-caches/', true, '/clear-mac-developer-caches/', true),
++  pair('/clear-adobe-media-cache-mac/', true, '/clear-adobe-media-cache-mac/', true),
++  pair('/uninstall-audio-plugins-mac/', true, '/uninstall-audio-plugins-mac/', true),
++  pair('/clear-system-data-mac/', true, '/clear-system-data-mac/', true),
++  pair('/uninstall-apps-mac/', true, '/uninstall-apps-mac/', true),
++  pair('/cleanmymac-alternative/', true, '/cleanmymac-alternative/', true),
+   pair('/privacy/', true),
+   pair('/download/', false),
+   pair('/download/link/', false, '/download/'),
+@@ -114,6 +125,23 @@ export const ui = {
+     submit: 'Envoyer mon avis',
+     rating: 'Votre note',
+   },
++  // German pages link to the English legal, download and resend pages (headquarters-app plan Q26).
++  de: {
++    home: '/de/',
++    download: '/download/',
++    privacy: ['Datenschutz (Englisch)', '/privacy/'],
++    legal: [
++      ['Verkaufsbedingungen (Englisch)', '/terms-of-sale/'],
++      ['Rückerstattung (Englisch)', '/refund-policy/'],
++      ['Lizenzvereinbarung (Englisch)', '/license-agreement/'],
++    ],
++    resendKey: ['Lizenzschlüssel erneut senden', '/resend-license-key/'],
++    dialog: 'Schnelles Feedback geben',
++    veryUnhappy: 'Sehr unzufrieden',
++    close: 'Feedback schließen',
++    submit: 'Feedback senden',
++    rating: 'Ihre Bewertung',
++  },
+ } as const;
+ 
+ export const uiOf = (p: PageUnderTest) => ui[p.lang ?? 'en'];
+diff --git a/tests/platform.spec.ts b/tests/platform.spec.ts
+index 097820c..a05c94c 100644
+--- a/tests/platform.spec.ts
++++ b/tests/platform.spec.ts
+@@ -10,7 +10,7 @@ for (const p of pages) {
+     const html = await (await request.get(p.path)).text();
+     expect(html).not.toMatch(/macOS 26/);
+     // The footer's Platform column is on every page.
+-    expect(html).toMatch(/Apple Silicon (&amp;|&|et) Intel/);
++    expect(html).toMatch(/Apple Silicon (&amp;|&|et|und) Intel/);
+     expect(html).toContain('macOS 14');
+   });
+ }
+diff --git a/tests/pricing.spec.ts b/tests/pricing.spec.ts
+index cd2a1bf..2f05c3f 100644
+--- a/tests/pricing.spec.ts
++++ b/tests/pricing.spec.ts
+@@ -5,7 +5,7 @@ import { guides } from '../src/components/guides';
+ 
+ // Pricing (Decisions 44 and 47) on every build: the launch setting retired with Decision 52.
+ const withPricing = [...pages, { path: '/pricing/' }, { path: '/fr/pricing/', lang: 'fr' as const }];
+-const langOf = (p: { lang?: 'fr' }) => p.lang ?? 'en';
++const langOf = (p: { lang?: 'fr' | 'de' }) => p.lang ?? 'en';
+ 
+ const copy = {
+   en: {
+@@ -52,9 +52,34 @@ const copy = {
+     legal: [['conditions de vente', '/fr/terms-of-sale/'], ['politique de remboursement', '/fr/refund-policy/'], ['contrat de licence', '/fr/license-agreement/']],
+     tried: ['Vous l’avez déjà essayé?', 'Achetez une licence'],
+   },
++  // German (core pages only): Buy and Download go to the English checkout and form for now.
++  de: {
++    pricing: ['Preise', '/de/pricing/'],
++    download: 'Für Mac herunterladen',
++    title: 'Einmal zahlen. Auf 3 Macs nutzen.',
++    body: 'Sehen Sie, was Ihren Mac füllt, räumen Sie es sicher auf und entfernen Sie Apps und Plug-ins vollständig.',
++    spoken: 'Regulär 29,99\u00a0$, jetzt 19,99\u00a0$ für begrenzte Zeit, einmalig.',
++    shown: ['29,99\u00a0$', '19,99\u00a0$', 'einmalig'],
++    currencies: 'Zahlen Sie in USD, CAD, EUR, GBP oder AUD: derselbe Betrag in jeder Währung.',
++    items: [
++      'Nutzbar auf bis zu 3 Ihrer Macs.',
++      'Alle Updates für Version 1, bereit für jedes neue macOS, sobald es erscheint.',
++      'Kein Abo. Nichts zu kündigen.',
++      '30 Tage Geld-zurück-Garantie, ohne Angabe von Gründen.',
++      'Der Scan ist immer kostenlos, und Sie können vor dem Kauf bis zu 2\u00a0GB aufräumen.',
++    ],
++    compare: 'CacheDrop mit anderen Mac-Reinigern vergleichen',
++    buy: ['Kaufen · regulär 29,99\u00a0$ jetzt 19,99\u00a0$ einmalig', '/buy'],
++    legal: [['Verkaufsbedingungen (Englisch)', '/terms-of-sale/'], ['Rückerstattung (Englisch)', '/refund-policy/'], ['Lizenzvereinbarung (Englisch)', '/license-agreement/']],
++  },
+ } as const;
++const navLinks = {
++  en: ['For Developers', 'For Creators', 'For Music Producers', 'Pricing'],
++  fr: ['Pour les développeurs', 'Pour les créateurs', 'Pour les producteurs de musique', 'Tarifs'],
++  de: ['Für Entwickler', 'Für Kreative', 'Für Musikproduzenten', 'Preise'],
++};
+ 
+-async function expectPricing(page: Page, lang: 'en' | 'fr', level: 1 | 2) {
++async function expectPricing(page: Page, lang: 'en' | 'fr' | 'de', level: 1 | 2) {
+   const c = copy[lang];
+   const section = page.getByRole('region', { name: c.title });
+   await expect(section.getByRole('heading', { level, name: c.title })).toBeVisible();
+@@ -82,7 +107,7 @@ async function expectPricing(page: Page, lang: 'en' | 'fr', level: 1 | 2) {
+   for (const [name, href] of c.legal) await expect(section.getByRole('link', { name, exact: true })).toHaveAttribute('href', href);
+ }
+ 
+-for (const lang of ['en', 'fr'] as const) {
++for (const lang of ['en', 'fr', 'de'] as const) {
+   test(`${lang}: the homepage has the pricing section, between "Safe by design" and the FAQ`, async ({ page }) => {
+     await page.goto(ui[lang].home);
+     await expectPricing(page, lang, 2);
+@@ -100,6 +125,9 @@ for (const lang of ['en', 'fr'] as const) {
+     await expect(page.locator('meta[name="robots"]')).toHaveCount(0);
+     await expect(page.getByRole('banner').getByRole('link', { name: copy[lang].pricing[0] })).toHaveAttribute('aria-current', 'page');
+   });
++}
++
++for (const lang of ['en', 'fr'] as const) {
+ 
+   test(`${lang}: the news box no longer mentions the paid launch`, async ({ page }) => {
+     await page.goto(lang === 'en' ? '/download/' : '/fr/download/');
+@@ -192,7 +220,7 @@ for (const p of withPricing) {
+     await expect(nav.getByText(/^(BETA|BÊTA)$/)).toHaveCount(0);
+     const primary = nav.getByRole('navigation');
+     const links = await primary.getByRole('link').allTextContents();
+-    expect(links.slice(0, 4)).toEqual(lang === 'en' ? ['For Developers', 'For Creators', 'For Music Producers', 'Pricing'] : ['Pour les développeurs', 'Pour les créateurs', 'Pour les producteurs de musique', 'Tarifs']);
++    expect(links.slice(0, 4)).toEqual(navLinks[lang]);
+     await expect(primary.getByRole('link', { name: c.pricing[0], exact: true })).toHaveAttribute('href', c.pricing[1]);
+     await expect(nav.getByRole('link', { name: c.download, exact: true })).toHaveAttribute('href', ui[lang].download);
+     await expect(nav.locator('a[href^="/buy"]')).toHaveCount(0);
+@@ -205,9 +233,9 @@ for (const p of withPricing) {
+ 
+ // Every guide has the same download block (#112, Decision 51): the trial line once, under the hero
+ // button, and the price for up to 3 Macs. No Buy link, and no "Free to try" left in the closing line.
+-for (const path of Object.values(guides).flatMap((g) => [g.path, `/fr${g.path}`])) {
++for (const path of Object.values(guides).flatMap((g) => [g.path, `/fr${g.path}`, `/de${g.path}`])) {
+   test(`${path}: the download block states the trial once and the price, with no Buy link`, async ({ page }) => {
+-    const lang = path.startsWith('/fr/') ? 'fr' : 'en';
++    const lang = path.startsWith('/fr/') ? 'fr' : path.startsWith('/de/') ? 'de' : 'en';
+     await page.goto(path);
+     await expect(page.locator('a[href^="/buy"]')).toHaveCount(0);
+     await expect(page.getByText(pricingCopy[lang].trial, { exact: true })).toHaveCount(1);
+@@ -221,7 +249,7 @@ for (const path of Object.values(guides).flatMap((g) => [g.path, `/fr${g.path}`]
+ for (const p of withPricing.filter((p) => !/^(\/fr)?\/download\//.test(p.path))) {
+   test(`${p.path}: every Download link goes to the email form`, async ({ page }) => {
+     await page.goto(p.path);
+-    const hrefs = await page.locator('a', { hasText: /download|télécharg|try cachedrop|essayer cachedrop/i }).evaluateAll((as) => as.map((a) => a.getAttribute('href')));
++    const hrefs = await page.locator('a', { hasText: /download|télécharg|herunterladen|try cachedrop|essayer cachedrop|cachedrop ausprobieren/i }).evaluateAll((as) => as.map((a) => a.getAttribute('href')));
+     expect(hrefs.length).toBeGreaterThan(0);
+     for (const href of hrefs) expect(href).toBe(ui[langOf(p)].download);
+   });

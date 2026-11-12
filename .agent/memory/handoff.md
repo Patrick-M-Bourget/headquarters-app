@@ -1,4 +1,16 @@
-# Hand-off: 2026-11-10, session 5 (session 4, 3, 2 notes below still apply)
+# Hand-off: 2026-11-11, session 6 (session 5, 4, 3, 2 notes below still apply)
+
+## Session 6: German pages shipped (P1-de done)
+- cachedrop.io/de/ is LIVE: 8 core pages (website PR #140, main 0a5f115, Decision 57). German copy is generated here (`runners/marketing/site-draft.ts`, glossary `prototype/research/marketing/site-drafts/de-DE/docs/german-glossary.md`, copied to the website's `docs/`). If website copy changes on those pages (#131–#133), re-draft the German with `site-draft.ts --only <path>` after bumping BASE_COMMIT; never hand-edit.
+- de-DE is weekly now (WEEKLY + SITE_LOCALES); first scheduled run Monday 2026-11-16. Mapping `research/seo-geo/onpage-pages.de-DE.json` owner-confirmed.
+- App localization: mac-cleaner #810 (needs-triage; add German Search Console numbers to it as they come).
+- OpenCode: owner said forget it for now. Implementation happens in Claude sessions.
+- Pushed through a3a0390; the end-of-session commit may be local (ask before pushing).
+- Owner to do: request indexing for /de/ in Search Console; HEA-19; € vs $; funnel CSV; website #138; mac-cleaner repo public; delete `research/marketing/onpage-fixes/local-c1d9af4e-only/` if wanted.
+- First thing next session: Paperclip up? Then check the 2026-11-16 run (incl. de-DE subtasks and the disposition-repair wait).
+- Next: P2 (Outcome Tracker in the Weekly Report; backfill shipped_at for #131–#133 and #139/#140 shipped 2026-11-11).
+
+## Session 5 (2026-11-10)
 
 ## Session 5: SEO growth loop
 - Plan grilled (Q1–Q27): `prototype/docs/seo-growth-plan.md`. Still the prototype until the M6; $100 soft target (flag at $80, pause model steps at $100). de-DE is the multi-market proof; OpenCode test gated on P1–P4 (Q16).

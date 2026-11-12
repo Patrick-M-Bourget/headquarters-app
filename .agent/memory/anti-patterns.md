@@ -19,3 +19,9 @@
 - Search Console: never sum per-page rows for a site total; a search showing two of our pages counts once per page (128 vs the UI's 111). Use a no-dimension query for totals.
 - Don't regenerate a week's report by hand (`weekly.ts --week`) while that week is in owner review: it overwrites report.json's issue link. Restore with git checkout.
 - Search Console query text never goes into a committed file (public repo); the strict contract in `packages/data-contracts/search.ts` enforces counts-only summaries.
+- Astro 7 `astro preview` (and the site's Playwright run) leaves a background preview daemon running; stop it with `astro preview stop` or kill the process group, and refuse to screenshot if the port is busy.
+- The Write tool turns a ` ` escape into a literal no-break space; check NBSP-sensitive files with `od -c`, not by eye.
+- html-validate counts `&amp;` as 5 characters in title length: a title with "&" can fail the 70 limit.
+- Grepping copy blocks at line start misses inline objects (`{ en: …, fr: … }` mid-line); parse the source (copy-blocks.ts) instead.
+- After filtering a review's findings, recompute the verdict (`verdictFor`); a kept "block" from a dropped finding silently blocks good text.
+- Whole-page rules (app_language) don't apply to fragments (title, meta, opening): strip them in the fragment path (`fragmentReview`), not in the rule.

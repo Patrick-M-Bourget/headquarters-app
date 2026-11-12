@@ -13,8 +13,8 @@ import { latestSearchConsole, renderSearchConsole } from "./search-console-repor
 import type { SearchConsoleSummary } from "../../packages/data-contracts/search.ts";
 
 export const LOCALES = Locale.options;
-export const WEEKLY: Locale[] = ["en-US", "fr-FR"]; // plan Q22; the other four run in the first week of each month
-export const SITE_LOCALES: Locale[] = ["en-US", "fr-FR"]; // locales with cachedrop.io pages (on-page audit, page proposals)
+export const WEEKLY: Locale[] = ["en-US", "fr-FR", "de-DE"]; // plan Q22; de-DE since it shipped (Q27, 2026-11-11); the other three run in the first week of each month
+export const SITE_LOCALES: Locale[] = ["en-US", "fr-FR", "de-DE"]; // locales with cachedrop.io pages (on-page audit, page proposals)
 export type Kind = "geo" | "keywords" | "onpage";
 const DIRS: Record<Kind, string> = { geo: "research/seo-geo/geo-runs", keywords: "research/seo-geo/keyword-runs", onpage: "research/seo-geo/onpage-runs" };
 
@@ -25,7 +25,7 @@ export function weekOf(d: Date): string {
   return m.toISOString().slice(0, 10);
 }
 
-/** Locales due in the week starting `week`: the weekly two, plus the monthly four when that Monday is in the month's first 7 days. */
+/** Locales due in the week starting `week`: the weekly three, plus the monthly three when that Monday is in the month's first 7 days. */
 export function dueLocales(week: string): Locale[] {
   return Number(week.slice(8, 10)) <= 7 ? [...LOCALES] : [...WEEKLY];
 }

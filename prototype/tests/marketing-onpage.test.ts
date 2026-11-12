@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { codeFixes, copyNeeds, formatFixes, limitProblems, pageKind } from "../runners/marketing/onpage-fixes.ts";
+import { codeFixes, copyNeeds, draftLocale, formatFixes, fragmentReview, limitProblems, pageKind } from "../runners/marketing/onpage-fixes.ts";
 import { PageAudit } from "../packages/data-contracts/seo-geo.ts";
 
 const checks = { title: "Nettoyer son Mac – Récupérez votre espace, payez une fois | CacheDrop", meta_description: "x".repeat(197), h1: ["H"], canonical: "https://cachedrop.io/fr/", canonical_is_self: true,
@@ -14,6 +14,20 @@ test("page kind from the path, French prefix ignored", () => {
   assert.equal(pageKind("https://cachedrop.io/pricing/"), "pricing");
   assert.equal(pageKind("https://cachedrop.io/fr/cleanmymac-alternative/"), "compare");
   assert.equal(pageKind("https://cachedrop.io/fr/clear-system-data-mac/"), "guide");
+  assert.equal(pageKind("https://cachedrop.io/de/"), "home");
+  assert.equal(pageKind("https://cachedrop.io/de/pricing/"), "pricing");
+});
+
+test("German fragments: reviewed as de-DE, without the whole-page app-language rule", () => {
+  assert.equal(draftLocale("de-DE"), "de-DE");
+  assert.equal(draftLocale("fr-FR"), "fr-FR");
+  assert.equal(draftLocale("es-ES"), "en-US");
+  const f = (rule: string, severity: "block" | "fix" | "note") => ({ rule, severity, quote: "q", message: "m", fix: null });
+  const r = { review: { draft_id: "q01-title", reviewed_at: "2026-11-11T00:00:00Z", verdict: "block", findings: [f("app_language", "block")] } } as any;
+  assert.equal(fragmentReview(r).review.verdict, "pass");
+  assert.equal(fragmentReview(r).review.findings.length, 0);
+  const both = { review: { ...r.review, findings: [f("app_language", "block"), f("wrong_price", "block")] } } as any;
+  assert.equal(fragmentReview(both).review.verdict, "block");
 });
 
 test("code fixes: fr-CA on a France page points at the existing ticket; JSON-LD only from the allowed list", () => {

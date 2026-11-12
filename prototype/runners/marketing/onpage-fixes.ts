@@ -9,7 +9,7 @@ import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { basename, join } from "node:path";
 import { Agent } from "@mastra/core/agent";
 import { z } from "zod";
-import { Draft, OnpageFix, type PageKind } from "../../packages/data-contracts/marketing.ts";
+import { Draft, OnpageFix, verdictFor, type ClaimsReview, type PageKind } from "../../packages/data-contracts/marketing.ts";
 import { PageAudit, type Locale } from "../../packages/data-contracts/seo-geo.ts";
 import { MARKETS } from "../../packages/data-contracts/markets.ts";
 import { fetchPage } from "../mastra/fetch.ts";
@@ -27,17 +27,17 @@ const LD_ALLOWED = ["BreadcrumbList", "FAQPage", "HowTo"];
 /** Website decisions that fix a field's wording today: a change there needs the owner to amend the decision. */
 const DECISION_BOUND: { path: RegExp; field: OnpageFix["field"]; decision: string; rule: string }[] = [
   { path: /\/cleanmymac-alternative\/$/, field: "title", decision: "website Decision 54", rule: "Title is \"CleanMyMac alternative you pay for once | CacheDrop\"." },
-  { path: /^\/(fr\/)?$/, field: "opening", decision: "website Decision 51", rule: "The homepage hero is \"Get your Mac's space back.\" with Download for Mac and Buy only." },
+  { path: /^\/((fr|de)\/)?$/, field: "opening", decision: "website Decision 51", rule: "The homepage hero is \"Get your Mac's space back.\" with Download for Mac and Buy only." },
   { path: /\/cleanmymac-alternative\/$/, field: "opening", decision: "website Decision 54", rule: "The hero and price table are set by the decision." },
   { path: /\/cleanmymac-alternative\/$/, field: "meta_description", decision: "website Decision 54", rule: "The meta description is built from price." },
-  { path: /\/pricing\/$/, field: "meta_description", decision: "website Decision 47", rule: "Must say \"$29.99 once, now $19.99 for a limited time\" (« 29,99 $ une seule fois, maintenant 19,99 $ pour un temps limité »)." },
+  { path: /\/pricing\/$/, field: "meta_description", decision: "website Decision 47", rule: "Must say \"$29.99 once, now $19.99 for a limited time\" (« 29,99 $ une seule fois, maintenant 19,99 $ pour un temps limité »; German „29,99 $ einmalig, jetzt 19,99 $ für begrenzte Zeit“)." },
 ];
 const KNOWN_TICKETS: { test: (lang: string | null | undefined, locale: Locale) => boolean; field: OnpageFix["field"]; ticket: string }[] = [
   { test: (l, loc) => loc === "fr-FR" && (l ?? "").toLowerCase() === "fr-ca", field: "html_lang", ticket: "cachedrop-website #130" },
 ];
 
 export const pageKind = (url: string): PageKind => {
-  const p = new URL(url).pathname.replace(/^\/fr(?=\/)/, "");
+  const p = new URL(url).pathname.replace(/^\/(fr|de)(?=\/)/, "");
   return p === "/" ? "home" : p === "/pricing/" ? "pricing" : p === "/cleanmymac-alternative/" ? "compare" : "guide";
 };
 const words = (s: string) => s.trim().split(/\s+/).filter(Boolean).length;
@@ -75,7 +75,7 @@ export function copyNeeds(a: PageAudit): { title: boolean; meta_description: boo
 const Out = z.object({ title: z.string().nullable(), meta_description: z.string().nullable(), opening: z.string().nullable() });
 
 const instructions = (locale: Locale) => `You rewrite parts of a page on cachedrop.io (CacheDrop: Mac storage cleaner, app uninstaller and plug-in manager, one-time price) so search engines and AI answer engines see the answer.
-Write in ${MARKETS[locale].name}${locale === "fr-FR" ? " (vouvoiement; espace insécable U+00A0 avant « : » et dans « », apostrophe ’, Go/Mo)" : ""}. Plain, calm, specific. No exclamation marks.
+Write in ${MARKETS[locale].name}${locale === "fr-FR" ? " (vouvoiement; espace insécable U+00A0 avant « : » et dans « », apostrophe ’, Go/Mo)" : locale === "de-DE" ? " (Sie-Form; „…“ quotes; no-break space U+00A0 between a number and GB/MB/$, prices „29,99 $“; Apple's German macOS names: Papierkorb, Systemeinstellungen, Systemdaten; the app's own labels stay English)" : ""}. Plain, calm, specific. No exclamation marks.
 Only write the fields asked for; return null for the others.
 - title: at most ${LIMITS.title} characters INCLUDING the " | CacheDrop" ending. Lead with the searcher's words.
 - meta_description: at most ${LIMITS.meta_description} characters. Says what the page answers and why CacheDrop; one sentence or two.
@@ -107,7 +107,7 @@ export async function copyFixes(a: PageAudit, locale: Locale, pageText: string, 
   for (const field of fields) {
     let text = got[field]?.trim() ?? null;
     let problems = text ? limitProblems(field, text) : ["no text returned"];
-    let review = text && !problems.length ? await reviewDraft(Draft.parse({ id: `${a.query_id}-${field}`, locale: locale === "fr-FR" ? "fr-FR" : "en-US", page_kind: kind, target_url: a.url, query_ids: [a.query_id], text }), facts) : null;
+    let review = text && !problems.length ? await reviewDraft(Draft.parse({ id: `${a.query_id}-${field}`, locale: draftLocale(locale), page_kind: kind, target_url: a.url, query_ids: [a.query_id], text }), facts).then(fragmentReview) : null;
     if (review) cost += review.review.cost_usd;
     const blocked = review?.review.findings.filter(f => f.severity === "block" || f.severity === "fix") ?? [];
     if (problems.length || blocked.length) { // one retry with the problems named
@@ -115,7 +115,7 @@ export async function copyFixes(a: PageAudit, locale: Locale, pageText: string, 
       const again = take(await ask(`=== YOUR LAST ${field} WAS REJECTED; FIX ONLY THIS FIELD ===\n${text ?? ""}\nProblems:\n${why}`));
       text = again[field]?.trim() ?? text;
       problems = text ? limitProblems(field, text) : ["no text returned"];
-      review = text && !problems.length ? await reviewDraft(Draft.parse({ id: `${a.query_id}-${field}`, locale: locale === "fr-FR" ? "fr-FR" : "en-US", page_kind: kind, target_url: a.url, query_ids: [a.query_id], text }), facts) : null;
+      review = text && !problems.length ? await reviewDraft(Draft.parse({ id: `${a.query_id}-${field}`, locale: draftLocale(locale), page_kind: kind, target_url: a.url, query_ids: [a.query_id], text }), facts).then(fragmentReview) : null;
       if (review) cost += review.review.cost_usd;
     }
     if (!text) continue;
@@ -133,6 +133,16 @@ export async function copyFixes(a: PageAudit, locale: Locale, pageText: string, 
     }));
   }
   return { fixes: out, cost, usage };
+}
+
+/** The Claims Reviewer's locales; the GEO-only markets have no site pages, so their drafts never reach here. */
+export const draftLocale = (l: Locale): "en-US" | "fr-FR" | "de-DE" => (l === "fr-FR" || l === "de-DE" ? l : "en-US");
+
+/** A title, meta description or opening is a fragment of a page that already carries the app-in-English line
+ *  (plan Q18), so that whole-page rule doesn't apply; the verdict is recomputed without it. Pure. */
+export function fragmentReview<T extends { review: ClaimsReview }>(r: T): T {
+  const findings = r.review.findings.filter(f => f.rule !== "app_language");
+  return { ...r, review: { ...r.review, findings, verdict: verdictFor(findings) } };
 }
 
 export function limitProblems(field: "title" | "meta_description" | "opening", t: string): string[] {

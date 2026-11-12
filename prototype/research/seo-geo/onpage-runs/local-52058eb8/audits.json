@@ -1,0 +1,1718 @@
+{
+  "site": {
+    "origin": "https://cachedrop.io",
+    "llms_txt": true,
+    "robots_allows": {
+      "GPTBot": true,
+      "ClaudeBot": true,
+      "PerplexityBot": true,
+      "Google-Extended": true
+    }
+  },
+  "pages": [
+    {
+      "page": {
+        "url": "https://cachedrop.io/de/",
+        "query_id": "q05",
+        "query_text": "Welcher Mac-Reiniger ist empfehlenswert, um Speicherplatz zurückzuholen?",
+        "audited_at": "2026-11-12T00:51:54.138Z",
+        "http_status": 200,
+        "error": null,
+        "checks": {
+          "title": "Mac-Reiniger: Speicherplatz freigeben, einmal zahlen | CacheDrop",
+          "meta_description": "CacheDrop findet die Caches, Reste und alten Dateien, die Ihren Mac füllen, und räumt sie sicher auf. Für Musikproduktion, Entwicklung und Videoschnitt.",
+          "h1": [
+            "Holen Sie sich den Speicherplatz Ihres Macs zurück."
+          ],
+          "canonical": "https://cachedrop.io/de/",
+          "canonical_is_self": true,
+          "json_ld_types": [
+            "Answer",
+            "FAQPage",
+            "Offer",
+            "Organization",
+            "Question",
+            "SoftwareApplication",
+            "UnitPriceSpecification"
+          ],
+          "internal_links": 16,
+          "word_count": 1088,
+          "html_lang": "de-DE",
+          "hreflang": [
+            {
+              "lang": "en",
+              "href": "https://cachedrop.io/"
+            },
+            {
+              "lang": "fr",
+              "href": "https://cachedrop.io/fr/"
+            },
+            {
+              "lang": "de",
+              "href": "https://cachedrop.io/de/"
+            },
+            {
+              "lang": "x-default",
+              "href": "https://cachedrop.io/"
+            }
+          ]
+        },
+        "answer": null
+      },
+      "competitors": [
+        {
+          "url": "https://www.macwelt.de/article/2115815/beste-mac-cleaner-programme.html",
+          "query_id": "q05",
+          "query_text": "Welcher Mac-Reiniger ist empfehlenswert, um Speicherplatz zurückzuholen?",
+          "audited_at": "2026-11-12T00:51:57.948Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "Die besten Mac-Cleaner 2026: Mehr Speed und Speicherplatz dank Aufräum-Tools – Macwelt",
+            "meta_description": "Mit Mac-Reinigungssoftware können Sie Ihren Mac beschleunigen, Speicherplatz zurückgewinnen und die Leistung verbessern. Wir stellen die besten Apps zum Reinigen Ihres Macs vor - einschließlich einiger kostenloser Mac-Reinigungsprogramme -, damit Sie Dateien sicher löschen und Ihren Mac aufräumen können.",
+            "h1": [
+              "Die besten Mac-Cleaner für 2026: Mehr Speed und Speicherplatz dank Aufräum-Tools"
+            ],
+            "canonical": "https://www.macwelt.de/article/2115815/beste-mac-cleaner-programme.html",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "Answer",
+              "Article",
+              "Brand",
+              "BreadcrumbList",
+              "FAQPage",
+              "ImageObject",
+              "ListItem",
+              "NewsArticle",
+              "Offer",
+              "Organization",
+              "Person",
+              "Product",
+              "Question",
+              "Rating",
+              "Review",
+              "WebPage"
+            ],
+            "internal_links": 71,
+            "word_count": 3539,
+            "html_lang": "de",
+            "hreflang": []
+          },
+          "answer": null
+        },
+        {
+          "url": "https://www.avast.com/de-de/c-best-cleaning-software-mac",
+          "query_id": "q05",
+          "query_text": "Welcher Mac-Reiniger ist empfehlenswert, um Speicherplatz zurückzuholen?",
+          "audited_at": "2026-11-12T00:51:59.657Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "Die beste Reinigungssoftware für den Mac 2026",
+            "meta_description": "Entdecken Sie die beste kostenlose und kostenpflichtige Reinigungs- und Optimierungssoftware für Mac mit der Sie Ihren Computer sicher beschleunigen können.",
+            "h1": [
+              "Die beste Reinigungssoftware für den Mac"
+            ],
+            "canonical": "https://www.avast.com/de-de/c-best-cleaning-software-mac",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "(invalid JSON-LD)",
+              "Article",
+              "ImageObject",
+              "Organization",
+              "Person"
+            ],
+            "internal_links": 91,
+            "word_count": 2560,
+            "html_lang": "de",
+            "hreflang": []
+          },
+          "answer": null
+        },
+        {
+          "url": "https://www.ccleaner.com/ccleaner-mac",
+          "query_id": "q05",
+          "query_text": "Welcher Mac-Reiniger ist empfehlenswert, um Speicherplatz zurückzuholen?",
+          "audited_at": "2026-11-12T00:52:00.709Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "Free Mac cleaner app | Clean your MacBook | CCleaner for Mac",
+            "meta_description": "Try CCleaner for Mac to clean up clutter and keep your browsing behavior private. Download the world's favorite Mac cleaning tool for free.",
+            "h1": [
+              "Clean up your Mac with CCleaner"
+            ],
+            "canonical": "https://www.ccleaner.com/ccleaner-mac",
+            "canonical_is_self": true,
+            "json_ld_types": [],
+            "internal_links": 52,
+            "word_count": 512,
+            "html_lang": "en",
+            "hreflang": [
+              {
+                "lang": "en-us",
+                "href": "https://www.ccleaner.com/ccleaner-mac"
+              },
+              {
+                "lang": "cs-cz",
+                "href": "https://www.ccleaner.com/cs-cz/ccleaner-mac"
+              },
+              {
+                "lang": "da-dk",
+                "href": "https://www.ccleaner.com/da-dk/ccleaner-mac"
+              },
+              {
+                "lang": "de-de",
+                "href": "https://www.ccleaner.com/de-de/ccleaner-mac"
+              },
+              {
+                "lang": "el-gr",
+                "href": "https://www.ccleaner.com/el-gr/ccleaner-mac"
+              },
+              {
+                "lang": "es-es",
+                "href": "https://www.ccleaner.com/es-es/ccleaner-mac"
+              },
+              {
+                "lang": "fr-fr",
+                "href": "https://www.ccleaner.com/fr-fr/ccleaner-mac"
+              },
+              {
+                "lang": "id-id",
+                "href": "https://www.ccleaner.com/id-id/ccleaner-mac"
+              },
+              {
+                "lang": "it-it",
+                "href": "https://www.ccleaner.com/it-it/ccleaner-mac"
+              },
+              {
+                "lang": "ja-jp",
+                "href": "https://www.ccleaner.com/ja-jp/ccleaner-mac"
+              },
+              {
+                "lang": "ko-kr",
+                "href": "https://www.ccleaner.com/ko-kr/ccleaner-mac"
+              },
+              {
+                "lang": "nb-no",
+                "href": "https://www.ccleaner.com/nb-no/ccleaner-mac"
+              },
+              {
+                "lang": "nl-nl",
+                "href": "https://www.ccleaner.com/nl-nl/ccleaner-mac"
+              },
+              {
+                "lang": "pl-pl",
+                "href": "https://www.ccleaner.com/pl-pl/ccleaner-mac"
+              },
+              {
+                "lang": "pt-br",
+                "href": "https://www.ccleaner.com/pt-br/ccleaner-mac"
+              },
+              {
+                "lang": "ru-ru",
+                "href": "https://www.ccleaner.com/ru-ru/ccleaner-mac"
+              },
+              {
+                "lang": "th-th",
+                "href": "https://www.ccleaner.com/th-th/ccleaner-mac"
+              },
+              {
+                "lang": "tr-tr",
+                "href": "https://www.ccleaner.com/tr-tr/ccleaner-mac"
+              },
+              {
+                "lang": "vi-vn",
+                "href": "https://www.ccleaner.com/vi-vn/ccleaner-mac"
+              },
+              {
+                "lang": "zh-cn",
+                "href": "https://www.ccleaner.com/zh-cn/ccleaner-mac"
+              },
+              {
+                "lang": "x-default",
+                "href": "https://www.ccleaner.com/ccleaner-mac"
+              }
+            ]
+          },
+          "answer": null
+        }
+      ],
+      "gaps": [
+        "title is 64 chars (search results cut at about 60)",
+        "JSON-LD types used by 2+ competitors but not here: Article",
+        "1088 words vs competitor median 2560"
+      ]
+    },
+    {
+      "page": {
+        "url": "https://cachedrop.io/de/pricing/",
+        "query_id": "q01",
+        "query_text": "CleanMyMac Abo oder Einmalkauf: was lohnt sich mehr für den Mac?",
+        "audited_at": "2026-11-12T00:52:00.903Z",
+        "http_status": 200,
+        "error": null,
+        "checks": {
+          "title": "CacheDrop Preise – 29,99 $ einmalig für bis zu 3 Macs",
+          "meta_description": "CacheDrop findet, was den Speicherplatz Ihres Macs füllt, und räumt es sicher auf. Eine Lizenz kostet 29,99 $ einmalig, jetzt 19,99 $ für begrenzte Zeit als Einmalkauf, gilt für bis zu 3 Macs und enthält alle Updates für Version 1 sowie 30 Tage Geld-zurück-Garantie. Kein Abo, nichts zu kündigen.",
+          "h1": [
+            "Einmal zahlen. Auf 3 Macs nutzen."
+          ],
+          "canonical": "https://cachedrop.io/de/pricing/",
+          "canonical_is_self": true,
+          "json_ld_types": [],
+          "internal_links": 16,
+          "word_count": 149,
+          "html_lang": "de-DE",
+          "hreflang": [
+            {
+              "lang": "en",
+              "href": "https://cachedrop.io/pricing/"
+            },
+            {
+              "lang": "fr",
+              "href": "https://cachedrop.io/fr/pricing/"
+            },
+            {
+              "lang": "de",
+              "href": "https://cachedrop.io/de/pricing/"
+            },
+            {
+              "lang": "x-default",
+              "href": "https://cachedrop.io/pricing/"
+            }
+          ]
+        },
+        "answer": null
+      },
+      "competitors": [
+        {
+          "url": "https://www.ifun.de/cleanmymac-5-grosses-update-fuer-beliebtes-wartungstool-241692/",
+          "query_id": "q01",
+          "query_text": "CleanMyMac Abo oder Einmalkauf: was lohnt sich mehr für den Mac?",
+          "audited_at": "2026-11-12T00:52:03.474Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "CleanMyMac 5: Großes Update für beliebtes Wartungstool | ifun.de",
+            "meta_description": "Hand aufs Herz: Selbst nutzen wir keine Systempflege-Werkzeuge wie den von MacPaw angebotenen Allrounder CleanMyMac, sondern behelfen uns bei Bedarf mit punktuellen Lösungen wie GrandPerspective, das TinkerTool, Deeper oder Onyx. Dies heißt aber nicht, dass wir den beliebte Aufräumhelfer nicht auf dem Radar haben: CleanMyMac ist heute in Ausgabe 5 erschienen. CleanMyMac dient der Wartung,",
+            "h1": [
+              "CleanMyMac 5: Großes Update für beliebtes Wartungstool"
+            ],
+            "canonical": "https://www.ifun.de/cleanmymac-5-grosses-update-fuer-beliebtes-wartungstool-241692/",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "BreadcrumbList",
+              "ImageObject",
+              "ListItem",
+              "NewsArticle",
+              "Organization",
+              "Person",
+              "WebPage",
+              "WebSite"
+            ],
+            "internal_links": 31,
+            "word_count": 3298,
+            "html_lang": "de",
+            "hreflang": []
+          },
+          "answer": null
+        },
+        {
+          "url": "https://www.maclife.de/news/cleanmymac-neues-design-stolperfallen-100124932.html",
+          "query_id": "q01",
+          "query_text": "CleanMyMac Abo oder Einmalkauf: was lohnt sich mehr für den Mac?",
+          "audited_at": "2026-11-12T00:52:04.435Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "CleanMyMac: Neues Design mit Stolperfallen? | Mac Life",
+            "meta_description": "CleanMyMac erhält ein neues Design und erweiterte Funktionen. Doch ist das Update wirklich ein Vorteil?",
+            "h1": [
+              "Redesign von CleanMyMac enthüllt: Gibt es versteckte Nachteile?"
+            ],
+            "canonical": "https://www.maclife.de/news/cleanmymac-neues-design-stolperfallen-100124932.html",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "ImageObject",
+              "NewsArticle",
+              "NewsMediaOrganization",
+              "Person",
+              "WebPage"
+            ],
+            "internal_links": 31,
+            "word_count": 480,
+            "html_lang": "de",
+            "hreflang": []
+          },
+          "answer": null
+        },
+        {
+          "url": "https://www.heise.de/download/specials/MacPaw-CleanMyMac-im-Test-Allumfassende-Mac-Systemreinigung-11340095",
+          "query_id": "q01",
+          "query_text": "CleanMyMac Abo oder Einmalkauf: was lohnt sich mehr für den Mac?",
+          "audited_at": "2026-11-12T00:52:05.273Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "MacPaw CleanMyMac im Test: Allumfassende Mac-Systemreinigung | heise Download",
+            "meta_description": "Speicher auf dem Mac ist oft knapp: Hier hilft es, von Zeit zu Zeit aufzuräumen und unnützen Datenmüll zu beseitigen. Das Tool CleanMyMac hilft dabei – und bietet eine ganze Reihe spannender Features, ist aber wie alle Cleaner mit Vorsicht zu genießen.",
+            "h1": [
+              "MacPaw CleanMyMac im Test: Allumfassende Mac-Systemreinigung"
+            ],
+            "canonical": "https://www.heise.de/download/specials/MacPaw-CleanMyMac-im-Test-Allumfassende-Mac-Systemreinigung-11340095",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "Organization"
+            ],
+            "internal_links": 15,
+            "word_count": 1695,
+            "html_lang": "de",
+            "hreflang": []
+          },
+          "answer": null
+        }
+      ],
+      "gaps": [
+        "meta description is 296 chars (cut at about 160)",
+        "JSON-LD types used by 2+ competitors but not here: NewsArticle",
+        "149 words vs competitor median 1695"
+      ]
+    },
+    {
+      "page": {
+        "url": "https://cachedrop.io/de/clear-mac-developer-caches/",
+        "query_id": "q15",
+        "query_text": "Bester Mac Cleaner für Entwickler, wenn Xcode zu viel Speicher belegt?",
+        "audited_at": "2026-11-12T00:52:05.519Z",
+        "http_status": 200,
+        "error": null,
+        "checks": {
+          "title": "Xcode DerivedData löschen, node_modules und Docker-Cache leeren",
+          "meta_description": "Xcode DerivedData löschen, alte node_modules-Ordner und Docker-Caches auf dem Mac leeren: die Terminal-Schritte von Hand, dazu ein Mac-Reiniger für die Entwicklung, der es sicher erledigt.",
+          "h1": [
+            "Xcode DerivedData, node_modules und Docker-Caches auf dem Mac löschen"
+          ],
+          "canonical": "https://cachedrop.io/de/clear-mac-developer-caches/",
+          "canonical_is_self": true,
+          "json_ld_types": [
+            "Answer",
+            "Article",
+            "BreadcrumbList",
+            "FAQPage",
+            "ListItem",
+            "Organization",
+            "Question"
+          ],
+          "internal_links": 15,
+          "word_count": 735,
+          "html_lang": "de-DE",
+          "hreflang": [
+            {
+              "lang": "en",
+              "href": "https://cachedrop.io/clear-mac-developer-caches/"
+            },
+            {
+              "lang": "fr",
+              "href": "https://cachedrop.io/fr/clear-mac-developer-caches/"
+            },
+            {
+              "lang": "de",
+              "href": "https://cachedrop.io/de/clear-mac-developer-caches/"
+            },
+            {
+              "lang": "x-default",
+              "href": "https://cachedrop.io/clear-mac-developer-caches/"
+            }
+          ]
+        },
+        "answer": null
+      },
+      "competitors": [
+        {
+          "url": "https://www.tsjdev-apps.de/devcleaner-xcode-mit-wenigen-mausklicks-bereinigen/",
+          "query_id": "q15",
+          "query_text": "Bester Mac Cleaner für Entwickler, wenn Xcode zu viel Speicher belegt?",
+          "audited_at": "2026-11-12T00:52:07.123Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "DevCleaner: Xcode mit wenigen Mausklicks bereinigen",
+            "meta_description": "Gib Speicherplatz auf dem Mac frei, indem du Xcode-Daten mit DevCleaner bereinigst. Der Beitrag stellt das Werkzeug für die wiederkehrende Aufgabe vor.",
+            "h1": [
+              "DevCleaner: Xcode mit wenigen Mausklicks bereinigen"
+            ],
+            "canonical": "https://www.tsjdev-apps.de/devcleaner-xcode-mit-wenigen-mausklicks-bereinigen/",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "BlogPosting",
+              "BreadcrumbList",
+              "ImageObject",
+              "ListItem",
+              "Person",
+              "SearchAction",
+              "WebSite"
+            ],
+            "internal_links": 19,
+            "word_count": 415,
+            "html_lang": "de-de",
+            "hreflang": []
+          },
+          "answer": null
+        },
+        {
+          "url": "https://apps.apple.com/de/app/devcleaner-for-xcode/id1388020431?mt=12",
+          "query_id": "q15",
+          "query_text": "Bester Mac Cleaner für Entwickler, wenn Xcode zu viel Speicher belegt?",
+          "audited_at": "2026-11-12T00:52:07.729Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "‎DevCleaner for Xcode‑App – App Store",
+            "meta_description": "Lade „DevCleaner for Xcode“ von One Minute Games im App Store herunter. Sieh dir Bildschirmfotos, Bewertungen und Rezensionen, Benutzertipps und weitere Apps…",
+            "h1": [
+              "DevCleaner for Xcode",
+              "Perfekt",
+              "Endlich wieder Platz!",
+              "Schnell und zuverlässig",
+              "Macht genau was es verspricht!",
+              "Versionsverlauf",
+              "App-Datenschutz"
+            ],
+            "canonical": "https://apps.apple.com/de/app/devcleaner-for-xcode/id1388020431",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "BreadcrumbList",
+              "ListItem",
+              "Offer",
+              "Organization",
+              "SoftwareApplication"
+            ],
+            "internal_links": 196,
+            "word_count": 338,
+            "html_lang": "de-DE",
+            "hreflang": []
+          },
+          "answer": null
+        },
+        {
+          "url": "https://www.macwelt.de/article/2115815/beste-mac-cleaner-programme.html",
+          "query_id": "q15",
+          "query_text": "Bester Mac Cleaner für Entwickler, wenn Xcode zu viel Speicher belegt?",
+          "audited_at": "2026-11-12T00:52:08.990Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "Die besten Mac-Cleaner 2026: Mehr Speed und Speicherplatz dank Aufräum-Tools – Macwelt",
+            "meta_description": "Mit Mac-Reinigungssoftware können Sie Ihren Mac beschleunigen, Speicherplatz zurückgewinnen und die Leistung verbessern. Wir stellen die besten Apps zum Reinigen Ihres Macs vor - einschließlich einiger kostenloser Mac-Reinigungsprogramme -, damit Sie Dateien sicher löschen und Ihren Mac aufräumen können.",
+            "h1": [
+              "Die besten Mac-Cleaner für 2026: Mehr Speed und Speicherplatz dank Aufräum-Tools"
+            ],
+            "canonical": "https://www.macwelt.de/article/2115815/beste-mac-cleaner-programme.html",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "Answer",
+              "Article",
+              "Brand",
+              "BreadcrumbList",
+              "FAQPage",
+              "ImageObject",
+              "ListItem",
+              "NewsArticle",
+              "Offer",
+              "Organization",
+              "Person",
+              "Product",
+              "Question",
+              "Rating",
+              "Review",
+              "WebPage"
+            ],
+            "internal_links": 71,
+            "word_count": 3539,
+            "html_lang": "de",
+            "hreflang": []
+          },
+          "answer": null
+        }
+      ],
+      "gaps": [
+        "title is 63 chars (search results cut at about 60)",
+        "meta description is 188 chars (cut at about 160)",
+        "JSON-LD types used by 2+ competitors but not here: Offer"
+      ]
+    },
+    {
+      "page": {
+        "url": "https://cachedrop.io/de/clear-adobe-media-cache-mac/",
+        "query_id": "q04",
+        "query_text": "Wie lösche ich den Medien-Cache von Premiere Pro auf dem Mac?",
+        "audited_at": "2026-11-12T00:52:09.210Z",
+        "http_status": 200,
+        "error": null,
+        "checks": {
+          "title": "Adobe-Cache auf dem Mac leeren (Premiere Pro & Final Cut Pro)",
+          "meta_description": "So löschen Sie den Medien-Cache von Premiere Pro und die Render-Dateien von Final Cut Pro auf dem Mac, Schritt für Schritt – dazu ein Tool, das den Adobe-Cache aller Versionen auf einmal leert.",
+          "h1": [
+            "So leeren Sie den Adobe-Medien-Cache auf dem Mac"
+          ],
+          "canonical": "https://cachedrop.io/de/clear-adobe-media-cache-mac/",
+          "canonical_is_self": true,
+          "json_ld_types": [
+            "Answer",
+            "Article",
+            "BreadcrumbList",
+            "FAQPage",
+            "ListItem",
+            "Organization",
+            "Question"
+          ],
+          "internal_links": 15,
+          "word_count": 601,
+          "html_lang": "de-DE",
+          "hreflang": [
+            {
+              "lang": "en",
+              "href": "https://cachedrop.io/clear-adobe-media-cache-mac/"
+            },
+            {
+              "lang": "fr",
+              "href": "https://cachedrop.io/fr/clear-adobe-media-cache-mac/"
+            },
+            {
+              "lang": "de",
+              "href": "https://cachedrop.io/de/clear-adobe-media-cache-mac/"
+            },
+            {
+              "lang": "x-default",
+              "href": "https://cachedrop.io/clear-adobe-media-cache-mac/"
+            }
+          ]
+        },
+        "answer": null
+      },
+      "competitors": [
+        {
+          "url": "https://macpaw.com/de/how-to/clear-adobe-cache",
+          "query_id": "q04",
+          "query_text": "Wie lösche ich den Medien-Cache von Premiere Pro auf dem Mac?",
+          "audited_at": "2026-11-12T00:52:11.206Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "Adobe-Cache löschen: manuelle und automatische Methode",
+            "meta_description": "Adobe-Apps belegen mitunter mehr Speicherplatz als erforderlich. Erfahren Sie, wie Sie den Adobe-Cache auf Mac löschen können, um Speicher freizugeben.",
+            "h1": [
+              "So löschen Sie den Adobe-Cache auf Ihrem Mac"
+            ],
+            "canonical": "https://macpaw.com/de/how-to/clear-adobe-cache",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "Article",
+              "BreadcrumbList",
+              "ImageObject",
+              "ListItem",
+              "Organization",
+              "Person",
+              "WebPage"
+            ],
+            "internal_links": 57,
+            "word_count": 876,
+            "html_lang": "de",
+            "hreflang": [
+              {
+                "lang": "en",
+                "href": "https://macpaw.com/how-to/clear-adobe-cache"
+              },
+              {
+                "lang": "de",
+                "href": "https://macpaw.com/de/how-to/clear-adobe-cache"
+              },
+              {
+                "lang": "es",
+                "href": "https://macpaw.com/es/how-to/clear-adobe-cache"
+              },
+              {
+                "lang": "fr",
+                "href": "https://macpaw.com/fr/how-to/clear-adobe-cache"
+              },
+              {
+                "lang": "it",
+                "href": "https://macpaw.com/it/how-to/clear-adobe-cache"
+              },
+              {
+                "lang": "nl",
+                "href": "https://macpaw.com/nl/how-to/clear-adobe-cache"
+              },
+              {
+                "lang": "ja",
+                "href": "https://macpaw.com/ja/how-to/clear-adobe-cache"
+              },
+              {
+                "lang": "x-default",
+                "href": "https://macpaw.com/how-to/clear-adobe-cache"
+              }
+            ]
+          },
+          "answer": null
+        },
+        {
+          "url": "https://adobebasics.com/de/blogs/news/clear-cache-premiere-pro",
+          "query_id": "q04",
+          "query_text": "Wie lösche ich den Medien-Cache von Premiere Pro auf dem Mac?",
+          "audited_at": "2026-11-12T00:52:11.614Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "Cache leeren in Premiere Pro: Speicherplatz freigeben – Adobe Basics",
+            "meta_description": "So leerst du den Cache in Premiere Pro: Alle Media-Cache-Dateien in den Preferences löschen und in einer Minute Gigabytes an Speicherplatz freigeben.",
+            "h1": [
+              "So leerst du den Cache in Premiere Pro"
+            ],
+            "canonical": "https://adobebasics.com/de/blogs/news/clear-cache-premiere-pro",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "BlogPosting",
+              "BreadcrumbList",
+              "ContactPoint",
+              "ImageObject",
+              "ListItem",
+              "Organization",
+              "PostalAddress",
+              "WebPage"
+            ],
+            "internal_links": 43,
+            "word_count": 639,
+            "html_lang": "de",
+            "hreflang": [
+              {
+                "lang": "x-default",
+                "href": "https://adobebasics.com/blogs/news/clear-cache-premiere-pro"
+              },
+              {
+                "lang": "en",
+                "href": "https://adobebasics.com/blogs/news/clear-cache-premiere-pro"
+              },
+              {
+                "lang": "de",
+                "href": "https://adobebasics.com/de/blogs/news/clear-cache-premiere-pro"
+              },
+              {
+                "lang": "es",
+                "href": "https://adobebasics.com/es/blogs/news/clear-cache-premiere-pro"
+              },
+              {
+                "lang": "fr",
+                "href": "https://adobebasics.com/fr/blogs/news/clear-cache-premiere-pro"
+              },
+              {
+                "lang": "ja",
+                "href": "https://adobebasics.com/ja/blogs/news/clear-cache-premiere-pro"
+              },
+              {
+                "lang": "ar",
+                "href": "https://adobebasics.com/ar/blogs/news/clear-cache-premiere-pro"
+              },
+              {
+                "lang": "nl",
+                "href": "https://adobebasics.com/nl/blogs/news/clear-cache-premiere-pro"
+              },
+              {
+                "lang": "it",
+                "href": "https://adobebasics.com/it/blogs/news/clear-cache-premiere-pro"
+              },
+              {
+                "lang": "ko",
+                "href": "https://adobebasics.com/ko/blogs/news/clear-cache-premiere-pro"
+              },
+              {
+                "lang": "no",
+                "href": "https://adobebasics.com/no/blogs/news/clear-cache-premiere-pro"
+              },
+              {
+                "lang": "pl",
+                "href": "https://adobebasics.com/pl/blogs/news/clear-cache-premiere-pro"
+              },
+              {
+                "lang": "pt",
+                "href": "https://adobebasics.com/pt/blogs/news/clear-cache-premiere-pro"
+              },
+              {
+                "lang": "sv",
+                "href": "https://adobebasics.com/sv/blogs/news/clear-cache-premiere-pro"
+              },
+              {
+                "lang": "hi",
+                "href": "https://adobebasics.com/hi/blogs/news/clear-cache-premiere-pro"
+              },
+              {
+                "lang": "vi",
+                "href": "https://adobebasics.com/vi/blogs/news/clear-cache-premiere-pro"
+              },
+              {
+                "lang": "zh-Hant",
+                "href": "https://adobebasics.com/zh/blogs/news/clear-cache-premiere-pro"
+              },
+              {
+                "lang": "tr",
+                "href": "https://adobebasics.com/tr/blogs/news/clear-cache-premiere-pro"
+              },
+              {
+                "lang": "id",
+                "href": "https://adobebasics.com/id/blogs/news/clear-cache-premiere-pro"
+              },
+              {
+                "lang": "da",
+                "href": "https://adobebasics.com/da/blogs/news/clear-cache-premiere-pro"
+              },
+              {
+                "lang": "fi",
+                "href": "https://adobebasics.com/fi/blogs/news/clear-cache-premiere-pro"
+              }
+            ]
+          },
+          "answer": null
+        },
+        {
+          "url": "https://mole.fit/de/blog/premiere-pro-media-cache-mac",
+          "query_id": "q04",
+          "query_text": "Wie lösche ich den Medien-Cache von Premiere Pro auf dem Mac?",
+          "audited_at": "2026-11-12T00:52:11.927Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "Premiere Pro am Mac: Medien-Cache leeren und begrenzen · Mole",
+            "meta_description": "Aktiven Medien-Cache finden, ungenutzte Dateien entfernen und Neuaufbau prüfen, ohne Projekte, Quellmaterial oder Proxys mit Cache gleichzusetzen.",
+            "h1": [
+              "Premiere Pro am Mac: Medien-Cache leeren und begrenzen"
+            ],
+            "canonical": "https://mole.fit/de/blog/premiere-pro-media-cache-mac",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "Answer",
+              "BlogPosting",
+              "BreadcrumbList",
+              "ContactPoint",
+              "FAQPage",
+              "ImageObject",
+              "ListItem",
+              "Organization",
+              "Person",
+              "Question",
+              "WebPage",
+              "WebSite"
+            ],
+            "internal_links": 34,
+            "word_count": 826,
+            "html_lang": "de",
+            "hreflang": [
+              {
+                "lang": "en",
+                "href": "https://mole.fit/blog/premiere-pro-media-cache-mac"
+              },
+              {
+                "lang": "zh-CN",
+                "href": "https://mole.fit/zh/blog/premiere-pro-media-cache-mac"
+              },
+              {
+                "lang": "zh-Hans",
+                "href": "https://mole.fit/zh/blog/premiere-pro-media-cache-mac"
+              },
+              {
+                "lang": "zh-Hant",
+                "href": "https://mole.fit/tw/blog/premiere-pro-media-cache-mac"
+              },
+              {
+                "lang": "ja",
+                "href": "https://mole.fit/ja/blog/premiere-pro-media-cache-mac"
+              },
+              {
+                "lang": "ko",
+                "href": "https://mole.fit/ko/blog/premiere-pro-media-cache-mac"
+              },
+              {
+                "lang": "fr",
+                "href": "https://mole.fit/fr/blog/premiere-pro-media-cache-mac"
+              },
+              {
+                "lang": "de",
+                "href": "https://mole.fit/de/blog/premiere-pro-media-cache-mac"
+              },
+              {
+                "lang": "it",
+                "href": "https://mole.fit/it/blog/premiere-pro-media-cache-mac"
+              },
+              {
+                "lang": "es",
+                "href": "https://mole.fit/es/blog/premiere-pro-media-cache-mac"
+              },
+              {
+                "lang": "pt-BR",
+                "href": "https://mole.fit/pt-br/blog/premiere-pro-media-cache-mac"
+              },
+              {
+                "lang": "nl",
+                "href": "https://mole.fit/nl/blog/premiere-pro-media-cache-mac"
+              },
+              {
+                "lang": "x-default",
+                "href": "https://mole.fit/blog/premiere-pro-media-cache-mac"
+              }
+            ]
+          },
+          "answer": null
+        }
+      ],
+      "gaps": [
+        "title is 61 chars (search results cut at about 60)",
+        "meta description is 193 chars (cut at about 160)",
+        "JSON-LD types used by 2+ competitors but not here: BlogPosting, ContactPoint"
+      ]
+    },
+    {
+      "page": {
+        "url": "https://cachedrop.io/de/uninstall-audio-plugins-mac/",
+        "query_id": "q06",
+        "query_text": "Wie deinstalliere ich VST-Plug-ins auf dem Mac vollständig?",
+        "audited_at": "2026-11-12T00:52:12.142Z",
+        "http_status": 200,
+        "error": null,
+        "checks": {
+          "title": "Audio-Plug-ins auf dem Mac deinstallieren (VST, AU, AAX, CLAP)",
+          "meta_description": "VST-, VST3-, AU-, AAX- und CLAP-Plug-ins auf dem Mac deinstallieren, mit allen Dateien, die sie angelegt haben. Dazu: wo Plug-ins liegen und wie Sie den Cache von Ableton Live leeren, ohne Ihre Lizenzen anzutasten.",
+          "h1": [
+            "Audio-Plug-ins auf dem Mac deinstallieren – samt aller Dateien, die sie hinterlassen."
+          ],
+          "canonical": "https://cachedrop.io/de/uninstall-audio-plugins-mac/",
+          "canonical_is_self": true,
+          "json_ld_types": [
+            "Answer",
+            "Article",
+            "BreadcrumbList",
+            "FAQPage",
+            "HowTo",
+            "HowToStep",
+            "ListItem",
+            "Organization",
+            "Question"
+          ],
+          "internal_links": 15,
+          "word_count": 1215,
+          "html_lang": "de-DE",
+          "hreflang": [
+            {
+              "lang": "en",
+              "href": "https://cachedrop.io/uninstall-audio-plugins-mac/"
+            },
+            {
+              "lang": "fr",
+              "href": "https://cachedrop.io/fr/uninstall-audio-plugins-mac/"
+            },
+            {
+              "lang": "de",
+              "href": "https://cachedrop.io/de/uninstall-audio-plugins-mac/"
+            },
+            {
+              "lang": "x-default",
+              "href": "https://cachedrop.io/uninstall-audio-plugins-mac/"
+            }
+          ]
+        },
+        "answer": null
+      },
+      "competitors": [
+        {
+          "url": "https://forums.steinberg.net/t/plugin-von-plugin-vst-manger-loschen-entfernen/993981",
+          "query_id": "q06",
+          "query_text": "Wie deinstalliere ich VST-Plug-ins auf dem Mac vollständig?",
+          "audited_at": "2026-11-12T00:52:13.964Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "Plugin von Plugin VST Manger löschen / Entfernen - Cubase - Steinberg Forums",
+            "meta_description": "ich habe den Plagin auf Mac komplett gelöscht , Cubase sogar nach dem “RESCAN ALL” In plugin VST Manager zeigt trotzdem Plugin. Wie löscht man Plugin beim Manager?",
+            "h1": [
+              "Plugin von Plugin VST Manger löschen / Entfernen"
+            ],
+            "canonical": "https://forums.steinberg.net/t/plugin-von-plugin-vst-manger-loschen-entfernen/993981",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "Answer",
+              "Person",
+              "QAPage",
+              "Question"
+            ],
+            "internal_links": 7,
+            "word_count": 207,
+            "html_lang": "en",
+            "hreflang": []
+          },
+          "answer": null
+        },
+        {
+          "url": "https://www.macuser.de/threads/plugin-lasst-sich-nicht-vollstandig-deinstallieren.874529/",
+          "query_id": "q06",
+          "query_text": "Wie deinstalliere ich VST-Plug-ins auf dem Mac vollständig?",
+          "audited_at": "2026-11-12T00:52:15.009Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "Plugin lässt sich nicht vollständig deinstallieren | MacUser Community",
+            "meta_description": "Hallo, beim speichern eines Presets eines plugins hat sich das Programm aufgehangen. Nach ca. 10 Minuten habe ich das Macbook runtergefahren. Als ich nach...",
+            "h1": [
+              "Plugin lässt sich nicht vollständig deinstallieren"
+            ],
+            "canonical": "https://www.macuser.de/threads/plugin-lasst-sich-nicht-vollstandig-deinstallieren.874529/",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "DiscussionForumPosting",
+              "InteractionCounter",
+              "Organization",
+              "Person",
+              "WebPage"
+            ],
+            "internal_links": 66,
+            "word_count": 176,
+            "html_lang": "de-DE",
+            "hreflang": []
+          },
+          "answer": null
+        },
+        {
+          "url": "https://www.logicuser.de/forum/viewtopic.php?t=40352",
+          "query_id": "q06",
+          "query_text": "Wie deinstalliere ich VST-Plug-ins auf dem Mac vollständig?",
+          "audited_at": "2026-11-12T00:52:15.702Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "Plug-Ins restlos vom Mac löschen - logicuser.de",
+            "meta_description": null,
+            "h1": [],
+            "canonical": "https://www.logicuser.de/forum/viewtopic.php?t=40352",
+            "canonical_is_self": true,
+            "json_ld_types": [],
+            "internal_links": 9,
+            "word_count": 1177,
+            "html_lang": "de",
+            "hreflang": []
+          },
+          "answer": null
+        }
+      ],
+      "gaps": [
+        "title is 62 chars (search results cut at about 60)",
+        "meta description is 214 chars (cut at about 160)"
+      ]
+    },
+    {
+      "page": {
+        "url": "https://cachedrop.io/de/clear-system-data-mac/",
+        "query_id": "q17",
+        "query_text": "Wie lösche ich Systemdaten auf dem Mac, ohne etwas kaputt zu machen?",
+        "audited_at": "2026-11-12T00:52:15.905Z",
+        "http_status": 200,
+        "error": null,
+        "checks": {
+          "title": "Systemdaten auf dem Mac löschen (und warum sie so groß sind)",
+          "meta_description": "Was die Systemdaten auf dem Mac sind, warum sie so groß werden und was sich bedenkenlos löschen lässt: Caches, Protokolle, Dateien aus der Entwicklung und lokale Time-Machine-Snapshots, mit Terminal-Befehlen und Risiken.",
+          "h1": [
+            "Systemdaten auf dem Mac löschen"
+          ],
+          "canonical": "https://cachedrop.io/de/clear-system-data-mac/",
+          "canonical_is_self": true,
+          "json_ld_types": [
+            "Answer",
+            "Article",
+            "BreadcrumbList",
+            "FAQPage",
+            "HowTo",
+            "HowToStep",
+            "ListItem",
+            "Organization",
+            "Question"
+          ],
+          "internal_links": 15,
+          "word_count": 1617,
+          "html_lang": "de-DE",
+          "hreflang": [
+            {
+              "lang": "en",
+              "href": "https://cachedrop.io/clear-system-data-mac/"
+            },
+            {
+              "lang": "fr",
+              "href": "https://cachedrop.io/fr/clear-system-data-mac/"
+            },
+            {
+              "lang": "de",
+              "href": "https://cachedrop.io/de/clear-system-data-mac/"
+            },
+            {
+              "lang": "x-default",
+              "href": "https://cachedrop.io/clear-system-data-mac/"
+            }
+          ]
+        },
+        "answer": null
+      },
+      "competitors": [
+        {
+          "url": "https://setapp.com/de/so-gehts/mac-systemdaten-bereinigen",
+          "query_id": "q17",
+          "query_text": "Wie lösche ich Systemdaten auf dem Mac, ohne etwas kaputt zu machen?",
+          "audited_at": "2026-11-12T00:52:17.494Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "Mac Systemdaten bereinigen: Mac-Speicher freigeben 2026",
+            "meta_description": "Mac Systemdaten bereinigen: Cache, Logs und Backups sicher löschen und auf dem Mac schnell Speicher freigeben.",
+            "h1": [
+              "Mac Systemdaten bereinigen: Was Systemdaten sind und wie Sie sie einfach reduzieren"
+            ],
+            "canonical": "https://setapp.com/de/so-gehts/mac-systemdaten-bereinigen",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "Article",
+              "ImageObject",
+              "Organization",
+              "Person",
+              "WebPage"
+            ],
+            "internal_links": 64,
+            "word_count": 2706,
+            "html_lang": "de",
+            "hreflang": [
+              {
+                "lang": "x-default",
+                "href": "https://setapp.com/how-to/macos-system-data-large"
+              },
+              {
+                "lang": "en",
+                "href": "https://setapp.com/how-to/macos-system-data-large"
+              },
+              {
+                "lang": "es",
+                "href": "https://setapp.com/es/tutoriales/datos-sistema-mac-reducirlos"
+              },
+              {
+                "lang": "de",
+                "href": "https://setapp.com/de/so-gehts/mac-systemdaten-bereinigen"
+              },
+              {
+                "lang": "fr",
+                "href": "https://setapp.com/fr/didacticiels/donnees-systeme-mac-reduire-facilement"
+              },
+              {
+                "lang": "pt-BR",
+                "href": "https://setapp.com/pt-br/tutoriais/o-que-sao-dados-sistema-mac-como-reduzi-los"
+              }
+            ]
+          },
+          "answer": null
+        },
+        {
+          "url": "https://www.macwelt.de/article/3006935/systemdaten-am-mac-loschen-so-gehts.html",
+          "query_id": "q17",
+          "query_text": "Wie lösche ich Systemdaten auf dem Mac, ohne etwas kaputt zu machen?",
+          "audited_at": "2026-11-12T00:52:18.203Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "„Systemdaten“ am Mac löschen – so geht’s – Macwelt",
+            "meta_description": "Schon wieder ist der Mac so voll, dass Sie nichts mehr installieren können? Was wir Ihnen raten, um überflüssige Daten los zu werden und Platz zu schaffen.",
+            "h1": [
+              "„Systemdaten“ am Mac löschen – so geht’s"
+            ],
+            "canonical": "https://www.macwelt.de/article/3006935/systemdaten-am-mac-loschen-so-gehts.html",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "Article",
+              "BreadcrumbList",
+              "ImageObject",
+              "ListItem",
+              "NewsArticle",
+              "Organization",
+              "Person",
+              "WebPage"
+            ],
+            "internal_links": 64,
+            "word_count": 1582,
+            "html_lang": "de",
+            "hreflang": []
+          },
+          "answer": null
+        },
+        {
+          "url": "https://www.pcffm.de/macos-zeigt-riesige-systemdaten-was-steckt-dahinter-und-wie-laesst-sich-speicherplatz-gefahrlos-freigeben/",
+          "query_id": "q17",
+          "query_text": "Wie lösche ich Systemdaten auf dem Mac, ohne etwas kaputt zu machen?",
+          "audited_at": "2026-11-12T00:52:20.307Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "macOS zeigt riesige „Systemdaten“: Was steckt dahinter und wie lässt sich Speicherplatz gefahrlos freigeben?",
+            "meta_description": "Wenn macOS unter „Systemdaten“ plötzlich zweistellige oder sogar dreistellige Gigabyte-Werte anzeigt, wirkt der Speicherverbrauch oft wie ein Blackbox-Problem: Dateien lassen sich nicht zuordnen, Finder-Größen passen nicht zu den Angaben in den Systemeinstellungen, und freier Speicher scheint „zu verschwinden“.",
+            "h1": [
+              "macOS zeigt riesige „Systemdaten“: Was steckt dahinter und wie lässt sich Speicherplatz gefahrlos freigeben?"
+            ],
+            "canonical": "https://www.pcffm.de/macos-zeigt-riesige-systemdaten-was-steckt-dahinter-und-wie-laesst-sich-speicherplatz-gefahrlos-freigeben/",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "AggregateRating",
+              "Book",
+              "Organization",
+              "PostalAddress"
+            ],
+            "internal_links": 82,
+            "word_count": 4769,
+            "html_lang": "de",
+            "hreflang": []
+          },
+          "answer": null
+        }
+      ],
+      "gaps": [
+        "meta description is 220 chars (cut at about 160)"
+      ]
+    },
+    {
+      "page": {
+        "url": "https://cachedrop.io/de/uninstall-apps-mac/",
+        "query_id": "q21",
+        "query_text": "Wie deinstalliere ich eine App auf dem Mac komplett inklusive aller Reste?",
+        "audited_at": "2026-11-12T00:52:20.567Z",
+        "http_status": 200,
+        "error": null,
+        "checks": {
+          "title": "App deinstallieren auf dem Mac: komplett, mit allen Resten",
+          "meta_description": "Wer eine App in den Papierkorb zieht, lässt Einstellungen, Caches und Daten zurück. So finden Sie App-Reste auf dem Mac, entfernen sie von Hand oder deinstallieren Apps samt aller Dateien.",
+          "h1": [
+            "App auf dem Mac komplett deinstallieren – inklusive aller Reste"
+          ],
+          "canonical": "https://cachedrop.io/de/uninstall-apps-mac/",
+          "canonical_is_self": true,
+          "json_ld_types": [
+            "Answer",
+            "Article",
+            "BreadcrumbList",
+            "FAQPage",
+            "HowTo",
+            "HowToStep",
+            "ListItem",
+            "Organization",
+            "Question"
+          ],
+          "internal_links": 15,
+          "word_count": 1411,
+          "html_lang": "de-DE",
+          "hreflang": [
+            {
+              "lang": "en",
+              "href": "https://cachedrop.io/uninstall-apps-mac/"
+            },
+            {
+              "lang": "fr",
+              "href": "https://cachedrop.io/fr/uninstall-apps-mac/"
+            },
+            {
+              "lang": "de",
+              "href": "https://cachedrop.io/de/uninstall-apps-mac/"
+            },
+            {
+              "lang": "x-default",
+              "href": "https://cachedrop.io/uninstall-apps-mac/"
+            }
+          ]
+        },
+        "answer": null
+      },
+      "competitors": [
+        {
+          "url": "https://nektony.com/de/how-to/uninstall-apps-on-mac",
+          "query_id": "q21",
+          "query_text": "Wie deinstalliere ich eine App auf dem Mac komplett inklusive aller Reste?",
+          "audited_at": "2026-11-12T00:52:22.212Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "Apps auf dem Mac vollständig deinstallieren: 6 Wege im Jahr 2026",
+            "meta_description": "Beim Ziehen in den Papierkorb bleiben Dateien zurück. 6 Wege, Apps auf dem Mac vollständig zu deinstallieren: App Cleaner, Finder, Launchpad, Terminal und mehr.",
+            "h1": [
+              "Apps auf dem Mac deinstallieren: Der Leitfaden mit 6 richtigen Wegen im Jahr 2026"
+            ],
+            "canonical": "https://nektony.com/de/how-to/uninstall-apps-on-mac",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "Answer",
+              "Article",
+              "BreadcrumbList",
+              "FAQPage",
+              "ImageObject",
+              "ListItem",
+              "Organization",
+              "Person",
+              "Question",
+              "WebPage",
+              "WebSite"
+            ],
+            "internal_links": 53,
+            "word_count": 3861,
+            "html_lang": "de-DE",
+            "hreflang": [
+              {
+                "lang": "en",
+                "href": "https://nektony.com/how-to/uninstall-apps-on-mac"
+              },
+              {
+                "lang": "de",
+                "href": "https://nektony.com/de/how-to/uninstall-apps-on-mac"
+              },
+              {
+                "lang": "ru",
+                "href": "https://nektony.com/ru/how-to/uninstall-apps-on-mac"
+              },
+              {
+                "lang": "zh-hans",
+                "href": "https://nektony.com/zh-hans/how-to/uninstall-apps-on-mac"
+              },
+              {
+                "lang": "es",
+                "href": "https://nektony.com/es/how-to/uninstall-apps-on-mac"
+              },
+              {
+                "lang": "fr",
+                "href": "https://nektony.com/fr/how-to/uninstall-apps-on-mac"
+              },
+              {
+                "lang": "pt-br",
+                "href": "https://nektony.com/pt-br/how-to/uninstall-apps-on-mac"
+              },
+              {
+                "lang": "uk",
+                "href": "https://nektony.com/uk/how-to/uninstall-apps-on-mac"
+              },
+              {
+                "lang": "it",
+                "href": "https://nektony.com/it/how-to/uninstall-apps-on-mac"
+              },
+              {
+                "lang": "cs",
+                "href": "https://nektony.com/cs/how-to/uninstall-apps-on-mac"
+              },
+              {
+                "lang": "nl",
+                "href": "https://nektony.com/nl/how-to/uninstall-apps-on-mac"
+              },
+              {
+                "lang": "ja",
+                "href": "https://nektony.com/ja/how-to/uninstall-apps-on-mac"
+              },
+              {
+                "lang": "no",
+                "href": "https://nektony.com/no/how-to/uninstall-apps-on-mac"
+              },
+              {
+                "lang": "pl",
+                "href": "https://nektony.com/pl/how-to/uninstall-apps-on-mac"
+              },
+              {
+                "lang": "sv",
+                "href": "https://nektony.com/sv/how-to/uninstall-apps-on-mac"
+              },
+              {
+                "lang": "x-default",
+                "href": "https://nektony.com/how-to/uninstall-apps-on-mac"
+              }
+            ]
+          },
+          "answer": null
+        },
+        {
+          "url": "https://macpaw.com/de/how-to/uninstall-apps-on-mac",
+          "query_id": "q21",
+          "query_text": "Wie deinstalliere ich eine App auf dem Mac komplett inklusive aller Reste?",
+          "audited_at": "2026-11-12T00:52:22.684Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "Mac-Apps deinstallieren und Programmreste entfernen",
+            "meta_description": "Wenn Sie Apps in den Papierkorb legen, bleiben Programmreste auf Ihrem Mac zurück. Erfahren Sie, wie Sie Mac-Apps samt aller versteckten Dateireste löschen.",
+            "h1": [
+              "Mac-Apps deinstallieren und Speicherplatz freigeben: umfassende Anleitung [2026]"
+            ],
+            "canonical": "https://macpaw.com/de/how-to/uninstall-apps-on-mac",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "Answer",
+              "Article",
+              "BreadcrumbList",
+              "FAQPage",
+              "ImageObject",
+              "ListItem",
+              "Organization",
+              "Person",
+              "Question",
+              "WebPage"
+            ],
+            "internal_links": 67,
+            "word_count": 3144,
+            "html_lang": "de",
+            "hreflang": [
+              {
+                "lang": "en",
+                "href": "https://macpaw.com/how-to/uninstall-apps-on-mac"
+              },
+              {
+                "lang": "de",
+                "href": "https://macpaw.com/de/how-to/uninstall-apps-on-mac"
+              },
+              {
+                "lang": "es",
+                "href": "https://macpaw.com/es/how-to/uninstall-apps-on-mac"
+              },
+              {
+                "lang": "fr",
+                "href": "https://macpaw.com/fr/how-to/uninstall-apps-on-mac"
+              },
+              {
+                "lang": "uk",
+                "href": "https://macpaw.com/uk/how-to/uninstall-apps-on-mac"
+              },
+              {
+                "lang": "it",
+                "href": "https://macpaw.com/it/how-to/uninstall-apps-on-mac"
+              },
+              {
+                "lang": "pl",
+                "href": "https://macpaw.com/pl/how-to/uninstall-apps-on-mac"
+              },
+              {
+                "lang": "pt",
+                "href": "https://macpaw.com/pt/how-to/uninstall-apps-on-mac"
+              },
+              {
+                "lang": "nl",
+                "href": "https://macpaw.com/nl/how-to/uninstall-apps-on-mac"
+              },
+              {
+                "lang": "ja",
+                "href": "https://macpaw.com/ja/how-to/uninstall-apps-on-mac"
+              },
+              {
+                "lang": "no",
+                "href": "https://macpaw.com/no/how-to/uninstall-apps-on-mac"
+              },
+              {
+                "lang": "ko",
+                "href": "https://macpaw.com/ko/how-to/uninstall-apps-on-mac"
+              },
+              {
+                "lang": "sv",
+                "href": "https://macpaw.com/sv/how-to/uninstall-apps-on-mac"
+              },
+              {
+                "lang": "x-default",
+                "href": "https://macpaw.com/how-to/uninstall-apps-on-mac"
+              }
+            ]
+          },
+          "answer": null
+        },
+        {
+          "url": "https://www.appletutorials.de/mac-software/programme-am-mac-komplett-loeschen.html",
+          "query_id": "q21",
+          "query_text": "Wie deinstalliere ich eine App auf dem Mac komplett inklusive aller Reste?",
+          "audited_at": "2026-11-12T00:52:23.423Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "Programme am Mac komplett löschen ohne Datenreste",
+            "meta_description": "Um Programm unter Mac OS X zu löschen, so dass wirklich rein gar keine Datenreste auf dem Mac bleiben, funktioniert einwandfrei mit dem AppCleaner.",
+            "h1": [],
+            "canonical": "https://www.appletutorials.de/mac-software/programme-am-mac-komplett-loeschen.html",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "AggregateRating",
+              "Article",
+              "BreadcrumbList",
+              "CreativeWorkSeries",
+              "EntryPoint",
+              "ImageObject",
+              "ListItem",
+              "Person",
+              "PropertyValueSpecification",
+              "ReadAction",
+              "SearchAction",
+              "WebPage",
+              "WebSite"
+            ],
+            "internal_links": 30,
+            "word_count": 400,
+            "html_lang": "de",
+            "hreflang": []
+          },
+          "answer": null
+        }
+      ],
+      "gaps": [
+        "meta description is 188 chars (cut at about 160)",
+        "1411 words vs competitor median 3144"
+      ]
+    },
+    {
+      "page": {
+        "url": "https://cachedrop.io/de/cleanmymac-alternative/",
+        "query_id": "q02",
+        "query_text": "Alternative zu CleanMyMac für Musikproduzenten mit vielen Plug-ins?",
+        "audited_at": "2026-11-12T00:52:23.648Z",
+        "http_status": 200,
+        "error": null,
+        "checks": {
+          "title": "CleanMyMac-Alternative mit Einmalkauf | CacheDrop",
+          "meta_description": "CacheDrop räumt Ihren Mac auf, deinstalliert Apps und Plug-ins vollständig und leert Entwickler- und Medien-Caches für 29,99 $ einmalig, jetzt 19,99 $ für begrenzte Zeit, auf bis zu 3 Macs. Kein Abo. Die App selbst ist derzeit nur auf Englisch verfügbar.",
+          "h1": [
+            "Eine CleanMyMac-Alternative, die Sie nur einmal bezahlen."
+          ],
+          "canonical": "https://cachedrop.io/de/cleanmymac-alternative/",
+          "canonical_is_self": true,
+          "json_ld_types": [
+            "Answer",
+            "BreadcrumbList",
+            "FAQPage",
+            "ListItem",
+            "Question",
+            "WebPage"
+          ],
+          "internal_links": 16,
+          "word_count": 908,
+          "html_lang": "de-DE",
+          "hreflang": [
+            {
+              "lang": "en",
+              "href": "https://cachedrop.io/cleanmymac-alternative/"
+            },
+            {
+              "lang": "fr",
+              "href": "https://cachedrop.io/fr/cleanmymac-alternative/"
+            },
+            {
+              "lang": "de",
+              "href": "https://cachedrop.io/de/cleanmymac-alternative/"
+            },
+            {
+              "lang": "x-default",
+              "href": "https://cachedrop.io/cleanmymac-alternative/"
+            }
+          ]
+        },
+        "answer": null
+      },
+      "competitors": [
+        {
+          "url": "https://mole.fit/de/blog/cleanmymac-alternative",
+          "query_id": "q02",
+          "query_text": "Alternative zu CleanMyMac für Musikproduzenten mit vielen Plug-ins?",
+          "audited_at": "2026-11-12T00:52:25.031Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "CleanMyMac-Alternativen: kostenlose Tools und Einmalkauf · Mole",
+            "meta_description": "Mac-Utilities nach Aufgabe, Sicherheitsgrenzen, Berechtigungen, Wiederherstellung, OS-Support und langfristiger Lizenz statt Marketingversprechen vergleichen.",
+            "h1": [
+              "CleanMyMac-Alternativen: kostenlose Tools und Einmalkauf"
+            ],
+            "canonical": "https://mole.fit/de/blog/cleanmymac-alternative",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "Answer",
+              "BlogPosting",
+              "BreadcrumbList",
+              "ContactPoint",
+              "FAQPage",
+              "ImageObject",
+              "ListItem",
+              "Organization",
+              "Person",
+              "Question",
+              "WebPage",
+              "WebSite"
+            ],
+            "internal_links": 33,
+            "word_count": 2083,
+            "html_lang": "de",
+            "hreflang": [
+              {
+                "lang": "en",
+                "href": "https://mole.fit/blog/cleanmymac-alternative"
+              },
+              {
+                "lang": "zh-CN",
+                "href": "https://mole.fit/zh/blog/cleanmymac-alternative"
+              },
+              {
+                "lang": "zh-Hans",
+                "href": "https://mole.fit/zh/blog/cleanmymac-alternative"
+              },
+              {
+                "lang": "zh-Hant",
+                "href": "https://mole.fit/tw/blog/cleanmymac-alternative"
+              },
+              {
+                "lang": "ja",
+                "href": "https://mole.fit/ja/blog/cleanmymac-alternative"
+              },
+              {
+                "lang": "ko",
+                "href": "https://mole.fit/ko/blog/cleanmymac-alternative"
+              },
+              {
+                "lang": "fr",
+                "href": "https://mole.fit/fr/blog/cleanmymac-alternative"
+              },
+              {
+                "lang": "de",
+                "href": "https://mole.fit/de/blog/cleanmymac-alternative"
+              },
+              {
+                "lang": "it",
+                "href": "https://mole.fit/it/blog/cleanmymac-alternative"
+              },
+              {
+                "lang": "es",
+                "href": "https://mole.fit/es/blog/cleanmymac-alternative"
+              },
+              {
+                "lang": "pt-BR",
+                "href": "https://mole.fit/pt-br/blog/cleanmymac-alternative"
+              },
+              {
+                "lang": "nl",
+                "href": "https://mole.fit/nl/blog/cleanmymac-alternative"
+              },
+              {
+                "lang": "x-default",
+                "href": "https://mole.fit/blog/cleanmymac-alternative"
+              }
+            ]
+          },
+          "answer": null
+        },
+        {
+          "url": "https://macpaw.com/de/reviews/cleanmymac-alternatives",
+          "query_id": "q02",
+          "query_text": "Alternative zu CleanMyMac für Musikproduzenten mit vielen Plug-ins?",
+          "audited_at": "2026-11-12T00:52:25.967Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "CleanMyMac-Alternativen: Welcher Mac-Cleaner hilft wirklich?",
+            "meta_description": "Suchen Sie nach guten CleanMyMac-Alternativen, wissen aber nicht, wo Sie anfangen sollen? Hier sind unsere 5 App-Empfehlungen für 2026.",
+            "h1": [
+              "5 CleanMyMac-Alternativen für 2026: Kostenpflichtige und kostenlose Tools im Test"
+            ],
+            "canonical": "https://macpaw.com/de/reviews/cleanmymac-alternatives",
+            "canonical_is_self": true,
+            "json_ld_types": [
+              "Answer",
+              "Article",
+              "BreadcrumbList",
+              "FAQPage",
+              "ImageObject",
+              "ListItem",
+              "Organization",
+              "Person",
+              "Question",
+              "WebPage"
+            ],
+            "internal_links": 60,
+            "word_count": 2417,
+            "html_lang": "de",
+            "hreflang": [
+              {
+                "lang": "en",
+                "href": "https://macpaw.com/reviews/cleanmymac-alternatives"
+              },
+              {
+                "lang": "de",
+                "href": "https://macpaw.com/de/reviews/cleanmymac-alternatives"
+              },
+              {
+                "lang": "es",
+                "href": "https://macpaw.com/es/reviews/cleanmymac-alternatives"
+              },
+              {
+                "lang": "fr",
+                "href": "https://macpaw.com/fr/reviews/cleanmymac-alternatives"
+              },
+              {
+                "lang": "it",
+                "href": "https://macpaw.com/it/reviews/cleanmymac-alternatives"
+              },
+              {
+                "lang": "pl",
+                "href": "https://macpaw.com/pl/reviews/cleanmymac-alternatives"
+              },
+              {
+                "lang": "pt",
+                "href": "https://macpaw.com/pt/reviews/cleanmymac-alternatives"
+              },
+              {
+                "lang": "nl",
+                "href": "https://macpaw.com/nl/reviews/cleanmymac-alternatives"
+              },
+              {
+                "lang": "ja",
+                "href": "https://macpaw.com/ja/reviews/cleanmymac-alternatives"
+              },
+              {
+                "lang": "no",
+                "href": "https://macpaw.com/no/reviews/cleanmymac-alternatives"
+              },
+              {
+                "lang": "ko",
+                "href": "https://macpaw.com/ko/reviews/cleanmymac-alternatives"
+              },
+              {
+                "lang": "sv",
+                "href": "https://macpaw.com/sv/reviews/cleanmymac-alternatives"
+              },
+              {
+                "lang": "x-default",
+                "href": "https://macpaw.com/reviews/cleanmymac-alternatives"
+              }
+            ]
+          },
+          "answer": null
+        },
+        {
+          "url": "https://www.macube.com/de/how-to/alternative-to-cleanmymac.html",
+          "query_id": "q02",
+          "query_text": "Alternative zu CleanMyMac für Musikproduzenten mit vielen Plug-ins?",
+          "audited_at": "2026-11-12T00:52:26.424Z",
+          "http_status": 200,
+          "error": null,
+          "checks": {
+            "title": "[2024 Update] Top 6 CleanMyMac Alternative für Mac",
+            "meta_description": "Nach einer CleanMyMac Alternative für Mac suchen, die die gleichen/ähnlichen Funktionen wie CleanMyMac X fugiert? Hier sind 6 beste CleanMyMac Alternative.",
+            "h1": [
+              "[2024 Update] Top 6 CleanMyMac Alternative zum Mac Reinigen"
+            ],
+            "canonical": "https://www.macube.com/de/how-to/alternative-to-cleanmymac.html",
+            "canonical_is_self": true,
+            "json_ld_types": [],
+            "internal_links": 33,
+            "word_count": 1918,
+            "html_lang": "de",
+            "hreflang": []
+          },
+          "answer": null
+        }
+      ],
+      "gaps": [
+        "meta description is 254 chars (cut at about 160)",
+        "908 words vs competitor median 2083"
+      ]
+    }
+  ]
+}

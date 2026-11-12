@@ -1,0 +1,28 @@
+{
+  "run_id": "local-52058eb8",
+  "locale": "de-DE",
+  "query_set_version": 1,
+  "pages": 8,
+  "competitors": 24,
+  "model": null,
+  "own_answers_near_top": {
+    "skipped": 8
+  },
+  "competitor_answers_near_top": {
+    "skipped": 24
+  },
+  "gaps": 19,
+  "site_gaps": [],
+  "skipped_competitors": [
+    "q06 https://support.novationmusic.com/hc/de/articles/207561195-How-do-I-uninstall-my-Plugins-from-my-Mac: HTTP 403",
+    "q06 https://www.reddit.com/r/ableton/comments/tun84q/how_to_uninstall_plug_ins_on_mac?tl=de: too little readable text (blocked or script-rendered)",
+    "q02 https://www.getapp.de/alternatives/2049575/cleanmymac-x: HTTP 403",
+    "q02 https://www.capterra.com.de/alternatives/1015185/cleanmymac-x: HTTP 403",
+    "q02 https://www.reddit.com/r/macapps/comments/wazqhz/best_alternative_to_cleanmymac_x?tl=de: too little readable text (blocked or script-rendered)"
+  ],
+  "searches": 8,
+  "cost_usd": 0,
+  "seconds": 33,
+  "delta": null,
+  "finished_at": "2026-11-12T00:52:26.591Z"
+}

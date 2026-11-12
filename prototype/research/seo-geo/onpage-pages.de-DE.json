@@ -1,0 +1,15 @@
+{
+  "note": "Each German sitemap page of cachedrop.io and the frozen de-DE query (v1) it should answer, chosen to mirror the English and French mappings' intent. Proposed by Claude 2026-11-11 when /de/ shipped (plan Q27); owner to confirm. Change it only together with a query set version.",
+  "locale": "de-DE",
+  "query_set_version": 1,
+  "pages": [
+    { "url": "https://cachedrop.io/de/", "query_id": "q05" },
+    { "url": "https://cachedrop.io/de/pricing/", "query_id": "q01" },
+    { "url": "https://cachedrop.io/de/clear-mac-developer-caches/", "query_id": "q15" },
+    { "url": "https://cachedrop.io/de/clear-adobe-media-cache-mac/", "query_id": "q04" },
+    { "url": "https://cachedrop.io/de/uninstall-audio-plugins-mac/", "query_id": "q06" },
+    { "url": "https://cachedrop.io/de/clear-system-data-mac/", "query_id": "q17" },
+    { "url": "https://cachedrop.io/de/uninstall-apps-mac/", "query_id": "q21" },
+    { "url": "https://cachedrop.io/de/cleanmymac-alternative/", "query_id": "q02" }
+  ]
+}

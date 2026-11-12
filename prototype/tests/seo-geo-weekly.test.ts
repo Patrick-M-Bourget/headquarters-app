@@ -9,14 +9,14 @@ test("week starts on Monday (UTC); the monthly markets run in the month's first 
   assert.equal(weekOf(new Date("2026-11-10T20:00:00Z")), "2026-11-09");
   assert.equal(weekOf(new Date("2026-11-09T00:00:00Z")), "2026-11-09");
   assert.equal(weekOf(new Date("2026-11-15T23:59:00Z")), "2026-11-09");
-  assert.deepEqual(dueLocales("2026-11-09"), ["en-US", "fr-FR"]);
+  assert.deepEqual(dueLocales("2026-11-09"), ["en-US", "fr-FR", "de-DE"]);
   assert.equal(dueLocales("2026-12-07").length, 6);
-  assert.deepEqual(dueLocales("2026-12-14"), ["en-US", "fr-FR"]);
+  assert.deepEqual(dueLocales("2026-12-14"), ["en-US", "fr-FR", "de-DE"]);
 });
 
 test("stage 1: Search Console once, GEO and keywords per locale, on-page only where the site has pages", () => {
-  const t = stage1(["en-US", "de-DE"], "2026-11-09");
-  assert.deepEqual(t.map(x => `${x.agent}/${x.params.locale}`), ["Search Console Reader/undefined", "GEO Tracker/en-US", "Keyword Tracker/en-US", "On-page Auditor/en-US", "GEO Tracker/de-DE", "Keyword Tracker/de-DE"]);
+  const t = stage1(["de-DE", "es-ES"], "2026-11-09");
+  assert.deepEqual(t.map(x => `${x.agent}/${x.params.locale}`), ["Search Console Reader/undefined", "GEO Tracker/de-DE", "Keyword Tracker/de-DE", "On-page Auditor/de-DE", "GEO Tracker/es-ES", "Keyword Tracker/es-ES"]);
 });
 
 test("stage 2: optimizer only when gaps changed beyond numbers; funnel only with a CSV", () => {

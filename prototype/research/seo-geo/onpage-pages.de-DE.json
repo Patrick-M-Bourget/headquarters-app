@@ -1,5 +1,5 @@
 {
-  "note": "Each German sitemap page of cachedrop.io and the frozen de-DE query (v1) it should answer, chosen to mirror the English and French mappings' intent. Proposed by Claude 2026-11-11 when /de/ shipped (plan Q27); owner to confirm. Change it only together with a query set version.",
+  "note": "Each German sitemap page of cachedrop.io and the frozen de-DE query (v1) it should answer, chosen to mirror the English and French mappings' intent. Proposed by Claude 2026-11-11 when /de/ shipped (plan Q27); owner confirmed 2026-11-11. Change it only together with a query set version.",
   "locale": "de-DE",
   "query_set_version": 1,
   "pages": [
